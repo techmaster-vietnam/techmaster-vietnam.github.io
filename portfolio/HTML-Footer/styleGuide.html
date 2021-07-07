@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>DungBu • Style Guide</title>
+    <link rel="shortcut icon" href="../Images/Favicon.jpg" type="image/x-icon">
+
+    <!-- Boootstrap CSS library -->
+    <link rel="stylesheet" href="../lib/Bootstrap-4.5.3/css/bootstrap.css">
+    <!-- CSS Chung - AOS -->
+    <link rel="stylesheet" href="../lib/AOS-Animation-On-Scroll/dist/aos.css">
+    <!-- CSS Chung -->
+    <link rel="stylesheet" href="../css/main.css">
+    <!-- CSS Riêng -->
+    <link rel="stylesheet" href="../css/styleGuide.css">
+    <!-- CSS Chung - Hamburger menu -->
+    <link rel="stylesheet" href="../lib/burger-menu.css">
+    <!-- Font Awesome 5.14 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  </head>
+
+  <body>
+    <header id="headerID"> <!-- //////////// //////////// //////////// //////////// -->
+      <!-- Navbar - General Css------------------------------------------------------------------------------------------------ -->
+      <div class="vertical-navbar">
+        <a class="logo-MD" href="../index.html"><img src="../Images/Logo.png" alt="MD Logo"></a>
+
+        <nav class="navbar">
+          <a class="menu-item" href="../index.html">
+            <span class="menu-title">home</span>
+            <div class="decor-mini"></div>
+          </a>
+          <a class="menu-item" href="../projects.html">
+            <span class="menu-title">projects</span>
+            <div class="decor-mini"></div>
+          </a>
+          <a class="menu-item" href="../profile.html">
+            <span class="menu-title">about</span>
+            <div class="decor-mini"></div>
+          </a>
+        </nav>
+
+        <a class="btn-CTA" href="../contact.html" role="button">Contact me</a>
+      </div>
+
+      <!-- Hamburger menu (RESPONSIVE Only) - Humburger menu css ------------------------------------------------------------------------------------------------ -->
+      <div class="hamburger">
+        <div class="burger-menu" onclick="hamburgerFunction()">
+          <div class="line-1"></div>
+          <div class="line-2"></div>
+          <div class="line-3"></div>
+        </div>
+        <div class="burger-menu-content">
+          <a href="../index.html" class="burger-filling"><i class='fas fa-angle-right'></i>home</a>
+          <div class="break-20"></div>
+          <a href="../projects.html" class="burger-filling"><i class='fas fa-angle-right'></i>projects</a>
+          <div class="break-20"></div>
+          <a href="../profile.html" class="burger-filling"><i class='fas fa-angle-right'></i>about me</a>
+          <div class="break-20"></div>
+          <a href="../contact.html" class="burger-filling"><i class='fas fa-angle-right'></i>contact</a>
+        </div>
+        <div class="burger-menu-blackscreen" onclick="hamburgerFunction()"></div>
+      </div>
+    </header> <!-- //////////// //////////// //////////// //////////// -->
+
+
+
+
+    <main id="mainID"> <!-- //////////// //////////// //////////// //////////// -->
+      <!-- Landing Page------------------------------------------------------------------------------------------------ -->
+      <div class="landing-page" id="home-landing-page">
+        <div class="container landing-page-bg">
+          <div class="landing-page-content" data-aos="fade-up">
+            <span class="header-42-46">Personal Portfolio</span>
+            <div class="break-8"></div>
+            <span class="header-42-46" style="color: #7051EF;">Style guide</span>
+            <div class="break-28"></div>
+            <span>Use this page to get alter global typography styles and establish 
+                  your website style-guide.
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Background ------------------------------------------------------------------------------------------------ -->
+      <div class="bg">
+        <!-- Colors -->
+        <div class="container-fluid" style="background-color: #EFEBFF;">
+          <div class="container d-flex align-items-center break-160">
+            <span class="header-32-36" style="color: #7051EF;" data-aos="fade-up">Colors</span>
+          </div>
+        </div>
+
+        <div class="container">
+          <!-- Primary colors -->
+          <div class="break-120"></div>
+          <div class="titleContent" data-aos="fade-up">
+            <span class="header-24-30" style="color: #303030;">Primary colors</span>
+          </div>
+          <div class="break-60"></div>
+          <div class="grid-container">
+            <div class="grid-item" data-aos="fade-up">
+              <div class="item-color" style="background-color: #7051EF;"></div>
+              <div class="break-20"></div>
+              <div class="item-title">
+                <span class="header-16-24" style="color: #303030;">Primary</span>
+                <span>#7051EF</span>
+              </div>
+            </div>
+            <div class="grid-item" style="opacity: 0;">
+              <div class="item-color" style="background-color: #7051EF;"></div>
+              <div class="break-20"></div>
+              <div class="item-title">
+                <span class="header-16-24" style="color: #303030;">Primary</span>
+                <span>#7051EF</span>
+              </div>
+            </div>
+            <div class="grid-item" style="opacity: 0;">
+              <div class="item-color" style="background-color: #7051EF;"></div>
+              <div class="break-20"></div>
+              <div class="item-title">
+                <span class="header-16-24" style="color: #303030;">Primary</span>
+                <span>#7051EF</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Secondary colors -->
+          <div class="break-120"></div>
+          <div class="titleContent" data-aos="fade-up">
+            <span class="header-24-30" style="color: #303030;">Secondary colors</span>
+          </div>
+          <div class="break-60"></div>
+          <div class="grid-container">
+            <div class="grid-item" data-aos="fade-up">
+              <div class="item-color" style="background-color: #9F8BF5;"></div>
+              <div class="break-20"></div>
+              <div class="item-title">
+                <span class="header-16-24" style="color: #303030;">Secondary 1</span>
+                <span>#9F8BF5</span>
+              </div>
+            </div>
+            <div class="grid-item" data-aos="fade-up" data-aos-delay="150">
+              <div class="item-color" style="background-color: #C5B9F9;"></div>
+              <div class="break-20"></div>
+              <div class="item-title">
+                <span class="header-16-24" style="color: #303030;">Secondary 2</span>
+                <span>#C5B9F9</span>
+              </div>
+            </div>
+            <div class="grid-item" data-aos="fade-up" data-aos-delay="200">
+              <div class="item-color" style="background-color: #EFEBFF;"></div>
+              <div class="break-20"></div>
+              <div class="item-title">
+                <span class="header-16-24" style="color: #303030;">Secondary 3</span>
+                <span>#EFEBFF</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Neutral colors (black) -->
+          <div class="break-120"></div>
+          <div class="titleContent" data-aos="fade-up">
+            <span class="header-24-30" style="color: #303030;">Neutral colors (black)</span>
+          </div>
+          <div class="break-60"></div>
+          <div class="grid-container">
+            <div class="grid-item" data-aos="fade-up">
+              <div class="item-color" style="background-color: #303030;"></div>
+              <div class="break-20"></div>
+              <div class="item-title">
+                <span class="header-16-24" style="color: #303030;">Neutral B1</span>
+                <span>#303030</span>
+              </div>
+            </div>
+            <div class="grid-item" data-aos="fade-up" data-aos-delay="150">
+              <div class="item-color" style="background-color: #B2B2B2;"></div>
+              <div class="break-20"></div>
+              <div class="item-title">
+                <span class="header-16-24" style="color: #303030;">Neutral B2</span>
+                <span>#B2B2B2</span>
+              </div>
+            </div>
+            <div class="grid-item" data-aos="fade-up" data-aos-delay="200">
+              <div class="item-color" style="background-color: #F0F0F0;"></div>
+              <div class="break-20"></div>
+              <div class="item-title">
+                <span class="header-16-24" style="color: #303030;">Neutral B3</span>
+                <span>#F0F0F0</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Neutral colors (white) -->
+          <div class="break-120"></div>
+          <div class="titleContent" data-aos="fade-up">
+            <span class="header-24-30" style="color: #303030;">Neutral colors (white)</span>
+          </div>
+          <div class="break-60"></div>
+          <div class="grid-container">
+            <div class="grid-item" data-aos="fade-up">
+              <div class="item-color" style="background-color: #FAFAFA;"></div>
+              <div class="break-20"></div>
+              <div class="item-title">
+                <span class="header-16-24" style="color: #303030;">Neutral W1</span>
+                <span>#FAFAFA</span>
+              </div>
+            </div>
+            <div class="grid-item" data-aos="fade-up" data-aos-delay="150">
+              <div class="item-color" style="background-color: #FFFFFF;"></div>
+              <div class="break-20"></div>
+              <div class="item-title">
+                <span class="header-16-24" style="color: #303030;">Neutral W2</span>
+                <span>#FFFFFF</span>
+              </div>
+            </div>
+            <div class="grid-item" style="opacity: 0;">
+              <div class="item-color" style="background-color: #FAFAFA;"></div>
+              <div class="break-20"></div>
+              <div class="item-title">
+                <span class="header-16-24" style="color: #303030;">Neutral W3</span>
+                <span>#FAFAFA</span>
+              </div>
+            </div>
+          </div>
+        </div>
+          
+
+        <!-- Typography -->
+        <div class="break-120"></div>
+        <div class="container-fluid" style="background-color: #EFEBFF;">
+          <div class="container d-flex align-items-center break-160">
+            <span class="header-32-36" style="color: #7051EF;" data-aos="fade-up">Typography</span>
+          </div>
+        </div>
+
+        <div class="container">
+          <!-- Heading -->
+          <div class="break-120"></div>
+          <div class="titleContent" data-aos="fade-up">
+            <span class="header-24-30" style="color: #303030;">Heading</span>
+          </div>
+
+          <div id="heading1" data-aos="fade-up">
+            <div class="break-60"></div>
+            <span class="header-42-46">Heading 1 - Aa Bb Cc Dd  0 1 2 3 4</span>
+            <div class="break-8"></div>
+            <span style="color: #7051EF;">heading 1 - Poppins / Semi bold  -  42px  -  Line height: 46  -  H/S: 1,10</span>
+            <div class="break-60"></div>
+            <hr>
+          </div>
+
+          <div id="heading2" data-aos="fade-up">
+            <div class="break-60"></div>
+            <span class="header-32-36">Heading 2 - Aa Bb Cc Dd  0 1 2 3 4</span>
+            <div class="break-8"></div>
+            <span style="color: #7051EF;">heading 2 - Poppins / Semi bold  -  32px  -  Line height: 36  -  H/S: 1,13</span>
+            <div class="break-60"></div>
+            <hr>
+          </div>
+
+          <div id="heading3" data-aos="fade-up">
+            <div class="break-60"></div>
+            <span class="header-24-30" style="color: #303030;">Heading 3 - Aa Bb Cc Dd  0 1 2 3 4</span>
+            <div class="break-8"></div>
+            <span style="color: #7051EF;">heading 3 - Poppins / Semi bold  -  24px  -  Line height: 30  -  H/S: 1,25</span>
+            <div class="break-60"></div>
+            <hr>
+          </div>
+
+          <div id="heading3" data-aos="fade-up">
+            <div class="break-60"></div>
+            <span class="header-16-24" style="color: #303030;">Heading 4 - Aa Bb Cc Dd  0 1 2 3 4</span>
+            <div class="break-8"></div>
+            <span style="color: #7051EF;">heading 4 - Poppins / Semi bold  -  16px  -  Line height: 24  -  H/S: 1,50</span>
+            <div class="break-60"></div>
+            <hr>
+          </div>
+
+          <!-- Paragraph -->
+          <div class="break-120"></div>
+          <div class="titleContent" data-aos="fade-up">
+            <span class="header-24-30" style="color: #303030;">Paragraph</span>
+          </div>
+
+          <div id="paragraph1" data-aos="fade-up">
+            <div class="break-60"></div>
+            <span>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et luctus enim. Ut fermentum, 
+              ligula facilisis ultricies feugiat, dui odio finibus mi, sed ornare augue justo vel dui. Mauris porta, 
+              nibh eget commodo lobortis, mauris augue ornare risus, eget condimentum libero sapien at 
+              justo. Quisque commodo, velit quis congue aliquet, risus lacus pharetra nunc, ac lobortis metus 
+              enim et purus. Nullam luctus, quam gravida feugiat lacinia, ipsum sem malesuada ante, vel 
+              tempus est lorem vitae eros.
+            </span>
+            <div class="break-8"></div>
+            <span style="color: #7051EF;">paragraph defaults - Montserrat / Medium  -  16px  -  Line height: 24  -  H/S: 1,50</span>
+            <div class="break-60"></div>
+            <hr>
+          </div>
+
+          <div id="paragraph2" data-aos="fade-up">
+            <div class="break-60"></div>
+            <span class="paragraph-12-20">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et luctus enim. Ut fermentum, 
+              ligula facilisis ultricies feugiat, dui odio finibus mi, sed ornare augue justo vel dui. Mauris porta, 
+              nibh eget commodo lobortis, mauris augue ornare risus, eget condimentum libero sapien at 
+              justo. Quisque commodo, velit quis congue aliquet, risus lacus pharetra nunc, ac lobortis metus 
+              enim et purus. Nullam luctus, quam gravida feugiat lacinia, ipsum sem malesuada ante, vel 
+              tempus est lorem vitae eros.
+            </span>
+            <div class="break-8"></div>
+            <span style="color: #7051EF;">paragraph small - Montserrat / Medium  -  12px  -  Line height: 20  -  H/S: 1,67</span>
+            <div class="break-60"></div>
+            <hr>
+          </div>
+        </div>
+
+
+        <!-- Button -->
+        <div class="break-120"></div>
+        <div class="container-fluid" style="background-color: #EFEBFF;">
+          <div class="container d-flex align-items-center break-160">
+            <span class="header-32-36 triggerAOS" style="color: #7051EF;" data-aos="fade-up">Button</span>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="break-120"></div>
+          <div data-aos="fade-up" data-aos-anchor=".triggerAOS" data-aos-delay="150">
+            <button class="btn btn-primary" style="margin-right: 4rem;">default</button>
+            <span>button primary - default</span>
+          </div>
+          <div class="break-60"></div>
+          <div data-aos="fade-up" data-aos-anchor=".triggerAOS" data-aos-delay="200">
+            <button class="btn btn-secondary" style="margin-right: 4rem;">default</button>
+            <span>button secondary - default</span>
+          </div>
+
+          <div class="break-120"></div>
+        </div>
+
+      </div>
+    </main> <!-- //////////// //////////// //////////// //////////// -->
+
+
+
+    
+    <footer id="footerID"> <!-- //////////// //////////// //////////// //////////// -->
+      <!-- Footer - General Css------------------------------------------------------------------------------------------------ -->
+      <div class="footer">
+        <div class="container">
+          <div class="footer-menu">
+            <a href="../HTML-Footer/error404.html" target="_blank">404</a>
+            <a href="../HTML-Footer/map.html" target="_blank" style="margin-left: 2rem;">Map</a>
+            <a href="../HTML-Footer/styleGuide.html" target="_blank" style="margin-left: 2rem;">Style guide</a>
+            <a href="../HTML-Footer/liscense.html" target="_blank" style="margin-left: 2rem;">Liscense</a>
+          </div>
+        </div>
+      </div>
+    </footer> <!-- //////////// //////////// //////////// //////////// -->
+
+
+
+
+    <!-- //////////// //////////// //////////// //////////// //////////// //////////// -->
+    <!-- jQuerry Ajax JS library -->
+    <script src="../lib/jQuerry-Ajax-3.5.1/jquery-3.5.1.js"></script>
+    <!-- Boootstrap JS library -->
+    <script src="../lib/Bootstrap-4.5.3/js/bootstrap.js"></script>
+    <!-- AOS JS library -->
+    <script src="../lib/AOS-Animation-On-Scroll/dist/aos.js"></script>
+    <!-- //////////// //////////// //////////// //////////// //////////// //////////// -->
+
+
+
+
+    <!-- //////////// //////////// //////////// //////////// //////////// //////////// -->
+    <!-- Javascript ------------------------------------------------------------------------------------------------ -->
+    <script>
+      // ------------ ------------ ------------ ------------ ------------ ------------
+      // Cài đặt thư viện hiệu ứng AOS ------------ ------------
+      AOS.init(
+        {
+          offset: 200,
+          delay: 100,
+          duration: 1000,
+          easing: 'ease-out',
+          mirror: true,
+        });
+
+
+      // ------------ ------------ ------------ ------------ ------------ ------------
+      // Hàm tạo hiệu ứng cho Humburger menu ------------ ------------
+      function hamburgerFunction() 
+        {
+          document.querySelector(".burger-menu").classList.toggle("burger-menu-toggle");
+          document.querySelector(".burger-menu-content").classList.toggle("burger-menu-toggle");
+          document.querySelector(".burger-menu-blackscreen").classList.toggle("burger-menu-toggle");
+        }
+
+
+      // ------------ ------------ ------------ ------------ ------------ ------------
+      // Hàm ẩn Humburger menu khi ấn vào từng menu con ------------ ------------
+      document.querySelectorAll(".burger-menu-content a").forEach(function(element)
+        {
+          element.addEventListener("click" ,function()
+            {
+              setTimeout(function(){ hamburgerFunction(); }, 600);
+            });
+        });
+    </script>
+    <!-- //////////// //////////// //////////// //////////// //////////// //////////// -->
+  </body>
+</html>

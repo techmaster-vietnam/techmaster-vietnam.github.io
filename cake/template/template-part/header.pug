@@ -1,0 +1,94 @@
+header
+    .container.header
+        .header-left
+            .logo
+                a.logo__link(href="./index.html")
+                    img(src="./img/logo.png", alt="Cake")
+            .header-left__search.desktop
+                .header-left__search-box
+                    form.header-left__form(action="#")
+                        input(type="text" placeholder='Tìm kiếm...').header-left__input
+                        a.header-left__link
+                            i.fas.fa-search.header-left__icon
+
+        .header-right
+            nav.header-right__main-menu.desktop
+                ul.header-right__list
+                    li.header-right__item
+                        a(href="./index.html").header-right__link.home--active Trang chủ
+                    li.header-right__item 
+                        a(href="./product.html").header-right__link.product--active Sản Phẩm
+                    li.header-right__item 
+                        a(href="./blog.html").header-right__link.blog--active Tin Tức
+                    li.header-right__item 
+                        a(href="./contact.html").header-right__link.contact--active Liên Hệ
+            .header-right__avatar
+                i.fas.fa-user.header-right__icon
+            .header-right__search
+                i.fas.fa-search.header-right__icon.mobile         
+            .header-right__cart
+                a(href="./cart.html").header-right__link.cart--active
+                    i.fas.fa-cart-arrow-down.header-right__icon
+            .header-right__open-draw
+                    i.fas.fa-bars.mobile
+        #clone-menu.mobile
+            nav.header-right__main-menu
+                ul.header-right__list
+                    li.header-right__item
+                        a(href="./index.html").header-right__link.home--active Trang chủ
+                    li.header-right__item 
+                        a(href="./product.html").header-right__link.product--active Sản Phẩm
+                    li.header-right__item 
+                        a(href="./blog.html").header-right__link.blog--active Tin Tức
+                    li.header-right__item 
+                        a(href="./contact.html").header-right__link.contact--active Liên Hệ
+        .clone-menu__box
+        .scroll
+            i.fas.fa-arrow-up
+        #header-right__search-box
+            i.fas.fa-times.header-right__search-icon
+            .header-right__search-box-input
+                .header-right__search-input
+                    input(type="text" placeholder='Tìm kiếm loại bánh...')
+                    i.far.fa-paper-plane
+        #header__user
+            .user__box
+                p.user--active.user__action Đăng nhập
+                p.user__action Đăng kí
+            form(action='./index.html' data-number='0').user__form#user__signin
+                .group-input
+                    input(type="text" placeholder="Email")#form__email
+                    p.error Vui lòng nhập email hợp lệ
+                .group-input.group-last
+                    input(type="password" placeholder="Password")#form__password
+                    p.error Vui lòng nhập Password hợp lệ
+                a(href="#").user__form__box
+                    i.far.fa-question-circle
+                    p Quên mật khẩu
+                button.user__btn ĐĂNG NHẬP
+                .user__socail
+                    p Hoặc đăng nhập với
+                    .user__socail__list
+                        a(href="#").user__socail__box
+                            img(src="./img/user-1.svg", alt="facebook")
+                        a(href="#").user__socail__box
+                            img(src="./img/user-2.svg", alt="google")
+                        a(href="#").user__socail__box
+                            img(src="./img/user-3.svg", alt="twiter")
+            form(action='./index.html' data-number='1').user__form#user__signup
+                .group-input
+                    input(type="text" placeholder="Họ và Tên")#signup__fullname
+                    p.error Vui lòng nhập họ và tên hợp lệ
+                .group-input
+                    input(type="number" placeholder="Số điện thoại")#signup__phone
+                    p.error Vui lòng nhập số điện thoại hợp lệ
+                .group-input
+                    input(type="text" placeholder="Email")#signup__email
+                    p.error Vui lòng nhập Email hợp lệ
+                .group-input
+                    input(type="text" placeholder="Mật khẩu")#signup__password
+                    p.error Vui lòng nhập nhập mật khẩu hợp lệ
+                .group-input
+                    input(type="text" placeholder="Nhập lại mật khẩu")#signup__match
+                    p.error Vui lòng nhập lại mật khẩu hợp lệ
+                button.user__btn.user__signin Đăng kí

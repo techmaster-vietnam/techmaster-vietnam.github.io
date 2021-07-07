@@ -1,0 +1,58 @@
+.nav-link:hover,.footer-link:hover{
+        color: #FFCA00!important;
+}
+.svip-button-index:hover{
+    background-color:#FFDC55;
+    border: 2px solid #FFDC55;
+    border-radius: 30px;   
+}
+.mien-phi-button-index:hover{
+    background-color:#DDE9FF;
+    border-radius: 30px; 
+}
+.background-blue:hover{
+    background-color: #002A69;
+}
+.background-yellow:hover{
+    background-color:#FFDC55 ;
+}
+
+
+.bo-suu-tap-hover img,.footer-icon,.nav-profile-hover img,.img-sale{
+transition: transform 0.5s ease-in-out;
+}
+.bo-suu-tap-hover:hover img{
+        transform: scale(1.2);
+}
+.img-hover{
+    overflow: hidden;
+}
+.footer-icon:hover{
+    transform: scale(1.5);
+}
+
+
+
+
+.nav-profile-hover:hover img{
+    transform: scale(1.3);
+}
+
+.sale:hover .img-sale{
+    transform: scale(1.1);
+
+}
+
+
+
+.img-tai-xuong-hover{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+}
+.tai-nguyen-mien-phi-content-frame:hover .img-tai-xuong-hover-box{
+    display: block;
+}
+
+

@@ -1,0 +1,64 @@
+header
+        .menu
+            nav.navbar.navbar-expand-lg.navbar-dark
+                button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarNav' aria-controls='navbarNav' aria-expanded='false' aria-label='Toggle navigation')
+                    span.navbar-toggler-icon
+                .collapse.navbar-collapse#navbarNav
+                    .d-flex.justify-content-between.menu-content
+                        ul.navbar-nav
+                            li.nav-item
+                                a.nav-link(href='index.html') Trang chủ
+                            li.nav-item
+                                a.nav-link(href='tainguyenmienphi.html') Tài nguyên miễn phí
+                            li.nav-item
+                                a.nav-link(href='tainguyenvip.html') Tài nguyên VIP
+                            li.nav-item#nav-mua-vip
+                                a.nav-link(href='muavip.html') Mua VIP/SVIP
+                            
+                        ul.navbar-nav
+                            li.nav-item
+                                a.nav-link(href='baiviet.html') Bài viết
+                            li.nav-item
+                                button.btn.btn-primary.nav-link.nav-login-button(type='button' data-toggle='modal' data-target='#exampleModal').
+                                    Đăng nhập/Đăng ký
+                            li.nav-item
+                                a.nav-link.nav-profile.nav-profile-hover(href='#')
+                                    img(src="img/user1.png", alt="")
+        .modal.fade#exampleModal(tabindex='-1' role='dialog' aria-labelledby='exampleModalLabel' aria-hidden='true')
+            .modal-dialog
+                .modal-content.login-box
+                        .login-button-box
+                            #btn-login-box
+                            button.login-button(onclick='login()') 
+                                p Đăng nhập
+                            button.login-button(onclick='register()') 
+                                p Register
+                        .login-logo
+                            img.img-fluid(src="img/logo.png", alt="")
+                        .social-icons
+                            img(src="img/dangnhap/icon1.png", alt="icon1")
+                            img(src="img/dangnhap/icon2.png", alt="icon2")
+                            img(src="img/dangnhap/icon3.png", alt="icon3")
+                        form#login-click.input-group
+                            input.input-field#name(type='text' name placeholder='Email hoặc tên tài khoản' required)
+                            input.input-field#pass(type='password' pass placeholder='Mật khẩu' required)      
+                            .check-box              
+                                input(type='checkbox' name)
+                                p.check-box-text Ghi nhớ tài khoản
+                            button.submit-btn(type='submit') 
+                                p Đăng nhập
+                            #login-miss.xsmall
+                        form#register-click.input-group
+                            input.input-field(type='text' name placeholder='Email hoặc tên tài khoản' required)
+                            input.input-field(type='password' name placeholder='Mật khẩu' required) 
+                            input.input-field(type='password' name placeholder='Nhập lại mật khẩu' required)  
+                            input.input-field(type='text' name placeholder='Tải avatar lên' required)
+                            .tai-ava
+                                a(href="")
+                                    .svip-button-index.svip-button.goi-button.d-flex.justify-content-center
+                                        p Tải lên     
+                            .check-box              
+                                input(type='checkbox' name)
+                                p.check-box-text Ghi nhớ tài khoản
+                            button.submit-btn(type='submit') 
+                                p Đăng ký 

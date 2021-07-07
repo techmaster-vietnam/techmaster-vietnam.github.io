@@ -1,0 +1,159 @@
+.de-muc .p2{
+    color:#FFCA00;
+}
+.column-content img{
+    width: 20px;
+    height: 20px;
+}
+.column-content p{
+    font-size: 13px;
+}
+.box,.mien-phi,.svip,.vip{
+    width: 100%;
+}
+.box{
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+}
+.ten-goi p{
+    margin: 16px 0 16px 0;
+}
+.mien-phi .ten-goi{
+    background-color: #2E78E5;
+}
+.svip .ten-goi{
+    background-color:#013889;
+}
+.vip .ten-goi{
+    background-color: #154C9C;
+}
+.column-content{
+    margin-top: 10px;
+}
+.goi-tai-nguyen-content,.link-button{
+    margin-top: 50px;
+}
+.link-button{
+    margin-bottom: 30px;
+}
+.mien-phi-button p{
+    color:#2E78E5;
+    margin: 8px 0 8px 0;
+}
+.vip-button p{
+    color:#154C9C;
+    margin: 8px 0 8px 0; 
+}
+.svip-button p{
+    color:black;
+    margin: 8px 0 8px 0;
+}
+.goi-button{
+    width: 150px;
+}
+.mien-phi-button{
+    border: 2px solid #2E78E5;
+    border-radius: 30px;
+}
+.svip-button{
+    background-color:#FFCA00;
+    border: 2px solid #FFCA00;
+    border-radius: 30px;
+}
+.vip-button{
+    border: 2px solid #154C9C;
+    border-radius: 30px;
+}
+.decor{
+    height: 2px;
+    background-color:#FFCA00 ;
+    border-radius: 1px;
+    margin-top: 100px;
+}
+.mien-phi-frame{
+    padding-left: 0px;
+}
+.vip-frame{
+    padding-right: 0px;
+}
+
+/*---------------------------------kham-pha------------------------------*/
+.kham-pha .col-6,.kham-pha .col-12{
+    padding: 0px;
+}
+.background-blue{
+    background-color: #134A9B;
+}
+.background-yellow{
+    background-color: #FFCA00;
+}
+.text1 .normal,.text2 .normal{
+    text-align: center;
+    font-weight: bold;
+}
+.text1{
+    color: white;
+}
+.text2 p{
+    color: black;
+}
+/*---------------------------------bo-suu-tap------------------------------*/
+.bo-suu-tap-box .col-12 ,.bo-suu-tap-box .col-10 ,.bo-suu-tap-box .col-6 ,.bo-suu-tap-box .col-4{
+    padding: 0px;
+}
+.bo-suu-tap.text{
+    margin: 0 0 20px 0;
+}
+.bo-suu-tap.text p{
+    color: black;
+}
+.bo-suu-tap-box-content1{
+    margin-bottom: 50px;
+}
+
+
+
+
+
+/*---------------------------------bai-viet------------------------------*/
+.number{
+    font-size: 60px;
+    font-weight: bold;
+    margin-left: 30px ;
+    color: #FFCA00;
+}
+.ten-bai{
+    font-size:19px;
+    margin: 0 30px 0 10px;
+    color: white;
+}
+.tieu-de-bai-viet{
+    width: 300px;
+    background-color: black;
+}
+.content-bai-viet{
+    width: 300px;
+    height: 140px;
+    background-color: #FFCA00;
+}
+.content-bai-viet p{
+    padding: 30px;
+}
+.frame>div{
+    margin: 50px 0 50px 0;
+}
+.frame1{
+    background-image: url("../img/baiviet1.png");
+}
+.frame2{
+    background-image: url("../img/baiviet2.png");
+}
+.frame3{
+    background-image: url("../img/baiviet3.jpg");
+}
+.frame a{
+    margin-top: 20px;
+}
+.frame .svip-button{
+    background-color: #FFCA00;
+    border: 2px solid #FFCA00;
+}

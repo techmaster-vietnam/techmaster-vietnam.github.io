@@ -1,0 +1,480 @@
+.navbar{
+    background-color: black;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+    font-size: 13px;
+    padding: 0 0.5rem 0 0.5rem!important;
+}
+.nav-link img, .search-button img{
+    width: 20px;
+    height: 20px;
+}
+.nav-item .btn-primary{
+    outline: 0;     
+    outline-style: none;     
+    outline-width: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.nav-login-button:focus{
+    outline: none;
+}
+.menu-content{
+    width: 100%;
+}
+.chu-thich-trang p,.filter p{
+    margin-bottom: 0px;
+}
+.header-content-box{
+    background-size: cover;
+    position: relative;
+}
+.header-content{
+    padding-top: 280px;
+}
+.chu-thich-trang{
+    margin-top: 20px;
+}
+.chu-thich-trang p{
+    font-size: 35px;
+    color: white;
+}
+.filter{
+    width: 20%;
+    background-color: white;
+    color: #767676;
+}
+.filter-content .col-6{
+    padding: 0px;
+}
+.search{
+    width: 70%;
+    border: none;
+    background-color: white;
+}
+.search-button{
+    width: 10%;
+    background-color: black;
+    border: none;
+    padding: 0px;
+}
+.search-button:focus{
+    outline: none;
+}
+.search-box{
+    padding-bottom: 280px;
+    margin-top: 20px;   
+}
+.search-box-content{
+    height: 40px;
+}
+::placeholder{
+    font-size: 13px;
+}
+
+
+/*---------------------------------filter-box------------------------------*/
+.search-box-content .d-flex{
+    padding: 0px;
+}
+.filter-box{
+    background-color: #EEEEEE;
+    position: absolute;
+    top: 50px;
+    padding: 0px;
+}
+.filter-title p{
+    color:#134A9B;
+    font-size: 15px;
+    font-weight: bold;
+}
+.filter-row{
+    margin-top: 20px;
+}
+.mau-sac img{
+    margin: 5px;
+}
+label{
+    font-size: 13px;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+}
+.filter-content{
+    margin-top: 10px;
+    padding: 0px;
+}
+#filter-on-off{
+    cursor: pointer;
+    border-right: 1px solid gainsboro;
+}
+#filter-on-off p{
+    margin-left:10px;
+}
+.search-box-content ::placeholder{
+    padding-left:5px;
+}
+.search-box-content input:focus{
+    outline: none;
+}
+.ty-le-icon-img{
+    margin-top: 2px;
+    margin-bottom: 10px;
+}
+.ty-le-content p{
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+.ty-le-img{
+    margin-right: 5px;
+}
+.row{
+    margin: 0px;
+}
+.bo-loc{
+    margin: 20px 0 20px 0;
+    color: red;
+}
+.ty-le,.mau-sac,.phanloai{
+    padding: 0px;
+}
+.close img{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+}
+.close{
+    opacity: 1;
+}
+.filter-box-a{
+    display: none!important;
+}
+.filter-box-a{
+    display: flex;
+}
+.checkbox{
+    width: 20px;
+    height: 20px;
+    background-color:white;
+    border: 1px solid black;
+    margin-bottom: 8px;
+    margin-right: 5px;
+}
+.filter-check{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: none;
+
+}
+.phan-loai-box,.color-box,.ty-le-icon-img{
+    position: relative;
+}
+.ty-le-check{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: -1px;
+    right:0px;
+    display: none;
+}
+.filter-bo-loc{
+    cursor: pointer;
+}
+.down-arrow img{
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
+    margin-top: 1px;
+}
+
+
+
+/*---------------------------------login-box------------------------------*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.login-box{
+    width: 320px;
+    height: 500px;
+    position: relative;
+    margin:0 auto;
+    background: white;
+    padding: 5px;
+    overflow: hidden;
+}
+.login-logo{
+    width: 200px;
+    margin: 20px auto 0px auto;
+}
+.login-button-box{
+    width: 220px;
+    margin: 15px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #ff61241f;
+    border-radius: 30px;
+    background-color: #002E74;
+}
+.login-button{
+    padding: 07px 20px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    position:relative;
+    color: white;
+    font-weight: bold;
+}
+.login-button:focus {     
+    outline: 0;     
+    outline-style: none;     
+    outline-width: 0; 
+}
+#btn-login-box{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: linear-gradient(to right,#134A9B,#07D2FE);
+    border-radius: 30px;
+    transition: 0.5s;
+}
+.social-icons{
+    margin: 15px auto;
+    text-align: center;
+}
+.social-icons img{
+    width: 30px;
+    margin: 0 12px;
+    box-shadow: 0 0 20px #7f7f7f3d;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.input-group{
+    top: 180px;
+    position: absolute;
+    width: 250px;
+    transition: 0.5s;
+}
+.input-field{
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+}
+.submit-btn{
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: linear-gradient(to right,#134A9B,#07D2FE);
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+    font-weight: bold;
+    color: white;
+}
+.check-box{
+    margin: 15px 10px 15px 0;
+    width: 100%;
+}
+.check-box-text{
+    color: #777;
+    bottom: 57px;
+    left: 20px;
+    position: absolute;
+}
+#login-click{
+    left: 33px;
+}
+#register-click{
+    left: 450px;
+    top: 150px;
+}
+#login-miss{
+    position: absolute;
+    font-size: 12px;
+    color: red;
+    top: 220px;
+    left: 19px;
+}
+.tai-ava .svip-button{
+    background: linear-gradient(to right,#134A9B,#07D2FE);
+    border: none;   
+    position: absolute;
+    top: 175px;
+    right: 0px;
+    width: 100px;
+}
+.tai-ava .svip-button p{
+    color: white;
+}
+
+/*---------------------------------dang-nhap------------------------------*/
+*{
+    margin: 0;
+    padding: 0;
+}
+.login-box{
+    width: 320px;
+    height: 500px;
+    position: relative;
+    margin:0 auto;
+    background: white;
+    padding: 5px;
+    overflow: hidden;
+}
+.login-logo{
+    width: 200px;
+    margin: 10px auto 0px auto;
+}
+.login-button-box{
+    width: 220px;
+    margin: 15px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #ff61241f;
+    border-radius: 30px;
+    background-color: #002E74;
+}
+.login-button{
+    padding: 07px 20px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    position:relative;
+    color: white;
+    font-weight: bold;
+}
+.login-button:focus {     
+    outline: 0;     
+    outline-style: none;     
+    outline-width: 0; 
+}
+#btn{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: linear-gradient(to right,#134A9B,#07D2FE);
+    border-radius: 30px;
+    transition: 0.5s;
+}
+.social-icons{
+    margin: 15px auto;
+    text-align: center;
+}
+.social-icons img{
+    width: 30px;
+    margin: 0 12px;
+    box-shadow: 0 0 20px #7f7f7f3d;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.input-group{
+    top: 180px;
+    position: absolute;
+    width: 250px;
+    transition: 0.5s;
+}
+.input-field{
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+}
+.submit-btn{
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: linear-gradient(to right,#134A9B,#07D2FE);
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+    font-weight: bold;
+    color: white;
+}
+.check-box{
+    margin: 15px 10px 15px 0;
+    width: 100%;
+}
+.check-box-text{
+    color: #777;
+    bottom: 57px;
+    left: 20px;
+    position: absolute;
+}
+#login-click{
+    left: 33px;
+}
+#register-click{
+    left: 450px;
+    top: 160px;
+}
+/*---------------------------------profile------------------------------*/
+.profile{
+    width: 280px;
+    position: absolute;
+    background-color: white;
+    padding: 10px;
+    top: 0px ;
+    right: 25px;
+    z-index: 1000;
+}
+.profilea{
+    display: none;
+}
+.profileb{
+    display:block;
+}
+.profile-text{
+    font-weight: bold;
+}
+.profile-avatar{
+    margin: 0 0 20px 0;
+}
+.profile-box p{
+    margin-top: 5px;
+}
+.profile-content{
+    margin-bottom: 15px;
+}
+
+.profile-box{
+    padding-bottom: 20px;
+    padding-top: 20px;
+    border: 2px solid  #134A9B;
+}
+.profile-box .svip-button{
+    margin-bottom: 30px;
+}
+#dang-xuat-btn{
+    color: #134A9B;
+}
+.svip-button2{
+    background-color: #134A9B!important;
+    border: 2px solid #134A9B!important;  
+}
+.svip-button2 p{
+    color: white!important;
+}

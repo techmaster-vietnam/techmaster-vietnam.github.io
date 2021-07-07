@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Project PPT02</title>
+    <link rel="shortcut icon" href="../Images/Favicon.jpg" type="image/x-icon">
+
+    <!-- Boootstrap CSS library -->
+    <link rel="stylesheet" href="../lib/Bootstrap-4.5.3/css/bootstrap.css">
+    <!-- CSS Chung - AOS -->
+    <link rel="stylesheet" href="../lib/AOS-Animation-On-Scroll/dist/aos.css">
+    <!-- CSS Chung - Slick -->
+    <link rel="stylesheet" href="../lib/Slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="../lib/Slick-1.8.1/slick/slick-theme.css">
+    <!-- CSS Chung -->
+    <link rel="stylesheet" href="../css/main.css">
+    <!-- CSS Riêng -->
+    <link rel="stylesheet" href="../css/project-item.css">
+    <!-- CSS Chung - Hamburger menu -->
+    <link rel="stylesheet" href="../lib/burger-menu.css">
+    <!-- Font Awesome 5.14 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+
+    <style>
+      /* ------------ ------------ ------------ ------------ */
+      /* --Text-- ------------ */
+      @font-face
+        {
+          font-family: Roboto;
+          src: url(../fonts/Roboto/Roboto-Black.ttf);
+          font-weight: 700;
+        }
+      .project-heading
+        {
+          font-family: 'Roboto', sans-serif;
+          font-weight: 700;
+          font-size: 3.6rem;
+          line-height: 4rem;
+        }
+
+      @font-face
+        {
+          font-family: Quicksand;
+          src: url(../fonts/Quicksand/Quicksand-Medium.ttf);
+          font-weight: 500;
+        }
+      .project-paragraph
+        {
+          font-family: 'Quicksand', sans-serif;
+          font-weight: 500;
+          font-size: 1.6rem;
+          line-height: 2.4rem;
+        }
+    </style>
+  </head>
+
+  <body>
+    <header id="headerID"> <!-- //////////// //////////// //////////// //////////// -->
+      <!-- Navbar - General Css------------------------------------------------------------------------------------------------ -->
+      <div class="vertical-navbar">
+        <a class="logo-MD" href="../index.html"><img src="../Images/Logo.png" alt="MD Logo"></a>
+
+        <nav class="navbar">
+          <a class="menu-item" href="../index.html">
+            <span class="menu-title">home</span>
+            <div class="decor-mini"></div>
+          </a>
+          <a class="menu-item" href="../projects.html">
+            <span class="menu-title">projects</span>
+            <div class="decor-mini"></div>
+          </a>
+          <a class="menu-item" href="../profile.html">
+            <span class="menu-title">about</span>
+            <div class="decor-mini"></div>
+          </a>
+        </nav>
+
+        <a class="btn-CTA" href="../contact.html" role="button">Contact me</a>
+      </div>
+
+      <!-- Hamburger menu (RESPONSIVE Only) - Humburger menu css ------------------------------------------------------------------------------------------------ -->
+      <div class="hamburger">
+        <div class="burger-menu" onclick="hamburgerFunction()">
+          <div class="line-1"></div>
+          <div class="line-2"></div>
+          <div class="line-3"></div>
+        </div>
+        <div class="burger-menu-content">
+          <a href="../index.html" class="burger-filling"><i class='fas fa-angle-right'></i>home</a>
+          <div class="break-20"></div>
+          <a href="../projects.html" class="burger-filling"><i class='fas fa-angle-right'></i>projects</a>
+          <div class="break-20"></div>
+          <a href="../profile.html" class="burger-filling"><i class='fas fa-angle-right'></i>about me</a>
+          <div class="break-20"></div>
+          <a href="../contact.html" class="burger-filling"><i class='fas fa-angle-right'></i>contact</a>
+        </div>
+        <div class="burger-menu-blackscreen" onclick="hamburgerFunction()"></div>
+      </div>
+    </header> <!-- //////////// //////////// //////////// //////////// -->
+
+
+
+
+    <main id="mainID"> <!-- //////////// //////////// //////////// //////////// -->
+      <!-- Landing Page------------------------------------------------------------------------------------------------ -->
+      <div class="landing-page" id="home-landing-page"><img src="../Images/ProjectPPT02/ProjectPPT02Background.webp" alt="Project PPT01"></div>
+
+      <!-- Background ------------------------------------------------------------------------------------------------ -->
+      <div class="bg">
+
+        <div class="container">
+          <!-- Credit Infomation -->
+          <div class="break-120"></div>
+          <div class="credit-info">
+            <div class="credit-item" data-aos="fade-up">
+              <span class="header-16-24" style="color: #303030;">Date:</span>
+              <span class="paragraph-14-24">2019</span>
+            </div>
+            <div class="credit-item" data-aos="fade-up" data-aos-delay="150">
+              <span class="header-16-24" style="color: #303030;">Days:</span>
+              <span class="paragraph-14-24">6 days</span>
+            </div>
+            <div class="credit-item" data-aos="fade-up" data-aos-delay="200">
+              <span class="header-16-24" style="color: #303030;">Cilent:</span>
+              <span class="paragraph-14-24">Growell Vietnam</span>
+            </div>
+          </div>
+
+          <!-- Project Infomation -->
+          <div class="break-120"></div>
+          <div class="titleContent" data-aos="fade-up">
+            <span class="header-42-46" style="color: #7051EF;">Growell Vietnam</span>
+            <div class="break-60"></div>
+            <div class="about-this-project">
+              <span>Sản phẩm có lượng nội dung chữ trên từng trang slide tương đối
+                    lớn, phương án đưa ra là kết hợp các hình ảnh minh họa / icon
+                    để giảm bớt chữ. Màu chủ đạo trong bài là xanh dương theo phong
+                    cách Gradient vừa gọn gàng, vừa hiện đại.
+              </span>
+              <div class="break-8"></div>
+              <span>Bản quyền thuộc về công ty TNHH Truyền thông và sáng tạo 9Slide</span>
+            </div>
+          </div>
+
+          <!-- Gallery -->
+          <div class="break-120"></div>
+          <div class="slider-for" data-aos="fade-up">
+            <div class="slider1-item"><img src="../Images/ProjectPPT02/Slider-item-02.webp" alt="Slide 2"></div>
+            <div class="slider1-item"><img src="../Images/ProjectPPT02/Slider-item-03.webp" alt="Slide 3"></div>
+            <div class="slider1-item"><img src="../Images/ProjectPPT02/Slider-item-04.webp" alt="Slide 4"></div>
+            <div class="slider1-item"><img src="../Images/ProjectPPT02/Slider-item-05.webp" alt="Slide 5"></div>
+            <div class="slider1-item"><img src="../Images/ProjectPPT02/Slider-item-06.webp" alt="Slide 6"></div>
+            <div class="slider1-item"><img src="../Images/ProjectPPT02/Slider-item-07.webp" alt="Slide 7"></div>
+            <div class="slider1-item"><img src="../Images/ProjectPPT02/Slider-item-08.webp" alt="Slide 8"></div>
+            <div class="slider1-item"><img src="../Images/ProjectPPT02/Slider-item-09.webp" alt="Slide 9"></div>
+            <div class="slider1-item"><img src="../Images/ProjectPPT02/Slider-item-10.webp" alt="Slide 10"></div>
+            <div class="slider1-item"><img src="../Images/ProjectPPT02/Slider-item-11.webp" alt="Slide 11"></div>
+          </div>
+          <div class="break-60"></div>
+          <div class="slider-nav" data-aos="fade-up">
+            <div class="slider2-item"><img src="../Images/ProjectPPT02/Slider-item-02.webp" alt="Slide 2"></div>
+            <div class="slider2-item"><img src="../Images/ProjectPPT02/Slider-item-03.webp" alt="Slide 3"></div>
+            <div class="slider2-item"><img src="../Images/ProjectPPT02/Slider-item-04.webp" alt="Slide 4"></div>
+            <div class="slider2-item"><img src="../Images/ProjectPPT02/Slider-item-05.webp" alt="Slide 5"></div>
+            <div class="slider2-item"><img src="../Images/ProjectPPT02/Slider-item-06.webp" alt="Slide 6"></div>
+            <div class="slider2-item"><img src="../Images/ProjectPPT02/Slider-item-07.webp" alt="Slide 7"></div>
+            <div class="slider2-item"><img src="../Images/ProjectPPT02/Slider-item-08.webp" alt="Slide 8"></div>
+            <div class="slider2-item"><img src="../Images/ProjectPPT02/Slider-item-09.webp" alt="Slide 9"></div>
+            <div class="slider2-item"><img src="../Images/ProjectPPT02/Slider-item-10.webp" alt="Slide 10"></div>
+            <div class="slider2-item"><img src="../Images/ProjectPPT02/Slider-item-11.webp" alt="Slide 11"></div>
+          </div>
+          
+          <!-- Color Pallete -->
+          <div class="break-120"></div>
+          <div class="titleContent" data-aos="fade-up">
+            <span class="header-24-30" style="color: #303030;">Color Pallete</span>
+          </div>
+          <div class="break-60"></div>
+          <div class="grid-container">
+            <div class="grid-item" data-aos="fade-up">
+              <div class="item-color" style="background-color: #16639F;"></div>
+              <div class="break-20"></div>
+              <div class="item-title">
+                <span class="header-16-24" style="color: #303030;">Primary</span>
+                <span>#16639F</span>
+              </div>
+            </div>
+            <div class="grid-item" data-aos="fade-up" data-aos-delay="150">
+              <div class="item-color"  style="background-color: #48A0E6;"></div>
+              <div class="break-20"></div>
+              <div class="item-title">
+                <span class="header-16-24" style="color: #303030;">Secondary</span>
+                <span>#48A0E6</span>
+              </div>
+            </div>
+            <div class="grid-item" data-aos="fade-up" data-aos-delay="200">
+              <div class="item-color" style="background-color: #7F7F7F;"></div>
+              <div class="break-20"></div>
+              <div class="item-title">
+                <span class="header-16-24" style="color: #303030;">Ink</span>
+                <span>#7F7F7F</span>
+              </div>
+            </div>
+            <div class="grid-item" data-aos="fade-up" data-aos-delay="250">
+              <div class="item-color" style="background-color: #F9F9F9;"></div>
+              <div class="break-20"></div>
+              <div class="item-title">
+                <span class="header-16-24" style="color: #303030;">Background</span>
+                <span>#F9F9F9</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Heading -->
+          <div class="break-120"></div>
+          <div class="titleContent" data-aos="fade-up">
+            <span class="header-24-30" style="color: #303030;">Heading</span>
+          </div>
+          <div class="break-60"></div>
+          <div  data-aos="fade-up">
+            <span class="project-heading responsiveStyle1" style="text-transform: uppercase;">Heading 1 - Aa Bb Cc Dd  0 1 2 3 4</span>
+            <span class="project-heading responsiveStyle2" style="text-transform: uppercase;">Heading 1 - AaBbCc  0123</span>
+            <div class="break-8"></div>
+            <span style="color: #7051EF;">Roboto / Black  -  36pt</span>
+          </div>
+
+          <!-- Paragraph -->
+          <div class="break-120"></div>
+          <div class="titleContent" data-aos="fade-up">
+            <span class="header-24-30" style="color: #303030;">Paragraph</span>
+          </div>
+          <div class="break-60"></div>
+          <div  data-aos="fade-up">
+            <div class="project-paragraph">
+              <span>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et luctus enim. Ut fermentum, 
+                ligula facilisis ultricies feugiat, dui odio finibus mi, sed ornare augue justo vel dui. Mauris porta, 
+                nibh eget commodo lobortis, mauris augue ornare risus, eget condimentum libero sapien at 
+                justo. Quisque commodo, velit quis congue aliquet, risus lacus pharetra nunc, ac lobortis metus 
+                enim et purus. Nullam luctus, quam gravida feugiat lacinia, ipsum sem malesuada ante, vel 
+                tempus est lorem vitae eros.
+              </span>
+            </div>
+            <div class="break-8"></div>
+            <span style="color: #7051EF;">Quicksand / Medium  -  16pt</span>
+          </div>
+
+          <!-- More projects -->
+          <div class="break-120"></div>
+          <div class="titleContent triggerAOS" data-aos="fade-up">
+            <div class="decor"></div>
+            <div class="break-8"></div>
+            <span class="header-24-30" style="color: #303030;">More projects</span>
+          </div>
+          <div class="break-60"></div>
+          <div class="more-projects" data-aos="fade-up" data-aos-anchor=".triggerAOS">
+            <a href="./projectPPT01.html" class="more-item" id="projects-PPT01">
+              <div class="more-item-hover-bg"></div>
+              <img src="../Images/ProjectPPT01/ProjectPPT01Background.webp" alt="Project PPT01">
+              <div class="more-item-name header-16-24" style="color: #FFFFFF;">#PP01</div>
+            </a>
+            <a href="./projectPPT03.html" class="more-item" id="projects-PPT03">
+              <div class="more-item-hover-bg"></div>
+              <img src="../Images/ProjectPPT03/ProjectPPT03Background.webp" alt="Project PPT03">
+              <div class="more-item-name header-16-24" style="color: #FFFFFF;">#PP03</div>
+            </a>
+          </div>
+
+          <div class="break-120"></div>
+        </div>
+
+      </div>
+    </main> <!-- //////////// //////////// //////////// //////////// -->
+
+
+
+    
+    <footer id="footerID"> <!-- //////////// //////////// //////////// //////////// -->
+      <!-- Footer - General Css------------------------------------------------------------------------------------------------ -->
+      <div class="footer">
+        <div class="container">
+          <div class="footer-menu">
+            <a href="../HTML-Footer/error404.html" target="_blank">404</a>
+            <a href="../HTML-Footer/map.html" target="_blank" style="margin-left: 2rem;">Map</a>
+            <a href="../HTML-Footer/styleGuide.html" target="_blank" style="margin-left: 2rem;">Style guide</a>
+            <a href="../HTML-Footer/liscense.html" target="_blank" style="margin-left: 2rem;">Liscense</a>
+          </div>
+        </div>
+      </div>
+    </footer> <!-- //////////// //////////// //////////// //////////// -->
+
+
+
+
+    <!-- //////////// //////////// //////////// //////////// //////////// //////////// -->
+    <!-- jQuerry Ajax JS library -->
+    <script src="../lib/jQuerry-Ajax-3.5.1/jquery-3.5.1.js"></script>
+    <!-- Boootstrap JS library -->
+    <script src="../lib/Bootstrap-4.5.3/js/bootstrap.js"></script>
+    <!-- AOS JS library -->
+    <script src="../lib/AOS-Animation-On-Scroll/dist/aos.js"></script>
+    <!-- Slick JS library -->
+    <script src="../lib/Slick-1.8.1/slick/slick.min.js"></script>
+    <!-- //////////// //////////// //////////// //////////// //////////// //////////// -->
+
+
+
+
+    <!-- //////////// //////////// //////////// //////////// //////////// //////////// -->
+    <!-- Javascript ------------------------------------------------------------------------------------------------ -->
+    <script>
+      // ------------ ------------ ------------ ------------ ------------ ------------
+      // Cài đặt thư viện hiệu ứng AOS ------------ ------------
+      AOS.init(
+        {
+          offset: 200,
+          delay: 100,
+          duration: 1000,
+          easing: 'ease-out',
+          mirror: true,
+        });
+
+
+      // ------------ ------------ ------------ ------------ ------------ ------------
+      // Đảm bảo khi load trang xong thì code bên dưới sẽ chạy luôn ------------ ------------
+      $(() => 
+            {
+              activeStateOnLoad();
+            });
+        
+      let menuItemActive = [...document.getElementsByClassName("menu-item")];
+      let burgerFilling = [...document.getElementsByClassName("burger-filling")];
+
+      function activeStateOnLoad()
+        {
+          menuItemActive[1].classList.add("active");
+          burgerFilling[1].classList.add("active");
+        }
+            
+
+      // ------------ ------------ ------------ ------------ ------------ ------------
+      // Hàm chạy thư viện Slick ------------ ------------
+      $('.slider-for').slick(
+        {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: false,
+          arrows: false,
+          fade: true,
+          asNavFor: '.slider-nav'
+        });
+
+      $('.slider-nav').slick(
+        {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 2000,
+          dots: false,
+          arrows: false,
+          focusOnSelect: true,
+          asNavFor: '.slider-for'
+        });
+
+
+      // ------------ ------------ ------------ ------------ ------------ ------------
+      // Hàm tạo hiệu ứng cho Humburger menu ------------ ------------
+      function hamburgerFunction() 
+        {
+          document.querySelector(".burger-menu").classList.toggle("burger-menu-toggle");
+          document.querySelector(".burger-menu-content").classList.toggle("burger-menu-toggle");
+          document.querySelector(".burger-menu-blackscreen").classList.toggle("burger-menu-toggle");
+        }
+
+
+      // ------------ ------------ ------------ ------------ ------------ ------------
+      // Hàm ẩn Humburger menu khi ấn vào từng menu con ------------ ------------
+      document.querySelectorAll(".burger-menu-content a").forEach(function(element)
+        {
+          element.addEventListener("click" ,function()
+            {
+              setTimeout(function(){ hamburgerFunction(); }, 600);
+            });
+        });
+    </script>
+    <!-- //////////// //////////// //////////// //////////// //////////// //////////// -->
+  </body>
+</html>

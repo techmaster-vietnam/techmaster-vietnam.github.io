@@ -1,0 +1,34 @@
+extends template-part/layout2.pug
+block style
+    link(rel="stylesheet", href="css/thanhtoan.css")
+block title
+    title Thanh toán
+block content
+    .thanh-toan-content.container-md
+        .thanh-toan-logo.d-flex.justify-content-center
+            .col-4.col-sm-4.col-md-3.col-lg-3.col-xl-2
+                img.img-fluid(src="img/logo.png", alt="")
+
+        .row
+            .col-12.col-sm-12.col-md-12.col-lg-6.col-xl-6
+                .col-10
+                    .d-flex.flex-column
+                        p.small Bạn đặt mua gói VIP
+                        p.large 100.000đ/1 tháng
+                        p Gói VIP với rất nhiều ưu đãi cho chủ tài khoản như được tải toàn bộ tài nguyên miễn phí và tài nguyên VIP, được hỗ trợ cập nhật lên tài khoản SVIP cực kỳ nhanh và đơn giản.
+                        p.chon-the Chọn loại thẻ bạn dùng để thanh toán
+                    .d-flex.justify-content-between
+                        img(src="img/thanhtoan/card1.png", alt="card1")
+                        img(src="img/thanhtoan/card2.png", alt="card2")
+                        img(src="img/thanhtoan/card3.png", alt="card3")
+            .col-12.col-sm-12.col-md-12.col-lg-6.col-xl-6.tai-khoan-ngan-hang
+                form
+                    input.input-field(type='text' name placeholder='Tên ngân hàng' required)
+                    input.input-field(type='text' name placeholder='Tên chủ thẻ' required)
+                    input.input-field(type='text' name placeholder='Ngày hết hạn' required) 
+                    input.input-field(type='text' name placeholder='Số tài khoản' required) 
+                    input.input-field(type='text' name placeholder='CCV' required)
+                    .thanh-toan-button
+                        .svip-button-index.svip-button.goi-button.d-flex.justify-content-center
+                            p.small Thanh Toán
+                    

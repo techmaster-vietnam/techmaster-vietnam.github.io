@@ -1,0 +1,293 @@
+extends template-part/layout.pug
+block style
+    link(rel="stylesheet", href="css/indexrieng.css")
+
+
+block content   
+    section.goi-tai-nguyen.container-md
+        .de-muc.d-flex.justify-content-center
+            p.p1.large 3 GÓI TÀI NGUYÊN
+            p.p2.large &nbsp;VÔ TẬN
+        .ba-goi-tai-nguyen
+            .row
+                .col-12.col-sm-12.col-md-12.col-lg-4.col-xl-4.d-flex.justify-content-center.goi-tai-nguyen-frame.mien-phi-frame
+                    .mien-phi.d-flex.align-items-center
+                        .box
+                            .ten-goi.d-flex.justify-content-center
+                                p.normal MIỄN PHÍ
+                            .goi-tai-nguyen-content
+                                .d-flex.justify-content-center
+                                    .column-content.d-flex
+                                        img(src="img/checkmark.png", alt="checkmark")
+                                        p +2,661,000 VECTOR miễn phí
+                                .d-flex.justify-content-center
+                                    .column-content.d-flex
+                                        img(src="img/checkmark.png", alt="checkmark")
+                                        p +3,001,000 PSD miễn phí
+                                .d-flex.justify-content-center               
+                                    .column-content.d-flex
+                                        img(src="img/checkmark.png", alt="checkmark")
+                                        p +1,039,000 PHOTOS miễn phí
+                                .d-flex.justify-content-center
+                                    .column-content.d-flex
+                                        img(src="img/checkmark.png", alt="checkmark")
+                                        p +4,292,000 ICON miễn phí
+                            .link-button.d-flex.justify-content-center
+                                    .mien-phi-button-index.mien-phi-button.goi-button.d-flex.justify-content-center.link-toi-dang-nhap
+                                        p.small ĐĂNG NHẬP
+                .col-12.col-sm-12.col-md-12.col-lg-4.col-xl-4.d-flex.justify-content-center.goi-tai-nguyen-frame.svip-frame
+                    .svip.d-flex.align-items-center
+                        .box
+                            .ten-goi.d-flex.justify-content-center
+                                p.normal SVIP
+                            .goi-tai-nguyen-content
+                                .d-flex.justify-content-center
+                                    .column-content.d-flex
+                                        img(src="img/checkmark.png", alt="checkmark")
+                                        p Toàn bộ tài nguyên miễn phí
+                                .d-flex.justify-content-center
+                                    .column-content.d-flex
+                                        img(src="img/checkmark.png", alt="checkmark")
+                                        p Toàn bộ tài nguyên VIP  
+                                .d-flex.justify-content-center               
+                                    .column-content.d-flex
+                                        img(src="img/checkmark.png", alt="checkmark")
+                                        p Không giới hạn số lần tải
+                                .d-flex.justify-content-center
+                                    .column-content.d-flex
+                                        img(src="img/checkmark.png", alt="checkmark")
+                                        p Không quảng cáo
+                                .d-flex.justify-content-center
+                                    .column-content.d-flex
+                                        img(src="img/checkmark.png", alt="checkmark")
+                                        p Được nhân viên hỗ trợ
+                                .d-flex.justify-content-center
+                                    .column-content.d-flex
+                                        img(src="img/checkmark.png", alt="checkmark")
+                                        p Thường xuyên update 
+                            .link-button.d-flex.justify-content-center
+                                a(href="thanhtoansvip.html")
+                                    .svip-button-index.svip-button.goi-button.d-flex.justify-content-center
+                                        p.small MUA NGAY
+                .col-12.col-sm-12.col-md-12.col-lg-4.col-xl-4.d-flex.justify-content-center.goi-tai-nguyen-frame.vip-frame
+                    .vip.d-flex.align-items-center
+                        .box
+                            .ten-goi.d-flex.justify-content-center
+                                p.normal VIP
+                            .goi-tai-nguyen-content
+                                .d-flex.justify-content-center
+                                    .column-content.d-flex
+                                        img(src="img/checkmark.png", alt="checkmark")
+                                        p +1,961,000 VIP VECTOR
+                                .d-flex.justify-content-center
+                                    .column-content.d-flex
+                                        img(src="img/checkmark.png", alt="checkmark")
+                                        p +2,691,000 VIP PSD  
+                                .d-flex.justify-content-center           
+                                    .column-content.d-flex
+                                        img(src="img/checkmark.png", alt="checkmark")
+                                        p +1,736,000 VIP PHOTOS
+                                .d-flex.justify-content-center
+                                    .column-content.d-flex
+                                        img(src="img/checkmark.png", alt="checkmark")
+                                        p +3,032,000 VIP ICON  
+                            .link-button.d-flex.justify-content-center                        
+                                a(href="thanhtoan.html")
+                                    .mien-phi-button-index.vip-button.goi-button.d-flex.justify-content-center
+                                        p.small MUA NGAY
+        .d-flex.justify-content-center  
+            .col-6.decor
+
+    section.kham-pha.container-md
+        .de-muc.d-flex.justify-content-center
+            p.large KHÁM PHÁ
+        .row.d-flex
+            .col-12.col-sm-12.col-md-12.col-lg-6.col-xl-6
+                .d-flex
+                    .col-6
+                        #carouselExampleControls.carousel.slide.img-fluid(data-ride='carousel')
+                            .carousel-inner
+                                .carousel-item.active
+                                    img.img-fluid.d-block.w-100(src="img/psd.png", alt="")
+                                .carousel-item
+                                    img.img-fluid.d-block.w-100(src="img/psd2.png", alt="")
+                                .carousel-item
+                                    img.img-fluid.d-block.w-100(src="img/psd3.png", alt="")                      
+                    a.background-blue.col-6.d-flex.justify-content-center.align-items-center(href="psd.html")
+                        .text1
+                            p.normal PSD
+                            p Trên 5,000,000 kết quả
+                .d-flex
+                    a.background-yellow.col-6.d-flex.justify-content-center.align-items-center(href="vector.html")
+                        .text2
+                            p.normal VECTOR
+                            p Trên 3,500,000 kết quả
+                    .col-6
+                        #carouselExampleControls.carousel.slide.img-fluid(data-ride='carousel')
+                            .carousel-inner
+                                .carousel-item.active
+                                    img.img-fluid.d-block.w-100(src="img/vector.png", alt="")
+                                .carousel-item
+                                    img.img-fluid.d-block.w-100(src="img/vector2.png", alt="")
+                                .carousel-item
+                                    img.img-fluid.d-block.w-100(src="img/vector3.png", alt="")
+            .col-12.col-sm-12.col-md-12.col-lg-6.col-xl-6
+                .d-flex
+                    .col-6
+                        #carouselExampleControls.carousel.slide.img-fluid(data-ride='carousel')
+                            .carousel-inner
+                                .carousel-item.active
+                                    img.img-fluid.d-block.w-100(src="img/icon.png", alt="")
+                                .carousel-item
+                                    img.img-fluid.d-block.w-100(src="img/icon2.png", alt="")
+                                .carousel-item
+                                    img.img-fluid.d-block.w-100(src="img/icon3.png", alt="")
+                    a.background-blue.col-6.d-flex.justify-content-center.align-items-center(href="icon.html")
+                        .text1
+                            p.normal ICON
+                            p Trên 6,300,000 kết quả
+                .d-flex
+                    a.background-yellow.col-6.d-flex.justify-content-center.align-items-center(href="photo.html")
+                        .text2
+                            p.normal PHOTO
+                            p Trên 4,200,000 kết quả
+                    .col-6
+                        #carouselExampleControls.carousel.slide.img-fluid(data-ride='carousel')
+                            .carousel-inner
+                                .carousel-item.active
+                                    img.img-fluid.d-block.w-100(src="img/photo.png", alt="")
+                                .carousel-item
+                                    img.img-fluid.d-block.w-100(src="img/photo2.png", alt="")
+                                .carousel-item
+                                    img.img-fluid.d-block.w-100(src="img/photo3.png", alt="")
+        .d-flex.justify-content-center  
+            .col-6.decor
+            
+    section.bo-suu-tap.container-md
+        .de-muc.d-flex.justify-content-center
+            p.large BỘ SƯU TẬP
+        .row.bo-suu-tap-box
+            .col-12.col-sm-6.col-md-6.col-lg-4.col-xl-4.bo-suu-tap-box-content1
+                .d-flex.justify-content-center
+                    .col-10.d-flex.justify-content-center.flex-column.bo-suu-tap-hover
+                        a.bo-suu-tap.text(href="background.html")
+                            .d-flex.justify-content-center
+                                p.xsmall BACK GROUND 
+                            .d-flex.justify-content-center
+                                p Trên 7,000,000 kết quả
+                        a.d-flex.justify-content-center(href="background.html").img-hover
+                            img.img-fluid(src="img/bosuutap/background.png", alt="background")
+            .col-12.col-sm-6.col-md-6.col-lg-4.col-xl-4.bo-suu-tap-box-content1
+                .d-flex.justify-content-center
+                    .col-10.d-flex.justify-content-center.flex-column.bo-suu-tap-hover
+                        a.bo-suu-tap.text(href="logo.html")
+                            .d-flex.justify-content-center
+                                p.xsmall LOGO
+                            .d-flex.justify-content-center
+                                p Trên 6,200,000 kết quả
+                        a.d-flex.justify-content-center(href="logo.html").img-hover
+                            img.img-fluid(src="img/bosuutap/logo.png", alt="logo")
+            .col-12.col-sm-6.col-md-6.col-lg-4.col-xl-4.bo-suu-tap-box-content1
+                .d-flex.justify-content-center
+                    .col-10.d-flex.justify-content-center.flex-column.bo-suu-tap-hover
+                        a.bo-suu-tap.text(href="business-card.html")
+                            .d-flex.justify-content-center
+                                p.xsmall BUSINESS CARD 
+                            .d-flex.justify-content-center
+                                p Trên 6,500,000 kết quả
+                        a.d-flex.justify-content-center(href="business-card.html").img-hover
+                            img.img-fluid(src="img/bosuutap/businesscard.png", alt="business-card")
+            .col-12.col-sm-6.col-md-6.col-lg-4.col-xl-4.bo-suu-tap-box-content2
+                .d-flex.justify-content-center
+                    .col-10.d-flex.justify-content-center.flex-column.bo-suu-tap-hover
+                        a.bo-suu-tap.text(href="infographic.html")
+                            .d-flex.justify-content-center
+                                p.xsmall INFOGRAPHIC 
+                            .d-flex.justify-content-center
+                                p Trên 5,600,000 kết quả
+                        a.d-flex.justify-content-center(href="infographic.html").img-hover
+                            img.img-fluid(src="img/bosuutap/infographic.png", alt="infographic")
+            .col-12.col-sm-6.col-md-6.col-lg-4.col-xl-4.bo-suu-tap-box-content3
+                .d-flex.justify-content-center
+                    .col-10.d-flex.justify-content-center.flex-column.bo-suu-tap-hover
+                        a.bo-suu-tap.text(href="banner.html")
+                            .d-flex.justify-content-center
+                                p.xsmall BANNER 
+                            .d-flex.justify-content-center
+                                p Trên 7,200,000 kết quả
+                        a.d-flex.justify-content-center(href="banner.html").img-hover
+                            img.img-fluid(src="img/bosuutap/banner.png", alt="banner")
+            .col-12.col-sm-6.col-md-6.col-lg-4.col-xl-4
+                .d-flex.justify-content-center
+                    .col-10.d-flex.justify-content-center.flex-column.bo-suu-tap-hover
+                        a.bo-suu-tap.text(href="pattern.html")
+                            .d-flex.justify-content-center
+                                p.xsmall PATTERN 
+                            .d-flex.justify-content-center
+                                p Trên 5,500,000 kết quả
+                        a.d-flex.justify-content-center(href="pattern.html").img-hover
+                            img.img-fluid(src="img/bosuutap/pattern.png", alt="pattern")
+        .d-flex.justify-content-center  
+            .col-6.decor
+    section.bai-viet.container-md
+        .de-muc.d-flex.justify-content-center
+            p.large BÀI VIẾT
+        #carouselExampleIndicators.carousel.slide(data-ride='carousel')
+            ol.carousel-indicators
+                li.active(data-target='#carouselExampleIndicators' data-slide-to='0')
+                li(data-target='#carouselExampleIndicators' data-slide-to='1')
+                li(data-target='#carouselExampleIndicators' data-slide-to='2')
+            .carousel-inner
+                .carousel-item.active
+                    .d-block.w-100
+                        .frame.frame1.d-flex.justify-content-center
+                            div
+                                .tieu-de-bai-viet.d-flex.align-items-center
+                                    p.number 14
+                                    p.ten-bai Phong cách thiết kế bạn cần biết
+                                .content-bai-viet
+                                    p Tối giản, trừu tượng, hay vintage? Bạn lựa chọn phong cách thiết kế nào để theo đuổi ? Những phong cách thiết kế nào đang dẫn đầu xu hướng trong năm nay?
+                                .d-flex.justify-content-center                        
+                                    a(href="baiviet1.html")
+                                        .svip-button.svip-button-index.goi-button.d-flex.justify-content-center
+                                            p.small XEM THÊM
+                .carousel-item
+                    .d-block.w-100
+                        .frame.frame2.d-flex.justify-content-center
+                            div
+                                .tieu-de-bai-viet.d-flex.align-items-center
+                                    p.number 5
+                                    p.ten-bai Lưu ý về sử dụng màu sắc trong Logo
+                                .content-bai-viet
+                                    p Giới thiệu kỹ hơn về mặt kỹ thuật của màu sắc trong thiết kế logo nói riêng và thiết kế đồ họa nói chung.
+                                .d-flex.justify-content-center                        
+                                    a(href="baiviet1.html")
+                                        .svip-button.svip-button-index.goi-button.d-flex.justify-content-center
+                                            p.small XEM THÊM
+                .carousel-item
+                    .d-block.w-100
+                        .frame.frame3.d-flex.justify-content-center
+                            div
+                                .tieu-de-bai-viet.d-flex.align-items-center
+                                    p.number 11
+                                    p.ten-bai Kho thiết kế đồ họa dành cho Designer
+                                .content-bai-viet
+                                    p Lần này tôi sẽ giới thiệu về vector, cùng tham khảo các kho vector miễn phí này để lấy ý tưởng cho thiết kế của mình nhé.
+                                .d-flex.justify-content-center                        
+                                    a(href="baiviet1.html")
+                                        .svip-button.svip-button-index.goi-button.d-flex.justify-content-center
+                                            p.small XEM THÊM
+            a.carousel-control-prev(href='#carouselExampleIndicators' role='button' data-slide='prev')
+                span.carousel-control-prev-icon(aria-hidden='true')
+                span.sr-only Previous
+            a.carousel-control-next(href='#carouselExampleIndicators' role='button' data-slide='next')
+                span.carousel-control-next-icon(aria-hidden='true')
+                span.sr-only Next
+        .d-flex.justify-content-center  
+            .col-6.decor
+
+
+
+
+
+

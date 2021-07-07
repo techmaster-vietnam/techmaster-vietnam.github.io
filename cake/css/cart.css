@@ -1,0 +1,148 @@
+/* CART LIST */
+.cart__list {
+  margin: 8rem 0 5rem 0;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  color: var(--color-grey);
+}
+
+table,
+td,
+th {
+  border: 1px solid var(--color-grey-2);
+  text-align: center;
+  height: 5rem;
+  font-family: Roboto;
+  font-style: normal;
+  font-size: 2rem;
+  line-height: 2.3rem;
+}
+
+th {
+  font-weight: bold;
+}
+
+td {
+  height: 17.6rem;
+  font-weight: 400;
+}
+.cart__delete {
+  width: 6.5rem;
+}
+.cart__photo {
+  width: 13.4rem;
+  display: inline-block;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.cart__photo img {
+  width: 100%;
+}
+
+.cart__img {
+  border: 1px solid var(--color-grey-2) !important;
+}
+.cart__select {
+  font-weight: bold;
+  font-family: "Roboto";
+  border: 2px solid var(--color-red);
+  border-radius: 50px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 8.5rem;
+  height: 4rem;
+}
+
+.cart__select i {
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+.cart__select i:hover {
+  color: var(--color-red);
+}
+.fa-trash-alt {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.fa-trash-alt:hover {
+  color: var(--color-red);
+}
+
+/* CART MONEY */
+p {
+  margin: 0;
+}
+
+.cart__money {
+  margin-bottom: 5rem;
+}
+.money__content {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2rem;
+  border: 1px solid var(--color-grey-2);
+  padding: 2rem 1.6rem;
+}
+
+.money__content > * {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.4rem;
+}
+
+.money__title {
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 2.3rem;
+
+  color: var(--color-grey);
+  margin-bottom: 2.1rem;
+  justify-content: center;
+}
+
+
+.money__total {
+  margin-bottom: 5rem;
+}
+
+.money__total p:first-child {
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 2.3rem;
+}
+
+.money__total p:last-child {
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 2.3rem;
+  color: var(--color-red);
+}
+
+.money__pay:link,
+.money__pay:visited {
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 2.3rem;
+  background-color: var(--color-red);
+
+  padding: 1rem 1rem;
+  border-radius: 0.5rem;
+  justify-content: center;
+  color: var(--color-white);
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.money__pay:hover,
+.money__pay:active {
+  color: var(--color-white);
+  background-color: var(--color-red-2);
+}

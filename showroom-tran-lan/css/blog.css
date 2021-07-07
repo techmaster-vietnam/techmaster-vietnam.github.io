@@ -1,0 +1,27 @@
+.hero{
+	background-image: url('../images/blogbanner.png');
+}
+@media(max-width: 320px){
+	.gt{
+		font-size: 13px;
+	}
+}
+* { box-sizing: border-box; }
+
+/* force scrollbar, prevents initial gap */
+html {
+  overflow-y: scroll; 
+}
+
+/* 5 columns, percentage width */
+.grid-item,
+.grid-sizer {
+  width: 20%;
+}
+.grid-item {
+  float: left;
+  height: 100px;
+}
+.grid-item--width2 { width: 40%; }
+.grid-item--height2 { height: 200px; }
+

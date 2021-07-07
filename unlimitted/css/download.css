@@ -1,0 +1,102 @@
+.img-frame{
+    background-color: #E5E5E5;
+}
+.img-frame-content img{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.download-box{
+    margin: 60px 0 200px 0;
+}
+
+
+.download-content{
+    background: white;
+}
+.quang-cao p{
+    font-weight: bold;
+}
+.quang-cao .large{
+    color: white;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.quang-cao{
+    padding: 80px 0 80px 0;
+    margin-top: 15px;
+    background-image: url("../img/download/quangcao.png");
+}
+.quang-cao .svip-button{
+    margin-top: 10px;
+}
+.download-content-box{
+    padding: 0px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+.download-content-box .xsmall{
+    margin-bottom: 10px;
+}
+.download-button{
+    width: 100%;
+    background-color:  #134A9B;
+    padding: 05px 0 05px 0;
+    margin: 20px 0 20px 0;
+}
+.ty-le-icon-img{
+    margin: 0px;
+}
+.dowload-ty-le,.dowload-mau-sac{
+    padding: 0px;
+}
+.dowload-ty-le-mau-sac{
+    position: relative;
+}
+.download-icon img{
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+}
+.download-icon{
+    position: absolute;
+    top: 100px;
+    right: 30px;
+}
+.download-star{
+    position: absolute;
+    top: -40px;
+    left: -40px;
+}
+.quang-cao-button p{
+    margin: 3px;
+}
+.yeu-cau{
+    color: red;
+}
+.yeu-cau-box,.yeu-cau-box2,.yeu-cau-box1{
+    display: none;
+    position: absolute;
+    top: -80px;
+    left: 0px;
+    z-index: 1000;
+    background-color: #E5E5E5;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.tai-xuong-thanh-cong{
+    position: absolute;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #E5E5E5;
+    width: 100%;
+    color: red;
+    top: -70px;
+    display: none;
+}
+.download{
+    background-image: url("../img/download/downloadbg.png");
+}
+.dong-y-dang-nhap,.tai-ve-cuisor{
+    cursor: pointer;
+}
+

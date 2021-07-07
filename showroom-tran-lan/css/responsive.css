@@ -1,0 +1,1045 @@
+/*responsive cho footer*/
+@media(min-width: 1024px){
+  .text1{
+    margin-top: -8px !important;
+  }
+}
+@media(min-width: 1920px){
+  .text1{
+    font-size: 34px !important;
+  }
+  .text1--2{
+    font-size: 20px !important;
+  }
+}
+@media(max-width: 1280px){
+  .text1{
+    font-size: 26px !important;
+  }
+  .text1--2{
+    font-size: 16px !important;
+  }
+  .under .under--text{
+    font-size: 26px;
+  }
+  .chinhsach,.baohiem,.lienket{
+    padding-left: 20px !important;
+  }
+
+}
+@media(max-width: 1024px){
+  .text1--2{
+    font-size: 14px !important;
+  }
+}
+@media(max-width: 992px){
+  .chinhsach,.baohiem,.lienket{
+    padding-left: 50px !important;
+  }
+}
+@media(max-width: 768px){
+  .text1{
+    font-size: 24px !important;
+  }
+  .text1--2{
+    font-size: 13px !important;
+  }
+  .under .under--text{
+    font-size: 20px;
+    padding: 10px 20px;
+  }
+  .row .khoinoidung{
+    border-right: none;
+  }
+  .chinhsach,.baohiem,.lienket{
+    padding-left: 50px !important;
+  }
+  .hr{
+    opacity: 1 !important;
+    margin-bottom: 20px !important;
+  }
+  .khoinoidung .bold{
+    font-weight: 400;
+  }
+}
+@media(max-width: 576px){
+  .chinhsach,.baohiem,.lienket{
+    padding-left: 25px !important;
+  }
+  .khoinoidung{
+    padding-bottom: 30px;
+  }
+  .under .under--text{
+    font-size: 15px;
+    padding: 10px 18px;
+  }
+  .under .under--text,.under--text__denso{
+    font-size: 12px;
+    letter-spacing: 0;
+    text-align: center !important;
+    padding: 0;
+  }
+  .chinhsach,.baohiem,.lienket {
+    text-align: center;
+    border-right: none !important;
+  }
+  .row .khoinoidung{
+    padding: 0 14px;
+  }
+}
+@media(max-width: 414px){
+  .hr2{
+    opacity: 1 !important;
+  }
+  .container-fluid .above{
+    padding-bottom: 5px;
+    padding-top: 10px;
+  }
+}
+@media(max-width: 320px){
+  .under .under--text,.under--text__denso{
+    font-size: 11px;
+  }
+}
+
+/*---------------------------------------------------------------
+  ---------------------------------------------------------------
+  ---------------------------------------------------------------
+  ---------------------------------------------------------------*/
+
+  /*responsive cho about us*/
+  @media(min-width: 1440px){
+    .gt{
+      padding-top: 20%;
+    }
+  }
+  @media(min-width: 1920px){
+    .gt{
+      padding-top: 18% ;
+    }
+    .row .gt3{
+      font-size: 26px;
+    }
+    .denso .text__denso2{
+      font-size: 20px;
+    }
+  }
+  @media(max-width: 1440px){
+    .gt{
+      padding-top: 25%;
+    }
+  }
+  @media(max-width: 1280px){
+    .wrap--content .row .department{
+      padding-left: 40px;
+      padding-top:20px;
+    }
+    .department .address{
+      font-size: 22px;
+      line-height: 1;
+    }
+    .department .address2{
+      font-size: 16px;
+      padding-bottom: 25px;
+    }
+    .department .wrap{
+      padding-top: 55px;
+      padding-bottom: 55px;
+    }
+    .row .gt3{
+      font-size: 1.5vw;
+    }
+    .text__denso2{
+      position: absolute;
+      top:70px;
+    }
+
+  }
+  @media(max-width: 1024px){
+    .gt{
+      padding-top: 30% ;
+    }
+    .department .address2{
+      padding-bottom: 10px;
+      font-size: 16px;
+    } 
+    .department .address{
+      font-size: 20px;
+    }
+    .department .wrap{
+      padding: 40px 0;
+    }
+
+  }
+  @media(max-width: 850px){
+    .denso .text__denso2{
+      font-size: 16px;
+    }
+  }
+  @media(min-width: 768px){
+    .wrap--content{
+      height: 45.15vw;
+    }
+
+  }
+  @media (max-width: 1200px) and (min-width: 1025px){
+    .department .address {
+      font-size: 18px;
+      margin-bottom: 2vw;
+    }
+    .department .address2 {
+      font-size: 14px;
+      padding-bottom: 0;
+    }
+    .department .wrap {
+      padding: 4vw 0;
+    }
+  }
+  @media (max-width: 992px) and (min-width: 769px){
+    .department .address {
+      font-size: 16px;
+      margin-bottom: 1vw;
+    }
+    .department .address2 {
+      font-size: 13px;
+      padding-bottom: 0;
+    }
+    .department .wrap {
+      padding: 3vw 0;
+    }
+  }
+  @media(max-width: 768px){
+    .gt{
+      padding-top: 45%;
+    }
+    .department .address{
+      font-size: 16px;
+      line-height: 0px;
+    }
+    .department .address2{
+      font-size: 12px;
+      padding-bottom: 15px;
+    } 
+    .department .wrap{
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+    .row .gt2{
+      padding-top: 60px;
+    }
+    .row .gt3{
+      padding-top: 30px;
+      padding-bottom: 80px;
+    }
+    .denso{
+      height: 400px !important;
+    }
+    .denso .text__denso2{
+      font-size: 13px;
+      position: absolute;
+      top:0;
+    }
+
+  }
+  @media(max-width: 576px){
+    .hero{
+      min-height: 400px !important;
+    }
+    nav{
+      height: auto;
+    }
+    .gt{
+      padding-top: 35%;
+    }
+    .row .gt2{
+      font-size: 22px;
+    }
+    .row .gt3{
+      font-size: 11px;
+    }
+    .container .logo{
+      font-size: 26px;
+    }
+    .header .navbar-light .navbar-nav .nav-link{
+      font-size: 16px;
+    }
+    .row .gt3{
+      margin: auto;
+      padding-top: 20px;
+      padding-bottom: 60px;
+    }
+    .container-fluid .wrap--content{
+      height: auto;
+    }
+    .department .wrap{
+      padding-bottom: 50px;
+    }
+    .department__span--text{
+      padding-top: 18px;
+    }
+    .denso .text__denso {
+      font-size: 24px;
+      position: absolute;
+      top: 0;
+    }
+    .denso .text__denso2{
+      font-size: 12px;
+    }
+    .department .name{
+      font-size: 20px;
+    }
+    .department .avt1{
+      width: 50px;
+      height: 50px;
+    }
+  }
+  @media(max-width: 428px){
+    .denso .text__denso2{
+      font-size: 11px;
+    }
+  }
+  @media(max-width: 360px){
+    .gt{
+      padding-top: 55%;
+      font-size: 20px;
+    }
+    .denso .text__denso2{
+      font-size: 10px;
+    }
+  }
+  @media(max-width: 320px){
+    .gt{
+      font-size: 18px;
+      padding-top: 60%;
+    }
+    .row .gt2{
+      font-size: 20px;
+      padding-top: 30px;
+    }
+    .row .gt3{
+      padding-bottom: 40px;
+    }
+    .department .department--text{
+      font-size: 16px;
+    }
+    .department .name{
+      font-size: 20px;
+    }
+    .wrap--content .row .department{
+      padding-left: 20px;
+    }
+    .denso .text__denso2{
+      font-size: 9px;
+    }
+  }
+/*---------------------------------------------------------------
+  ---------------------------------------------------------------
+  ---------------------------------------------------------------
+  ---------------------------------------------------------------*/
+
+  /*responsive cho contact*/
+  @media(min-width: 992px){
+    iframe{
+      height: 100%;
+    }
+  }
+  @media(max-width: 1024px){
+    .row .lhmuahang{
+      font-size: 33px;
+    }
+    .formupper{
+      padding-left: 20px;
+    }
+  }
+  @media(max-width: 768px){
+    .row .lhmuahang{
+      font-size: 28px;
+      height: 100px;
+    }
+    .formupper{
+      padding-top: 60px
+    }
+  }
+  @media(max-width: 576px){
+    .formupper{
+      padding-left: 0;
+    }
+    .row .lhmuahang{
+      font-size: 5vw;
+    }
+  }
+  @media(max-width: 360px){
+    input,textarea,.row .btn{
+      font-size: 12px;
+    }
+    span{
+      font-size: 16px
+    }
+    .row .lhmuahang{
+      font-size: 20px;
+      padding-right: 0;
+    }
+    .formupper .lienhe,.row legend{
+      font-size: 26px;
+    }
+  }
+  @media(max-width: 320px){
+    input,textarea,.row .btn{
+      font-size: 9.5px;
+    }
+    .row .lhmuahang{
+      font-size: 16px;
+    }
+  }
+
+/*---------------------------------------------------------------
+  ---------------------------------------------------------------
+  ---------------------------------------------------------------
+  ---------------------------------------------------------------*/
+
+  /*responsive cho index*/
+
+  @media(min-width: 1440px){
+    .imgres{
+      width: 100%;
+    }
+  }
+  @media(max-width: 1280px){
+    .carousel-caption .title{
+      font-size: 42px;
+    }
+    .carousel-caption .title-under{
+      font-size: 16px;
+    }
+    .spm--carousel{
+      position: absolute;
+      top: 30%;
+    }
+  }
+  @media(max-width: 1200px){
+    .row .sph--tdto{
+      font-size: 20px;
+    }
+    .carousel-caption .title{
+      font-size: 36px;
+      padding-bottom: 10px;
+    }
+    .carousel-caption .title-under{
+      font-size: 14px;
+    }
+    .carousel-item .carouselin{
+      position: absolute;
+      top: 16%;
+    }
+    .carousel--top--xt{
+      margin-top: 0px !important;
+    }
+    .underwelcome--title{
+      padding-bottom: 30px !important;
+    }
+    .row .underwelcome--text{
+      font-size: 16px;
+    }
+    .spm .spm--big{
+      font-size: 24px;
+    }
+    .row .spm{
+      position: absolute;
+      top: 20%;
+    }
+    .spm--small{
+      font-size: 14px;
+    }
+    .spm--td--list .spm__imput--radio{
+      font-size: 22px;
+      margin-right: 5%;
+    }
+    .row .spm--carousel{
+      width: 550px;
+      height: 200px;
+      font-size: 18px;
+      padding: 30px !important;
+      margin-top: 10px;
+    }
+    .row .kmbhtt{
+      font-size: 30px;
+    }
+    .avt{
+      width: 100px;
+      height: 100px;
+      padding-bottom: 20px !important;
+      margin-bottom: 10px;
+    }
+    .carousel-item .carousel--wrap{
+      font-size: 15.5px;
+      top:25%;
+    }
+    .tdto{
+      padding-top: 50px;
+    }
+    .row .dichvu--mid{
+      font-size: 30px;
+    }
+    .row .new1{
+      font-size: 38px;
+      padding-top: 70px;
+    }
+    .banner{
+      height: 400px !important;
+    }
+    .email .left{
+      height: 65px;
+      line-height: 65px;
+    }
+    .email .fa-chevron-right{
+      position: absolute;
+      top: 18px;
+    }
+    .email .far{
+      position: absolute;
+      top: 13px;
+    }
+  }
+  @media(max-width: 992px){
+    .spm .spm--big{
+      font-size: 18px;
+    }
+    .spm--small{
+      font-size: 10px;
+    }
+    .spm .nut{
+      font-size: 12px;
+      margin-top: 5px;
+    }
+    .row .spm{
+      top:12%;
+    }
+    .spm--td--list .spm__imput--radio{
+      font-size: 16px;
+    }
+    .row .sph--tdnho{
+      font-size: 23px;
+    }
+    .row .spm--carousel{
+      width: 500px;
+      height: 150px;
+      font-size: 16px;
+      padding: 20px !important;
+    }
+    .row .kmbhtt{
+      font-size: 23px;
+    }
+    .row .dichvu--mid{
+      font-size: 2.5vw;
+    }
+    .row .khoinoidung{
+      border-right: none;
+    }
+    .underwelcome--title{
+      padding-top: 50px;
+    }
+  }
+  @media(max-width: 768px){
+    .row .sph--tdto{
+      font-size: 17px;
+    }
+    .carousel-caption .title{
+      font-size: 32px;
+      padding-bottom: 10px;
+    }
+    .carousel-caption .title-under{
+      font-size: 12px;
+      line-height: 20px;
+    }
+    .carousel--top--xt{
+      font-size: 12px;
+    }
+    .row .welcome,.row .tdto{
+      font-size: 44px;
+    }
+    .underwelcome--title{
+      padding-top: 50px
+    }
+    .spm .spm--big{
+      font-size: 18.6px;
+    }
+    .spm--small{
+      font-size: 10.6px;
+    }
+    .spm .nut{
+      margin-top: 0;
+      font-size: 12px;
+      padding: 2px 5px;
+    }
+    .row .spm--td{
+      font-size: 22px;
+      margin-top: -25px;
+    }
+    .spm--td--list .spm__imput--radio{
+      font-size: 16px;
+      margin-right: 4.1%;
+    }
+    .carousel-control-next .next{
+      left: -850%;
+    }
+    .row .spm--carousel{
+      width: 350px;
+      height: 78px;
+      font-size: 14px;
+      overflow:hidden;
+      padding: 10px !important;
+    }
+    .row .sph--tdnho{
+      font-size: 21px;
+    }
+    .row .kmbhtt{
+      font-size: 23.6px;
+    }
+    .avt{
+      width: 80px;
+      height: 80px;
+      margin-bottom: 20px;
+      padding-bottom: 10px !important;
+    }
+    .carousel-item .carousel--wrap{
+      font-size: 16px;
+      line-height: 25px;
+    }
+    .row .dichvu--mid{
+      font-size: 23px;
+    }
+    .row .new1{
+      font-size: 34px;
+      padding-top: 50px;
+    }
+    .banner{
+      height: 300px !important;
+    }
+    .email .left{
+      height: 60px;
+      line-height: 60px;
+    }
+    .email .fa-chevron-right{
+      position: absolute;
+      top: 15px;
+    }
+    .email .far{
+      position: absolute;
+      top: 16px;
+      font-size: 30px;
+    }
+  }
+  @media(max-width: 576px){
+    .carousel-control-next .next{
+      left: -950%;
+    }
+    .bd-example .slide{
+      margin-top: 65px;
+    }
+    .cachduoi{
+      padding-bottom:50px;
+    }
+    .spm .spm--big{
+      font-size: 29px;
+    }
+    .spm .spm--small{
+      font-size: 16px;
+      padding-bottom: 50px;
+    }
+    .spm .nut{
+      font-size: 20px;
+      display: block;
+      width: 100px;
+      margin: auto;
+      margin-top: 20px;
+    }
+    .tdto{
+      padding-top: 0;
+      padding-bottom: 10px;
+    }
+    .row .spm--td{
+      font-size: 20px;
+    }
+    .spm__imput--radio{
+      margin-bottom: 20px;
+    }
+    .row .spm--carousel{
+      width: 300px;
+      height: 100px;
+      overflow: hidden;
+      font-size: 13px;
+    }
+    .row .sph--tdto{
+      font-size: 14px;
+    }
+    .row .sph--tdnho{
+      font-size: 16px;
+    }
+    .carousel .prev{
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      left: -525%;
+    }
+    .carousel .next{
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      right: 0;
+    }
+    .row .kmbhtt{
+      font-size: 32px;
+    }
+    #carouselExampleControls{
+      padding-top: 0 !important;
+    }
+    .cachduoi1{
+      margin-bottom: 30px;
+    }
+    .carousel-item .carousel--wrap{
+      top:20%;
+    }
+    .row .dichvu--mid{
+      font-size: 30px;
+    }
+    .row .new1{
+      font-size: 26px;
+    }
+    .avt{
+      width: 100px;
+      height: 100px;
+      margin-bottom: 20px;
+    }
+  }
+  @media(max-width: 500px){
+    .spm--carousel{
+      display: none;
+    }
+    .row .sph--tdto{
+      font-size: 4vw;
+    }
+    .row .dichvu--mid{
+      font-size: 22px;
+    }
+  }
+  @media(max-width: 360px){
+    .row .welcome{
+      font-size: 30px;
+    }
+    .spm .spm--big{
+      font-size: 24px;
+    }
+    .spm .nut{
+      margin-top: 10px;
+    }
+    .row .tdto{
+      font-size: 36px;
+    }
+    .row .spm--td{
+      font-size: 17px;
+    }
+    .spm_span-radio{
+      font-size: 14px;
+    }
+    .row .sph--tdnho{
+      font-size: 13px;
+    }
+    .spm--carousel{
+      display: none
+    }
+    .sph--tdnho{
+      background: rgba(0, 0, 0, 0.73);
+      color: white;
+      padding: 10px;
+    }
+    .row .new1{
+      font-size: 18px;
+    }
+    .carousel-item .carousel--wrap{
+      top: 15%;
+    }
+    .row .dichvu--mid{
+      font-size: 19px;
+    }
+    .row .email{
+      margin-top: 40px;
+      width: 280px;
+      margin-left: -35px;
+    }
+    .email .fa-chevron-right{
+      left: 89%;
+      top: 13px;
+      font-size: 25px;
+    }
+    .email .far{
+      left: 15px;
+      top: 13px;  
+      font-size: 25px;  
+    }
+    .row .underwelcome--text{
+      font-size: 14px;
+    }
+    .email .left{
+      height: 50px;
+      line-height: 50px;
+    }
+    .carousel .next{
+      left: -850%;
+    }
+  }
+  @media(max-width: 320px){
+    .spm .spm--small,.spm .nut{
+      font-size: 14px;
+    }
+    .row .spm{
+      top: 15%;
+    }
+    .spm__imput--radio{
+      margin-bottom: 10px;
+    }
+    .spm__imput--radio .spm_span-radio{
+      padding-left: 5px;
+    }
+    .sph--tdnho{
+      display: none;
+    }
+    .row .kmbhtt{
+      font-size: 30px;
+    }
+    .carousel-item .carousel--wrap{
+      font-size: 14px;
+      line-height: 20px;
+      font-weight: 300;
+    }
+    .row .dichvu--mid{
+      font-size: 18px;
+    }
+    .row .new1{
+      font-size: 20px;
+    }
+    .row .email{
+      width: 260px;
+    }
+  }
+
+/*---------------------------------------------------------------
+  ---------------------------------------------------------------
+  ---------------------------------------------------------------
+  ---------------------------------------------------------------*/
+
+  /*responsive cho products*/
+
+  @media(max-width: 1024px){
+    .container .product__list{
+      font-size: 17px;
+    }
+    .row .orderBy,.row .orderBy--choice{
+      font-size: 22px;
+    }
+    .ghsvg{
+      width: 150px;
+    }
+  }
+
+  @media(max-width: 768px){
+    .container .product__list{
+      font-size: 11.4px;
+    }
+    .row .orderBy,.row .orderBy--choice{
+      font-size: 18px;
+    }
+    .ghsvg{
+      width: 120px;
+    }
+    .mid .orderBy--choice--input{
+      margin-left: 15px;
+    }
+    .row .orderBy--choice{
+      padding-left: 5px;
+    }
+  }
+
+  @media(max-width: 576px){
+    .row .orderBy,.row .orderBy--choice{
+      font-size: 15px;
+    }
+    .mid .orderBy--choice--input{
+      margin-left: 10px;
+    }
+  }
+
+  @media(max-width: 360px){
+    .mid{
+      margin-top: 20px
+    }
+    .ghsvg{
+      width: 80px;
+    }
+    .search1{
+      transform: translateY(2px);
+    }
+    .product__list--all{
+      font-size: 11.4px;
+    }
+  }
+
+  @media(max-width: 320px){
+    .container .product__list,.product__list--all{
+      font-size: 9.5px;
+    }
+  }
+
+
+/*---------------------------------------------------------------
+  ---------------------------------------------------------------
+  ---------------------------------------------------------------
+  ---------------------------------------------------------------*/
+
+  /*responsive cho detail*/
+
+  @media(max-width: 576px){
+    .row .detail__text,.row .detail__text2{
+      letter-spacing: 0;
+      line-height: 20px;
+    }
+    .detail__lhmh{
+      padding: 35px 0;
+      margin-top: -55px;
+    }
+  }
+  @media(max-width: 360px){
+    .detail__lhmh{
+      padding: 20px 0;
+      font-size: 16px;
+      margin-top: 0;
+    }
+    .detail__text{
+      display: none;
+    }
+    .row .detail__text2{
+      visibility: visible;
+      line-height: 15px;
+      font-size: 10px;
+    }
+  }
+
+/*---------------------------------------------------------------
+  ---------------------------------------------------------------
+  ---------------------------------------------------------------
+  ---------------------------------------------------------------*/
+
+
+  /*responsive cho purchase*/
+
+  @media(min-width: 1440px){
+    .tieude{
+      font-size: 60px;
+    }
+  }
+  @media(max-width: 576px){
+    .purchase__lhmh--tk{
+      display: none;
+    }
+    .purchase__lhmh--info{
+      text-align: center;
+      font-size: 18px;
+    }
+    .ttmh,.tt{
+      border-radius: 2px;
+    }
+  }
+
+
+/*---------------------------------------------------------------
+  ---------------------------------------------------------------
+  ---------------------------------------------------------------
+  ---------------------------------------------------------------*/
+
+  /*responsive cho purchase continue*/
+
+  @media(max-width: 576px){
+    .khoilhmh{
+      padding-top: 4vw;
+    }
+  }
+  @media(max-width: 360px){
+    .khoithanhtoan__radio{
+      font-size: 12.5px;
+      padding-left: 5px;
+    }
+    .align__left{
+      text-align: left;
+    }
+    .ttmh,.tt{
+      font-size: 12px;
+    }
+    .purchase__lhmh--info{
+      font-size: 16px;
+    }
+  }
+
+
+/*---------------------------------------------------------------
+  ---------------------------------------------------------------
+  ---------------------------------------------------------------
+  ---------------------------------------------------------------*/
+
+  /*responsive cho succes*/
+
+  @media(max-width: 768px){
+    .row .success__confirm{
+      font-size: 14px;
+    }
+  }
+  @media(max-width: 576px){
+    .row .success__confirm{
+      font-size: 12px;
+    }
+  }
+  @media(max-width: 360px){
+    .row .success__confirm{
+      font-size: 10px;
+    }
+    .row .success__alert{
+      font-size: 22px;
+    }
+  }
+
+/*---------------------------------------------------------------
+  ---------------------------------------------------------------
+  ---------------------------------------------------------------
+  ---------------------------------------------------------------*/
+
+  /*responsive cho service*/
+
+  @media(max-width: 1024px){
+    .row .aboutService{
+      font-size: 36px;
+    }
+  }
+  @media(max-width: 768px){
+    .row .aboutService{
+      font-size: 32px;
+    }
+  }
+  @media(max-width: 576px){
+    .row .aboutService{
+      font-size: 26px;
+    }
+  }
+  @media(max-width: 360px){
+    .row .aboutService{
+      font-size: 22px;
+    }
+  }
+  @media(max-width: 320px){
+    .row .aboutService{
+      font-size: 20px;
+    }
+  }
+
+
+
+
+
+

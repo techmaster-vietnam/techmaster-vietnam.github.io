@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Admin</title>
+    <link rel="shortcut icon" href="./Images/Favicon.jpg" type="image/x-icon" />
+
+    <!-- Boootstrap CSS library -->
+    <link rel="stylesheet" href="./lib/Bootstrap-4.5.3/css/bootstrap.css" />
+    <!-- CSS Chung -->
+    <link rel="stylesheet" href="./css/main.css">
+
+    <style>
+      body
+        {
+          background-color: #FFFFFF;
+        }
+      a, a:hover
+        {
+          color: #7051EF;
+        }
+
+      .delete-form 
+        {
+          position: fixed;
+          left: 50%;
+          top: 50%;
+          padding-top: 10px;
+          width: 320px;
+          height: 100px;
+          display: none;
+          justify-content: center;
+          flex-wrap: wrap;
+          border-radius: 4px;
+          background-color: #7051ef;
+          transform: translate(-50%, -50%);
+        }
+      .delete-form p
+        {
+          width: 100%;
+          text-align: center;
+          color: #FFFFFF;
+        }
+      .delete-group-btn 
+        {
+          padding: 8px;
+          width: 100%;
+          display: flex;
+          flex-wrap: nowrap;
+        }
+      .delete-group-btn button 
+        {
+          margin: 5px;
+          width: 100%;
+          height: 30px;
+          outline: none;
+          border: none;
+          border-radius: 4px;
+          color: black;
+          background-color: white;
+        }
+      .delete-group-btn button:hover 
+        {
+          background-color: #B2B2B2;
+        }
+    </style>
+  </head>
+
+  <body>
+    <!-- Đây là phần hiển thị Table -->
+    <div class="container" id="tableID">
+      <div class="break-40"></div>
+      <h2 class="header-32-36 text-center">Danh sách khách hàng</h2>
+      <div class="break-40"></div>
+
+      <!-- Thông báo xác thực xóa dữ liệu -->
+      <!-- ------------ ------------ ------------ ------------ ------------ ------------ -->
+      <div class="delete-form">
+        <p>Đã hoàn thành đơn hàng</p>
+        <div class="delete-group-btn">
+          <button onclick="realDelete()">Yes</button>
+          <button onclick="cancelDelete()">No</button>
+        </div>
+      </div>
+
+      <!-- Thông tin bảng hiển thị -->
+      <!-- ------------ ------------ ------------ ------------ ------------ ------------ -->
+      <table class="table table-hover">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col" class="text-center">ID</th>
+            <th scope="col">Name</th>
+            <th scope="col">Email Address</th>
+            <th scope="col">Phone number</th>
+            <th scope="col" style="width: 30%">Message</th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody id="data-table"></tbody>
+      </table>
+    </div>
+
+    <!-- //////////// //////////// //////////// //////////// //////////// //////////// -->
+    <!-- jQuerry Ajax JS library -->
+    <script src="./lib/jQuerry-Ajax-3.5.1/jquery-3.5.1.js"></script>
+    <!-- Boootstrap JS library -->
+    <script src="./lib/Bootstrap-4.5.3/js/bootstrap.js"></script>
+    <!-- //////////// //////////// //////////// //////////// //////////// //////////// -->
+
+    <script>
+      const idPrefix = "cilent-";
+      let containerDisplay = document.getElementById("tableID");
+
+      $(() => 
+        {
+          loadingDone();
+        });
+
+      // Tải dữ liệu khách hàng
+      // ------------ ------------ ------------ ------------ ------------ ------------
+      function loadingDone() 
+        {
+          $.ajax
+            ({
+                method: "GET",
+                url: "https://server-dungbu.herokuapp.com/users",
+            })
+            .done(function (data) 
+              {
+                let content = ``;
+                for (let i = 0; i < data.length; i++) 
+                  {
+                    content += `<tr>
+                                <td> ${data[i].id}</td>
+                                <td> ${data[i].name}</td>
+                                <td> ${data[i].email}</td>
+                                <td> ${data[i].phone}</td>
+                                <td> ${data[i].message}</td>
+
+                                <td><a href="#" class="bt-delete" id="${idPrefix}${data[i].id}"
+                                    onclick="deleteCilent(${data[i].id}, this)">Xóa</a></td>
+                                </tr>`;
+                  }
+                $("#data-table").html(content);
+                addEventDeleteCilent();
+              });
+        }
+
+      // Xác thực hành động xóa khách hàng
+      // ------------ ------------ ------------ ------------ ------------ ------------
+      function deleteCilent(id, element) 
+        {
+          $(".delete-form").css("display", "flex");
+          deleteId = id;
+          deleteElement = $(element).parent().parent();
+        }
+
+      // Xóa khách hàng
+      // ------------ ------------ ------------ ------------ ------------ ------------
+      function realDelete()
+        {
+          $.ajax(
+            {
+              method: "DELETE",
+              url: `https://server-dungbu.herokuapp.com/users/${deleteId}`,
+            })
+            .done(() => 
+              {
+                deleteElement.remove();
+              });
+            $(".delete-form").css("display", "none");
+        }
+
+      // Dừng hành động xóa khách hàng
+      // ------------ ------------ ------------ ------------ ------------ ------------
+      function cancelDelete() 
+        {
+          $(".delete-form").css("display", "none");
+        }
+    </script>
+  </body>
+</html>

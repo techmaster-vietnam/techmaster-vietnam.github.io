@@ -1,0 +1,154 @@
+/* ------------ ------------ ------------ ------------ */
+/* --Landing Page-- ------ */
+.landing-page
+  {
+    width: 100%;
+    height: 100vh;
+    padding-left: 10rem;
+    background-image: url(../Images/Projects/ProjectsBackground.png);
+    background-color: #FAFAFA;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+.landing-page-bg
+  {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+.landing-page-content
+  {
+    margin-top: 24rem;
+    width: 48rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+
+/* ------------ ------------ ------------ ------------ */
+/* --Background-- ------ */
+.bg
+  {
+    background-image: url(../Images/Projects/BG.png);
+    background-color: #FFFFFF;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+
+/* ------------ ------------ ------------ ------------ */
+/* --Projects-- ------ */
+.grid-container, .grid-container2
+  {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: auto auto auto;
+  }
+.grid-item
+  {
+    position: relative;
+  }
+.grid-item img
+  {
+    width: 100%;
+  }
+.grid-item-hover-bg
+  {
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 0px;
+    bottom: 0;
+    background-color: #7051EF;
+
+    transition: all 400ms ease-out;
+  }
+.grid-item-name
+  {
+    z-index: 2;
+    position: absolute;
+    display: none;
+
+    transition: all 400ms ease-out;
+    animation: peak-in 400ms ease-out forwards;
+  }
+
+.grid-item:hover .grid-item-hover-bg
+  {
+    height: 100%;
+  }
+.grid-item:hover .grid-item-name
+  {
+    display: flex;
+  }
+@keyframes peak-in
+  {
+    from
+      {
+        top: 100%;
+        left: 10%;
+      }
+    to
+      {
+        top: 60%;
+        left: 10%;
+      }
+  }
+
+
+/* ------------ ------------ ------------ ------------ */
+/* --Projects Items-- ------ */
+#projects-PPT04, #projects-PPT05, #projects-PPT06,
+#projects-PPT07, #projects-PPT08, #projects-PPT09,
+#projects-WEB04, #projects-WEB05, #projects-WEB06,
+#projects-WEB07, #projects-WEB08, #projects-WEB09,
+#projects-IG04, #projects-IG05, #projects-IG06,
+#projects-IG07, #projects-IG08, #projects-IG09
+  {
+    display: none;
+  }
+
+
+/* ------------ ------------ ------------ ------------ */
+/* --RESPONSIVE-- ------ */ 
+/* @media (max-width: 1200px)
+  {
+  } */
+
+/* @media (max-width: 992px)
+  {
+  } */
+
+@media (max-width: 768px)
+  {
+    /* --Landing Page-- ------ */
+    .landing-page, .bg
+      {
+        padding-left: 0;
+      }
+    .landing-page
+      {
+        background-image: none;
+      }
+  }
+
+@media (max-width: 576px)
+  {
+    /* --Landing Page-- ------ */
+    .landing-page-content
+      {
+        width: 100%;
+      }
+  }
+
+@media (max-width: 320px)
+  {
+    /* --Projects-- ------ */
+    .grid-container, .grid-container2
+      {
+        grid-gap: 0.4rem;
+      }
+  }

@@ -1,0 +1,59 @@
+extends template-part/layout4.pug
+block style
+    link(rel="stylesheet", href="css/baiviet.css")
+    link(rel="stylesheet", href="css/thanhtoan.css")
+block content
+    .thanh-toan-content.bai-viet.container-md
+        .thanh-toan-logo.d-flex.justify-content-center
+            .col-4.col-sm-4.col-md-3.col-lg-3.col-xl-2
+                img.img-fluid(src="img/logo.png", alt="")
+
+        .row
+            .col-12.col-sm-12.col-md-12.col-lg-6.col-xl-6
+                img.img-fluid(src="img/map.png", alt="")
+                .location
+                    p.truso Trụ sở chính:&nbsp;
+                    p Tâng 15, KeangNam LandMark 72,Phạm Hùng,Từ Liêm, Hà nội
+                .lien-he-box.d-flex.row
+                    .col-6.col-sm-6.col-md-3.col-lg-3.col-xl-3.support-box.support-box1.support-box-border
+                        .col-12.d-flex.justify-content-center   
+                            .col-5.col-sm-3.col-md-8.col-lg-10.col-xl-8
+                                    img.img-fluid(src="img/lienhe/call.png", alt="call-icon")
+                        .col-12.d-flex.justify-content-center.support-text
+                            p Viết thư, gọi điện hoặc gửi tin nhắn 
+                    .col-6.col-sm-6.col-md-3.col-lg-3.col-xl-3.support-box.support-box1.support-box-border.support-box-border2
+                        .col-12.d-flex.justify-content-center   
+                            .col-5.col-sm-3.col-md-8.col-lg-10.col-xl-8
+                                img.img-fluid(src="img/lienhe/location.png", alt="location")
+                        .col-12.d-flex.justify-content-center.support-text
+                            p Đến chi nhánh gần Quý khách nhất 
+                    .col-6.col-sm-6.col-md-3.col-lg-3.col-xl-3.support-box.support-box2.support-box-border
+                        .col-12.d-flex.justify-content-center   
+                            .col-5.col-sm-3.col-md-8.col-lg-10.col-xl-8
+                                img.img-fluid(src="img/lienhe/support.png", alt="support")
+                        .col-12.d-flex.justify-content-center.support-text
+                            p Tìm lời giải đáp thắc mắc
+                    .col-6.col-sm-6.col-md-3.col-lg-3.col-xl-3.support-box.support-box2
+                        .col-12.d-flex.justify-content-center   
+                            .col-5.col-sm-3.col-md-8.col-lg-10.col-xl-8
+                                img.img-fluid(src="img/lienhe/info.png", alt="support")
+                        .col-12.d-flex.justify-content-center.support-text
+                            p Quý khách cần thêm thông tin
+            .col-12.col-sm-12.col-md-12.col-lg-6.col-xl-6.lien-he-content              
+                .bai-viet-border1
+                    p.small 1.Thắc mắc về sản phẩm/ dịch vụ         
+                    .bai-viet-text
+                        p Nếu Quý khách có bất kỳ thắc mắc nào liên quan đến các sản phẩm, dịch vụ của chúng tôi, vui lòng tham khảo mục Câu Hỏi Thường GặpCâu Hỏi Thường Gặp để tìm hiểu thêm về các câu hỏi thường gặp liên quan đến sản phẩm và dịch vụ của chúng tôi để tìm nhanh câu trả lời. Ngoài ra Quý khách cũng có thể lựa chọn cách thức liên lạc phù hợp để chúng tôi có thể hỗ trợ Quý khách tốt nhất.
+                .bai-viet-border2.bai-viet-down
+                    p.small 2.Khen ngợi nhân viên chúng tôi         
+                    .bai-viet-text
+                        p Tại Unlimitted, chúng tôi cam kết mang đến cho Quý khách trải nghiệm đẳng cấp thế giới với các sản phẩm và dịch vụ tối ưu. Nếu Quý khách cảm thấy hài lòng khi làm việc với chúng tôi hoặc đơn giản đã có những trải nghiệm tuyệt vời, chúng tôi rất mong được lắng nghe những khen ngợi của Quý khách. Đây là động lực để chúng tôi có thể phục vụ Quý khách ngày càng tốt hơn 
+                .bai-viet-border1.bai-viet-down
+                    p.small 3.Đóng góp ý kiến        
+                    .bai-viet-text
+                        p Ý kiến đóng góp của Quý khách rất quý giá, giúp chúng tôi phục vụ Quý khách và tất cả khách hàng ngày càng tốt hơn. Những ý kiến này cũng giúp chúng tôi duy trì tiêu chuẩn cao với các sản phẩm và dịch vụ và đáp ứng nhu cầu khách hàng tối ưu nhất. Chúng tôi rất muốn được lắng nghe những ý kiến đóng góp của Quý khách
+
+                .bai-viet-border2.bai-viet-down
+                    p.small 4.Gửi khiếu nại       
+                    .bai-viet-text
+                        p Nếu chúng tôi chưa đáp ứng được sự hài lòng của Quý khách, chúng tôi rất muốn lắng nghe ý kiến của Quý khách để ngày càng hoàn thiện. Sau khi nhận được khiếu nại của Quý khách, chúng tôi sẽ phúc đáp trong thời gian sớm nhất. Các khiếu nại sẽ được giải quyết trong vòng bảy ngày làm việc, trừ khi pháp luật hiện hành có quy định khác. Trường hợp phức tạp có thể cần thêm thời gian để xem xét giải quyết, chúng tôi sẽ thông báo cho Quý khách.

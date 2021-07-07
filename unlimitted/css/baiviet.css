@@ -1,0 +1,68 @@
+
+.bai-viet-logo{
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+.bai-viet-text,.bai-viet-text2{
+    padding:0 0 0 20px;
+}{
+    padding:0 0 0 20px;
+}
+.bai-viet-img,.bai-viet-img2{
+    padding: 0px;
+    padding-left: 20px;
+    padding-top: 3px;
+}
+.bai-viet .small{
+    color: #134A9B;
+    padding-left: 20px;
+}
+.bai-viet-border1{
+    border-left: 10px solid #134A9B;
+}
+.bai-viet-border2{
+    border-left: 10px solid #FFCA00;
+}
+.bai-viet-down{
+    margin-top: 50px;
+}
+.ngay-dang{
+    margin-bottom: 20px;
+    font-size: 11px;
+    padding-left: 20px;
+    font-style: italic;
+}
+.truso{
+    font-weight: bold;
+    color:#134A9B
+}
+.location{
+    margin-top: 20px;
+    margin-bottom:40px;
+}
+
+.lien-he-box{
+    background-color: #00000070;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.support-box{
+    padding: 0px;
+    color: white;
+    cursor: pointer;
+}
+.support-box-border{
+    border-right: 1px solid #D9D9D9;
+}
+.support-text{
+    margin-top: 10px;
+}
+.ten-bai-viet{
+    text-align: center;
+}
+.bai-viet-weight{
+    font-weight: bold;
+}
+.mo-dau-bai-viet{
+    margin: 100px 0 50px 0;
+}

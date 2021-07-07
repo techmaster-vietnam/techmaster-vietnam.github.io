@@ -1,0 +1,274 @@
+@media(max-width:1200px){
+    .chu-thich-trang p,.large{
+        font-size: 30px;
+    }
+    .xlarge{
+        font-size: 40px;
+    }
+    .large{
+        font-size: 33px;
+    }
+    .normal{
+        font-size: 26px;
+    }
+    .small{
+        font-size: 18px;
+    }
+    .xsmall{
+        font-size: 15px;
+    }
+    .footer-small{
+        font-size: 11px;
+    }
+
+}
+@media(max-width:991px){
+    .profile1{
+        top: -40px;
+    }
+    .download-icon{
+        right: 25px;
+    }
+    .nav-item{
+        padding:10px 0 10px 0!important;
+    }
+    .download-content-box{
+        padding: 0 15px 0 15px;
+    }
+    .quang-cao{
+        margin-bottom: 15px;
+        padding: 50px 0 50px 0;
+    }
+    .download-content{
+        padding-right: 0px;
+    }
+    .tai-khoan-ngan-hang{
+        margin-top: 50px;
+    }
+    .goi-tai-nguyen-frame{
+        padding: 0 10% 0 10%;
+    }
+    .svip-frame,.vip-frame{
+        padding-top:50px ;
+    }
+    .lien-he-content {
+        margin-top: 80px;
+    }
+    
+}
+@media(max-width:800px){
+    p,label,::placeholder{
+        font-size: 12px;
+    }
+    .filter-title p{
+        font-size: 14px;
+    }
+    .ty-le-content p{
+        margin-bottom: 9px;
+    }
+    .chu-thich-trang p,.large{
+        font-size: 25px;
+    }
+    .xlarge{
+        font-size: 35px;
+    }
+    .large{
+        font-size: 30px;
+    }
+    .normal{
+        font-size: 22px;
+    }
+    .small{
+        font-size: 17px;
+    }
+    .xsmall{
+        font-size: 15px;
+    }
+    .footer-icon{
+        margin: 0 10px 0 10px!important;
+    }
+    
+}
+@media(max-width:768px){
+    .download-icon{
+        right: 15px;
+    }
+    .download-box{
+        margin: 60px 0 60px 0;
+    }
+    .dowload-mau-sac{
+        justify-content: start!important;
+        margin-top: 5px;
+        margin-bottom:5px;
+    }
+    
+    .bo-suu-tap-box-content2{
+        margin-bottom: 50px;
+    }
+    .footer a{
+        margin: 0 5px 0 5px;
+    }
+    .footer-small{
+        font-size: 09px;
+    }
+    .sale-text{
+        top: 20%;
+        padding: 0px;
+    }
+    .header-content {
+        padding-top: 150px;
+    }
+    .support-box1{
+        padding-bottom: 30px;
+        border-bottom: 1px solid #D9D9D9;
+    }
+    .support-box2{
+        padding-top: 30px;
+    }
+    .support-box-border2{
+        border-right: none;
+    }
+}
+@media(max-width:576px){
+    .quang-cao{
+        padding: 20px 0 20px 0;
+    }
+    .download-star img{
+        width: 50px;
+        height: 50px;
+    }
+    .download-star{
+        top: -20px;
+        left: -20px;
+    }
+    .download-icon{
+        right: 10px;
+        top: 50px;
+    }
+    .download-box{
+        margin: 40px 0 40px 0;
+    }
+    .download-content{
+        padding-right: 15px;
+    }
+    .download-content-box{
+        padding: 0;
+    }
+    .img-frame-content img{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .bo-suu-tap-box-content3{
+        margin-bottom: 50px;
+    }
+    .bai-viet-logo,.thanh-toan-logo{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .bai-viet-text{
+        padding:20px 0 0 0px;
+    }
+    .bai-viet-text2{
+        padding:0px;
+    }
+    .bai-viet .small,.bai-viet-img,.bai-viet-img2,.ngay-dang{
+        padding-left:0px;
+    }
+    .bai-viet-img2{
+        padding-top: 20px;
+    }
+    .bai-viet-border1,.bai-viet-border2{
+        border-left: none;
+    }
+    .bo-loc{
+        margin: 10px 0 10px 0;
+    }
+    .mau-sac img{
+        margin: 3px;
+    }
+    .filter-content{
+        margin-top: 3px;
+    }
+    .filter-row{
+        margin-top: 10px;
+    }
+    .header-content {
+        padding-top: 100px;
+    }
+    .search-box {
+        padding-bottom: 150px;
+    }
+}
+@media(max-width:500px){
+    p,label,::placeholder{
+        font-size: 11px;
+    }
+    .filter-title p{
+        font-size: 13px;
+    }
+    .ty-le-content p{
+        margin-bottom: 12px;
+    }
+    .ngay-dang{
+        font-size: 09px;
+    }
+    .chu-thich-trang p{
+        font-size: 20px;
+    }
+    .large{
+        font-size: 25px;
+    }
+    .xlarge{
+        font-size: 30px;
+    }
+    .normal{
+        font-size: 18px;
+    }
+    .small{
+        font-size: 16px;
+    }
+    .xsmall{
+        font-size: 14px;
+    }
+    .footer-small{
+        font-size: 08px;
+    }
+    .footer-icon img{
+        width: 10px;
+        height: 10px;
+    }
+    .down-arrow img{
+        width: 10px;
+        height: 10px;
+        margin-left: 2px;
+    }
+}
+@media(max-width:400px){
+    .check-box-text{
+        bottom: 55px;
+    }
+    p,label,::placeholder{
+        font-size: 10px;
+    }
+    .ty-le-content p{
+        margin-bottom: 12.5px;
+    }
+    .ngay-dang{
+        font-size: 08px;
+    }
+    .chu-thich-trang p,.large{
+        font-size: 18px;
+    }
+    .xlarge{
+        font-size: 25px;
+    }
+    .normal{
+        font-size: 16px;
+    }
+    .small{
+        font-size: 14px;
+    }
+    .xsmall{
+        font-size: 13px;
+    }
+}

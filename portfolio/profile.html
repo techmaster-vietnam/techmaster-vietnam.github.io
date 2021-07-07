@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>DungBu • Profile</title>
+    <link rel="shortcut icon" href="./Images/Favicon.jpg" type="image/x-icon">
+
+    <!-- Boootstrap CSS library -->
+    <link rel="stylesheet" href="./lib/Bootstrap-4.5.3/css/bootstrap.css">
+    <!-- CSS Chung - AOS -->
+    <link rel="stylesheet" href="./lib/AOS-Animation-On-Scroll/dist/aos.css">
+    <!-- CSS Chung - Owl Carousel -->
+    <link rel="stylesheet" href="./lib/OwlCarousel2-2.3.4/dist/assets/owl.carousel.css">
+    <link rel="stylesheet" href="./lib/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <!-- CSS Chung -->
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- CSS Riêng -->
+    <link rel="stylesheet" href="./css/profile.css">
+    <!-- CSS Chung - Hamburger menu -->
+    <link rel="stylesheet" href="./lib/burger-menu.css">
+    <!-- Font Awesome 5.14 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  </head>
+
+  <body>
+    <header id="headerID"> <!-- //////////// //////////// //////////// //////////// -->
+      <!-- Navbar - General Css------------------------------------------------------------------------------------------------ -->
+      <div class="vertical-navbar">
+        <a class="logo-MD" href="./index.html"><img src="./Images/Logo.png" alt="MD Logo"></a>
+
+        <nav class="navbar">
+          <a class="menu-item" href="index.html">
+            <span class="menu-title">home</span>
+            <div class="decor-mini"></div>
+          </a>
+          <a class="menu-item" href="projects.html">
+            <span class="menu-title">projects</span>
+            <div class="decor-mini"></div>
+          </a>
+          <a class="menu-item" href="profile.html">
+            <span class="menu-title">about</span>
+            <div class="decor-mini"></div>
+          </a>
+        </nav>
+
+        <a class="btn-CTA" href="./contact.html" role="button">Contact me</a>
+      </div>
+
+      <!-- Hamburger menu (RESPONSIVE Only) - Humburger menu css ------------------------------------------------------------------------------------------------ -->
+      <div class="hamburger">
+        <div class="burger-menu" onclick="hamburgerFunction()">
+          <div class="line-1"></div>
+          <div class="line-2"></div>
+          <div class="line-3"></div>
+        </div>
+        <div class="burger-menu-content">
+          <a href="index.html" class="burger-filling"><i class='fas fa-angle-right'></i>home</a>
+          <div class="break-20"></div>
+          <a href="projects.html" class="burger-filling"><i class='fas fa-angle-right'></i>projects</a>
+          <div class="break-20"></div>
+          <a href="profile.html" class="burger-filling"><i class='fas fa-angle-right'></i>about me</a>
+          <div class="break-20"></div>
+          <a href="contact.html" class="burger-filling"><i class='fas fa-angle-right'></i>contact</a>
+        </div>
+        <div class="burger-menu-blackscreen" onclick="hamburgerFunction()"></div>
+      </div>
+    </header> <!-- //////////// //////////// //////////// //////////// -->
+
+
+
+
+    <main id="mainID"> <!-- //////////// //////////// //////////// //////////// -->
+      <!-- Landing Page------------------------------------------------------------------------------------------------ -->
+      <div class="landing-page" id="home-landing-page">
+        <div class="container landing-page-bg">
+          <div class="landing-page-content" data-aos="fade-up">
+            <span class="header-42-46">Personal Portfolio</span>
+            <div class="break-8"></div>
+            <span class="header-42-46" style="color: #7051EF;">About me</span>
+            <div class="break-28"></div>
+            <span>Đây là một số thông tin cá nhân của tôi.
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Background 1------------------------------------------------------------------------------------------------ -->
+      <div class="bg1">
+
+        <div class="container">
+          <!-- My Profile -->
+          <div class="break-200"></div>
+          <div class="break-40" id="home-profile"></div>
+          <div class="titleContent" data-aos="fade-up">
+            <div class="decor"></div>
+            <div class="break-8"></div>
+            <span class="header-32-36">my profile</span>
+            <div class="break-20"></div>
+            <span>Main Informations About Me And What I Love To Do.</span>
+          </div>
+          
+          <div class="break-60"></div>
+          <div class="profile-menu">
+            <div class="profile-img" data-aos="fade-up">
+              <img src="./Images/Home/Profile.png" alt="Profile picture">
+            </div>
+            <div class="profile-content">
+              <div class="profile-content-info" data-aos="fade-up">
+                <span class="header-24-30">Hello, I’m Dungbubu</span>
+                <div class="break-20"></div>
+                <span>Tôi có kinh nghiệm trong lĩnh vực hỗ trợ đào tạo - Thiết kế các 
+                  ấn phẩm trình chiếu với phần mềm Power Point.
+                  Hiện tại tôi đang tham gia vào khóa học lập trình Web Front-End 
+                  và có đam mê với mảng thiết kế Ui/Ux. Với mảng này, tôi vẫn có thể 
+                  áp dụng các kiến thức về thiết kế đã tích lũy được trong thơi gian qua.
+                </span>
+                <div class="break-28"></div>
+              </div>
+              <div class="profile-credit-info" data-aos="fade-up" data-aos-delay="150">
+                <div>
+                  <span class="header-16-24">Name:</span> <span>Nguyen Manh Dung</span>
+                  <div class="break-8"></div>
+                  <span class="header-16-24">Dob:</span> <span>24 / 06 / 1996</span>
+                </div>
+                <div>
+                  <span class="header-16-24">Location:</span> <span>HaNoi, Vietnam</span>
+                  <div class="break-8"></div>
+                  <span class="header-16-24">Freelancer:</span> <span>Available</span>
+                </div>
+              </div>
+              <div class="break-28"></div>
+              <div class="responsiveStyle" data-aos="fade-up"> <!-- RESPONSIVE -->
+                <a class="btn btn-primary" href="./cv/CV-DungBu.pdf" target="_blank" role="button">Download my CV</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- My Profile - More information -->
+          <div class="break-120"></div>
+          <div class="profile-moreInfo">
+            <div>
+              <div class="header-24-30" data-aos="fade-up">Work experience</div>
+              <div class="break-60"></div>
+              <div class="moreInfo-content" data-aos="fade-up">
+                <div style="display: flex; flex-direction: row;" data-aos="fade-up" data-aos-offset="200" data-aos-delay="200">
+                  <div class="moreInfo-decor"></div>
+                  <div class="moreInfo-text">
+                    <span class="header-16-24">9Slide - Tutors</span>
+                    <div class="break-8"></div>
+                    <span style="color: #7051EF;">3 / 2018 - now</span>
+                    <div class="break-8"></div>
+                    <span>Lorem ipsum dolor sit amet, consectetur
+                          adipiscing elit. Phasellus a sapien lobortis.</span>
+                  </div>
+                </div>
+                <div class="break-40"></div>
+                <div style="display: flex; flex-direction: row;" data-aos="fade-up" data-aos-offset="200" data-aos-delay="250">
+                  <div class="moreInfo-decor"></div>
+                  <div class="moreInfo-text">
+                    <span class="header-16-24">CDIT - Intership</span>
+                    <div class="break-8"></div>
+                    <span style="color: #7051EF;">12 / 2017</span>
+                    <div class="break-8"></div>
+                    <span>Lorem ipsum dolor sit amet, consectetur
+                          adipiscing elit. Phasellus a sapien lobortis.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="break">
+              <div class="header-24-30" data-aos="fade-up">Education</div>
+              <div class="break-60"></div>
+              <div class="moreInfo-content" data-aos="fade-up">
+                <div style="display: flex; flex-direction: row;" data-aos="fade-up" data-aos-offset="200" data-aos-delay="200">
+                  <div class="moreInfo-decor"></div>
+                  <div class="moreInfo-text">
+                    <span class="header-16-24">University of Transport Technology</span>
+                    <div class="break-8"></div>
+                    <span style="color: #7051EF;">2014 - 2018</span>
+                    <div class="break-8"></div>
+                    <span>Lorem ipsum dolor sit amet, consectetur
+                          adipiscing elit. Phasellus a sapien lobortis.</span>
+                  </div>
+                </div>
+                <div class="break-40"></div>
+                <div style="display: flex; flex-direction: row;" data-aos="fade-up" data-aos-offset="200" data-aos-delay="250">
+                  <div class="moreInfo-decor"></div>
+                  <div class="moreInfo-text">
+                    <span class="header-16-24">Phan Dinh Phung High school</span>
+                    <div class="break-8"></div>
+                    <span style="color: #7051EF;">2011 - 2014</span>
+                    <div class="break-8"></div>
+                    <span>Lorem ipsum dolor sit amet, consectetur
+                          adipiscing elit. Phasellus a sapien lobortis.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- My Expertise -->
+          <div class="break-200"></div>
+          <div class="break-40" id="home-expertise"></div>
+          <div class="titleContent" data-aos="fade-up">
+            <div class="decor"></div>
+            <div class="break-8"></div>
+            <span class="header-32-36">my expertise</span>
+            <div class="break-20"></div>
+            <span>I Have Worked With A Number Of Clients.</span>
+          </div>
+
+          <div class="break-120"></div>
+          <div class="expertise-menu owl-carousel owl-theme" data-aos="fade-up">
+            <div class="expertise-item">
+              <div class="expertise-item-img"><img src="./Images/Home/Expertise1.png" alt="Expertise: Presentation"></div>
+              <div class="break-40"></div>
+              <span class="header-24-30">presentation</span>
+              <div class="break-20"></div>
+              <span>Với hơn 3 năm kinh nghiệm 
+                    tham gia hỗ trợ đào tạo và 
+                    thực chiến cùng nhiều sản phẩm thực tế.
+              </span>
+            </div>
+            <div class="expertise-item">
+              <div class="expertise-item-img"><img src="./Images/Home/Expertise2.png" alt="Expertise: Web Design"></div>
+              <div class="break-40"></div>
+              <span class="header-24-30">web design</span>
+              <div class="break-20"></div>
+              <span>Tôi là một lập trình viên Front-End.
+              </span>
+            </div>
+            <div class="expertise-item">
+              <div class="expertise-item-img"><img src="./Images/Home/Expertise3.png" alt="Expertise: UI / UX Design"></div>
+              <div class="break-40"></div>
+              <span class="header-24-30">ui/ux design</span>
+              <div class="break-20"></div>
+              <span>Công việc hiện tại, 
+                    tôi tự tự với những giao diện gần gũi, 
+                    thân thiện và dễ sử dụng.
+              </span>
+            </div>
+            <div class="expertise-item">
+              <div class="expertise-item-img"><img src="./Images/Home/Expertise4.png" alt="Expertise: HTML & CSS"></div>
+              <div class="break-40"></div>
+              <span class="header-24-30">html, css</span>
+              <div class="break-20"></div>
+              <span>Ngôn ngữ lập trình web  
+                    mà tôi sử dụng thành thạo nhất 
+                    phục vụ cho công việc.
+              </span>
+            </div>
+          </div>
+          <div class="break-200"></div> <!-- Khác Figma -->
+        </div>
+      </div>
+
+      <!-- Experience------------------------------------------------------------------------------------------------ -->
+      <div class="break-400"></div>
+      <div class="experience-menu">
+        <div class="experience-item">
+          <p class="header-42-46">3</p>
+          <div class="break-8"></div>
+          <span>Years Experience</span>
+        </div>
+        <div class="experience-item">
+          <p class="header-42-46">2k</p>
+          <div class="break-8"></div>
+          <span>Hours worked</span>
+        </div>
+        <div class="experience-item">
+          <p class="header-42-46">12</p>
+          <div class="break-8"></div>
+          <span>Happy Cilents</span>
+        </div>
+        <div class="experience-item">
+          <p class="header-42-46">1</p>
+          <div class="break-8"></div>
+          <span>Awards Won</span>
+        </div>
+      </div>
+
+      <!-- Background 2------------------------------------------------------------------------------------------------ -->
+      <div class="bg2">
+
+        <div class="container">
+          <!-- My Cilent - Part 1 -->
+          <div class="break-200"></div> <!-- Khác Figma -->
+          <div class="titleContent2" data-aos="fade-up">
+            <span class="header-24-30">I worked with</span>
+            <span style="font-style: italic;">(as a designer)</span>
+          </div>
+          <div class="break-60"></div>
+          <div class="grid-container">
+            <div class="grid-item cilent1a" data-aos="fade-up">
+              <img src="./Images/Profile/Cilent1a.png" alt="First Alliances">
+            </div>
+            <div class="grid-item cilent2a" data-aos="fade-up" data-aos-delay="150">
+              <img src="./Images/Profile/Cilent2a.png" alt="Growell Vietnam">
+            </div>
+            <div class="grid-item cilent3a" data-aos="fade-up" data-aos-delay="200">
+              <img src="./Images/Profile/Cilent3a.png" alt="KD Tech">
+            </div>
+            <div class="grid-item cilent4a" data-aos="fade-up" data-aos-delay="250">
+              <img src="./Images/Profile/Cilent4a.png" alt="Netco Post">
+            </div>
+            <div class="grid-item cilent5a" data-aos="fade-up" data-aos-delay="300">
+              <img src="./Images/Profile/Cilent5a.png" alt="Techcombank">
+            </div>
+            <div class="grid-item cilent6a" data-aos="fade-up" data-aos-delay="350">
+              <img src="./Images/Profile/Cilent6a.png" alt="Viettel Advanced Solution Track 2019">
+            </div>
+            <div class="grid-item cilent7a" data-aos="fade-up" data-aos-delay="400">
+              <img src="./Images/Profile/Cilent7a.png" alt="Phan Dinh Phung high school">
+            </div>
+            <div class="grid-item cilent8a" data-aos="fade-up" data-aos-delay="450">
+              <img src="./Images/Profile/Cilent8a.png" alt="University of Transport Technology">
+            </div>
+          </div>
+
+          <!-- My Cilent - Part 2 -->
+          <div class="break-120"></div>
+          <div class="titleContent2" data-aos="fade-up">
+            <span class="header-24-30">I worked with</span>
+            <span style="font-style: italic;">(as a tutor)</span>
+          </div>
+          <div class="break-60"></div>
+          <div class="grid-container">
+            <div class="grid-item cilent1b" data-aos="fade-up">
+              <img src="./Images/Profile/Cilent1b.png" alt="Viettinbank">
+            </div>
+            <div class="grid-item cilent2b" data-aos="fade-up" data-aos-delay="150">
+              <img src="./Images/Profile/Cilent2b.png" alt="Techcombank">
+            </div>
+            <div class="grid-item cilent3b" data-aos="fade-up" data-aos-delay="200">
+              <img src="./Images/Profile/Cilent3b.png" alt="Vin Commerce">
+            </div>
+            <div class="grid-item cilent4b" data-aos="fade-up" data-aos-delay="250">
+              <img src="./Images/Profile/Cilent4b.png" alt="Vin Retail">
+            </div>
+            <div class="grid-item cilent5b" data-aos="fade-up" data-aos-delay="300">
+              <img src="./Images/Profile/Cilent5b.png" alt="FPT Software">
+            </div>
+            <div class="grid-item cilent6b" data-aos="fade-up" data-aos-delay="350">
+              <img src="./Images/Profile/Cilent6b.png" alt="Aviation Logistics">
+            </div>
+            <div class="grid-item cilent7b" data-aos="fade-up" data-aos-delay="400">
+              <img src="./Images/Profile/Cilent7b.png" alt="Electricity Vietnam">
+            </div>
+            <div class="grid-item cilent8b" data-aos="fade-up" data-aos-delay="450">
+              <img src="./Images/Profile/Cilent8b.png" alt="SaigonHanoibank">
+            </div>
+          </div>
+
+          <!-- Follow me -->
+          <div class="break-200"></div>
+          <div class="break-40" id="follow-me"></div>
+          <div class="titleContent triggerAOS" data-aos="fade-up">
+            <div class="decor"></div>
+            <div class="break-8"></div>
+            <span class="header-32-36">follow me</span>
+            <div class="break-20"></div>
+            <span>Let’s follow my journey - it's free.</span>
+          </div>
+
+          <div class="break-60"></div>
+          <div class="grid-container2">
+            <a href="https://www.facebook.com/NguyenManhDung1996/" target="_blank" class="grid-item follow1" data-aos="fade-up" data-aos-anchor=".triggerAOS">
+              <img src="./Images/Profile/Follow1.png" alt="facebook">
+              <img src="./Images/Profile/Follow1-hover.png" alt="facebook" class="grid-item-follow-hover">
+            </a>
+            <a href="https://www.instagram.com/dungbubu/" target="_blank" class="grid-item follow2" data-aos="fade-up" data-aos-anchor=".triggerAOS" data-aos-delay="150">
+              <img src="./Images/Profile/Follow2.png" alt="Instagram">
+              <img src="./Images/Profile/Follow2-hover.png" alt="Instagram" class="grid-item-follow-hover">
+            </a>
+            <a href="https://www.pinterest.com/dungbubu/" target="_blank" class="grid-item follow3" data-aos="fade-up" data-aos-anchor=".triggerAOS" data-aos-delay="200">
+              <img src="./Images/Profile/Follow3.png" alt="Pinterest">
+              <img src="./Images/Profile/Follow3-hover.png" alt="Pinterest" class="grid-item-follow-hover">
+            </a>
+          </div>
+          <div class="break-120"></div>
+        </div>
+      </div>
+    </main> <!-- //////////// //////////// //////////// //////////// -->
+
+
+
+    
+    <footer id="footerID"> <!-- //////////// //////////// //////////// //////////// -->
+      <!-- Footer - General Css------------------------------------------------------------------------------------------------ -->
+      <div class="footer">
+        <div class="container">
+          <div class="footer-menu">
+            <a href="./HTML-Footer/error404.html" target="_blank">404</a>
+            <a href="./HTML-Footer/map.html" target="_blank" style="margin-left: 2rem;">Map</a>
+            <a href="./HTML-Footer/styleGuide.html" target="_blank" style="margin-left: 2rem;">Style guide</a>
+            <a href="./HTML-Footer/liscense.html" target="_blank" style="margin-left: 2rem;">Liscense</a>
+          </div>
+        </div>
+      </div>
+    </footer> <!-- //////////// //////////// //////////// //////////// -->
+
+
+
+
+    <!-- //////////// //////////// //////////// //////////// //////////// //////////// -->
+    <!-- jQuerry Ajax JS library -->
+    <script src="./lib/jQuerry-Ajax-3.5.1/jquery-3.5.1.js"></script>
+    <!-- Boootstrap JS library -->
+    <script src="./lib/Bootstrap-4.5.3/js/bootstrap.js"></script>
+    <!-- AOS JS library -->
+    <script src="./lib/AOS-Animation-On-Scroll/dist/aos.js"></script>
+    <!-- Owl Carousel JS library -->
+    <script src="./lib/OwlCarousel2-2.3.4/dist/owl.carousel.js"></script>
+    <script src="./lib/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <!-- //////////// //////////// //////////// //////////// //////////// //////////// -->
+
+
+
+
+    <!-- //////////// //////////// //////////// //////////// //////////// //////////// -->
+    <!-- Javascript ------------------------------------------------------------------------------------------------ -->
+    <script>
+      // ------------ ------------ ------------ ------------ ------------ ------------
+      // Cài đặt thư viện hiệu ứng AOS ------------ ------------
+      AOS.init(
+        {
+          offset: 200,
+          delay: 100,
+          duration: 1000,
+          easing: 'ease-out',
+          mirror: true,
+        });
+
+
+      // ------------ ------------ ------------ ------------ ------------ ------------
+      // Đảm bảo khi load trang xong thì code bên dưới sẽ chạy luôn ------------ ------------
+      $(() => 
+            {
+              activeStateOnLoad();
+            });
+        
+      let menuItemActive = [...document.getElementsByClassName("menu-item")];
+      let burgerFilling = [...document.getElementsByClassName("burger-filling")];
+
+      function activeStateOnLoad()
+        {
+          menuItemActive[2].classList.add("active");
+          burgerFilling[2].classList.add("active");
+        }
+            
+
+      // ------------ ------------ ------------ ------------ ------------ ------------
+      // Hàm chạy thư viện Owl Carousel ------------ ------------
+      $('.owl-carousel').owlCarousel(
+        {
+          margin:40,
+          loop:true,
+          autoplay:true,
+          autoplayTimeout:2800,
+          autoplayHoverPause:true,
+          nav:true,
+          autoWidth:true,
+          responsive:
+            {
+              0:
+                {items:1},
+              576:
+                {items:2},
+              992:
+                {items:3},
+              1200:
+                {items:4}
+            }
+        })
+
+
+      // ------------ ------------ ------------ ------------ ------------ ------------
+      // Hàm tạo hiệu ứng cho Humburger menu ------------ ------------
+      function hamburgerFunction() 
+        {
+          document.querySelector(".burger-menu").classList.toggle("burger-menu-toggle");
+          document.querySelector(".burger-menu-content").classList.toggle("burger-menu-toggle");
+          document.querySelector(".burger-menu-blackscreen").classList.toggle("burger-menu-toggle");
+        }
+
+        
+      // ------------ ------------ ------------ ------------ ------------ ------------
+      // Hàm ẩn Humburger menu khi ấn vào từng menu con ------------ ------------
+      document.querySelectorAll(".burger-menu-content a").forEach(function(element)
+        {
+          element.addEventListener("click" ,function()
+            {
+              setTimeout(function(){ hamburgerFunction(); }, 600);
+            });
+        });
+    </script>
+    <!-- //////////// //////////// //////////// //////////// //////////// //////////// -->
+  </body>
+</html>
