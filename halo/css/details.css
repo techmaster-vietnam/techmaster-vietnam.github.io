@@ -1,0 +1,835 @@
+/* --------------- settings chung --------------- */
+
+section {
+  padding: 15px 0px;
+}
+
+.details__header {
+  font-size: 16px;
+  line-height: 1;
+  margin-bottom: 15px;
+}
+
+.details__sub-header {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.logo-canon {
+  font-size: 20px;
+}
+
+.details__review-score {
+  font-size: 14px;
+}
+
+
+/* --------------- hết settings chung --------------- */
+
+
+/* --------------- .details__img-area --------------- */
+/* .details__img-area {
+  position: relative;
+} */
+
+.score--user, .score--shop {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.details__main-img {
+  display: block;
+  width: 100%;
+  max-width: 380px;
+  height: auto;
+  margin: auto;
+  transition: all 0.3s;
+  margin: 5px auto;
+}
+
+.details__sub-img-area {
+  width: 100%;
+  max-width: 380px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+} 
+
+.details__sub-img {
+  width: 75px;
+  border: 1px solid #222;
+  border-radius: 8px;
+  padding: 5px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+/* --------------- hết.details__img-area --------------- */
+
+
+
+/* --------------- .details__summary --------------- */
+.summary__text:first-of-type {
+  margin: 15px 0px;
+}
+
+.summary__text a:hover {
+  text-decoration: underline;
+}
+
+.details__price {
+  color: #CC2929;
+  line-height: 40px;
+  font-size: 32px;
+  margin: 30px 0px 5px 0px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.details__sale-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.details__old-price {
+  font-size: 20px;
+  text-decoration: line-through;
+}
+
+.details__sale-badge img {
+  height: 20px;
+  margin: 0px 5px;
+}
+
+.details__sale-amount {
+  font-size: 12px;
+  font-style: italic;
+}
+
+.summary__btn-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 300px;
+  margin: 20px auto 40px auto;
+
+}
+
+.summary__btn {
+  width: 140px;
+  font-size: 12px;
+  height: 50px;
+  margin: 0px;
+}
+
+.summary__btn:first-child {
+  background-color: #3c96eae8;
+  color: white;
+
+}
+
+.summary__btn:first-child:hover {
+  background-color: #0d7ee9;
+}
+
+.summary__btn:last-child {
+  background-color: #99DE7F;
+  color: rgb(0, 0, 0);
+
+}
+
+.summary__btn:last-child:hover {
+  background-color: #7edb5c;
+}
+
+.summary__box-content {
+  width: 100%;
+  max-width: 305px;
+  padding: 15px;
+  border: 2px solid #E0E0E0;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin: auto;
+}
+
+.box-content__list {
+  padding-left: 10px;
+  line-height: 2;
+}
+
+/* --------------- hết.details__summary --------------- */
+
+
+/* --------------- details__offers --------------- */
+.offers__gift {
+  width: 100%;
+  max-width: 300px;
+  margin: auto;
+}
+
+.gift-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0px 40px 0px;
+  border: 1px solid #A8A8A8;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  padding: 15px;
+  width: 100%;
+}
+
+.gift-img {
+  max-width: 70px;
+}
+
+.special__list {
+  margin: 15px auto;
+  max-width: 350px;
+}
+
+.offers__btn {
+  font-size: 14px;
+  background-color: #d15953;
+  height: 50px;
+  color: white;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+}
+
+.offers__btn:hover {
+  background-color: #DE847F;
+  color: white;
+}
+
+.offers__contact {
+  font-weight: bold;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.offers__contact span {
+  
+}
+
+/* --------------- hết details__offers --------------- */
+
+
+
+/* --------------- details__main-info --------------- */
+
+/* ----- main-info: chung ----- */
+
+.details__main-info {
+  width: 100%;
+}
+
+.main-info__toggler {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+  background-color: #C4C4C4;
+  height: 35px;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+
+.main-info__toggler-indicator {
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.main-info__inner-header {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 35px 0px 10px 0px;
+}
+
+#intro .main-info__inner-header:first-child,
+.specs__category:first-child .main-info__inner-header {
+  margin-top: 0px;
+}
+
+.main-info__content {
+  padding: 30px 0px;
+}
+
+.main-info__content .card:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+/* ----- main-info: intro ----- */
+
+#intro img,
+#review img {
+  margin: 0px auto 15px auto;
+  max-width: 280px;
+  display: block;
+}
+
+#intro p:first-of-type {
+  margin-bottom: 15px;
+}
+
+/* ----- main-info: specs ----- */
+
+
+.category__row {
+  border-bottom: 1px solid #CDCDCD;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0px;
+}
+
+.category__key {
+  width: 40%;
+}
+
+.category__value {
+  width: calc(60% - 15px);
+}
+
+/* ----- main-info: review ----- */
+.author, .time {
+  font-size: 10px;
+} 
+
+.time i {
+  margin: 0px 5px 0px 3px;
+}
+
+.review__sub-preview {
+  margin: 15px 0px;
+}
+
+.review__btn {
+  font-size: 14px;
+  margin: 0px auto;
+}
+
+/* ----- main-info: sample ----- */
+
+#sample .modal-dialog {
+  max-width: none;
+} 
+
+#sample .modal-content {
+  margin: auto;
+  width: calc(100% - 20px);
+}
+
+#sample .close {
+  width: 35px;
+  height: 35px;
+  font-size: 35px;
+  background-color: rgba(225, 225, 225, 0.5);
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
+
+.comment__form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.comment__input {
+  border: 1px solid #A7A7A7;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  width: 100%;
+  margin-right: 15px;
+  padding-left: 10px;
+}
+
+.comment__input:focus {
+  outline: none;
+}
+
+.comment__btn {
+  font-size: 14px;
+  margin: 0px;
+}
+
+.comment__old-comment {
+  margin-top: 30px;
+}
+
+#comment .avatar {
+  width: 55px;
+  margin-right: 10px;
+}
+
+.comment__old-comment .media-body {
+  border: 1px solid #A7A7A7;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 10px;
+}
+
+#comment .details__sub-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.username {
+  margin: 15px 0px 5px 0px;
+}
+
+.reply {
+  padding-left: 40px;
+  margin-top: 15px;
+}
+
+.reply-report {
+  text-align: end;
+  margin-top: 10px;
+}
+
+.reportToggler {
+  margin-left: 15px;
+}
+
+
+/* --------------- hết details__main-info --------------- */
+
+
+/* ---------------  details__recommend --------------- */
+.details__recommend {
+  margin: auto;
+}
+
+.recommend__wrapper {
+  display: flex;
+  max-width: 540px;
+  margin: 15px auto 30px auto;
+}
+
+/* --------------- .item styles --------------- */
+.item {
+  /* width 250, height 360 */
+  width: calc(50vw - 20px); 
+  padding: 15px 10px;
+  border-radius: 8px;
+  border: 1px solid #bbbbbb;
+  margin: 10px 5px;
+  transition: all 0.3s;
+}
+
+.item:hover {
+  border: 1px solid #555555;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.item .card-img-top {
+  /*thumbnail 200*/
+  width: 100%; 
+  max-width: 200px;
+  margin: auto;
+}
+
+.item .card-body {
+  padding: 10px 0px 0px 0px;
+}
+
+.card-title {
+  line-height: 18px;
+  min-height: 56px;
+}
+
+.price {
+  color: #CC2929;
+  line-height: 24px;
+  font-size: 16px;
+  margin: 5px 0px;
+}
+
+.item .seemore-btn {
+  width: fit-content;
+  margin: 15px auto 0px auto;
+  font-size: 12px;
+  line-height: 16px;
+  padding: 5px 10px;
+}
+
+/* ---------- sale items module ---------- */
+.sale-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.old-price {
+  font-size: 14px;
+  text-decoration: line-through;
+}
+
+.sale-badge img {
+  height: 12px;
+  margin: 0px 5px;
+}
+
+/* --------------- hết details__recommend --------------- */
+
+
+@media only screen and (min-width: 576px) {
+  .card-title {
+    min-height: 30px;
+  }
+  
+  #sample .modal-content {
+    margin: auto;
+    width: calc(100% - 60px);
+  }
+
+  #intro img,
+  #review img {
+    max-width: 400px;
+  }
+
+  /* ---------- update item styles ---------- */
+  .item {
+    margin: 15px 30px;
+  }
+  /* ---------- hết update item styles ---------- */  
+}
+
+@media only screen and (min-width: 768px) {
+
+  main {
+    font-size: 14px;
+  }
+  
+  .breadcrumb {
+    height: 70px;
+    font-size: 16px;
+  }
+
+  .details__header {
+    font-size: 28px;
+  }
+
+  .logo-canon {
+    font-size: 34px;
+  }
+
+  .score--user, .score--shop {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  
+  section {
+    padding: 30px 0px;
+  }
+
+  .details__main-info {
+    padding-bottom: 0px;
+  }
+
+  .details__sub-header {
+    font-size: 18px;
+  }
+  
+  .details__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  /* --------------- update .details__img-area --------------- */
+
+  .details__img-area {
+    width: 54%;
+    max-width: 450px;
+    margin-right: 20px;
+  }
+
+  .details__main-img {
+    width: 100%;
+    height: auto;
+    margin: 0px auto 15px auto;
+  }
+
+/*   .details__sub-img {
+    width: 80px;
+    padding: 7px;
+  } */
+  /* --------------- hết.details__img-area --------------- */
+
+
+  /* --------------- update .details__summary --------------- */
+  .details__summary {
+    width: 280px;
+  }
+
+  .details__summary .details__sub-header,
+  .details__offers .details__sub-header {
+    text-align: left;
+  }
+  
+  .summary__btn-wrapper {
+    margin-bottom: 40px;
+  }
+
+  .summary__btn {
+    width: 130px;
+    font-size: 12px;
+  }
+
+  /* --------------- hết .details__summary --------------- */
+
+
+  /* --------------- update .details__offers --------------- */
+  .details__offers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .offers__gift {
+    margin: 0px 30px 0px 0px;
+    width: 100%;
+  }
+
+  .gift-wrapper, .special__list {
+    max-width: 270px;
+    margin: 15px 0px 0px 0px;
+  }
+
+  .offers__special {
+    width: 40%;
+  }
+
+  .offers__contact {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .special__list {
+    max-width: 350px;
+  }
+
+  .offers__btn {
+    font-size: 16px;
+    height: 50px;
+    margin: 30px auto 0px auto;
+  }
+
+  /* --------------- hết .details__offers --------------- */
+  
+
+
+  /* --------------- update .details__main-info --------------- */
+
+  .main-info__content {
+    padding: 30px;
+  }
+
+  #intro img,
+  #review img {
+    margin: 0px auto 30px auto;
+    max-width: 500px;
+  }
+
+  .main-info__inner-header {
+    font-size: 16px;
+    margin: 40px 0px 15px 0px;
+  }
+
+  .author, .time {
+    font-size: 12px;
+  } 
+
+  .review__btn {
+    font-size: 16px;
+  }
+
+  .comment__btn {
+    font-size: 14px;
+    width: 60px;
+  }
+
+  .comment__old-comment {
+    margin-top: 45px;
+  }
+
+  .comment__old-comment .media-body {
+    padding: 15px;
+  }
+
+  #comment .avatar {
+    width: 80px;
+    margin-right: 20px;
+  }
+
+  .reply {
+    padding-left: 100px;
+    margin-top: 25px;
+  }
+
+  /* --------------- hết .details__main-info --------------- */
+
+
+
+  /* ---------- update item styles ---------- */
+
+  .details__recommend .item {
+    margin: 15px;
+  }
+
+  .item .card-body {
+    padding: 20px 0px 0px 0px;
+  }
+
+  .price {
+    line-height: 32px;
+    font-size: 28px;
+    margin: 15px 0px 5px 0px;
+  }
+
+  .item .seemore-btn {
+    margin: 15px auto 0px auto;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 5px 15px;
+  }
+
+  /* ----- sale items module ----- */
+  .sale-text {
+    flex-wrap: nowrap;
+  }
+
+  /* ---------- hết update item styles ---------- */
+}
+
+@media only screen and (min-width: 992px) {
+
+  .details__wrapper {
+    justify-content: space-between;
+    align-content: flex-start;
+    align-items: flex-start;
+  }
+
+  /* --------------- update .details__img-area --------------- */
+  .details__img-area {
+    width: 35%;
+    margin-right: 30px;
+  }
+  /* --------------- hết update .details__img-area --------------- */
+
+
+  /* --------------- update .details__offers --------------- */
+
+  .details__offers {
+    width: calc(100% - 35% - 280px - 70px);
+    /* width: 280px; */
+    margin-left: 40px;
+  }
+
+  .offers__gift {
+    margin: 0px;
+    max-width: none;
+  }
+
+  .gift-img {
+    max-width: 60px;
+  }
+
+  .gift-wrapper {
+    margin: 15px auto 0px 0px;
+  }
+
+  .offers__special {
+    width: 100%;
+    margin: 40px 0px 10px 0px;
+  }
+
+  .offers__contact {
+    text-align: left;
+    margin-top: 20px;
+  }
+
+  /* --------------- hết .details__offers --------------- */
+}
+
+@media only screen and (min-width: 1200px) {
+  #sample .modal-dialog {
+    max-width: none;
+    width: calc(90vh * 1.5);
+  } 
+  
+  #sample .modal-content {
+    height: 90vh;
+    margin: auto;
+  }
+
+  #sample .modal-content img {
+    height: 100%;
+  }
+
+  .details__img-area {
+    width: 450px;
+    margin-right: 0px;
+  }
+
+  .details__main-img {
+    max-width: 450px;
+  }
+
+  .details__summary {
+    width: 305px;
+  }
+
+  .summary__btn {
+    width: 140px;
+    font-size: 14px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .details__offers {
+    /* width: calc(100% - 35% - 280px - 70px); */
+    width: 280px;
+    margin-left: 0px;
+  }
+
+  .details__main-info {
+    width: 800px;
+    padding-bottom: 30px;
+  }
+
+  .details__recommend {
+    margin: 0px;
+  }
+
+  .details__recommend .details__sub-header {
+    text-align: left;
+  }
+
+  .recommend__wrapper {
+    max-width: 280px;
+    flex-direction: column;
+  }
+
+  .item {
+    /* width 280 */
+    width: 280px;
+    max-width: 280px;
+    margin: 15px 0px;
+  }
+
+  .details__sale-amount {
+    font-size: 14px;
+  }
+
+}

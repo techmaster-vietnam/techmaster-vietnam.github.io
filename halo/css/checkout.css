@@ -1,0 +1,137 @@
+
+main {
+  background-image: url("/halo/img/img--checkout/checkout-bg-v8.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.page-wrapper {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-size: 12px;
+}
+
+.success-alert, 
+.success-thank {
+  color: white !important;
+  text-align: center;
+  max-width: 600px;
+  margin: auto;
+}
+
+.success-alert {
+  font-size: 20px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.success-alert img {
+  width: 40px;
+  margin-right: 15px;
+}
+
+.checkout-box {
+  background: #FFFFFF;
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.7);
+  border-radius: 16px;
+  max-width: 600px;
+  padding: 30px 15px;
+  margin-top: 30px;
+}
+
+.checkout-box__header {
+  margin-bottom: 15px;
+}
+
+.inner-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.checkout-box__inner-header {
+  font-weight: bold;
+}
+
+.inner-row span:first-child {
+  display: block;
+  width: 45%;
+}
+
+.inner-row span:last-child {
+  display: block;
+  width: 50%;
+}
+
+.inner-row--item {
+  margin-bottom: 5px;
+  border-bottom: 1px solid black;
+}
+
+.hotline {
+  text-align: center;
+}
+
+.btn--continue-buying {
+  font-size: 14px;
+  background-color: #99DE7F;
+  margin: 15px auto 0px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .page-wrapper {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-size: 16px;
+  }
+
+  .success-alert {
+    font-size: 24px;
+  }
+
+  .checkout-box {
+  background: #FFFFFF;
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.7);
+  border-radius: 16px;
+  max-width: 600px;
+  padding: 30px;
+  margin-top: 30px;
+  }
+
+  .btn--continue-buying {
+    font-size: 16px;
+    width: 165px;
+    height: 40px;
+    margin-top: 30px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .success-alert {
+    font-size: 40px;
+    margin-bottom: 15px;
+  }
+  
+  .success-alert img {
+    width: 60px;
+    margin-right: 15px;
+  }
+  
+  .success-thank {
+    font-size: 24px;
+  }
+
+  .btn--continue-buying {
+    font-size: 18px;
+    width: 200px;
+    height: 40px;
+  }
+}

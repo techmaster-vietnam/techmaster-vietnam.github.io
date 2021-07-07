@@ -1,0 +1,35 @@
+extends parts/layout.pug
+
+block css
+  link(rel="stylesheet", href="css/dslr-hub.css")
+  link(rel="stylesheet", href="css/item.css")
+  link(rel="stylesheet", href="css/search-result.css")
+
+block title
+  title Kết quả tìm kiếm
+
+block content
+
+  .search__banner.w-100
+    img.search__logo(src="img/img--misc/logo-white.png", alt="logo-halo")
+  
+  section.page-wrapper.container-xl 
+
+    .result-item-area 
+      h1.search__header.w-100.text-left 
+        | Tìm thấy&nbsp;
+        span.search__result 2
+        | &nbsp;kết quả cho:&nbsp;
+        span.search__result Canon
+
+      include parts/card-1.pug
+      include parts/card-5.pug
+
+    .promo-area.hidden-till-md
+      h1.promo-header Khuyến mại HOT
+      img.promo-item(src="img/img--misc/promo-img-1.jpg", alt="khuyến mại sony")
+      img.promo-item(src="img/img--misc/promo-img-2.jpg", alt="khuyến mại canon")
+      img.promo-item(src="img/img--misc/promo-img-1.jpg", alt="khuyến mại nikon")
+
+
+

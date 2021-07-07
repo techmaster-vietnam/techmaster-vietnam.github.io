@@ -1,0 +1,175 @@
+extends parts/layout.pug
+
+block css
+  link(rel='preconnect' href='https://fonts.gstatic.com')
+  link(href='https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap' rel='stylesheet')
+  link(rel="stylesheet", href="css/payment.css")
+
+block title
+  title Cổng thanh toán
+
+block content
+  .breadcrumb-wrapper.container-xl
+    ul.breadcrumb
+      li.breadcrumb-item
+        a(href='index.html') Trang chủ
+      li.breadcrumb-item 
+        a(href='cart.html') Giỏ hàng
+      li.breadcrumb-item.active Cổng thanh toán
+
+  .page-wrapper.container-xl
+
+    h1.text-left.w-100 Cổng thanh toán
+    
+    section.confirmation-wrapper
+
+      .main-header
+        span.main-header__text 1. Xác nhận đơn hàng
+        span.main-header__indicator
+
+      #confirmation
+
+        .confirmation__summary.sub-section
+          h2.sub-header Tóm tắt đơn hàng
+
+          p.summary__row.summary__row--left.inner-header Giỏ hàng
+
+          p.summary__row
+            span.summary__row--left Máy ảnh Canon 1DX Mark III 
+            span.summary__row--right 1 x 130.090.000đ = 130.090.000đ
+
+          p.summary__row
+            span.summary__row--left Máy ảnh Canon 1DX Mark III 
+            span.summary__row--right 2 x 130.090.000đ = 260.180.000đ
+
+          p.summary__row
+            span.summary__row--left.inner-header Tổng giá trị giỏ hàng 
+            span.summary__row--right 390.270.000đ
+
+          .summary__row
+            span.summary__row--left.inner-header Phí vận chuyển:
+            span.summary__row--right Miễn phí vận chuyển
+
+          .summary__row
+            span.summary__row--left.inner-header Mã giảm giá:
+            .summary__row--right.coupon
+              input.coupon__input(type="text" placeholder="KM2021")
+              button.coupon__submit.btn.btn--confirmation Gửi
+              .coupon__content
+                p.coupon__text Giảm 15% giá trị đơn hàng (tối đa 1.000.000đ)
+                p.coupon__text -1.000.000đ
+
+          p.summary__grand-total.inner-header.text-center Tổng tiền hàng: 
+            span 390.270.000đ
+        
+        .faq.sub-section
+          h2.sub-header Đặt hàng &#38; thanh toán: câu&nbsp;hỏi&nbsp;thường&nbsp;gặp
+
+          .faq__item 
+            p.faq__item--question(data-toggle="collapse" data-target="#answer1") 
+              span Chi phí vận chuyển tính như thế nào?
+              span 
+                i.fas.fa-plus
+            ul#answer1.faq__item--answer.collapse
+              li - Với các đơn hàng có bao gồm sản phẩm máy ảnh và ống kính bất kỳ: HALO sẽ miễn phí vận chuyển, áp dụng trên phạm vi toàn quốc.
+              li - Với các đơn hàng chỉ bao gồm phụ kiện: HALO sẽ miễn phí vận chuyển với các đơn hàng có tổng giá từ 500.000đ trở lên, áp dụng trên phạm vi toàn quốc.
+              li - Với các trường hợp còn lại, phí vận chuyển tính như sau: nội thành Hà Nội: 20.000đ, địa điểm khác: 50.000đ.
+              
+          .faq__item 
+            p.faq__item--question(data-toggle="collapse" data-target="#answer2") 
+              span Thời gian giao hàng là bao lâu?
+              span 
+                i.fas.fa-plus
+            ul#answer2.faq__item--answer.collapse 
+              li - Hà Nội, TP.HCM: Giao hàng trong vòng 2 ngày
+              li - Các khu vực khác: Giao hàng trong vòng 2 - 5 ngày
+
+          .faq__item 
+            p.faq__item--question(data-toggle="collapse" data-target="#answer3") 
+              span Tôi có thể lấy mã giảm giá từ đâu?
+              span 
+                i.fas.fa-plus
+            ul#answer3.faq__item--answer.collapse 
+              li - Theo dõi các chương trình tặng mã giảm giá trên các nền tảng xã hội của HALO như&nbsp;  
+                a(href="#") Facebook&nbsp; 
+                a(href="#") Instagram&nbsp;
+                | và&nbsp;
+                a(href="#") Youtube 
+              li - Các bài viết quảng bá trên các trang tin tức cũng sẽ có mã giảm giá (số lượng có hạn)
+              li - Mua hàng tại HALO và tích điểm để đổi mã giảm giá
+
+          .faq__item 
+            p.faq__item--question(data-toggle="collapse" data-target="#answer4") 
+              span Wait, HTML is not a programming language?
+              span 
+                i.fas.fa-minus
+            ul#answer4.faq__item--answer.collapse.show 
+              li.font-weight-bold - Always has been.
+
+          h3.text-center Các câu hỏi khác cần tư vấn, vui lòng liên hệ hotline: 
+            a.text-primary(href="#") 012.345.6789
+
+        p.term-toggler__wrapper.text-center Khi bấm xác nhận, quý khách đã đồng ý với 
+          span.term-toggler.text-primary.font-italic(data-toggle="collapse" data-target=".confirmation__term") các điều khoản đặt hàng và thanh toán của chúng tôi.
+
+        .confirmation__term.sub-section.collapse
+          h2.sub-header Điều khoản đặt hàng và thanh toán
+          p 1. Quý khách hàng vui lòng cung cấp địa chỉ giao hàng cũng như thông tin người nhận rõ ràng, chính xác để công tác giao hàng được nhanh nhất.
+
+          p 2. Quý khách hàng kiểm tra hàng hóa kỹ lưỡng, cẩn thận trước khi ký nhận và thanh toán.
+
+          p 3. Nếu quá thời gian quy định, Quý khách hàng vẫn chưa nhận được sản phẩm, hãy liên lạc ngay với chúng tôi để được hỗ trợ.
+
+          p 4. Trường hợp Quý khách hàng thay đổi quyết định mua hàng khi sản phẩm đã được giao, khách hàng sẽ phải chịu hoàn toàn chi phí vận chuyển.
+
+        a.btn.btn--confirmation.final-btn.payment__toggler(href="#" data-toggle="collapse" data-target="#payment__info") Xác nhận
+
+    section.payment-wrapper
+
+      .main-header#payment__header
+        span.main-header__text 2. Thanh toán
+        span.main-header__indicator
+
+      #payment
+        #payment__info.sub-section.collapse
+          h2.sub-header Thông tin khách hàng
+
+          form.guess__info
+            input.guess__info--name.form-control(type="text" placeholder="Họ tên")
+            input.guess__info--phone.form-control(type="text" placeholder="Số điện thoại")
+            input.guess__info--address.form-control(type="text" placeholder="Địa chỉ nhận hàng")
+            textarea.guess__info--note.form-control(name="" cols="20" rows="5" placeholder="Ghi chú")
+
+          a.btn.btn--confirmation.final-btn.payment__toggler(href="#method-wrapper" data-toggle="collapse" data-target="#payment__method") Xác nhận 
+
+        #payment__method.sub-section.collapse
+          h2.sub-header Phương thức thanh toán
+
+          form#methods-selection
+
+            #method-wrapper
+
+              .method__toggler(data-toggle="collapse" data-target="#cod") 
+                input(type="radio" name="payment-method", id="cod-radio" form="methods-selection")
+                label(for="cod-radio") Thanh toán khi nhận hàng (COD)            
+
+              .method__toggler(data-toggle="collapse" data-target="#domestic-card") 
+                input(type="radio" name="payment-method", id="domestic-card-radio" form="methods-selection")
+                label(for="domestic-card-radio") Thanh toán bằng thẻ ngân hàng nội địa 
+
+              #domestic-card.method__content.collapse(data-parent="#methods-selection")
+                include parts/domestic-card.pug
+
+              .method__toggler(data-toggle="collapse" data-target="#visa-master-card") 
+                input(type="radio" name="payment-method", id="visa-master-card-radio" form="methods-selection")
+                label(for="visa-master-card-radio") Thanh toán bằng thẻ Visa/Master
+
+              #visa-master-card.method__content.collapse(data-parent="#methods-selection")
+                include parts/visa-master-card.pug
+
+              a#cod.method__content.collapse.btn.btn--confirmation.final-btn.payment__toggler(href="checkout.html" data-parent="#methods-selection") Xác nhận
+         
+
+
+
+

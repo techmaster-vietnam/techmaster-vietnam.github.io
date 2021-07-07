@@ -1,0 +1,1132 @@
+/* ---------- update ----------*/
+
+#updates .modal-content {
+  box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.75);
+  border-radius: 16px;
+  padding: 10px 15px;
+  font-size: 18px;
+}
+
+#updates .modal-content .close {
+  font-size: 36px;
+  padding: 5px;
+}
+
+.updates__hide-warning {
+  font-size: 16px;
+  font-style: italic;
+}
+
+/* ---------- body styles ----------*/
+body,
+main {
+  overflow-x: hidden;
+}
+
+.search-btn.hidden-till-md {
+  position: relative;
+  top: 2px;
+}
+/* ---------- kết thúc body styles ----------*/
+
+
+/* ---------- carousel styles ----------*/
+@keyframes animatedBanner1 {
+  from {
+    background-position: left center;
+  }
+  to {
+    background-position: right center;
+  }
+}
+
+@keyframes spinningRing {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(360deg);}
+}
+
+@keyframes flashingRing {
+  0% {opacity: 0.1;}
+  50% {opacity: 0.35;}
+  100% {opacity: 0.1;}
+}
+
+@keyframes flashingRingBright {
+  0% {opacity: 0.3;}
+  50% {opacity: 0.95;}
+  100% {opacity: 0.3;}
+}
+
+#main-carousel, 
+.carousel-inner, 
+.carousel-item {  /* -- kéo dài --*/ 
+  min-height: 450px; 
+}
+
+#main-carousel .carousel-indicators {
+  top: 57px;
+  margin-bottom: 0px;
+  height: 14px;
+}
+
+#main-carousel .carousel-indicators li {
+  border: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: transparent;
+  background-image: url("../img/img--misc/halo-logo-white.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0px 3px;
+}
+
+#main-carousel .carousel-indicators .active {
+  background-image: url("../img/img--misc/halo-logo-white--active.png");
+}
+
+.banner-1 {
+  background-image: url('../img/img--carousel/banner-bg-1-min.jpg');
+  background-size: cover;
+  animation: animatedBanner1 30s linear 0s infinite alternate;
+}
+
+/* .banner-1-bg {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  max-width: none;
+  max-height: none;
+  z-index: 1;
+} */
+
+.banner-2 {
+  background-color: rgb(105,105,105);
+  background-image: url('../img/img--carousel/banner-bg-2-2.png'), linear-gradient(180deg, rgba(105,105,105,1) 0%, rgba(48,48,48,1) 66%, rgba(0,0,0,1) 100%);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top 15% right 50%, center;
+}
+
+.banner-3 {
+  background-image: url('../img/img--carousel/banner-bg-3.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.carousel-caption {
+  position: static;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  padding: 25px 0px 0px 0px;
+}
+
+/* .main-carousel__text:last-of-type {
+  
+}
+ */
+.logo-wrapper-1,
+.logo-wrapper-2,
+.logo-wrapper-3 {
+  display: flex;
+  width: fit-content;
+  margin: 30px auto 20px auto;
+}
+
+.eos-r {
+  padding-bottom: 1px;
+}
+
+.logo-wrapper-1 {
+  flex-flow: column nowrap;
+  align-items: flex-end;
+  
+}
+.logo-wrapper-2 {
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.logo-sony-a9-wrapper, 
+.logo-wrapper-3 {
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-sony-a9-wrapper {
+  padding: 0px;
+}
+
+#main-carousel .seemore-btn {
+  margin: 15px auto 40px auto;
+}
+
+.progress {
+  background-color: transparent;
+  width: 100%;
+}
+
+.progress-bar {
+  background-color: #CC0000;
+  opacity: 0.95;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  opacity: 1;
+  width: 23px;
+}
+
+.carousel-control-prev {
+  left: 15px;
+}
+
+.carousel-control-next {
+  right: 15px;
+}
+
+.a9-logo {
+  height: 20px;
+  margin-bottom: 5px;
+}
+
+.banner-2 .progress-bar {
+  background-color: #E94E09;
+}
+
+.lotr-logo {
+  height: 60px;
+}
+
+.collab {
+  margin: 0px 15px;
+  font-size: 20px;
+}
+
+.logo-sony-inline {
+  font-size: 13px !important;
+  font-style: normal;
+}
+
+.carousel-caption__img {
+  height: calc(100vw / 1.6725);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 400;
+}
+
+.banner-1 .carousel-caption__img {
+  background-image: url("../img/img--carousel/eos-r-banner-min.png");
+}
+
+.banner-2 .carousel-caption__img {
+  background-image: url("../img/img--carousel/a9-banner-min.png");
+}
+
+.banner-3 .carousel-caption__img {
+  background-position: bottom;
+  background-image: url("../img/img--carousel/e-mount-banner-min-v3.png");
+}
+
+.inner-ring {
+  position: absolute;
+  width: 100%;
+  bottom: -27%;
+  right: 0px;
+  animation: spinningRing 20s linear 0s infinite reverse, flashingRingBright 3s linear 0s infinite normal;
+}
+
+.banner-3 .seemore-btn,
+.banner-3  .main-carousel__text {
+  position: relative;
+  z-index: 100;
+}
+
+
+/* ---------- intros styles ----------*/
+/* 
+.intro maps
+
+.intro--carema, i.intro--lens: 
+1 .intro (full width)
+2   .container (padding settings)
+3     .intro__text (flex column)
+4        h1 h3 .seemore-btn
+3     .intro__img (1 img)
+
+.intro--equip:  
+1 .intro (full width)
+2   .container (padding settings)
+3     .intro__text (flex column)
+4        h1 h3
+3     .intro__img (.card-columns)
+3     .seemore-btn
+*/
+
+.intro__text {
+  align-items: center;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.intro__text h3 {
+  margin: 10px 0px 30px 0px;
+}
+
+.intro__img {
+  margin-bottom: 30px;
+}
+
+.intro .seemore-btn {
+  margin: auto;
+}
+
+.specials h1 {
+  margin-bottom: 25px;
+}
+
+.brands-item {
+  margin-bottom: 15px
+}
+
+.specials h3 {
+  margin: 20px 0px 50px 0px;
+  line-height: 30px;
+  font-size: 18px;
+}
+
+.policy {
+  width: 100%;
+  max-width: 300px;
+  justify-content: space-between;
+}
+
+.policy__text {
+  font-size: 10px;
+}
+
+.policy__item:nth-of-type(2) {
+  margin: 0px 15px;
+}
+
+.policy__item {
+  width: 90px;
+  min-height: 180px;
+  padding: 10px 5px;
+  border-radius: 8px;
+}
+
+.policy__icon p {
+  margin-left: 10px;
+}
+/* ---------- kết thúc intros styles ----------*/
+
+
+/* ---------- promo styles ----------*/
+.promo__collection {
+  margin: 25px 0px;
+}
+
+.promo-item {
+  cursor: unset;
+}
+
+.promo-item img {
+  cursor: pointer;
+}
+
+.promo-item:nth-child(2) {
+  margin: 15px auto;
+}
+/* ---------- kết thúc promo styles ----------*/
+
+
+/* ---------- review styles ----------*/
+
+
+
+.review-item {
+  border: 1px solid white;
+  border-radius: 8px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.review-item__img {
+  width: 35%;
+  border-radius: 8px 0px 0px 8px;
+}
+
+.review-item__content {
+  padding: 5px 10px;
+  width: 65%;
+}
+
+.review h1 {
+  margin-bottom: 25px;
+}
+
+.review-item h2 {
+  text-align: start;
+  font-size: 14px;
+}
+
+.subtext {
+  font-size: 9px;
+}
+
+.review-preview {
+  display: none; 
+}
+
+/* ---------- kết thúc review styles ----------*/
+
+
+/* ---------- connection styles ----------*/
+.connection__form {
+  margin: 20px auto 40px auto;
+  max-width: 450px;
+}
+
+.connection__input {
+  width: 100%;
+  max-width: 280px;
+  margin-right: 20px;
+  border: none;
+  border-radius: 8px;
+  padding-left: 10px;
+}
+
+.connection__socials {
+  width: 160px;
+  margin-top: 10px;
+}
+
+.socials__item {
+  width: 40px;
+  height: 40px;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.20);
+  border-radius: 8px;
+}
+
+.socials__item img {
+  border-radius: 8px;
+}
+
+.connection__submit-btn {
+  width: 70px;
+  margin: 0px;
+}
+
+/* ---------- kết thúc connection styles ----------*/
+
+@media only screen and (min-width: 375px) {
+  .review-preview {
+    display: block; 
+    text-overflow: ellipsis;
+    overflow: hidden; 
+    margin-top: 10px;
+    height: 35px;
+  }
+}
+
+@media only screen and (min-width: 414px) {
+  .review-item__content {
+    padding: 3%;
+  }
+
+  .inner-ring {
+    bottom: -30%;
+  }
+}
+
+@media only screen and (min-width: 576px) {
+/* --------------- update fonts --------------- */
+  .btn,
+  h3 {
+    font-size: 16px;
+  } 
+
+  .carousel-title {
+    margin-bottom: 15px;
+  }
+
+  #main-carousel .carousel-indicators {
+    top: 67px;
+    height: 16px;
+  }
+  
+  #main-carousel .carousel-indicators li {
+    width: 16px;
+    height: 16px;
+    margin: 0px 6px;
+  }
+
+  .logo-wrapper-1, .logo-wrapper-2, .logo-wrapper-3{
+    margin-top: 30px;
+  }
+
+  .banner-2 .logo-sony {
+    margin-bottom: 8px;
+  }
+
+  .a9-logo {
+    height: 30px;
+    margin-bottom: 5px;
+  }
+
+  #main-carousel .seemore-btn {
+    margin: 25px auto 40px auto;
+  }
+
+  .carousel-control-next,
+  .carousel-control-prev,
+  .carousel-control-next img,
+  .carousel-control-prev img {
+    width: 28px;
+  }
+
+  .carousel-control-prev {
+    left: 30px;
+  }
+  
+  .carousel-control-next {
+    right: 30px;
+  }
+
+  .banner-2 {
+    background-position: cover;
+  }
+
+  .lotr-logo {
+    height: 78px;
+  }
+
+  .inner-ring {
+    bottom: -32%;
+  }
+
+  .policy {
+    max-width: 530px;
+  }
+
+  .policy__item:nth-of-type(2) {
+    margin: 0px 25px;
+  }
+
+  .policy__item {
+    width: 160px;
+    min-height: 250px;
+    padding: 10px 5px;
+    border-radius: 8px;
+  }
+
+  .promo-item:nth-child(2) {
+    margin: 0px;
+  }
+
+  .review-item h2 {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+
+  .policy__text {
+    font-size: 17px;
+  }
+
+  .review-preview {
+    font-size: 12px; 
+  }
+}
+
+/* @media only screen and (min-width: 700px) {
+  .review-item__content {
+    padding: 20px 25px;
+  }
+}
+ */
+
+@media only screen and (min-width: 768px) {
+  /*--------------- update fonts ---------------*/
+  .review-item h2 {
+    font-size: 22px;
+  }
+
+
+  /*--------------- carousel MAX version ---------------*/
+
+  /* ---------- update height ---------- */
+
+  #main-carousel,
+  .carousel-inner, 
+  .carousel-item {  
+    height: 580px;  /* fix height: màn 625px - 50px nav + p-top 50px) */
+  }
+
+  #main-carousel .seemore-btn {
+    margin: 15px auto 15px auto;
+  }
+
+  /* ---------- update chung 3 banner ---------- */
+
+  /* ----- update lề trái/phải ----- */
+  .carousel-caption {
+    padding: 25px 75px 0px 75px !important;
+  }
+
+  /* ----- update indicators ----- */  
+  #main-carousel .carousel-indicators {
+    top: 70px;
+    height: 20px;
+  }
+  
+  #main-carousel .carousel-indicators li {
+    width: 20px;
+    height: 20px;
+    margin: 0px 8px;
+  }
+
+  /* ----- update link ảnh MAX ----- */
+  .banner-1 .carousel-caption__img {
+    background-image: url("../img/img--carousel/eos-r-banner-max.png");
+  }
+  
+  .banner-2 .carousel-caption__img {
+    background-image: url("../img/img--carousel/a9-banner-max.png");
+  }
+  
+  .banner-3 .carousel-caption__img:nth-child(1) {
+    background-image: url("../img/img--carousel/e-mount-banner-max-west-wing.png");
+  }
+
+  .banner-3 .carousel-caption__img:nth-child(2) {
+    background-image: url("../img/img--carousel/e-mount-banner-max-center-v5.png");
+  }
+
+  .banner-3 .carousel-caption__img:nth-child(3) {
+    background-image: url("../img/img--carousel/e-mount-banner-max-east-wing.png");
+  }
+
+  /* ----- update size ảnh MAX ----- */
+  .banner-1 .carousel-caption__img,
+  .banner-2 .carousel-caption__img { 
+    width: 350px;       /*size mới cho banner 1/2 max*/
+    height: calc(350px / 1.3877);
+  }
+
+  .banner-3 .carousel-caption__img {
+    width: 280px;       /*size mới cho các banner 3 max*/
+    height: 250px;
+  }
+
+  .carousel-caption__img--triple {
+    width: 100%;        /*kích hoạt triple ảnh banner 3*/
+    max-width: 850px;
+    margin: auto;
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .carousel-caption__img {
+    background-position: center !important;
+  }
+
+  /* ----- kích hoạt, update extra ----- */
+  .carousel-caption__extra {
+    display: flex !important;
+    justify-content: space-between;
+  }
+
+  .extra {
+    height: 100%;
+  }
+
+  .extra-text {
+    max-width: 156px;
+    margin-top: 10px;
+  }
+
+  .extra img {
+    max-width: 70px;
+  }
+
+  /* --------------- update banner 1 --------------- */
+
+  .banner-1 .carousel-caption__text {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+  }
+
+  .banner-1 .logo-wrapper-1, 
+  .banner-1 .seemore-btn {
+    margin-left: 0px !important;
+  }
+
+  .banner-1 .carousel-caption {
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
+  .banner-1 .carousel-title {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .banner-1 .carousel-caption__extra {
+    width: 100%;
+    max-width: 700px;
+    margin: 0px auto;
+    height: 100px;
+  }
+
+  /* --------------- update banner 2 --------------- */
+  .banner-2 .carousel-caption {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .banner-2 .carousel-title {
+    margin: 0px;
+  }
+
+  .banner-2 .carousel-caption__img { /*căn giữa ảnh A9*/
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -48%);
+  }
+  
+  .banner-2 .carousel-caption__text,
+  .banner-3 .carousel-caption__text {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .banner-2 {
+    background-position: top 5% right 50%, center;
+  }
+
+  .logo-wrapper-2 {
+    width: 100%;
+    margin: 50px auto 205px auto;
+  }
+
+  .logo-sony-a9-wrapper {
+    display: flex;
+    align-items: flex-end;
+    width: 550px;
+    justify-content: space-between;
+  }
+
+  .logo-sony-a9-wrapper .logo-sony {
+    font-size: 80px;
+    line-height: 60px;
+    opacity: 0.5;
+  }
+
+  .a9-logo {
+    height: 90px;
+    margin: 0px;
+  }
+
+  .banner-2 .carousel-caption__extra {
+    width: 250px;
+    margin: auto;
+    height: 35px;
+  }
+
+  .banner-2 .main-carousel__text {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: normal;
+    width: 100%;
+    margin: 15px 0px 0px 0px;
+  }
+
+  .banner-2 .seemore-btn {
+    margin: 0px auto;
+  }
+
+  .banner-2 .carousel-caption__img {
+    width: 340px;
+    height: calc(340px / 1.3877);
+  }
+
+  /* --------------- update banner 3 --------------- */
+
+  .banner-3 {
+    background-image: url('../img/img--carousel/banner-bg-3.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .outer-ring {
+    position: absolute;
+    top: 0px;
+    right: calc(50% - 284px);
+    animation: spinningRing 60s linear 0s infinite normal, flashingRing 3s linear 0s infinite normal;
+  }
+
+  .inner-ring {
+    position: absolute;
+    width: 240px;
+    top: calc(50% - 125px);
+    right: calc(50% - 120px);
+    animation: spinningRing 20s linear 0s infinite reverse, flashingRingBright 3s linear 0s infinite normal;
+  }
+
+  .banner-3 .carousel-caption {
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: flex-start;
+  } 
+
+  .banner-3 .carousel-title {
+    width: 100%;
+    margin-bottom: 0px;
+  }
+
+/*   .banner-3 .carousel-caption__text {
+    margin-top: ;
+  } */
+
+  .lotr-logo {
+    height: 50px;
+  }
+
+  .logo-wrapper-3 {
+    width: 100%;
+    margin: 45px 0px 10px 0px;
+  }
+
+  .banner-3 .main-carousel__text {
+    width: 100%;
+  }
+
+  .banner-3 .main-carousel__text:first-of-type {
+    margin: 20px auto 0px auto;
+  }
+
+  .banner-3 .seemore-btn {
+    margin: 25px auto 0px auto;
+  }
+
+  .intro__text:not(.intro--equip  .intro__text) {
+    padding: 0px;
+  }
+
+  .intro .seemore-btn {
+    margin: 0px;
+  }
+
+  .intro--lens .intro__text {
+    order: 2;
+  }
+
+/*   .promo-item {
+    margin: 0px auto 30px auto;
+    max-width: 33.33333%;
+  } */
+
+  .connection__submit-btn {
+    margin: 0px;
+  }
+
+  .subtext {
+    font-size: 12px;
+  }
+
+  .review-preview {
+    font-size: 14px; 
+    height: 40px;
+  }
+
+}
+
+@media only screen and (min-width: 992px) {
+  /*--------------- update fonts ---------------*/
+  .review-item h2 {
+    font-size: 28px;
+  }
+  /*--------------- hết update fonts ---------------*/
+
+
+
+  .carousel-caption {
+    justify-content: center;
+    align-items: stretch;
+  } 
+
+  .banner-1 .carousel-caption__text {
+    margin-left: 80px;
+  }
+
+  .banner-1 .carousel-caption__img {
+    margin-right: 80px;
+  }
+
+  
+}
+
+@media only screen and (min-width: 1200px) {
+
+  .banner-1 {
+    background-image: url('../img/img--carousel/banner-bg-1-max.jpg');
+    animation: animatedBanner1 60s linear 0s infinite alternate;
+    background-size: 1777px 1000px;
+    background-repeat: no-repeat;
+  }
+
+  .inner-ring {
+    width: 280px;
+    top: calc(50% - 142px);
+    right: calc(50% - 138px);
+  }
+
+  .btn,
+  h3 {
+    font-size: 18px;
+  } 
+
+  .carousel-control-prev {
+    left: calc(50vw - 570px);
+  }
+  
+  .carousel-control-next {
+    right: calc(50vw - 570px);
+  }
+
+  .special h1, .promo h1, .review h1 {
+    margin-bottom: 35px !important;
+  }
+
+  .promo__collection {
+    padding: 0px 0px 20px 0px;
+  }
+
+  .connection__form {
+    margin: 25px auto 50px auto;
+  }
+
+  .brands__img {
+    justify-content: space-between;
+    max-width: 900px;
+  }
+
+  .review-item {
+    border: 2px solid white;
+    border-radius: 16px;
+    margin-bottom: 30px;
+  }
+  
+  .review-item__img {
+    border-radius: 16px 0px 0px 16px;
+  }
+
+  .subtext {
+    font-size: 13px;
+  }
+
+  .review-preview {
+    font-size: 15px; 
+    height: 45px;
+  }
+
+  .review .btn {
+    margin-top: 50px;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  /*--------------- carousel ULTRA MAX version ---------------*/
+
+  /* ---------- update chung ULTRA MAX ---------- */
+
+  #main-carousel,
+  .carousel-inner, 
+  .carousel-item {  
+    height: 890px;  /* fix height: màn 625px - 50px nav + p-top 50px) */
+  }
+
+  .carousel-caption {
+    padding-top: 50px !important;
+  }
+
+  .carousel-title {
+    font-size: 40px;
+  }
+
+  #main-carousel .carousel-indicators {
+    top: 110px;
+    height: 40px;
+  }
+
+  #main-carousel .carousel-indicators li {
+    width: 25px;
+    height: 25px;
+    margin: 0px 10px;
+  }
+
+  #main-carousel .seemore-btn {
+    border-width: 2px;
+    font-size: 20px;
+    width: 160px;
+    height: 44px;
+  }
+
+  /* ---------- update banner 1 ULTRA MAX ---------- */
+  
+  .banner-1 .carousel-caption__img {
+    width: 450px;
+    height: calc(450px / 1.3877);
+  }
+
+  .banner-1 {
+    background-image: url('../img/img--carousel/banner-bg-1-ultra-max.jpg');
+    animation: animatedBanner1 30s linear 0s infinite alternate;
+    background-size: 2133px 1200px;
+    background-repeat: no-repeat;
+  }
+
+  .banner-1 .carousel-caption__text {
+    margin-left: 50px;
+  }
+
+  .banner-1 .carousel-caption__img {
+    margin-right: 50px;
+  }
+
+  .logo-wrapper-1 {
+  margin: 10px 0px 40px 0px;
+  }
+
+  .main-carousel__text:first-of-type {
+    font-size: 32px;
+  }
+
+  .main-carousel__text:last-of-type {
+    font-size: 24px;
+  }
+
+  .banner-1 .seemore-btn {
+    margin: 30px 0px 15px 0px !important;
+  }
+
+  .banner-1 .carousel-caption__extra {
+    height: 120px;
+  }
+
+  .extra img {
+    max-width: 100px;
+  }
+
+  .extra-text {
+    font-size: 16px;
+  }
+
+  /* ---------- update banner 2 ULTRA MAX ---------- */
+  .logo-wrapper-2 {
+    margin: 70px auto 330px auto;
+  }
+
+  .logo-sony-a9-wrapper {
+    width: 730px;
+  }
+
+  .logo-sony-a9-wrapper .logo-sony {
+    font-size: 120px;
+    line-height: 100px;
+    margin-bottom: 0px;
+  }
+
+  .a9-logo {
+    height: 120px;
+    margin: 0px;
+  }
+
+  .banner-2 .carousel-caption__img {
+    width: 500px;
+    height: calc(500px / 1.3877);
+  }
+
+  .banner-2 .carousel-caption__extra {
+    width: 400px;
+    margin: auto;
+    height: 50px;
+  }
+
+  .banner-2 .extra-img {
+    height: 100%;
+  }
+
+  .banner-2 .main-carousel__text {
+    font-size: 32px;
+    font-style: italic;
+    font-weight: 500;
+    margin: 30px 0px 10px 0px;
+  }
+
+  /* ---------- update banner 2 ULTRA MAX ---------- */
+
+  .logo-wrapper-3 {
+    margin: 80px 0px 50px 0px;
+  }
+
+  .logo-wrapper-3 .logo-sony {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  .lotr-logo {
+    height: 80px;
+  }
+  
+  .carousel-caption__img--triple {
+    max-width: 960px;
+    margin-bottom: 40px;
+  }
+
+  .banner-3 .carousel-caption__img {
+    width: 320px;       /*size mới cho các banner 3 max*/
+    height: 280px;
+  }
+
+  .outer-ring {
+    width: 1400px;
+    height: 1400px;
+    max-height: none;
+    top: -231px;
+    right: calc(50% - 700px);
+  }
+
+  .inner-ring {
+    width: 320px;
+    top: calc(50% - 158px);
+    right: calc(50% - 160px);
+  }
+
+  .banner-3 .main-carousel__text:first-of-type {
+    margin: 0px auto;
+  }
+
+  .banner-3 .main-carousel__text:last-of-type {
+    margin: 10px auto 20px auto;
+  }
+
+  .logo-sony-inline {
+    font-size: 22px !important;
+  }
+
+}

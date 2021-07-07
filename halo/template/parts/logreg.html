@@ -1,0 +1,41 @@
+
+<div class="modal fade" id="logreg">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content"> 
+      <div class="modal-header flex-wrap">
+        <button class="close" type="button" data-dismiss="modal">&times;</button>
+        <div class="logreg__logo w-100 mb-3 d-flex justify-content-center"><img src="img/img--misc/logo-black.png" alt=""/></div>
+        <p class="w-100 font-18 text-center font-weight-bold log">Đăng nhập  </p>
+        <p class="w-100 font-18 text-center font-weight-bold reg">Đăng ký</p>
+      </div>
+      <div class="modal-body px-4 d-flex flex-column align-items-center">
+        <form class="logreg--login-form w-100" action="" role="form">
+          <div class="input-group w-100">
+            <div class="input-group-prepend"><span class="input-group-text"><i class="far fa-user-circle"></i></span></div>
+            <input class="form-control login-form--username" type="text" placeholder="Email"/>
+          </div>
+          <div class="input-group w-100">
+            <div class="input-group-prepend"><span class="input-group-text"><i class="fas fa-lock"></i></span></div>
+            <input class="form-control login-form--password" type="text" placeholder="Mật khẩu"/>
+          </div>
+          <div class="input-group w-100 reg">
+            <div class="input-group-prepend"><span class="input-group-text"><i class="far fa-address-card"></i></span></div>
+            <input class="form-control login-form--password" type="text" placeholder="Họ tên"/>
+          </div>
+          <div class="input-group w-100 reg">
+            <div class="input-group-prepend"><span class="input-group-text"><i class="fas fa-phone"></i></span></div>
+            <input class="form-control login-form--password" type="text" placeholder="Số điện thoại"/>
+          </div>
+        </form><a class="forget align-self-end log" href="#">Quên mật khẩu?</a>
+        <p class="forget align-self-start font-11 font-italic reg">Khi đăng ký, bạn xác nhận đã đọc và đồng ý với <a style="color: #007bff" href="#">các điều khoản của chúng tôi</a></p>
+        <button class="btn logreg__submit btn--dark log">Đăng nhập</button>
+        <button class="btn logreg__submit btn--dark font-14 reg">Gia nhập cộng đồng HALO</button>
+        <p class="log">Hoặc đăng nhập với </p>
+        <div class="logreg__platform justify-content-between log"><a class="platform__link" href="#"><img class="platform__img" src="img/img--misc/logo-fb.png" alt=""/></a><a class="platform__link" href="#"><img class="platform__img" src="img/img--misc/logo-gg.png" alt=""/></a><a class="platform__link" href="#"><img class="platform__img" src="img/img--misc/logo-apple.png" alt=""/></a></div>
+      </div>
+      <div class="modal-footer"><a class="logreg-portal mx-auto reg" onclick="logregSwitch()">Quay lại đăng nhập</a>
+        <p class="mx-auto log">Chưa có tài khoản? <a class="logreg-portal" onclick="logregSwitch()">Đăng ký ngay </a></p>
+      </div>
+    </div>
+  </div>
+</div>

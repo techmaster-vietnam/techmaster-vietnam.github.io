@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/halo/favicon/favicon.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/item.css">
+    <link rel="stylesheet" href="css/details.css">
+    <title>Máy ảnh 1DX Mark III </title>
+  </head>
+  <body>
+    <!-- Load Facebook SDK for JavaScript-->
+    <div id="fb-root"></div>
+    <script>
+      window.fbAsyncInit = function() {
+      FB.init({
+      xfbml            : true,
+      version          : 'v10.0'
+      });
+      };
+      (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+      fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <!-- Your Chat Plugin code-->
+    <div class="fb-customerchat" attribution="setup_tool" page_id="103550388473714" theme_color="#6699cc" logged_in_greeting="Xin chào, HALO có thể giúp gì cho bạn?" logged_out_greeting="Xin chào, HALO có thể giúp gì cho bạn?"></div>
+    <header id="header">
+      <nav class="navbar navbar-expand-md navbar-dark">
+        <div class="container-xl px-4 px-sm-5 px-xl-0">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-controls="collapsibleNavbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button><a class="navbar-brand" href="index.html"><img class="header__logo" src="img/img--misc/logo-white.png" alt="halo thế giới máy ảnh"></a>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <div class="search-bar-till-md">
+              <input class="search-area" type="text" placeholder="Tìm kiếm..."><a class="btn search-btn" href="search-result.html"><i class="fas fa-search"></i></a>
+            </div>
+            <ul class="navbar-nav">
+              <li class="nav-item"><a class="nav-link py-3 px-md-3" href="camera-hub.html">Máy ảnh</a></li>
+              <li class="nav-item"><a class="nav-link py-3 px-md-3" href="camera-hub.html">Ống kính</a></li>
+              <li class="nav-item"><a class="nav-link py-3 px-md-3" href="camera-hub.html">Phụ kiện</a></li>
+              <li class="nav-item"><a class="nav-link py-3 px-md-3" href="review.html">Đánh giá</a></li>
+              <li class="nav-item display-till-md log-min"><a class="nav-link py-3 logreg-togglers" href="#" data-toggle="modal" data-target="#logreg"> <span>Đăng nhập/Đăng ký</span></a></li>
+            </ul>
+          </div>
+          <div class="log-cart-search">
+            <div class="logreg-togglers-wrapper"><a class="hidden-till-md log-max logreg-togglers" id="logregToggler" href="#" data-toggle="modal" data-target="#logreg"> <span>Đăng nhập/Đăng ký</span></a>
+              <div class="dropdown-menu"><a class="dropdown-item" href="#"> <span class="mr-4"> <i class="fas fa-id-card"></i></span><span>Thông tin cá nhân</span></a><a class="dropdown-item logout" href="#"> <span class="mr-4"> <i class="fas fa-sign-out-alt"></i></span><span>Đăng xuất  </span></a></div>
+            </div><a class="cart-icon" href="cart.html"><i class="fas fa-shopping-cart"></i>
+              <div class="cart__badge-wrapper"><span class="cart__badge">0</span></div></a>
+            <button class="btn search-btn hidden-till-md d-flex align-items-center" onclick="searchBarToggler()"><i class="fas fa-search"></i></button>
+          </div>
+          <div class="search-bar hidden-till-md">
+            <input class="search-area search-area-full" type="text" placeholder="Tìm kiếm..."><a class="btn search-btn" href="search-result.html"><i class="fas fa-search"></i></a>
+            <button class="btn search-cancel d-flex align-items-center justify-content-center" onclick="searchBarToggler()"><i class="fas fa-times"></i></button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="utilities-btn-group"> 
+        <div class="scroll-up-btn"><a class="scroll-up-btn__link" href="#header"> <i class="fas fa-chevron-up"></i></a></div>
+      </div>
+      <div class="modal fade" id="logreg">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content"> 
+            <div class="modal-header flex-wrap">
+              <button class="close" type="button" data-dismiss="modal">&times;</button>
+              <div class="logreg__logo w-100 mb-3 d-flex justify-content-center"><img src="img/img--misc/logo-black.png" alt="halo thế giới máy ảnh"></div>
+              <p class="w-100 font-18 text-center font-weight-bold log">Đăng nhập  </p>
+              <p class="w-100 font-18 text-center font-weight-bold reg">Đăng ký</p>
+            </div>
+            <div class="modal-body px-4 d-flex flex-column align-items-center">
+              <form class="logreg__form w-100" action="" role="form">
+                <div class="input-group w-100 log required">
+                  <div class="input-group-prepend"><span class="input-group-text"><i class="far fa-user-circle"></i></span></div>
+                  <input class="form-control log__input--mail" type="text" placeholder="Email">
+                </div>
+                <div class="input-group w-100 log">
+                  <div class="input-group-prepend"><span class="input-group-text"><i class="fas fa-lock"></i></span></div>
+                  <input class="form-control log__input--password" type="text" placeholder="Mật khẩu">
+                </div>
+                <div class="input-group w-100 reg required">
+                  <div class="input-group-prepend"><span class="input-group-text"><i class="far fa-user-circle"></i></span></div>
+                  <input class="form-control reg__input--mail" type="text" placeholder="Email">
+                </div>
+                <div class="input-group w-100 reg">
+                  <div class="input-group-prepend"><span class="input-group-text"><i class="fas fa-lock"></i></span></div>
+                  <input class="form-control reg__input--password" type="text" placeholder="Mật khẩu">
+                </div>
+                <div class="input-group w-100 reg">
+                  <div class="input-group-prepend"><span class="input-group-text"><i class="far fa-address-card"></i></span></div>
+                  <input class="form-control reg__input--name" type="text" placeholder="Họ tên">
+                </div>
+                <div class="input-group w-100 reg">
+                  <div class="input-group-prepend"><span class="input-group-text"><i class="fas fa-phone"></i></span></div>
+                  <input class="form-control reg__input--phone" type="text" placeholder="Số điện thoại">
+                </div>
+              </form><a class="forget align-self-end log" href="#">Quên mật khẩu?</a>
+              <p class="forget align-self-start font-11 font-italic reg">Khi đăng ký, bạn xác nhận đã đọc và đồng ý với <a style="color: #007bff" href="#">các điều khoản của chúng tôi</a></p>
+              <button class="btn logreg__submit logreg__submit--log btn--dark log">Đăng nhập</button>
+              <button class="btn logreg__submit logreg__submit--reg btn--dark reg">Gia nhập cộng đồng HALO</button>
+              <p class="log">Hoặc đăng nhập với </p>
+              <div class="logreg__platform justify-content-between log"><a class="platform__link" href="#"><img class="platform__img" src="img/img--misc/logo-fb.png" alt="halo thế giới máy ảnh"></a><a class="platform__link" href="#"><img class="platform__img" src="img/img--misc/logo-gg.png" alt="halo thế giới máy ảnh"></a><a class="platform__link" href="#"><img class="platform__img" src="img/img--misc/logo-apple.png" alt="halo thế giới máy ảnh"></a></div>
+            </div>
+            <div class="modal-footer">
+              <p class="mx-auto log">Chưa có tài khoản? <span class="logreg-portal logreg-portal--to-reg">Đăng ký ngay</span></p><span class="logreg-portal logreg-portal--to-log mx-auto reg">Quay lại đăng nhập</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="breadcrumb-wrapper container-xl">
+        <ul class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Trang chủ</a></li>
+          <li class="breadcrumb-item"><a href="camera-hub.html">Máy ảnh</a></li>
+          <li class="breadcrumb-item"><a href="dslr-hub.html">Máy ảnh DSLR</a></li>
+          <li class="breadcrumb-item active">Canon EOS 1DX Mark&nbsp;III</li>
+        </ul>
+      </div>
+      <div class="details__wrapper container-xl"> 
+        <h1 class="details__header w-100 text-left">Máy ảnh DSLR Canon EOS 1DX Mark&nbsp;III </h1>
+        <div class="details__review-score w-100">
+          <h2 class="score--user font-weight-bold text-left">Người dùng đánh&nbsp;giá: <span>x / 5</span></h2>
+          <h2 class="score--shop font-weight-bold text-left">HALO đánh giá: <span>x / 5</span></h2>
+        </div>
+        <section class="details__img-area"><img class="details__main-img" src="img/img--details/detail__main-img-1.jpg" alt="Canon 1DX Mark III">
+          <div class="details__sub-img-area"><img class="details__sub-img" src="img/img--details/detail__main-img-1.jpg" alt="Canon 1DX Mark III"><img class="details__sub-img" src="img/img--details/detail__sub-img-1.jpg" alt="Canon 1DX Mark III"><img class="details__sub-img" src="img/img--details/detail__sub-img-2.jpg" alt="Canon 1DX Mark III"><img class="details__sub-img" src="img/img--details/detail__sub-img-3.jpg" alt="Canon 1DX Mark III"><img class="details__sub-img" src="img/img--details/detail__sub-img-4.jpg" alt="Canon 1DX Mark III"><img class="details__sub-img" src="img/img--details/detail__sub-img-5.jpg" alt="Canon 1DX Mark III"></div>
+          <div class="modal fade" id="main-img--full-size">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <button class="close" type="button" data-dismiss="modal">&times;</button><img src="img/img--details/sample-1.png" alt="Canon 1DX Mark III">
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="details__summary">
+          <div class="summary__basic">
+            <h2 class="details__sub-header">Thông tin cơ bản</h2>
+            <p class="summary__text">Xuất xứ: Chính hãng, fullbox<br>Độ phân giải: 20.1 MP<br>Kích cỡ cảm biến: Full-frame<br>Ngàm: EF Mount<br>Bảo hành: Chính hãng 24 tháng <a class="text-primary font-italic" href="#">(xem chi tiết)</a></p>
+            <p class="summary__text">Canon EOS 1D X Mark III mang đến chuẩn mực cao nhất cho dòng máy ảnh DSLR full-frame. Cho tới hiện tại, đây là chiếc máy ảnh hàng đầu và đẳng cấp nhất của&nbsp;Canon.</p>
+            <p class="details__price">130.090.000đ</p>
+            <p class="details__sale-text"><span class="details__old-price">138.090.000đ</span><span class="details__sale-badge"><img src="img/img--misc/badge--sale.png" alt=""></span><span class="details__sale-amount">(Giảm 8.000.000đ)</span></p>
+            <div class="summary__btn-wrapper"><a class="summary__btn btn d-flex justify-content-center align-items-center" href="cart.html">Mua ngay      </a>
+              <button class="summary__btn btn btn--add-to-cart">Thêm vào giỏ hàng </button>
+            </div>
+            <div class="summary__box-content"> 
+              <h2 class="details__sub-header text-left mb-3">Hộp sản phẩm bao gồm</h2>
+              <ul class="box-content__list">
+                <li class="box-content__item">1x Máy ảnh Canon EOS-1D X Mark&nbsp;III</li>
+                <li class="box-content__item">1x pin Canon LP-E19</li>
+                <li class="box-content__item">1x dock sạc Canon LC-E19</li>
+                <li class="box-content__item">1x nắp ngàm EF</li>
+                <li class="box-content__item">1x dây đeo Canon L7 Wide Straps cỡ&nbsp;XL</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="details__offers"> 
+          <div class="offers__gift">
+            <h2 class="details__sub-header">Quà tặng <br><span class="font-14 font-italic font-weight-normal">(Tổng giá trị 900.000đ)</span></h2>
+            <div class="gift-wrapper"> <img class="gift-img" src="img/img--details/gift-img-2.jpg" alt="quà tặng Canon 1DX Mark III"><img class="gift-img" src="img/img--details/gift-img-2.jpg" alt="quà tặng Canon 1DX Mark III"><img class="gift-img" src="img/img--details/gift-img-2.jpg" alt="quà tặng Canon 1DX Mark III"></div>
+          </div>
+          <div class="offers__special">
+            <h2 class="details__sub-header">Ưu đãi đặc biệt</h2>
+            <ul class="special__list">
+              <li class="special__item">- Miễn phí giao hàng toàn quốc trong vòng 2&nbsp;-&nbsp;5&nbsp;ngày</li>
+              <li class="special__item">- Hỗ trợ dán màn hình miễn phí trọn đời sản&nbsp;phẩm.</li>
+              <li class="special__item">- Miễn phí vệ sinh, khử mốc trong thời hạn bảo&nbsp;hành </li>
+              <li class="special__item">- Tặng voucher giá trị 1.000.000đ cho lần mua hàng kế&nbsp;tiếp</li>
+            </ul>
+          </div>
+          <button class="offers__btn btn">Đăng ký mua trả góp lãi suất 0%</button>
+          <p class="offers__contact">Tư vấn miền Bắc: <a class="text-primary" href="#">0397496263 </a>(Mr. Nguyễn) <br>Tư vấn miền Trung: <a class="text-primary" href="#">0397496263 </a>(Mr. Trung)    <br>Tư vấn miền Nam: <a class="text-primary" href="#">0397496263 </a>(Mr. Đức)    </p>
+        </section>
+        <section class="details__main-info">
+          <div class="main-info__toggler" data-toggle="collapse" data-target="#intro"><span class="details__sub-header">Giới thiệu</span><span class="main-info__toggler-indicator"><i class="fas fa-chevron-up"></i></span></div>
+          <div class="main-info__content collapse show" id="intro">
+            <h3 class="main-info__inner-header">Cảm biến mới, hệ thống hình ảnh mới</h3><img src="img/img--details/intro-img-1.jpg" alt="Canon 1DX Mark III">
+            <p>Canon EOS 1D X Mark III sử dụng cảm biến hoàn toàn mới 20.1MP kết hợp với bộ xử lý hình ảnh DIGIC X mang lại chất lượng hình ảnh sắc nét ấn tượng với độ chi tiết cao nhất, giảm thiểu xác suất sai màu và hiệu ứng&nbsp;mới. </p><img src="img/img--details/intro-img-2.png" alt="Canon 1DX Mark III">
+            <p>Ngoài tốc độ ấn tượng, bộ xử lý cảm biến còn có phạm vi độ nhạy của dải ISO từ 100-102400, có thể mở rộng thành ISO 50-819200 để hỗ trợ làm việc trong nhiều điều kiện ánh sáng khác&nbsp;nhau. </p>
+            <h3 class="main-info__inner-header">Hệ thống lấy nét</h3><img src="img/img--details/intro-img-3.jpg" alt="Canon 1DX Mark III">
+            <p>Canon EOS 1DX Mark III sử dụng cảm biến AF mới với khả năng tự động lấy nét chính xác qua kính ngắm, Live View và video. Thông qua kính ngắm, hệ thống AF gồm 191 điểm lấy nét nhanh và chính xác tuyệt đối không chỉ ở tốc độ mà còn đạt khả năng AF Tracking mới. Về cách nhận diện khuôn mặt, EOS-1D X Mark III hỗ trợ công nghệ Head Detection kết hợp Deep Learning và khả năng đọc, phân tích chủ thể thông qua hình dạng và màu&nbsp;sắc.</p>
+            <h3 class="main-info__inner-header">Tốc độ đỉnh cao</h3><img src="img/img--details/intro-img-4.jpg" alt="Canon 1DX Mark III">
+            <p>Tốc độ chụp nhanh của Burst Shooting mang đến cơ hội cao hơn cho các nhiếp ảnh gia chuyên nghiệp để ghi lại khoảnh khắc chính xác với bố cục hoàn hảo. Máy ảnh EOS-1D X Mark III có tốc độ chụp ấn tượng lên tới 16 khung hình / giây bằng kính ngắm, đồng bộ với hệ thống AF / AE mới được phát triển để đáp ứng nhanh về lấy nét tự động chính xác và kiểm soát phơi sáng trong mọi lần chụp quyết&nbsp;định.</p>
+            <h3 class="main-info__inner-header">Thiết kế bền bỉ</h3><img src="img/img--details/intro-img-6.png" alt="Canon 1DX Mark III">
+            <p>EOS-1D X Mark III được trang bị độ bền cơ chế màn trập khoảng 500.000 shot. Được thiết kế với thân máy bằng hợp kim magiê chắc chắn, có khả năng chống bụi và ẩm xung quanh các khu vực quan trọng, EOS-1D X Mark III sẵn sàng chống đỡ trong mọi nhiệm&nbsp;vụ.</p>
+          </div>
+          <div class="main-info__toggler" data-toggle="collapse" data-target="#specs"><span class="details__sub-header">Thông số kỹ thuật</span><span class="main-info__toggler-indicator"> <i class="fas fa-chevron-up"></i></span></div>
+          <div class="main-info__content collapse show" id="specs">
+            <div class="specs__category"> 
+              <h3 class="main-info__inner-header">Hình ảnh</h3>
+              <div class="category__row">
+                <p class="category__key">Kích cỡ cảm biến</p>
+                <p class="category__value">Full frame BSI-CMOS (35.9&nbsp;x&nbsp;23.9&nbsp;mm)</p>
+              </div>
+              <div class="category__row">
+                <p class="category__key">Độ Phân Giải</p>
+                <p class="category__value">20.1 Megapixel</p>
+              </div>
+              <div class="category__row">
+                <p class="category__key">Kích Thước Ảnh</p>
+                <p class="category__value">5472px x 3648px (Tỷ lệ ảnh 3:2)</p>
+              </div>
+            </div>
+            <div class="specs__category"> 
+              <h3 class="main-info__inner-header">Ánh sáng</h3>
+              <div class="category__row">
+                <p class="category__key">ISO</p>
+                <p class="category__value">100 - 102400 (Mở rộng: 50&nbsp;-&nbsp;819200)</p>
+              </div>
+              <div class="category__row">
+                <p class="category__key">Tốc Độ Chụp Liên Tục</p>
+                <p class="category__value">20 hình/giây</p>
+              </div>
+              <div class="category__row">
+                <p class="category__key">Bù trừ sáng(EV)</p>
+                <p class="category__value">-5 đến +5 EV (1/3, 1/2 EV)</p>
+              </div>
+            </div>
+            <div class="specs__category"> 
+              <h3 class="main-info__inner-header">Video</h3>
+              <div class="category__row">
+                <p class="category__key">Độ Phân Giải Video</p>
+                <p class="category__value">DCI 4K (4096 x 2160)</p>
+              </div>
+              <div class="category__row">
+                <p class="category__key">Micro</p>
+                <p class="category__value">2 micro stereo (hỗ trợ micro&nbsp;ngoài)</p>
+              </div>
+            </div>
+            <div class="specs__category"> 
+              <h3 class="main-info__inner-header">Kính Ngắm / Màn Hình</h3>
+              <div class="category__row">
+                <p class="category__key">Kích Thước Màn Hình</p>
+                <p class="category__value">3.2 inch</p>
+              </div>
+              <div class="category__row">
+                <p class="category__key">Đặc Tính Màn Hình</p>
+                <p class="category__value">LCD cảm ứng</p>
+              </div>
+              <div class="category__row">
+                <p class="category__key">Độ Bao Phủ Kính Ngắm</p>
+                <p class="category__value">100%</p>
+              </div>
+            </div>
+            <div class="specs__category"> 
+              <h3 class="main-info__inner-header">Kết Nối</h3>
+              <div class="category__row">
+                <p class="category__key">Số Khe Cắm Thẻ Nhớ</p>
+                <p class="category__value">2 khe (hoạt động đồng thời)</p>
+              </div>
+              <div class="category__row">
+                <p class="category__key">Jack Cắm</p>
+                <p class="category__value">USB Type-C (USB 3.1), HDMI C (Mini), Canon N3, 3.5mm Headphone, 3.5mm Microphone, PC Sync&nbsp;Socket,&nbsp;RJ45</p>
+              </div>
+              <div class="category__row">
+                <p class="category__key">Kết Nối Không Dây</p>
+                <p class="category__value">Wi-Fi/ Bluetooth</p>
+              </div>
+              <div class="category__row">
+                <p class="category__key">GPS</p>
+                <p class="category__value">Có</p>
+              </div>
+            </div>
+            <div class="specs__category"> 
+              <h3 class="main-info__inner-header">Pin / Kích Thước / Trọng Lượng</h3>
+              <div class="category__row">
+                <p class="category__key">Pin</p>
+                <p class="category__value">1 x LP-E19 Lithium-Ion, 2750 mAh (Trung bình 285&nbsp;Shots)</p>
+              </div>
+              <div class="category__row">
+                <p class="category__key">Kích Thước</p>
+                <p class="category__value">158 x 167.6 x 82.6 mm (cao x ngang x dày)</p>
+              </div>
+              <div class="category__row">
+                <p class="category__key">Trọng lượng</p>
+                <p class="category__value">1400 g (bao gồm pin, thẻ nhớ)</p>
+              </div>
+            </div>
+          </div>
+          <div class="main-info__toggler" data-toggle="collapse" data-target="#review"><span class="details__sub-header">Đánh giá của HALO</span><span class="main-info__toggler-indicator"> <i class="fas fa-chevron-up"></i></span></div>
+          <div class="main-info__content collapse show" id="review"><img class="review__img d-block" src="img/img--details/review-img.jpg" alt="đánh giá Canon 1DX Mark III">
+            <div class="review__content">
+              <h1 class="review__header text-left">Canon 1DX Mark III: Vua của các vị vua</h1>
+              <div class="review__sub-header"> <span class="author font-italic">Trung Đức</span><span class="time font-italic"> <i class="far fa-clock"></i>01/01/2021</span></div>
+              <p class="review__sub-preview">1DX mark III không chỉ mang lại sự phấn khích với thiết bị công nghệ cao, mà còn là niềm cảm hứng bất tận khi tác nghiệp. Đây là camera có độ ổn định cao nhất thế giới: dù là ra chiến trường, leo đỉnh Everest hay đơn thuần là chụp người thương, bạn sẽ luôn thấy an tâm là sẽ có những tấm ảnh chất lượng và tối ưu&nbsp;nhất.</p>
+              <button class="review__btn btn--dark btn">Xem chi tiết</button>
+            </div>
+          </div>
+          <div class="main-info__toggler" data-toggle="collapse" data-target="#sample"><span class="details__sub-header">Ảnh chụp mẫu </span><span class="main-info__toggler-indicator"> <i class="fas fa-chevron-up"></i></span></div>
+          <div class="main-info__content collapse show" id="sample">
+            <div class="card-columns"> 
+              <div class="card"><img src="img/img--details/sample-1.png" alt="chụp mẫu Canon 1DX Mark III" data-toggle="modal" data-target="#sample--full-size"></div>
+              <div class="card"><img src="img/img--details/sample-2.png" alt="chụp mẫu Canon 1DX Mark III" data-toggle="modal" data-target="#sample--full-size"></div>
+              <div class="card"><img src="img/img--details/sample-3.png" alt="chụp mẫu Canon 1DX Mark III" data-toggle="modal" data-target="#sample--full-size"></div>
+              <div class="card"><img src="img/img--details/sample-1.png" alt="chụp mẫu Canon 1DX Mark III" data-toggle="modal" data-target="#sample--full-size"></div>
+              <div class="card"><img src="img/img--details/sample-2.png" alt="chụp mẫu Canon 1DX Mark III" data-toggle="modal" data-target="#sample--full-size"></div>
+              <div class="card"><img src="img/img--details/sample-3.png" alt="chụp mẫu Canon 1DX Mark III" data-toggle="modal" data-target="#sample--full-size"></div>
+            </div>
+            <div class="modal fade" id="sample--full-size">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <button class="close" type="button" data-dismiss="modal">&times;</button><img src="img/img--details/sample-1.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main-info__toggler" data-toggle="collapse" data-target="#comment"><span class="details__sub-header">Bình luận</span><span class="main-info__toggler-indicator"> <i class="fas fa-chevron-up"></i></span></div>
+          <div class="main-info__content collapse show" id="comment">
+            <form class="comment__form" action="">
+              <input class="comment__input" type="text" placeholder="Nhập bình luận (cần đăng nhập)" disabled>
+              <button class="comment__btn btn connection__submit-btn btn-primary" type="submit" disabled>Gửi</button>
+            </form>
+            <div class="comment__old-comment media"><img class="avatar rounded-circle" src="img/img--details/avatar-1.jpg" alt="">
+              <div class="old-comment__content media-body">
+                <h3 class="details__sub-header">Đánh giá: <span class="mr-auto ml-2">4 / 5</span><small class="font-italic"><i class="far fa-clock"></i> 01/01/2021</small></h3>
+                <h3 class="username details__sub-header">John Doe</h3>
+                <p class="comment-text">Chất lượng tương xứng với giá tiền</p>
+                <p class="reply-report"> <a class="replyToggler disabled" href="#"> <i class="fas fa-reply mr-3"></i>Trả lời</a><a class="reportToggler" href="#"><i class="fas fa-flag mr-3"></i>Báo cáo</a></p>
+              </div>
+            </div>
+            <div class="comment__old-comment reply media"><img class="avatar rounded-circle" src="img/img--details/avatar-2.png" alt="">
+              <div class="old-comment__content media-body">
+                <h3 class="details__sub-header">Đánh giá: <span class="mr-auto ml-2">4 / 5</span><small class="font-italic"><i class="far fa-clock"></i> 01/01/2021</small></h3>
+                <h3 class="username details__sub-header">John Also Doe</h3>
+                <p class="comment-text">Đồng ý</p>
+                <p class="reply-report"> <a class="replyToggler" href="#"> <i class="fas fa-reply mr-3"></i>Trả lời</a><a class="reportToggler" href="#"><i class="fas fa-flag mr-3"></i>Báo cáo</a></p>
+              </div>
+            </div>
+            <div class="comment__old-comment media"><img class="avatar rounded-circle" src="img/img--details/avatar-3.jpg" alt="">
+              <div class="old-comment__content media-body">
+                <h3 class="details__sub-header">Đánh giá: <span class="mr-auto ml-2">4 / 5</span><small class="font-italic"><i class="far fa-clock"></i> 01/01/2021</small></h3>
+                <h3 class="username details__sub-header">John Still Doe</h3>
+                <p class="comment-text">Hơi nặng và khó dùng.</p>
+                <p class="reply-report"> <a class="replyToggler" href="#"> <i class="fas fa-reply mr-3"></i>Trả lời</a><a class="reportToggler" href="#"><i class="fas fa-flag mr-3"></i>Báo cáo</a></p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="details__recommend">
+          <h2 class="details__sub-header">Sản phẩm đi kèm khuyên dùng</h2>
+          <div class="recommend__wrapper">
+            <div class="card item item--hot item--love item--sale"><img class="card-img-top" src="img/img--camera-body/canon-eos-5d-mark-iv-card.jpg" alt="canon-eos-5d-mark-iv"><img class="item__badge item__badge--hot" src="img/img--misc/badge--hot.png" alt=""><img class="item__badge item__badge--love" src="img/img--misc/badge--love.png" alt="">
+              <div class="card-body text-center">
+                <div class="item__header">
+                  <p class="item__name font-weight-bold font-18">Canon EOS 5D Mark&nbsp;IV</p>
+                  <p class="item__subtext font-italic font-weight-light">(Mới 100% fullbox)</p>
+                </div>
+                <p class="item__price font-weight-bold">50.090.000đ</p>
+                <div class="item__sale-module font-weight-bold"><span class="sale-module__old-price">58.090.000đ</span><img class="item__badge item__badge--sale" src="img/img--misc/badge--sale.png" alt=""><span class="sale-module__sale-amount font-italic">(Giảm 8.000.000đ)</span></div><a class="btn btn--dark btn--seemore" href="details.html">Xem chi tiết </a>
+              </div>
+            </div>
+            <div class="card item item--hot item--sale"><img class="card-img-top" src="img/img--item/item-2.jpg" alt="Fujifilm X-E3 Silver"><img class="item__badge item__badge--hot" src="img/img--misc/badge--hot.png" alt=""><img class="item__badge item__badge--love" src="img/img--misc/badge--love.png" alt="">
+              <div class="card-body text-center">
+                <div class="item__header">
+                  <p class="item__name font-weight-bold">Fujifilm X-E3 Silver</p>
+                  <p class="item__subtext font-italic font-weight-light">(Mới 100% fullbox)</p>
+                </div>
+                <p class="item__price font-weight-bold">10.290.000đ</p>
+                <div class="item__sale-module font-weight-bold"><span class="sale-module__old-price">17.490.000đ</span><img class="item__badge item__badge--sale" src="img/img--misc/badge--sale.png" alt=""><span class="sale-module__sale-amount font-italic">(Giảm 7.200.000đ)</span></div><a class="btn btn--dark btn--seemore" href="details.html">Xem chi tiết </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="dark-side" id="footer"> 
+      <div class="container px-sm-5 mw-900 d-flex flex-column justify-content-center align-items-center"><img class="footer__logo" src="img/img--misc/logo-white.png" alt="halo thế giới máy ảnh">
+        <ul class="footer__menu d-flex justify-content-between align-items-center">
+          <li class="footer__item d-flex justify-content-center align-items-center"><a class="footer__link text-center font-weight-bold" href="#">Giới thiệu</a></li>
+          <li class="footer__item d-flex justify-content-center align-items-center"><a class="footer__link text-center font-weight-bold" href="#">Hỗ trợ</a></li>
+          <li class="footer__item d-flex justify-content-center align-items-center"><a class="footer__link text-center font-weight-bold" href="#">Chính sách</a></li>
+          <li class="footer__item d-flex justify-content-center align-items-center"><a class="footer__link text-center font-weight-bold" href="#">Liên hệ</a></li>
+        </ul>
+        <p class="footer__info">Địa chỉ: Tầng 12A, tòa nhà Viwaseen Tower, số 48, Tố Hữu, Hà Nội<br>Tổng đài tư vấn mua hàng: 099.999.9999<br>Email: info@halo.vn / ducnt444@gmail.com<br>ĐKKD số 0123456789 do Sở Kế hoạch và Đầu tư TP. Hà Nội cấp ngày 01/01/2021</p>
+        <p class="copyright font-italic">Bản quyền thuộc Công ty TNHH HALO Việt Nam</p>
+      </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/d8c5e3f38e.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+
+<div class="payment-card__content"> 
+  <div class="front"> <img class="payment-card__chip" src="/halo/img/img--payment/chip.png" alt=""/><img class="payment-card__brands" src="/halo/img/img--payment/visacard-2.png" alt=""/>
+    <p class="front__num display-value">0000 0000 0000 0000</p>
+    <p class="front__valid-text">VALID DATES</p>
+    <p class="front__valid-dates"><span class="front__month display-value">MM</span><span>&nbsp;/&nbsp;</span><span class="front__year display-value">YY</span></p>
+    <p class="front__name display-value">JAMES BOND</p>
+  </div>
+  <div class="back">
+    <div class="stripe"></div>
+    <div class="back__content">
+      <p class="cvv display-value">CVV</p>
+      <div class="stamp"></div>
+      <p class="back__text">Tấm thẻ này là tài sản của ngân hàng phát hành. Nếu ai nhặt được, vui lòng gửi trả lại cho ngân hàng. Việc sử dụng tấm thẻ này phải tuân thủ các quy định về việc sử dụng thẻ của ngân hàng phát hành.</p>
+    </div>
+  </div>
+</div>
+<div class="payment-card__input"> 
+  <form autocomplete="off">
+    <div class="form-group">
+      <label for="visa-master-input__num">Nhập số thẻ:&nbsp;<i>(Viết liền)</i></label>
+      <input class="form-control front-input" id="visa-master-input__num" type="number" required="required"/>
+    </div>
+    <div class="form-group input__dates">
+      <label for="visa-master-input__month">Ngày hết hạn:&nbsp; <i>(chỉ nhập 2 số cuối của năm)</i></label>
+      <input class="input__month form-control front-input" id="visa-master-input__month" type="number" placeholder="Tháng" min="1" max="12" required="required"/><span>&nbsp;/&nbsp;</span>
+      <input class="input__year form-control front-input" id="visa-master-input__year" type="number" placeholder="Năm" min="21" max="99" required="required"/>
+    </div>
+    <div class="form-group">
+      <label for="visa-master-input__name">Nhập tên chủ thẻ:&nbsp; <i>(Viết cách, không dấu)</i></label>
+      <input class="form-control front-input" id="visa-master-input__name" type="text" required="required"/>
+    </div>
+    <div class="form-group">
+      <label for="visa-master-input__name">Mã số CVV:</label>
+      <input class="form-control back-input" id="visa-master-input__cvv" type="number" min="1" max="999" required="required"/>
+    </div>
+    <input class="btn btn--confirmation" type="submit" value="Xác nhận"/>
+  </form>
+</div>

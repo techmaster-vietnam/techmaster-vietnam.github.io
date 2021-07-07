@@ -1,0 +1,76 @@
+
+flow:
+
+1.index
+  a. banners 
+2.camera-hub (primary category)
+  a. banners
+  b. collections (secondary category)
+3.dslr-hub
+  a. filters
+  b. pagination
+4.item details
+  a. swap main img
+  b. sections
+  c. process to cart
+5. cart
+  a. add/subtract/remove items
+  b. process to payment
+6. payment 
+  a. confirmation (coupon)
+  b. faq (aside)
+  c. info (user)
+  d. payment method
+  f. process to checkout
+7. checkout
+  a. summary
+  b. continue shopping
+8. features: login/register
+8. features: review 
+10. features: review details 
+11. responsive:
+  a. built with mobile-first
+  b. x-axis (mobile) VS y-axis (desktop): banners
+
+
+banner 3 cho xs -> ok
+review details -> ok
+fix header bug khi bật modal -> ok
+set max length text, input -> ok
+dóng hàng -> ok
+layout term -> ok
+layout slick mobile -> ok
+filter simulator -> ok
+nút chat -> ok
+nút cuộn -> ok
+
+validate -> tạm ok
+tách style trong layout
+reply feature
+alt cho img
+gộp indicator styles vào layout.css
+
+
+
+//event: khi nhập input số thẻ, 
+for (let i = 1; i < inputValue.length; i+=4) {
+  inputValue[i].addEventListener("input", function(){
+    //sẽ update lên display 
+    let result = inputValue[i].value;
+    //dưới dạng: mỗi 4 số lại có dấu cách
+    
+    displayValue[i-1].innerText = 
+    result.replace(/\B(?=(\d{4})+(?!\d))/g, " ");
+  });
+}
+
+/* 
+//loop: mọi ô input (trừ [0] a.k.a số thẻ)
+for (let i = 1; i < inputValue.length; i++) {
+  //event: khi nhập input
+  inputValue[i].addEventListener("input", function() {
+    //sẽ update lên display
+    displayValue[i].innerHTML = inputValue[i].value.toUpperCase();
+  })
+}
+

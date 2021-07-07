@@ -1,0 +1,166 @@
+extends parts/layout.pug
+
+block css
+  link(rel="stylesheet", href="css/index.css")
+
+block title
+  title HALO
+
+block script
+  script(src='https://unpkg.com/aos@2.3.1/dist/aos.js')
+  script(src='js/aos-init.js')
+  script(src='js/index.js')
+
+block content 
+
+  include parts/loading.pug
+
+  include parts/updates.pug
+
+  include parts/main-carousel.pug
+
+  section.intro.intro--camera
+    .container-xl.px-sm-5.px-xl-0
+      .row
+        .intro__text.d-flex.flex-column.justify-content-center.col-md(data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine" data-aos-duration="1000")
+          h1 Máy ảnh DSLR/Mirrorless
+
+          h3.font-italic 
+            | Phá bỏ giới hạn từ chiếc máy ảnh du lịch giá rẻ
+            br
+            | và cả smartphone đắt tiền của bạn
+
+          a.btn.btn--dark.seemore-btn(href="camera-hub.html") Xem chi tiết
+
+        .intro__img.col-md(data-aos="fade-left" data-aos-offset="100" data-aos-easing="ease-in-sine" data-aos-duration="1000")
+          img(src="img/img--camera-body/camera-intro-imgv2.png", alt="Máy ảnh tốt nhất")
+
+  section.intro.intro--lens.dark-side
+    .container-xl.px-sm-5.px-xl-0
+      .row
+        .intro__text.d-flex.flex-column.justify-content-center.col-md(data-aos="fade-left" data-aos-offset="100" data-aos-easing="ease-in-sine" data-aos-duration="1000")
+          h1 Ống kính máy ảnh
+          
+          h3.font-italic Góc nhìn mới, cảm nhận mới, thế giới mới
+
+          a.btn.btn--light.seemore-btn(href="camera-hub.html") Xem chi tiết
+
+        .intro__img.col-md(data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine" data-aos-duration="1000")
+          img(src="img/img--lens/lens-intro-imgv2.png", alt="lens máy ảnh tốt nhất")
+
+  section.intro.intro--equip
+    .container-xl.px-sm-5.px-xl-0.mw-900
+      .intro__text.d-flex.flex-column(data-aos="fade-down" data-aos-offset="100" data-aos-easing="ease-in-sine" data-aos-duration="1000")
+        h1 Phụ kiện máy ảnh
+        h3.font-italic Dù “pro” đến mấy cũng cần các trợ thủ đắc lực
+
+        a.btn.btn--dark.seemore-btn.mx-auto(href="camera-hub.html" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duration="1000") Xem chi tiết
+
+      .intro__img(data-aos="fade-up" data-aos-offset="100" data-aos-easing="ease-in-sine" data-aos-duration="1000")
+        a(href="camera-hub.html") 
+          img(src="img/img--equip/equip-intro--xl.jpg", alt="phụ kiện máy ảnh tốt nhất")
+
+  section.specials.dark-side
+    .container-xl.px-sm-5.px-xl-0.d-flex.flex-column.align-items-center
+      h1 Đối tác chiến lược
+      .brands__img.row
+        img.brands-item.col-6.col-md-3(src="img/img--misc/brands-sony.png", alt="Sony chính hãng")
+        img.brands-item.col-6.col-md-3(src="img/img--misc/brands-nikon.png", alt="Canon chính hãng")
+        img.brands-item.col-6.col-md-3(src="img/img--misc/brands-canon.png", alt="Nikon chính hãng")
+        img.brands-item.col-6.col-md-3(src="img/img--misc/brands-sigma.png", alt="Sigma chính hãng")
+      .brands__text
+        h3.font-italic.text-center.mw-900 Là đối tác chiến lược của Sony, Canon, Nikon và Sigma, HALO sẽ miễn phí nâng thời hạn bảo hành sản phẩm chính hãng của các thương hiệu này: 
+          span.font-weight-bold từ 12 tháng lên 24 tháng
+
+      h1 Chính sách độc quyền
+      .policy.d-flex.justify-content-between
+        .policy__item.border.border-white.d-flex.flex-column.justify-content-between
+          p.policy__text.text-center
+            span.font-weight-bold Miễn phí 
+            | vận chuyển nội thành Hà Nội
+            br
+            | (riêng phụ kiện: chỉ áp dụng với đơn hàng tổng giá trị trên 200,000 đ)
+
+          .policy__icon.d-flex.justify-content-center.align-items-center
+            i.fas.fa-truck
+            p.font-weight-bold FREE
+
+        .policy__item.border.border-white.d-flex.flex-column.justify-content-between
+          p.policy__text.text-center Đổi mới sản phẩm hoặc
+            span.font-weight-bold  hoàn tiền 100% 
+            | giá trị sản phẩm trong 14 ngày nếu có lỗi từ nhà sản xuất
+
+          .policy__icon.d-flex.justify-content-center.align-items-center
+            i.fas.fa-history
+            p.font-weight-bold 100%
+
+        .policy__item.border.border-white.d-flex.flex-column.justify-content-between
+          p.policy__text.text-center Hỗ trợ trả góp mọi sản phẩm với 
+            span.font-weight-bold 0% lãi suất 
+            br
+            | Hỗ trợ thanh toán trực tuyến, thẻ tín dụng, ví điện tử
+
+          .policy__icon.d-flex.justify-content-center.align-items-center
+            i.far.fa-credit-card
+            p.font-weight-bold 0%  
+        
+  section.promo
+    .container-xl.px-sm-5.px-xl-0
+      h1 Tin khuyến mại
+
+      .promo__collection.row
+        a.promo-item.col-sm-4(href="#")
+          img(src="img/img--misc/promo-img-1.jpg", alt="khuyến mại máy ảnh")
+        a.promo-item.col-sm-4(href="#")   
+          img(src="img/img--misc/promo-img-2.jpg", alt="khuyến mại máy ảnh") 
+        a.promo-item.col-sm-4(href="#")
+          img(src="img/img--misc/promo-img-1.jpg", alt="khuyến mại máy ảnh")
+
+      a.btn.btn--dark.seemore-btn.mx-auto(href="#") Xem thêm
+
+  section.review.dark-side
+    .container-xl.px-sm-5.mw-900
+      h1 HALO review
+
+      a.review-item.d-flex(href="review-details.html" data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine" data-aos-duration="1000")
+        img.review-item__img(src="img/img--misc/review-img-v2.png", alt="Top DSLR đáng mua năm 2021")
+
+        .review-item__content.d-flex.flex-column.justify-content-between
+          .review-header.d-flex.flex-wrap.align-items-start.align-content-start
+            h2.w-100.font-weight-bold Top 5 DSLR đáng mua năm 2021
+            p.subtext.font-italic.font-weight-light Trung Đức
+            p.subtext.font-italic.font-weight-light
+              i.far.fa-clock.mx-2
+              | 01/01/2021
+          p.review-preview Trên thị trường có rất nhiều máy ảnh DSLR đến từ các hãng lớn như Nikon, Canon, Sony,... lựa chọn một chiếc máy ảnh phù hợp là điều không đơn giản.
+      
+      a.review-item.d-flex(href="review-details.html" data-aos="fade-left" data-aos-offset="50" data-aos-easing="ease-in-sine" data-aos-duration="1000")
+        img.review-item__img(src="img/img--misc/review-img-v2.png", alt="Top DSLR đáng mua năm 2021")
+        
+        .review-item__content.d-flex.flex-column.justify-content-between
+          .review-header.d-flex.flex-wrap.align-items-start.align-content-start
+            h2.w-100.font-weight-bold Top 5 DSLR đáng mua năm 2021
+            p.subtext.font-italic.font-weight-light Trung Đức
+            p.subtext.font-italic.font-weight-light 
+              i.far.fa-clock.mx-2
+              | 01/01/2021
+          p.review-preview Trên thị trường có rất nhiều máy ảnh DSLR đến từ các hãng lớn như Nikon, Canon, Sony,... lựa chọn một chiếc máy ảnh phù hợp là điều không đơn giản. 
+
+      a.btn.btn--light.seemore-btn.mx-auto(href="review.html") Xem thêm        
+
+  section.connection.container-xl
+
+      h1.connection__header Đăng ký để nhận tin mới nhất từ HALO
+      form.connection__form.d-flex.justify-content-center(action="")
+        input.connection__input(type="text" placeholder="Email của bạn...")
+        button.btn.connection__submit-btn.btn-primary.font-italic Gửi
+      p.connection__text.text-center Hoặc theo dõi chúng tôi tại
+      .connection__socials.d-flex.justify-content-between.mx-auto
+        a.socials__item.d-block(href="#")
+          img(src="img/img--misc/social-fb.png", alt="halo thế giới máy ảnh")
+        a.socials__item.d-block(href="#")
+          img(src="img/img--misc/social-insta.png", alt="halo thế giới máy ảnh")
+        a.socials__item.d-block(href="#")
+          img.h-100(src="img/img--misc/social-twitter.png", alt="halo thế giới máy ảnh")
+
+

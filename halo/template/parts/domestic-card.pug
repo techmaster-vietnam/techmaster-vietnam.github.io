@@ -1,0 +1,40 @@
+
+.payment-card__content 
+
+  .front 
+    img.payment-card__chip(src="/halo/img/img--payment/chip.png", alt="")
+    img.payment-card__brands(src="/halo/img/img--payment/vcb-logo-1.png", alt="")
+    p.front__num.display-value 0000 0000 0000 0000
+    p.front__valid-text VALID DATES
+    p.front__valid-dates
+      span.front__month.display-value MM
+      span &nbsp;/&nbsp;
+      span.front__year.display-value YY
+    p.front__name.display-value PHAM XUAN AN
+
+.payment-card__input 
+  form(autocomplete="off")
+    .form-group
+      label(for='bank') Chọn ngân hàng:&nbsp;
+      select#input__bank.form-control
+        option VCB (Ngân hàng TMCP Ngoại thương Việt Nam)
+        option BIDV (Ngân hàng Đầu tư và Phát triển Việt Nam)
+
+    .form-group
+      label(for='input__num') Nhập số thẻ:&nbsp;
+        i (Viết liền)
+      input#input__num.form-control.front-input.card-num-input(type="text" required minlength="16" maxlength="16" onkeypress="return isNumber(event)")
+
+    .form-group.input__dates
+      label(for='domestic-input__month') Ngày hết hạn:&nbsp; 
+        i (chỉ nhập 2 số cuối của năm)
+      input#domestic-input__month.input__month.form-control.front-input(type="number" placeholder="Tháng" min="1" max="12" required)
+      span &nbsp;/&nbsp;
+      input#domestic-input__year.input__year.form-control.front-input(type="number" placeholder="Năm" min="21" max="99" required)
+
+    .form-group
+      label(for='input__name') Nhập tên chủ thẻ:&nbsp; 
+        i (Viết cách, không dấu)
+      input#input__name.form-control.front-input(type="text" required maxlength="30")
+
+    a.btn.btn--confirmation.final-btn(href='checkout.html') Xác nhận

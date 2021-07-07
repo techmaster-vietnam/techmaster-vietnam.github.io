@@ -1,0 +1,86 @@
+extends parts/layout.pug
+
+block css
+  link(rel="stylesheet", href="css/review.css")
+  link(rel="stylesheet", href="css/review-details.css")
+
+
+block title
+  title HALO Đánh giá
+
+block content
+  .breadcrumb-wrapper.container-xl
+    ul.breadcrumb
+      li.breadcrumb-item
+        a(href='index.html') Trang chủ
+      li.breadcrumb-item 
+        a(href='review.html') Đánh giá
+      li.breadcrumb-item.active Canon 1DX Mark III: Vua của các vị&nbsp;vua
+
+  .review__main-banner
+    img.main-banner__logo(src="img/img--misc/logo-white.png", alt="halo thế giới máy ảnh")
+    img.main-banner__text(src="img/img--review/banner-text.png", alt="đánh giá máy ảnh")
+
+  section.main-area.container-xl
+
+    .review__post-area.review-article
+
+      h1.review-article__header.text-left Canon 1DX Mark III: Vua của các vị&nbsp;vua
+      h3.review-article__subtext.post__subtext.font-italic  
+        span.post__author Trung Đức
+        span.post__time-icon.mx-2.mx-md-3.mx-xl-4 
+          i.far.fa-clock
+        span.post__time-dates 01/01/2021
+      h2.review-article__preview.text-left 
+        span Cầm 1DX mark III không chỉ mang lại sự phấn khích với thiết bị công nghệ cao mà còn là niềm cảm hứng bất tận khi tác&nbsp;nghiệp.
+
+      .review-article__content
+        .article__section.article__section--design
+          h2.article__header THIẾT KẾ
+          figure.figure--full 
+            img(src="img/img--review/article-img-1.jpg", alt="1DX mark III")
+            figcaption Một trong những chiếc máy to nhất trong mọi máy full-frame, trọng lượng khoảng&nbsp;1.5kg.
+          figure.figure--full  
+            img(src="img/img--review/article-img-2.jpg", alt="1DX mark III")
+            figcaption Nikon D850 (trái) đặt cạnh 1DX mark III (bên&nbsp;phải)
+          p.article__text Đây là một trong những chiếc máy ảnh full-frame đắt nhất của Canon có giá bán là 189 triệu đồng (tính đến 2020). Không chỉ vậy, các phụ kiện của chiếc máy này cũng rất nhiều tiền, ví dụ cục pin đi kèm cũng tầm 4,5 triệu ~ 5 triệu đồng một cục. Cả thẻ nhớ cũng có giá 12 triệu đồng, còn có cả hai khe cắm&nbsp;thẻ. 
+          figure.figure--half   
+            img(src="img/img--review/article-img-3.jpg", alt="1DX mark III")
+            figcaption 1DX Mark III có hai khe cắm thẻ CFexpress
+          figure.figure--half   
+            img(src="img/img--review/article-img-4.jpg", alt="1DX mark III")
+            figcaption Các cổng kết nối trên Canon 1DX mark III
+          figure.figure--half 
+            img(src="img/img--review/article-img-5.jpg", alt="1DX mark III")
+            figcaption Ở mặt trước bên phải, ta có phần tay cầm dọc da khổng lồ. Cạnh lens là rất nhiều nút&nbsp;bấm.
+          figure.figure--half  
+            img(src="img/img--review/article-img-7.jpg", alt="1DX mark III")
+            figcaption Khi quay dọc máy ra, ta sẽ thấy đây chính là báng tay cầm thứ hai. 1DX mark III còn có màn hình phụ và các nút điều&nbsp;khiển.
+
+        .article__section.article__section--features 
+          h2.article__header TÍNH NĂNG
+          p.article__text Dù chụp ở môi trường gần như tối hoàn toàn. Canon 1DX Mark III vẫn bắt nét được ngay lập tức, rất nhanh và đáng tin&nbsp;cậy
+          figure 
+            img(src="img/img--review/article-img-8.png", alt="1DX mark III")
+            figcaption F-stop: f/2.8 | Exposure Time: 1/30 sec | ISO Speed: 100&nbsp;|&nbsp;Lens:&nbsp;EF85mm&nbsp;f/1.4L&nbsp;IS&nbsp;USM       
+
+      .review-article__links
+        ul 
+          li 
+            a.text-primary(href="#") Top 5 DSLR đáng mua năm 2021
+          li 
+            a.text-primary(href="#") Nikon Z7 Review: Canh bạc cho tương lai của&nbsp;Nikon
+
+    aside.review__aside-area.hidden-till-md
+      h3.aside__header Đọc nhiều nhất
+      a.aside__post.d-block(href="")
+        img.aside__post--img(src="img/img--review/aside-img-1.png", alt="nikon D500")
+        p.aside__post--header D500 Review: Canh bạc của Nikon
+
+      a.aside__post.d-block(href="")
+        img.aside__post--img(src="img/img--review/aside-img-2.jpg", alt="canon nikon")
+        p.aside__post--header Vị thế hiện tại của 2 ông lớn Ca-Ni
+
+      a.aside__post.d-block(href="")
+        img.aside__post--img(src="img/img--review/aside-img-3.png", alt="nikon D5600")
+        p.aside__post--header D5600 Review: Máy ảnh cho mọi nhà
