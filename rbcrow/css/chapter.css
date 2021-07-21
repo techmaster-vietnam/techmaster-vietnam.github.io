@@ -1,0 +1,181 @@
+.header-area {
+    position: sticky;
+}
+
+.detail-chapter-content {
+    width: 100%;
+    margin: auto;
+    height: auto;
+    overflow-y: hidden;
+    position: relative;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 31.56%);
+    margin-top: 20px;
+}
+
+.img-cover-content img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.detail-chapter {
+    max-width: 1200px;
+    margin: auto;
+    padding: 15px 30px;
+    text-align: center;
+    color: #fff;
+}
+
+.comment-content {
+    max-width: 1200px;
+    padding: 0px 40px;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+.count-comment {
+    font-weight: 500;
+}
+
+.your-comment {
+    align-items: center;
+    margin: auto;
+    text-align: center;
+    padding: 16px 0px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    border-top: 1px solid #167C7A;
+    border-bottom: 1px solid #167C7A;
+}
+
+.input-comment {
+    position: relative;
+}
+
+.input-comment input {
+    width: 100%;
+    border-radius: 10px;
+    padding: 8px 0px 8px 20px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.input-comment input::placeholder {
+    color: #08BBB7;
+}
+
+.input-comment i {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    color: #08BBB7;
+}
+
+.input-comment i:hover {
+    background-color: #08BBB7;
+    color: #fff;
+    transition: 1s all;
+}
+
+.detail-chapter-number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px 0px;
+}
+
+.detail-chapter-number button {
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    text-align: center;
+    outline: none;
+    height: 35px;
+    width: 35px;
+}
+
+.chapter-number {
+    margin: 0px 5px;
+    padding: 5px 20px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+}
+
+.detail-chapter-number .status {
+    width: 100%;
+    margin-right: 0px;
+}
+
+.detail-chapter-number .status:before {
+    font-size: 44px;
+    bottom: auto;
+}
+
+.read-chapter-content {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: relative;
+    height: 100vh;
+    overflow-y: scroll;
+    padding: 10px 0px;
+    margin: 60px 0px;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+}
+
+.read-chapter-btn {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 30%;
+    padding-left: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.read-chapter-btn i {
+    margin: 5px;
+}
+
+.btn-reader {
+    border-radius: 10px;
+    height: 40px;
+    width: 40px;
+    background-color: #08BBB7;
+}
+
+.btn-reader::before {
+    font-size: 22px;
+}
+
+.scroll-content {
+    margin-top: -120px;
+}
+
+.scroll-content div {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.read-chapter-content::-webkit-scrollbar {
+    display: none;
+}
+
+@media only screen and (max-width: 800px) {
+    .read-chapter-content img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .comment-content {
+        padding: 0px 15px;
+    }
+
+    .read-chapter-btn {
+        padding-left: 20px;
+    }
+}

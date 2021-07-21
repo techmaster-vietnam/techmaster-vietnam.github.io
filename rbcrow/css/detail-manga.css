@@ -1,0 +1,295 @@
+.anh-bia {
+    max-height: 400px;
+    overflow-y: hidden;
+}
+
+.detail-manga-content {
+    width: 100%;
+    margin: auto;
+    overflow-y: hidden;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 31.56%), url(/WebTruyen/img/details/Best-Shonen-Jump-Manga.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: 20px;
+}
+
+.detail-manga {
+    max-width: 1200px;
+    margin: auto;
+    padding: 15px 30px;
+}
+
+.detail-manga-image {
+    text-align: center;
+}
+
+.detail-manga-image img {
+    max-width: 234px;
+    height: auto;
+}
+
+.detail-manga-text {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #08bbb7;
+}
+
+.detail-manga-name h2 {
+    margin-bottom:  0.5rem;
+}
+
+.detail-manga-status {
+    display: flex;
+    margin: 10px 0px;
+}
+
+.detail-manga-status div {
+    font-size: 22px;
+    display: flex;
+    align-items: flex-end;
+    margin-right: 20px;
+}
+
+#manga-status-like:hover i {
+    color: #0057FF;
+}
+
+#manga-status-heart:hover i {
+    color: red
+}
+
+.detail-manga-intro {
+    margin-top: auto;
+}
+
+.btn-news {
+    color: #fff;
+    position: relative;
+    height: 50px;
+    z-index: 10;
+    padding: 5px 0px;
+}
+
+.btn-news hr {
+    position: absolute;
+    width: calc(50% - 100px);
+    top: 50%;
+    margin: 0px;
+    z-index: 500;
+}
+
+.text-btn-news {
+    text-align: center;
+    cursor: pointer;
+}
+
+.text-btn-news {
+    position: absolute;
+    border: 1px solid #fff;
+    padding: 5px 40px;
+    z-index: 1000;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.text-btn-news:hover {
+    background-color: #fff;
+    color: rgba(0, 0, 0, 0.7);
+    transition: 0.75s all;
+}
+
+.hr-left {
+    left: 0px;
+}
+
+.hr-right {
+    right: 0px;
+}
+
+.list-chapter {
+    display: flex;
+    flex-direction: column;
+}
+
+.detail-manga-chapter {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0px 100px;
+    margin-top: 30px;
+}
+
+.button-list-chapter {
+    display: flex;
+    margin-left: auto;
+}
+
+.button-list-chapter .status {
+    color: #08bbb7;
+    margin-right: 30px;
+}
+
+.chapter .status {
+    color: #08bbb7;
+    position: absolute;
+    top: 50%;
+    right: -50%;
+    transform: translate(0%, -50%);
+}
+
+.chapter .status:before {
+    font-size: 18px;
+}
+
+.button-list-chapter button {
+    border: none;
+    background-color: #08bbb7;
+    border-radius: 10px;
+    color: #fff;
+    padding: 5px 20px;
+    outline: none;
+}
+
+.chapters {
+    max-height: 60vh;
+    overflow-y: scroll;
+    padding-right: 40px;
+    margin: 50px 0px;
+    padding-top: 15px;
+}
+
+.chapter {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+.chapter-name {
+    position: relative;
+    min-width: 100px;
+}
+
+.title-manga-chapter {
+    color: #08bbb7;
+    text-decoration: underline;
+    margin-left: 30px;
+}
+
+.comment-content {
+    max-width: 1200px;
+    padding: 0px 40px;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+.count-comment {
+    font-weight: 500;
+}
+
+.your-comment {
+    align-items: center;
+    margin: auto;
+    text-align: center;
+    padding: 16px 0px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    border-top: 1px solid #167C7A;
+    border-bottom: 1px solid #167C7A;
+}
+
+.input-comment {
+    position: relative;
+}
+
+.input-comment input {
+    width: 100%;
+    border-radius: 10px;
+    padding: 8px 0px 8px 20px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.input-comment input::placeholder {
+    color: #08BBB7;
+}
+
+.input-comment i {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    color: #08BBB7;
+}
+
+.input-comment i:hover {
+    background-color: #08BBB7;
+    color: #fff;
+    transition: 1s all;
+}
+
+.chapter a {
+    color: black;
+}
+
+@media only screen and (max-width: 992px) {
+    .detail-manga-image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .detail-manga-intro {
+        margin-top: 0px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .detail-manga-chapter {
+        padding: 0px 50px;
+    }
+
+    .chapters {
+        padding-right: 10px;
+        margin: 25px 0px 50px 0px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .detail-manga-content {
+        background: linear-gradient(150deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 31.56%), url(/img/details/Best-Shonen-Jump-Manga.png);
+    }
+
+    .detail-manga {
+        padding: 15px;
+    }
+
+    .detail-manga-text {
+        margin-top: 30px;
+    }
+
+    .list-chapter {
+        margin-top: 15px;
+    }
+    .detail-manga-chapter {
+        padding: 0px 15px;
+    }
+
+    .text-btn-news {
+        padding: 5px 30px;
+    }
+
+    .comment-content {
+        padding: 0px 15px;
+    }
+}

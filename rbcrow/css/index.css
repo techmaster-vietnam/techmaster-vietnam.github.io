@@ -1,0 +1,305 @@
+.category-manga {
+    max-width: 1200px;
+    margin: auto;
+    padding: 30px 80px;
+}
+
+.category-title {
+    color: #08BBB7;
+    text-align: center;
+    font-size: 24px;
+}
+
+.categories {
+    outline: none;
+}
+
+.category {
+    width: 200px;
+    height: 200px;
+    margin: 30px auto;
+    position: relative;
+    outline: none;
+}
+
+.category img {
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 5px #08BBB7;
+}
+
+.category-name {
+    height: auto;
+    color: #fff;
+    background-color: rgba(108, 58, 58, 0.5);
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 200%);
+    text-align: center;
+}
+
+.category:hover .category-name {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+    transition: 0.5s all;
+}
+
+.category:hover img {
+    transform: scale(1.05);
+    filter: blur(1px) brightness(50%);
+}
+
+.category-button {
+    border-radius: 10px;
+    padding: 4px 40px;
+    border: none;
+    background-color: #068F8C;
+    color: #fff;
+    margin: auto;
+    display: block;
+}
+
+.category-button a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.banner {
+    position: relative;
+    overflow-y: hidden;
+    margin: 30px 0px;
+    width: 100%;
+}
+
+.banner img {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: auto;
+    filter: brightness(50%);
+    z-index: -1;
+}
+
+.banner-text {
+    text-align: center;
+    color: #fff;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px 0px;
+}
+
+.banner-title {
+    max-width: 80%;
+    margin: auto;
+}
+
+.banner-content {
+    margin: 20px 0px;
+}
+
+.banner-content input {
+    border-radius: 20px;
+    border: none;
+}
+
+.banner-text-form {
+    max-width: 80%;
+    width: 330px;
+    padding: 5px 15px;
+}
+
+.btn-banner .btn-reset {
+    background-color: red;
+}
+
+.banner-form-btn {
+    color: #fff;
+    background-color: #068F8C;
+    padding: 5px 15px;
+}
+
+.dangky-mail .banner-form-btn {
+    margin-left: 20px;
+}
+
+.dangky-mail .banner-content {
+    margin-bottom: 0px;
+}
+
+.timkiem .banner-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0px;
+}
+
+.banner-text-form {
+    margin-bottom: 15px;
+}
+
+.banner-expan {
+    color: #15FEF9;
+    text-align: right;
+    cursor: pointer;
+    max-width: 600px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.banner-expan span {
+    border-bottom: 1px solid;
+}
+
+.banner-expan i {
+    background-color: rgba(0, 0, 0, 0);
+    width: 15px;
+    height: 15px;
+    color: #15FEF9;
+}
+
+.dp-none {
+    display: none;
+}
+
+.advance-search {
+    display: none;
+}
+
+/* custom-drow-box */
+
+.custom-select {
+    background-color: #fff;
+    position: relative;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    text-align: left;
+}
+
+.custom-select select {
+    display: none;
+    /*hide original SELECT element:*/
+}
+
+/*style the arrow inside the select element:*/
+
+.select-selected:after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    right: 10px;
+    width: 0;
+    height: 0;
+    transform: translate(0%, -50%);
+    border: 6px solid transparent;
+    border-color: black transparent transparent transparent;
+}
+
+/*point the arrow upwards when the select box is open (active):*/
+
+.select-selected.select-arrow-active:after {
+    border-color: transparent transparent black transparent;
+    top: 50%;
+    transform: translate(0%, -70%);
+}
+
+/*style the items (options), including the selected item:*/
+
+.select-items {
+    border-radius: 10px;
+    max-height: 150px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.select-items::-webkit-scrollbar {
+    border-radius: 20px;
+}
+
+.select-items::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 20px;
+}
+
+.select-items::-webkit-scrollbar-thumb {
+    background: #08BBB7;
+    border-radius: 20px;
+}
+
+.select-items::-webkit-scrollbar-thumb:hover {
+    background: rgba(11, 201, 112, 0.5); 
+  }
+
+.select-items div {
+    width: 330px;
+    padding: 5px 15px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+}
+
+.select-items div, .select-selected {
+    color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    user-select: none;
+}
+
+/*style items (options):*/
+
+.select-items {
+    position: absolute;
+    background-color: #fff;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+
+/*hide the items when the select box is closed:*/
+
+.select-hide {
+    display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+@media only screen and (max-width: 768px) {
+    .category {
+        width: 150px;
+        height: 150px;
+    }
+
+    .category img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .category-manga {
+        padding: 30px 50px;
+    }
+
+    .category {
+        width: 120px;
+        height: 120px;
+    }
+
+    .category-name {
+        transform: translate(-50%, 135%);
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .category {
+        width: 150px;
+        height: 150px;
+    }
+
+    .category-name {
+        transform: translate(-50%, 200%);
+    }
+}

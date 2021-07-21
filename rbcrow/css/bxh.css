@@ -1,0 +1,66 @@
+.bxh-buttons {
+  position: absolute;
+  border: none;
+  background-color: #068F8C;
+  border-radius: 10px;
+  right: 0px;
+}
+
+.bxh-buttons button {
+  border: none;
+  background-color: #068F8C;
+  color: #fff;
+  width: 60px;
+  border-radius: 10px;
+  height: 100%;
+  outline: none;
+}
+
+#bxh-button-active {
+  background-color: #fff;
+  color: #068F8C;
+  border: 1px solid #068F8C;
+}
+
+.bxh-buttons button:hover {
+  background-color: #fff;
+  color: #068F8C;
+  border: 1px solid #068F8C;
+}
+
+.item-image {
+  position: relative;
+}
+
+.item-top {
+  color: white;
+  position: absolute;
+  left: 50%;
+  top: 85%;
+  transform: translate(-250%,-50%);
+}
+
+.item-top-1 img{
+  width: calc(180px*1.4);
+  height: auto;
+}
+
+.item-top-1 .item-top {
+  transform: translate(-200%,-50%);
+}
+
+.item-top-1 .icon {
+  width: calc(27px*2);
+  height: calc(27px*2);
+  font-size: 28px;
+  background-color: #FED330;
+}
+
+.item-top-2 img, .item-top-3 img {
+  width: calc(180px*1.2);
+  height: auto;
+}
+
+.banner-text {
+  padding: 50px 0px;
+}

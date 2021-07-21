@@ -1,0 +1,140 @@
+@font-face {
+  font-family: text-font;
+  src: url(../font/Open_Sans/OpenSans-Regular.ttf);
+}
+@font-face {
+  font-family: text-font-bold;
+  src: url(../font/Open_Sans/OpenSans-Bold.ttf);
+}
+@font-face {
+  font-family: text-font-black;
+  src: url(../font/Open_Sans/OpenSans-ExtraBold.ttf);
+}
+
+@font-face {
+  font-family: title-font;
+  src: url(../font/Titillium_Web/TitilliumWeb-Black.ttf);
+}
+@font-face {
+  font-family: title-font-vn;
+  src: url(../font/Open_Sans/OpenSans-ExtraBold.ttf);
+}
+* {
+  box-sizing: border-box;
+  font-family: text-font;
+}
+
+html {
+  font-size: 62.5%;
+}
+.body {
+  min-width: 576px;
+  width: auto !important;
+}
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  display: inline;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  transition: 300ms;
+  color: #ffc311;
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.container,
+.container-fluid {
+  padding: 0;
+}
+.row {
+  margin: 0;
+}
+main {
+ width: 100%;
+}
+.item {
+  margin-bottom: 0 !important;
+}
+/* Class */
+.uppercase {
+  text-transform: uppercase;
+}
+.button-style-1 a {
+  color: #ffc311;
+  padding: 10px 20px;
+  box-shadow: inset 0 -2px 0 -1px #ffc311;
+  transition: box-shadow 0.15s ease-in-out;
+}
+.button-style-1 a:hover {
+  color: white;
+  box-shadow: inset 0 -40px 0 -1px #ffc311;
+  transition: 300ms;
+}
+.button-style-2 > a {
+  padding: 10px 20px !important;
+  font-weight: bold;
+  color: #ffc311;
+  border: 1px solid #ffc311;
+}
+.button-style-2 > a:hover,
+.active > a{
+  color: white;
+  background-color: #ffc311;
+}
+.white {
+  color: white;
+}
+.yellow {
+  color: #ffc311;
+}
+.black {
+  color: black;
+}
+.section-title {
+  font-size: 4.5rem;
+  font-family: text-font-black;
+  text-align: center;
+  color: black;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+}
+.section-title span{
+  color: #ffc311;
+  font-size: 4.5rem;
+  font-family: text-font-black;
+  text-transform: uppercase;
+}
+.width-90 {
+  max-width: 90%
+}
+.margin-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+.translateX-in {
+  transform: translateX(0%) !important;
+}
+.translateY-in {
+  transform: translateY(0%) !important;
+}
+input {
+  outline: none;
+}

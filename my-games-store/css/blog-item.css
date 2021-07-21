@@ -1,0 +1,9 @@
+.author-social li a i{
+    color: #777777;
+}
+.author-social li a i:hover {
+    color: #ffc311;
+}
+.author-social li{
+    margin-right: 1.5rem !important;
+}
