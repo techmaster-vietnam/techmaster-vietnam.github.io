@@ -1,0 +1,22 @@
+
+<div class="register" id="register-form">
+  <div class="register__close"><i class="fas fa-times register__close-button" id="register-close"></i></div>
+  <form class="register__form" action="">
+    <div class="register__form-status">
+      <h1 class="register__form-status--register">Đăng Ký</h1>
+      <h2 class="register__form-status--login" id="change-login">Đăng Nhập</h2>
+    </div>
+    <input class="register__form-input" id="register-name" type="text" placeholder="Họ tên" name="name"/>
+    <input class="register__form-input" id="register-email" type="text" placeholder="Email" name="email"/>
+    <input class="register__form-input" type="password" placeholder="Mật khẩu từ 6 đến 23 kí tự" name="password"/>
+    <input class="register__form-input register__form-input--align" id="register-password" type="password" placeholder="Nhập lại mật khẩu" name="password"/>
+    <div class="register__form-radio"><span class="register__form-radio--circle">
+        <input class="register__form-radio-male" type="radio" name="gender" id="male" value="male"/>
+        <label class="register__form-radio-label" for="male">Nam</label></span><span class="register__form-radio--circle register__form-radio--align">
+        <input class="register__form-radio-female" type="radio" name="gender" id="female" value="female"/>
+        <label class="register__form-radio-label" for="female">Nữ</label></span></div>
+    <input class="register__form-policy" type="checkbox" id="policy"/><span class="register__form-title">
+      <label for="policy">Tôi đã đọc và đồng ý theo</label><a class="register__form-title--link" href="#"> điều kiện sử dụng và chính sách của Frequency</a></span>
+    <input class="register__form-btn" id="btn-register" type="button" value="Tạo tài khoản"/>
+  </form>
+</div>

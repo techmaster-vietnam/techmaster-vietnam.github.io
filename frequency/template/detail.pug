@@ -1,0 +1,109 @@
+extends ./template-part/layout.pug
+
+block title
+    title Frequency - Chi Tiết
+    link(rel="stylesheet" href="./library/fancybox/jquery.fancybox.min.css")
+    link(rel="stylesheet" href="./css/detail.css")
+
+block content
+    .main
+        .container.gx-0.path
+            a.path__link(href="./index.html") TRANG CHỦ
+            span.path__divide /
+            a.path__link(href="./shop.html")  Đồng Hồ Nam
+            span.path__divide /
+            span Chi Tiết Sản Phẩm 
+            .path__line
+
+        .container.watch
+            .row
+                .col-6.d-flex.justify-content-center
+                    img(src="./img/detail-mace.png", alt="mace")
+                .col-6
+                    .watch__main
+                        p.watch__main-name MACE
+                        p.watch__main-size COLOSSEUM - 42MM
+                        .watch__main-price
+                            span.watch__main-price-amount 8.099.000 ₫
+                            span.watch__main-price-evaluate 25 đánh giá
+                            span.watch__main-price-list
+                                i.fas.fa-star.watch__main-price-star
+                                i.fas.fa-star.watch__main-price-star
+                                i.fas.fa-star.watch__main-price-star
+                                i.fas.fa-star.watch__main-price-star
+                                i.fas.fa-star-half-alt.watch__main-price-star
+                        .watch__main-status
+                            span.watch__main-status-title Tình trạng:
+                            span.watch__main-status-circle
+                            span.watch__main-status-now Còn hàng
+                            .watch__main-guide#video--show
+                                svg.watch__main-guide-ruler(width='12' height='40' viewbox='0 0 12 40' fill='none' xmlns='http://www.w3.org/2000/svg')
+                                    path(d='M0 0V39.3333H11.8V0H0ZM10.4889 7.86667H5.9V9.17778H10.4889V10.4889H8.52222V11.8H10.4889V13.1111H5.9V14.4222H10.4889V15.7333H8.52222V17.0444H10.4889V18.3556H5.9V19.6667H10.4889V20.9778H8.52222V22.2889H10.4889V23.6H5.9V24.9111H10.4889V26.2222H8.52222V27.5333H10.4889V28.8444H5.9V30.1556H10.4889V31.4667H8.52222V32.7778H10.4889V34.0889H5.9V35.4H10.4889V38.0222H1.31111V1.31111H10.4889V7.86667Z' fill='black')
+                                    path(d='M5.90026 5.90001C6.98643 5.90001 7.86693 5.01952 7.86693 3.93334C7.86693 2.84717 6.98643 1.96667 5.90026 1.96667C4.81409 1.96667 3.93359 2.84717 3.93359 3.93334C3.93359 5.01952 4.81409 5.90001 5.90026 5.90001ZM5.90026 3.27779C6.26229 3.27779 6.55582 3.57131 6.55582 3.93334C6.55582 4.29537 6.26229 4.5889 5.90026 4.5889C5.53823 4.5889 5.2447 4.29537 5.2447 3.93334C5.2447 3.57131 5.53823 3.27779 5.90026 3.27779Z' fill='black')
+                                span.watch__main-guide-size SIZE GUIDE
+                            .watch__main-status-video
+                                .watch__main-status-video--overlay
+                                iframe.watch__main-status-video--yt(width='640' height='480' src='https://www.youtube.com/embed/ZqSyUkffhUM' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
+                        p.watch__main-add MUA KÈM PHỤ KIỆN:
+                        .watch__main-bracelet
+                            .watch__main-bracelet-product
+                                .watch__main-bracelet-detail
+                                    .watch__main-bracelet-img
+                                        img(src="./img/detail-bracelet-1.jpg", alt="bracelet")
+                                    .watch__main-bracelet-info
+                                        p.watch__main-bracelet-title JACKIE SILVER
+                                        p.watch__main-bracelet-price  + 599.000 ₫
+                                button.watch__main-bracelet-btn Thêm                 
+                            .watch__main-bracelet-product.watch__main-bracelet--align
+                                .watch__main-bracelet-detail
+                                    .watch__main-bracelet-img
+                                        img(src="./img/detail-bracelet-2.jpg", alt="bracelet")
+                                    .watch__main-bracelet-info
+                                        p.watch__main-bracelet-title JACKIE GUNMETAL
+                                        p.watch__main-bracelet-price + 599.000 ₫
+                                button.watch__main-bracelet-btn Thêm 
+                        .watch__main-pay
+                            button.watch__main-pay-btn.watch__main-pay--black
+                                a(href="#").watch__main-pay-btn--link THANH TOÁN NGAY
+                            button.watch__main-pay-btn.watch__main-pay--white
+                                .watch__main-pay-group
+                                    svg.watch__main-pay-btn--svg(width='15' height='19' viewbox='0 0 15 19' fill='none' xmlns='http://www.w3.org/2000/svg')
+                                        path(d='M14.9962 16.4239L13.9231 4.17301C13.9001 3.90102 13.674 3.69509 13.4096 3.69509H11.2021C11.1714 1.65133 9.5235 0 7.5 0C5.47649 0 3.82856 1.65133 3.7979 3.69509H1.59044C1.32218 3.69509 1.0999 3.90102 1.0769 4.17301L0.00383248 16.4239C0.00383248 16.4395 0 16.455 0 16.4706C0 17.8654 1.26086 19 2.81298 19H12.187C13.7391 19 15 17.8654 15 16.4706C15 16.455 15 16.4395 14.9962 16.4239ZM7.5 1.04908C8.95248 1.04908 10.1367 2.23027 10.1673 3.69509H4.83265C4.86331 2.23027 6.04752 1.04908 7.5 1.04908ZM12.187 17.9509H2.81298C1.83955 17.9509 1.05008 17.2982 1.03475 16.4939L2.06183 4.74806H3.79407V6.3411C3.79407 6.63251 4.02402 6.86564 4.31145 6.86564C4.59888 6.86564 4.82882 6.63251 4.82882 6.3411V4.74806H10.1673V6.3411C10.1673 6.63251 10.3973 6.86564 10.6847 6.86564C10.9722 6.86564 11.2021 6.63251 11.2021 6.3411V4.74806H12.9343L13.9653 16.4939C13.9499 17.2982 13.1566 17.9509 12.187 17.9509Z' fill='black')
+                                    a(href="#").watch__main-pay-btn--link-add THÊM VÀO GIỎ
+                        .watch__main-policy
+                            .watch__main-policy-transport
+                                svg(width='40' height='40' viewbox='0 0 63 64' fill='none' xmlns='http://www.w3.org/2000/svg')
+                                    g(clip-path='url(#clip0)')
+                                        path(d='M14.6776 42.0996C11.2085 42.0996 8.38725 44.9677 8.38725 48.4945C8.38725 52.0213 11.2085 54.8894 14.6776 54.8894C18.1468 54.8894 20.9681 52.0213 20.9681 48.4945C20.9681 44.9677 18.1467 42.0996 14.6776 42.0996ZM14.6776 52.7577C12.3648 52.7577 10.4841 50.8456 10.4841 48.4945C10.4841 46.1433 12.3649 44.2313 14.6776 44.2313C16.9904 44.2313 18.8712 46.1434 18.8712 48.4945C18.8712 50.8456 16.9904 52.7577 14.6776 52.7577Z' fill='black')
+                                        path(d='M50.3232 42.0996C46.854 42.0996 44.0328 44.9677 44.0328 48.4945C44.0328 52.0213 46.854 54.8894 50.3232 54.8894C53.7924 54.8894 56.6136 52.0213 56.6136 48.4945C56.6136 44.9677 53.7924 42.0996 50.3232 42.0996ZM50.3232 52.7577C48.0104 52.7577 46.1296 50.8456 46.1296 48.4945C46.1296 46.1433 48.0105 44.2313 50.3232 44.2313C52.636 44.2313 54.5168 46.1434 54.5168 48.4945C54.5168 50.8456 52.636 52.7577 50.3232 52.7577Z' fill='black')
+                                        path(d='M62.7373 36.1939L53.3017 21.2724C53.1088 20.9676 52.7765 20.7832 52.4199 20.7832H40.8876C40.3078 20.7832 39.8392 21.2607 39.8392 21.849V48.4943C39.8392 49.0837 40.3078 49.5601 40.8876 49.5601H45.0812V47.4284H41.936V22.9149H51.8475L60.8072 37.0838V47.4287H55.5651V49.5602H61.8555C62.4353 49.5602 62.9039 49.0838 62.9039 48.4944V36.7704C62.904 36.5668 62.8464 36.3654 62.7373 36.1939Z' fill='black')
+                                        path(d='M46.1296 34.6387V27.1781H54.5169V25.0464H45.0813C44.5015 25.0464 44.0329 25.5239 44.0329 26.1122V35.7045C44.0329 36.2939 44.5015 36.7703 45.0813 36.7703H60.8073V34.6386H46.1296V34.6387Z' fill='black')
+                                        path(d='M40.8876 13.3228H1.04836C0.469691 13.3228 0 13.8002 0 14.3885V48.4947C0 49.0841 0.469691 49.5604 1.04836 49.5604H9.4356V47.4288H2.09684V15.4543H39.8392V47.4288H19.9196V49.5604H40.8876C41.4674 49.5604 41.936 49.0841 41.936 48.4947V14.3885C41.936 13.8002 41.4674 13.3228 40.8876 13.3228Z' fill='black')
+                                        path(d='M7.34036 43.1655H1.04996V45.2981H7.34036V43.1655Z' fill='black')
+                                        path(d='M39.8392 43.1655H22.0164V45.2981H39.8392V43.1655Z' fill='black')
+                                        path(d='M61.8555 43.1655H57.662V45.2981H61.8555V43.1655Z' fill='black')
+                                        path(d='M40.8876 17.5859H4.19356V19.7185H40.8876V17.5859Z' fill='black')
+                                        path(d='M15.726 47.4287H13.6292V49.5613H15.726V47.4287Z' fill='black')
+                                        path(d='M51.3717 47.4287H49.2748V49.5613H51.3717V47.4287Z' fill='black')
+                                        path(d='M18.8712 9.05957H4.19356V11.1922H18.8712V9.05957Z' fill='black')
+                                        path(d='M2.09684 9.05957H0V11.1922H2.09684V9.05957Z' fill='black')
+                                    defs
+                                        clippath#clip0
+                                            rect(width='62.904' height='63.9489' fill='white')
+                                | MIỄN PHÍ VẬN CHUYỂN
+                            .watch__main-policy-commitment
+                                svg(width='24' height='29' viewbox='0 0 39 46' fill='none' xmlns='http://www.w3.org/2000/svg')
+                                    path(d='M18.9326 0.792903L18.9326 0.792875C19.2394 0.663437 19.584 0.66344 19.8911 0.792903C19.8911 0.79291 19.8911 0.792916 19.8912 0.792923L37.1056 8.05291C37.5728 8.24997 37.8829 8.71649 37.8829 9.24009V18.0656C37.8829 30.0193 30.7703 40.766 19.8842 45.2794C19.5812 45.405 19.2423 45.405 18.9395 45.2794C8.05321 40.7659 0.940796 30.0192 0.940796 18.0656V9.24009C0.940796 8.71653 1.25094 8.24999 1.71811 8.05291C1.71812 8.05291 1.71813 8.0529 1.71814 8.0529L18.9326 0.792903ZM19.2076 42.6076L19.4118 42.699L19.6161 42.6076C29.2867 38.2798 35.3697 28.5876 35.3697 18.0656V10.4313V10.0995L35.064 9.97058L19.6061 3.45132L19.4118 3.36937L19.2175 3.45132L3.75965 9.97058L3.45395 10.0995V10.4313V18.0656C3.45395 28.8737 9.79593 38.3956 19.2076 42.6076ZM17.114 24.4307L17.4703 24.7926L17.8266 24.4307L25.3767 16.7616C25.8668 16.2638 26.6581 16.2637 27.1483 16.7616C27.6427 17.2638 27.6426 18.0812 27.1482 18.5833L27.1482 18.5834L18.3561 27.5142C17.8659 28.0121 17.0746 28.0119 16.5845 27.5142L11.6754 22.5276C11.181 22.0254 11.181 21.208 11.6754 20.7059C12.1656 20.208 12.9569 20.208 13.4469 20.7058L13.447 20.7058L17.114 24.4307Z' fill='black' stroke='black')
+                                | BẢO HÀNH 10 NĂM, 1 ĐỔI 1 TRONG 3 NGÀY
+
+        .container.d-flex.justify-content-center.detail
+            a(data-fancybox='gallery' href='./img/detail-mace-1.jpg').detail__link
+                img(src='./img/detail-mace-small-1.jpg').detail__link-img
+            a(data-fancybox='gallery' href='./img/detail-mace-2.jpg').detail__link
+                img(src='./img/detail-mace-small-2.jpg').detail__link-img
+            a(data-fancybox='gallery' href='./img/detail-mace-3.jpg').detail__link
+                img(src='./img/detail-mace-small-3.jpg').detail__link-img
+
+block javascript
+    script(src="./library/fancybox/jquery.fancybox.min.js") 
+    script(src="./js/detail.js") 

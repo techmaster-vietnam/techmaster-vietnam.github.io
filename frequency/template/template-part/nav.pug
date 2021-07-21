@@ -1,0 +1,70 @@
+nav.nav
+  .container-fluid.container-xl.gx-xl-0.nav-main
+    //- Navigation Moblie Button
+    .nav__moblie-btn
+      i.fas.fa-bars
+
+    //- Navigation PC
+    a(href="./index.html").nav__main-logo FREQUENCY
+
+    ul.nav__main-menu
+      li.nav__main-menu-item
+        a(href="./index.html") TRANG CHỦ
+      li.nav__main-menu-item
+        a(href="./shop.html") ĐỒNG HỒ
+      li.nav__main-menu-item
+        a(href="./story.html") ABOUT US
+      li.nav__main-menu-item
+        a(href="./blog.html") BLOG
+      li.nav__main-menu-item
+        a(href="#") LIÊN HỆ
+
+    .nav__main-button   
+      svg.nav__main-button-search(width='19' height='19' viewbox='0 0 19 19' fill='none' xmlns='http://www.w3.org/2000/svg')
+        path(d='M18.8357 18.031L14.2173 13.4137C15.4562 11.9898 16.2063 10.1319 16.2063 8.10133C16.2063 3.63149 12.5697 0 8.10313 0C3.63229 0 0 3.6357 0 8.10133C0 12.567 3.63651 16.2027 8.10313 16.2027C10.1342 16.2027 11.9925 15.4528 13.4167 14.2142L18.035 18.8315C18.1446 18.941 18.2921 19 18.4354 19C18.5786 19 18.7261 18.9452 18.8357 18.8315C19.0548 18.6124 19.0548 18.2501 18.8357 18.031ZM1.13351 8.10133C1.13351 4.2592 4.26015 1.13747 8.09891 1.13747C11.9419 1.13747 15.0643 4.26342 15.0643 8.10133C15.0643 11.9392 11.9419 15.0694 8.09891 15.0694C4.26015 15.0694 1.13351 11.9435 1.13351 8.10133Z' fill='white')
+      a(href="./bag.html")
+        svg.nav__main-button-bag(width='15' height='19' viewbox='0 0 15 19' fill='none' xmlns='http://www.w3.org/2000/svg')
+          path(d='M14.9962 16.4239L13.9231 4.17301C13.9001 3.90102 13.674 3.69509 13.4096 3.69509H11.2021C11.1714 1.65133 9.5235 0 7.5 0C5.47649 0 3.82856 1.65133 3.7979 3.69509H1.59044C1.32218 3.69509 1.0999 3.90102 1.0769 4.17301L0.00383248 16.4239C0.00383248 16.4395 0 16.455 0 16.4706C0 17.8654 1.26086 19 2.81298 19H12.187C13.7391 19 15 17.8654 15 16.4706C15 16.455 15 16.4395 14.9962 16.4239ZM7.5 1.04908C8.95248 1.04908 10.1367 2.23027 10.1673 3.69509H4.83265C4.86331 2.23027 6.04752 1.04908 7.5 1.04908ZM12.187 17.9509H2.81298C1.83955 17.9509 1.05008 17.2982 1.03475 16.4939L2.06183 4.74806H3.79407V6.3411C3.79407 6.63251 4.02402 6.86564 4.31145 6.86564C4.59888 6.86564 4.82882 6.63251 4.82882 6.3411V4.74806H10.1673V6.3411C10.1673 6.63251 10.3973 6.86564 10.6847 6.86564C10.9722 6.86564 11.2021 6.63251 11.2021 6.3411V4.74806H12.9343L13.9653 16.4939C13.9499 17.2982 13.1566 17.9509 12.187 17.9509Z' fill='white')
+      .nav__main-account
+        .nav__main-account-log
+          span.nav__main-account-name#account-name
+          .nav__main-account-options
+            p 
+              a(href="#") Tài khoản
+            p#log-out Đăng xuất
+        .nav__main-group-button
+          .nav__main-button-login
+            button.login-btn Login
+          .nav__main-button-register
+            button.register-btn Register
+
+//- Navigaiton Mobile
+.nav__overlay
+.nav__moblie
+  .nav__moblie-close
+    i.fas.fa-times.nav__moblie-close--link
+
+  ul.nav__moblie-menu
+    li.nav__mobile-menu-item
+      a(href="./index.html") TRANG CHỦ
+    li.nav__mobile-menu-item
+      a(href="./shop.html") ĐỒNG HỒ
+    li.nav__mobile-menu-item
+      a(href="./story.html") ABOUT US
+    li.nav__mobile-menu-item
+      a(href="#") LIÊN HỆ
+    li.nav__mobile-menu-item
+      a(href="./blog.html") BLOG
+    li.nav__mobile-menu-item
+      a(href="#") TÌM KIẾM
+    li.nav__mobile-menu-item
+      a(href="#").login-btn ĐĂNG NHẬP
+    li.nav__mobile-menu-item
+      a(href="#").register-btn ĐĂNG KÝ
+
+.nav__overlay-form#overlay-form
+
+include ./login.pug
+
+include ./register.pug
+

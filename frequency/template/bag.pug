@@ -1,0 +1,92 @@
+extends ./template-part/layout.pug
+
+block title
+    title Frequency - Giỏ Hàng
+    link(rel="stylesheet", href="./css/bag.css")
+
+block content
+    .title
+        p.title__bag 
+            | Giỏ hàng 
+            span.title__bag-total (2 sản phẩm)
+        
+    .main
+        .product
+            .container-fluid
+                .row.product--background.product__title
+                    .col-6
+                        p.product__title-name Sản Phẩm
+                    .col-2.text-center
+                        p Đơn Giá
+                    .col-2.text-center
+                        p Số Lượng
+                    .col-2.text-center
+                        p Số Tiền
+            //- item
+            .container-fluid
+                .row.product--background.product__items
+                    .col-6.d-flex.align-items-center
+                        img(src="./img/bag-items-1.jpg", alt="watch")
+                        .product__items-detail
+                            p.product__items-detail-name MACE
+                            p.product__items-detail-style COLOSSEUM - 42MM
+                    .col-2.d-flex.align-items-center.justify-content-center
+                        p 8.099.000 ₫
+                    .col-2.d-flex.align-items-center.justify-content-center
+                        .product__items-button
+                            button.product__items-button-plus
+                                i.fas.fa-plus
+                            input.product__items-button-input(type="number" value="1")
+                            button.product__items-button-minus
+                                i.fas.fa-minus
+                    .col-2.d-flex.align-items-center.justify-content-center.product__items-total
+                        p.product__items-total-price 8.099.000 ₫
+                        i.product__items-total-delete.fas.fa-times
+            
+            //- item
+            .container-fluid
+                .row.product--background.product__items
+                    .col-6.d-flex.align-items-center
+                        img(src="./img/bag-items-2.jpg", alt="watch")
+                        .product__items-detail
+                            p.product__items-detail-name Jackie Silver
+                            p.product__items-detail-style
+                    .col-2.d-flex.align-items-center.justify-content-center
+                        p 499.000 ₫
+                    .col-2.d-flex.align-items-center.justify-content-center
+                        .product__items-button
+                            button.product__items-button-plus
+                                i.fas.fa-plus
+                            input.product__items-button-input(type="number" value="2")
+                            button.product__items-button-minus
+                                i.fas.fa-minus
+                    .col-2.d-flex.align-items-center.justify-content-center.product__items-total
+                        p.product__items-total-price 998.000 ₫
+                        i.product__items-total-delete.fas.fa-times
+                
+        .bill
+            .bill__discount 
+                p.bill__discount-title Discount
+                .bill__discount-code
+                    input.bill__discount-code-input(type="text" placeholder="Nhập mã giảm giá")
+                    button.bill__discount-code-btn ÁP DỤNG
+            .bill__total
+                h2.bill__total-title Hoá đơn
+                .bill__total-temporary
+                    span Tạm tính
+                    span 9.097.000 ₫
+                .bill__total-discount
+                    span Giảm giá 
+                    span 0%
+                .bill__total-result
+                    span Thành tiền
+                    span 9.097.000 ₫
+                .bill__total-vat
+                    span (Đã bao gồm VAT nếu có)
+            button.bill__request Tiến hành đặt hàng
+
+                
+
+
+block javascript
+    script(src="./js/bag.js")

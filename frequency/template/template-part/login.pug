@@ -1,0 +1,25 @@
+.login#login-form
+  .login__close
+    i.fas.fa-times.login__close-button#login-close
+  form(action="").login__form
+    .login__form-status
+      h1.login__form-status--login Đăng Nhập
+      h2.login__form-status--register#change-register Đăng Ký
+
+    input.login__form-input#login-username(type="text" placeholder="Địa chỉ Email" name="email") 
+    input.login__form-input.login__form-input--align#login-password(type="password" placeholder="Mật khẩu" name="password")
+
+    .login__form-password
+      .login__form-password-remember
+        input.login__form-password-input(type="checkbox" id="remember" name="remember") 
+        label.login__form-password-label(for="remember") Lưu mật khẩu
+      a.login__form-password-forgot(href="#") Quên mật khẩu?
+    input.login__form-submit#btn-login(type="button" value="Đăng nhập")
+    p.login__form-title Hoặc đăng nhập qua
+    .login__form-social
+      button.login__form-social-btn.login__form-social-btn--facebook
+        i.fab.fa-facebook-f 
+        | Facebook
+      button.login__form-social-btn.login__form-social-btn--google
+        i.fab.fa-google 
+        | Google

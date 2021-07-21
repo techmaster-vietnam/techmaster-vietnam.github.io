@@ -1,0 +1,143 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    height: 100vh;
+    user-select: none;
+    background-image: url(./img/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    padding: 12px 15px 20px;
+    border-radius: 23px;
+    background-color: black;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 34px;
+    color: #fefefe;
+    font-weight: 500;
+}
+
+/* Theme */
+.main.change-style {
+    background-image: linear-gradient(45deg, #b3ffff, #FFCCCC);
+    border: solid 3px black;
+    padding: 9px 12px 17px;
+}
+
+.change-style .header { 
+    color: black;
+    font-weight: 500;
+}
+
+.change-style .line {
+    background-color: black;
+}
+
+.change-style .input {
+    color: black;
+}
+
+/* End Theme */
+
+.theme {
+    cursor: pointer;
+}
+
+.screen {
+    height: 60px;
+    width: 100%;
+    overflow: hidden;
+    text-align: right;
+}
+
+.input {
+    color: #fefefe;
+    font-size: 50px;
+    white-space: nowrap;
+}
+
+.keyboard {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(6, 60px);
+    gap: 10px 10px;
+    width: 100%;
+    margin: 9px 0px 24px;
+}
+
+.item {
+    font-weight: 600;
+    font-size: 22px;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: #343134;
+    color: #fefefe;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item:hover {
+    background-color: #a5a5a5bd;
+    color: white;
+}
+
+.item span {
+    padding-left: 9px;
+}
+
+.item sup {
+    padding-bottom: 16px;
+}
+
+
+.math {
+    background-color: #a5a5a5;
+    color: black;
+}
+
+.math:hover {
+    background-color: #a5a5a599;
+    color: black;
+}
+
+.operator {
+    background-color: #fe9505;
+}
+
+.operator:hover {
+    background-color: white;
+    color: #fe9505;
+}
+
+.number-0 {
+    grid-column: 1/span 2;
+    border-radius: 50px;
+    padding-right: 70px;
+}
+
+.line {
+    position: absolute;
+    bottom: 10px;
+    width: 104px;
+    height: 4px;
+    border-radius: 4px;
+    background-color: #fff;
+    left: 50%;
+    transform: translateX(-50%);
+}

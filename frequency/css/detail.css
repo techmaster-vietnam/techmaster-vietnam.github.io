@@ -1,0 +1,340 @@
+/* path */
+.path {
+    font-size: 2rem;
+    margin-top: 34px;
+}
+
+.path__link {
+    color: var(--green-bold);
+}
+
+.path__link:hover {
+    color: var(--green-bold);
+}
+
+.path__divide {
+    margin: 0 8px 0 3px;
+}
+
+.path__line {
+    max-width: 100%;
+    height: 1px;
+    background-color: black;
+    margin-top: 7px;
+}
+
+/* watch */
+.watch {
+    margin-top: 46px;
+}
+
+.watch__main {
+    padding-top: 15px;
+}
+
+.watch__main-name {
+    font-size: 4.2rem;
+    line-height: 5.7rem;
+}
+
+.watch__main-size {
+    font-size: 2rem;
+    line-height: 2.7rem;
+    color: #6A6C6E;
+}
+
+.watch__main-price {
+    margin-top: 19px;
+    display: flex;
+    align-items: center;
+}
+
+.watch__main-price-amount {
+    font-size: 2rem;
+    line-height: 2.7rem;
+}
+
+.watch__main-price-evaluate {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    margin: 0 6px 0 17px;
+    color: #6A6C6E;
+}
+
+.watch__main-price-list {
+    color: #F7D72F;
+}
+
+.watch__main-price-star {
+    margin-right: 3px;
+    font-size: 2rem;
+}
+
+.watch__main-price-star:last-child {
+    margin: 0;
+}
+
+.watch__main-status {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.watch__main-status-title {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+}
+
+.watch__main-status-circle {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-color: #3BB100;
+    border-radius: 50%;
+    margin: 0 5px 0 12px;
+}
+
+.watch__main-status-now {
+    color: #3BB100;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+}
+
+.watch__main-guide {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-left: 90px;
+}
+
+.watch__main-guide-ruler {
+    margin-bottom: 12px;
+}
+
+.watch__main-guide-size {
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    margin-left: 8px;
+}
+
+/* video */
+.watch__main-status-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 19;
+    display: none
+}
+
+.watch__main-status-video--overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.watch__main-status-video--yt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.watch__main-status-video--show {
+    display: block;
+}
+/* end video */
+
+.watch__main-add {
+    font-size: 2rem;
+    line-height: 2.7rem;
+    margin: 32px 0 17px;
+}
+
+.watch__main-bracelet {
+    display: flex;
+}
+
+.watch__main-bracelet-product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.watch__main-bracelet-detail {
+    display: flex;
+    align-items: center;
+}
+
+.watch__main-bracelet-detail {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+}
+
+.watch__main-bracelet-title {
+    color: #6A6C6E;
+}
+
+.watch__main-bracelet-info {
+    margin-left: 12px;
+}
+
+.watch__main-bracelet--align {
+    margin-left: 80px;
+}
+
+.watch__main-bracelet-btn {
+    padding: 0;
+    font-size: 1.6rem;
+    background-color: white;
+    width: 88px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 2px;
+    margin-top: 6px;
+}
+
+.watch__main-bracelet-btn:focus {
+    outline: none;
+}
+
+.watch__main-pay {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    margin-top: 65px;
+    display: flex;
+}
+
+.watch__main-pay-btn {
+    position: relative;
+    width: 280px;
+    height: 70px;
+    border: solid 1px black;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.watch__main-pay-btn:focus {
+    outline: none;
+}
+
+.watch__main-pay--black {
+    background-color: white;
+}
+
+.watch__main-pay--black::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: -50px;
+    border-top: 68px solid black;
+    border-left: 50px solid transparent;
+    transform: translateX(0%);
+    transition: all 0.4s ease;
+}
+
+.watch__main-pay--white::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: -50px;
+    border-top: 68px solid white;
+    border-left: 50px solid transparent;
+    transform: translateX(0%);
+    transition: all 0.4s ease;
+}
+
+.watch__main-pay--black:hover::before,
+.watch__main-pay--white:hover::before {
+    transform: translateX(100%);
+}
+
+.watch__main-pay--black:hover .watch__main-pay-btn--link {
+    color: black;
+}
+
+.watch__main-pay--white {
+    margin-left: 35px;
+    background-color: black;
+}
+
+.watch__main-pay-btn--link {
+    position: absolute;
+    color: white;
+    transition: all 0.2s linear;
+}
+
+.watch__main-pay-group {
+    position: absolute;
+}
+
+.watch__main-pay-btn--svg {
+    margin-bottom: 3px;
+}
+
+.watch__main-pay-btn--link-add {
+    margin-left: 10px;
+    color: black;
+}
+
+.watch__main-pay--white:hover .watch__main-pay-btn--link-add {
+    color: white;
+    transition: all 0.2s linear;
+}
+
+.watch__main-pay--white:hover path {
+    fill: white;
+    transition: all 0.2s linear;
+} 
+
+.watch__main-policy {
+    font-size: 1.3rem;
+    display: flex;
+    margin-top: 19px;
+}
+
+.watch__main-policy-transport,
+.watch__main-policy-commitment {
+    display: flex;
+    align-items: center;
+}
+
+.watch__main-policy-commitment {
+    margin-left: 133px;
+}
+
+.watch__main-policy-commitment svg,
+.watch__main-policy-transport svg {
+    margin-right: 12px;
+}
+
+/* detail */
+.detail {
+    margin-top: 105px;
+    margin-bottom: 135px;
+}
+
+.detail__link {
+    margin-right: 23px;
+}
+
+.detail__link:last-child {
+    margin-right: 0;
+}
+
+.detail__link-img {
+    border-radius: 50%;
+    box-shadow: 2px 5px 14px -8px black;
+}
+
+
+

@@ -1,0 +1,254 @@
+body {
+    background-color: #f5f5f5;
+}
+
+.title, .main {
+    max-width: 1440px;
+    padding: 0 20px;
+    margin: auto;
+}
+
+.title__bag {
+    font-size: 2.4rem;
+    line-height: 3.3rem;
+    font-weight: 600;
+    margin: 65px 0 42px;
+}
+
+.title__bag-total {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    color: #737373;
+    font-weight: 400;
+}
+
+/* main */
+.main {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    gap: 0 24px;
+    padding-bottom: 112px;
+}
+
+.product {
+    font-size: 1.6rem;
+}
+
+.product__title {
+    margin-bottom: 16px;
+    padding: 21px 0;
+    font-weight: bold;
+}
+
+.product--background {
+    background-color: white;
+}
+
+.product__title-name {
+    margin-left: 38px;
+}
+
+.product__items {
+    margin-bottom: 5px;
+}
+
+.product__items-detail-name {
+    font-weight: 600;
+    line-height: 2.2rem;
+}
+
+.product__items-detail-style {
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    color: #6A6C6E;
+}
+
+.product__items-button {
+    display: flex;
+}
+
+.product__items-button-input {
+    width: 44px;
+    height: 32px;
+    border-radius: 0;
+    text-align: center;
+    border-color: rgba(0, 0, 0, 0.18);
+    outline: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.product__items-button-plus,
+.product__items-button-minus {
+    border-color: rgba(0, 0, 0, 0.18);
+    width: 32px;
+    height: 32px;
+    background-color: #fff;
+    font-size: 1.3rem;
+}
+
+.product__items-button-plus:focus,
+.product__items-button-minus:focus {
+    outline: none;
+}
+
+.product__items-button-plus {
+    color: rgba(0, 0, 0, 0.85);
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+
+.product__items-button-minus {
+    color: rgba(0, 0, 0, 0.6);
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+.product__items-total {
+    position: relative;
+}
+
+.product__items-total-delete {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    cursor: pointer;
+    color: #888888;
+}
+
+.bill__discount {
+    padding: 21px 14px 33px;
+    background-color: #fff;
+    margin-bottom: 16px;
+}
+
+.bill__discount-title {
+    font-size: 1.6rem;
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+
+.bill__discount-code {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+}
+
+.bill__discount-code-input {
+    width: 206px;
+    height: 32px;
+    background-color: #F0F2F5;
+    border-radius: 4px;
+    text-align: center;
+    border: none;
+    outline: none;
+}
+
+.bill__discount-code-btn {
+    width: 68px;
+    height: 32px;
+    background-color: #fafafa;
+    padding: 0;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+}
+
+.bill__discount-code-btn:focus {
+    outline: none;
+}
+
+.bill__total {
+    padding: 18px 14px 29px;
+    background-color: #fff;
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.bill__total-title {
+    text-align: center;
+    font-size: 2rem;
+    line-height: 2.7rem;
+    margin-bottom: 23px;
+    font-weight: bold;
+}
+
+.bill__total-temporary,
+.bill__total-discount,
+.bill__total-result {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bill__total-temporary {
+    margin-bottom: 15px;
+}
+
+.bill__total-discount {
+    padding-bottom: 38px;
+    border-bottom: 1px solid #BBAACC;
+}
+
+.bill__total-result {
+    margin: 20px 0 4px;
+}
+
+.bill__total-vat {
+    text-align: right;
+    font-weight: 400;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    color: #6A6C6E;
+}
+
+.bill__request {
+    width: 100%;
+    height: 42px;
+    font-size: 1.6rem;
+    color: white;
+    background-color: var(--green-color);
+    border: none;
+    transition: all 0.4s linear;
+    border-radius: 4px;
+}
+
+.bill__request:focus {
+    outline: none;
+}
+
+.bill__request:hover {
+    background-color: var(--green-hover);
+}
+
+@media (min-width: 576px) { 
+
+}
+
+@media (min-width: 768px) { 
+
+}
+
+@media (min-width: 992px) { 
+
+}
+
+@media (min-width: 1200px) { 
+    .title, .main {
+        padding: 0 60px;
+    }
+
+    .main {
+        display: grid;
+        grid-template-columns: 1fr 306px;
+        gap: 0 24px;
+        padding-bottom: 112px;
+    }
+}
+
+@media (min-width: 1400px) { 
+
+}

@@ -1,0 +1,28 @@
+.register#register-form
+  .register__close
+    i.fas.fa-times.register__close-button#register-close
+  form(action="").register__form
+
+    .register__form-status
+      h1.register__form-status--register Đăng Ký
+      h2.register__form-status--login#change-login Đăng Nhập
+
+    input.register__form-input#register-name(type="text" placeholder="Họ tên" name="name")
+    input.register__form-input#register-email(type="text" placeholder="Email" name="email")
+    input.register__form-input(type="password" placeholder="Mật khẩu từ 6 đến 23 kí tự" name="password")
+    input.register__form-input.register__form-input--align#register-password(type="password" placeholder="Nhập lại mật khẩu" name="password")
+
+    .register__form-radio
+      span.register__form-radio--circle
+        input.register__form-radio-male(type="radio" name="gender" id="male" value="male")
+        label.register__form-radio-label(for="male") Nam
+      span.register__form-radio--circle.register__form-radio--align
+        input.register__form-radio-female(type="radio" name="gender" id="female" value="female")
+        label.register__form-radio-label(for="female") Nữ
+ 
+    input.register__form-policy(type="checkbox" id="policy")
+    span.register__form-title
+        label(for="policy") Tôi đã đọc và đồng ý theo
+        a.register__form-title--link(href="#")  điều kiện sử dụng và chính sách của Frequency
+
+    input.register__form-btn#btn-register(type="button" value="Tạo tài khoản")

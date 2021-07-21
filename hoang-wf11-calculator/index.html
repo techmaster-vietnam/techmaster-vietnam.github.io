@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script src="https://kit.fontawesome.com/c185f616a6.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="main">
+        <header class="header">
+            <div class="clock">
+                <span class="hour"></span> : <span class="minutes"></span>
+            </div>
+            <div class="theme">
+                <span onclick="theme()" class="theme"><i class="far fa-moon"></i>Theme</span>
+            </div>
+        </header>
+
+        <div class="screen">
+            <span class="input">0</span>
+        </div>
+
+        <div class="keyboard">
+            <div onclick="reset()" class="item math reset">AC</div>
+            <div onclick="input('%')" class="item math"><i class="fas fa-percent"></i></div>
+            <div onclick="input('<sup>2</sup>')" class="item math"><span>x</span><sup>2</sup></div>
+            <div onclick="del()" class="item math">DEL</div>
+            <div onclick="input('√(')" class="item math"><i class="fas fa-square-root-alt"></i></div>
+            <div onclick="input('(')" class="item math">(</div>
+            <div onclick="input(')')" class="item math">)</div>
+            <div onclick="input('÷')" class="item operator"><i class="fas fa-divide"></i></div>
+            <div onclick="input(7)" class="item">7</div>
+            <div onclick="input(8)" class="item">8</div>
+            <div onclick="input(9)" class="item">9</div>
+            <div onclick="input('×')" class="item operator"><i class="fas fa-times"></i></div>
+            <div onclick="input(4)" class="item">4</div>
+            <div onclick="input(5)" class="item">5</div>
+            <div onclick="input(6)" class="item">6</div>
+            <div onclick="input('-')" class="item operator"><i class="fas fa-minus"></i></div>
+            <div onclick="input(1)" class="item">1</div>
+            <div onclick="input(2)" class="item">2</div>
+            <div onclick="input(3)" class="item">3</div>
+            <div onclick="input('+')" class="item operator"><i class="fas fa-plus"></i></div>
+            <div onclick="input(0)" class="item number-0">0</div>
+            <div onclick="input('.')" class="item">.</div>
+            <div onclick="equal()" class="item operator"><i class="fas fa-equals"></i></div>
+        </div>
+
+        <div class="line"></div>
+    </div>
+ 
+    <script src="./main.js"></script>
+</body>
+
+</html>
