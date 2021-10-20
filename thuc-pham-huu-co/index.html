@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="index.css">
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header">
+            
+        </div>
+        <div id="main">
+            <!-- slider-start -->
+            <div class="slider">
+                <div class="slides">
+                    <!-- slide images start -->
+                    <div class="slide first">
+                        <div class="slide-img">
+                            <img src="./image/background-1.jpg" alt="">
+                        </div>
+                        <div class="txt">
+                            <div class="txt1">
+                                <h1 id = "h1">Thực phẩm hữu cơ 1</h1>
+                                <p>Tốt cho sức khỏe, tốt cho cuộc sống 1</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-img">
+                            <img src="./image/background-2.jpg" alt="">
+                        </div>
+                        <div class="txt">
+                            <div class="txt1">
+                                <h1 id = "h1">Thực phẩm hữu cơ 2</h1>
+                                <p>Tốt cho sức khỏe, tốt cho cuộc sống 2</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-img">
+                            <img src="./image/background-3.jpg" alt="">
+                        </div>
+                        <div class="txt">
+                            <div class="txt1">
+                                <h1 id = "h1">Thực phẩm hữu cơ 3</h1>
+                                <p>Tốt cho sức khỏe, tốt cho cuộc sống 3</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- slide images end -->
+
+                    <!-- onclick js -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                
+                    <div class="dotsbox">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                    </div>
+                    <!-- /onclick js -->
+                    
+                </div>
+            </div>
+            <!-- slider-end -->
+            <div class="introduce">
+                <h1>Giới thiệu</h1>
+                <div class="introduce-main">
+                    <div class="col-circle-left">
+                        <div class="circle-1">
+                            <img src="image/circle-1.png" alt="">
+                            <h4>100% tự nhiên</h4>
+                            <p>We care about what you eat. We want to produce food which nourishes your body and tastes delicious.</p>
+                        </div>
+                        <div class="circle-2">
+                            <img src="image/circle-2.png" alt="">
+                            <h4>100% tự nhiên</h4>
+                            <p>We care about what you eat. We want to produce food which nourishes your body and tastes delicious.</p>
+                        </div>
+                    </div>
+                    <div class="image-introduce">
+                        <img src="image/introduce.jpg" alt="">
+                    </div>
+                    <div class="col-circle-right">
+                        <div class="circle-3">
+                            <img src="image/circle-3.png" alt="">
+                            <h4>100% tự nhiên</h4>
+                            <p>We care about what you eat. We want to produce food which nourishes your body and tastes delicious.</p>
+                        </div>
+                        <div class="circle-4">
+                            <img src="image/circle-4.png" alt="">
+                            <h4>100% tự nhiên</h4>
+                            <p>We care about what you eat. We want to produce food which nourishes your body and tastes delicious.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="introduce-2">
+                <div class="introduce-container">
+                    <div class="introduce-container-1">
+                        <h2>Thực phẩm tốt</h2>
+                        <h1>Cảm xúc vui</h1>
+                        <p>Thực phẩm của chúng tôi luôn tươi mới, không chất độc hại</p>
+                        <button><a href="">Xem ngay</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <h1>Sản phẩm của chúng tôi</h1>
+                <ul class="title">
+                    <li class="title-product title-product1 active-title"><span>Hoa quả</span></li>
+                    <li class="title-product title-product2"><span>Thực phẩm khô</span></li>
+                    <li class="title-product title-product3"><span>Rau hữu cơ</span></li>
+                </ul>
+                <div class="list-product">
+                   <div class="list-product1">
+
+                   </div>
+                   <div class="list-product2 hide">
+                    
+                   </div>
+                   <div class="list-product3 hide">
+
+                   </div>
+                    
+                </div>
+            </div>
+            <div class="hightlight">
+                <h1>Sản phẩm nổi bật</h1>
+                <div class="hightlight1">
+                    <div class="img-hightlight">
+                        <img src="image/hightlight.png" alt="">
+                    </div>
+                    <div class="info-hightlight">
+                        <h3>Mùng tơi</h3>
+                        <p class="price">12,000 đ</p>
+                        <p class="description">Rau cải bắp hữu cơ (Brassica oleracea nhóm Capitata) là loại rau chủ lực trong họ Cải (còn gọi là họ Thập tự – Brassicaceae/Cruciferae), có xuất xứ từ vùng Địa Trung Hải. Nó là cây thân thảo, sống hai năm, và là một thực vật có hoa thuộc nhóm hai lá mầm với các lá tạo thành một cụm đặc hình gần như hình cầu. Là một loại rau hữu cơ rất dễ nhận biết, khó có thể nhầm lẫn</p>
+                        <button><a href="">Xem chi tiết</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="hightlight-slides">
+                    <div class="hightlight-slide">
+                        <img src="image/hightlight-1.jpg" id="lastClone" alt="">
+                        <img src="image/hightlight-2.jpg" id="2" alt="">
+                        <img src="image/hightlight-3.jpg" id="3" alt="">
+                        <img src="image/hightlight-1.jpg" id="4" alt="">
+                        <img src="image/hightlight-2.jpg" id="5" alt="">
+                        <img src="image/hightlight-3.jpg" id="6" alt="">
+                        <img src="image/hightlight-1.jpg" id="7" alt="">
+                        <img src="image/hightlight-2.jpg" id="8" alt="">
+                        <img src="image/hightlight-3.jpg" id="9" alt="">
+                        <img src="image/hightlight-1.jpg" id="10" alt="">
+                        <img src="image/hightlight-2.jpg" id="11" alt="">
+                        <img src="image/hightlight-3.jpg" id="firstClone" alt="">  
+                    </div>
+                <a class="prev1" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next1" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <div class="comment">
+                <div class="comment-mini">
+                    <h1>Nhận xét của khách hàng</h1>
+                    <div class="customer-comments">
+                        <div class="customer-comment">
+                            <p><b>Nguyễn Thanh</b><br>Chúng tôi rất hài lòng về sản phẩm của công ty. Cảm ơn bạn đã mang đến sản phẩm tuyệt vời như vậy. Chúng tôi sẽ tiếp tục</p>
+                        </div>
+                        <div class="customer-comment">
+                            <p><b>Trần Tâm</b><br>Chúng tôi rất hài lòng về sản phẩm của công ty. Cảm ơn bạn đã mang đến sản phẩm tuyệt vời như vậy. Chúng tôi sẽ tiếp tục</p>
+                        </div>
+                        <div class="customer-comment">
+                            <p><b>Huỳnh Đông</b><br>Chúng tôi rất hài lòng về sản phẩm của công ty. Cảm ơn bạn đã mang đến sản phẩm tuyệt vời như vậy. Chúng tôi sẽ tiếp tục</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="news">
+                <h1>Tin tức</h1>
+                <div class="news-mini">
+                    <div class="news-left">
+                        <div class="new-img1">
+                            <a href=""><img src="image/new_1.jpg" alt=""></a>
+                            <a href=""><h4>Cách chế biến thực phẩm tốt nhất</h4></a>
+                            <p>Người xưa có câu “nhất dáng nhì da” cho thấy làn da rất quan trọng trong việc thu hút người đối diện. Đối với người có cơ địa dễ lên mụn thì cần phải có một chế độ sinh hoạt cũng như ăn uống...</p>
+                        </div>
+                    </div>
+                    <div class="news-right">
+                        <div class="new-img2">
+                            <div class="new-img2-image">
+                                <a href=""><img src="image/new_2.jpg" alt=""></a>
+                            </div>
+                            <div class="new-img2-mini">
+                                <a href=""><h4>Cách chế biến thực phẩm tốt nhất</h4></a>
+                                <p>Người xưa có câu “nhất dáng nhì da” cho thấy làn da rất quan trọng trong việc thu hút người đối diện. Đối với người có cơ địa dễ lên...</p>
+                            </div>
+                        </div>
+                        <div class="new-img2">
+                            <div class="new-img2-image">
+                                <a href=""><img src="image/new_3.jpg" alt=""></a>
+                            </div>
+                            <div class="new-img2-mini">
+                                <a href=""><h4>Cách chế biến thực phẩm tốt nhất</h4></a>
+                                <p>Người xưa có câu “nhất dáng nhì da” cho thấy làn da rất quan trọng trong việc thu hút người đối diện. Đối với người có cơ địa dễ lên...</p>
+                            </div>
+                        </div>
+                        <div class="new-img2">
+                            <div class="new-img2-image">
+                                <a href=""><img src="image/new_4.jpg" alt=""></a>
+                            </div>
+                            <div class="new-img2-mini">
+                                <a href=""><h4>Cách chế biến thực phẩm tốt nhất</h4></a>
+                                <p>Người xưa có câu “nhất dáng nhì da” cho thấy làn da rất quan trọng trong việc thu hút người đối diện. Đối với người có cơ địa dễ lên...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            
+        </div>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
