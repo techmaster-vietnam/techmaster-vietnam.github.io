@@ -1,0 +1,98 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.homepage{
+	background: #FF8A00;
+	height: 120px;
+	display: block;
+	width: 100%;
+	text-decoration: none;
+	color: white;
+	padding: 10px;
+	font-size: 20px;
+}
+body{
+	background: #ff8a0047;
+	font-family: 'Catamaran', sans-serif;
+	position: fixed;
+	width: 100%;
+}
+form{
+	width: 500px;
+	border: 1px solid #77777754;
+	box-sizing: border-box;
+	height: 630px;
+	position: fixed;
+	top:80px;
+	left: 50%;
+	transform: translateX(-50%);
+	border-top: 10px solid #ff8a0047;
+	background: white;
+	padding-left: 30px;
+	overflow: auto;
+}
+.register{
+	font-size: 30px;
+	display: inline-block;
+	padding-top: 30px;
+}
+.required{
+	display: inline-block;
+	color: red;
+	padding-top: 20px;
+	padding-bottom: 30px;
+}
+.information{
+	height: 30px;
+	border: none;
+	outline: none;
+	line-height: 30px;
+	border-bottom: 1px solid #77777754;
+}
+span{
+	color: red;
+}
+.submit{
+	padding: 5px 15px 5px 15px;
+	background: #2196f3;
+	color: white;
+	font-weight: bold;
+	cursor: pointer;
+	margin-bottom: 20px;
+	display: inline-block;
+	transition: .3s;
+}
+.submit:hover{
+	opacity: .7;
+}
+.label{
+	padding-top: 20px; 
+	display: inline-block;
+}
+.home{
+	color: white;
+	border-bottom: 5px solid;
+}
+a{
+	text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

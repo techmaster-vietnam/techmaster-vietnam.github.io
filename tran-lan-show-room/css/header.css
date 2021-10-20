@@ -1,0 +1,52 @@
+.hero{
+	background-image: url('../images/banner.png');
+	min-height: 700px;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.container .logo{
+	font-size: 30px;
+	color: #FFFFFF;
+	padding-left: 20px;
+}
+nav{
+	background: rgba(0, 0, 0, 0.6);
+}
+
+.navbar-nav .nav-item .nav-link{
+	font-size: 20px;
+	color: #FFFFFF;
+	padding-left: 50px;
+}
+
+.navbar-light .navbar-toggler{
+	background-color: #dcdde1;
+}
+.header{
+	width: 100%;
+	position: fixed;
+	margin-left: 50%;
+	transform: translateX(-50%);
+	z-index: 100;
+}
+.login{
+	color: white;
+	float: right;
+	background-color: #FF8A00;
+	padding: 15px 20px;
+	border-radius: 5px;
+	transition: .3s;
+}
+.login:hover{
+	opacity: .7;
+	transform: translateX(-20px);
+}
+.fa-shopping-cart{
+	font-size: 30px;
+}
+#show{
+	background:red;
+	padding: 2px 8px;
+	border-radius: 10px;
+	margin-left: -5px;
+}
