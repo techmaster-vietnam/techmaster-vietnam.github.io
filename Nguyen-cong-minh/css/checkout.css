@@ -1,0 +1,182 @@
+.mr-1{
+    margin-right: 1rem;
+    }
+.mr-3 {
+    margin-right: 3rem;
+  }
+  .ml-3{
+    margin-left: 3rem;
+    }
+  .pr-0{
+    padding-right: .5rem;
+  }
+  .pl-0{
+    padding-left: .5rem;
+  }
+  .breadcrumb-1 {
+    padding: 0 9%;
+  }
+  .breadcrumb-1 .container {
+    padding-left: initial;
+  }
+  
+  .breadcrumb-item {
+    font-weight: normal;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+
+  /* -------------------------------------------------------------------------------------- */
+  .checkout .container{
+      padding-left: initial;
+      padding-right: initial;
+  }
+  .box-cart,.box-information{
+    box-shadow: rgb(60 64 67 / 10%) 0px 1px 2px 0px, rgb(60 64 67 / 15%) 0px 2px 6px 2px;
+    border-radius: 0.4rem;
+  }
+  .my-0{
+      font-weight: 400;
+  }
+  .sum{
+      font-size: 1.6rem;
+  }
+  .text-sum{
+      font-size: 1.6rem;
+      color: #ff5353;
+  }
+  .text-muted{
+      font-size: 1.4rem;
+  }
+
+  .list-group-item{
+      border: none;
+  }
+  .text-cart{
+      color: black;
+      font-size: 1.4rem;
+      --bs-text-opacity: 1;
+  }
+  .list-group, .list-group h6{
+      font-size: 1.4rem;
+      padding-top: .6rem;
+  }
+  .btn-confirm{
+    padding: 1rem 1.2rem ;
+      border: none;
+      border-radius: .4rem;
+      font-size: 1.4rem;
+      margin-left: 1rem;
+      background-color: #ff5353;
+      color: #fff;
+  }
+   .btn-buy-now{
+    padding: 1rem 4rem ;
+    border: none;
+    border-radius: .4rem;
+    font-size: 1.4rem;
+    margin-top: 2rem;
+    background-color: #ff5353;
+    color: #fff;
+   }
+  
+  .form-label, .form-control,.form-select{
+      font-size: 1.4rem;
+  }
+  .form-control, .form-select{
+      border-radius: .4rem;
+  }
+.text{
+    color: rgb(165, 163, 163);
+}
+.form-check{
+    font-size: 1.2rem;
+    margin-right: 2rem;
+}
+.form-control ,.form-select{
+    padding: .9rem 1.2rem ;
+    border-radius: .4rem;
+}
+.form-check .form-check-input {
+    margin-left: 0 ;
+    margin-right: 1rem;
+}
+.form-check{
+    padding-left: 1.25rem;
+}
+.form-check-ship{
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: .4rem;
+}
+.form-check-input:active .form-check{
+    border: 1px solid #0d6efd;
+}
+  
+
+.form-check-label{
+  font-size: 1.4rem;
+}
+  
+  
+  /* RESPONSIVE CSS
+    -------------------------------------------------- */
+  
+
+
+
+
+
+
+
+
+
+@media (max-width: 1200px) {
+    html {
+      font-size: 55%;
+    }
+    .breadcrumb-1 {
+      padding: 1rem 9% 0 9%;
+    }
+  }
+  
+  @media (max-width: 991px) {
+    html {
+      font-size: 55%;
+    }
+    .breadcrumb-1 {
+      padding: 5rem 9% 0 9%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    html {
+      font-size: 50%;
+    }
+    .breadcrumb-1 {
+      padding: 5rem 2rem 0 2rem;
+    }
+    .checkout{
+        padding: 2rem;
+    }
+    
+  }
+  @media (max-width: 576px) {
+    .pr-0{
+      padding-right: 0;
+    }
+    .pl-0{
+      padding-left: 0;
+    }
+}
+  
+  @media (max-width: 450px) {
+    html {
+      font-size: 50%;
+    }
+    .breadcrumb-1 {
+      padding: 6rem 9% 0 9%;
+  
+  }
+}
+

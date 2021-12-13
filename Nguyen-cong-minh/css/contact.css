@@ -1,0 +1,142 @@
+.breadcrumb-1 {
+    padding: 0 9%;
+  }
+  .breadcrumb-1 .container {
+    padding-left: initial;
+  }
+  
+  .breadcrumb-item {
+    font-weight: normal;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+
+.pr-1{
+    padding-right: 1rem;
+}
+  .info-heading{
+      font-size: 2rem;
+      font-weight: 500;
+      margin: 5rem 0 2rem 0;
+  }
+.icon-information{
+    font-size: 1.6rem;
+    font-weight: 500;
+    padding-right: 1rem;
+    color: #ff5353;
+}
+.address p > strong{
+    font-size: 1.6rem;
+}
+.address p {
+    font-size: 1.4rem;
+}
+
+address{
+    font-size: 1.4rem;
+}
+.form-control{
+    font-size: 1.4rem;
+    border-radius: .4rem;
+}
+.form-control:focus{
+    border-color: initial;
+    box-shadow:initial;
+}
+input{
+    height: 4rem;
+}
+.text-input {
+    
+    height: 12rem;
+}
+
+.contact-btn{
+    padding: 1.2rem 5rem;
+    color:#fff ;
+    background-color: #ff5353;
+    font-size: 1.4rem;
+    border-radius: .4rem;
+    border: none;
+    margin-top: 1rem;
+
+
+}
+.contact-btn:hover{
+    background-color: rgba(255, 83, 83, 0.8);
+}
+
+.container{
+    padding-left: initial;
+    padding-right: initial;
+}
+.map-title{
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+
+iframe{
+    
+    width: 100%;
+    height: 45rem;
+}
+
+
+
+
+
+
+
+  /* RESPONSIVE CSS
+    -------------------------------------------------- */
+
+    @media (max-width: 1200px) {
+        html {
+          font-size: 55%;
+        }
+        .breadcrumb-1 {
+          padding: 1rem 9% 0 9%;
+        }
+      }
+      
+  
+  @media (max-width: 991px) {
+    html {
+      font-size: 55%;
+    }
+    .breadcrumb-1 {
+      padding: 5rem 9% 0 9%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    html {
+      font-size: 50%;
+    }
+    .breadcrumb-1 {
+      padding: 5rem 9% 0 9%;
+    }
+    
+    
+  }
+  @media (max-width: 576px) {
+    .pr-0{
+      padding-right: 0;
+    }
+    .pl-0{
+      padding-left: 0;
+    }
+}
+  
+  @media (max-width: 450px) {
+    html {
+      font-size: 50%;
+    }
+    .breadcrumb-1 {
+      padding: 6rem 9% 0 9%;
+  
+  }
+}

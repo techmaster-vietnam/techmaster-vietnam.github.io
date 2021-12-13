@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="SHORTCUT ICON" href="img/icon-r.svg" />
+    <title>Thanh toán</title>
+    <!-- css-------------------------------------------------------------- -->
+    <link
+     href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+     rel="stylesheet"
+     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+     crossorigin="anonymous"
+   />
+   <link
+     rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+   />
+   <link
+     rel="stylesheet"
+     href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css"
+   />
+   
+    <link rel="stylesheet" href="css/themify-icons/themify-icons.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/checkout.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <a href="index.html" class="logo">GREENTECH</a>
+        <nav class="navbar">
+          <ul class="menu">
+            <li class="menu-item">
+              <a href="index.html" class="menu-link  ">Trang chủ</a>
+            </li>
+            <li class="menu-item  d-md-none">
+              <div class="accordion" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item">
+                  <div class="accordion-box d-flex flex-row justify-content-star align-items-center">
+                    <div class="accordion-link  col-3 col-sm-2">
+                      <a href="store.html">Cửa hàng</a>
+                    </div>
+                    <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                      
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
+                        
+                      </button>
+                    </h2>
+                  </div>
+                  
+                  <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse " aria-labelledby="panelsStayOpen-headingOne">
+                    <div class="accordion-body">
+                      <div class="accordion-box d-flex flex-row justify-content-star align-items-center">
+                        <div class="accordion-link col-sm-2 col-3">
+                          <a href="phone.html">Di động</a>
+                        </div>
+                        <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                            
+                          </button>
+                        </h2>
+                        
+                      </div>
+                      <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                        <div class="accordion-body">
+                          <a href="phone.html">iPhone</a>
+                          <a href="phone.html">Samsung</a>
+                          <a href="phone.html">OPPO</a>
+                          <a href="phone.html">Xiaomi</a>
+                          <a href="phone.html">Realme</a>
+                        </div>
+                      </div>
+                      <div class="accordion-box d-flex flex-row justify-content-star align-items-center">
+                        <div class="accordion-link col-sm-2 col-3">
+                          <a href="laptop.html">Laptop</a>
+                        </div>
+                        <h2 class="accordion-header" id="panelsStayOpen-heading3">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse3" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                            
+                          </button>
+                        </h2>
+                        
+                      </div>
+                      <div id="panelsStayOpen-collapse3" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-heading3">
+                        <div class="accordion-body">
+                          <a href="laptop.html">Apple</a>
+                          <a href="laptop.html">Samsung</a>
+                          <a href="laptop.html">Dell</a>
+                          <a href="laptop.html">HP</a>
+                          <a href="laptop.html">Asus</a>
+                         </div>
+                      </div>
+                      <div class="accordion-box d-flex flex-row justify-content-star align-items-center">
+                        <div class="accordion-link col-sm-2 col-3">
+                          <a href="tv.html">TV & AV</a>
+                        </div>
+                        <h2 class="accordion-header" id="panelsStayOpen-heading4">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse4" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                            
+                          </button>
+                        </h2>
+                        
+                      </div>
+                      <div id="panelsStayOpen-collapse4" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-heading4">
+                        <div class="accordion-body">
+                          <a href="tv.html">Sony</a>
+                          <a href="tv.html">Samsung</a>
+                          <a href="tv.html">LG</a>
+                          <a href="tv.html">Tosiba</a>
+                          
+                         </div>
+                      </div>
+                      <div class="accordion-box d-flex flex-row justify-content-star align-items-center">
+                        <div class="accordion-link col-sm-2 col-3">
+                          <a href="accessories.html">Phụ kiện</a>
+                        </div>
+                        <h2 class="accordion-header" id="panelsStayOpen-heading5">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse5" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                            
+                          </button>
+                        </h2>
+                        
+                      </div>
+                      <div id="panelsStayOpen-collapse5" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-heading5">
+                        <div class="accordion-body">
+                          <a href="accessories.html">Chuột</a>
+                          <a href="accessories.html">Bàn phím</a>
+                          <a href="accessories.html">Tai nghe</a>
+                          
+                         </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+            </li>
+            <li class="menu-item d-sm-none d-none d-md-block">
+              <a href="store.html" class="menu-link d-flex align-items-center ">Cửa hàng 
+                <i class="  bi bi-chevron-down" style="padding-left: .5rem;"></i> </a>
+  
+              <ul class="sub-menu">
+                <li class="sub-item">
+                  <a href="phone.html" class="sub-link " >Di động 
+                    
+                  </a>
+                  <ul class="sub2-menu">
+                    <li class="sub2-item">
+                      <a href="" class="sub2-link">Iphone</a>
+                    </li>
+                    <li class="sub2-item">
+                      <a href="" class="sub2-link">Samsung</a>
+                    </li>
+                    <li class="sub2-item">
+                      <a href="" class="sub2-link">OPPO</a>
+                    </li>
+                    <li class="sub2-item">
+                      <a href="" class="sub2-link">Xiaomi</a>
+                    </li>
+                    <li class="sub2-item">
+                      <a href="" class="sub2-link">Realme</a>
+                    </li>
+                  </ul>
+                </li>
+  
+                <li class="sub-item">
+                  <a href="laptop.html" class="sub-link">Laptop </a>
+  
+                  <ul class="sub2-menu">
+                    <li class="sub2-item">
+                      <a href="" class="sub2-link">Apple</a>
+                    </li>
+                    <li class="sub2-item">
+                      <a href="" class="sub2-link">Samsung</a>
+                    </li>
+                    <li class="sub2-item">
+                      <a href="" class="sub2-link">HP</a>
+                    </li>
+                    <li class="sub2-item">
+                      <a href="" class="sub2-link">Dell</a>
+                    </li>
+                    <li class="sub2-item">
+                      <a href="" class="sub2-link">Asus</a>
+                    </li>
+                    
+                  </ul>
+                </li>
+  
+                <li class="sub-item">
+                  <a href="tv.html" class="sub-link">TV & AV </a>
+                  <ul class="sub2-menu">
+                    <li class="sub2-item">
+                      <a href="" class="sub2-link">Sony</a>
+                    </li>
+                    <li class="sub2-item">
+                      <a href="" class="sub2-link">LG</a>
+                    </li>
+                    <li class="sub2-item">
+                      <a href="" class="sub2-link">Samsung</a>
+                    </li>
+                    <li class="sub2-item">
+                      <a href="" class="sub2-link">Tosiba</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="sub-item">
+                  <a href="accessories.html" class="sub-link">Phụ kiện </a>
+                  <ul class="sub2-menu">
+                    <li class="sub2-item">
+                      <a href="" class="sub2-link">Tai nghe</a>
+                    </li>
+                    <li class="sub2-item">
+                      <a href="" class="sub2-link">bàn phím</a>
+                    </li>
+                    <li class="sub2-item">
+                      <a href="" class="sub2-link">Chuột</a>
+                    </li>
+                   
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item">
+              <a href="" class="menu-link">Giới Thiệu</a>
+            </li>
+            <li class="menu-item">
+              <a href="contact.html" class="menu-link">Liên hệ</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="icons-cart">
+        
+          <div class="fas fa-search" id="search-btn"></div>
+          <div class="fas fa-shopping-cart position-relative" id="cart-btn">
+            <span class="position-absolute number   badge  ">
+            3
+            
+          </span></div>
+          
+          <div class="fas fa-bars" id="menu-btn"></div>
+        </div>
+        <form  class="search-form">
+          <input type="search" id="search-box" placeholder="Tìm kiếm ngay ..." />
+          <label for="search-box" class="fas fa-search"></label>
+        </form>
+        <div class="shopping-cart">
+          <div class="box">
+            <i class="bi bi-trash-fill"></i>
+            <img src="img/cart-1.jpg" alt="cart" />
+            <div class="content-1">
+              <h3>Redmi Note 8 Pro</h3>
+              <span class="price">5.130.000 VND/-</span>
+              <span class="quantity">sl : 1</span>
+            </div>
+          </div>
+  
+          <div class="box">
+            <i class="bi bi-trash-fill"></i>
+            <img src="img/cart-1.jpg" alt="cart" />
+            <div class="content-1">
+              <h3>Redmi Note 8 Pro</h3>
+              <span class="price">5.130.000 VND/-</span>
+              <span class="quantity">sl : 1</span>
+            </div>
+          </div>
+  
+          <div class="box">
+            <i class="bi bi-trash-fill"></i>
+            <img src="img/cart-1.jpg" alt="cart" />
+            <div class="content-1">
+              <h3>Redmi Note 8 Pro</h3>
+              <span class="price">5.130.000 VND/-</span>
+              <span class="quantity">sl : 1</span>
+            </div>
+          </div>
+  
+          <div class="total">Tổng : 15.390.000 VND</div>
+          <div class="button-cart d-flex ">
+            <div class="col-6 p-r-0"><a href="cart.html" class="  btn btn-cart ">Chi tiết</a></div>
+            <div class="col-6 p-l-0"><a href="checkout.html" class="  btn  ">Thanh toán</a></div>
+            
+          </div>
+          
+        </div>
+      </div>
+    </header>
+    <section class="breadcrumb-1">
+      <div class="container">
+        <nav aria-label="breadcrumb" style="padding-top: 8%">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+
+            <li class="breadcrumb-item active" aria-current="page">
+              Thanh toán
+            </li>
+          </ol>
+        </nav>
+      </div>
+    </section>
+
+    <section class="checkout">
+      <div class="container">
+        <form class="needs-validation" action="#">
+          <div class="d-flex flex-row flex-wrap justify-content-between">
+            <div class="col-12 col-sm-6  mb-4  pr-0 ">
+                <div class="box-cart p-5">
+                    <h4
+                    class="d-flex justify-content-between align-items-center "
+                  >
+                    <span class="text-cart">Thông tin đơn hàng</span>
+                  </h4>
+                  <ul class="list-group mb-3">
+                    
+                    <li
+                      class="
+                        list-group-item
+                        d-flex
+                        justify-content-between
+                        lh-condensed
+                      "
+                    >
+                      <div>
+                        <h6 class="my-0">Apple Ipad 4 Wifi 16GB</h6>
+                        <small class="text-muted">5.130.000 ₫ x 2</small>
+                      </div>
+                      <span class="text-muted">10.260.000 ₫</span>
+                    </li>
+                    
+    
+                    <li
+                      class="
+                        list-group-item
+                        d-flex
+                        justify-content-between
+                        lh-condensed
+                      "
+                    >
+                      <div>
+                        <h6 class="my-0">Apple iPhone 5 16GB White</h6>
+                        <small class="text-muted">5.130.000 ₫ x 1</small>
+                      </div>
+                      <span class="text-muted">5.130.000 ₫</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between">
+                      <span>Tạm tính</span>
+                      <span class="text-muted">15.390.000 ₫</span>
+                    </li>
+                    
+                      <li class="list-group-item d-flex justify-content-between">
+                        <span>Phí giao hàng</span>
+                        <span class="text-muted">15.000 ₫</span>
+                        
+                      </li>
+                      <li class="list-group-item d-flex justify-content-between">
+                        <div class="input-group">
+                            <input
+                              type="text"
+                              class="form-control"
+                              placeholder="Mã khuyến mãi"
+                            />
+                            <div class="input-group-append">
+                              <button type="button" class="btn-confirm">Áp dụng</button>
+                            </div>
+                          </div>
+                        
+                      </li>
+                      <li class="list-group-item d-flex justify-content-between">
+                        <span class="sum">Tổng số tiền</span>
+                        <span class="text-sum">15.405.000 ₫</span>
+                        
+                      </li>
+                      
+                  </ul>
+    
+                  
+                </div>
+              
+            </div>
+            <div class="col-12 col-sm-6  pl-0">
+                <div class="box-information p-5">
+                    <h4 class="mb-3">Thông tin khách hàng</h4>
+
+                    <form class="row g-3 needs-validation" novalidate>
+                      <div class="d-flex flex-row ">
+                       
+                        <div class="col-12 ">
+                          <div class="d-flex flex-column">
+                              <div class="col-md-12 mb-2">
+                                  <label for="validationCustom01" class="form-label"
+                                    >Số điện thoại</label
+                                  >
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    id="validationCustom01"
+                                    placeholder="Họ tên"
+                                    required
+                                  />
+                                  <div class="invalid-feedback">
+                                      Vui lòng điền số điện thoại của bạn
+                                  </div>
+                                </div>
+                            <div class="col-12 mb-2">
+                              <label for="validationCustom02" class="form-label"
+                                >Số điện thoại</label
+                              >
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="validationCustom02"
+                                placeholder="Vui lòng điền số điện thoại của bạn"
+                                required
+                              />
+                              <div class="invalid-feedback">
+                                  Vui lòng điền số điện thoại của bạn
+                              </div>
+                            </div>
+                            <div class="col-12 mb-2">
+                              <label for="validationCustom03" class="form-label"
+                                >Địa chỉ nhận hàng</label
+                              >
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="validationCustom03"
+                                placeholder="Vui lòng nhập địa chỉ của bạn"
+                                required
+                              />
+                              <div class="invalid-feedback">
+                                  Vui lòng nhập địa chỉ của bạn
+                              </div>
+                            </div>
+                            <div class="col-12 mb-2">
+                              <label for="validationDefault04" class="form-label"
+                                >Tỉnh/Thành phố</label
+                              >
+                              <select
+                                class="form-select"
+                                id="validationDefault04"
+                                
+                                required
+                              >
+                                <option selected disabled value="" class="text">Vui lòng chọn tỉnh/thành phố</option>
+                                <option>Hà Nội</option>
+                                <option>Hồ Chí Minh</option>
+                                <option>Đà nẵng</option>
+                              </select>
+                              <div
+                                id="validationServer04Feedback"
+                                class="invalid-feedback"
+                              >
+                              Vui lòng chọn tỉnh/thành phố
+                              </div>
+                            </div>
+                            <div class="col-12 mb-2">
+                              <label for="validationDefault05" class="form-label"
+                                >Quận/Huyện</label
+                              >
+                              <select
+                                class="form-select"
+                                id="validationDefault05"
+                                required
+                              >
+                                <option selected disabled value="" class="text">Vui lòng chọn quận/huyện</option>
+                                <option>Huyện Ba Vì</option>
+                                <option>Huyện Thanh Oai</option>
+                                <option>Huyện Đông Anh</option>
+                                <option>Quận Ba Đình</option>
+                                <option>Quận Hoàn Kiếm</option>
+                                <option>Quận Hoàng mai</option>
+                              </select>
+                              <div
+                                id="validationServer05Feedback"
+                                class="invalid-feedback"
+                              >
+                              Vui lòng chọn quận/huyện
+                              </div>
+                            </div>
+                            <div class="col-12 mb-2">
+                              <label for="validationDefault06" class="form-label"
+                                >Phường/Xã</label
+                              >
+                              <select
+                                class="form-select"
+                                id="validationDefault06"
+                                required
+                              >
+                                <option selected disabled value="" class="text">Vui lòng chọn phường/xã</option>
+                                <option>Phường Chương Dương</option>
+                                <option>Phường Cửa Nam</option>
+                                <option>Phường Cửa Đông</option>
+                                <option>Phường Hàng Bạc</option>
+                                <option>Phường Hàng Bài</option>
+                              </select>
+                              <div
+                                id="validationServer06Feedback"
+                                class="invalid-feedback"
+                              >
+                              Vui lòng chọn phường/xã
+                              </div>
+                            </div>
+                            <div class="col-12 mb-2">
+                              <label for="validationDefault06" class="form-label"
+                                >Tùy chọn giao hàng</label
+                              >
+                              <div class="d-flex flex-row flex-wrap">
+                                  <div class="form-check mb-3 form-check-ship ">
+                                      <input type="radio" class="form-check-input" id="validationFormCheck1" name="radio-stacked" required>
+                                      <div class="d-flex flex-column">
+                                          <label class="form-check-label" for="validationFormCheck1">15.000 ₫</label>
+                                          <label class="form-check-label" for="validationFormCheck1">Giao hàng tiết kiệm</label>
+                                      </div>
+                                      
+                                      
+                                    </div>
+                                    <div class="form-check mb-3 form-check-ship">
+                                      <input type="radio" class="form-check-input" id="validationFormCheck2" name="radio-stacked" required>
+                                      <div class="d-flex flex-column">
+                                          <label class="form-check-label" for="validationFormCheck2">30.000 ₫</label>
+                                          <label class="form-check-label" for="validationFormCheck2">Giao hàng nhanh</label>
+                                      </div>
+                                      
+                                    </div>
+                                    <div class="invalid-feedback">Vui lòng chọn phương thức giao hàng</div>
+                              </div>
+                            </div>
+                            <div class="col-12 mb-2">
+                              <label for="validationDefault06" class="form-label"
+                                >Chọn hình thức thanh toán</label
+                              >
+                              <div class="form-check">
+                                  <input type="radio" class="form-check-input" id="validationFormCheck3" name="radio-stacked-1" required>
+                                  <label class="form-check-label" for="validationFormCheck3">Trả tiền mặt khi nhận hàng</label>
+                                </div>
+                                <div class="form-check">
+                                  <input type="radio" class="form-check-input" id="validationFormCheck4" name="radio-stacked-1" required>
+                                  <label class="form-check-label" for="validationFormCheck4">Chuyển khoản</label>
+                                </div>
+                              
+                            </div>
+                            <div class="col-12">
+                              <button class="btn-buy-now" type="submit">
+                                Đặt hàng
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+      
+                      
+                    </form>
+                </div>
+              
+
+            
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container foo-top">
+        <div class="d-flex flex-row flex-wrap">
+          <div class="col-12 col-sm-6 col-xl-3 pd">
+            <div class="widget widget-navigation">
+              <h4 class="widget-title">Giới thiệu về chúng tôi</h4>
+              <ul>
+                <li><a href="#">Thông tin về công ty</a></li>
+                <li><a href="#">Lĩnh vực kinh doanh</a></li>
+                <li><a href="#">Quy chế hoạt động</a></li>
+                <li><a href="#">Chính sách bảo hành</a></li>
+                <li><a href="#">Liên hệ hợp tác kinh doanh</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-xl-3 ">
+            <div class="widget widget-navigation">
+              <h4 class="widget-title">Bạn Cần Hỗ Trợ?</h4>
+              <ul>
+                <li><a href="#">Tư vấn trực tuyến </a></li>
+                <li><a href="#">Thư điện tử</a></li>
+                <li><a href="#">Điện thoại</a></li>
+                <li><a href="#">Trung tâm bảo hành</a></li>
+                <li><a href="#">Gửi ý kiến phản hồi</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-xl-3 ">
+            <div class="widget widget-navigation">
+              <h4 class="widget-title">Tin tức</h4>
+              <ul>
+                <li><a href="#">Tin tuyển dụng</a></li>
+                <li><a href="#">Tin khuyễn mại</a></li>
+                <li><a href="#">Hướng dẫn mua online</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-xl-3 ">
+            <div class="widget widget-app">
+              <h4 class="widget-title">experience app on mobile</h4>
+              <div class="app-btn">
+                <a href="#" class="google-play">
+                  <i class="ti-android"></i>
+                  <p>
+                    <span>get it on</span>
+                    <strong>Goole play</strong>
+                  </p>
+                </a>
+                <a href="#" class="app-store">
+                  <i class="ti-apple"></i>
+                  <p><span>get it on</span>app store</p>
+                </a>
+              </div>
+            </div>
+            <div class="widget widget-social">
+              <h4 class="widget-title">Online shopping</h4>
+              <div class="social-media">
+                <a href="#" class="icon-fb" ><i class="ti-facebook"></i></a
+                ><a href="#" class="icon-twitter"><i class="ti-twitter-alt"></i></a
+                ><a href="#" class="icon-pinterest"><i class="ti-pinterest"></i></a
+                ><a href="#" class="icon-instagram"><i class="ti-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    
+    <script src="js/script.js"></script>
+    <script src="js/header.js"></script>
+  </body>
+</html>
