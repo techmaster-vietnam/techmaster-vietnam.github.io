@@ -1,0 +1,718 @@
+body {
+    font-size: 1.45rem !important;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+.btn-addToCart-suggest {
+    padding: 20px 20%;
+}
+
+.btn-addToCart-proceed {
+    padding: 20px 14%;
+}
+
+.product-form__cart-submit,
+.shopify-payment-button .shopify-payment-button__button--unbranded {
+    display: block;
+    width: 200%;
+    line-height: 1.4;
+    padding-left: 5px;
+    padding-right: 5px;
+    white-space: normal;
+    margin-top: 0;
+    min-height: 33px;
+    appearance: none;
+    display: inline-block;
+    width: auto;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 0px;
+    padding: 8px 60px;
+    background-color: #EF5DA8;
+    color: #fff;
+    font-family: 'Alata', sans-serif;
+    font-style: normal;
+    font-weight: 0;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    white-space: normal;
+    font-size: 14px;
+}
+
+h1,
+h2 {
+    text-align: center;
+    font-family: 'Alata', sans-serif;
+}
+
+h1 {
+    font-family: Alata;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 61px;
+    letter-spacing: -0.02em;
+    margin-top: 80px;
+    margin-bottom: 10px;
+}
+
+h5 {
+    text-align: center;
+    font-family: Alegreya;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    margin-bottom: 80px;
+}
+
+h4 {
+    font-family: Alata;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+h2 {
+    margin-top: 50px;
+}
+
+h3 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-family: Alegreya;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 57px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.left-cart {
+    margin-bottom: 100px;
+}
+
+.top-left-cart {
+    display: flex;
+    height: 54px;
+    width: 90%;
+    border-top: 1px solid #ececec;
+    border-bottom: 1px solid #ececec;
+    justify-content: center;
+    align-items: center;
+}
+
+.lower-left-cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.first {
+    display: flex;
+    flex-grow: 3;
+}
+
+.first-none {
+    opacity: 0;
+}
+
+.cart-img {
+    width: 112px;
+}
+
+img.first-none {
+    display: none;
+}
+
+.following {
+    flex-grow: 1;
+}
+
+.right-cart {
+    border-top: 1px solid #ececec;
+}
+
+.table-cart {
+    width: 80%;
+}
+
+.bg-light {
+    background-color: white !important;
+}
+
+.total-price {
+    font-family: Alegreya;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.price {
+    font-family: Alegreya;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.following.first-row {
+    font-family: Alata;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #BEC2C7;
+}
+
+.product-form__cart-submit,
+.shopify-payment-button .shopify-payment-button__button--unbranded {
+    display: block;
+    width: 200%;
+    line-height: 1.4;
+    padding-left: 5px;
+    padding-right: 5px;
+    white-space: normal;
+    margin-top: 0;
+    min-height: 33px;
+    appearance: none;
+    display: inline-block;
+    width: auto;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 0px;
+    padding: 8px 60px;
+    background-color: #EF5DA8;
+    color: #fff;
+    font-family: 'Alata', sans-serif;
+    font-style: normal;
+    font-weight: 0;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    white-space: normal;
+    font-size: 14px;
+}
+
+.btn-addToCart {
+    padding-inline: 69px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.underline {
+    text-decoration: underline;
+    text-align: center;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.sub-total {
+    display: flex;
+    font-family: Alegreya;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.final-total {
+    display: flex;
+    font-family: Alegreya;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.float-left {
+    font-size: 20px;
+    color: black;
+    flex-grow: 8;
+}
+
+.payment-method {
+    margin-left: 10%;
+    display: flex;
+}
+
+.mastercard {
+    padding-top: 40px;
+    padding-right: 40px;
+}
+
+.style-name {
+    font-family: Alegreya;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 44px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.style-price {
+    font-family: Alegreya;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 44px;
+    letter-spacing: 0em;
+    text-align: center;
+    text-align: center;
+}
+
+img.style-img {
+    width: 100%;
+}
+
+.wrap-subtotal {
+    width: 80%;
+    margin-left: 40px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.row.style-your-look {
+    padding: 0 5%;
+}
+
+
+/*
+I wanted to go with a mobile first approach, but it actually lead to more verbose CSS in this case, so I've gone web first. Can't always force things...
+
+Side note: I know that this style of nesting in SASS doesn't result in the most performance efficient CSS code... but on the OCD/organizational side, I like it. So for CodePen purposes, CSS selector performance be damned.
+*/
+
+
+/* Global settings */
+
+
+/* Global "table" column settings */
+
+.product-image {
+    float: left;
+    width: 20%;
+}
+
+.product-details {
+    float: left;
+    width: 37%;
+}
+
+.product-price {
+    float: left;
+    width: 12%;
+}
+
+.product-quantity {
+    float: left;
+    width: 10%;
+}
+
+.product-removal {
+    float: left;
+    width: 9%;
+}
+
+.product-line-price {
+    float: left;
+    width: 12%;
+    text-align: right;
+}
+
+
+/* This is used as the traditional .clearfix class */
+
+.group:before,
+.shopping-cart:before,
+.column-labels:before,
+.product:before,
+.totals-item:before,
+.group:after,
+.shopping-cart:after,
+.column-labels:after,
+.product:after,
+.totals-item:after {
+    content: "";
+    display: table;
+}
+
+.group:after,
+.shopping-cart:after,
+.column-labels:after,
+.product:after,
+.totals-item:after {
+    clear: both;
+}
+
+.group,
+.shopping-cart,
+.column-labels,
+.product,
+.totals-item {
+    zoom: 1;
+}
+
+
+/* Apply clearfix in a few places */
+
+
+/* Apply dollar signs */
+
+.product .product-price:before,
+.product .product-line-price:before,
+.totals-value:before {
+    content: "$";
+}
+
+
+/* Body/Header stuff */
+
+h1 {
+    font-weight: 100;
+}
+
+label {
+    color: #aaa;
+}
+
+.shopping-cart {
+    border-top: 1px solid #ececec;
+    padding-top: 20px;
+}
+
+
+/* Column headers */
+
+.column-labels label {
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.column-labels .product-image,
+.column-labels .product-details,
+.column-labels .product-removal {
+    text-indent: -9999px;
+}
+
+
+/* Product entries */
+
+.product {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.product .product-image {
+    text-align: center;
+}
+
+.product .product-image img {
+    width: 100px;
+}
+
+.product .product-details .product-title {
+    margin-right: 20px;
+    font-family: Alata;
+    font-size: 18px;
+}
+
+.product .product-details .product-description {
+    margin: 5px 20px 5px 0;
+    line-height: 1.4em;
+}
+
+.product .product-quantity input {
+    width: 40px;
+}
+
+.product .remove-product {
+    border: 0;
+    /* padding: 4px 8px; */
+    background-color: #fff;
+    color: #fff;
+    border-radius: 3px;
+}
+
+
+/* Totals section */
+
+.totals .totals-item {
+    float: right;
+    clear: both;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.totals .totals-item label {
+    float: left;
+    clear: both;
+    width: 79%;
+    text-align: right;
+}
+
+.totals .totals-item .totals-value {
+    float: right;
+    width: 21%;
+    text-align: right;
+}
+
+.totals .totals-item-total {
+    font-family: Alegreya;
+    ;
+}
+
+.checkout {
+    float: right;
+    border: 0;
+    margin-top: 20px;
+    padding: 6px 25px;
+    background-color: #6b6;
+    color: #fff;
+    font-size: 25px;
+    border-radius: 3px;
+}
+
+.checkout:hover {
+    background-color: #494;
+}
+
+
+/* Make adjustments for tablet */
+
+@media screen and (max-width: 650px) {
+    .shopping-cart {
+        margin: 20px;
+        padding-top: 20px;
+        border-top: 1px solid #eee;
+    }
+    .column-labels {
+        display: none;
+    }
+    .product-image {
+        float: right;
+        width: auto;
+    }
+    .product-image img {
+        margin: 0 0 10px 10px;
+    }
+    .product-details {
+        float: none;
+        margin-bottom: 10px;
+        width: auto;
+    }
+    .product-price {
+        clear: both;
+        width: 70px;
+    }
+    .product-quantity {
+        width: 100px;
+    }
+    .product-quantity input {
+        margin-left: 20px;
+    }
+    .product-quantity:before {
+        content: "x";
+    }
+    .product-removal {
+        width: auto;
+    }
+    .product-line-price {
+        float: right;
+        width: 70px;
+    }
+}
+
+
+/* Make more adjustments for phone */
+
+@media screen and (max-width: 350px) {
+    .product-removal {
+        float: right;
+    }
+    .product-line-price {
+        float: right;
+        clear: left;
+        width: auto;
+        margin-top: 10px;
+    }
+    .product .product-line-price:before {
+        content: "Item Total: $";
+    }
+    .totals .totals-item label {
+        width: 60%;
+    }
+    .totals .totals-item .totals-value {
+        width: 40%;
+    }
+}
+
+.price-size {
+    /* font-family: Alegreya; */
+    font-size: 14px;
+}
+
+label {
+    font-size: 16px;
+}
+
+div#cart-subtotal {
+    font-size: 18px;
+}
+
+.totals-item {
+    font-size: 14px;
+}
+
+div#cart-total {
+    font-size: 28px;
+    color: #EF5DA8;
+}
+
+.look-wrap {
+    padding: 0 15%;
+    min-height: 357px;
+}
+
+@media only screen and (max-width: 1400px) {
+    .btn-addToCart-proceed {
+        padding: 20px 8%;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .btn-addToCart-proceed {
+        padding: 20px 13%;
+    }
+    .product-form__cart-submit,
+    .shopify-payment-button .shopify-payment-button__button--unbranded {
+        padding: 8px 20px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .product-form__cart-submit,
+    .shopify-payment-button .shopify-payment-button__button--unbranded {
+        padding: 8px 70px;
+    }
+    .row {
+        display: block;
+    }
+    .col-md-8 {
+        width: 100%;
+    }
+    .col-md-4 {
+        width: 100%;
+    }
+    .payment-method {
+        margin-left: 26%;
+    }
+    .look-wrap {
+        padding: 0 25%;
+    }
+    .btn-addToCart-suggest {
+        padding: 20px 30%;
+    }
+    .btn-addToCart-proceed {
+        padding: 20px 27%;
+    }
+}
+
+@media only screen and (max-width: 776px) {
+    .btn-addToCart-suggest {
+        padding: 20px 27%;
+    }
+    .product-form__cart-submit {
+        padding: 8px 20%;
+    }
+    .look-wrap {
+        min-height: 60px;
+    }
+    .btn-addToCart-proceed {
+        padding: 20px 16%;
+    }
+    .payment-method {
+        margin-left: 16%;
+    }
+    .price-size {
+        min-height: 60px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .btn-addToCart-suggest {
+        padding: 20px 20%;
+    }
+    .product-form__cart-submit {
+        padding: 8px 20%;
+    }
+    .btn-addToCart-proceed {
+        padding: 20px 11%;
+    }
+}
+
+@media only screen and (max-width: 376px) {
+    .payment-method {
+        margin-left: 6%;
+    }
+    .mastercard {
+        padding-right: 0px;
+    }
+    .ppal {
+        margin-left: -20px;
+    }
+    .btn-addToCart-proceed {
+        padding: 20px 10%;
+    }
+    .product-form__cart-submit,
+    .shopify-payment-button .shopify-payment-button__button--unbranded {
+        padding: 8px 30px;
+    }
+    h2 {
+        margin-top: 30px;
+    }
+    h1 {
+        font-size: 30px;
+        line-height: 20px;
+    }
+    h5 {
+        font-size: 12px;
+        margin-bottom: 30px;
+    }
+}

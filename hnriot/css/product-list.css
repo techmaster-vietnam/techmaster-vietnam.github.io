@@ -1,0 +1,140 @@
+/* product list */
+.banner-2 {
+  background: url(../img/banner-2-ed.jpg) no-repeat center;
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+}
+.title-banner h1 {
+  color: #f5f6fa;
+  padding: 35px;
+  text-transform: uppercase;
+  letter-spacing: 15px;
+}
+.products {
+  padding-bottom: 100px;
+}
+.filter-header {
+  font-size: 20px;
+  display: block;
+  margin: 20px 0;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.filter-list > li {
+  margin-bottom: 20px;
+}
+.group-checkbox input {
+  opacity: 0;
+  height: 0;
+  width: 0;
+  cursor: pointer;
+}
+.group-checkbox {
+  text-align: left;
+}
+.group-checkbox label {
+  cursor: pointer;
+  padding-left: 40px;
+  position: relative;
+}
+.group-checkbox label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -4px;
+  width: 26px;
+  height: 26px;
+
+  border: 2px solid #7b7979;
+}
+.group-checkbox label > i {
+  position: absolute;
+  left: 2px;
+  top: -6px;
+  color: black;
+  transform: scale(0);
+  font-size: 21px;
+  transition: transform 0.1s ease-in-out;
+}
+.group-checkbox input:checked + label i {
+  transform: scale(1);
+}
+.form {
+  border: 1px solid gainsboro;
+}
+.form-info {
+  text-align: center;
+}
+.form.active {
+  opacity: 1;
+}
+.form {
+  opacity: 0.5;
+}
+
+.filter-toggle-box {
+  display: none;
+  padding-left: 30px;
+  cursor: pointer;
+  width: 150px;
+}
+.rating i {
+  color: #ffc107;
+}
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.pagination > li > a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  margin-left: 5px;
+  font-size: 20px;
+}
+.pagination > li > a.active {
+  background-color: black;
+  color: white;
+}
+.pagination > li > a:hover {
+  border: 2px solid black;
+}
+.list {
+  opacity: 0.5;
+}
+.list.active {
+  opacity: 1;
+}
+.hide {
+  display: none;
+}
+
+@media only screen and (max-width: 1200px) {
+  .filter-toggle-box {
+    display: block;
+  }
+  .filter-col {
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    top: 0;
+    z-index: 98;
+    left: 100%;
+    height: 850px;
+    overflow-y: scroll;
+    box-shadow: rgb(100 100 11 / 20%) 0px 7px 29px 0px;
+    transition: left 0.2s ease-in-out;
+  }
+  .filter-col.active {
+    left: 0;
+  }
+}
+/* @media only screen and (max-width: 576px) {
+  .col-sm-6 {
+    width: 50%;
+  }
+} */

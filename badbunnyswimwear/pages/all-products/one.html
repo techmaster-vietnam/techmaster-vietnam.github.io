@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All products</title>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./all-products.css">
+    <link rel="stylesheet" href="../../component/header/header-copy.css">
+    <link rel="stylesheet" href="../../component/footer/footer.css">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <div id="header">
+    </div>
+
+    <div class="wrap-all-products">
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Categories
+                </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <div class="all-categories box-wrap">
+                            <input onchange="filterByBrandNew(this)" type="radio" id="band1" name="brand" value="1">
+                            <label class="small-categories" for="band1">Tops</label><br>
+
+                            <input onchange="filterByBrandNew(this)" type="radio" id="band2" name="brand" value="2">
+                            <label class="small-categories" for="band2">Bottoms</label><br>
+
+                            <input onchange="filterByBrandNew(this)" type="radio" id="band3" name="brand" value="3">
+                            <label class="small-categories" for="band3">One pieces</label><br>
+
+                            <input onchange="filterByBrandNew(this)" type="radio" id="band4" name="brand" value="4">
+                            <label class="small-categories" for="band4">Beachwear</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Filter by Price
+                </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+
+                        <div>
+                            <label class="label-price" for="">from</label>
+                            <input id="from_price" onchange="changePriceRange(this)" name="from" type="number" min="0">
+                        </div>
+                        <div>
+                            <label class="label-price" for="">to</label>
+                            <input id="to_price" onchange="changePriceRange(this)" name="to" type="number" min="0">
+                        </div>
+
+                        <button class="apply button button5" onclick="handleFilter()">Apply</button>
+
+                        <div></div>
+
+
+                        <input class="price_input" onchange="filterByPrice(this)" type="radio" id="price1" name="price" value="1">
+                        <label class="small-categories" for="price1">Less than $100</label><br>
+
+                        <input class="price_input" onchange="filterByPrice(this)" type="radio" id="price2" name="price" value="2">
+                        <label class="small-categories" for="price2">$100 to $200</label><br>
+
+                        <input class="price_input" onchange="filterByPrice(this)" type="radio" id="price3" name="price" value="3">
+                        <label class="small-categories" for="price3">$200 - $500</label><br>
+
+                        <input class="price_input" onchange="filterByPrice(this)" type="radio" id="price4" name="price" value="4">
+                        <label class="small-categories" for="price4">Above $500</label>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-sm-3">
+                    <div class="all-categories box-wrap">
+                        <div class="big-categories hover-me">CATEGORY</div>
+                        <input onchange="filterByBrandNew(this)" type="radio" id="brands1" name="brands" value="1">
+                        <label class="small-categories" for="brands1">Tops</label><br>
+
+                        <input onchange="filterByBrandNew(this)" type="radio" id="brands2" name="brands" value="2">
+                        <label class="small-categories" for="brands2">Bottoms</label><br>
+
+                        <input onchange="filterByBrandNew(this)" type="radio" id="brands3" name="brands" value="3">
+                        <label class="small-categories" for="brands3">One pieces</label><br>
+
+                        <input onchange="filterByBrandNew(this)" type="radio" id="brands4" name="brands" value="4">
+                        <label class="small-categories" for="brands4">Beachwear</label>
+                    </div>
+
+                    <div class="wrap-filter">
+                        <div class="big-categories hover-me">FILTER BY</div>
+
+                        <div class="filter-size filter-by">Size
+                            <div class="up-size">
+                                <div class="filter-by-size">
+                                    <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="1" y="1" width="39" height="38" stroke="#BEC2C7" stroke-width="2"/>
+                                    <path d="M12.1048 20.808L7.01684 12.36H10.2568L13.5928 18.528L17.0248 12.36H20.1928L15.0808 20.76L20.6968 30H17.5048L13.6168 23.016L9.80084 30H6.70484L12.1048 20.808ZM26.8538 30.24C25.8938 30.24 24.9418 30.072 23.9978 29.736C23.0538 29.4 22.3738 29.024 21.9578 28.608L23.2298 26.328C23.5658 26.632 24.0858 26.952 24.7898 27.288C25.5098 27.608 26.1978 27.768 26.8538 27.768C27.7018 27.768 28.3898 27.568 28.9178 27.168C29.4618 26.768 29.7338 26.216 29.7338 25.512C29.7338 24.968 29.5898 24.496 29.3018 24.096C29.0138 23.696 28.6618 23.368 28.2458 23.112C27.8298 22.84 27.2378 22.512 26.4698 22.128C25.5578 21.68 24.9338 21.344 24.5978 21.12C23.0458 20.08 22.2698 18.64 22.2698 16.8C22.2698 15.28 22.7738 14.12 23.7818 13.32C24.7898 12.504 26.0618 12.096 27.5978 12.096C29.2458 12.096 30.6458 12.568 31.7978 13.512L30.5258 15.696C30.2218 15.376 29.7898 15.104 29.2298 14.88C28.6858 14.64 28.1018 14.52 27.4778 14.52C26.6778 14.52 26.0458 14.704 25.5818 15.072C25.1338 15.424 24.9098 15.952 24.9098 16.656C24.9098 17.152 25.0538 17.6 25.3418 18C25.6298 18.384 25.9898 18.72 26.4218 19.008C26.8698 19.296 27.4698 19.648 28.2218 20.064C28.9418 20.464 29.4938 20.784 29.8778 21.024C30.2618 21.248 30.6218 21.52 30.9578 21.84C31.4218 22.256 31.7978 22.752 32.0858 23.328C32.3738 23.904 32.5178 24.536 32.5178 25.224C32.5178 26.296 32.2698 27.208 31.7738 27.96C31.2938 28.712 30.6218 29.28 29.7578 29.664C28.9098 30.048 27.9418 30.24 26.8538 30.24Z" fill="black"/>
+                                    </svg>
+                                </div>
+                                <div class="filter-by-size">
+                                    <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="1" y="1" width="39" height="38" stroke="#BEC2C7" stroke-width="2"/>
+                                        <path d="M20.1233 30.24C19.1633 30.24 18.2113 30.072 17.2673 29.736C16.3233 29.4 15.6433 29.024 15.2273 28.608L16.4993 26.328C16.8353 26.632 17.3553 26.952 18.0593 27.288C18.7793 27.608 19.4673 27.768 20.1233 27.768C20.9713 27.768 21.6593 27.568 22.1873 27.168C22.7313 26.768 23.0033 26.216 23.0033 25.512C23.0033 24.968 22.8593 24.496 22.5713 24.096C22.2833 23.696 21.9313 23.368 21.5153 23.112C21.0993 22.84 20.5073 22.512 19.7393 22.128C18.8273 21.68 18.2033 21.344 17.8673 21.12C16.3153 20.08 15.5393 18.64 15.5393 16.8C15.5393 15.28 16.0433 14.12 17.0513 13.32C18.0593 12.504 19.3313 12.096 20.8673 12.096C22.5153 12.096 23.9153 12.568 25.0673 13.512L23.7953 15.696C23.4913 15.376 23.0593 15.104 22.4993 14.88C21.9553 14.64 21.3713 14.52 20.7473 14.52C19.9473 14.52 19.3153 14.704 18.8513 15.072C18.4033 15.424 18.1793 15.952 18.1793 16.656C18.1793 17.152 18.3233 17.6 18.6113 18C18.8993 18.384 19.2593 18.72 19.6913 19.008C20.1393 19.296 20.7393 19.648 21.4913 20.064C22.2113 20.464 22.7633 20.784 23.1473 21.024C23.5313 21.248 23.8913 21.52 24.2273 21.84C24.6913 22.256 25.0673 22.752 25.3553 23.328C25.6433 23.904 25.7873 24.536 25.7873 25.224C25.7873 26.296 25.5393 27.208 25.0433 27.96C24.5633 28.712 23.8913 29.28 23.0273 29.664C22.1793 30.048 21.2113 30.24 20.1233 30.24Z" fill="black"/>
+                                    </svg>
+                                </div>
+                                <div class="filter-by-size">
+                                    <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="1" y="1" width="39" height="38" stroke="#BEC2C7" stroke-width="2"/>
+                                    <path d="M15.6736 21.768L14.5696 19.272L14.0656 21.768L12.4336 30H9.76963L13.4176 12.36H13.7056L18.5536 21.888L19.9936 25.08L21.4336 21.888L26.1856 12.36H26.4496L30.2416 30H27.6016L25.8256 21.768L25.2976 19.272L24.3376 21.768L20.0656 30H19.9216L15.6736 21.768Z" fill="black"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="down-size">
+                                <div class="filter-by-size">
+                                    <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="1" y="1" width="39" height="38" stroke="#BEC2C7" stroke-width="2"/>
+                                        <path d="M17.1923 12.36H19.9043V27.6H24.9683V30H17.1923V12.36Z" fill="black"/>
+                                    </svg>
+                                </div>
+                                <div class="filter-by-size">
+                                    <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="1" y="1" width="39" height="38" stroke="#BEC2C7" stroke-width="2"/>
+                                        <path d="M13.7298 20.808L8.64184 12.36H11.8818L15.2178 18.528L18.6498 12.36H21.8178L16.7058 20.76L22.3218 30H19.1298L15.2418 23.016L11.4258 30H8.32984L13.7298 20.808ZM24.4228 12.36H27.1348V27.6H32.1988V30H24.4228V12.36Z" fill="black"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-cup filter-by">Cup
+                            <div class="up-cup">
+                                <div class="filter-by-cup">
+                                    <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="1" y="1" width="39" height="38" stroke="#BEC2C7" stroke-width="2"/>
+                                        <path d="M20.6132 12.336L29.1092 30H26.0132L24.5012 26.544H16.4132L14.9012 30H11.9012L20.3492 12.336H20.6132ZM19.4132 19.848L17.4932 24.12H23.4452L21.5492 19.872L20.5172 17.448H20.4692L19.4132 19.848Z" fill="black"/>
+                                    </svg>
+                                </div>
+                                <div class="filter-by-cup">
+                                    <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="1" y="1" width="39" height="38" stroke="#BEC2C7" stroke-width="2"/>
+                                        <path d="M14.3603 12.36H18.8483C21.3763 12.36 23.0563 12.784 23.8883 13.632C24.7203 14.48 25.1363 15.504 25.1363 16.704C25.1363 17.504 24.9603 18.264 24.6083 18.984C24.2563 19.688 23.6963 20.216 22.9283 20.568C24.0643 20.856 24.8963 21.36 25.4243 22.08C25.9683 22.8 26.2403 23.648 26.2403 24.624C26.2403 25.648 26.0803 26.544 25.7603 27.312C25.4403 28.08 24.7763 28.72 23.7683 29.232C22.7603 29.744 21.3043 30 19.4003 30H14.3603V12.36ZM19.2803 19.848C20.4163 19.848 21.2243 19.576 21.7043 19.032C22.1843 18.472 22.4243 17.768 22.4243 16.92C22.4243 15.4 21.3363 14.64 19.1603 14.64H17.0003V19.848H19.2803ZM19.7603 27.744C21.2163 27.744 22.1923 27.456 22.6883 26.88C23.2003 26.288 23.4563 25.544 23.4563 24.648C23.4563 23.8 23.1683 23.144 22.5923 22.68C22.0163 22.216 21.1443 21.984 19.9763 21.984H17.0003V27.744H19.7603Z" fill="black"/>
+                                    </svg>
+                                </div>
+                                <div class="filter-by-cup">
+                                    <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="1" y="1" width="39" height="38" stroke="#BEC2C7" stroke-width="2"/>
+                                        <path d="M22.095 30.168C20.271 30.168 18.687 29.76 17.343 28.944C16.015 28.128 14.999 27.04 14.295 25.68C13.591 24.304 13.239 22.792 13.239 21.144C13.239 19.4 13.615 17.84 14.367 16.464C15.135 15.088 16.207 14.016 17.583 13.248C18.959 12.464 20.519 12.072 22.263 12.072C23.047 12.072 23.775 12.16 24.447 12.336C25.135 12.496 25.703 12.688 26.151 12.912C26.599 13.12 26.895 13.296 27.039 13.44L25.863 15.84C24.887 14.976 23.615 14.544 22.047 14.544C20.943 14.544 19.943 14.816 19.047 15.36C18.151 15.904 17.447 16.68 16.935 17.688C16.423 18.696 16.167 19.864 16.167 21.192C16.167 22.408 16.391 23.512 16.839 24.504C17.303 25.496 17.975 26.28 18.855 26.856C19.735 27.432 20.783 27.72 21.999 27.72C23.407 27.72 24.767 27.32 26.079 26.52L26.871 28.8C26.519 29.12 25.871 29.432 24.927 29.736C23.999 30.024 23.055 30.168 22.095 30.168Z" fill="black"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="down-cup">
+                                <div class="filter-by-cup">
+                                    <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="1" y="1" width="39" height="38" stroke="#BEC2C7" stroke-width="2"/>
+                                        <path d="M14.1103 12.36H18.3583C21.9103 12.36 24.3903 13.2 25.7983 14.88C27.2223 16.56 27.9343 18.56 27.9343 20.88C27.9343 22.496 27.6303 23.992 27.0223 25.368C26.4143 26.728 25.4063 27.84 23.9983 28.704C22.6063 29.568 20.7743 30 18.5023 30H14.1103V12.36ZM18.7903 27.624C20.9983 27.624 22.5983 27 23.5903 25.752C24.5983 24.488 25.1023 22.904 25.1023 21C25.1023 19.144 24.5983 17.632 23.5903 16.464C22.5823 15.296 20.9823 14.712 18.7903 14.712H16.7983V27.624H18.7903Z" fill="black"/>
+                                    </svg>
+                                </div>
+                                <div class="filter-by-cup">
+                                    <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="1" y="1" width="39" height="38" stroke="#BEC2C7" stroke-width="2"/>
+                                        <path d="M16.2464 12.36H23.9744V14.712H18.9104V19.584H22.9904V21.984H18.9104V27.624H24.7664V30H16.2464V12.36Z" fill="black"/>
+                                    </svg>
+                                </div>
+                                <div class="filter-by-cup">
+                                    <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="1" y="1" width="39" height="38" stroke="#BEC2C7" stroke-width="2"/>
+                                        <path d="M16.2464 12.36H24.5264V14.688H18.9104V19.68H23.2784V22.032H18.9104V30H16.2464V12.36Z" fill="black"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-price">Price</div>
+                        <div>
+                            <label class="label-price" for="">from</label>
+                            <input id="from_price" onchange="changePriceRange(this)" name="from" type="number" min="0">
+                        </div>
+                        <div>
+                            <label class="label-price" for="">to</label>
+                            <input id="to_price" onchange="changePriceRange(this)" name="to" type="number" min="0">
+                        </div>
+
+                        <button class="apply button button5" onclick="handleFilter()">Apply</button>
+
+                        <div></div>
+
+                        <input class="price_input" onchange="filterByPrice(this)" type="radio" id="prices1" name="price" value="1">
+                        <label class="small-categories" for="prices1">Less than $100</label><br>
+
+                        <input class="price_input" onchange="filterByPrice(this)" type="radio" id="prices2" name="price" value="2">
+                        <label class="small-categories" for="prices2">$100 to $200</label><br>
+
+                        <input class="price_input" onchange="filterByPrice(this)" type="radio" id="prices3" name="price" value="3">
+                        <label class="small-categories" for="prices3">$200 - $500</label><br>
+
+                        <input class="price_input" onchange="filterByPrice(this)" type="radio" id="prices4" name="price" value="4">
+                        <label class="small-categories" for="prices4">Above $500</label>
+
+
+
+
+
+                    </div>
+
+
+                </div>
+
+
+
+                <div class="col-sm-9">
+                    <div class="row">
+                        <div class="productlist">
+                            <div id="productlist_item" class="productlist_item"></div>
+
+                        </div>
+                        <div id="paging" class="paging"></div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+
+
+    <div id="component-footer">
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"></script>
+
+    <script src="../../component/header/header-copy.js"></script>
+    <script src="../../component/footer/footer.js"></script>
+    <script src="./one.js"></script>
+
+</body>
+
+</html>

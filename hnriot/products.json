@@ -1,0 +1,113 @@
+{
+  "status": "success",
+  "items": [
+    {
+      "id": 1,
+      "title": "Hardy",
+      "old_price": 249,
+      "curr_price": 190,
+      "image1": "./img/lm-black-edit.webp",
+      "image2": "./img/nam-edit.webp",
+      "shape": "round"
+    },
+    {
+      "id": 2,
+      "title": "Kubo 01",
+      "old_price": 300,
+      "curr_price": 269,
+      "image1": "./img/hd-havana-edit.webp",
+      "image2": "./img/nam2-edit.webp",
+      "shape": "rec"
+    },
+    {
+      "id": 3,
+      "title": "Uno",
+      "old_price": 269,
+      "curr_price": 249,
+      "image1": "./img/vuong-edit.webp",
+      "image2": "./img/nu2-edit.webp",
+      "shape": "square"
+    },
+    {
+      "id": 4,
+      "title": "Ena",
+      "old_price": 300,
+      "curr_price": 269,
+      "image1": "./img/er-pink-edit.webp",
+      "image2": "./img/nu-edit.webp",
+      "shape": "round"
+    },
+    {
+      "id": 5,
+      "title": "Lutto 01",
+      "old_price": 249,
+      "curr_price": 190,
+      "image1": "./img/marke-1-edit.webp",
+      "image2": "./img/marke-3.jpg",
+      "shape": "cat"
+    },
+    {
+      "id": 6,
+      "title": "Fade",
+      "old_price": 300,
+      "curr_price": 269,
+      "image1": "./img/fade-1.jpg",
+      "image2": "./img/fade-3.jpg",
+      "shape": "square"
+    },
+    {
+      "id": 7,
+      "title": "Linda",
+      "curr_price": 269,
+      "old_price": 249,
+      "image1": "./img/ada-1.jpg",
+      "image2": "./img/ada-2.jpg",
+      "shape": "cat"
+    },
+    {
+      "id": 8,
+      "title": "Deus",
+      "old_price": 249,
+      "curr_price": 190,
+      "image1": "./img/am-1.jpg",
+      "image2": "./img/am-2.jpg",
+      "shape": "rec"
+    },
+    {
+      "id": 9,
+      "title": "Momati",
+      "old_price": 300,
+      "curr_price": 190,
+      "image1": "./img/ocean-1.jpg",
+      "image2": "./img/ocean-2.jpg",
+      "shape": "round"
+    },
+    {
+      "id": 10,
+      "title": "Dreamer",
+      "old_price": 249,
+      "curr_price": 190,
+      "image1": "./img/wind-1.jpg",
+      "image2": "./img/wind-2.jpg",
+      "shape": "cat"
+    },
+    {
+      "id": 11,
+      "title": "My ma",
+      "old_price": 300,
+      "curr_price": 190,
+      "image1": "./img/amber-1.jpg",
+      "image2": "./img/amber-2.jpg",
+      "shape": "rec"
+    },
+    {
+      "id": 12,
+      "title": "Frida",
+      "old_price": 249,
+      "curr_price": 190,
+      "image1": "./img/mossy-1.jpg",
+      "image2": "./img/mossy-2.jpg",
+      "shape": "round"
+    }
+  ]
+}

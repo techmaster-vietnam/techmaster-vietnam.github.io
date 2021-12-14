@@ -1,0 +1,114 @@
+      .product-form__cart-submit,
+      .shopify-payment-button .shopify-payment-button__button--unbranded {
+          display: block;
+          width: 200%;
+          line-height: 1.4;
+          padding-left: 5px;
+          padding-right: 5px;
+          white-space: normal;
+          margin-top: 0;
+          min-height: 33px;
+          appearance: none;
+          display: inline-block;
+          width: auto;
+          text-decoration: none;
+          text-align: center;
+          cursor: pointer;
+          border: 1px solid transparent;
+          border-radius: 0px;
+          padding: 8px 60px;
+          background-color: #EF5DA8;
+          color: #fff;
+          font-family: 'Alata', sans-serif;
+          font-style: normal;
+          font-weight: 0;
+          text-transform: uppercase;
+          letter-spacing: .08em;
+          white-space: normal;
+          font-size: 14px;
+      }
+      
+      .btn-addToCart {
+          padding-inline: 69px;
+          padding-top: 20px;
+          padding-bottom: 20px;
+      }
+      
+      .suggest-photo {
+          width: 240px;
+          height: 340px;
+      }
+      
+      .suggest {
+          width: 240px;
+          height: 495px;
+          margin-right: 20px;
+      }
+      
+      .btn-addToCart-suggest {
+          padding: 20px 7px;
+      }
+      
+      .suggested-products {
+          display: flex;
+          margin: 80px 200px;
+      }
+      
+      .suggest-name {
+          text-align: center;
+          font-family: Alata;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 25px;
+          letter-spacing: 0em;
+          text-align: center;
+          padding: 10px 0;
+      }
+      
+      .suggest-price {
+          font-family: Alata;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 25px;
+          letter-spacing: 0em;
+          text-align: center;
+          padding-bottom: 10px;
+      }
+      
+      .suggest-colors {
+          padding: 0 70px;
+      }
+      
+      .suggestions-title {
+          font-family: Alegreya;
+          font-size: 25px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 34px;
+          letter-spacing: 0.04em;
+          text-align: center;
+      }
+      
+      .suggestions {
+          position: relative;
+      }
+      
+      svg.write-review-btn {
+          float: right;
+          position: absolute;
+          bottom: 10px;
+          right: 210px;
+      }
+      
+      .rate-star-suggest {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 30px;
+      }
+      
+      hr.line-review {
+          margin: 0 200px;
+      }

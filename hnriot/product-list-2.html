@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sản phẩm</title>
+    <link rel="shortcut icon" href="./img/logo.png" />
+    <!-- font chu -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- jquery -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+    ></script>
+    <!-- Bootstrap only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="./css/app.css" />
+    <link rel="stylesheet" href="./css/product-list.css" />
+  </head>
+
+  <body>
+    <div class="loading-screen"></div>
+    <!-- scrolling -->
+    <div class="progress-wrap active-progress">
+      <svg
+        class="progress-circle svg-content"
+        width="100%"
+        height="100%"
+        viewBox="-1 -1 102 102"
+      >
+        <path
+          d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"
+          style="
+            transition: stroke-dashoffset 10ms linear 0s;
+            stroke-dasharray: 307.919, 307.919;
+            stroke-dashoffset: 249.357;
+          "
+        ></path>
+      </svg>
+      <i class="bi bi-arrow-up arrow"></i>
+    </div>
+    <!-- moblile menu -->
+    <div class="mobile-menu bg-second">
+      <a href="index.html" class="mb-logo"
+        ><img src="./img/logo.png" alt=""
+      /></a>
+      <span class="mb-menu-toggle" id="mb-menu-toggle">
+        <i class="bi bi-list"></i>
+      </span>
+    </div>
+    <!-- end mobile menu-->
+    <!-- header -->
+    <header>
+      <div class="header-wrapper">
+        <span class="mb-menu-toggle mb-menu-close" id="mb-menu-close">
+          <i class="bi bi-x-lg"></i>
+        </span>
+        <!-- top header -->
+        <div class="top-header container">
+          <a href="index.html" class="logo"
+            ><img src="./img/logo.png" alt=""
+          /></a>
+          <div class="search">
+            <input type="text" placeholder="Search" />
+            <i class="bi bi-search"></i>
+          </div>
+          <ul class="user-menu d-flex">
+            <li>
+              <a href="#"><i class="bi bi-bell"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="bi bi-person-fill"></i></a>
+            </li>
+            <li class="cart__icon">
+              <i class="bi bi-bag"></i>
+              <span class="item__total">0</span>
+            </li>
+          </ul>
+        </div>
+        <!-- end top header -->
+        <!-- mid header -->
+        <div class="bg-second">
+          <div class="mid-header container">
+            <div class="search-box mb-search">
+              <input
+                class="search-txt"
+                type="text"
+                name=""
+                placeholder="Tim kiem"
+              />
+              <a href="#" class="search-btn">
+                <i class="bi bi-search"></i>
+              </a>
+            </div>
+            <ul class="main-menu d-flex justify-content-around">
+              <li>
+                <a href="index.html">Trang chủ</a>
+              </li>
+              <li class="mega-dropdown">
+                <a href="#" class="active"
+                  >Sản phẩm
+                  <i class="bi bi-chevron-down"></i>
+                </a>
+
+                <div class="mega-content">
+                  <div class="row">
+                    <div class="col-xl-6 col-lg-12">
+                      <div class="box">
+                        <h4>Kính râm</h4>
+                        <ul>
+                          <li>
+                            <a href="product-list.html"
+                              >the assembled sunglasses</a
+                            >
+                          </li>
+                          <li>
+                            <a href="product-list.html">the cut sunglasses</a>
+                          </li>
+                          <li><a href="product-list.html">the metal</a></li>
+                          <li>
+                            <a href="product-list.html">the combination</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-12">
+                      <div class="box">
+                        <h4>Kính cận</h4>
+                        <ul>
+                          <li>
+                            <a href="product-list.html">the assembled </a>
+                          </li>
+                          <li><a href="product-list.html">the cut</a></li>
+                          <li><a href="product-list.html">the metal</a></li>
+                          <li><a href="product-list.html">the basic</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row img-row">
+                    <div class="col-lg-6 col-md-12">
+                      <img
+                        src="./img/kinhram-removebg-preview.png"
+                        class="img-mega"
+                        alt=""
+                      />
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                      <img
+                        src="./img/kinhcan-removebg-preview.png"
+                        class="img-mega"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a href="#">bộ sưu tập</a>
+              </li>
+              <li>
+                <a href="news.html">Tạp chí</a>
+              </li>
+
+              <li>
+                <a href="#">giới thiệu</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- end mid header -->
+      </div>
+    </header>
+    <!-- end header -->
+
+    <!-- banner -->
+    <div
+      class="banner-parallax parallax-window position-relative"
+      data-parallax="scroll"
+      data-image-src="./img/banner-2.jpg"
+      data-z-index="2"
+    >
+      <div class="title-banner">
+        <h1>Kính râm</h1>
+      </div>
+    </div>
+    <!-- end banner -->
+    <!-- product content -->
+    <div class="container products">
+      <div class="row">
+        <div class="col-xl-3 filter-col" id="filter-col">
+          <div class="box filter-toggle-box">
+            <button
+              class="btn-flat-reverse btn-hover-reverse"
+              id="filter-close"
+            >
+              close
+            </button>
+          </div>
+          <div class="box">
+            <span class="filter-header"><span>Giá từ</span></span>
+            <ul class="filter-list">
+              <li>
+                <div class="group-checkbox">
+                  <input type="checkbox" id="price-1" />
+                  <label for="price-1">
+                    999,000 VND
+                    <i class="bi bi-check2"></i>
+                  </label>
+                </div>
+              </li>
+              <li>
+                <div class="group-checkbox">
+                  <input type="checkbox" id="price-2" />
+                  <label for="price-2">
+                    1,200,000 VND
+                    <i class="bi bi-check2"></i>
+                  </label>
+                </div>
+              </li>
+              <li>
+                <div class="group-checkbox">
+                  <input type="checkbox" id="price-3" />
+                  <label for="price-3">
+                    1,750,000 VND
+                    <i class="bi bi-check2"></i>
+                  </label>
+                </div>
+              </li>
+              <li>
+                <div class="group-checkbox">
+                  <input type="checkbox" id="price-4" />
+                  <label for="price-4">
+                    2,550,000 VND
+                    <i class="bi bi-check2"></i>
+                  </label>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="box d-sm-none d-xl-block">
+            <span class="filter-header">Hình dạng</span>
+            <div class="row">
+              <div class="col-lg-12 col-xl-6">
+                <div class="form active" data-filter="round">
+                  <div class="form-img">
+                    <img src="./img/round.png" alt="" />
+                  </div>
+                  <div class="form-info subtitle">Tròn</div>
+                </div>
+              </div>
+              <div class="col-lg-12 col-xl-6">
+                <div class="form">
+                  <div class="form-img">
+                    <img src="./img/rec.png" alt="" />
+                  </div>
+                  <div class="form-info subtitle">Chữ nhật</div>
+                </div>
+              </div>
+              <div class="col-lg-12 col-xl-6">
+                <div class="form">
+                  <div class="form-img">
+                    <img src="./img/cat.png" alt="" />
+                  </div>
+                  <div class="form-info subtitle">Mắt mèo</div>
+                </div>
+              </div>
+              <div class="col-lg-12 col-xl-6">
+                <div class="form">
+                  <div class="form-img">
+                    <img src="./img/square.png" alt="" />
+                  </div>
+                  <div class="form-info subtitle">Vuông</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="box d-sm-block d-xl-none">
+            <span class="filter-header">Hình dạng</span>
+            <ul class="filter-list">
+              <li>
+                <div class="group-checkbox">
+                  <input type="checkbox" id="round-1" />
+                  <label for="round-1">
+                    Tròn
+                    <i class="bi bi-check2"></i>
+                  </label>
+                </div>
+              </li>
+              <li>
+                <div class="group-checkbox">
+                  <input type="checkbox" id="round-2" />
+                  <label for="round-2">
+                    Chữ nhật
+                    <i class="bi bi-check2"></i>
+                  </label>
+                </div>
+              </li>
+              <li>
+                <div class="group-checkbox">
+                  <input type="checkbox" id="round-3" />
+                  <label for="round-3">
+                    Mắt mèo
+                    <i class="bi bi-check2"></i>
+                  </label>
+                </div>
+              </li>
+              <li>
+                <div class="group-checkbox">
+                  <input type="checkbox" id="round-4" />
+                  <label for="round-4">
+                    Vuông
+                    <i class="bi bi-check2"></i>
+                  </label>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="box">
+            <span class="filter-header">Màu gọng kính</span>
+            <ul class="filter-list">
+              <li>
+                <div class="group-checkbox">
+                  <input type="checkbox" id="color-1" />
+                  <label for="color-1">
+                    Màu tối
+                    <i class="bi bi-check2"></i>
+                  </label>
+                </div>
+              </li>
+              <li>
+                <div class="group-checkbox">
+                  <input type="checkbox" id="color-2" />
+                  <label for="color-2">
+                    Màu trung tính
+                    <i class="bi bi-check2"></i>
+                  </label>
+                </div>
+              </li>
+              <li>
+                <div class="group-checkbox">
+                  <input type="checkbox" id="color-3" />
+                  <label for="color-3">
+                    Màu sáng
+                    <i class="bi bi-check2"></i>
+                  </label>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="box">
+            <span class="filter-header">Rating</span>
+            <ul class="filter-list">
+              <li>
+                <div class="group-checkbox">
+                  <input type="checkbox" id="rate1" />
+                  <label for="rate1"
+                    ><i class="bi bi-check2"></i>
+                    <span class="rating">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </span>
+                  </label>
+                </div>
+              </li>
+              <li>
+                <div class="group-checkbox">
+                  <input type="checkbox" id="rate2" />
+                  <label for="rate2"
+                    ><i class="bi bi-check2"></i>
+                    <span class="rating">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star"></i>
+                    </span>
+                  </label>
+                </div>
+              </li>
+              <li>
+                <div class="group-checkbox">
+                  <input type="checkbox" id="rate3" />
+                  <label for="rate3"
+                    ><i class="bi bi-check2"></i>
+                    <span class="rating">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star"></i>
+                      <i class="bi bi-star"></i>
+                    </span>
+                  </label>
+                </div>
+              </li>
+              <li>
+                <div class="group-checkbox">
+                  <input type="checkbox" id="rate4" />
+                  <label for="rate4"
+                    ><i class="bi bi-check2"></i>
+                    <span class="rating">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star"></i>
+                      <i class="bi bi-star"></i>
+                      <i class="bi bi-star"></i>
+                    </span>
+                  </label>
+                </div>
+              </li>
+              <li>
+                <div class="group-checkbox">
+                  <input type="checkbox" id="rate5" />
+                  <label for="rate5"
+                    ><i class="bi bi-check2"></i>
+                    <span class="rating">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star"></i>
+                      <i class="bi bi-star"></i>
+                      <i class="bi bi-star"></i>
+                      <i class="bi bi-star"></i>
+                    </span>
+                  </label>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-12 col-xl-9">
+          <div class="box filter-toggle-box">
+            <button
+              class="btn-flat-reverse btn-hover-reverse"
+              id="filter-toggle"
+            >
+              filter
+            </button>
+          </div>
+          <div class="box">
+            <div class="row" id="products">
+              <!-- render -->
+            </div>
+          </div>
+          <div class="box">
+            <ul class="pagination">
+              <li>
+                <a href="#"><i class="bi bi-chevron-left"></i> </a>
+              </li>
+              <li>
+                <a href="#" class="active">1</a>
+              </li>
+              <li>
+                <a href="#">2</a>
+              </li>
+              <li>
+                <a href="#">3</a>
+              </li>
+              <li>
+                <a href="#">4</a>
+              </li>
+              <li>
+                <a href="#">5</a>
+              </li>
+              <li>
+                <a href="#"><i class="bi bi-chevron-right"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end product content -->
+
+    <!-- cart overlay -->
+    <section class="cart__overlay">
+      <div class="cart">
+        <span class="close__cart">
+          <i class="bi bi-x-lg"></i>
+        </span>
+        <h2>Giỏ Hàng</h2>
+        <div class="cart__center">
+          <!-- Cart Item -->
+          <div class="cart__item">
+            <!-- <img src="./img/hd-havana-1.jpg" alt="" />
+            <div>
+              <h3>The Hardy</h3>
+              <h3 class="price">1,750,000 VND</h3>
+            </div>
+            <div>
+              <span>
+                <i class="bi bi-plus-lg"></i>
+              </span>
+              <p>3</p>
+              <span>
+                <i class="bi bi-dash-lg"></i>
+              </span>
+            </div>
+
+            <div>
+              <span class="remove__item">
+                <i class="bi bi-trash-fill"></i>
+              </span>
+            </div> -->
+          </div>
+        </div>
+
+        <div class="cart__footer">
+          <h3>Total: $ <span class="cart__total">0</span></h3>
+          <button class="clear__cart btn-flat-reverse btn-hover-reverse">
+            Clear Cart
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- END cart overlay -->
+
+    <!-- footer -->
+    <footer class="bg-second">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-12">
+            <h4 class="footer-head">Bạn cần trợ giúp ?</h4>
+            <ul class="menu">
+              <li>
+                <a href="#"
+                  ><i class="bi bi-telephone-fill"></i>hotline: 036.8523.966</a
+                >
+              </li>
+              <li style="padding-left: 37px">
+                <a href="#">Mon-Sun | 8:30 - 22:00</a>
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="bi bi-envelope-fill"></i>Email:
+                  contact@gmail.com</a
+                >
+              </li>
+              <li>
+                <a href="#"><i class="bi bi-geo-alt-fill"></i>Shop: Hà Nội</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-12">
+            <h4 class="footer-head">Dịch vụ</h4>
+            <ul class="menu">
+              <li><a href="#">Khám mắt miễn phí</a></li>
+              <li><a href="#">Bảo hành hai năm</a></li>
+              <li><a href="#">Thu cũ đổi mới</a></li>
+              <li><a href="#">1 đổi 1 trong 30 ngày</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-12">
+            <h4 class="footer-head">Bạn cần biết</h4>
+            <ul class="menu">
+              <li><a href="#">Chính sách vận chuyển</a></li>
+              <li><a href="#">Chính sách bảo hành</a></li>
+
+              <li><a href="#">Vệ sinh và bảo quản kính mắt</a></li>
+              <li><a href="#">Câu hỏi thường gặp</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-12">
+            <div class="contact">
+              <h4 class="contact-header">HdzzShop</h4>
+              <ul class="contact-socials">
+                <li>
+                  <a href="#"><i class="bi bi-facebook"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="bi bi-twitter"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="email-box">
+              <i class="bi bi-envelope-fill" style="color: white"></i>
+              <input
+                class="tbox"
+                type="email"
+                placeholder="Nhập địa chỉ email"
+                style="color: black"
+              />
+              <button class="btn-email" type="button" name="button">
+                đăng ký
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end footer -->
+
+    <!-- js -->
+    <script>
+      let loadingWrapper = document.querySelector(".loading-screen");
+
+      window.addEventListener("load", function () {
+        loadingWrapper.parentElement.removeChild(loadingWrapper);
+      });
+      // filter
+      $(document).ready(function () {
+        $(".list").click(function () {
+          const value = $(this).attr("data-filter");
+          if (value == "all") {
+            $(".itemBox").show("1000");
+          } else {
+            $(".itemBox")
+              .not("." + value)
+              .hide("1000");
+            $(".itemBox")
+              .filter("." + value)
+              .show("1000");
+          }
+        });
+        $(".list").click(function () {
+          $(this).addClass("active").siblings().removeClass("active");
+        });
+      });
+    </script>
+    <script src="./js/product-list.js"></script>
+
+    <script src="./js/app.js"></script>
+    <script src="./js/scrolling.js"></script>
+    <!-- parallax -->
+    <script src="./js/parallax.js"></script>
+  </body>
+</html>

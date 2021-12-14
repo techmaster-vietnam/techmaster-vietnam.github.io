@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cua hang</title>
+    <link rel="shortcut icon" href="./img/logo.png" />
+    <!-- font chu  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- jquery -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+    ></script>
+
+    <!-- CSS bootsrap only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <!-- slider -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="./css/app.css" />
+    <link rel="stylesheet" href="./css/service.css" />
+    <style>
+      .google-map {
+        width: 100%;
+        height: 400px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="loading-screen"></div>
+
+    <!-- header -->
+    <header>
+      <div class="header-wrapper">
+        <!-- top header -->
+        <div class="top-header container">
+          <a href="index.html" class="logo"
+            ><img src="./img/logo.png" alt=""
+          /></a>
+          <div class="search">
+            <input type="text" placeholder="Tìm kiếm" />
+            <i class="bi bi-search"></i>
+          </div>
+
+          <ul class="user-menu d-flex">
+            <li>
+              <a href="acount.html"><i class="bi bi-person-fill"></i></a>
+            </li>
+            <li class="cart__icon">
+              <i class="bi bi-bag"></i>
+              <span class="item__total">0</span>
+            </li>
+            <li>
+              <span
+                class="mb-menu-toggle"
+                id="mb-menu-toggle"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                <i class="bi bi-list"></i>
+              </span>
+            </li>
+          </ul>
+        </div>
+        <!-- end top header -->
+        <!-- mid header -->
+        <div class="bg-second">
+          <div class="mid-header container">
+            <ul class="main-menu d-flex justify-content-around">
+              <li>
+                <a href="index.html">Trang chủ</a>
+              </li>
+              <li class="mega-dropdown">
+                <a href="#"
+                  >Sản phẩm
+                  <i class="bi bi-chevron-down"></i>
+                </a>
+
+                <div class="mega-content">
+                  <div class="row">
+                    <div class="col-xl-6 col-lg-12">
+                      <div class="box">
+                        <div class="subtitle">Kính râm</div>
+                        <ul>
+                          <li>
+                            <a href="product-list.html"
+                              >the assembled sunglasses</a
+                            >
+                          </li>
+                          <li>
+                            <a href="product-list.html">the cut sunglasses</a>
+                          </li>
+                          <li><a href="product-list.html">the metal</a></li>
+                          <li>
+                            <a href="product-list.html">the combination</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-12">
+                      <div class="box">
+                        <h4>Kính cận</h4>
+                        <ul>
+                          <li>
+                            <a href="product-list.html">the assembled </a>
+                          </li>
+                          <li><a href="product-list.html">the cut</a></li>
+                          <li><a href="product-list.html">the metal</a></li>
+                          <li><a href="product-list.html">the basic</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row img-row">
+                    <div class="col-lg-6 col-md-12">
+                      <img
+                        src="./img/kinhram-removebg-edit.webp"
+                        class="img-mega"
+                        alt=""
+                      />
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                      <img
+                        src="./img/kinhcan-removebg-edit.webp"
+                        class="img-mega"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a href="service.html">dịch vụ</a>
+              </li>
+              <li>
+                <a href="news.html">Tạp chí</a>
+              </li>
+
+              <li class="active">
+                <a href="store.html">Cửa hàng</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- end mid header -->
+      </div>
+    </header>
+    <!-- end header -->
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="search-box mb-search">
+              <div class="icon"><i class="bi bi-search"></i></div>
+              <div class="input">
+                <input type="text" placeholder="Tìm kiếm" id="mysearch" />
+              </div>
+              <span
+                class="clear"
+                onclick="document.getElementById('mysearch').value = ''"
+                ><i class="bi bi-x"></i
+              ></span>
+            </div>
+
+            <ul class="main-menu d-flex justify-content-around">
+              <li >
+                <a href="index.html">Trang chủ</a>
+              </li>
+              <li class="mega-dropdown">
+                <a href="#"
+                  >Sản phẩm
+                  <i class="bi bi-chevron-down"></i>
+                </a>
+
+                <div class="mega-content">
+                  <div class="row">
+                    <div class="col-xl-6 col-lg-12">
+                      <div class="box">
+                        <a href="product-list.html" class="subtitle"
+                          >Kính râm</a
+                        >
+                        <ul class="hide-product">
+                          <li>
+                            <a href="product-list.html"
+                              >the assembled sunglasses</a
+                            >
+                          </li>
+                          <li>
+                            <a href="product-list.html">the cut sunglasses</a>
+                          </li>
+                          <li><a href="product-list.html">the metal</a></li>
+                          <li>
+                            <a href="product-list.html">the combination</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-12">
+                      <div class="box">
+                        <a href="product-list.html" class="subtitle"
+                          >Kính cận</a
+                        >
+                        <ul class="hide-product">
+                          <li>
+                            <a href="product-list.html">the assembled </a>
+                          </li>
+                          <li><a href="product-list.html">the cut</a></li>
+                          <li><a href="product-list.html">the metal</a></li>
+                          <li><a href="product-list.html">the basic</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row img-row">
+                    <div class="col-lg-6 col-md-12">
+                      <img
+                        src="./img/kinhram-removebg-edit.webp"
+                        class="img-mega"
+                        alt=""
+                      />
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                      <img
+                        src="./img/kinhcan-removebg-edit.webp"
+                        class="img-mega"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a href="service.html">dịch vụ</a>
+              </li>
+              <li>
+                <a href="news.html">Tạp chí</a>
+              </li>
+
+              <li class="active">
+                <a href="store.html">Cửa hàng</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- swiper -->
+
+    <section class="store">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="swiper-container mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="./img/location-edit.webp" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/service-1-w.webp" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./img/feel-w.webp" alt="" />
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end swiper -->
+    <div class="contact-us">
+      <div class="description">
+        <h2>Thăm cửa hàng</h2>
+        <p>HANOI IRL FLAGSHIP STORE</p>
+        <p >Tố Hữu, Hà Nội</p>
+        <p>
+          Giờ mở cửa <br />
+          8.30AM - 10.00 PM
+        </p>
+        
+      </div>
+    </div>
+    <div class="map">
+      <iframe
+        class="google-map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.863055693483!2d105.79211591533185!3d20.998125894198388!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135acba8ad197a5%3A0xa55e51322131e722!2zNDggVOG7kSBI4buvdSwgVHJ1bmcgVsSDbiwgVOG7qyBMacOqbSwgSMOgIE7hu5lpLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1630252256064!5m2!1svi!2s"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+      ></iframe>
+    </div>
+
+    <!-- cart overlay -->
+    <section class="cart__overlay">
+      <div class="cart">
+        <span class="close__cart">
+          <i class="bi bi-x-lg"></i>
+        </span>
+        <h2>Giỏ Hàng</h2>
+        <div class="cart__center">
+          <!-- Cart Item -->
+        </div>
+
+        <div class="cart__footer">
+          <h3>Tổng tiền: $ <span class="cart__total">0</span></h3>
+          <!-- <button class="clear__cart btn-flat-reverse btn-hover-reverse">
+            Clear Cart
+          </button> -->
+          <a href="checkout.html" class="btn-flat-reverse btn-hover-reverse"
+            >Thanh toán</a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- END cart overlay -->
+
+    <!-- JS bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- JS swiper -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- JS parallax -->
+    <script src="./js/parallax.js"></script>
+    <!-- JS MAIN -->
+    <script src="./js/main.js"></script>
+    <script src="./js/cart.js"></script>
+    <script>
+      //
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+  <!-- footer -->
+  <footer class="bg-second">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-12">
+          <h4 class="footer-head">Bạn cần trợ giúp ?</h4>
+          <ul class="menu">
+            <li>
+              <a href="#"
+                ><i class="bi bi-telephone-fill"></i>hotline: 036.8523.966</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="bi bi-clock-fill"></i>Mon-Sun | 8:30 - 22:00</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="bi bi-envelope-fill"></i>Email: contact@gmail.com</a
+              >
+            </li>
+            <li>
+              <a href="#"><i class="bi bi-geo-alt-fill"></i>Shop: Hà Nội</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-12">
+          <h4 class="footer-head">Dịch vụ</h4>
+          <ul class="menu">
+            <li><a href="#">Khám mắt miễn phí</a></li>
+            <li><a href="#">Bảo hành hai năm</a></li>
+            <li><a href="#">Thu cũ đổi mới</a></li>
+            <li><a href="#">1 đổi 1 trong 30 ngày</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-12">
+          <h4 class="footer-head">Bạn cần biết</h4>
+          <ul class="menu">
+            <li><a href="#">Chính sách vận chuyển</a></li>
+            <li><a href="#">Chính sách bảo hành</a></li>
+
+            <li><a href="#">Vệ sinh và bảo quản kính mắt</a></li>
+            <li><a href="#">Câu hỏi thường gặp</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-12">
+          <div class="contact">
+            <h4 class="contact-header">HANOI-RIOT</h4>
+            <ul class="contact-socials">
+              <li>
+                <a href="#"><i class="bi bi-facebook"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="bi bi-twitter"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="email-box">
+            <i class="bi bi-envelope-fill" style="color: white"></i>
+            <input
+              class="tbox"
+              type="email"
+              placeholder="Nhập địa chỉ email"
+              style="color: black"
+            />
+            <button class="btn-email" type="button" name="button">
+              đăng ký
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- end footer -->
+</html>

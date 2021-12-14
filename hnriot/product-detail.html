@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KUBO 01 - HANOI-RIOT</title>
+    <link rel="shortcut icon" href="./img/logo.png" />
+    <!-- font chu -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- jquery -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+    ></script>
+    <!-- Bootstrap only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <!-- CSS Slider -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <!-- CSS MAIN -->
+    <link rel="stylesheet" href="./css/app.css" />
+    <link rel="stylesheet" href="./css/details.css" />
+  </head>
+  <body>
+    <!-- loading -->
+    <div class="loading-screen"></div>
+    <!-- scrolling -->
+    <div class="progress-wrap active-progress">
+      <svg
+        class="progress-circle svg-content"
+        width="100%"
+        height="100%"
+        viewBox="-1 -1 102 102"
+      >
+        <path
+          d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"
+          style="
+            transition: stroke-dashoffset 10ms linear 0s;
+            stroke-dasharray: 307.919, 307.919;
+            stroke-dashoffset: 249.357;
+          "
+        ></path>
+      </svg>
+      <i class="bi bi-arrow-up arrow"></i>
+    </div>
+
+    <!-- header -->
+    <header>
+      <div class="header-wrapper">
+        <!-- top header -->
+        <div class="top-header container">
+          <a href="index.html" class="logo"
+            ><img src="./img/logo.png" alt=""
+          /></a>
+          <div class="search">
+            <input type="text" placeholder="Tìm kiếm" />
+            <i class="bi bi-search"></i>
+          </div>
+
+          <ul class="user-menu d-flex">
+            <li>
+              <a href="acount.html"><i class="bi bi-person-fill"></i></a>
+            </li>
+            <li class="cart__icon">
+              <i class="bi bi-bag"></i>
+              <span class="item__total">0</span>
+            </li>
+            <li>
+              <span
+                class="mb-menu-toggle"
+                id="mb-menu-toggle"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                <i class="bi bi-list"></i>
+              </span>
+            </li>
+          </ul>
+        </div>
+        <!-- end top header -->
+        <!-- mid header -->
+        <div class="bg-second">
+          <div class="mid-header container">
+            <!-- <span class="mb-menu-toggle mb-menu-close" id="mb-menu-close">
+              <i class="bi bi-x-lg"></i>
+            </span>
+            <div class="search-box mb-search">
+              <input
+                class="search-txt"
+                type="text"
+                name=""
+                placeholder="Tim kiem"
+              />
+              <a href="#" class="search-btn">
+                <i class="bi bi-search"></i>
+              </a>
+            </div> -->
+            <ul class="main-menu d-flex justify-content-around">
+              <li class="">
+                <a href="index.html">Trang chủ</a>
+              </li>
+              <li class="mega-dropdown">
+                <a href="#"
+                  >Sản phẩm
+                  <i class="bi bi-chevron-down"></i>
+                </a>
+
+                <div class="mega-content">
+                  <div class="row">
+                    <div class="col-xl-6 col-lg-12">
+                      <div class="box">
+                        <div class="subtitle">Kính râm</div>
+                        <ul>
+                          <li>
+                            <a href="product-list.html"
+                              >the assembled sunglasses</a
+                            >
+                          </li>
+                          <li>
+                            <a href="product-list.html">the cut sunglasses</a>
+                          </li>
+                          <li><a href="product-list.html">the metal</a></li>
+                          <li>
+                            <a href="product-list.html">the combination</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-12">
+                      <div class="box">
+                        <h4>Kính cận</h4>
+                        <ul>
+                          <li>
+                            <a href="product-list.html">the assembled </a>
+                          </li>
+                          <li><a href="product-list.html">the cut</a></li>
+                          <li><a href="product-list.html">the metal</a></li>
+                          <li><a href="product-list.html">the basic</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row img-row">
+                    <div class="col-lg-6 col-md-12">
+                      <img
+                        src="./img/kinhram-removebg-preview.png"
+                        class="img-mega"
+                        alt=""
+                      />
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                      <img
+                        src="./img/kinhcan-removebg-preview.png"
+                        class="img-mega"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a href="service.html">dịch vụ</a>
+              </li>
+              <li>
+                <a href="news.html">Tạp chí</a>
+              </li>
+
+              <li>
+                <a href="store.html">Cửa hàng</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- end mid header -->
+      </div>
+    </header>
+    <!-- end header -->
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="search-box mb-search">
+              <div class="icon"><i class="bi bi-search"></i></div>
+              <div class="input">
+                <input type="text" placeholder="Tìm kiếm" id="mysearch" />
+              </div>
+              <span
+                class="clear"
+                onclick="document.getElementById('mysearch').value = ''"
+                ><i class="bi bi-x"></i
+              ></span>
+            </div>
+
+            <ul class="main-menu d-flex justify-content-around">
+              <li class="active">
+                <a href="index.html">Trang chủ</a>
+              </li>
+              <li class="mega-dropdown">
+                <a href="#"
+                  >Sản phẩm
+                  <i class="bi bi-chevron-down"></i>
+                </a>
+
+                <div class="mega-content">
+                  <div class="row">
+                    <div class="col-xl-6 col-lg-12">
+                      <div class="box">
+                        <a href="product-list.html" class="subtitle"
+                          >Kính râm</a
+                        >
+                        <ul class="hide-product">
+                          <li>
+                            <a href="product-list.html"
+                              >the assembled sunglasses</a
+                            >
+                          </li>
+                          <li>
+                            <a href="product-list.html">the cut sunglasses</a>
+                          </li>
+                          <li><a href="product-list.html">the metal</a></li>
+                          <li>
+                            <a href="product-list.html">the combination</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-12">
+                      <div class="box">
+                        <a href="product-list.html" class="subtitle"
+                          >Kính cận</a
+                        >
+                        <ul class="hide-product">
+                          <li>
+                            <a href="product-list.html">the assembled </a>
+                          </li>
+                          <li><a href="product-list.html">the cut</a></li>
+                          <li><a href="product-list.html">the metal</a></li>
+                          <li><a href="product-list.html">the basic</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row img-row">
+                    <div class="col-lg-6 col-md-12">
+                      <img
+                        src="./img/kinhram-removebg-edit.webp"
+                        class="img-mega"
+                        alt=""
+                      />
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                      <img
+                        src="./img/kinhcan-removebg-edit.webp"
+                        class="img-mega"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a href="service.html">dịch vụ</a>
+              </li>
+              <li>
+                <a href="news.html">Tạp chí</a>
+              </li>
+
+              <li>
+                <a href="store.html">Cửa hàng</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- product details content -->
+    <div class="container">
+      <div class="breadcumb d-flex">
+        <a href="./index.html">Trang chủ</a>
+        <span><i class="bi bi-chevron-double-right"></i></span>
+        <a href="./product-list.html">Sản phẩm</a>
+        <span><i class="bi bi-chevron-double-right"></i></span>
+        <a href="./product-detail.html">Kubo 01 </a>
+      </div>
+
+      <div class="row product-row">
+        <div
+          class="
+            col-md-12 col-lg-7
+            product-left
+            position-relative
+            overflow-hidden
+          "
+        >
+          <div class="swiper-container-1 mySwiper2">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide img-preview">
+                <div class="swiper-zoom-container">
+                  <img class="img-1" src="./img/dbrown-1.jpg" />
+                </div>
+              </div>
+              <div class="swiper-slide img-preview">
+                <div class="swiper-zoom-container">
+                  <img class="img-2" src="./img/dbrown-2.jpg" />
+                </div>
+              </div>
+              <div class="swiper-slide img-preview">
+                <div class="swiper-zoom-container">
+                  <img class="img-3" src="./img/dbrown-3.jpg" />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+          <div thumbsSlider="" class="swiper-container-1 mySwiper1">
+            <div class="swiper-wrapper product-img">
+              <div class="swiper-slide img-preview">
+                <img src="./img/dbrown-1.jpg" />
+              </div>
+              <div class="swiper-slide img-preview">
+                <img src="./img/dbrown-2.jpg" />
+              </div>
+              <div class="swiper-slide img-preview">
+                <img src="./img/dbrown-3.jpg" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 col-lg-5">
+          <div class="product-info">
+            <h4>KUBO 01</h4>
+            <div class="product-info-price">$269</div>
+            <div class="product-info-detail">
+              <span class="product-info-detail-title"> Đánh giá: </span>
+              <span class="rating">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </span>
+            </div>
+            <div class="product-info-color">
+              <div class="color-title subtitle">
+                Màu sắc: <span>Dark brown </span>
+              </div>
+              <div class="select-color d-flex">
+                <span
+                  style="
+                    background: url(./img/havana_64x64.png);
+                    background-size: cover;
+                  "
+                  class="active"
+                  data-pic-1="./img/dbrown-1.jpg"
+                  data-pic-2="./img/dbrown-2.jpg"
+                  data-pic-3="./img/dbrown-3.jpg"
+                  data-title="drak brown"
+                >
+                  <a href=""></a>i
+                </span>
+                <span
+                  style="
+                    background: url(./img/dark-br.png);
+                    background-size: cover;
+                  "
+                  data-pic-1="./img/brown-1.jpg"
+                  data-pic-2="./img/brown-2.jpg"
+                  data-pic-3="./img/brown-3.jpg"
+                  data-title=" brown"
+                >
+                  <a href=""></a>
+                </span>
+                <span
+                  style="
+                    background: url(./img/emerald_64x64.png);
+                    background-size: cover;
+                  "
+                  data-pic-1="./img/green-1-edit.jpg"
+                  data-pic-2="./img/green-2.jpg"
+                  data-pic-3="./img/green-3.jpg"
+                  data-title=" green"
+                >
+                  <a href=""></a>
+                </span>
+              </div>
+            </div>
+
+            <button class="btn-flat-reverse btn-hover-reverse btn-cart">
+              Thêm vào giỏ hàng
+            </button>
+            <!-- <button class="btn-flat btn-hover">Tìm cửa hàng gần nhất</button> -->
+            <div class="delivery">
+              <i class="bi bi-box-seam"></i>
+              <i>Giao hàng miễn phí mọi lúc</i>
+            </div>
+
+            <div class="accordion">
+              <div class="contentBx">
+                <div class="label">
+                  Nội dung sản phẩm
+                  <i class="bi bi-chevron-down"></i>
+                </div>
+                <ul class="content">
+                  <li>Thiết kế tại Hà Nội</li>
+                  <li>Chất liệu: Nhựa Acetate</li>
+                  <li>Kích thước: 148.4 / 13.7/ 52.7</li>
+                </ul>
+              </div>
+              <div class="contentBx">
+                <div class="label">
+                  Chính sách bảo hành
+                  <i class="bi bi-chevron-down"></i>
+                </div>
+                <ul class="content">
+                  <li>Bảo hành 2 năm đối với sản phẩm kính mắt</li>
+                  <li>
+                    Miễn phí đổi sang sản phẩm mới nếu có bất kì lỗi sản xuất
+                    nào trong vòng 2 năm
+                  </li>
+                  <li>
+                    Chính sách bảo hành không áp dụng với các sản phẩm trong
+                    chương trình giảm giá
+                  </li>
+                </ul>
+              </div>
+              <div class="contentBx">
+                <div class="label">
+                  Quy định đổi trả
+                  <i class="bi bi-chevron-down"></i>
+                </div>
+                <ul class="content">
+                  <li>
+                    Quý khách có thể đổi sản phẩm trong vòng 30 ngày sau khi
+                    nhận được hàng mà không cần lí do
+                  </li>
+                  <li>
+                    Sau khi xác nhận đổi hoặc trả sản phẩm, quý khách vui lòng
+                    gửi lại sản phẩm cho chúng tôi qua bưu điện hoặc tại cửu
+                    hàng trong vòng 7 ngày kể từ khi xác nhận đổi trả
+                  </li>
+                  <li>
+                    Quý khách có thể hủy đơn hàng trước khi sản phẩm được vận
+                    chuyển. Vui lòng thông báo cho chúng tôi qua hotline:
+                    036.8523.966
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="box-product">
+        <div class="product-detail-preview">
+          <div class="cl">
+            <h4>Chất liệu</h4>
+            <p>
+              Chất liệu nhựa Acetate kèm mắt kính râm clip-on phân cực polarize
+            </p>
+          </div>
+          <div class="diop">
+            <h4>Phù hợp</h4>
+            <p>
+              Từ 0-6 diop <br />
+              Gương mặt vuông, góc cạnh, mặt trái xoan
+            </p>
+          </div>
+          <div class="ts">
+            <h4>Thông số</h4>
+            <p>148.4 / 13.7/ 52.7</p>
+          </div>
+          <img src="./img/banner-details.jpg" alt="" />
+        </div>
+      </div>
+      <!-- <div class="box">
+        <div class="position-relative">
+          <button
+            class="btn-flat-reverse btn-hover-reverse btn-view-description"
+            id="view-all-description"
+          >
+            Đọc thêm
+          </button>
+
+          <div class="product-detail-content">
+            <h4>Miêu tả sản phẩm</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac
+              enim quis orci eleifend dictum. Donec non eros erat. In ut
+              interdum sem, consectetur mattis ante. Vestibulum ante ipsum
+              primis in faucibus orci luctus et ultrices posuere cubilia curae;
+              Sed eu massa dui. Donec at tellus leo. Aenean sagittis quam a diam
+              sodales, molestie hendrerit eros vulputate. Vivamus vestibulum
+              massa ac ex porta, sit amet finibus purus porta. Nunc eget libero
+              aliquet, fringilla est at, luctus felis. Cras non auctor lorem.
+              Morbi mattis sapien non sapien hendrerit, vitae congue ligula
+              viverra. Sed enim velit, dignissim vel viverra vitae, luctus at
+              libero.
+            </p>
+            <div class="img-detail d-flex">
+              <img src="./img/hd-havana-2.jpg" alt="" />
+              <img src="./img/hd-havana-3.jpg" alt="" />
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac
+              enim quis orci eleifend dictum. Donec non eros erat. In ut
+              interdum sem, consectetur mattis ante. Vestibulum ante ipsum
+              primis in faucibus orci luctus et ultrices posuere cubilia curae;
+              Sed eu massa dui. Donec at tellus leo. Aenean sagittis quam a diam
+              sodales, molestie hendrerit eros vulputate. Vivamus vestibulum
+              massa ac ex porta, sit amet finibus purus porta. Nunc eget libero
+              aliquet, fringilla est at, luctus felis. Cras non auctor lorem.
+              Morbi mattis sapien non sapien hendrerit, vitae congue ligula
+              viverra. Sed enim velit, dignissim vel viverra vitae, luctus at
+              libero.
+            </p>
+            <div class="img-detail d-flex">
+              <img src="./img/hd-havana-1.jpg" alt="" />
+              <img src="./img/nam2.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div> -->
+    </div>
+
+    <!-- Swiper -->
+
+    <!-- <div class="bg-sec">
+      <div class="container">
+        <div class="swiper-container mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="tBox">
+                <img src="./img/right-quote.png" class="quote" alt="" />
+                <div class="content-sli">
+                  <span class="rating">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </span>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Maecenas euismod eu sapien ut blandit. Morbi nec varius
+                    odio. Integer sit amet tempus arcu, non finibus erat. Nunc
+                    dignissim, purus id facilisis gravida, tortor leo facilisis
+                    justo,
+                  </p>
+                  <div class="details-sli">
+                    <div class="imgBx">
+                      <img src="./img/nam.jpg" alt="" />
+                    </div>
+                    <h3>
+                      Dep trai hongg ;) <br />
+                      <span>Creative designer</span>
+                    </h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="tBox">
+                <img src="./img/right-quote.png" class="quote" alt="" />
+                <div class="content-sli">
+                  <span class="rating">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star"></i>
+                  </span>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Maecenas euismod eu sapien ut blandit. Morbi nec varius
+                    odio. Integer sit amet tempus arcu, non finibus erat. Nunc
+                    dignissim, purus id facilisis gravida, tortor leo facilisis
+                    justo,
+                  </p>
+                  <div class="details-sli">
+                    <div class="imgBx">
+                      <img src="./img/ha.jpg" alt="" />
+                    </div>
+                    <h3>
+                      Dep trai hongg ;) <br /><span>Creative designer</span>
+                    </h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="tBox">
+                <img src="./img/right-quote.png" class="quote" alt="" />
+                <div class="content-sli">
+                  <span class="rating">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                  </span>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Maecenas euismod eu sapien ut blandit. Morbi nec varius
+                    odio. Integer sit amet tempus arcu, non finibus erat. Nunc
+                    dignissim, purus id facilisis gravida, tortor leo facilisis
+                    justo,
+                  </p>
+                  <div class="details-sli">
+                    <div class="imgBx">
+                      <img src="./img/hdzz.JPG" alt="" />
+                    </div>
+                    <h3>
+                      Dep trai hongg ;) <br /><span>Creative designer</span>
+                    </h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- end product details content -->
+    <!-- cart overlay -->
+    <section class="cart__overlay">
+      <div class="cart">
+        <span class="close__cart">
+          <i class="bi bi-x-lg"></i>
+        </span>
+        <h2>Giỏ Hàng</h2>
+        <div class="cart__center">
+          <!-- Cart Item -->
+        </div>
+
+        <div class="cart__footer">
+          <h3>Tổng tiền: $ <span class="cart__total">0</span></h3>
+          <!-- <button class="clear__cart btn-flat-reverse btn-hover-reverse">
+            Clear Cart
+          </button> -->
+          <a href="checkout.html" class="btn-flat-reverse btn-hover-reverse"
+            >Thanh toán</a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- END cart overlay -->
+
+    <!-- footer -->
+    <footer class="bg-second">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-12">
+            <h4 class="footer-head">Bạn cần trợ giúp ?</h4>
+            <ul class="menu">
+              <li>
+                <a href="#"
+                  ><i class="bi bi-telephone-fill"></i>hotline: 036.8523.966</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="bi bi-clock-fill"></i>Mon-Sun | 8:30 - 22:00</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="bi bi-envelope-fill"></i>Email:
+                  contact@gmail.com</a
+                >
+              </li>
+              <li>
+                <a href="#"><i class="bi bi-geo-alt-fill"></i>Shop: Hà Nội</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-12">
+            <h4 class="footer-head">Dịch vụ</h4>
+            <ul class="menu">
+              <li><a href="#">Khám mắt miễn phí</a></li>
+              <li><a href="#">Bảo hành hai năm</a></li>
+              <li><a href="#">Thu cũ đổi mới</a></li>
+              <li><a href="#">1 đổi 1 trong 30 ngày</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-12">
+            <h4 class="footer-head">Bạn cần biết</h4>
+            <ul class="menu">
+              <li><a href="#">Chính sách vận chuyển</a></li>
+              <li><a href="#">Chính sách bảo hành</a></li>
+
+              <li><a href="#">Vệ sinh và bảo quản kính mắt</a></li>
+              <li><a href="#">Câu hỏi thường gặp</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-12">
+            <div class="contact">
+              <h4 class="contact-header">HdzzShop</h4>
+              <ul class="contact-socials">
+                <li>
+                  <a href="#"><i class="bi bi-facebook"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="bi bi-twitter"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="email-box">
+              <i class="bi bi-envelope-fill" style="color: white"></i>
+              <input
+                class="tbox"
+                type="email"
+                placeholder="Nhập địa chỉ email"
+                style="color: black"
+              />
+              <button class="btn-email" type="button" name="button">
+                đăng ký
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end footer -->
+
+    <!-- js -->
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./js/scrolling.js"></script>
+    <!-- JS MAIN -->
+    <script src="./js/cart.js"></script>
+    <script src="./js/product-detail.js"></script>
+    <script src="./js/main.js"></script>
+    <script type="text/javascript">
+      // dropdown
+      // let accordion = document.querySelectorAll(".contentBx");
+      // let label = document.querySelectorAll(".label");
+      // for (i = 0; i < accordion.length; i++) {
+      //   accordion[i].addEventListener("click", function () {
+
+      //     this.classList.toggle("active");
+          
+          
+      //   });
+      // }
+
+      $(".label").click(function(){
+        $(".contentBx").removeClass("active");
+        $(this).parent().addClass("active")
+      })
+      
+
+      // slider-1
+      var swiper1 = new Swiper(".mySwiper1", {
+        spaceBetween: 10,
+        slidesPerView: 4,
+        freeMode: true,
+        watchSlidesVisibility: true,
+        watchSlidesProgress: true,
+      });
+
+      var swiper2 = new Swiper(".mySwiper2", {
+        spaceBetween: 24,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        thumbs: {
+          swiper: swiper1,
+        },
+        zoom: {
+          maxRatio: 1.5,
+        },
+      });
+
+      //slider-2
+      var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 0,
+          stretch: 0,
+          depth: 100,
+          modifier: 2,
+          slideShadows: true,
+        },
+
+        loop: true,
+      });
+
+      // select color
+      $(".select-color span").click(function () {
+        $(".select-color span").removeClass("active");
+        $(this).addClass("active");
+        $(".color-title span").html($(this).attr("data-title"));
+
+        $(".img-1").attr("src", $(this).attr("data-pic-1"));
+        $(".img-2").attr("src", $(this).attr("data-pic-2"));
+        $(".img-3").attr("src", $(this).attr("data-pic-3"));
+      });
+    </script>
+  </body>
+</html>
