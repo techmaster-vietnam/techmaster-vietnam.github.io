@@ -1,0 +1,120 @@
+.pageNav{
+    margin-bottom: 30px;
+}
+
+.main--container-firstBanner{
+    margin-bottom: 50px;
+}
+
+.block-line{
+    border: 1px solid #0dd25c;
+  background-color: #0dd25c;
+}
+
+.firstBanner-block:nth-child(3) .block-line{
+      border: 1px solid #0dd25c;
+  background-color: #0dd25c;
+}
+
+.secondBanner-leftBlock{
+    width: 60%;
+}
+
+.leftBlock-shipDes{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.leftBlock-line{
+    width: 50%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.leftBlock-item{
+    display: flex;
+    
+}
+
+.item-color ,.item-size,.item-numb{
+    display: flex;
+}
+
+.item-des{
+    margin-left: 20px;
+    padding-top: 25px;
+}
+
+.item-img{
+    width: 20%;
+}
+
+.item-img img {
+width: 100%;
+}
+
+
+/* fonts */
+.firstBanner-block:nth-child(3) h4{
+    color: #0dd25c;
+}
+
+h1{
+    font-size: 24px;
+line-height: 28px;
+text-align: start;
+color: #000000;
+margin: unset;
+text-transform: unset;
+}
+
+.leftBlock-shipDes h3{
+    font-size: 14px;
+line-height: 16px;
+
+color: #000000;
+}
+
+.leftBlock-shipDes p{
+    font-weight: 400;
+}
+
+.item-des h3{
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.item-des h4{
+    color: black;
+    font-weight: 500;
+font-size: 16px;
+line-height: 21px;
+}
+
+.item-des p{
+    font-size: 14px;
+    line-height: 21px;
+    color: #968f8f;
+    margin-left: 10px;
+}
+
+@media only screen and (max-width: 900px){
+    .secondBanner-leftBlock{
+        width: 90%;
+        margin-bottom: 30px;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .item-des{
+        padding-top: unset;
+    }
+
+    .leftBlock-line{
+        width: 90%;
+    }
+
+    .item-img{
+        width: 40%;
+    }
+}

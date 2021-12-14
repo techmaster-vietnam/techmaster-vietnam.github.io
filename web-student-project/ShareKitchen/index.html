@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <title>ShareKitchen</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"  crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="css/fontawesome-with-css/css/all.css">
+        
+    </head>
+    <body>
+       <div class="wrapper">
+           <header class="desktop-header">
+               <div class="header-lv1">
+                   <div class="log-in-container">
+                       <a href="login.html" class="headerWord-2 border-1"><span class="fix">ĐĂNG NHẬP</span></a>
+                       <a href="register.html" class="headerWord-2"><span class="fix">ĐĂNG KÝ</span></a>
+                   </div>
+               </div>
+               <hr>
+               <div class="header-lv2">
+                <div class="logo">
+                    <span class="logoWord">SK</span>
+                </div>
+                <div class="header-lv2-content">
+                    <div class="navbar-1">
+                        <a href="#">TRANG CHỦ</a>
+                        <a href="about.html">GIỚI THIỆU</a>
+                        <div class="dropdown-1">
+                          <button class="dropbtn-1"><a href="foodanddrink.html">THỨC ĂN & ĐỒ UỐNG</a></button>
+                          <div class="dropdown-content-1">
+                            <a href="#">THỨC ĂN</a>
+                            <a href="#">ĐỒ UỐNG</a>
+                          </div>
+                        </div>
+                        <a href="partner.html">ĐỐI TÁC</a> 
+                        <a href="live.html">TRỰC TIẾP</a> 
+                        <a href="news.html">TIN TỨC</a>  
+                    </div>
+                </div>
+               
+                <form class="form-search">
+                    <input class="searchBar" type="text" placeholder="Tìm kiếm">
+                </form>    
+                <a href="addtocart.html" class="addToCart">
+                <div class="addToCart">
+                    <img class="addToCartSVG" src="img/shopping-cart.svg" alt="cart ">
+                </div>
+                </a>
+            </div>
+           </header>
+           <header class="mobile-header">
+                <div id="myNav" class="overlay">
+                    <div class="menu-container-2">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    </div>
+                    <div class="overlay-content">
+                        <form class="form-search">
+                            <input class="searchBar" type="text" placeholder="Tìm kiếm">
+                        </form>  
+                        <ul class="overlay-content-menu">
+                        <li><a href="index.html">TRANG CHỦ</a></li>
+                        <li><a href="about.html">GIỚI THIỆU</a></li>
+                        <li><a href="foodanddrink.html" class="m-drinkandfood">THỨC ĂN & ĐỒ UỐNG</a>
+                           <ul>
+                             <li><a href="#">THỨC ĂN</a></li>
+                             <li><a href="#">ĐỒ UỐNG</a></li>
+                           </ul>
+                        </li>
+                        <li><a href="partner.html">ĐỐI TÁC</a>
+                        <li><a href="live.html">TRỰC TIẾP</a>
+                        <li><a href="news.html">TIN TỨC</a>
+                        <li><a href="login.html"><span class="fix">ĐĂNG NHẬP</span></a>
+                        <li><a href="register.html"><span class="fix">ĐĂNG KÝ</span></a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="menu-container">
+                    <img src="img/menu-button-of-three-horizontal-lines.svg" onclick="openNav()">
+                </div> 
+                
+                <div class="logo">
+                    <span class="logoWord">SK</span>
+                </div>
+                <a href="addtocart.html" class="addToCart">
+                <div class="addToCart">
+                    <img class="addToCartSVG" src="img/shopping-cart.svg">
+                </div>
+                </a>
+           </header>
+               <section class="slider-1-desktop">
+                  
+                   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active" style="background-image: url(img/ciabatta_slider_header-1920x300.jpg);">
+                        <div class="carousel-caption text-center">
+                            BÁNH MỲ
+                          </div>
+                          <button class="btn-details"><a href="foodanddrink.html">XEM CHI TIẾT</a></button>
+                      </div>
+                      <div class="carousel-item" style="background-image: url(img/coconut-mojitos-blog-1920x300.jpg);">
+                        <div class="carousel-caption text-center">
+                            NƯỚC CHANH
+                          </div>
+                          <button class="btn-details"><a href="foodanddrink.html">XEM CHI TIẾT</a></button>
+                      </div>
+                      <div class="carousel-item" style="background-image: url(img/pexels-photo-1028734-1920x300.jpeg);">
+                        <div class="carousel-caption text-center">
+                            PHỞ BÒ
+                          </div>
+                          <button class="btn-details"><a href="foodanddrink.html">XEM CHI TIẾT</a></button>
+                      </div>
+                    </div>
+                    
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+               </section>
+               <section class="slider-1-mobile">
+                  <!--Carousel Wrapper-->
+                <div id="carousel-example-1z" class="carousel slide carousel-fade" data-ride="carousel">
+                    <!--Indicators-->
+                    <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-1z" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-1z" data-slide-to="2"></li>
+                    </ol>
+                    <!--/.Indicators-->
+                    <!--Slides-->
+                    <div class="carousel-inner">
+                            <div class="carousel-item active" style="background-image: url(img/ciabatta_slider_header-1920x300.jpg); background-position-x: 50%;">
+                              <div class="carousel-caption text-center">
+                                  BÁNH MỲ
+                                </div>
+                                <button class="btn-details"><a href="foodanddrink.html">XEM CHI TIẾT</a></button>
+                            </div>
+                            <div class="carousel-item" style="background-image: url(img/coconut-mojitos-blog-1920x300.jpg); background-position-x: 50%;">
+                              <div class="carousel-caption text-center">
+                                  NUÓC CHANH
+                                </div>
+                                <button class="btn-details"><a href="foodanddrink.html">XEM CHI TIẾT</a></button>
+                            </div>
+                            <div class="carousel-item" style="background-image: url(img/pexels-photo-1028734-1920x300.jpeg); background-position-x: 50%;">
+                              <div class="carousel-caption text-center">
+                                  PHỞ BÒ
+                                </div>
+                                <button class="btn-details"><a href="foodanddrink.html">XEM CHI TIẾT</a></button>
+                            </div>
+                          </div>
+                
+                </div>
+                <!--/.Carousel Wrapper-->
+                </section>
+               <section class="content-lv1-desktop">
+                   <span class="word-header">THỨC ĂN VÀ ĐỒ UỐNG MỚI ĐANG ĐẾN</span>
+                   <div class="content-image">
+                       <img class="image1 " src="img/donut-clipart-with-clear-background-20.jpg" >
+                       <img src="img/trà-sữa-sôcôla-300x300.jpg">
+                   </div>
+                   <button class="btn-content"><a class="btn-a" href="foodanddrink.html">XEM CHI TIẾT</a></button>
+               </section>
+               <section class="content-lv1-mobile">
+                    <span class="word-header animated fadeInUp delay-1s">THỨC ĂN VÀ ĐỒ UỐNG<br>MỚI ĐANG ĐẾN</span>
+                    
+                        <img class="image1 animated bounceInLeft delay-2s" src="img/donut-clipart-with-clear-background-20.jpg" >
+                        <img class="image2  animated bounceInRight delay-2s" src="img/trà-sữa-sôcôla-300x300.jpg">
+                    
+                    <button class="btn-content"><a class="btn-a" href="foodanddrink.html">XEM CHI TIẾT</a></button>
+                </section>
+               <section class="content-lv2-desktop">
+                    <span class="word-content animated fadeInUp delay-1s">Bạn có muốn trở thành đối tác với chúng tôi ?</span>
+                    <span class="word-content-1 animated fadeInUp delay-2s">Bạn biết đấy cửa hàng nhỏ của chúng tối cần rất nhiều tài nguyên mà chỉ có bạn mới có thể giúp chúng tôi</span>
+                    <span class="word-content-3 animated fadeInUp delay-2s">Hãy tìm ra bằng cách xem bạn có thể làm gì để giúp chúng tôi bằng cách truy cập vào trang đối tác</span>
+                    <button class="btn-details-1"><a href="partner.html">XEM CHI TIẾT</a></button>
+               </section>
+               <section class="content-lv2-mobile">
+                    <span class="word-content animated fadeInUp delay-1s">Bạn có muốn trở thành<br> đối tác với chúng tôi ?</span>
+                    <span class="word-content-1 animated fadeInUp delay-2s">Bạn biết đấy cửa hàng nhỏ của chúng tôi<br> cần rất nhiều tài nguyên mà chỉ có<br> bạn mới có thể giúp chúng tôi</span>
+                    <span class="word-content-3 animated fadeInUp delay-2s">Hãy tìm ra bằng cách xem bạn có <br>thể làm gì để giúp chúng tôi bằng <br>cách truy cập vào trang đối tác</span>
+                    <button class="btn-details-1"><a href="partner.html">XEM CHI TIẾT</a></button>
+               </section>
+
+               <section class="content-lv3" >
+                    <span class="word-header animated fadeInUp delay-3s">TRỰC TIẾP NẤU ĂN</span>
+                    <span class="word-content-6 animated fadeInUp delay-4s">Có phải bạn sợ thực phẩm bẩn ở trên thị trường ?</span>
+                    <span class="word-content-4 animated fadeInUp delay-4s">Bạn không phải sợ nữa</span>
+                    <span class="word-content-5 animated fadeInUp delay-4s">Bạn sẽ trở thành người giám sát của chúng tôi</span>
+                    <button class="btn-content"><a class="btn-a" href="live.html">XEM CHI TIẾT</a></button>
+
+               </section>
+                     
+               <section class="content-lv4-desktop">
+                    <span class="word-header-1 animated fadeInUp delay-5s">TIN TỨC</span>
+                    <span class="word-content-7 animated fadeInUp delay-7s">Bạn muốn tự nấu ăn cho bản thân</span>
+                    <span class="word-content-8 animated fadeInUp delay-7s">Hãy để trang tin tức giúp bạn với nhiều công thức nấu ăn mới mỗi ngày</span>
+                    <div class="recipe-1 animated bounceInLeft delay-8s">
+                        <img class="image-content-lv4" src="img/nem-ran-hanoi-600x600-300x300.jpg">
+                        <div class="text-1">
+                            <p class="text-header-1">Thành phần</p>
+                            <div>Thịt: Thịt nạc dăm, thịt cua</div>
+                            <div>Trứng gà hoặc trứng vịt</div>
+                            <div>Chọn khoảng 2-3 loại trong các loại: cà rốt, khoai môn, khoai lang, đậu phụ, củ đậu, giá đỗ, su hào</div> 
+                            <div>Miến, bánh đa nem (bánh tráng)</div>
+                            <div>Các gia vị khác: hành lá, muối, mộc nhĩ, nấm bào ngư hoặc các loại nấm khác như: nấm đông cô, nấm hương, hành khô, tỏi khô.</div>
+                        </div>
+                </div>
+                    <div class="recipe-2 animated bounceInRight delay-8s">
+                        <img class="image-content-lv4" src="img/pho_8-300x300.jpg">
+                        <div class="text-1">
+                            <p class="text-header-1">Thành phần</p>
+                            <div>0.5 kg - 1.5 kg xương heo chặt khúc, 1 giò heo trước, 1 bó sả</div>
+                            <div>1/2 kg thịt bò nạm, 3 lít nước, 1/2 muỗng cà phê muối, 1 cây chả lụa</div>
+                            <div>2 muỗng súp mắm ruốc, 2 củ hành tây, 1 cà phê ớt bột, 1 muỗng súp bột hột điều</div> 
+                            <div>1 bó nhỏ hành lá, 1 bó ngò gai, 1 bó rau quế</div>
+                            <div>1 bắp chuối, giá, chanh, 1 gói bún lớn</div>
+                        </div>
+                    </div>
+                    <button class="btn-content"><a class="btn-a" href="news.html">XEM CHI TIẾT</a></button>
+               </section>
+               <section class="content-lv4-mobile">
+                    <span class="word-header-1 animated fadeInUp delay-5s">TIN TỨC</span>
+                    <span class="word-content-7 animated fadeInUp delay-7s">Bạn muốn tự nấu ăn cho bản thân</span>
+                    <span class="word-content-8 animated fadeInUp delay-7s">Hãy để trang tin tức giúp bạn với nhiều <br>công thức nấu ăn mới mỗi ngày</span>
+                    <div class="recipe-1 animated bounceInLeft delay-8s">
+                        <img class="image-content-lv4" src="img/nem-ran-hanoi-600x600-300x300.jpg">
+                        <div class="text-1">
+                            <p class="text-header-1">Thành phần</p>
+                            <div>Thịt: Thịt nạc dăm, thịt cua</div>
+                            <div>Trứng gà hoặc trứng vịt</div>
+                            <div>Chọn khoảng 2-3 loại trong các<br> loại: cà rốt, khoai môn, khoai lang,<br> đậu phụ, củ đậu, giá đỗ, su hào</div> 
+                            <div>Miến, bánh đa nem (bánh tráng)</div>
+                            <div>Các gia vị khác: hành lá, muối,<br> mộc nhĩ, nấm bào ngư hoặc các loại nấm<br> khác như: nấm đông cô, nấm hương, hành khô, tỏi khô.</div>
+                        </div>
+                </div>
+                    <div class="recipe-2 animated bounceInRight delay-8s">
+                        <img class="image-content-lv4" src="img/pho_8-300x300.jpg">
+                        <div class="text-1">
+                            <p class="text-header-1">Thành phần</p>
+                            <div>0.5 kg - 1.5 kg xương heo chặt khúc, 1 giò heo trước, 1 bó sả</div>
+                            <div>1/2 kg thịt bò nạm, 3 lít nước, 1/2 muỗng cà phê muối, 1 cây chả lụa</div>
+                            <div>2 muỗng súp mắm ruốc, 2 củ hành tây, 1 cà phê ớt bột, 1 muỗng súp bột hột điều</div> 
+                            <div>1 bó nhỏ hành lá, 1 bó ngò gai, 1 bó rau quế</div>
+                            <div>1 bắp chuối, giá, chanh, 1 gói bún lớn, 1 bó rau muống</div>
+                        </div>
+                    </div>
+                    <button class="btn-content"><a class="btn-a" href="news.html">XEM CHI TIẾT</a></button>
+               </section>
+               <footer class="footer-desktop">
+                   <div class="content-footer">
+                       <div class="word-footer">Vị trí</div>
+                       <div class="word-footer">14 Nguyễn Đình Triểu, </div>
+                       <div class="word-footer">Quận Hai Bà Trưng, Hà Nội</div>
+                   </div>
+                   <div class="content-footer-1">
+                       <span class="word-footer ">Dịch vụ chăm sóc khách hàng</span>
+                       <div class="word-footer">096123456789</div>
+                       <div class="word-footer">7 ngày trong tuần, 7 sáng - 8 tối</div>
+                       <div class="word-footer">ShareKitchen@gmail.com</div>
+                       <span class="content-footer"></span>
+                   </div>
+                   <div class="social-network">
+                       <img src="img/instagram.svg">
+                       <img src="img/facebook-logo.svg">
+                       <img src="img/youtube-logo.svg">
+                   </div>
+                   <div class="copyright">
+                        <div class="word-footer">Bản quyền thuộc về © 2019 ShareKitchen</div>
+                   </div>
+               </footer>
+               <footer class="footer-mobile">
+                    <div class="content-footer">
+                        <div class="word-footer">Vị trí</div>
+                        <div class="word-footer">14 Nguyễn Đình Triểu, </div>
+                        <div class="word-footer">Quận Hai Bà Trưng, Hà Nội</div>
+                    </div>
+                    <div class="content-footer-1">
+                        <span class="word-footer ">Dịch vụ chăm sóc khách hàng</span>
+                        <div class="word-footer">096123456789</div>
+                        <div class="word-footer">7 ngày trong tuần, 7 sáng - 8 tối</div>
+                        <div class="word-footer">ShareKitchen@gmail.com</div>
+                        <span class="content-footer"></span>
+                    </div>
+                    <div class="social-network">
+                        <img class="image-footer" src="img/instagram.svg">
+                        <img class="image-footer" src="img/facebook-logo.svg">
+                        <img class="image-footer" src="img/youtube-logo.svg">
+                    </div>
+                    <div class="copyright">
+                         <div class="word-footer">Bản quyền thuộc về © 2019 ShareKitchen</div>
+                    </div>
+                </footer>
+           
+       </div>
+      
+       <script src="js/main.js"></script>
+       <script src="js/index.js"></script>
+       </body>    
+</html>
+

@@ -1,0 +1,70 @@
+.hero{
+	background-image: url('../images/detail.png');
+}
+.carousel-control-prev-icon{
+	color: black ;
+}
+.detail__p{
+	font-size: 2vw;
+	font-weight: 500;
+	text-transform: capitalize;
+	border-bottom: 1px solid black;
+}
+.slide{
+	margin-top: 0;
+}
+.buy{
+	border:1px solid black;	
+	width: 55%;
+	display: flex;
+}
+.substract,.quantity,.plus{
+	border-right: 1px solid black;
+	display: inline-block;
+	flex: 1;
+	font-size: 2vw;
+	text-align: center;
+	padding: 1vw 0;
+	cursor: pointer;
+}
+.plus{
+	border-right: none;
+}
+.substract,.plus{
+	background: #c4c4c4;
+}
+.addtocart{
+	background: #FFC062;
+	font-size: 2vw;
+	text-transform: capitalize;
+	color: #FFFFFF;
+	cursor: pointer;
+	transition: .3s;
+}
+.detail__text,.detail__text2{
+	font-size: 1.5vw;
+	line-height: 25px;
+	letter-spacing: 0.03em;
+	font-family: segoe ui light;
+}
+.detail__text2{
+	visibility: hidden;
+}
+@media(max-width: 320px){
+	.gt{
+		font-size: 13px;
+	}
+}
+@media(min-width: 1440px){
+	.row .ttmh,.row .tt{
+		font-size: 1vw;
+		padding: 0.6vw 1vw;
+	}
+}
+.ttmh,.tt{
+	font-size: 1.3vw;
+	padding: 1vw 1.5vw;
+}
+.addtocart:active{
+	transform: scale(0.9);
+}

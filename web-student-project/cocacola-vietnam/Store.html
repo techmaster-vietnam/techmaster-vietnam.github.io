@@ -1,0 +1,543 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cửa hàng | Coca-Cola® Việt Nam</title>
+    <link rel="icon" href="img/logo.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/store.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header--container">
+        <div class="header icon-close" onclick="close_nav()">
+          <img src="img/close.png" alt="" />
+        </div>
+        <div class="header--menu" onclick="open_nav()">
+          <i class="fas fa-bars"></i>
+        </div>
+        <div class="header--logo"><a href="index.html"><img src="img/logo.png" alt="" /></a></div>
+        <div class="menu-wrapper-web">
+          <div class="menu-block">
+            <ul>
+              <li><a href="index.html" >Trang chủ</a></li>
+              <li><a href="">Về Coca-Cola®</a></li>
+              <li><a href="cocaType.html">Sản phẩm</a></li>
+              <li><a href="brand.html">Thương hiệu</a></li>
+              <li><a href="Store.html" style="color: red;">Cửa hàng</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="header--icon">
+          <div class="search-open">
+            <div class="icon icon--search"><i class="fas fa-search"></i></div>
+          </div>
+          <div class="icon icon--shopping">
+            <a href="confirm.html"><i class="fas fa-shopping-cart"></i></a>
+          </div>
+          <div class="icon icon--profile" onclick="open_log()"><a><i class="fas fa-user"></a></i></div>
+        </div>
+      </div>
+      <div class="header--burgermenu-expand">
+        <div class="overlay-grey" onclick="close_nav()"></div>
+        <div class="menu-wrapper">
+          <div class="menu-block">
+            <ul>
+              <li><a href="index.html">Trang chủ</a></li>
+              <li><a href="">Về Coca-Cola® Việt Nam</a></li>
+              <li><a href="cocaType.html">Thông tin sản phẩm</a></li>
+              <li><a href="brand.html">Thương hiệu</a></li>
+              <li><a href="cocaProduct.html">Cá nhân hóa</a></li>
+              <li><a href="Store.html"  style="color: red;">Cửa hàng</a></li>
+              <li><a href="account.html">Tài khoản</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="header--container-login" style="display: none;">
+          <div class="login-wrapper">
+              <div class="header--login">
+                  <div class="login-logo"><img src="img/logo.png" alt="" /></div>
+              </div>
+               <div class="body--login">
+                   <h3>Chào mừng bạn đến <br>với Coca-Cola®</h3>
+                   <div class="login-input"><input type="text" placeholder="Email" id="checkusername"></div>
+                   <div class="login-input"><input type="text"placeholder="Mật khẩu" id="checkpassword"></div>
+                   <h4>Quên mật khẩu</h4>
+                   <div class="button button--login-red">
+                <button id="loginAcc">ĐĂNG NHẬP</button>
+                 </div>
+                 <h4 style="text-align: center; margin-top: 5px; margin-bottom: 5px ;">Hoặc</h4>
+                 <div class="button button--login-blue">
+                <button>Tiếp tục với facebook <i class="fab fa-facebook"></i></button>
+                 </div>
+                 <div class="button button--login-grey">
+                <button>Tiếp tục với google <i class="fab fa-google-plus"></i></button>
+                 </div>
+                <div class="login--line"></div>
+                 <h5><button onclick="open_regis()">Đăng ký</button> ngay để trở thành một phần của Coca-Cola®</h5>
+               </div>
+          </div>
+      </div>
+      <div class="header--container-regis" >
+          <div class="login-wrapper">
+              <div class="header--login">
+                  <div class="login-logo"><img src="img/logo.png" alt="" /></div>
+              </div>
+               <div class="body--login">
+                 <div class="login-input"><input type="text" placeholder="Họ và Tên"></div>
+                 <div class="login-input"><input type="date" placeholder="Tuổi"></div>
+                   <div class="login-input"><input type="text" placeholder="Email" id="username"></div>
+                   <div class="login-input"><input type="text"placeholder="Tạo mật khẩu" id="password"></div>
+                   <div class="button button--login-red" style="margin-top:10px">
+                <button id="createAcc">ĐĂNG KÝ</button>
+                 </div>
+                 <h4 style="text-align: center; margin-top: 5px; margin-bottom: 5px ;">Hoặc</h4>
+                 <div class="button button--login-blue">
+                <button>Tiếp tục với facebook <i class="fab fa-facebook"></i></button>
+                 </div>
+                 <div class="button button--login-grey">
+                <button>Tiếp tục với google <i class="fab fa-google-plus"></i></button>
+                 </div>
+                <div class="login--line"></div>
+                 <h5>Coca-Cola® một phần cuộc sống</h5>
+               </div>
+          </div>
+      </div>
+      <div class="header--container-search">
+          <div class="search-wrapper">
+              <div class="search-input">
+                  <div class="search-new-icon"><i class="fas fa-search"></i></div>
+                  <input type="text" placeholder="Search" onfocus="this.placeholder = ''"
+onblur="this.placeholder = 'Search'">
+              </div>
+          </div>
+      </div>
+    </header>
+    <main>
+        <div class="main--container-firstBanner">
+            <img src="img/Store.png" alt="">
+        </div>
+        <div class="store-wrapper">
+            <div class="h1-gold"> 
+            <h1>Coca-cola Store</h1>
+            </div>
+        <div class="main--container-secondBanner">
+            <div class="secondBanner-leftBlock">
+                <div class="leftBlock-category">
+                    <h2>Danh mục</h2>
+                    <a href=""><h3>Sản phẩm <sup>(50)</sup></h3></a>
+                    <a href=""><h3>Hoodie <sup>(12)</sup></h3></a>
+                    <a href=""><h3>Áo thun <sup>(10)</sup></h3></a>
+                    <a href=""><h3>Áo khoac <sup>(2)</sup></h3></a>
+                    <a href=""><h3>Phụ kiện <sup>(5)</sup></h3></a>
+                </div>
+                <div class="leftBlock-line"></div>
+                <div class="leftBlock-filter">
+                  <h2>Sắp xếp theo</h2>
+                    <div class="filter-color">
+                        <h4>Màu sắc</h4>
+                        <div class="color-block">
+                            <button onclick="checkmarkgrey()"><div class="grey">
+                              <span class="checkmark"><i class="fas fa-check"></i></span>
+                            </div></button>
+                            <button onclick="checkmarkwhite()"><div class="white"><span class="checkmark"><i class="fas fa-check"></i></span></div></button>
+                            <button onclick="checkmarkred()"><div class="red"><span class="checkmark"><i class="fas fa-check"></i></span></div></button>
+                            <button onclick="checkmarkblack()"><div class="black"><span class="checkmark"><i class="fas fa-check"></i></span></div></button>
+                        </div>
+                    </div>
+                    <div class="filter-size">
+                        <h4>Size</h4>
+                        <button id="dropButton"><div class="size-block"><h5 id="dropButton-text">S</h5>  
+                        <span id="size-chevron"><i class="fas fa-chevron-up"></i></span></div></button>
+                        <div class="dropDown size-block-drop">
+                            <a><h5 class="size-item">M</h5></a>
+                            <a><h5 class="size-item">L</h5></a>
+                            <a><h5 class="size-item">XL</h5></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="secondBanner-rightBlock">
+                <div class="rightBlock-Order">
+                    <h2 style="position: relative;">Sắp xếp theo: 
+                      <ul id="filter-drp">A-Z  </ul><span style="padding-top: 5px;" id="filter-chevron"><i class="fas fa-chevron-up"></i></span>
+                      <div class="order-drop">
+                      <li class="drop-item">Giá thấp đến cao </li>
+                      <li class="drop-item">Giá cao đến thấp</li>
+                      </div>
+                      </h2>
+                      
+              
+                    <h3>Sản phẩm 1-12 trên 50</h3>
+                </div>
+                <div class="rightBlock-product">
+                    <div class="product-item">
+                      <a href="product.html">
+                        <div class="item-img"><img src="img/hoodieDo.png" alt=""></div>
+                        <div class="item-name">
+                            <h6>ÁO HOODIE ĐỎ</h6>
+                        </div>
+                        <div class="item-price">
+                            <div class="price-sale">
+                                <h6>800.000</h6>
+                            </div>
+                            <div class="price-normal">
+                                <h6>1.000.000</h6>
+                            </div>
+                        </div>
+                        <div class="item-add">
+                          <button class="button-basket">thêm vào giỏ</button>
+                          <div class="icon-heart"><i class="far fa-heart"></i></div>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="product-item">
+                      <a href="product.html">
+                        <div class="item-img"><img src="img/hoodie2.png" alt=""></div>
+                        <div class="item-name">
+                            <h6>ÁO HOODIE COKE</h6>
+                        </div>
+                        <div class="item-price">
+                            <div class="price-sale">
+                                <h6>800.000</h6>
+                            </div>
+                            <div class="price-normal">
+                                <h6>1.000.000</h6>
+                            </div>
+                        </div>
+                        <div class="item-add">
+                          <button class="button-basket">thêm vào giỏ</button>
+                          <div class="icon-heart"><i class="far fa-heart"></i></div>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="product-item">
+                      <a href="product.html">
+                        <div class="item-img"><img src="img/hoodie2.1.png" alt=""></div>
+                        <div class="item-name">
+                            <h6>ÁO HOODIE XÁM</h6>
+                        </div>
+                        <div class="item-price">
+                            <div class="price-sale">
+                                <h6>600.000</h6>
+                            </div>
+                            <div class="price-normal">
+                                <h6>1.000.000</h6>
+                            </div>
+                        </div>
+                        <div class="item-add">
+                          <button class="button-basket">thêm vào giỏ</button>
+                          <div class="icon-heart"><i class="far fa-heart"></i></div>
+                        </div>
+                        </a>
+                    </div>
+                     <div class="product-item">
+                       <a href="product.html">
+                        <div class="item-img"><img src="img/shirt.jpg" alt=""></div>
+                        <div class="item-name">
+                            <h6>ÁO PHÔNG TRẮNG</h6>
+                        </div>
+                        <div class="item-price">
+                            <div class="price-sale">
+                                <h6>300.000</h6>
+                            </div>
+                            <div class="price-normal">
+                                <h6>500.000</h6>
+                            </div>
+                        </div>
+                        <div class="item-add">
+                          <button class="button-basket">thêm vào giỏ</button>
+                          <div class="icon-heart"><i class="far fa-heart"></i></div>
+                        </div>
+                        </a>
+                    </div>
+                     <div class="product-item">
+                       <a href="product.html">
+                        <div class="item-img"><img src="img/shirt3.jpg" alt=""></div>
+                        <div class="item-name">
+                            <h6>ÁO PHÔNG XANH</h6>
+                        </div>
+                        <div class="item-price">
+                            <div class="price-sale">
+                                <h6>500.000</h6>
+                            </div>
+                            
+                        </div>
+                        <div class="item-add">
+                          <button class="button-basket">thêm vào giỏ</button>
+                          <div class="icon-heart"><i class="far fa-heart"></i></div>
+                        </div>
+                        </a>
+                    </div>
+                     <div class="product-item">
+                       <a href="product.html">
+                        <div class="item-img"><img src="img/shirt4.jpg" alt=""></div>
+                        <div class="item-name">
+                            <h6>ÁO PHÔNG ĐỎ</h6>
+                        </div>
+                        <div class="item-price">
+                            <div class="price-sale">
+                                <h6>300.000</h6>
+                            </div>
+                            <div class="price-normal">
+                                <h6>5.000.000</h6>
+                            </div>
+                        </div>
+                        <div class="item-add">
+                          <button class="button-basket">thêm vào giỏ</button>
+                          <div class="icon-heart"><i class="far fa-heart"></i></div>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="product-item">
+                      <a href="product.html">
+                        <div class="item-img"><img src="img/sweater.png" alt=""></div>
+                        <div class="item-name">
+                            <h6>ÁO KHOÁC ĐEN</h6>
+                        </div>
+                        <div class="item-price">
+                            <div class="price-sale">
+                                <h6>800.000</h6>
+                            </div>
+                            <div class="price-normal">
+                                <h6>1.000.000</h6>
+                            </div>
+                        </div>
+                        <div class="item-add">
+                          <button class="button-basket">thêm vào giỏ</button>
+                          <div class="icon-heart"><i class="far fa-heart"></i></div>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="product-item">
+                      <a href="product.html">
+                        <div class="item-img"><img src="img/sock.png" alt=""></div>
+                        <div class="item-name">
+                            <h6>TẤT COKE</h6>
+                        </div>
+                        <div class="item-price">
+                            <div class="price-sale">
+                                <h6>200.000</h6>
+                            </div>
+                  
+                        </div>
+                        <div class="item-add">
+                          <button class="button-basket">thêm vào giỏ</button>
+                          <div class="icon-heart"><i class="far fa-heart"></i></div>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="product-item">
+                      <a href="product.html">
+                        <div class="item-img"><img src="img/cup.png" alt=""></div>
+                        <div class="item-name">
+                            <h6>CỐC GẤU</h6>
+                        </div>
+                        <div class="item-price">
+                            <div class="price-sale">
+                                <h6>150.000</h6>
+                            </div>
+                          
+                        </div>
+                        <div class="item-add">
+                          <button class="button-basket">thêm vào giỏ</button>
+                          <div class="icon-heart"><i class="far fa-heart"></i></div>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="product-item">
+                      <a href="product.html">
+                        <div class="item-img"><img src="img/shock.png" alt=""></div>
+                        <div class="item-name">
+                            <h6>TẤT ĐỎ</h6>
+                        </div>
+                        <div class="item-price">
+                            <div class="price-sale">
+                                <h6>200.000</h6>
+                            </div>
+                        
+                        </div>
+                        <div class="item-add">
+                          <button class="button-basket">thêm vào giỏ</button>
+                          <div class="icon-heart"><i class="far fa-heart"></i></div>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="product-item">
+                      <a href="cocaProduct.html">
+                        <div class="item-img"><img src="img/cupHoodie.png" alt=""></div>
+                        <div class="item-name">
+                            <h6>CÁ NHÂN HÓA COKE</h6>
+                        </div>
+                        <div class="item-price">
+                            <div class="price-sale">
+                                <h6>800.000</h6>
+                            </div>
+                            <div class="price-normal">
+                                <h6>1.000.000</h6>
+                            </div>
+                        </div>
+                        <div class="item-add">
+                          <button class="button-basket">thêm vào giỏ</button>
+                          <div class="icon-heart"><i class="far fa-heart"></i></div>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="product-item">
+                      <a href="product.html">
+                        <div class="item-img"><img src="img/comboShirt.png" alt=""></div>
+                        <div class="item-name">
+                            <h6>BST TẤT COKE</h6>
+                        </div>
+                        <div class="item-price">
+                            <div class="price-sale">
+                                <h6>500.000</h6>
+                            </div>
+                            <div class="price-normal">
+                                <h6>1.000.000</h6>
+                            </div>
+                        </div>
+                        <div class="item-add">
+                          <button class="button-basket">thêm vào giỏ</button>
+                          <div class="icon-heart"><i class="far fa-heart"></i></div>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="store-pageNumb">
+          <ul>
+            <li class="page" onclick="prevPage()"><i class="fas fa-chevron-left"></i></li>
+            <li class="page" onclick="pageColor1()" style="color: black;">1,</li>
+            <li class="page" onclick="pageColor2()">2,</li>
+            <li class="page" onclick="pageColor3()">3,</li>
+            <li class="page" onclick="pageColor4()">4,</li>
+            <li class="page" onclick="pageColor5()">5,</li>
+            <li class="page" onclick="nextPage()"><i class="fas fa-chevron-right"></i></li>
+          </ul>
+        </div>
+        </div>
+        <div class="main--container-thirdBanner">
+          <div class="thirdBanner-wrapper">
+          <div class="thirdBanner-des"><h3>Nhận thông tin khuyến mãi mới nhất từ Coca-Cola Việt Nam</h3></div>
+          <div class="input input--discount">
+          <input type="text" placeholder="Địa chỉ Mail" />
+          <button>ĐĂNG KÝ</button>
+        </div>
+        </div>
+        </div>
+    </main>
+    <footer>
+      <div class="footer--top-container">
+        <div class="block block-about">
+          <ul>
+            <li>
+              <a href=""><span>VỀ CHÚNG TÔI</span></a>
+            </li>
+            <li><a href="">Về công ty Coca-Cola</a></li>
+            <li><a href="">Tết cùng coca</a></li>
+            <li><a href="">Hỏi đáp</a></li>
+            <li><a href="">Chính sách</a></li>
+            <li><a href="">Liên hệ</a></li>
+          </ul>
+        </div>
+        <div class="block block-content">
+          <ul>
+            <li>
+              <a href=""><span>CHỦ ĐỀ</span></a>
+            </li>
+            <li><a href="">Định hướng phát triển</a></li>
+            <li><a href="">Cộng đồng</a></li>
+            <li><a href="">Hoạt động</a></li>
+            <li><a href="">Con người</a></li>
+          </ul>
+        </div>
+        <div class="block block-Brands">
+          <ul>
+            <li>
+              <a href=""><span>THƯƠNG HIỆU</span></a>
+            </li>
+            <li><a href="">Coca-Cola</a></li>
+            <li><a href="">Minute Maid Nutri Boost</a></li>
+            <li><a href="">Schweppes</a></li>
+            <li><a href="">Sprite</a></li>
+            <li><a href="">Fanta</a></li>
+            <li><a href="">Aquarius</a></li>
+            <li><a href="">Fuze Tea</a></li>
+            <li><a href="">Dasani</a></li>
+          </ul>
+        </div>
+        <div class="block block-Career">
+          <a href=""><span>CƠ HỘI VIỆC LÀM</span></a>
+          <div class="input inpute--career">
+            <input type="text" placeholder="Họ & Tên" />
+          </div>
+          <div class="input inpute--career">
+            <input type="text" placeholder="Địa chỉ Mail" />
+          </div>
+          <div class="input inpute--career">
+            <input type="text" placeholder="Số điện thoại" />
+          </div>
+          <div class="button button--send-red">
+            <button>GỬI</button>
+          </div>
+        </div>
+      </div>
+      <div class="footer--line"></div>
+      <div class="footer--bottom-container">
+        <div class="footer--logo">
+          <img src="img/footer-logo.png" alt="" />
+          <div class="footer-icon-responsive">
+            <div class="icon icon-facebook">
+              <i class="fab fa-facebook-square"></i>
+            </div>
+            <div class="icon icon-insta">
+              <i class="fab fa-instagram-square"></i>
+            </div>
+            <div class="icon icon-twitter">
+              <i class="fab fa-twitter-square"></i>
+            </div>
+            <div class="icon icon-youtube">
+              <i class="fab fa-youtube-square"></i>
+            </div>
+          </div>
+        </div>
+        <div class="footer--title-copyright">
+          <h3>© 2021 The Coca-Cola vCompany. All rights reserved.</h3>
+        </div>
+        <div class="footer-icon">
+          <div class="icon icon-facebook">
+            <i class="fab fa-facebook-square"></i>
+          </div>
+          <div class="icon icon-insta">
+            <i class="fab fa-instagram-square"></i>
+          </div>
+          <div class="icon icon-twitter">
+            <i class="fab fa-twitter-square"></i>
+          </div>
+          <div class="icon icon-youtube">
+            <i class="fab fa-youtube-square"></i>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="js/all.min.js"></script>
+   <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/store.js"></script>
+</html>

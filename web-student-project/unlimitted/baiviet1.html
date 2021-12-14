@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>14 Phong cách thiết kế</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/headerstyle.css"/>
+    <link rel="stylesheet" href="css/styleindex.css"/>
+    <link rel="stylesheet" href="css/tainguyenmienphi.css"/>
+    <link rel="stylesheet" href="css/header2style.css"/>
+    <link rel="stylesheet" href="css/thanhtoan.css"/>
+    <link rel="stylesheet" href="css/baiviet.css"/>
+    <link rel="stylesheet" href="css/reponsive.css"/>
+    <link rel="stylesheet" href="css/hover.css"/>
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+  </head>
+  <body>
+    <header>
+      <div class="menu">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="d-flex justify-content-between menu-content">
+              <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="index.html">Trang chủ</a></li>
+                <li class="nav-item"><a class="nav-link" href="tainguyenmienphi.html">Tài nguyên miễn phí</a></li>
+                <li class="nav-item"><a class="nav-link" href="tainguyenvip.html">Tài nguyên VIP</a></li>
+                <li class="nav-item" id="nav-mua-vip"><a class="nav-link" href="muavip.html">Mua VIP/SVIP</a></li>
+              </ul>
+              <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="baiviet.html">Bài viết</a></li>
+                <li class="nav-item">
+                  <button class="btn btn-primary nav-link nav-login-button" type="button" data-toggle="modal" data-target="#exampleModal">Đăng nhập/Đăng ký</button>
+                </li>
+                <li class="nav-item"><a class="nav-link nav-profile nav-profile-hover" href="#"><img src="img/user1.png" alt=""/></a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content login-box">
+            <div class="login-button-box">
+              <div id="btn-login-box"></div>
+              <button class="login-button" onclick="login()"> 
+                <p>Đăng nhập</p>
+              </button>
+              <button class="login-button" onclick="register()"> 
+                <p>Register</p>
+              </button>
+            </div>
+            <div class="login-logo"><img class="img-fluid" src="img/logo.png" alt=""/></div>
+            <div class="social-icons"><img src="img/dangnhap/icon1.png" alt="icon1"/><img src="img/dangnhap/icon2.png" alt="icon2"/><img src="img/dangnhap/icon3.png" alt="icon3"/></div>
+            <form class="input-group" id="login-click">
+              <input class="input-field" id="name" type="text" name="name" placeholder="Email hoặc tên tài khoản" required="required"/>
+              <input class="input-field" id="pass" type="text" pass="pass" placeholder="Mật khẩu" required="required"/>
+              <div class="check-box">             
+                <input type="checkbox" name="name"/>
+                <p class="check-box-text">Ghi nhớ tài khoản</p>
+              </div>
+              <button class="submit-btn" type="submit"> 
+                <p>Đăng nhập</p>
+              </button>
+              <div class="xsmall" id="login-miss"></div>
+            </form>
+            <form class="input-group" id="register-click">
+              <input class="input-field" type="text" name="name" placeholder="Email hoặc tên tài khoản" required="required"/>
+              <input class="input-field" type="text" name="name" placeholder="Mật khẩu" required="required"/>
+              <input class="input-field" type="text" name="name" placeholder="Nhập lại mật khẩu" required="required"/>
+              <input class="input-field" type="text" name="name" placeholder="Tải avatar lên" required="required"/>
+              <div class="tai-ava"><a href="">
+                  <div class="svip-button-index svip-button goi-button d-flex justify-content-center">
+                    <p>Tải lên   </p>
+                  </div></a></div>
+              <div class="check-box">             
+                <input type="checkbox" name="name"/>
+                <p class="check-box-text">Ghi nhớ tài khoản</p>
+              </div>
+              <button class="submit-btn" type="submit"> 
+                <p>Đăng ký     </p>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="header-content-box">
+        <div class="header-content-tai-nguyen-mien-phi-box">
+          <div class="profile profilea" id="profile3">
+            <div class="profile-box">
+              <div class="profile-avatar d-flex justify-content-center">
+                <div>
+                  <col-10><img class="img-fluid" src="img/avatar3.png" alt="avatar"/></col-10>
+                  <div class="d-flex justify-content-center"> <img class="img-fluid" src="img/crown.png" alt="VIP"/>
+                    <p class="text-center small">Phan Trí</p>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex justify-content-center">   
+                <div class="profile-content">
+                  <div class="profile-columnn d-flex justify-content-center">
+                    <p class="profile-text">Email:</p>
+                    <p>&nbsp;phantri3@gmail.com</p>
+                  </div>
+                  <div class="profile-columnn d-flex justify-content-center">
+                    <p class="profile-text">Loại tài khoản:</p>
+                    <p>&nbsp;Tài khoản SVIP</p>
+                  </div>
+                  <div class="profile-columnn d-flex justify-content-center">
+                    <p class="profile-text">Ngày hết hạn:</p>
+                    <p>&nbsp;25/08/2021</p>
+                  </div>
+                  <div class="profile-columnn d-flex justify-content-center">
+                    <p class="profile-text">Đã tải xuống:</p>
+                    <p>&nbsp;203 file</p>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex justify-content-center"><a id="dang-xuat-btn3" href="">
+                  <p>Đăng xuất </p></a></div>
+            </div>
+          </div>
+          <div class="profile profilea" id="profile2">
+            <div class="profile-box">
+              <div class="profile-avatar d-flex justify-content-center">
+                <div>
+                  <col-10><img class="img-fluid" src="img/avatar2.png" alt="avatar"/></col-10>
+                  <div class="d-flex justify-content-center"> <img class="img-fluid" src="img/star2.png" alt="VIP"/>
+                    <p class="text-center small">Phan Trí</p>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex justify-content-center">   
+                <div class="profile-content">
+                  <div class="profile-columnn d-flex justify-content-center">
+                    <p class="profile-text">Email:</p>
+                    <p>&nbsp;phantri2@gmail.com</p>
+                  </div>
+                  <div class="profile-columnn d-flex justify-content-center">
+                    <p class="profile-text">Loại tài khoản:</p>
+                    <p>&nbsp;Tài khoản VIP</p>
+                  </div>
+                  <div class="profile-columnn d-flex justify-content-center">
+                    <p class="profile-text">Ngày hết hạn:</p>
+                    <p>&nbsp;15/09/2021</p>
+                  </div>
+                  <div class="profile-columnn d-flex justify-content-center">
+                    <p class="profile-text">Đã tải xuống:</p>
+                    <p>&nbsp;430 file</p>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex justify-content-center"><a href="muavip.html">
+                  <div class="svip-button svip-button2 goi-button d-flex justify-content-center">
+                    <p class="small">MUA SVIP</p>
+                  </div></a></div>
+              <div class="d-flex justify-content-center"><a id="dang-xuat-btn2" href="">
+                  <p>Đăng xuất  </p></a></div>
+            </div>
+          </div>
+          <div class="profile profilea" id="profile1">
+            <div class="profile-box">
+              <div class="profile-avatar d-flex justify-content-center">
+                <div>
+                  <col-10><img class="img-fluid" src="img/avatar1.png" alt="avatar"/></col-10>
+                  <p class="text-center small">Phan Trí</p>
+                </div>
+              </div>
+              <div class="d-flex justify-content-center">   
+                <div class="profile-content">
+                  <div class="profile-columnn d-flex justify-content-center">
+                    <p class="profile-text">Email:</p>
+                    <p>&nbsp;phantri@gmail.com</p>
+                  </div>
+                  <div class="profile-columnn d-flex justify-content-center">
+                    <p class="profile-text">Loại tài khoản:</p>
+                    <p>&nbsp;Tài khoản thường</p>
+                  </div>
+                  <div class="profile-columnn d-flex justify-content-center">
+                    <p class="profile-text">Ngày hết hạn:</p>
+                    <p>&nbsp;28/11/2021</p>
+                  </div>
+                  <div class="profile-columnn d-flex justify-content-center">
+                    <p class="profile-text">Đã tải xuống:</p>
+                    <p>&nbsp;132 file</p>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex justify-content-center"><a href="muavip.html">
+                  <div class="svip-button goi-button d-flex justify-content-center">
+                    <p class="small">MUA VIP/SVIP</p>
+                  </div></a></div>
+              <div class="d-flex justify-content-center"><a id="dang-xuat-btn1" href="">
+                  <p>Đăng xuất</p></a></div>
+            </div>
+          </div>
+          <div class="header-content">
+            <div class="tieu-de-trang-box">
+              <div class="tieu-de-trang">
+                <div class="d-flex justify-content-center">
+                  <div class="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-5">
+                    <div class="d-flex justify-content-center">
+                      <p class="xlarge ten-bai-viet">14 Phong cách thiết kế bạn cần biết</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex justify-content-center">
+                <div class="chu-thich-trang chu-thich-trang-mien-phi d-flex justify-content-center flex-column">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="bai-viet container-md">
+      <div class="mo-dau-bai-viet">
+        <p>Tối giản, trừu tượng, hay vintage? Bạn lựa chọn phong cách thiết kế nào để theo đuổi ? Những phong cách thiết kế nào đang dẫn đầu xu hướng trong năm nay. Bài viết dưới đây sẽ miêu tả hàng loạt các phong cách thiết kế hình ảnh khác nhau, đi kèm với ví dụ cụ thể.</p>
+        <p>Đồng thời, cũng là các gợi ý kết hợp các phong cách thiết kế khác nhau lại với nhau để tạo ra sự sáng tạo độc đáo. Ví dụ như, bạn có thể tạo ra những thiết kế vui nhộn bằng việc kết hợp giữa phong cách thiết kế “phẳng” và “minh họa” lại với nhau. Hoặc tạo ra những logo sang trọng bằng cách kết hợp phong cách vintage và nam tính.</p>
+        <p>Designers: tìm hiểu hướng dẫn này để giúp định hình phong cách thiết kế của bản thân cũng như khám phá ra các cách kết hợp sáng tạo mê hoặc.</p>
+        <p>Khách hàng: tìm hiểu hướng dẫn này để tìm ra những thiết kế hình ảnh mô tả chuẩn xác đặc tính thương hiệu của bạn.</p>
+      </div>
+      <div class="bai-viet-border1">
+        <p class="small">1.Phong cách thiết kế 3D </p>
+        <div class="row d-flex justify-content-center">
+          <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 bai-viet-img"><img class="img-fluid" src="img/baiviet/baiviet1-1.png" alt="baiviet1"/></div>
+          <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 bai-viet-text">
+            <p>Phong cách thiết kế 3D rõ ràng tạo sự chân thực và sống động hơn so với các thiết kể phẳng. Bằng việc đem lại hình ảnh đa chiều, người xem sẽ cảm thấy bị thu hút và kích thích nhiều hơn. Phong cách thiết kế 3D thường được sử dụng để miêu tả và tái hiện những vật có thật ngoài cuộc sống. </p>
+            <p class="bai-viet-weight">Đặc tính:</p>
+            <p>1. Minh họa chiều sâu, thực tế</p>
+            <p>2. Cần hiểu về độ sáng của từng phần trong thiết kế</p>
+            <p>3. Độ mờ, bóng của vật và màu sắc</p>
+          </div>
+        </div>
+      </div>
+      <div class="bai-viet-border2 bai-viet-down">
+        <p class="small">2.Phong cách thiết kế trừu tượng</p>
+        <div class="row d-flex justify-content-center">
+          <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 bai-viet-text2">
+            <p>Trừu tượng là phong cách thiết kế tạo ra những góc nhìn độc lập riêng biệt của vật thể so với ngoài đời. Để có được sản phẩm thiết kế theo phong cách trừu tượng, bạn cần kết hợp các yếu tố về màu sắc, hình khối dựa trên tư duy và lối tiếp cận của chính designer, khách hàng hoặc cả hai.</p>
+            <p class="bai-viet-weight">Đặc tính:</p>
+            <p>1. Là đại diện “nghệ thuật, trừu tượng” cho một sự vật, nội dung cụ thể</p>
+            <p>2. Thể hiện diễn giải cá nhân của người thiết kế</p>
+          </div>
+          <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 bai-viet-img2"><img class="img-fluid" src="img/baiviet/baiviet1-2.png" alt="baiviet2"/></div>
+        </div>
+      </div>
+      <div class="bai-viet-border1 bai-viet-down">
+        <p class="small">3.Phong cách thiết kế tối giản</p>
+        <div class="row d-flex justify-content-center">
+          <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 bai-viet-img"><img class="img-fluid" src="img/baiviet/baiviet1-3.png" alt="baiviet3"/></div>
+          <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 bai-viet-text">
+            <p>Phong cách thiết kế tối giản là kỹ thuật đòi hỏi sử dụng khoảng trống một cách tinh tế. Phong cách này đề cao việc loại bỏ những element không cần thiết trong thiết kế vì mục tiêu truyền đạt thông điệp một cách hiệu quả nhất.</p>
+            <p class="bai-viet-weight">Đặc tính:</p>
+            <p>1. Sử dụng số lượng ít các màu sắc</p>
+            <p>2. Sử dụng các layout đơn giản tinh tế</p>
+            <p>3. Trái ngược với phong cách trừu tượng</p>
+          </div>
+        </div>
+      </div>
+      <div class="bai-viet-border2 bai-viet-down">
+        <p class="small">4.Phong cách thiết kế nghệ thuật khái niệm - Conceptual art</p>
+        <div class="row d-flex justify-content-center">
+          <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 bai-viet-text2">
+            <p>Conceptual art là một nhánh khác của phong cách thiết kế minh họa, và nó là những mô tả ẩn dụ tinh tế cho các ý tưởng thể hiện bằng hình ảnh. Phong cách này đòi hỏi người thiết kế phải tưởng tượng và sáng tạo nhiều hơn trong quá trình thực hiện.</p>
+            <p class="bai-viet-weight">Đặc tính:</p>
+            <p>1. Được sử dụng rất nhiều trong hoạt hình và game</p>
+            <p>2. Biến các suy nghĩ trừu tượng mờ của người thiết kế thành thứ người xem có thể nhìn thấy và hiểu được.</p>
+          </div>
+          <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 bai-viet-img2"><a href=""><img class="img-fluid" src="img/baiviet/baiviet1-4.jpg" alt="baiviet4"/></a></div>
+        </div>
+      </div>
+      <div class="bai-viet-border1 bai-viet-down">
+        <p class="small">5.Phong cách thiết kế nữ tính</p>
+        <div class="row d-flex justify-content-center">
+          <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 bai-viet-img"><img class="img-fluid" src="img/baiviet/baiviet1-5.png" alt="baiviet3"/></div>
+          <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 bai-viet-text">
+            <p>Đối lập với phong cách thiết kế nam tính, designer thường áp dụng cho các sản phẩm liên quan tới phụ nữ bằng lựa cách lựa chọn những bảng màu sắc mềm, họa tiết hoa và chữ viết tay hoặc cách điệu.</p>
+            <p class="bai-viet-weight">Đặc tính:</p>
+            <p>1. Thường kết hợp với các font chữ uốn lượn, cách điệu, mỏng.</p>
+            <p>2. Kết hợp với các tone màu pastels</p>
+            <p>3. Mang các yếu tố liên quan tới phụ nữ, hoa và các sản phẩm thời trang (son môi, giày cao gót,..)</p>
+          </div>
+        </div>
+      </div>
+      <div class="bai-viet-border2 bai-viet-down">
+        <p class="small">6.Phong cách thiết kế phẳng</p>
+        <div class="row d-flex justify-content-center">
+          <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 bai-viet-text2">
+            <p>Phong cách này cũng được coi là một nhánh khác của thiết kế tối giản: yêu cầu sử dụng tối giản các màu sắc và thành tố trong thiết kế.</p>
+            <p class="bai-viet-weight">Đặc tính:</p>
+            <p>1. Sử dụng số lượng ít các màu sắc</p>
+            <p>2. Đề cao sự đơn giản, chủ nghĩa “less is more”</p>
+          </div>
+          <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 bai-viet-img2"><img class="img-fluid" src="img/baiviet/baiviet1-6.jpg" alt="baiviet4"/></div>
+        </div>
+      </div>
+      <div class="bai-viet-border1 bai-viet-down">
+        <p class="small">7.Phong cách thiết kế nữ tính</p>
+        <div class="row d-flex justify-content-center">
+          <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 bai-viet-img"><img class="img-fluid" src="img/baiviet/baiviet1-5.png" alt="baiviet3"/></div>
+          <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 bai-viet-text">
+            <p>Đối lập với phong cách thiết kế nam tính, designer thường áp dụng cho các sản phẩm liên quan tới phụ nữ bằng lựa cách lựa chọn những bảng màu sắc mềm, họa tiết hoa và chữ viết tay hoặc cách điệu.</p>
+            <p class="bai-viet-weight">Đặc tính:</p>
+            <p>1. Thường kết hợp với các font chữ uốn lượn, cách điệu, mỏng.</p>
+            <p>2. Kết hợp với các tone màu pastels</p>
+            <p>3. Mang các yếu tố liên quan tới phụ nữ, hoa và các sản phẩm thời trang (son môi, giày cao gót,..)</p>
+          </div>
+        </div>
+      </div>
+      <div class="bai-viet-border2 bai-viet-down">
+        <p class="small">8.Phong cách thiết kế phẳng</p>
+        <div class="row d-flex justify-content-center">
+          <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 bai-viet-text2">
+            <p>Phong cách này cũng được coi là một nhánh khác của thiết kế tối giản: yêu cầu sử dụng tối giản các màu sắc và thành tố trong thiết kế.</p>
+            <p class="bai-viet-weight">Đặc tính:</p>
+            <p>1. Sử dụng số lượng ít các màu sắc</p>
+            <p>2. Đề cao sự đơn giản, chủ nghĩa “less is more”</p>
+          </div>
+          <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 bai-viet-img2"><img class="img-fluid" src="img/baiviet/baiviet1-6.jpg" alt="baiviet4"/></div>
+        </div>
+      </div>
+      <div class="bai-viet-border1 bai-viet-down">
+        <p class="small">9.Phong cách thiết kế vui nhộn</p>
+        <div class="row d-flex justify-content-center">
+          <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 bai-viet-img"><img class="img-fluid" src="img/baiviet/baiviet1-7.jpg" alt="baiviet3"/></div>
+          <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 bai-viet-text">
+            <p>Phong cách này đem lại cho ngày nhìn cảm giác tươi tắn, năng động, và dễ dàng bị thu hút bởi cách sử dụng màu sắc của mình. Thường được kết hợp với các yếu tốt hoạt hình hoặc vẽ minh họa.</p>
+            <p class="bai-viet-weight">Đặc tính:</p>
+            <p>1. Thường được kết hợp động vật hoặc con người dưới dạng hoạt hình</p>
+            <p>2. Sử dụng nhiều màu sắc bắt mắt</p>
+          </div>
+        </div>
+      </div>
+      <div class="bai-viet-border2 bai-viet-down">
+        <p class="small">10.Phong cách thiết kế hình học</p>
+        <div class="row d-flex justify-content-center">
+          <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 bai-viet-text2">
+            <p>Phong cách này hướng tới việc sử dụng các đường thẳng, các hình khối để thiết kế. Là sự kết hợp giữa chữ nhật, hình vuông, tam giác và nhiều khối khác...</p>
+            <p class="bai-viet-weight">Đặc tính:</p>
+            <p>1. Sử dụng đa phần là các đường thẳng</p>
+            <p>2. Áp dụng tính đối xứng</p>
+          </div>
+          <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 bai-viet-img2"><img class="img-fluid" src="img/baiviet/baiviet1-8.jpg" alt="baiviet4"/></div>
+        </div>
+      </div>
+      <div class="bai-viet-border1 bai-viet-down">
+        <p class="small">11.Phong cách thiết kế vui nhộn</p>
+        <div class="row d-flex justify-content-center">
+          <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 bai-viet-img"><img class="img-fluid" src="img/baiviet/baiviet1-7.jpg" alt="baiviet3"/></div>
+          <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 bai-viet-text">
+            <p>Phong cách này đem lại cho ngày nhìn cảm giác tươi tắn, năng động, và dễ dàng bị thu hút bởi cách sử dụng màu sắc của mình. Thường được kết hợp với các yếu tốt hoạt hình hoặc vẽ minh họa.</p>
+            <p class="bai-viet-weight">Đặc tính:</p>
+            <p>1. Thường được kết hợp động vật hoặc con người dưới dạng hoạt hình</p>
+            <p>2. Sử dụng nhiều màu sắc bắt mắt</p>
+          </div>
+        </div>
+      </div>
+      <div class="bai-viet-border2 bai-viet-down">
+        <p class="small">12.Phong cách thiết kế trừu tượng</p>
+        <div class="row d-flex justify-content-center">
+          <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 bai-viet-text2">
+            <p>Trừu tượng là phong cách thiết kế tạo ra những góc nhìn độc lập riêng biệt của vật thể so với ngoài đời. Để có được sản phẩm thiết kế theo phong cách trừu tượng, bạn cần kết hợp các yếu tố về màu sắc, hình khối dựa trên tư duy và lối tiếp cận của chính designer, khách hàng hoặc cả hai.</p>
+            <p class="bai-viet-weight">Đặc tính:</p>
+            <p>1. Là đại diện “nghệ thuật, trừu tượng” cho một sự vật, nội dung cụ thể</p>
+            <p>2. Thể hiện diễn giải cá nhân của người thiết kế</p>
+          </div>
+          <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 bai-viet-img2"><img class="img-fluid" src="img/baiviet/baiviet1-2.png" alt="baiviet2"/></div>
+        </div>
+      </div>
+      <div class="bai-viet-border1 bai-viet-down">
+        <p class="small">13.Phong cách thiết kế tối giản</p>
+        <div class="row d-flex justify-content-center">
+          <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 bai-viet-img"><img class="img-fluid" src="img/baiviet/baiviet1-3.png" alt="baiviet3"/></div>
+          <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 bai-viet-text">
+            <p>Phong cách thiết kế tối giản là kỹ thuật đòi hỏi sử dụng khoảng trống một cách tinh tế. Phong cách này đề cao việc loại bỏ những element không cần thiết trong thiết kế vì mục tiêu truyền đạt thông điệp một cách hiệu quả nhất.</p>
+            <p class="bai-viet-weight">Đặc tính:</p>
+            <p>1. Sử dụng số lượng ít các màu sắc</p>
+            <p>2. Sử dụng các layout đơn giản tinh tế</p>
+            <p>3. Trái ngược với phong cách trừu tượng</p>
+          </div>
+        </div>
+      </div>
+      <div class="bai-viet-border2 bai-viet-down">
+        <p class="small">14.Phong cách thiết kế nghệ thuật khái niệm - Conceptual art</p>
+        <div class="row d-flex justify-content-center">
+          <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 bai-viet-text2">
+            <p>Conceptual art là một nhánh khác của phong cách thiết kế minh họa, và nó là những mô tả ẩn dụ tinh tế cho các ý tưởng thể hiện bằng hình ảnh. Phong cách này đòi hỏi người thiết kế phải tưởng tượng và sáng tạo nhiều hơn trong quá trình thực hiện.</p>
+            <p class="bai-viet-weight">Đặc tính:</p>
+            <p>1. Được sử dụng rất nhiều trong hoạt hình và game</p>
+            <p>2. Biến các suy nghĩ trừu tượng mờ của người thiết kế thành thứ người xem có thể nhìn thấy và hiểu được.</p>
+          </div>
+          <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 bai-viet-img2"><a href=""><img class="img-fluid" src="img/baiviet/baiviet1-4.jpg" alt="baiviet4"/></a></div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="d-flex footer">
+        <div class="col-5 d-flex align-items-center"><a class="footer-link" href="lienhe.html">
+            <p class="footer-small">Liên hệ</p></a><a class="footer-link" href="vechungtoi.html">
+            <p class="footer-small">Về chúng tôi</p></a><a class="footer-link" href="dieukhoan.html">
+            <p class="footer-small">Điều khoản</p></a></div>
+        <div class="col-2 footer-logo d-flex align-items-center"><a href="index.html"><img class="img-fluid" src="img/logo.png" alt="logo"/></a></div>
+        <div class="col-5 d-flex align-items-center justify-content-end"><a class="footer-icon" href=""><img src="img/facebook.png" alt="facebook"/></a><a class="footer-icon" href=""><img src="img/twister.png" alt="twister"/></a><a class="footer-icon" href=""><img src="img/youtube.png" alt="youtube"/></a></div>
+      </div>
+    </footer>
+  </body>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"></script>
+  <script src="js/dangnhap.js"></script>
+  <script src="js/header.js"></script>
+</html>

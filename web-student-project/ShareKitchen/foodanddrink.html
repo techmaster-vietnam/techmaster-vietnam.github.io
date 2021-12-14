@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ShareKitchen</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"  crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="css/foodanddrink.css">
+        <link rel="stylesheet" type="text/css" href="css/fontawesome-with-css/css/all.css">
+        
+    </head>
+    <body>
+       <div class="wrapper">
+           <header class="desktop-header">
+               <div class="header-lv1">
+                   <div class="log-in-container">
+                        <a href="login.html" class="headerWord-2 border-1"><span class="fix">ĐĂNG NHẬP</span></a>
+                        <a href="register.html" class="headerWord-2"><span class="fix">ĐĂNG KÝ</span></a>
+                   </div>
+               </div>
+               <hr>
+               <div class="header-lv2">
+                <div class="logo">
+                    <span class="logoWord">SK</span>
+                </div>
+                <div class="header-lv2-content">
+                    <div class="navbar-1">
+                        <a href="#">TRANG CHỦ</a>
+                        <a href="about.html">GIỚI THIỆU</a>
+                        <div class="dropdown-1">
+                          <button class="dropbtn-1"><a href="foodanddrink.html">THỨC ĂN & ĐỒ UỐNG</a></button>
+                          <div class="dropdown-content-1">
+                            <a href="#">THỨC ĂN</a>
+                            <a href="#">ĐỒ UỐNG</a>
+                          </div>
+                        </div>
+                        <a href="partner.html">ĐỐI TÁC</a> 
+                        <a href="live.html">TRỰC TIẾP</a> 
+                        <a href="news.html">TIN TỨC</a>  
+                    </div>
+                </div>
+               
+                <form class="form-search">
+                    <input class="searchBar" type="text" placeholder="Tìm kiếm">
+                </form>    
+                <a href="addtocart.html" class="addToCart">
+                        <div class="addToCart">
+                            <img class="addToCartSVG" src="img/shopping-cart.svg">
+                            <span class="productCount"></span>
+                        </div>
+                        </a>
+            </div>
+           </header>
+           <header class="mobile-header">
+                <div id="myNav" class="overlay">
+                    <div class="menu-container-2">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    </div>
+                    <div class="overlay-content">
+                        <form class="form-search">
+                            <input class="searchBar" type="text" placeholder="Tìm kiếm">
+                        </form>  
+                        <ul class="overlay-content-menu">
+                        <li><a href="index.html">TRANG CHỦ</a></li>
+                        <li><a href="about.html">GIỚI THIỆU</a></li>
+                        <li><a href="foodanddrink.html" class="m-drinkandfood">THỨC ĂN & ĐỒ UỐNG</a>
+                           <ul>
+                             <li><a href="#">THỨC ĂN</a></li>
+                             <li><a href="#">ĐỒ UỐNG</a></li>
+                           </ul>
+                        </li>
+                        <li><a href="partner.html">ĐỐI TÁC</a>
+                        <li><a href="live.html">TRỰC TIẾP</a>
+                        <li><a href="news.html">TIN TỨC</a>
+                        <li><a href="login.html">ĐĂNG NHẬP</a>
+                        <li><a href="register.html">ĐĂNG KÝ</a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="menu-container">
+                    <img src="img/menu-button-of-three-horizontal-lines.svg" onclick="openNav()">
+                </div> 
+                
+                <div class="logo">
+                    <span class="logoWord">SK</span>
+                </div>
+                <a href="addtocart.html" class="addToCart">
+                        <div class="addToCart">
+                            <img class="addToCartSVG" src="img/shopping-cart.svg">
+                        </div>
+                        </a>
+           </header>
+           <section class="bg-image">
+               <span class="word-foodanddrink">THỨC ĂN THẬT TUYỆT VỜI</span>
+           </section>
+           <section class="navigation-foodanddrink">
+                <a href="index.html" class="navigation-home-1">TRANG CHỦ</a>
+                <img class="next-image" src="img/next.svg">
+                <a href="foodanddrink.html" class="navigation-foodanddrink-1">THỨC ĂN & ĐỒ UỐNG</a>
+            </section>
+            <section class="foodanddrink-desktop-banner">
+                <div class="banner-container">
+                    <div class="filter-foodanddrink">
+                            <span class="filter-word">LỌC</span>
+                            <img class="filter-image" src="img/chevron.svg">
+                            <div class="filter-box" style="display: none">
+                                <div class="left-side">
+                                    <div class="filter-box-word" onclick="filterFood()">THỨC ĂN</div>
+                                    <hr>
+                                    <div class="filter-box-word" onclick="filterDrink()">ĐỒ UỐNG</div>
+                                    <hr>
+                                </div>
+                                <div class="right-side">
+                                   <div class="header-right-side">MỨC GIÁ</div>
+                                   <label class="label-price"><input class="input-price" type="checkbox" onchange="clickCheckBox1(this)"> 0 - 15.000đ</label>
+                                   <label class="label-price"><input class="input-price" type="checkbox" onchange="clickCheckBox2(this)"> 15.000đ - 30.000đ</label>
+                                   <label class="label-price"><input class="input-price" type="checkbox" onchange="clickCheckBox3(this)"> 30.000đ - 50.000đ</label>
+                                   <label class="label-price"><input class="input-price" type="checkbox" onchange="clickCheckBox4(this)"> 50.000đ - 200.000đ</label>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="sort-foodanddrink">
+                            <span class="sort-word">SẮP XẾP</span>
+                            <img class="sort-image" src="img/chevron.svg">
+                            <div class="sort-box" style="display: none">
+                                    <div class="filter-box-word-1" onclick="sortLowToHigh()">GIÁ TỪ THẤP ĐẾN CAO</div>
+                                    <hr>
+                                    <div class="filter-box-word-1" onclick="sortHighToLow()">GIÁ TỪ CAO ĐẾN THẤP</div>
+                            </div>
+                    </div>
+                </div>
+            </section>
+            <section class="foodanddrink-desktop">
+                <div class="shop-container">
+                    <div class="row">
+                    <div class="shop-items one two five food" >
+                        <a class="pho-image product-image" href="detailsproduct.html"><img  class="pho-image product-image-1" src="img/to-pho-truyen-thong.jpg"></a>
+                        <div class="shop-item-details">
+                            <span class="shop-item-title">Phở bò</span>
+                            <span class="shop-item-price" data-value="25000">25.000đ</span>
+                            <div class="addtocart-button-container">
+                            <img class="addtocart-image" src="img/shopping-cart-1.svg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shop-items one two five drink drink-1" >
+                            <a class="nuocchanh-image product-image" href="detailsproduct.html"><img class="nuocchanh-image product-image-1" src="img/nuoc-chanh-tuoi.jpg"></a>
+                            <div class="shop-item-details">
+                                <span class="shop-item-title">Nước chanh</span>
+                                <span class="shop-item-price" data-value="10000">10.000đ</span>
+                                <div class="addtocart-button-container">
+                                <img class="addtocart-image" src="img/shopping-cart-1.svg">
+                                </div>
+                            </div>
+                    </div>
+                    <div class="shop-items two five bunbo-desktop food" >
+                            <a class="bunbo-image product-image" href="detailsproduct.html"><img class="bunbo-image product-image-1" src="img/tumblr_otkk1qL0P71uyxczto1_500.png"></a>
+                            <div class="shop-item-details">
+                                <span class="shop-item-title">Bún bò Huế</span>
+                                <span class="shop-item-price" data-value="30000">30.000đ</span>
+                                <div class="addtocart-button-container">
+                                <img class="addtocart-image" src="img/shopping-cart-1.svg">
+                                </div>
+                            </div>
+                    </div>
+                    </div>
+                    <div class="row">
+                    <div class="shop-items one two five drink-2 drink" >
+                            <a href="detailsproduct.html" class="bunbo-image product-image"><img class="bunbo-image product-image-1" src="img/Tra-Sua-Khoai-Mon.png"></a>
+                            <div class="shop-item-details">
+                                <span class="shop-item-title">Trà sữa khoai môn</span>
+                                <span class="shop-item-price" data-value="25000">25.000đ</span>
+                                <div class="addtocart-button-container">
+                                <img class="addtocart-image" src="img/shopping-cart-1.svg">
+                                </div>
+                            </div>
+                    </div>
+                    <div class="shop-items one two five food" >
+                            <a href="detailsproduct.html" class="spaghetti-image product-image"><img class="spaghetti-image product-image-1" src="img/Spaghetti-PNG-Transparent-Image.png"></a>
+                            <div class="shop-item-details">
+                                <span class="shop-item-title">Spaghetti</span>
+                                <span class="shop-item-price" data-value="25000">25.000đ</span>
+                                <div class="addtocart-button-container">
+                                <img class="addtocart-image" src="img/shopping-cart-1.svg">
+                                </div>
+                            </div>
+                    </div>
+                    <div class="shop-items two five hamburger-desktop food" >
+                            <a href="detailsproduct.html" class="spaghetti-image product-image"><img class="spaghetti-image product-image-1" src="img/Download-Hamburger-Transparent-Background.png"></a>
+                            <div class="shop-item-details">
+                                <span class="shop-item-title">Hamburger</span>
+                                <span class="shop-item-price" data-value="15000">15.000đ</span>
+                                <div class="addtocart-button-container">
+                                <img class="addtocart-image" src="img/shopping-cart-1.svg">
+                                </div>
+                            </div>
+                    </div>
+                    </div>
+                    <div class="row">
+                    <div class="shop-items one five garan-desktop food" >
+                            <a href="detailsproduct.html" class="friedchicken-image product-image"><img class="friedchicken-image product-image-1" src="img/fried-chicken-png-11552945573sn657hxomw.png"></a>
+                            <div class="shop-item-details">
+                                <span class="shop-item-title">Gà rán</span>
+                                <span class="shop-item-price" data-value="150000">150.000đ</span>
+                                <div class="addtocart-button-container">
+                                <img class="addtocart-image" src="img/shopping-cart-1.svg">
+                                </div>
+                            </div>
+                    </div>
+                    <div class="shop-items one five kemoc-desktop food" >
+                            <a href="detailsproduct.html" class="icecream-image product-image"><img class="icecream-image product-image-1" src="img/ice_cream_PNG5096.png"></a>
+                            <div class="shop-item-details">
+                                <span class="shop-item-title">Kem ốc quế</span>
+                                <span class="shop-item-price" data-value="15000">15.000đ</span>
+                                <div class="addtocart-button-container">
+                                <img class="addtocart-image" src="img/shopping-cart-1.svg">
+                                </div>
+                            </div>
+                    </div>
+                    <div class="shop-items food" >
+                            <a href="detailsproduct.html" class="comtam-image product-image"><img class="comtam-image product-image-1" src="img/comtam.jpg"></a>
+                            <div class="shop-item-details">
+                                <span class="shop-item-title">Cơm tấm</span>
+                                <span class="shop-item-price" data-value="50000">50.000đ</span>
+                                <div class="addtocart-button-container">
+                                <img class="addtocart-image" src="img/shopping-cart-1.svg">
+                                </div>
+                            </div>
+                    </div>
+                    </div>
+                </div>
+            </section>
+            <section class="foodanddrink-tablet">
+                    <div class="shop-container">
+                        <div class="row">
+                        <div class="shop-items three four food">
+                            <img class="pho-image" src="img/to-pho-truyen-thong.jpg">
+                            <div class="shop-item-details">
+                                <span class="shop-item-title">Phở bò</span>
+                                <span class="shop-item-price" data-value="25000">25.000đ</span>
+                                <div class="addtocart-button-container">
+                                <img class="addtocart-image" src="img/shopping-cart-1.svg">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="shop-items four drink drink-1-1">
+                                <img class="nuocchanh-image" src="img/nuoc-chanh-tuoi.jpg">
+                                <div class="shop-item-details">
+                                    <span class="shop-item-title">Nước chanh</span>
+                                    <span class="shop-item-price" data-value="10000">10.000đ</span>
+                                    <div class="addtocart-button-container">
+                                    <img class="addtocart-image" src="img/shopping-cart-1.svg">
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="shop-items three four food bunbo-tablet">
+                                <img class="bunbo-image" src="img/tumblr_otkk1qL0P71uyxczto1_500.png">
+                                <div class="shop-item-details">
+                                    <span class="shop-item-title">Bún bò Huế</span>
+                                    <span class="shop-item-price" data-value="30000">30.000đ</span>
+                                    <div class="addtocart-button-container">
+                                    <img class="addtocart-image" src="img/shopping-cart-1.svg">
+                                    </div>
+                                </div>
+                        </div>
+                        
+                        
+                        <div class="shop-items four drink drink-2-2">
+                                <img class="bunbo-image" src="img/Tra-Sua-Khoai-Mon.png">
+                                <div class="shop-item-details">
+                                    <span class="shop-item-title">Trà sữa khoai môn</span>
+                                    <span class="shop-item-price" data-value="25000">25.000đ</span>
+                                    <div class="addtocart-button-container">
+                                    <img class="addtocart-image" src="img/shopping-cart-1.svg">
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="shop-items three four food">
+                                <img class="spaghetti-image" src="img/Spaghetti-PNG-Transparent-Image.png">
+                                <div class="shop-item-details">
+                                    <span class="shop-item-title">Spaghetti</span>
+                                    <span class="shop-item-price" data-value="25000">25.000đ</span>
+                                    <div class="addtocart-button-container">
+                                    <img class="addtocart-image" src="img/shopping-cart-1.svg">
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="shop-items four food hamburger-tablet">
+                                <img class="spaghetti-image" src="img/Download-Hamburger-Transparent-Background.png">
+                                <div class="shop-item-details">
+                                    <span class="shop-item-title">Hamburger</span>
+                                    <span class="shop-item-price" data-value="15000">15.000đ</span>
+                                    <div class="addtocart-button-container">
+                                    <img class="addtocart-image" src="img/shopping-cart-1.svg">
+                                    </div>
+                                </div>
+                        </div>
+                        </div>
+                        <div class="row">
+                        <div class="shop-items food friedchicken-tablet" style="border-right-width:0;">
+                                <img class="friedchicken-image" src="img/fried-chicken-png-11552945573sn657hxomw.png">
+                                <div class="shop-item-details">
+                                    <span class="shop-item-title">Gà rán</span>
+                                    <span class="shop-item-price" data-value="150000">150.000đ</span>
+                                    <div class="addtocart-button-container">
+                                    <img class="addtocart-image" src="img/shopping-cart-1.svg">
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="shop-items food">
+                                <img class="icecream-image" src="img/ice_cream_PNG5096.png">
+                                <div class="shop-item-details">
+                                    <span class="shop-item-title">Kem ốc quế</span>
+                                    <span class="shop-item-price" data-value="15000">15.000đ</span>
+                                    <div class="addtocart-button-container">
+                                    <img class="addtocart-image" src="img/shopping-cart-1.svg">
+                                    </div>
+                                </div>
+                        </div>
+                        </div>
+                        <div class="row">
+                        <div class="shop-items food comtam-tablet" style="border-top-width:0;">
+                                <img class="comtam-image" src="img/comtam.jpg">
+                                <div class="shop-item-details">
+                                    <span class="shop-item-title">Cơm tấm</span>
+                                    <span class="shop-item-price" data-value="50000">50.000đ</span>
+                                    <div class="addtocart-button-container">
+                                    <img class="addtocart-image" src="img/shopping-cart-1.svg">
+                                    </div>
+                                </div>
+                        </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="foodanddrink-mobile">
+                    <div class="shop-container">
+                        <div class="row">
+                        <div class="shop-items one two five food">
+                            <img class="pho-image" src="img/to-pho-truyen-thong.jpg">
+                            <div class="shop-item-details">
+                                <span class="shop-item-title">Phở bò</span>
+                                <span class="shop-item-price" data-value="25000">25.000đ</span>
+                                <div class="addtocart-button-container">
+                                <img class="addtocart-image" src="img/shopping-cart-1.svg">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="shop-items one two five drink drink-mobile-1">
+                                <img class="nuocchanh-image" src="img/nuoc-chanh-tuoi.jpg">
+                                <div class="shop-item-details">
+                                    <span class="shop-item-title">Nước chanh</span>
+                                    <span class="shop-item-price" data-value="10000">10.000đ</span>
+                                    <div class="addtocart-button-container">
+                                    <img class="addtocart-image" src="img/shopping-cart-1.svg">
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="shop-items two five food bunbo-mobile">
+                                <img class="bunbo-image" src="img/tumblr_otkk1qL0P71uyxczto1_500.png">
+                                <div class="shop-item-details">
+                                    <span class="shop-item-title">Bún bò Huế</span>
+                                    <span class="shop-item-price" data-value="30000">30.000đ</span>
+                                    <div class="addtocart-button-container">
+                                    <img class="addtocart-image" src="img/shopping-cart-1.svg">
+                                    </div>
+                                </div>
+                        </div>
+                        </div>
+                        <div class="row">
+                        <div class="shop-items one two five drink drink-mobile-2">
+                                <img class="bunbo-image" src="img/Tra-Sua-Khoai-Mon.png">
+                                <div class="shop-item-details">
+                                    <span class="shop-item-title">Trà sữa khoai môn</span>
+                                    <span class="shop-item-price" data-value="25000">25.000đ</span>
+                                    <div class="addtocart-button-container">
+                                    <img class="addtocart-image" src="img/shopping-cart-1.svg">
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="shop-items one two five food">
+                                <img class="spaghetti-image" src="img/Spaghetti-PNG-Transparent-Image.png">
+                                <div class="shop-item-details">
+                                    <span class="shop-item-title">Spaghetti</span>
+                                    <span class="shop-item-price" data-value="25000">25.000đ</span>
+                                    <div class="addtocart-button-container">
+                                    <img class="addtocart-image" src="img/shopping-cart-1.svg">
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="shop-items two five food hamburger-desktop">
+                                <img class="spaghetti-image" src="img/Download-Hamburger-Transparent-Background.png">
+                                <div class="shop-item-details">
+                                    <span class="shop-item-title">Hamburger</span>
+                                    <span class="shop-item-price" data-value="15000">15.000đ</span>
+                                    <div class="addtocart-button-container">
+                                    <img class="addtocart-image" src="img/shopping-cart-1.svg">
+                                    </div>
+                                </div>
+                        </div>
+                        </div>
+                        <div class="row">
+                        <div class="shop-items one five food garan-desktop">
+                                <img class="friedchicken-image" src="img/fried-chicken-png-11552945573sn657hxomw.png">
+                                <div class="shop-item-details">
+                                    <span class="shop-item-title">Gà rán</span>
+                                    <span class="shop-item-price" data-value="150000">150.000đ</span>
+                                    <div class="addtocart-button-container">
+                                    <img class="addtocart-image" src="img/shopping-cart-1.svg">
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="shop-items one five food kemoc-mobile">
+                                <img class="icecream-image" src="img/ice_cream_PNG5096.png">
+                                <div class="shop-item-details">
+                                    <span class="shop-item-title">Kem ốc quế</span>
+                                    <span class="shop-item-price" data-value="15000">15.000đ</span>
+                                    <div class="addtocart-button-container">
+                                    <img class="addtocart-image" src="img/shopping-cart-1.svg">
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="shop-items food">
+                                <img class="comtam-image" src="img/comtam.jpg">
+                                <div class="shop-item-details">
+                                    <span class="shop-item-title">Cơm tấm</span>
+                                    <span class="shop-item-price" data-value="50000">50.000đ</span>
+                                    <div class="addtocart-button-container">
+                                    <img class="addtocart-image" src="img/shopping-cart-1.svg">
+                                    </div>
+                                </div>
+                        </div>
+                        </div>
+                    </div>
+                </section>    
+            <section class="space"></section>
+               <footer class="footer-desktop">
+                   <div class="content-footer">
+                       <div class="word-footer">Vị trí</div>
+                       <div class="word-footer">14 Nguyễn Đình Triểu, </div>
+                       <div class="word-footer">Quận Hai Bà Trưng, Hà Nội</div>
+                   </div>
+                   <div class="content-footer-1">
+                       <span class="word-footer ">Dịch vụ chăm sóc khách hàng</span>
+                       <div class="word-footer">096123456789</div>
+                       <div class="word-footer">7 ngày trong tuần, 7 sáng - 8 tối</div>
+                       <div class="word-footer">ShareKitchen@gmail.com</div>
+                       <span class="content-footer"></span>
+                   </div>
+                   <div class="social-network">
+                       <img src="img/instagram.svg">
+                       <img src="img/facebook-logo.svg">
+                       <img src="img/youtube-logo.svg">
+                   </div>
+                   <div class="copyright">
+                        <div class="word-footer">Bản quyền thuộc về © 2019 ShareKitchen</div>
+                   </div>
+               </footer>
+               <footer class="footer-mobile">
+                    <div class="content-footer">
+                        <div class="word-footer">Vị trí</div>
+                        <div class="word-footer">14 Nguyễn Đình Triểu, </div>
+                        <div class="word-footer">Quận Hai Bà Trưng, Hà Nội</div>
+                    </div>
+                    <div class="content-footer-1">
+                        <span class="word-footer ">Dịch vụ chăm sóc khách hàng</span>
+                        <div class="word-footer">096123456789</div>
+                        <div class="word-footer">7 ngày trong tuần, 7 sáng - 8 tối</div>
+                        <div class="word-footer">ShareKitchen@gmail.com</div>
+                        <span class="content-footer"></span>
+                    </div>
+                    <div class="social-network">
+                        <img class="image-footer" src="img/instagram.svg">
+                        <img class="image-footer" src="img/facebook-logo.svg">
+                        <img class="image-footer" src="img/youtube-logo.svg">
+                    </div>
+                    <div class="copyright">
+                         <div class="word-footer">Bản quyền thuộc về © 2019 ShareKitchen</div>
+                    </div>
+                </footer>
+           
+       </div>
+      
+       <script src="js/main.js"></script>
+       <script src="js/foodanddrink.js"></script>
+       </body>    
+</html>
+

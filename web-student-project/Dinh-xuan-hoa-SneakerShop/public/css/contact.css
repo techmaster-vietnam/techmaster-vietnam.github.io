@@ -1,0 +1,75 @@
+.banner-sneaker3{
+    height:400px ;
+    background-image: url(../image/img-banner/pexels-jock-mark-5584997.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.info-form{
+    font-size: 30px;
+    color: #353535;
+    font-family: "Roboto", sans-serif;
+    line-height: 38px;
+    font-weight: 600;
+}
+.img-contact{
+    max-width: 100%;
+}
+.bi-pin-map-fill, .bi-envelope-fill, .bi-telephone-fill{
+    color: #f54f29;
+    font-size: 25px;
+}
+.text-location{
+    font-size: 17px;
+    font-family: "Roboto", sans-serif;
+    color: #383838;
+}
+.text-location:hover{
+    color: #f54f29;
+}
+.form-info-contact label{
+    font-size: 15px;
+    color: #1c1c1c;
+    font-family: "Roboto", sans-serif;
+    line-height: 23px;
+    font-weight: 500;
+}
+.form-info-contact input{
+    height: 50px;
+    outline: none;
+    border: 1px solid #cfcfcf;
+    border-radius: 10px;
+    font-size: 14px;
+    color: #1c1c1c;
+    font-family: "Roboto", sans-serif;
+    line-height: 22px;
+}
+.form-info-contact #name-contact3{
+    height: 100px;
+    outline: none;
+    border: 1px solid #cfcfcf;
+    border-radius: 10px;
+    font-size: 14px;
+    color: #1c1c1c;
+    font-family: "Roboto", sans-serif;
+    line-height: 22px;
+}
+iframe{
+    width: 100%;
+}
+.mrt{
+    margin-top: 80px;
+}
+.text-map{
+    font-size: 30px;
+    color: #1c1c1c;
+    font-family: "Roboto", sans-serif;
+    line-height: 38px;
+    font-weight: 500;
+}
+.j-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: start;
+}

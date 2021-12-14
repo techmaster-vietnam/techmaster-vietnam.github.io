@@ -1,0 +1,12 @@
+.card-header{
+    color: #535353;
+    font-size: 20px;
+    padding: 1.5rem;
+    background-color: #ebebeb;
+}
+.card-thumbnail{
+    cursor: pointer;
+}
+.card-thumbnail:hover{
+    opacity: 0.3;
+}

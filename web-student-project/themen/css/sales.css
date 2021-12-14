@@ -1,0 +1,513 @@
+/* slogan */
+
+.jumbotron {
+    text-align: center;
+    height: 20%;
+    /* width: 70%;
+    margin-left: auto;
+    margin-right: auto; */
+}
+
+.jumbotron h5 {
+    font-weight: bold;
+}
+
+/* end slogan */
+
+/* breadcrumb */
+
+.breadcrumb {
+    background-color: white;
+    border-bottom: 1px solid rgba(10, 9, 9, .5);
+}
+
+/* end breadcrumb */
+
+/* menu dọc */
+
+/* .menusales {
+    text-decoration: none; 
+    color: #3b8bba;
+    transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    width: 100%;
+    
+    
+} */
+
+/* .menusales:hover, .menusales:visited {
+    color: #265778;
+}
+
+.dropdownsales {
+    height: 100%;
+    background-color: #191818; */
+
+/* width: 100%; */
+
+/* }
+
+.dropdownsales ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+} 
+
+.dropdownsales ul li {
+    line-height: 2.9em;
+    height: 2.9em;
+    transition: all 1s;
+    -moz-transition: all 1s;
+    -webkit-transition: all 1s;
+   position: relative;
+   text-align: left;
+    
+}
+
+.dropdownsales ul li a {
+    display: block;
+    color: #fff;
+    padding: 0 1em;
+    border-bottom: 1px solid #333;
+    text-decoration: none;
+    font-weight: bold;
+    
+}
+
+
+
+
+
+.dropdownsales ul li:hover {
+    background-color: #454545;
+    
+
+}
+
+.dropdownsales ul li:active {
+    background-color: #454545;
+    
+
+}
+
+.dropdownsales ul li a:active {
+    color: white;
+    
+}
+
+
+.dropdownsales ul li a:hover {
+    color: white;
+    
+}
+
+.dropdownsales .sub-menu {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    display: none;
+}
+
+.dropdownsales ul li:hover .sub-menu {
+    display: block;
+} */
+
+/* end menu dọc */
+
+/* menu dọc trên mạng */
+
+.main-nav {
+    width: 100%;
+    height: 97%;
+    /* background-color: rgba(207, 194, 194, 0.822); */
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+.main-nav-ul {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.main-nav ul li a {
+    padding-left: 0.8rem;
+}
+
+.main-nav li {
+    list-style: none;
+     margin: 2rem auto; 
+}
+
+.main-nav a {
+    color: rgb(0, 0, 0);
+    /* text-transform: uppercase; */
+    /* letter-spacing: .2em; */
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px 10px 0px;
+    border-bottom: 1px solid gray; 
+    text-align: left;
+    font-weight: bold;
+    
+}
+
+.main-nav a:hover {
+    background: rgb(240, 230, 230);
+    color: black;
+}
+
+.light-sales {
+    background-color: rgb(240, 38, 38);
+    margin: 4rem auto;
+    border: 1.5px dashed red;
+}
+
+.main-nav-ul li a {
+    cursor: pointer;
+}
+
+.main-nav-ul ul {
+    display: none;
+}
+
+.main-nav-ul li.tap ul {
+    display: block;
+}
+
+
+.timnhanh {
+    background-color: rgb(33, 61, 40);
+    width: 50%;
+    margin-bottom: 0;
+    margin-top: 5rem;
+    padding-bottom: .5rem;
+    padding-top: .5rem;
+    color: aliceblue;
+    
+}
+
+.timnhanh_1 {
+    border-bottom: 2px solid rgb(52, 112, 67);
+    margin: 0 auto;
+}
+
+
+
+.main-nav-ul ul a:before {
+    /* content: '\203A'; */
+    margin-right: 20px;
+}
+
+
+
+.main-nav .sub-arrow:after {
+    content: '\002b';
+    /* content: '\203A'; */
+    float: right;
+    margin-right: 20px;
+    /* transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg); */
+}
+
+.main-nav li.tap .sub-arrow:after {
+    /* content: '\2039'; */
+    content: '\002d';
+    
+}
+
+
+
+
+
+/* hover */
+
+/* .vertical-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute; 
+    right: 5%; 
+    
+    top: 20%; 
+    bottom: 0;
+    margin: auto;
+    text-align: center;
+    z-index: 5;
+    display: none;
+     
+} */
+
+/* .vertical-icon i {
+    font-size: 1.5rem;
+    color: aliceblue;
+    background-color: red;
+}
+
+.vertical-icon i:hover {
+    color: red;
+}
+
+.vertical-icon a {
+    text-decoration: none;
+    float: left;
+}
+
+.vertical-icon p {
+    background-color: red;
+    font-weight: bold;
+    width: 50px;
+    color: white;
+    float: left;
+}
+
+
+
+
+.card {
+    transition: all 0.5s ease;
+    
+}
+
+.card:hover {
+    -webkit-box-shadow: 8px 6px 5px -2px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 8px 6px 5px -2px rgba(0, 0, 0, 0.75);
+    box-shadow: 8px 6px 5px -2px rgba(0, 0, 0, 0.75);
+    transition: all 0.5s ease;
+    opacity: 0.8;
+    
+}
+
+.card img {
+    
+    transition: .5s;
+
+}
+
+.card img:hover {
+    transform: scale(1.03);
+    transition: .5s;
+    opacity: 1;
+}
+
+.card:hover > .vertical-icon {
+    display: block;
+    bottom: 0;
+    opacity: 1;
+} */
+
+
+/* anh2 */
+.cardimg {
+    overflow: hidden;
+    transition: all 0.5s ease;
+    
+}
+
+.cardimg .card-body {
+    text-align: center;
+}
+
+.checked {
+    color: orange;
+  }
+
+
+
+.vertical-icon {
+    position: absolute;
+    top: 5vh;
+    left: -40%;
+    width: 100%;
+    transition: all 0.5s ease;
+}
+
+.vertical-icon a {
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+    
+}
+
+.vertical-icon .muangay {
+    background-color: rgba(51, 70, 134, 0.8);  
+    transition: all 0.5s ease;
+}
+
+.vertical-icon p {
+    background-color: rgba(56, 48, 48, 0.5);
+    color: aliceblue;
+    width: 40%;
+    float: top;
+    font-size: 1rem;
+    font-weight: bold;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    transition: all 0.5s ease;
+
+}
+
+.vertical-icon i {
+    background-color: rgba(56, 48, 48, 0.5);
+    color: aliceblue;
+    width: 40%;
+    float: top;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    transition: all 0.5s ease;
+    font-size: 1.5rem;
+}
+
+.vertical-icon .muangay:hover {
+    background-color: rgba(11, 32, 102, 0.9); 
+    border-radius: 50%;
+    transition: all 0.5s ease;
+}
+
+.vertical-icon p:hover {
+    background-color: rgba(31, 25, 25, 0.9);
+    border-radius: 50%;
+    transition: all 0.5s ease;
+    color:  rgba(194, 0, 0, 0.9);
+}
+
+.vertical-icon i:hover {
+    background-color: rgba(31, 25, 25, 0.9);
+    border-radius: 50%;
+    transition: all 0.5s ease;
+    color:  rgba(194, 0, 0, 0.9);
+    
+}
+
+.card:hover {
+    -webkit-box-shadow: 8px 6px 5px -2px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 8px 6px 5px -2px rgba(0, 0, 0, 0.75);
+    box-shadow: 8px 6px 5px -2px rgba(0, 0, 0, 0.75);
+    transition: all 0.5s ease;
+    
+    
+}
+
+.card:hover > .vertical-icon {
+    left: 3%;
+    transition: all 0.5s ease;
+}
+
+
+
+/* responsive */
+@media only screen and (min-width: 1200px) {
+    .vertical-icon {
+        top: 20vh;
+    }
+    .vertical-icon p {
+        width: 40%;
+        font-size: 1rem;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+        
+    
+    }
+    
+    .vertical-icon i {
+        width: 40%;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+        
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .vertical-icon {
+        top: 10vh;
+    }
+    .vertical-icon p {
+        width: 40%;
+        font-size: .9rem;
+        padding-bottom: .7rem;
+        padding-top: .7rem;
+        
+    
+    }
+    
+    .vertical-icon i {
+        width: 40%;
+        padding-bottom: .7rem;
+        padding-top: .7rem;
+        
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .vertical-icon {
+        top: 10vh;
+    }
+    .vertical-icon p {
+        width: 40%;
+        font-size: .8rem;
+        padding-bottom: .7rem;
+        padding-top: .7rem;
+        
+    
+    }
+    
+    .vertical-icon i {
+        width: 40%;
+        padding-bottom: .7rem;
+        padding-top: .7rem;
+        
+    }
+   
+}
+
+@media only screen and (max-width: 768px) {
+    .vertical-icon {
+        top: 10vh;
+    }
+    .vertical-icon p {
+        width: 40%;
+        font-size: 1rem;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+        
+    
+    }
+    
+    .vertical-icon i {
+        width: 40%;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+        
+    }
+    
+}
+
+
+ /* component alert */
+ .componentalert {
+    background-color: rgb(26, 99, 26);
+    padding-bottom: .7rem;
+    padding-top: .7rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    position: absolute;
+    top: 40vh;
+    left: 40%;
+    z-index: 30;
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s;
+    font-weight: bold;
+    color: aliceblue;
+}
+
+.closecart {
+  padding-left: 2rem;
+  cursor: pointer;
+}
+
+.cart_3 {
+    cursor: pointer;
+}
+
+

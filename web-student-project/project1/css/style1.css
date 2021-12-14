@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+body{
+    font-size: 22px;
+    font-family: 'Pacifico', cursive !important;
+}
+
+.container{
+    background-color: #FFF3F3;
+}
+
+.textcolor{
+    text-decoration: none !important;
+}
+
+.owl-theme .owl-nav {
+    margin-top: 0px !important; 
+}
+
+.buttons1 {
+    margin: 10%;
+    text-align: center ;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+.fa-home{
+    font-size: 34px !important;
+}
+
+
+
+
+.footer{
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+.footer1{
+    font-family: sans-serif;
+    margin-top: 10px;
+}
+
+.row4{
+    background-color: #dad1d1;
+    padding-top: 20px;
+    line-height: 15px;
+}
+
+.footer2{
+    font-size: 16px;
+    font-family: sans-serif;
+    margin-left: 60%;
+    margin-top: 10%;
+}
+
+@media screen and (max-width:576px) {
+    div.footer2 {
+        margin-left: 0;
+        margin-top: 0;
+    }
+  }
+
+.icon{
+    margin-left: 10px;
+}
+
+
+  
+.chonmua{
+    color: black;
+    text-decoration: none !important;
+}
+
+/*  */
+
+.container {
+    margin: auto;
+    border-radius: 5px;
+    background-color: #FFF3F3;
+    padding: 20px;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    line-height: normal !important;
+}
+ 
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+ 
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.pay{
+    padding-top: 50px;
+    text-align: center;
+}
+
+td{
+    text-align: center;
+}
+
+th{
+    text-align: center;
+}
+
+td img{
+    width: 50%;
+}
+
+.pa{
+    padding-top: 47px !important;
+}
+
+
+.fa-1{
+    font-size: 36px !important;
+}
+

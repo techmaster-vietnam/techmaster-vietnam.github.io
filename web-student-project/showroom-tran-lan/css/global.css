@@ -1,0 +1,157 @@
+.gt{
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.gt{
+	font-size: 4vw;
+	letter-spacing: 0.15em;
+	text-transform: uppercase;
+	color: #FFFFFF;
+}
+body{
+	font-family: SF Pro Display;
+	font-style: normal;
+}
+.khoixuly{
+	position: absolute;
+	bottom: 0;
+	width: 100%
+}
+.ttmh{
+	background: #F47308;
+	border: 1px solid #F94001;
+	border-radius: 5px;
+	font-size: 1.5vw;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	padding: 1vw 1.5vw;
+	cursor: pointer;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+.tt{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	background: #FFFFFF;
+	border: 1px solid #FBC531;
+	box-sizing: border-box;
+	border-radius: 5px;
+	font-size: 1.5vw;
+	text-transform: uppercase;
+	padding: 1vw 1.5vw;
+	cursor: pointer;
+	color: black;
+}
+.fa-minus-circle{
+	color: #FF8A00;
+	padding-right:0 !important;
+}
+.thanhtoan__info{
+	font-size: 1vw;
+	font-weight: 500;
+	line-height: 21px;
+	text-transform: capitalize;
+	border-bottom: 1px solid #A19D9D;
+}
+.thanhtoan__info--img{
+	border-bottom: 1px solid #A19D9D;
+	font-size: 1vw;
+}
+.purchase__lhmh{
+	background: rgba(0, 0, 0, 0.71);
+	font-size: 1.5vw;
+	color: #FFFFFF;
+	padding: 3vw 0;
+}
+.purchase__lhmh{
+	background: rgba(0, 0, 0, 0.71);
+	font-size: 1.5vw;
+	color: #FFFFFF;
+	padding: 4vw 0;
+}
+.tieude{
+	font-weight: normal;
+	font-size: 6vw;
+	text-transform: uppercase;
+}
+.detail__lhmh{
+	background: rgba(0, 0, 0, 0.71);
+	font-size: 2.5vw;
+	color: #FFFFFF;
+	padding: 50px 0;
+}
+.product__list{
+	font-weight: 400;
+	font-size: 21px;
+	text-transform: capitalize;
+}
+.product__list--all{
+	color: #D81728;
+	border-bottom: 1px solid #D81728; 
+}
+.navbar-nav .nav-item .nav-link,.navbar-light .navbar-brand{
+	transition: .5s;
+}
+.navbar-light .navbar-brand:hover{
+	transform: scale(1.2);
+	color: white;
+}
+.navbar-nav .nav-item .nav-link:hover{
+	transform: scale(1.2);
+	color: white;
+}
+.muangay{
+	transition: 0.5s;
+}
+.muangay:hover{
+	background-color: red;
+	border-color:red;
+	transform: scale(1.1);
+}
+a:hover{
+	text-decoration: none;
+}
+.btn{
+	transition: .3s;
+}
+.back-to-top{
+	position: fixed;
+	font-size: 50px;
+	bottom: 100px;
+	right: 20px;
+	cursor: pointer;
+	z-index: 100;
+}
+.table td, .table th {
+	vertical-align: middle;
+}
+.sortName{
+	text-transform: capitalize;
+}
+@media(max-width: 512px){
+	.sortName,.sortPrice,.muangay{
+		font-size: 3vw!important;
+		margin-bottom: 1vw;
+	}
+}
+@media(max-width: 360px){
+	.card-body .muangay{
+		padding: 1vw 2vw;
+	}
+	.card-body{
+		padding: 0.5rem;
+	}
+}
+
+
+
+
+
+
+
+
+

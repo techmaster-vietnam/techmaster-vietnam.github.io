@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Dave Gourmet</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="icon" type="image/png" href="images/ice-logo.png"/>
+	<link rel="stylesheet" href="web-fonts-with-css/css/fontawesome-all.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/shop.css">
+	<link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+</head>
+<body>
+	<div class="second-header">
+		<div class="menu">
+			<div class="menu-content">
+				<div class="container menu1">
+					<div class="call-us">
+						Call us&ensp;<i class="fas fa-phone-volume"></i>&ensp;999.999.999
+					</div>
+					<div class="login">
+						<i class="fas fa-user-circle"></i>&ensp;<a href="#signup" data-toggle="modal" data-target=".log-sign">Login / Sign up</a>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+			<div class="container menu2">
+				<nav class="navbar navbar-default">
+					<div class="container-fluid">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<a class="navbar-brand" href="http://disputebills.com"><img src="images/ice-logo.png" alt="Logo" class="img-responsive">
+							</a>
+						</div>
+						<div id="navbar" class="navbar-collapse collapse">
+							<ul class="nav navbar-nav navbar-left">
+								<li><a href="about.html">About us</a></li>
+								<li><a href="shop.html">Store</a></li>
+								<li><a href="promotion.html">Promotions</a></li>
+							</ul>
+							<ul class="nav navbar-nav navbar-right">
+								<li><a href="blog.html">Blog</a></li>
+								<li><a href="index.html#contact">Contact</a></li>
+								<li><a onclick="openSearch()"><i class="fas fa-search"></i></a></li>
+								<li id="last-menu-item"><a href="cart.html"><i class="fas fa-shopping-cart"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</nav>				
+			</div>
+		</div>
+	</div>
+	<div id="myOverlay" class="overlay">
+		<span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+		<div class="overlay-content">
+			<input id="search" type="text" placeholder="Search.." name="search" required>
+			<button><i class="fa fa-search"></i></button>
+			<div class="clear"></div>
+			<ul class="suggestion">
+			</ul>
+		</div>
+	</div>
+	<div class="my-banner">
+		<div class="waves"></div>
+		<div class="banner-title">
+			<div class="banner-text" id="shop-content">
+				ICECREAMS WORLD
+			</div>
+		</div>
+	</div>
+	<div class="shop-content">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-10 col-xs-9">
+					<ul class="breadcrumb">
+						<li><a href="index.html"><i class="fas fa-home"></i> HOME</a></li>
+						<li class="name_blog">STORE</li>
+					</ul>
+				</div>
+				<div class="col-sm-2 col-xs-3">
+					<form action="">
+						<select class="form-control" id="sel1">
+							<option>ASC</option>
+							<option>DESC</option>
+						</select>
+					</form>
+				</div>
+			</div>
+			<br>
+			<br>
+			<div class="row">
+				<div class="col-md-3">
+					<button class="btn btn-default btn-filter" onclick="showFilter(this)"><i class="fas fa-filter"></i> Filter products</button>
+					<div class="filter">
+						<form id="search">
+							<div class="input-group">
+								<input type="text" class="form-control search" placeholder="Search something ..." required>
+								<div class="input-group-btn">
+									<button class="btn btn-default search-btn" type="submit">
+										<i class="fas fa-search"></i>
+									</button>
+								</div>
+							</div>
+						</form>
+						<br>
+						<form class ="filter-form" id="filter-by-type">
+							<div class="title-form">
+								Filter by type
+							</div>	
+							<div class="body-form">
+								<div class="form-check">
+									<input type="checkbox" value="chocolate" id="check1">
+									<label for="check1">
+										Chocolate
+									</label>
+								</div>
+								<div class="form-check">
+									<input type="checkbox" value="matcha" id="check2">
+									<label for="check2">
+										Matcha
+									</label>
+								</div>
+								<div class="form-check">
+									<input type="checkbox" value="strawberry" id="check3">
+									<label for="check3">
+										Strawberry
+									</label>
+								</div>
+								<div class="form-check">
+									<input type="checkbox" value="cacao" id="check4">
+									<label for="check4">
+										Cacao
+									</label>
+								</div>
+								<div class="form-check">
+									<input type="checkbox" value="vani" id="check5">
+									<label for="check5">
+										Vani
+									</label>
+								</div>
+								<div class="form-check">
+									<input type="checkbox" value="other" id="check6">
+									<label for="check6">
+										Other
+									</label>
+								</div>
+								<div class="form-check">
+									<input type="checkbox" value="mix" id="check6">
+									<label for="check6">
+										Mix
+									</label>
+								</div>
+							</div>						
+						</form>
+						<br>
+						<form class ="filter-form" id="filter-by-price">
+							<div class="title-form">
+								Filter by price
+							</div>	
+							<div class="body-form">
+								<div class="form-check">
+									<input type="checkbox" value="0-100" id="check1">
+									<label for="check1">
+										0 - 100K
+									</label>
+								</div>
+								<div class="form-check">
+									<input type="checkbox" value="100-200" id="check2">
+									<label for="check2">
+										100K - 200K
+									</label>
+								</div>
+								<div class="form-check">
+									<input type="checkbox" value="200-300" id="check3">
+									<label for="check3">
+										200K - 300K
+									</label>
+								</div>
+								<div class="form-check">
+									<input type="checkbox" value="300-400" id="check4">
+									<label for="check4">
+										300 - 400K
+									</label>
+								</div>
+								<div class="form-check">
+									<input type="checkbox" value="400-500" id="check5">
+									<label for="check5">
+										400K - 500K
+									</label>
+								</div>
+								<div class="form-check">
+									<input type="checkbox" value=">500" id="check6">
+									<label for="check6">
+										> 500K
+									</label>
+								</div>
+							</div>						
+						</form>
+						<br>
+						<form class ="filter-form" id="filter-by-discount">
+							<div class="title-form">
+								Filter by discount
+							</div>	
+							<div class="body-form">
+								<div class="form-check">
+									<input type="checkbox" value="10" id="check1">
+									<label for="check1">
+										10%
+									</label>
+								</div>
+								<div class="form-check">
+									<input type="checkbox" value="20" id="check2">
+									<label for="check2">
+										20%
+									</label>
+								</div>
+								<div class="form-check">
+									<input type="checkbox" value="50" id="check3">
+									<label for="check3">
+										50%
+									</label>
+								</div>
+							</div>						
+						</form>
+					</div>
+				</div>
+				<div class="col-md-9">
+					<div class="list-products">
+						<div class="container-fluid">
+							<div class="row">
+								<div class="list-icecreams">
+
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="page">
+						<ul class="pagination">
+							<li><a href="#"><i class="fas fa-angle-double-left"></i></a></li>
+							<li class="active"><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">...</a></li>
+							<li><a href="#">6</a></li>
+							<li><a href="#"><i class="fas fa-angle-double-right"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="freeship">
+		<div class="container">
+			<div class="freeship-content">
+				<div class="freeship-text1">
+					FREESHIP
+				</div>
+				<div class="freeship-text2">
+					for all 200.000 VND bill
+				</div>
+				<div class="freeship-btn">
+					<a href="shop.html"><button class="btn-shopping">Shopping now</button></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="space-div">
+
+	</div>
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-5 col-xs-6">
+					<div class="footer-title">
+						<i class="fas fa-map-marker-alt"></i>&emsp;LOCATION
+					</div>
+					<div class="container-fluid foot">
+						<div class="row">
+							<div class="col-sm-6">
+								<p>25 Lorem ipsum dolor</p>
+								<p>25 Lorem ipsum dolor</p>
+								<p>25 Lorem ipsum dolor</p>
+								<p>25 Lorem ipsum dolor</p>
+								<p>25 Lorem ipsum dolor</p>
+							</div>
+							<div class="col-sm-6">
+								<p>25 Lorem ipsum dolor</p>
+								<p>25 Lorem ipsum dolor</p>
+								<p>25 Lorem ipsum dolor</p>
+								<p>25 Lorem ipsum dolor</p>
+								<p>25 Lorem ipsum dolor</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4  col-xs-6">
+					<div class="footer-title">
+						<i class="fas fa-hourglass-half"></i>&emsp;OPEN AT
+					</div>
+					<div class="time">
+						<p>7.30 AM - 11.30 AM</p>
+						<p>13.00 PM - 23.00 PM</p>
+					</div>
+					<br>
+					<div class="footer-title">
+						<i class="fas fa-phone-volume"></i>&emsp; <span class="info-footer">999.999.999 - 888.888.888</span>
+					</div>
+					<div class="footer-title">
+						<i class="far fa-envelope"></i>&emsp;<span class="info-footer">abc@gmail.com</span>
+					</div>
+					<br>
+					<div class="footer-title">
+						<div class="social-title">
+							SOCIAL
+						</div>
+						<div class="social-grp">
+							<div class="social-item">
+								<a href=""><i class="fab fa-facebook"></i></a>
+							</div>
+							<div class="social-item">
+								<a href=""><i class="fab fa-twitter-square"></i></a>
+							</div>
+							<div class="social-item">
+								<a href=""><i class="fab fa-google-plus-square"></i></a>
+							</div>
+							<div class="social-item">
+								<a href=""><i class="fab fa-pinterest-square"></i></a>
+							</div>
+							<div class="social-item">
+								<a href=""><i class="fab fa-linkedin"></i></a>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3 col-xs-12">
+					<div class="imgs">
+						<div class="img-footer">
+							<div class="thumb">
+								<img src="images/ic-f2.jpeg" alt="img footer" class="img-responsive">
+							</div>
+						</div>
+						<div class="img-footer">
+							<div class="thumb">
+								<img src="images/ic-f1.jpg" alt="img footer" class="img-responsive">
+							</div>
+						</div>
+						<div class="img-footer">
+							<div class="thumb">
+								<img src="images/ic-f4.jpg" alt="img footer" class="img-responsive">
+							</div>
+						</div>
+						<div class="img-footer">
+							<div class="thumb">
+								<img src="images/ic-f3.jpg" alt="img footer" class="img-responsive">
+							</div>
+						</div>
+						<div class="img-footer">
+							<div class="thumb">
+								<img src="images/ic-f5.jpg" alt="img footer" class="img-responsive">
+							</div>
+						</div>
+						<div class="img-footer">
+							<div class="thumb">
+								<img src="images/ic-f6.jpg" alt="img footer" class="img-responsive">
+							</div>
+						</div>
+						<div class="img-footer">
+							<div class="thumb">
+								<img src="images/ic-f7.jpg" alt="img footer" class="img-responsive">
+							</div>
+						</div>
+						<div class="img-footer">
+							<div class="thumb">
+								<img src="images/ic-f8.jpg" alt="img footer" class="img-responsive">
+							</div>
+						</div>
+						<div class="img-footer">
+							<div class="thumb">
+								<img src="images/ic-f9.jpg" alt="img footer" class="img-responsive">
+							</div>
+						</div>
+						<div class="clear"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<div class="shopping-cart">
+		<a href="cart.html">
+			<div class="shopping-item">
+				<i class="fas fa-shopping-cart"></i>
+				<div class="count-item">
+					0
+				</div>
+			</a>
+		</div>
+	</div>
+	
+	<div id="compare-table" class="compare-table">
+		<span class="closebtn" onclick="closeCompare()" title="Close Overlay">×</span>
+		<div class="compare-table-content">
+			<div class="table-responsive">
+				<table class="table">
+					<tr class="compare-tr"></tr>
+					<tr class="compare-tr"></tr>
+					<tr class="compare-tr"></tr>
+					<tr class="compare-tr"></tr>
+					<tr class="compare-tr"></tr>
+					<tr class="compare-tr"></tr>
+				</table>
+			</div>
+		</div>
+	</div>
+	
+	<!--modal login / signup-->
+	<div class="modal fade bs-modal-sm log-sign" id="myModal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-sm">
+			<div class="modal-content">
+				<div class="bs-example bs-example-tabs">
+					<ul id="myTab" class="nav nav-tabs">
+						<li id="tab1" class=" active tab-style login-shadow "><a href="#signin" data-toggle="tab">Log In</a></li>
+						<li id="tab2" class=" tab-style "><a href="#signup" data-toggle="tab">Sign Up</a></li>
+					</ul>
+				</div>
+				<div class="modal-body">
+					<div id="myTabContent" class="tab-content">
+						<div class="tab-pane fade active in" id="signin">
+							<form class="form-horizontal">
+								<fieldset>
+									<div class="group">
+										<input required="" class="input" type="text"><span class="highlight"></span><span class="bar"></span>
+										<label class="label" for="date">Email address</label></div>
+										<div class="group">
+											<input required="" class="input" type="password"><span class="highlight"></span><span class="bar"></span>
+											<label class="label" for="date">Password</label>
+										</div>
+										<div class="forgot-link">
+											<a href="#forgot" data-toggle="modal" data-target="#forgot-password"> I forgot my password</a>
+										</div>
+										<div class="control-group">
+											<label class="control-label" for="signin"></label>
+											<div class="controls">
+												<button id="signin" name="signin" class="btn btn-block">Log In</button>
+											</div>
+										</div>
+									</fieldset>
+								</form>
+							</div>
+							<div class="tab-pane fade" id="signup">
+								<form class="form-horizontal">
+									<fieldset>
+										<div class="group">
+											<input required="" class="input" type="email"><span class="highlight"></span><span class="bar"></span>
+											<label class="label" for="date">Email</label>
+										</div>
+										<div class="group">
+											<input required="" class="input" type="text"><span class="highlight"></span><span class="bar"></span>
+											<label class="label" for="date">Full name</label>
+										</div>
+										<div class="group">
+											<input required="" class="input" type="tel"><span class="highlight"></span><span class="bar"></span>
+											<label class="label" for="date">Phone number</label></div>
+											<div class="group">
+												<input required="" class="input" type="text"><span class="highlight"></span><span class="bar"></span>
+												<label class="label" for="date">Address</label></div>
+												<div class="group2">
+													<input required="" class="input" type="password"><span class="highlight"></span><span class="bar"></span>
+													<label class="label" for="date">Password</label>
+												</div>
+												<div class="control-group">
+													<label class="control-label" for="confirmsignup"></label>
+													<div class="controls">
+														<button id="confirmsignup" name="confirmsignup" class="btn btn-block">Sign Up</button>
+													</div>
+												</div>
+											</fieldset>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--modal Forgot password-->
+	<div class="modal fade bs-modal-sm" id="forgot-password" tabindex="0" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-sm">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="myModalLabel">Password will be sent to your email</h4>
+				</div>
+				<div class="modal-body">
+					<form class="form-horizontal">
+						<fieldset>
+							<div class="group">
+								<input required="" class="input" type="text"><span class="highlight"></span><span class="bar"></span>
+								<label class="label" for="date">Email address</label></div>
+								<div class="control-group">
+									<label class="control-label" for="forpassword"></label>
+									<div class="controls">
+										<button id="forpasswodr" name="forpassword" class="btn btn-primary btn-block">Send</button>
+									</div>
+								</div>
+							</div>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<script src="js/script.js"></script>
+	<script src="js/shop.js"></script>
+</body>
+</html>

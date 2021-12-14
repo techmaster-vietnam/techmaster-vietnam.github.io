@@ -1,0 +1,34 @@
+
+<div class="payment-card__content"> 
+  <div class="front"> <img class="payment-card__chip" src="/halo/img/img--payment/chip.png" alt=""/><img class="payment-card__brands" src="/halo/img/img--payment/vcb-logo.png" alt=""/>
+    <p class="front__num display-value">0000 0000 0000 0000</p>
+    <p class="front__valid-text">VALID DATES</p>
+    <p class="front__valid-dates"><span class="front__month display-value">MM</span><span>&nbsp;/&nbsp;</span><span class="front__year display-value">YY</span></p>
+    <p class="front__name display-value">PHAM XUAN AN</p>
+  </div>
+</div>
+<div class="payment-card__input"> 
+  <form autocomplete="off">
+    <div class="form-group">
+      <label for="bank">Chọn ngân hàng:&nbsp;</label>
+      <select class="form-control" id="input__bank">
+        <option>VCB (Vietcombank)</option>
+        <option>BIDV (Ngân hàng Đầu tư và Phát triển Việt Nam)</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="input__num">Nhập số thẻ:&nbsp;<i>(Viết liền)</i></label>
+      <input class="form-control front-input" id="input__num" type="text" required="required"/>
+    </div>
+    <div class="form-group input__dates">
+      <label for="domestic-input__month">Ngày hết hạn:&nbsp; <i>(chỉ nhập 2 số cuối của năm)</i></label>
+      <input class="input__month form-control front-input" id="domestic-input__month" type="number" placeholder="Tháng" min="1" max="12" required="required"/><span>&nbsp;/&nbsp;</span>
+      <input class="input__year form-control front-input" id="domestic-input__year" type="number" placeholder="Năm" min="21" max="99" required="required"/>
+    </div>
+    <div class="form-group">
+      <label for="input__name">Nhập tên chủ thẻ:&nbsp; <i>(Viết cách, không dấu)</i></label>
+      <input class="form-control front-input" id="input__name" type="text" required="required"/>
+    </div>
+    <input class="btn btn--confirmation" type="submit" value="Xác nhận"/>
+  </form>
+</div>

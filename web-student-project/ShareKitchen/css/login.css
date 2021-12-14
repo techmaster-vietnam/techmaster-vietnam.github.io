@@ -1,0 +1,112 @@
+/*navigation bar*/
+.navigation-login{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 60px;
+}
+.navigation-home-1{
+    float: left;
+    font-size: 16px;
+    color: black;
+}
+.next-image{
+    float: left;
+    margin-top: 20px;
+}
+.navigation-login-1{
+    float: left;
+    font-size: 16px;
+    color: black;
+}
+/*login*/
+.login-desktop{
+    position: relative;
+    width: 100%;
+    height: 650px;
+}
+.login-image{
+    height: 600px;
+    background-image: url(../img/street-food.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.login-form{
+    position: absolute;
+    top: 100px;
+    right: 20%;
+    height: 400px;
+    background-color: white;
+    margin: 20px;
+    max-width: 300px;
+    padding: 16px;
+}
+  
+  /* Full-width input fields */
+  .login-form>input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  .login-form>input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /* Set a style for the submit button */
+  .btn-login {
+    position: absolute;
+    top: 270px;
+    left: calc(50% - 75px);
+    background-color: red;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 150px;
+    opacity: 0.9;
+  }
+  
+  .btn-login:hover {
+    opacity: 1;
+  }
+  .login-word{
+      list-style-type: disc;      
+      list-style-position: inside; 
+      position: absolute;
+      top: 160px;
+      right: 50%;
+      color: white;
+      text-transform: uppercase;
+  }
+  .login-word-1{
+    font-size: 32px;
+}
+.login-word-2:before{
+    content:"• ";
+}
+.error-1{
+    position: absolute;
+    top: 102px;
+    left: 149px;
+    color: red;
+}
+.error-2{
+    position: absolute;
+    top: 210px;
+    left: -7px;
+    color: red;
+    width: 290px;
+    height: 100px;
+    text-align: end;
+}
+@media (max-width:1200px){
+    .login-word{
+        display: none;
+    }
+}

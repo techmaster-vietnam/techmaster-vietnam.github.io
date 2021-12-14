@@ -1,0 +1,58 @@
+/* content */
+
+.container h6 {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 3rem;
+}
+
+.formdatlich {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+.col_1 p {
+    margin-top: 3rem;
+    margin-bottom: 0.1rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.col_1 input {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.col_1 span {
+    color: red;
+}
+
+/* .container a {
+    margin: 2rem auto;
+} */
+
+.btn {
+    margin: 2rem auto;
+}
+
+.carddatlich {
+    margin-top: 0rem;
+    border: 0px solid red;
+}
+
+.datlich {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cardcont2_2 {
+    background-color: rgba(248, 237, 237, 0.815);
+}
+
+.cardcont2 h5 {
+    margin-bottom: auto;
+    margin-top: auto;
+    font-weight: bold;
+}

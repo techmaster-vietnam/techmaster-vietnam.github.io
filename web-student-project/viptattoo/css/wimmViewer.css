@@ -1,0 +1,62 @@
+.wimm_carousel .carousel {
+  position: relative;
+  white-space: nowrap;
+  -moz-white-space: nowrap;
+  -webkit-white-space: nowrap;
+  overflow: hidden;
+  letter-spacing: -0.31em;
+  -moz-letter-spacing: -0.31em;
+  -webkit-letter-spacing: -0.31em; }
+  .wimm_carousel .carousel .carousel_inner {
+    position: relative;
+    left: 0px;
+    padding-left: 0px;
+    text-align: center;
+    -webkit-transition: left 0.4s;
+    transition: left 0.4s; }
+    .wimm_carousel .carousel .carousel_inner .item {
+      width: 200px;
+      height: 150px;
+      display: inline-block;
+      background-size: cover;
+      opacity: 1;
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      transition: opacity 0.4s;
+      -webkit-transition: opacity 0.4s; }
+      .wimm_carousel .carousel .carousel_inner .item:hover {
+        opacity: 0.6;
+        cursor: pointer; }
+      .wimm_carousel .carousel .carousel_inner .item.active {
+        border: 2px solid #ff401b; }
+  .wimm_carousel .carousel .next, .wimm_carousel .carousel .prev {
+    z-index: 10;
+    position: absolute;
+    top: 50%;
+    color: white;
+       background: #ff401b;
+    letter-spacing: normal;
+    -moz-letter-spacing: normal;
+    -webkit-letter-spacing: normal;
+    padding: 3px 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: 0 0px 5px rgba(0, 0, 0, 0.26);
+    -webkit-box-shadow: 0 0px 5px rgba(0, 0, 0, 0.26);
+    text-align: center;
+    font-size:0.9em;
+    transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%); }
+    .wimm_carousel .carousel .next:hover, .wimm_carousel .carousel .prev:hover {
+      text-shadow: 0 5px 20px rgba(0, 0, 0, 0.46);
+      cursor: pointer; }
+.wimm_carousel .next {
+  right: 15px; }
+.wimm_carousel .prev {
+  left: 15px; }
+.wimm_carousel .mainImg img {
+  max-width: 100%;
+  display: block; }
+
+/*# sourceMappingURL=wimmViewer.css.map */

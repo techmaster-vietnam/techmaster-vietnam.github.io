@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon.png"/>
+    <link rel="stylesheet" href="./library/fontawesome/fontawesome-free-5.15.2-web/css/all.min.css"/>
+    <link rel="stylesheet" href="./library/bootstrap-5.0.0-dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="./css/main.css"/>
+    <title>Frequency - Chi Tiết</title>
+    <link rel="stylesheet" href="./library/fancybox/jquery.fancybox.min.css"/>
+    <link rel="stylesheet" href="./css/detail.css"/>
+  </head>
+  <body>
+    <div class="loading"> 
+      <div class="loading__animation"></div>
+    </div>
+    <header>
+      <nav class="nav">
+        <div class="container-fluid container-xl gx-xl-0 nav-main">
+          <div class="nav__moblie-btn"><i class="fas fa-bars"></i></div><a class="nav__main-logo" href="./index.html">FREQUENCY</a>
+          <ul class="nav__main-menu">
+            <li class="nav__main-menu-item"><a href="./index.html">TRANG CHỦ</a></li>
+            <li class="nav__main-menu-item"><a href="./shop.html">ĐỒNG HỒ</a></li>
+            <li class="nav__main-menu-item"><a href="./story.html">ABOUT US</a></li>
+            <li class="nav__main-menu-item"><a href="./blog.html">BLOG</a></li>
+            <li class="nav__main-menu-item"><a href="#">LIÊN HỆ</a></li>
+          </ul>
+          <div class="nav__main-button">  
+            <svg class="nav__main-button-search" width="19" height="19" viewbox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M18.8357 18.031L14.2173 13.4137C15.4562 11.9898 16.2063 10.1319 16.2063 8.10133C16.2063 3.63149 12.5697 0 8.10313 0C3.63229 0 0 3.6357 0 8.10133C0 12.567 3.63651 16.2027 8.10313 16.2027C10.1342 16.2027 11.9925 15.4528 13.4167 14.2142L18.035 18.8315C18.1446 18.941 18.2921 19 18.4354 19C18.5786 19 18.7261 18.9452 18.8357 18.8315C19.0548 18.6124 19.0548 18.2501 18.8357 18.031ZM1.13351 8.10133C1.13351 4.2592 4.26015 1.13747 8.09891 1.13747C11.9419 1.13747 15.0643 4.26342 15.0643 8.10133C15.0643 11.9392 11.9419 15.0694 8.09891 15.0694C4.26015 15.0694 1.13351 11.9435 1.13351 8.10133Z" fill="white"></path>
+            </svg><a href="./bag.html">
+              <svg class="nav__main-button-bag" width="15" height="19" viewbox="0 0 15 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.9962 16.4239L13.9231 4.17301C13.9001 3.90102 13.674 3.69509 13.4096 3.69509H11.2021C11.1714 1.65133 9.5235 0 7.5 0C5.47649 0 3.82856 1.65133 3.7979 3.69509H1.59044C1.32218 3.69509 1.0999 3.90102 1.0769 4.17301L0.00383248 16.4239C0.00383248 16.4395 0 16.455 0 16.4706C0 17.8654 1.26086 19 2.81298 19H12.187C13.7391 19 15 17.8654 15 16.4706C15 16.455 15 16.4395 14.9962 16.4239ZM7.5 1.04908C8.95248 1.04908 10.1367 2.23027 10.1673 3.69509H4.83265C4.86331 2.23027 6.04752 1.04908 7.5 1.04908ZM12.187 17.9509H2.81298C1.83955 17.9509 1.05008 17.2982 1.03475 16.4939L2.06183 4.74806H3.79407V6.3411C3.79407 6.63251 4.02402 6.86564 4.31145 6.86564C4.59888 6.86564 4.82882 6.63251 4.82882 6.3411V4.74806H10.1673V6.3411C10.1673 6.63251 10.3973 6.86564 10.6847 6.86564C10.9722 6.86564 11.2021 6.63251 11.2021 6.3411V4.74806H12.9343L13.9653 16.4939C13.9499 17.2982 13.1566 17.9509 12.187 17.9509Z" fill="white"></path>
+              </svg></a>
+            <div class="nav__main-account">
+              <div class="nav__main-account-log"><span class="nav__main-account-name" id="account-name"></span>
+                <div class="nav__main-account-options">
+                  <p> <a href="#">Tài khoản</a></p>
+                  <p id="log-out">Đăng xuất</p>
+                </div>
+              </div>
+              <div class="nav__main-group-button">
+                <div class="nav__main-button-login">
+                  <button class="login-btn">Login</button>
+                </div>
+                <div class="nav__main-button-register">
+                  <button class="register-btn">Register</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="nav__overlay"></div>
+      <div class="nav__moblie">
+        <div class="nav__moblie-close"><i class="fas fa-times nav__moblie-close--link"></i></div>
+        <ul class="nav__moblie-menu">
+          <li class="nav__mobile-menu-item"><a href="./index.html">TRANG CHỦ</a></li>
+          <li class="nav__mobile-menu-item"><a href="./shop.html">ĐỒNG HỒ</a></li>
+          <li class="nav__mobile-menu-item"><a href="./story.html">ABOUT US</a></li>
+          <li class="nav__mobile-menu-item"><a href="#">LIÊN HỆ</a></li>
+          <li class="nav__mobile-menu-item"><a href="./blog.html">BLOG</a></li>
+          <li class="nav__mobile-menu-item"><a href="#">TÌM KIẾM</a></li>
+          <li class="nav__mobile-menu-item"><a class="login-btn" href="#">ĐĂNG NHẬP</a></li>
+          <li class="nav__mobile-menu-item"><a class="register-btn" href="#">ĐĂNG KÝ</a></li>
+        </ul>
+      </div>
+      <div class="nav__overlay-form" id="overlay-form"></div>
+      <div class="login" id="login-form">
+        <div class="login__close"><i class="fas fa-times login__close-button" id="login-close"></i></div>
+        <form class="login__form" action="">
+          <div class="login__form-status">
+            <h1 class="login__form-status--login">Đăng Nhập</h1>
+            <h2 class="login__form-status--register" id="change-register">Đăng Ký</h2>
+          </div>
+          <input class="login__form-input" id="login-username" type="text" placeholder="Địa chỉ Email" name="email"/>
+          <input class="login__form-input login__form-input--align" id="login-password" type="password" placeholder="Mật khẩu" name="password"/>
+          <div class="login__form-password">
+            <div class="login__form-password-remember">
+              <input class="login__form-password-input" type="checkbox" id="remember" name="remember"/>
+              <label class="login__form-password-label" for="remember">Lưu mật khẩu</label>
+            </div><a class="login__form-password-forgot" href="#">Quên mật khẩu?</a>
+          </div>
+          <input class="login__form-submit" id="btn-login" type="button" value="Đăng nhập"/>
+          <p class="login__form-title">Hoặc đăng nhập qua</p>
+          <div class="login__form-social">
+            <button class="login__form-social-btn login__form-social-btn--facebook"><i class="fab fa-facebook-f"> </i>Facebook</button>
+            <button class="login__form-social-btn login__form-social-btn--google"><i class="fab fa-google"> </i>Google</button>
+          </div>
+        </form>
+      </div>
+      <div class="register" id="register-form">
+        <div class="register__close"><i class="fas fa-times register__close-button" id="register-close"></i></div>
+        <form class="register__form" action="">
+          <div class="register__form-status">
+            <h1 class="register__form-status--register">Đăng Ký</h1>
+            <h2 class="register__form-status--login" id="change-login">Đăng Nhập</h2>
+          </div>
+          <input class="register__form-input" id="register-name" type="text" placeholder="Họ tên" name="name"/>
+          <input class="register__form-input" id="register-email" type="text" placeholder="Email" name="email"/>
+          <input class="register__form-input" type="password" placeholder="Mật khẩu từ 6 đến 23 kí tự" name="password"/>
+          <input class="register__form-input register__form-input--align" id="register-password" type="password" placeholder="Nhập lại mật khẩu" name="password"/>
+          <div class="register__form-radio"><span class="register__form-radio--circle">
+              <input class="register__form-radio-male" type="radio" name="gender" id="male" value="male"/>
+              <label class="register__form-radio-label" for="male">Nam</label></span><span class="register__form-radio--circle register__form-radio--align">
+              <input class="register__form-radio-female" type="radio" name="gender" id="female" value="female"/>
+              <label class="register__form-radio-label" for="female">Nữ</label></span></div>
+          <input class="register__form-policy" type="checkbox" id="policy"/><span class="register__form-title">
+            <label for="policy">Tôi đã đọc và đồng ý theo</label><a class="register__form-title--link" href="#"> điều kiện sử dụng và chính sách của Frequency</a></span>
+          <input class="register__form-btn" id="btn-register" type="button" value="Tạo tài khoản"/>
+        </form>
+      </div>
+    </header>
+    <div class="main">
+      <div class="container gx-0 path"><a class="path__link" href="./index.html">TRANG CHỦ</a><span class="path__divide">/</span><a class="path__link" href="./shop.html"> Đồng Hồ Nam</a><span class="path__divide">/</span><span>Chi Tiết Sản Phẩm </span>
+        <div class="path__line"></div>
+      </div>
+      <div class="container watch">
+        <div class="row">
+          <div class="col-6 d-flex justify-content-center"><img src="./img/detail-mace.png" alt="mace"/></div>
+          <div class="col-6">
+            <div class="watch__main">
+              <p class="watch__main-name">MACE</p>
+              <p class="watch__main-size">COLOSSEUM - 42MM</p>
+              <div class="watch__main-price"><span class="watch__main-price-amount">8.099.000 ₫</span><span class="watch__main-price-evaluate">25 đánh giá</span><span class="watch__main-price-list"><i class="fas fa-star watch__main-price-star"></i><i class="fas fa-star watch__main-price-star"></i><i class="fas fa-star watch__main-price-star"></i><i class="fas fa-star watch__main-price-star"></i><i class="fas fa-star-half-alt watch__main-price-star"></i></span></div>
+              <div class="watch__main-status"><span class="watch__main-status-title">Tình trạng:</span><span class="watch__main-status-circle"></span><span class="watch__main-status-now">Còn hàng</span>
+                <div class="watch__main-guide" id="video--show">
+                  <svg class="watch__main-guide-ruler" width="12" height="40" viewbox="0 0 12 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0V39.3333H11.8V0H0ZM10.4889 7.86667H5.9V9.17778H10.4889V10.4889H8.52222V11.8H10.4889V13.1111H5.9V14.4222H10.4889V15.7333H8.52222V17.0444H10.4889V18.3556H5.9V19.6667H10.4889V20.9778H8.52222V22.2889H10.4889V23.6H5.9V24.9111H10.4889V26.2222H8.52222V27.5333H10.4889V28.8444H5.9V30.1556H10.4889V31.4667H8.52222V32.7778H10.4889V34.0889H5.9V35.4H10.4889V38.0222H1.31111V1.31111H10.4889V7.86667Z" fill="black"></path>
+                    <path d="M5.90026 5.90001C6.98643 5.90001 7.86693 5.01952 7.86693 3.93334C7.86693 2.84717 6.98643 1.96667 5.90026 1.96667C4.81409 1.96667 3.93359 2.84717 3.93359 3.93334C3.93359 5.01952 4.81409 5.90001 5.90026 5.90001ZM5.90026 3.27779C6.26229 3.27779 6.55582 3.57131 6.55582 3.93334C6.55582 4.29537 6.26229 4.5889 5.90026 4.5889C5.53823 4.5889 5.2447 4.29537 5.2447 3.93334C5.2447 3.57131 5.53823 3.27779 5.90026 3.27779Z" fill="black"></path>
+                  </svg><span class="watch__main-guide-size">SIZE GUIDE</span>
+                </div>
+                <div class="watch__main-status-video">
+                  <div class="watch__main-status-video--overlay"></div>
+                  <iframe class="watch__main-status-video--yt" width="640" height="480" src="https://www.youtube.com/embed/ZqSyUkffhUM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                </div>
+              </div>
+              <p class="watch__main-add">MUA KÈM PHỤ KIỆN:</p>
+              <div class="watch__main-bracelet">
+                <div class="watch__main-bracelet-product">
+                  <div class="watch__main-bracelet-detail">
+                    <div class="watch__main-bracelet-img"><img src="./img/detail-bracelet-1.jpg" alt="bracelet"/></div>
+                    <div class="watch__main-bracelet-info">
+                      <p class="watch__main-bracelet-title">JACKIE SILVER</p>
+                      <p class="watch__main-bracelet-price"> + 599.000 ₫</p>
+                    </div>
+                  </div>
+                  <button class="watch__main-bracelet-btn">Thêm                 </button>
+                </div>
+                <div class="watch__main-bracelet-product watch__main-bracelet--align">
+                  <div class="watch__main-bracelet-detail">
+                    <div class="watch__main-bracelet-img"><img src="./img/detail-bracelet-2.jpg" alt="bracelet"/></div>
+                    <div class="watch__main-bracelet-info">
+                      <p class="watch__main-bracelet-title">JACKIE GUNMETAL</p>
+                      <p class="watch__main-bracelet-price">+ 599.000 ₫</p>
+                    </div>
+                  </div>
+                  <button class="watch__main-bracelet-btn">Thêm </button>
+                </div>
+              </div>
+              <div class="watch__main-pay">
+                <button class="watch__main-pay-btn watch__main-pay--black"><a class="watch__main-pay-btn--link" href="#">THANH TOÁN NGAY</a></button>
+                <button class="watch__main-pay-btn watch__main-pay--white">
+                  <div class="watch__main-pay-group">
+                    <svg class="watch__main-pay-btn--svg" width="15" height="19" viewbox="0 0 15 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M14.9962 16.4239L13.9231 4.17301C13.9001 3.90102 13.674 3.69509 13.4096 3.69509H11.2021C11.1714 1.65133 9.5235 0 7.5 0C5.47649 0 3.82856 1.65133 3.7979 3.69509H1.59044C1.32218 3.69509 1.0999 3.90102 1.0769 4.17301L0.00383248 16.4239C0.00383248 16.4395 0 16.455 0 16.4706C0 17.8654 1.26086 19 2.81298 19H12.187C13.7391 19 15 17.8654 15 16.4706C15 16.455 15 16.4395 14.9962 16.4239ZM7.5 1.04908C8.95248 1.04908 10.1367 2.23027 10.1673 3.69509H4.83265C4.86331 2.23027 6.04752 1.04908 7.5 1.04908ZM12.187 17.9509H2.81298C1.83955 17.9509 1.05008 17.2982 1.03475 16.4939L2.06183 4.74806H3.79407V6.3411C3.79407 6.63251 4.02402 6.86564 4.31145 6.86564C4.59888 6.86564 4.82882 6.63251 4.82882 6.3411V4.74806H10.1673V6.3411C10.1673 6.63251 10.3973 6.86564 10.6847 6.86564C10.9722 6.86564 11.2021 6.63251 11.2021 6.3411V4.74806H12.9343L13.9653 16.4939C13.9499 17.2982 13.1566 17.9509 12.187 17.9509Z" fill="black"></path>
+                    </svg><a class="watch__main-pay-btn--link-add" href="#">THÊM VÀO GIỎ</a>
+                  </div>
+                </button>
+              </div>
+              <div class="watch__main-policy">
+                <div class="watch__main-policy-transport">
+                  <svg width="40" height="40" viewbox="0 0 63 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0)">
+                      <path d="M14.6776 42.0996C11.2085 42.0996 8.38725 44.9677 8.38725 48.4945C8.38725 52.0213 11.2085 54.8894 14.6776 54.8894C18.1468 54.8894 20.9681 52.0213 20.9681 48.4945C20.9681 44.9677 18.1467 42.0996 14.6776 42.0996ZM14.6776 52.7577C12.3648 52.7577 10.4841 50.8456 10.4841 48.4945C10.4841 46.1433 12.3649 44.2313 14.6776 44.2313C16.9904 44.2313 18.8712 46.1434 18.8712 48.4945C18.8712 50.8456 16.9904 52.7577 14.6776 52.7577Z" fill="black"></path>
+                      <path d="M50.3232 42.0996C46.854 42.0996 44.0328 44.9677 44.0328 48.4945C44.0328 52.0213 46.854 54.8894 50.3232 54.8894C53.7924 54.8894 56.6136 52.0213 56.6136 48.4945C56.6136 44.9677 53.7924 42.0996 50.3232 42.0996ZM50.3232 52.7577C48.0104 52.7577 46.1296 50.8456 46.1296 48.4945C46.1296 46.1433 48.0105 44.2313 50.3232 44.2313C52.636 44.2313 54.5168 46.1434 54.5168 48.4945C54.5168 50.8456 52.636 52.7577 50.3232 52.7577Z" fill="black"></path>
+                      <path d="M62.7373 36.1939L53.3017 21.2724C53.1088 20.9676 52.7765 20.7832 52.4199 20.7832H40.8876C40.3078 20.7832 39.8392 21.2607 39.8392 21.849V48.4943C39.8392 49.0837 40.3078 49.5601 40.8876 49.5601H45.0812V47.4284H41.936V22.9149H51.8475L60.8072 37.0838V47.4287H55.5651V49.5602H61.8555C62.4353 49.5602 62.9039 49.0838 62.9039 48.4944V36.7704C62.904 36.5668 62.8464 36.3654 62.7373 36.1939Z" fill="black"></path>
+                      <path d="M46.1296 34.6387V27.1781H54.5169V25.0464H45.0813C44.5015 25.0464 44.0329 25.5239 44.0329 26.1122V35.7045C44.0329 36.2939 44.5015 36.7703 45.0813 36.7703H60.8073V34.6386H46.1296V34.6387Z" fill="black"></path>
+                      <path d="M40.8876 13.3228H1.04836C0.469691 13.3228 0 13.8002 0 14.3885V48.4947C0 49.0841 0.469691 49.5604 1.04836 49.5604H9.4356V47.4288H2.09684V15.4543H39.8392V47.4288H19.9196V49.5604H40.8876C41.4674 49.5604 41.936 49.0841 41.936 48.4947V14.3885C41.936 13.8002 41.4674 13.3228 40.8876 13.3228Z" fill="black"></path>
+                      <path d="M7.34036 43.1655H1.04996V45.2981H7.34036V43.1655Z" fill="black"></path>
+                      <path d="M39.8392 43.1655H22.0164V45.2981H39.8392V43.1655Z" fill="black"></path>
+                      <path d="M61.8555 43.1655H57.662V45.2981H61.8555V43.1655Z" fill="black"></path>
+                      <path d="M40.8876 17.5859H4.19356V19.7185H40.8876V17.5859Z" fill="black"></path>
+                      <path d="M15.726 47.4287H13.6292V49.5613H15.726V47.4287Z" fill="black"></path>
+                      <path d="M51.3717 47.4287H49.2748V49.5613H51.3717V47.4287Z" fill="black"></path>
+                      <path d="M18.8712 9.05957H4.19356V11.1922H18.8712V9.05957Z" fill="black"></path>
+                      <path d="M2.09684 9.05957H0V11.1922H2.09684V9.05957Z" fill="black"></path>
+                    </g>
+                    <defs>
+                      <clippath id="clip0">
+                        <rect width="62.904" height="63.9489" fill="white"></rect>
+                      </clippath>
+                    </defs>
+                  </svg>MIỄN PHÍ VẬN CHUYỂN
+                </div>
+                <div class="watch__main-policy-commitment">
+                  <svg width="24" height="29" viewbox="0 0 39 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18.9326 0.792903L18.9326 0.792875C19.2394 0.663437 19.584 0.66344 19.8911 0.792903C19.8911 0.79291 19.8911 0.792916 19.8912 0.792923L37.1056 8.05291C37.5728 8.24997 37.8829 8.71649 37.8829 9.24009V18.0656C37.8829 30.0193 30.7703 40.766 19.8842 45.2794C19.5812 45.405 19.2423 45.405 18.9395 45.2794C8.05321 40.7659 0.940796 30.0192 0.940796 18.0656V9.24009C0.940796 8.71653 1.25094 8.24999 1.71811 8.05291C1.71812 8.05291 1.71813 8.0529 1.71814 8.0529L18.9326 0.792903ZM19.2076 42.6076L19.4118 42.699L19.6161 42.6076C29.2867 38.2798 35.3697 28.5876 35.3697 18.0656V10.4313V10.0995L35.064 9.97058L19.6061 3.45132L19.4118 3.36937L19.2175 3.45132L3.75965 9.97058L3.45395 10.0995V10.4313V18.0656C3.45395 28.8737 9.79593 38.3956 19.2076 42.6076ZM17.114 24.4307L17.4703 24.7926L17.8266 24.4307L25.3767 16.7616C25.8668 16.2638 26.6581 16.2637 27.1483 16.7616C27.6427 17.2638 27.6426 18.0812 27.1482 18.5833L27.1482 18.5834L18.3561 27.5142C17.8659 28.0121 17.0746 28.0119 16.5845 27.5142L11.6754 22.5276C11.181 22.0254 11.181 21.208 11.6754 20.7059C12.1656 20.208 12.9569 20.208 13.4469 20.7058L13.447 20.7058L17.114 24.4307Z" fill="black" stroke="black"></path>
+                  </svg>BẢO HÀNH 10 NĂM, 1 ĐỔI 1 TRONG 3 NGÀY
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container d-flex justify-content-center detail"><a class="detail__link" data-fancybox="gallery" href="./img/detail-mace-1.jpg"><img class="detail__link-img" src="./img/detail-mace-small-1.jpg"/></a><a class="detail__link" data-fancybox="gallery" href="./img/detail-mace-2.jpg"><img class="detail__link-img" src="./img/detail-mace-small-2.jpg"/></a><a class="detail__link" data-fancybox="gallery" href="./img/detail-mace-3.jpg"><img class="detail__link-img" src="./img/detail-mace-small-3.jpg"/></a></div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="row"> 
+          <div class="col-12 col-sm-6 col-md-4">
+            <div class="footer__content">
+              <h1 class="footer__content-title">THÔNG TIN LIÊN HỆ</h1>
+              <ul class="footer__content-menu">
+                <li class="footer__content-menu-item">Địa chỉ: 123 Nguyễn An Ninh, Tương Mai, Hoàng Mai, Hà Nội.</li>
+                <li class="footer__content-menu-item"><a href="tel:0326979486"> Phone: 0326 979 486</a></li>
+                <li class="footer__content-menu-item">Fax: (012) 800 888 789</li>
+                <li class="footer__content-menu-item"><a href="mailto:mhoang0304@gmail.com"> Email: mhoang0304@gmail.com  </a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4">
+            <div class="footer__content">
+              <h1 class="footer__content-title">CỬA HÀNG</h1>
+              <ul class="footer__content-menu"> 
+                <li class="footer__content-menu-item">Store 2: 9 B7 Phạm Ngọc Thạch, Đống Đa, Hà Nội.</li>
+                <li class="footer__content-menu-item">Store 3: 173A Kim Mã, Ba Đình, Hà Nội.</li>
+                <li>Store 1: 38 Hàm Long, Hoàn Kiếm, Hà Nội.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="footer__content">
+              <h1 class="footer__content-title">INSTAGRAM</h1>
+              <p class="footer__content-sub">Ghé thăm trang Instagram để cùng chia sẻ khoảnh khắc của bạn.</p>
+            </div>
+            <div class="d-flex justify-content-between footer__feed">
+              <div class="footer__feedback js-footer__feedback-1"><img class="footer__feedback-img" src="./img/footer-1.jpg" alt="feedback"/><i class="fab fa-instagram footer__feedback-icon"></i></div>
+              <div class="footer__feedback js-footer__feedback-2"><img class="footer__feedback-img" src="./img/footer-2.jpg" alt="feedback"/><i class="fab fa-instagram footer__feedback-icon"></i></div>
+              <div class="footer__feedback js-footer__feedback-3"><img class="footer__feedback-img" src="./img/footer-3.jpg" alt="feedback"/><i class="fab fa-instagram footer__feedback-icon"></i></div>
+              <div class="footer__feedback js-footer__feedback-4"><img class="footer__feedback-img" src="./img/footer-4.jpg" alt="feedback"/><i class="fab fa-instagram footer__feedback-icon"></i></div>
+            </div>
+          </div>
+        </div>
+        <div class="row footer-sub">
+          <div class="col-6 d-flex align-items-center">
+            <div class="footer-sub__copyright">Frequency © 2021</div>
+          </div>
+          <div class="col-6 d-flex align-items-center justify-content-end">
+            <div class="footer-sub__social"><a class="footer-sub__social-link" href="#"> <i class="fab fa-facebook-f"></i></a><a class="footer-sub__social-link" href="#"> <i class="fab fa-youtube"></i></a><a class="footer-sub__social-link" href="#"> <i class="fab fa-twitter"></i></a></div>
+          </div>
+        </div>
+      </div>
+      <div class="instargram">
+        <div class="instargram__btn js-instargram__btn-prev"><i class="fas fa-chevron-left"></i></div>
+        <div class="instargram__main">
+          <div class="ins js-ins-1">
+            <div class="ins__main">
+              <div class="ins__main-img"><a href="https://www.instagram.com/" target="_blank"> <img src="./img/footer-img1.jpg" alt="instagram"/></a></div>
+              <div class="ins__main-comment">
+                <div class="ins__main-header"><img class="ins__main-header-avatar" src="./img/avatar.jpg" alt="avatar"/><span class="ins__main-header-name">mhoang0304</span></div>
+                <div class="ins__main-body">
+                  <div class="ins__main-body-content">
+                    <p>Không ai mua được thời gian, nó luôn lạnh lùng với tất cả mọi người, với tất cả những sai lầm chúng ta muốn sửa chữa, với tất cả những kỉ niệm đẹp mà ta đã từng trải qua.</p>
+                  </div>
+                </div>
+                <div class="ins__main-footer"><span class="ins__main-footer-date">31 tháng 07 2020</span><a class="ins__main-footer-date-link" href="https://www.instagram.com/" target="_blank">View on Instagram</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="ins js-ins-2">
+            <div class="ins__main">
+              <div class="ins__main-img"><a href="https://www.instagram.com/" target="_blank"> <img src="./img/footer-img2.jpg" alt="instagram"/></a></div>
+              <div class="ins__main-comment">
+                <div class="ins__main-header"><img class="ins__main-header-avatar" src="./img/avatar.jpg" alt="avatar"/><span class="ins__main-header-name">mhoang0304</span></div>
+                <div class="ins__main-body">
+                  <div class="ins__main-body-content">
+                    <p>Rồi sẽ có một ngày bạn thức dậy và không còn đủ thời gian để làm những điều hàng ngày mình mong muốn. Hãy làm ngay bây giờ.</p>
+                  </div>
+                </div>
+                <div class="ins__main-footer"><span class="ins__main-footer-date">08 tháng 04 2020</span><a class="ins__main-footer-date-link" href="https://www.instagram.com/" target="_blank">View on Instagram</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="ins js-ins-3">
+            <div class="ins__main">
+              <div class="ins__main-img"><a href="https://www.instagram.com/" target="_blank"> <img src="./img/footer-img3.jpg" alt="instagram"/></a></div>
+              <div class="ins__main-comment">
+                <div class="ins__main-header"><img class="ins__main-header-avatar" src="./img/avatar.jpg" alt="avatar"/><span class="ins__main-header-name">mhoang0304</span></div>
+                <div class="ins__main-body">
+                  <div class="ins__main-body-content">
+                    <p> Có những lúc, không có lần sau, không có cơ hội bắt đầu lại. Có những lúc, bỏ lỡ hiện tại, vĩnh viễn không còn cơ hội nữa</p>
+                  </div>
+                </div>
+                <div class="ins__main-footer"><span class="ins__main-footer-date">28 tháng 04 2021</span><a class="ins__main-footer-date-link" href="https://www.instagram.com/" target="_blank">View on Instagram</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="ins js-ins-4">
+            <div class="ins__main">
+              <div class="ins__main-img"><a href="https://www.instagram.com/" target="_blank"> <img src="./img/footer-img4.jpg" alt="instagram"/></a></div>
+              <div class="ins__main-comment">
+                <div class="ins__main-header"><img class="ins__main-header-avatar" src="./img/avatar.jpg" alt="avatar"/><span class="ins__main-header-name">mhoang0304</span></div>
+                <div class="ins__main-body">
+                  <div class="ins__main-body-content">
+                    <p>Khi đã trưởng thành, sẽ có đôi lúc, chúng ta nhớ lại thời gian thanh xuân tươi đẹp mà cũng đầy đau buồn ấy, và mỉm cười, thật nhẹ nhàng và thanh thản.</p>
+                  </div>
+                </div>
+                <div class="ins__main-footer"><span class="ins__main-footer-date">03 tháng 04 2021</span><a class="ins__main-footer-date-link" href="https://www.instagram.com/" target="_blank">View on Instagram</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="instargram__btn js-instargram__btn-next"><i class="fas fa-chevron-right"></i></div>
+        <div class="instargram__close"><i class="fas fa-times"></i></div>
+      </div>
+    </footer>
+    <script src="./library/jquery-3.5.1.min.js"></script>
+    <script src="./library/bootstrap-5.0.0-dist/js/bootstrap.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./library/fancybox/jquery.fancybox.min.js"> </script>
+    <script src="./js/detail.js"> </script>
+  </body>
+</html>

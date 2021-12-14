@@ -1,0 +1,74 @@
+extends parts/layout.pug
+
+block css
+  link(rel="stylesheet", href="css/checkout.css")
+
+block title
+  title Checkout
+
+block content
+  .page-wrapper.container-xl
+
+    .success-alert
+      img.success-img(src="img/img--checkout/success.png", alt="")
+      span Tuyệt vời! 
+
+    p.success-thank Cảm ơn quý khách đã ủng hộ HALO 
+
+    .checkout-box.mx-auto
+      h1.checkout-box__header Thông tin đơn hàng 
+      .inner-row
+        span.checkout-box__inner-header Mã đơn hàng
+        span 123456789
+
+      .inner-row
+        span.checkout-box__inner-header Thời điểm xác nhận: 
+        span 01/04/2021 00:00
+
+      .inner-row
+        span.checkout-box__inner-header Giỏ hàng: 
+
+      .inner-row.inner-row--item
+        span Máy ảnh Canon 1DX Mark III 
+        span 1 x 130.090.000 đ = 130.090.000 đ
+        
+      .inner-row.inner-row--item
+        span Máy ảnh Canon 1DX Mark III 
+        span 1 x 130.090.000 đ = 130.090.000 đ
+
+      .inner-row
+        span Tổng giá trị giỏ hàng
+        span 390.270.000đ
+
+      .inner-row
+        span.checkout-box__inner-header Thông tin khách hàng:
+
+      .inner-row.inner-row--item
+        span Họ tên: 
+        span Nguyễn Trung Đức
+
+      .inner-row.inner-row--item
+        span Địa chỉ nhận hàng:
+        span Số x, phố Y, Hà Nội
+
+      .inner-row
+        span Số điện thoại: 
+        span 099.999.9999
+
+      .inner-row
+        span.checkout-box__inner-header Thời điểm giao hàng dự kiến:
+        span 03/04/2021 00:00
+
+      .inner-row
+        span.checkout-box__inner-header Thanh toán:
+        span Đã thanh toán bằng thẻ VISA lúc 01/04/2021 00:00
+
+      .hotline
+        span.checkout-box__inner-header Tổng đài hỗ trợ 24/07: 
+        span.text-primary 0169.749.6263 
+
+      a.btn.btn--continue-buying(href="index.html") Tiếp tục mua hàng  
+    
+
+
+

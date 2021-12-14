@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="57x57" href="/img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <title>Kanojo, Okarishimasu</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="./library/slick/slick.css" />
+    <link rel="stylesheet" href="./library/slick/slick-theme.css" />
+    <link rel="stylesheet" href="./library/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./library/fontawesome-free-5.15.2-web/css/fontawesome.css">
+    <link rel="stylesheet" href="./library/fontawesome-free-5.15.2-web/css/brands.css">
+    <link rel="stylesheet" href="./library/fontawesome-free-5.15.2-web/css/solid.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/anh-bia.css">
+    <link rel="stylesheet" href="./css/signin-signup.css">
+    <link rel="stylesheet" href="./css/font-size.css">
+    <link rel="stylesheet" href="./css/detail-manga.css">
+</head>
+<style>
+</style>
+
+<body>
+    <header class="header-area">
+        <div class="header">
+            <div class="header-logo"><img src="./img/icon/logo.svg" alt=""></div>
+            <div id="header-hamburger" class="col-sm-10">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="btns-header header-left">
+                <li id="btn-header-user-left">
+                    <span><i class="fas fa-user"></i></span>
+                    <span>ĐĂNG NHẬP</span>
+                </li>
+                <li>
+                    <span><i class="fas fa-book"></i></span>
+                    <a href="./index.html">MANGA</a>
+                </li>
+                <li>
+                    <span><i class="fas fa-store"></i></span>
+                    <a href="./shop.html">SHOP</a>
+                </li>
+                <!-- <li>
+                    <span><i class="fas fa-chart-bar"></i></span>
+                    <a href="./bxh.html">BXH</a>
+                </li> -->
+                <li>
+                    <span><i class="fas fa-newspaper"></i></span>
+                    <a href="./tin-tuc.html">TIN TỨC</a>
+                </li>
+            </ul>
+            <ul class="btns-header header-right">
+                <li class="header-search">
+                    <form class="form-search">
+                        <input type="text" name="" id="" placeholder="Tìm kiếm">
+                        <button type="submit"><i class="fas fa-search"></i></button>
+                    </form>
+                    <i class="fas fa-search btn-header-search btn"></i>
+                </li>
+                <li id="btn-header-cart">
+                    <i class="fas fa-shopping-cart btn"></i>
+                </li>
+                <li id="btn-header-user">
+                    <i class="fas fa-user btn"></i>
+                </li>
+            </ul>
+        </div>
+        <div class="header-cover-screen">
+        </div>
+    </header>
+    <section class="signin-signup-area">
+        <div class="signin-signup">
+            <div class="btn-exit-signin-signup"><i class="fas fa-times-circle"></i></div>
+            <div class="signin">
+                <div class="sign-title">
+                    <h2>ĐĂNG NHẬP</h2>
+                </div>
+                <form action="">
+                    <input type="text" placeholder="Email/SĐT" id="username-signin" required>
+                    <input type="password" placeholder="Mật khẩu" minlength="6" maxlength="15" id="password-signin"
+                        required>
+                    <button class="sign-submit" type="submit" id="submit-signin">
+                        <h3>ĐĂNG NHẬP</h3>
+                    </button>
+                </form>
+                <p class="font-16px">Quên mật khẩu? Nhấn tại <a href="">đây</a></p>
+            </div>
+            <div class="signup">
+                <div class="sign-title">
+                    <h2>ĐĂNG KÝ</h2>
+                </div>
+                <form action="">
+                    <input type="text" placeholder="Email/SĐT" id="username-signup" required>
+                    <input type="password" placeholder="Mật khẩu" minlength="6" maxlength="15" id="password-signup"
+                        required>
+                    <div class="checkbox-signpup font-16px signup">
+                        <label class="filter-box">Tôi đã đọc và đồng ý với <a class="important-text" href="">Điều khoản
+                                dịch vụ</a> & <a class="important-text" href="">Chính sách bảo mật</a> của RbCrow
+                            <input type="checkbox" id="checkbox-signup" required>
+                            <span class="checkmark" id="checkbox-checkmark"></span>
+                        </label>
+                    </div>
+                    <button class="sign-submit" type="submit" id="submit-signup">
+                        <h3>ĐĂNG KÝ</h3>
+                    </button>
+                </form>
+            </div>
+            <div class="sign-or">
+                <hr>
+                <h3><span>HOẶC</span></h3>
+            </div>
+            <div class="sign-apps">
+                <a href=""><img src="./img/icon/sign-facebook.png" alt=""></a>
+                <a href=""><img src="./img/icon/sign-gmail.png" alt=""></a>
+            </div>
+            <p class="font-16px signin">Bạn chưa có tài khoản? <br> Hãy <a class="turn-signup">đăng ký</a> ngay</p>
+            <p class="font-16px signup">Bạn đã có tài khoản? <br> Hãy <a class="turn-signin">đăng nhập</a> ngay</p>
+        </div>
+    </section>
+
+    <div class="anh-bia">
+        <img src="./img/index/cover-image.png" alt="">
+        <div class="ten-bia">
+            <ul>
+                <li>
+                    <h1><span>THẾ GIỚI</span></h1>
+                </li>
+                <li>
+                    <h1><span>TRUYỆN TRANH</span></h1>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="link-access font-18px">
+        <a href="./index.html">Manga</a> > <a href="./manga.html">Truyện cập nhật trong ngày</a> > <span>Kanojo,
+            Okarishimasu</span>
+    </div>
+
+    <div class="detail-manga-content">
+        <div class="detail-manga row">
+            <div class="detail-manga-image col-sm-4"><img src="./img/details/detail-manga.png" alt=""></div>
+            <div class="detail-manga-text col-sm-8">
+                <div class="detail-manga-categories font-18px"><a href="">School Life</a> - <a href="">Ecchi</a> - <a
+                        href="">Romance</a> - <a href="">Comedy</a> - <a href="">Slice of
+                        Life</a></div>
+                <div class="detail-manga-name">
+                    <h2>KANOJO, OKARISHIMASU</h2>
+                </div>
+                <div class="detail-manga-author">
+                    <h3>Tác giả: MIYAJIMA Reiji (宮島 礼吏)</h3>
+                </div>
+                <div class="detail-manga-status">
+                    <div id="manga-status-like">
+                        <i class="fas fa-thumbs-up status"></i>
+                        <span>8255</span>
+                    </div>
+                    <div id="manga-status-heart">
+                        <i class="fas fa-heart status"></i>
+                        <span>8255</span>
+                    </div>
+                    <div id="manga-status-view">
+                        <i class="fas fa-eye status"></i>
+                        <span>8255</span>
+                    </div>
+                </div>
+                <div class="detail-manga-intro font-18px">
+                    Quéo quèo, biết mô tả thế nào đây? một thằng Zin tên là Kazuya 19 năm mới có bồ không bao lâu thì bị
+                    đá , thế là cậu ta phải sử dụng dịch vụ Hẹn hò Thuê, cứ trả xiền là ngày đó bạn sẽ có bạn gái ngay!
+                    Cậu ta đã thuê <span>...</span>
+                    <span class="dp-none">Mizuhara làm bạn gái mình, cô nàng thì cứ công việc (méo có yêu thương gì đâu)
+                        mà thả thính,
+                        còn chàng ta thì đớp thính vô tội vạ, cho đến khi… Đến khi Kazuya bớt sống ảo, cậu ta ngưng đớp
+                        thính và tự sẽ kiếm bạn gái thật cho mình thì mới hớ ra Mizuhara học cùng trường với mình, câu
+                        chuyện tình dở khóc dở cười này sẽ ra sao đây? Các bạn đón xem nhé!</span>
+                    <div class="btn-news">
+                        <hr class="hr-left">
+                        <hr class="hr-right">
+                        <p class="text-btn-news font-18px">Xem thêm</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="detail-manga-chapter">
+        <div class="title-manga-chapter">
+            <h2>Danh sách chương</h2>
+        </div>
+        <div class="list-chapter">
+            <div class="button-list-chapter font-18px">
+                <i class="fas fa-lock status"></i>
+                <div class="dropdown">
+                    <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Sắp xếp
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="z-index: 1;">
+                        <a class="dropdown-item" href="#">Mới nhất</a>
+                        <a class="dropdown-item" href="#">Cũ nhất</a>
+                    </div>
+                </div>
+            </div>
+            <div class="chapters">
+                <div class="chapter">
+                    <div class="chapter-name font-18px">Chapter 12 <i class="fas fa-lock status"></i></div>
+                    <div class="chapter-date font-16px">20/01/2021, 09:41</div>
+                </div>
+                <div class="chapter">
+                    <div class="chapter-name font-18px">Chapter 11 <i class="fas fa-lock status"></i></div>
+                    <div class="chapter-date font-16px">20/01/2021, 09:41</div>
+                </div>
+                <div class="chapter">
+                    <div class="chapter-name font-18px">Chapter 10 <i class="fas fa-lock status"></i></div>
+                    <div class="chapter-date font-16px">20/01/2021, 09:41</div>
+                </div>
+                <div class="chapter">
+                    <div class="chapter-name font-18px">Chapter 9 <i class="fas fa-lock status"></i></div>
+                    <div class="chapter-date font-16px">20/01/2021, 09:41</div>
+                </div>
+                <div class="chapter">
+                    <div class="chapter-name font-18px">Chapter 8 <i class="fas fa-lock status"></i></div>
+                    <div class="chapter-date font-16px">20/01/2021, 09:41</div>
+                </div>
+                <div class="chapter">
+                    <div class="chapter-name font-18px">Chapter 7 <i class="fas fa-lock status"></i></div>
+                    <div class="chapter-date font-16px">20/01/2021, 09:41</div>
+                </div>
+                <div class="chapter">
+                    <div class="chapter-name font-18px">Chapter 6 <i class="fas fa-lock status"></i></div>
+                    <div class="chapter-date font-16px">20/01/2021, 09:41</div>
+                </div>
+                <div class="chapter">
+                    <div class="chapter-name font-18px">Chapter 5 <i class="fas fa-lock status"></i></div>
+                    <div class="chapter-date font-16px">20/01/2021, 09:41</div>
+                </div>
+                <div class="chapter">
+                    <div class="chapter-name font-18px">Chapter 4 <i class="fas fa-lock status"></i></div>
+                    <div class="chapter-date font-16px">20/01/2021, 09:41</div>
+                </div>
+                <div class="chapter">
+                    <div class="chapter-name font-18px">Chapter 3</i></div>
+                    <div class="chapter-date font-16px">20/01/2021, 09:41</div>
+                </div>
+                <div class="chapter">
+                    <div class="chapter-name font-18px">Chapter 2</div>
+                    <div class="chapter-date font-16px">20/01/2021, 09:41</div>
+                </div>
+                <div class="chapter">
+                    <div class="chapter-name font-18px"><a href="./chapter.html">Chapter 1</a></div>
+                    <div class="chapter-date font-16px">20/01/2021, 09:41</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="comment-content">
+        <div class="count-comment font-18px">0 Comments</div>
+        <div class="your-comment row">
+            <div class="avatar col-sm-1 col-2"><i class="fas fa-user-tie ava"></i></div>
+            <div class="input-comment col-sm-11 col-10">
+                <input type="text" placeholder="Add a comment...">
+                <i class="fas fa-paper-plane"></i>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer-area">
+        <div class="footer-up">
+            <div class="footer-abc">
+                <div class="footer-app">
+                    <div class="title-footer">Rainbow Crow</div>
+                    <div class="footer-apps">
+                        <img src="./img/footer/google-play.png" alt="">
+                        <img src="./img/footer/app-store.png" alt="">
+                    </div>
+                    <div class="text-footer">
+                        Đọc truyện hay nhất, mới nhất, chất lượng cao nhất Việt Nam
+                    </div>
+                </div>
+                <div class="footer-truyen">
+                    <div class="title-footer">Truyện</div>
+                    <ul class="text-footer">
+                        <li><a href="">Truyện mới</a></li>
+                        <li><a href="">Phổ biến nhất</a></li>
+                        <li><a href="">Truyện hoàn thành</a></li>
+                        <li><a href="">Tin tức</a></li>
+                    </ul>
+                </div>
+                <div class="footer-media">
+                    <div class="title-footer">Theo dõi chúng tôi</div>
+                    <div class="footer-medias">
+                        <img src="./img/icon/twitter-logo.svg" alt="">
+                        <img src="./img/icon/facebook-logo.svg" alt="">
+                        <img src="./img/icon/instagram-logo.svg" alt="">
+                        <img src="./img/icon/pinterest-logo.svg" alt="">
+                    </div>
+                </div>
+                <div class="footer-service">
+                    <div class="title-footer">Dịch vụ & Hỗ trợ</div>
+                    <ul class="text-footer">
+                        <li><a href="">Tài khoản của bạn</a></li>
+                        <li><a href="">Cách thức mua hàng</a></li>
+                        <li><a href="">Phương thức thanh toán</a></li>
+                        <li><a href="">Liên hệ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-down">
+            <div class="footer">
+                <img src="./img/icon/logo.svg" alt="">
+                <div class="text-footer">Copyright © 2020 RbCrow.com, Inc.</div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+<script src="./js/signin-signup.js"></script>
+<script src="./js/file-item.js"></script>
+<script src="./js/detail-manga.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+</html>

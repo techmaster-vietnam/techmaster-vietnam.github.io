@@ -1,0 +1,417 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  outline: none;
+}
+.main--wrapper {
+  max-width: 1440px;
+  padding: 14px;
+  margin: auto;
+}
+
+.pageNav {
+  padding-top: 85px;
+  display: flex;
+  margin-top: 50px;
+}
+
+.pageNav h4 {
+  color: #8a8a8a;
+  font-size: 16px;
+  line-height: 21px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.main--container-firstBanner {
+  max-width: 1360px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  margin: 14px;
+}
+
+.firstBanner-block {
+  width: 24%;
+  margin-right: 5px;
+  font-size: 14px;
+  font-weight: 300;
+  color: #968f8f;
+}
+
+.block-line {
+  border: 1px solid #968f8f;
+  height: 0;
+  width: 90%;
+  background-color: #968f8f;
+  margin-bottom: 5px;
+}
+
+.block-check {
+  display: flex;
+}
+
+.firstBanner-block:first-child .block-line,
+.firstBanner-block:nth-child(2) .block-line {
+  border: 1px solid #0dd25c;
+  background-color: #0dd25c;
+}
+
+.block-check h4 {
+  margin-left: 20px;
+}
+
+.firstBanner-block:nth-child(3) .block-line {
+  border: 1px solid #1877f2;
+  background-color: #1877f2;
+}
+
+.main--container-secondBanner {
+  display: flex;
+}
+
+.secondBanner-leftBlock {
+  width: 70%;
+}
+
+.Credit-choice,
+.Paypal-choice {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.credit-img,
+.paypal-img {
+  width: 10%;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.credit-img img,
+.paypal-img img {
+  width: 100%;
+}
+.Credit-des {
+  width: 70%;
+  margin: auto;
+  padding: 5px;
+  display: none;
+}
+
+.Credit-des-2{
+  width: 70%;
+  margin: auto;
+  padding: 5px;
+  display: none;
+}
+
+.Credit-des-firstBlock {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.firstBlock-left {
+  width: 50%;
+}
+
+.Credit-Type {
+  display: flex;
+}
+
+.Credit-Type img {
+  width: 100%;
+}
+
+.Union-img,
+.master-img,
+.visa-img,
+.discover-img {
+  margin-right: 10px;
+}
+
+.cardNumb {
+  border: 1px solid #ddd;
+  display: flex;
+  max-width: 246px;
+  height: 45px;
+}
+
+.cardNumb img {
+  margin-left: 5px;
+  margin-right: 10px;
+}
+
+.cardNumb input {
+  border: none;
+}
+
+.firstBlock-right{
+  margin-left: 10px;
+}
+
+.firstBlock-right input {
+  height: 45px;
+  border: 1px solid #ddd;
+  width: 52px;
+  text-align: center;
+}
+
+.Credit-des-secondBlock input {
+  height: 35px;
+  border: 1px solid #ddd;
+  width: 52px;
+  text-align: center;
+}
+
+.button-black {
+  text-align: unset;
+  margin-top: 20px;
+}
+
+.button-black button {
+  color: white;
+  width: 109px;
+  height: 31px;
+  background: #0a0909;
+  font-weight: 500;
+  border: none;
+  text-transform: uppercase;
+}
+
+.leftBlock-line {
+  border: 1px solid #8a8a8a;
+  background-color: #8a8a8a;
+  width: 90%;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.main--container-thirdBanner{
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.thirdBanner-block{
+    width: 20%;
+    display: flex;
+}
+.thirdBanner-block-img{
+    margin-right: 10px ;
+}
+
+.thirdBanner-block-img img{
+    width: 100%;
+}
+
+.main--container-forthBanner {
+    margin-top: 30px;
+  height: 102px;
+  background-color: #ff0000;
+}
+
+.forthBanner-wrapper {
+  padding-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 14px;
+  padding-right: 14px;
+  max-width: 1320px;
+  margin: auto;
+  color: #ffffff;
+}
+
+.forthBanner-des {
+  padding-top: 5px;
+}
+
+.input--discount button {
+  margin-left: -10px;
+  border: none;
+  background-color: #ff0000;
+  color: white;
+  border: 1px solid #000000;
+  width: 76px;
+  height: 39px;
+}
+
+/* fonts */
+
+h1 {
+  line-height: 42px;
+  text-align: center;
+  color: #000000;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+h4 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #968f8f;
+}
+
+.firstBanner-block:nth-child(3) h4 {
+  color: #1877f2;
+}
+
+.block-check h4 {
+  color: #0dd25c;
+}
+
+.firstBanner-block:nth-child(2) h4{
+  color: #0dd25c;
+}
+
+.fa-check {
+  color: #0dd25c;
+}
+
+h2 {
+  text-transform: uppercase;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  font-weight: 600;
+}
+
+.Credit-choice h3,
+.Paypal-choice h3 {
+  font-weight: 500;
+}
+
+.Credit-des h3 {
+  font-size: 16px;
+  line-height: 14px;
+  font-weight: 500;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.thirdBanner-block-des h5{
+    width: 100%;
+    text-align: start;
+}
+
+.main--container-thirdBanner h4{
+  color: black;
+}
+
+.thirdBanner-block-des h4{
+  color: #000000;
+  font-size: unset;
+
+}
+
+/* effect */
+.button-black button:hover {
+  background-color: red;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.Credit-Type div:hover {
+  transform: scale(1.2);
+  transition: all 0.3s ease-in-out;
+}
+
+.input--discount button:hover {
+  background-color: black;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.pageNav h4:hover{
+  color: black;
+}
+
+
+@media only screen and (max-width: 900px){
+  .main--container-firstBanner {
+    flex-wrap: wrap;
+  }
+  .firstBanner-block {
+    width: 48%;
+    margin-bottom: 10px;
+  }
+
+  .main--container-secondBanner{
+    flex-wrap: wrap;
+  }
+
+  .secondBanner-leftBlock{
+    width: 90%;
+    margin: auto;
+  }
+
+.Credit-des-firstBlock{
+  flex-wrap: wrap;
+}
+
+.Credit-des{
+  width: 90%;
+}
+
+.firstBlock-left{
+  margin-top: 20px;
+  width: 100%;
+}
+.firstBlock-right{
+  margin-left: unset;
+  margin-top: 20px;
+}
+  
+  .secondBanner-rightBlock{
+    width: 80%;
+    margin: auto;
+  }
+
+
+
+  .main--container-thirdBanner{
+    flex-wrap: wrap;
+  }
+
+    .thirdBanner-block{
+    width: 50%;
+  }
+
+  .thirdBanner-block:first-child{
+    margin-bottom: 20px;
+  }
+  .main--container-forthBanner{
+      height:112px;
+  }
+  .forthBanner-wrapper {
+    padding-top: 0;
+    display: block;
+  }
+
+  .forthBanner-des {
+    text-align: center;
+  }
+
+    .input--discount {
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+}
+
+@media only screen and (max-width: 600px){
+.input input {
+    margin: auto;
+    width: unset;
+    max-width: 237px;
+    max-height: 39px;
+  }
+
+  .thirdBanner-block-des h4{
+  color: #000000;
+  font-size: 10px;
+
+}
+}

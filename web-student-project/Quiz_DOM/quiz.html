@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Quiz</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/script.js"></script>
+	<script src="js/quiz.js"></script>
+</head>
+<body>
+	<div class="wrapper" id="wrapper">
+		<div class="content" id="content">
+			<div class="question">
+				<p id="content_question"></p>
+			</div>
+			<br>
+			<br>
+			<div class="choices">
+				<div class="choice">
+					<button class="btn" id="choiceA" value="A" onclick="choice(this)"></button>
+				</div>
+				<div class="choice">
+					<button class="btn" id="choiceB" value="B" onclick="choice(this)"></button>
+				</div>
+				<div class="choice">
+					<button class="btn" id="choiceC" value="C" onclick="choice(this)"></button>
+				</div>
+				<div class="choice">
+					<button class="btn" id="choiceD" value="D" onclick="choice(this)"></button>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<br>
+			<div class="next">
+				<button onclick="next()" id="next"><img src="images/next.png" alt=""></button>
+			</div>
+		</div>
+		<div class="retry" id="retry">
+			<div class="img_sorry">
+				<img src="images/sorry.gif" alt="Sorry">
+			</div>
+			<div class="score">
+				<p id="info"></p>
+			</div>
+			<div class="btn_retry">
+				<button onclick="retry()" id="btn_retry">RETRY</button>
+			</div>
+		</div>
+	</div>	
+</body>
+</html>

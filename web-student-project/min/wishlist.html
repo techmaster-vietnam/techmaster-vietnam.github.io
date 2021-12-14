@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Danh sách Yêu thích</title>
+	<link rel="stylesheet" type="text/css" href="plugins/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="plugins/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Arsenal" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cantata+One" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<nav class="header-top">
+			<span class="quick-mobile">
+				<i class="fa fa-phone"></i> 0986090925
+			</span>
+			<span class="quick-mail hidden-xs">
+				<i class="fa fa-envelope-o"></i> hieu.do212@gmail.com
+			</span>
+			<span class="pull-right">
+				<div class="before-log">
+					<button data-toggle="modal" data-tabs="login" data-target=".user-modal">Đăng nhập</button>
+					<button data-toggle="modal" data-tabs="signup" data-target=".user-modal">Đăng ký</button>
+				</div>
+				<div class="logged">
+					<!-- <i class="fa fa-user-o"></i> -->
+					<img src="img/feedback_1.jpg">
+					<div class="dropdown">
+						<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Đỗ Hoàng Hiếu</button>
+						<ul class="dropdown-menu dropdown-menu-right">
+							<li><a href="user-account.html">Quản lý tài khoản</a></li>
+							<li><a id="logout-btn" href="#">Đăng xuất</a></li>
+						</ul>
+					</div>
+				</div>
+			</span>
+		</nav>
+		<nav class="navbar navbar-default">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a href="#" class="search" data-toggle="slide-collapse" data-target="#search-form">
+				<i class="fa fa-search"></i><span class="hidden-xs"> Tìm kiếm</span>
+			</a>
+			<div class="container">
+				<div class="menu row">
+					<div class="collapse navbar-collapse" id="menu-collapse">
+						<ul class="nav navbar-nav navbar-left">
+							<li><a href="home.html">Trang chủ</a></li>
+							<li><a href="shop.html">Sản phẩm</a></li>
+							<li><a href="blog.html">Dự án</a></li>
+						</ul>
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="about.html">Về Min</a></li>
+							<li><a href="blog.html">Blog</a></li>
+							<li><a href="contact.html">Liên hệ</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="cart-box">
+				<a href="wishlist.html">
+					<i class="fa fa-heart-o"></i>
+				</a>
+				<a href="cart.html">
+					<i class="fa fa-shopping-cart"></i>
+				</a>
+			</div>
+			<a class="logo" href="home.html"><img src="img/logo-min.png"></a>
+			<div id="search-form">
+				<form>
+					<input type="text" placeholder="Nhập từ khóa cần tìm">
+					<button type="submit"><i class="fa fa-search"></i></button>
+				</form>
+			</div>
+		</nav>
+		<div class="modal fade user-modal" tabindex="-1">
+			<div class="modal-dialog modal-sm">
+				<div class="modal-content">
+					<ul class="nav nav-tabs" role="tablist">
+						<li id="login-indicator" class="active">
+							<a href="#login" role="tab" data-toggle="tab">Đăng nhập</a>
+						</li>
+						<li id="signup-indicator">
+							<a href="#signup" role="tab" data-toggle="tab" >Đăng ký</a>
+						</li>
+					</ul>
+
+					<div class="tab-content">
+						<div role="tabpanel" class="tab-pane active fade in" id="login">
+							<form>
+								<div class="input-field">
+									<input type="email" name="Email" id="email" placeholder="Email"/>
+								</div>
+								<div class="input-field">
+									<input type="password" name="Password" id="password" placeholder="Mật khẩu"/>
+								</div>
+								<div class="input-field check-field">
+									<input type="checkbox" id="remember" name="remember"/><label for="remember">Ghi nhớ tài khoản</label><br/>
+								</div>
+								<div class="input-field">
+									<input id="login-btn" data-dismiss="modal" value="Đăng nhập"/>
+								</div>
+								<button data-toggle="modal" data-target="#reset-password" data-dismiss="modal" class="btn btn-default"><i class="fa fa-question-circle-o"></i> Quên mật khẩu?</button>
+							</form>
+						</div>
+						<div role="tabpanel" class="tab-pane fade" id="signup">
+							<form>
+								<div class="input-field">
+									<input type="email" name="Email" id="email" placeholder="Email"/>
+								</div>
+								<div class="input-field">
+									<input type="password" name="Password" id="password" placeholder="Mật khẩu"/>
+								</div>
+								<div class="input-field check-field">
+									<input type="checkbox" id="remember" name="remember"/><label for="remember">Hiển thị mật khẩu</label><br/>
+								</div>
+								<div class="input-field">
+									<input type="text" name="Name" id="name" placeholder="Họ tên"/>
+								</div>
+								<div class="input-field">
+									<input type="text" name="Phone" id="phone" placeholder="Số điện thoại"/>
+								</div>
+								<div class="input-field">
+									<input id="signup-btn" type="submit" value="Đăng ký"/>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="container-fluid page-heading cart-heading">
+		<div class="heading-content">
+			<h1>Yêu thích</h1>
+			<p>Danh sách các sản phẩm yêu thích của bạn</p>
+			<ol class="breadcrumb">
+				<li><a href="home.html">Trang chủ</a></li>
+				<li class="active">Yêu thích</li>
+			</ol>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="cart-container wishlist-container">
+					<table class="cart">
+						<thead>
+							<tr>
+								<th class="product-thumbnail">Sản phẩm</th>
+								<th class="product-name"><span class="hidden-xs">Tên sản phẩm</span></th>
+								<th class="product-price"><span class="hidden-xs">Đơn giá</th>
+								<th class="product-status"><span class="hidden-xs">Tình trạng</th>
+								<th class="product-action">&nbsp;</th>
+								<th class="product-remove">&nbsp;</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr class="cart-item">
+								<td class="product-thumbnail">
+									<a href="shop-detail.html">
+										<img src="img/riflesso_1.jpg">
+									</a>
+								</td>
+								<td class="product-name">
+									<a href="shop-detail.html">Tủ Riflesso</a> 
+								</td>
+								<td class="product-price">
+									4400000
+								</td>
+								<td class="product-status">
+									<span class="in-stock">Còn hàng</span>
+								</td>
+								<td class="product-action">
+									<button class="link-to"><span class="hidden-xs hidden-sm">Thêm vào giỏ hàng </span><i class="fa fa-shopping-cart"></i></button>
+								</td>
+								<td class="product-remove">
+									<button><i class="fa fa-trash-o"></i></button>
+								</td>
+							</tr>
+							<tr class="cart-item">
+								<td class="product-thumbnail">
+									<a href="shop-detail.html">
+										<img src="img/rotonda_1.jpg" alt="">
+									</a>
+								</td>
+								<td class="product-name">
+									<a href="shop-detail.html">Bàn La Rotonda </a> 
+								</td>
+								<td class="product-price">
+									3200000
+								</td>
+								<td class="product-status">
+									<span class="out-stock">Hết hàng</span>
+								</td>
+								<td class="product-action">
+									<button class="link-to"><span class="hidden-xs hidden-sm">Thêm vào giỏ hàng </span><i class="fa fa-shopping-cart"></i></button>
+								</td>
+								<td class="product-remove">
+									<button><i class="fa fa-trash-o"></i></button>
+								</td>
+							</tr>
+							
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+	<a href="#"><i class="fa fa-angle-up back-top"></i></a>
+	<footer>
+		<div class="container">
+			<div class="row footer-top">
+				<div class="col-xs-6 col-md-3 footer-item">
+					<h4>Thông tin liên hệ</h4>
+					<ul>
+						<li><i class="fa fa-map-marker"></i>Đ/c: 40 Giảng Võ, Đống Đa, Hà Nội</li>
+						<li><i class="fa fa-mobile"></i>Hotline: 0986090925</li>
+						<li><i class="fa fa-envelope-o"></i>Email: hieu.do212@gmail.com</li>
+					</ul>
+				</div>
+				<div class="col-xs-6 col-md-3 footer-item">
+					<h4>Thời gian mở cửa</h4>
+					<ul>
+						<li>Thứ 2 - thứ 6: 8AM - 10PM</li>
+						<li>Thứ 7: 9AM - 8PM</li>
+						<li>Nghỉ Chủ Nhật và các ngày Lễ Tết</li>
+					</ul>
+				</div>
+				<div class="col-xs-6 col-md-3 footer-item">
+					<h4>Hỗ trợ khách hàng</h4>
+					<ul>
+						<li><a href="contact.html">Liên hệ & Góp ý</a></li>
+						<li><a href="#">Hướng dẫn mua hàng online</a></li>
+						<li><a href="#">Câu hỏi thường gặp</a></li>
+						<li><a href="#">Chính sách bảo mật</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-6 col-md-3 footer-item">
+					<h4>Chính sách mua hàng</h4>
+					<ul>
+						<li><a href="#">Chính sách bảo hành, đổi trả</a></li>
+						<li><a href="#">Chính sách hội viên</a></li>
+						<li><a href="#">Giao hàng và lắp đặt</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="row footer-bot">
+				<a href="#" title="Kết nối qua Facebook"><i class="fa fa-facebook-official"></i></a>
+				<a href="#" title="Kết nối qua Google+"><i class="fa fa-google-plus-official"></i>
+				<a href="#" title="Kết nối qua Pinterest"><i class="fa fa-pinterest"></i>
+				<a href="#" title="Kết nối qua Instagram"><i class="fa fa-instagram"></i>
+			</div>
+		</div>
+		<div class="container-fluid copyright">
+			<div class="row">
+				<p>Copyright 2017 <i class="fa fa-copyright"></i> Designed by Hieudo</p>
+			</div>
+		</div>
+	</footer>
+	<script type="text/javascript" src="js/jquery-3.1.1.js" ></script>
+	<script src="owlcarousel/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="plugins/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/script.js" ></script>
+</body>
+</html>

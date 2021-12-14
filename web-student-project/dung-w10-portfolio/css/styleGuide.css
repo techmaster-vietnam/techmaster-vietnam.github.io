@@ -1,0 +1,162 @@
+/* ------------ ------------ ------------ ------------ */
+/* --Landing Page-- ------ */
+.landing-page
+  {
+    width: 100%;
+    height: 100vh;
+    padding-left: 10rem;
+    background-image: url(../Images/StyleGuide/StyleGuideBackground.png);
+    background-color: #FAFAFA;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+.landing-page-bg
+  {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+.landing-page-content
+  {
+    margin-top: 24rem;
+    width: 48rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+/* ------------ ------------ ------------ ------------ */
+/* --Background-- ------ */
+.bg
+  {
+    background-color: #FFFFFF;
+  }
+
+
+/* ------------ ------------ ------------ ------------ */
+/* --Color Pallete-- ------ */
+.grid-container
+  {
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: auto auto auto;
+  }
+.grid-item
+  {
+    height: 31.6rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    box-shadow: 4px 6px 12px 4px rgba(0, 0, 0, 0.06);
+    background-color: #FFFFFF;
+  }
+.item-color
+  {
+    height: 20rem;
+    border-radius: 8px 8px 0 0;
+  }
+.item-title
+  {
+    margin-left: 7.2rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+
+/* ------------ ------------ ------------ ------------ */
+/* --Paragraph-- ------ */
+.project-paragraph
+  {
+    width: 71.6rem;
+  }
+
+
+/* ------------ ------------ ------------ ------------ */
+/* --RESPONSIVE-- ------ */ 
+@media (max-width: 1200px)
+  {
+    /* --Landing Page-- ------ */
+    .landing-page img
+      {
+        height: 100%;
+      }
+  }
+
+@media (max-width: 992px)
+  {
+    /* --Landing Page-- ------ */
+    .landing-page-content
+      {
+        width: 100%;
+      }
+
+    /* --Color Pallete-- ------ */
+    .item-title
+      {
+        margin-left: 4rem;
+      }
+
+    /* --Paragraph-- ------ */
+    .project-paragraph
+      {
+        width: 100%;
+      }
+  }
+
+@media (max-width: 768px)
+  {
+    /* --Landing Page-- ------ */
+    .landing-page
+      {
+        padding-left: 0;
+      }
+    .landing-page
+      {
+        background-image: none;
+      }
+
+    /* --Color Pallete-- ------ */
+    .grid-item
+      {
+        height: 18rem;
+      }
+    .item-color
+      {
+        height: 10rem;
+      }
+    .item-title
+      {
+        margin-left: 2rem;
+      }
+  }
+
+@media (max-width: 576px)
+  {
+    /* --Color Pallete-- ------ */
+    .grid-container
+      {
+        grid-gap: 1rem;
+      }
+    .grid-item
+      {
+        height: 12rem;
+      }
+    .item-color
+      {
+        height: 6rem;
+      }
+    .item-title
+      {
+        margin-left: 1.2rem;
+      }
+  }
+
+@media (max-width: 320px)
+  {
+    /* --Color Pallete-- ------ */
+    .grid-container
+      {
+        grid-gap: 0.4rem;
+      }
+  }

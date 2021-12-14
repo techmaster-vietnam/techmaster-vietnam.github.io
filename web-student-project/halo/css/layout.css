@@ -1,0 +1,1251 @@
+
+/* --------------- reset css --------------- */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*:focus {
+  outline: none;
+}
+
+p {
+  margin-bottom: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: initial;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 0px;
+}
+
+table {
+	border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+body {
+  font-family:
+  -apple-system,
+  BlinkMacSystemFont,
+  "Segoe UI",
+  "Roboto",
+  "Helvetica Neue", Arial, sans-serif,
+  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+img {
+  vertical-align: middle;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.navbar-brand, 
+.navbar {
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
+  white-space: normal;
+  max-height: 100%;
+}
+
+.breadcrumb {
+  margin: 0px;
+  padding: 0px;
+}
+
+.container-fluid {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+.btn:focus {
+  box-shadow: none;
+}
+
+.page-link:focus {
+  z-index: 3;
+  outline: 0;
+  box-shadow: none;
+}
+
+dl, ol, ul {
+  margin: 0px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  z-index: 900;
+}  
+/* --------------- kết thúc reset css --------------- */
+
+/* Table of contents
+
+1. settings chung
+2. font styles (faces, sizes, colors, weight, line)
+3. effects
+4. buttons
+5. header (navbar) styles
+6. footer styles
+7. @media queries (responsive)
+
+*/
+
+
+/* -------------------- settings chung -------------------- */
+
+/*
+Hệ thống .container:
+- màn xs (< 576px): width 100%, padding: 15px
+- màn sm md lg (576px -> 1199px): width 100%, padding: 30px
+- màn xl (> 1199px): max-width: 1140px, padding: 0px
+
+*/
+
+.hidden-till-md,
+.hidden-till-sm,
+.hidden-till-xl {
+/* ẩn khi màn <= 768px, sẽ đổi ở @media */  
+  display: none !important;
+}
+
+.mw-900 {
+  max-width: 900px;
+}
+
+.mw-600 {
+  max-width: 600px;
+}
+
+section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.breadcrumb {
+  height: 50px;
+  background-color: transparent;
+  align-items: center;
+  font-size: 12px;
+}
+
+main {
+  padding-top: 50px;
+  font-size: 13px;
+}
+
+.btn--confirmation {
+  background-color: #99DE7F;
+}
+
+label {
+  margin-bottom: 0px;
+}
+
+/* -------------------- kết thúc settings -------------------- */
+
+
+/* -------------------- font styles -------------------- */
+
+/* ------- font faces -------*/
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+@font-face {
+    font-family: 'canon';
+    src: url('/fonts/canon-webfont.woff2') format('woff2'),
+         url('/fonts/canon-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'sony';
+    src: url('/fonts/clarendon_regular-webfont.woff2') format('woff2'),
+         url('/fonts/clarendon_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.logo-canon {
+  font-family: canon !important;
+}
+
+.logo-sony, 
+.logo-sony-inline {
+  font-family: sony !important;
+}
+
+
+/* ------- font sizes ------- */
+
+.sale-amount {
+  font-size: 10px;
+}
+
+.font-11 { 
+  font-size: 11px; 
+}
+ 
+.footer__info {
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.font-13 {
+  font-size: 13px;
+}
+
+.font-14, 
+.log-min,
+.main-carousel__text:last-of-type,
+.extra-text,
+h3,
+.connection__text, 
+.policy__icon,
+.log-max,
+#logreg .modal,
+.logreg__form input,
+.footer__menu { 
+  font-size: 14px; 
+}
+
+.font-15 { 
+  font-size: 15px; 
+}
+
+.font-16,
+.eos-r,
+.nav-item:nth-child(-n+4), 
+.main-carousel__text:first-of-type { 
+  font-size: 16px; 
+}
+
+.font-17 { 
+  font-size: 17px; 
+}
+
+.font-18,
+h2 { 
+  font-size: 18px; 
+}
+ 
+.font-20 { 
+  font-size: 20px; 
+}
+
+h1 { 
+  font-size: 22px; 
+}
+
+.font-24,
+.logo-sony { 
+  font-size: 24px; 
+}
+
+.font-28,
+.logo-canon { 
+  font-size: 28px; 
+}
+
+.size-36 { 
+  font-size: 36px; 
+}
+
+/* ------- colors ------- */
+#collapsibleNavbar li a,
+.log-max,
+.dark-side a,
+.dark-side,
+.log-max:hover {
+  color: #FFFFFF ;
+}
+
+.logo-canon {
+  color: #CC0000;
+}
+
+.dark-side {
+  background-color: #222222;
+}
+
+/* -------  font weight ------- */
+
+
+/* -------  line height ------- */
+.logo-canon,
+.logo-sony {
+  line-height: 3rem;
+}
+
+
+/* ------- white font ------- */
+
+
+/* ------- bold font ------- */
+h1, 
+#collapsibleNavbar li:nth-child(-n+4) a,
+.main-carousel__text:first-of-type,
+.extra-text {
+  font-weight: bold;
+}
+
+/* ------- italic font ------- */
+#collapsibleNavbar li:nth-child(5) a,
+.main-carousel__text:last-of-type {
+  font-style: italic;
+}
+/* -------center align ------- */
+h1, h2 {
+  text-align: center;
+}
+
+/* -------------------- kết thúc font styles -------------------- */
+
+
+/* -------------------- effect styles -------------------- */
+/* ----- dark shadow ----- */
+.btn--dark,
+.connection__input, 
+.connection__input:focus, 
+.connection__submit-btn {
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2) !important;
+}
+/* ----- white shadow ----- */
+.btn--light,
+.review-item,
+.policy__item {
+  box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
+}
+/* ----- big white shadow ----- */
+#logreg .modal-content {
+  box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.75);
+}
+
+@keyframes cartAnimation {
+  0% {left: 5px; right: 0px;}
+  50% {left: 0px; right: 5px;}
+  100% {left: 0px; right: 0px;}
+}
+
+
+/* -------------------- kết thúc effect -------------------- */
+
+
+
+/* -------------------- button styles -------------------- */
+.btn {
+  border-radius: 8px !important;
+  transition: all 300ms;
+  display: block;
+  padding: 5px 10px;
+  width: auto;
+  font-size: 13px;
+}
+
+.btn--light {
+  color: #ffffff !important;
+  border-color: #ffffff !important;
+}
+
+.btn--light:active, .btn--light:hover {
+  background-color: #FFFFFF !important;
+  color: #000000 !important;
+}
+
+.btn--dark {
+  color: #000000 !important;
+  border-color: #000000 !important;
+}
+
+.btn--dark:active, .btn--dark:hover {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+}
+
+.seemore-btn {
+  width: 100px;
+  font-size: 12px;
+  line-height: 16px;
+  padding: 5px 10px;
+}
+
+.btn--seemore {
+  width: 100px;
+  line-height: 16px;
+}
+/* -------------------- 
+kết thúc buttons  
+-------------------- */
+
+
+
+/* -------------------- 
+navbar styles 
+-------------------- */
+
+/* chung -> toggler -> brand -> l-c-s -> menu */
+
+/* ------- settings chung nav ------- */
+
+header {
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+}
+
+.navbar {
+  position: relative;
+  z-index: 100;
+  width: 100%;
+}
+
+.navbar {
+  background-color: #222222;
+  z-index: 900;
+  border-bottom: 1px solid #222222;
+}
+
+.navbar .container-xl {
+  position: relative;
+  z-index: 90;
+}
+
+/* ------- toggler styles ------- */
+.navbar-toggler:focus {
+  box-shadow: none; 
+}
+
+.navbar-toggler {
+  border-color: rgba(255,255,255, 0.3) !important;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+/* ------- brand styles ------- */
+.header__logo,
+.footer__logo {
+  height: 25px;  /*25 + padding trên dưới 12.5 = 50px*/
+  filter: drop-shadow(0px 0px 15px rgba(255, 255, 255, 0.65));
+}
+
+.navbar-brand {
+  padding: 12.5px 0px;
+}
+
+/* ------- tổ hợp log-cart-search ------- */
+/* 
+Bao gồm: login/signup, cart, search min, search max
+1. login/signup sẽ có 2 bản: hidden và display till md
+2. cart sẽ là 1 link
+3. search sẽ có 2 bản: search min và search max 
+(.search-bar-till-md và .search-bar)
+Map: chung -> cart -> search bar -> search min -> search btn
+*/
+
+.log-cart-search {
+  display: flex;
+  align-items: center;
+}
+
+.current-user__avatar {
+  display: block;
+}
+
+.username {
+  margin: 0px 10px;
+  max-width: 180px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.cart-icon {
+  position: relative;
+  animation-duration: 0.12s;
+  animation-iteration-count: 3;
+  animation-fill-mode: none;
+  animation-timing-function: ease-out;
+}
+
+.cart__badge-wrapper {
+  background-color: red;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 0.8;
+  position: absolute;
+  top: -7px;
+  right: -9px;
+  width: 17px;
+  height: 17px;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.log-cart-search a {
+  display: block;
+}
+
+.fa-search, 
+.fa-shopping-cart {
+  font-size: 16px;
+  color: #FFFFFF;
+}
+
+.fa-times {
+  font-size: 18px;
+  color: #FFFFFF;
+}
+
+.search-bar {  /*search box + search btn + cancel btn*/
+  width: 100%;
+  height: 50px;
+  padding: 10px 30px;
+  background-color: #222222;
+  position: absolute;
+  z-index: 110;
+  left: 0px;
+  top: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.4s, visibility 0.4s;
+}
+
+.search-bar-till-md {
+  width: 100%;
+  height: 34px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.search-area {
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  font-size: 13px;
+  padding: 0px 10px;
+}
+
+.search-area:focus {
+  outline: none;
+}
+
+.search-btn {
+  padding: 0px;
+  margin-left: 10px;
+  border: none;
+}
+
+.search-cancel {
+  padding-right: 0px !important;
+  margin-left: 0px;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  font-size: 13px;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  font-size: 13px;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  font-size: 13px;
+}
+
+/* ------- collapsible menu ------- */
+.navbar-collapse {
+  position: absolute;
+  top: 43px;
+  left: 0;
+  background-color: #222222;
+  width: 100%;
+  padding: 0px 15px;
+  flex-grow: unset;
+}
+
+/* --------------------
+ kết thúc nav styles 
+ -------------------- */
+
+
+
+/* --------------------
+ footer styles 
+ -------------------- */
+
+footer {
+  padding: 30px 0px;
+}
+
+.footer__logo {
+  margin: 0px auto;
+}
+
+.footer__menu {
+  width: 100%;
+  max-width: 400px;
+  margin: 30px 0px;
+}
+
+.copyright {
+  margin-top: 20px;
+}
+/* --------------------
+ kết thúc footer styles 
+ -------------------- */
+
+
+
+/* --------------------
+ logreg styles 
+ -------------------- */
+
+#logreg .modal-dialog {
+  max-width: 290px;
+  margin: 0px auto;
+  border-radius: 16px;
+}
+
+#logreg .modal-content {
+  border-radius: 16px;
+}
+
+#logreg .modal-header, #logreg .modal-footer {
+  border: none;
+}
+
+#logreg .modal-header {
+  padding: 0px
+}
+
+.logreg__logo {
+  height: 30px;
+}
+
+#logreg .modal-header .close {
+  font-size: 30px;
+  padding: 0px;
+  margin: 5px 12px 0px auto;
+  height: 20px;
+}
+
+.logreg__form .input-group {
+  margin-bottom: 15px;
+}
+
+.logreg__form .input-group:last-child {
+  margin-bottom: 10px;
+}
+
+.logreg__form input {
+  border: 1px solid rgba(0, 0, 0, 0.54);
+  border-left: none;
+  border-radius: 8px;
+  height: 40px;
+  padding: 5px;
+}
+
+.logreg__form input:focus{
+  box-shadow: none;
+  border: 1px solid rgba(0, 0, 0, 0.54);
+  border-left: none;
+}
+
+.input-group-text {
+  background-color: transparent;
+  font-size: 16px;
+  border: none;
+}
+
+.input-group:first-child .input-group-text {
+  padding: 0px 8px;
+}
+
+.input-group:nth-child(2) .input-group-text {
+  padding: 0px 7px 2px 10px;
+}
+
+.input-group:nth-child(n+3) .input-group-text {
+  padding: 0px 5px 2px 9px;
+}
+/* 
+.input-group:nth-child(4) .input-group-text {
+  padding: 0px 5px 2px 9px;
+} */
+
+.input-group-prepend {
+  border: 1px solid rgba(0, 0, 0, 0.54);
+  border-radius: 8px 0px 0px 8px;
+  border-right: none;
+}
+
+.logreg__submit {
+  margin: 15px 0px 20px 0px;
+  font-size: 14px !important;
+}
+
+.logreg__submit.log {
+  width: 115px;
+}
+
+.logreg__submit.reg {
+  margin: 15px 0px 15px 0px;
+}
+
+.logreg__platform {
+  display: flex;
+  height: 30px;
+  width: 130px;
+  margin: 10px 0px 10px 0px;
+}
+
+.platform__link {
+  width: 30px;
+}
+
+#logreg .modal-footer {
+  padding: 0px 0px 15px 0px;
+}
+
+.logreg-portal {
+  color: #D32020;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.reg {
+  display: none;
+}
+
+/* --------------------
+ hết logreg styles 
+ -------------------- */
+
+
+/* --------------------
+ utilities buttons group
+ -------------------- */
+
+/* ---------- scroll up btn ---------- */
+.utilities-btn-group {
+  position: fixed;
+  bottom: 100px;
+  right: 24px;
+  width: 60px;
+  z-index: 1000;
+}
+
+.scroll-up-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  background-color: black;
+  opacity: 0.3;
+  border-radius: 50%;
+  transition: all 0.3s;
+  transform: scale(0);
+}
+
+.scroll-up-btn i {
+  font-size: 45px;
+  color: #fff;
+}
+
+.scroll-up-btn:hover {
+  opacity: 1;
+  border-radius: 50%;
+}
+/* ---------- hết scroll up btn ---------- */
+
+/* --------------------
+ hết utilities buttons group
+ -------------------- */
+
+/* --------------------
+ loading screen
+ -------------------- */
+
+@keyframes spinningLogo {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(-360deg);}
+}
+
+#loading {
+   width: 100%;
+   height: 100vh;
+   position: fixed;
+   top:0px;
+   background-color: #222222;
+   z-index: 10000;
+   color: white;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   transition: all 0.5s;
+}
+
+.loading__content {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.loading__img {
+  width: 200px;
+  animation: spinningLogo 5s linear 0s infinite normal;
+}
+
+.loading__counter {
+  font-size: 30px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.loading__text {
+  font-size: 16px;
+}
+
+/* --------------------
+ hết loading screen
+ -------------------- */
+
+/* --------------------
+ media queries 
+ -------------------- */
+
+@media only screen and (min-width: 576px) {
+
+  .hidden-till-sm {   /* hiện element từ md */
+    display: block !important;
+  }
+
+  .container-xl {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .navbar-collapse {
+    padding: 0px 30px !important;
+  }
+
+  .main-carousel__text:last-of-type,
+  .connection__text,
+  .footer__link {
+    font-size: 16px;
+  } 
+
+  .policy__text,
+  .policy__icon {
+    font-size: 17px;
+  } 
+
+  h1,
+  .eos-r,
+  .fa-times {
+    font-size: 28px;
+  }
+
+  .main-carousel__text:first-of-type {
+    font-size: 24px;
+  }
+
+  .logo-canon {
+    font-size: 50px;
+  }
+
+  .logo-sony {
+    font-size: 40px;
+  }
+
+  .seemore-btn {
+    width: 130px;
+    line-height: 24px;
+  }
+
+}
+
+@media only screen and (min-width: 768px) {
+
+  main {
+    font-size: 15px;
+  }
+
+  .hidden-till-md {   /* hiện element từ md */
+    display: block !important;
+  }
+
+  .display-till-md {  /* ẩn element từ md */
+    display: none !important;
+  }
+
+  .search-bar-till-md {
+    display: none !important;
+  }
+
+  .nav-item:hover a, .footer__item:hover {
+    padding-bottom: 0px !important;
+    border-bottom: 2px solid white;
+  }
+
+  .nav-item a {
+    transition: border 0.3s;
+  }
+
+  .footer__item {
+    border-bottom: 2px solid transparent;
+    transition: all 0.4s;
+  }
+
+  .footer__menu {
+    max-width: 450px;
+    margin: 35px 0px;
+  }
+
+  .review-preview {
+    font-size: 14px; 
+  }
+
+  .logreg-togglers {
+    display: flex !important;
+    justify-content: flex-start;
+  }
+
+  .cart-icon {
+    margin: 0px 10px 0px 20px;
+  }
+
+  .cart__badge-wrapper {
+    font-size: 14px;
+    top: -8px;
+    right: -12px;
+    width: 20px;
+    height: 20px;
+    color: white;
+    border-radius: 50%;
+  }
+
+  .fa-search, 
+  .fa-shopping-cart {
+    font-size: 22px;
+  }
+
+  .logo-sony,
+  .fa-times {
+    font-size: 28px;
+  }
+
+  .footer__link {
+    font-size: 18px;
+  } 
+
+  .footer__info {
+    font-size: 16px;
+  }
+
+  .search-bar {
+    display: flex !important;
+  }
+
+  .search-bar .search-area {
+    height: 100%;
+    margin-right: 15px;
+  }
+
+  .search-bar .search-btn {
+    display: flex !important;
+    margin-right: 15px;
+  }
+
+  .header__logo,
+  .footer__logo {
+    height: 30px;
+  }
+
+  .navbar-brand { /*30 + padding trên dưới 10 = 50px*/
+    padding: 10px 0px;
+  }
+
+  .navbar-collapse { /* collapse từ full màn giảm về auto */
+    position: static;
+    width: auto;
+    padding: 0px !important;
+    justify-content: flex-start;
+    margin-left: 20px;
+  }
+
+  .log-max {   /* giãn cách menu thông qua log-reg */
+    margin: 0px!important;
+    height: 40px;
+    padding: 5px 0px;
+    line-height: 30px;
+  }
+
+  .logreg-togglers-wrapper .dropdown-menu {
+    background-color: #222222;
+    min-width: 100%;
+    top: 44px ;
+  }
+
+  .logreg-togglers-wrapper .dropdown-item {
+    color: white;
+    font-size: 16px;
+    transition: all 0.3s;
+  }
+
+  .logreg-togglers-wrapper .dropdown-item:hover {
+    color: black;
+  }
+
+
+
+  .copyright {
+    font-size: 14px;
+  }
+
+  .btn {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+  
+  .btn--seemore {
+    width: 130px;
+  }
+
+  .copyright {
+    font-size: 13px;
+  }
+
+}
+
+@media only screen and (min-width: 992px) {
+
+  .breadcrumb {
+    height: 50px !important;
+    font-size: 16px;
+  }
+
+  .nav-item:nth-child(-n+4) {   /* giãn cách các menu item */
+    margin: 0px 10px !important; 
+  }
+
+  .search-btn {
+    margin: 0px !important;
+  }
+
+  .cart-icon {
+    margin: 0px 35px !important;
+  }
+
+  .search-bar .search-btn {
+    padding: 0px 15px;
+  }
+
+  .log-max {   /* giãn cách menu thông qua log-reg */
+    margin-right: 0px !important;
+    height: 40px;
+    padding: 5px 0px;
+    line-height: 30px;
+  }
+
+  .search-icon {   /* giãn cách search với cart */
+    padding-right: 5px !important;
+    padding-left: 5px !important;
+  }
+
+}
+
+
+@media only screen and (min-width: 1200px) {
+
+  .modal-open .navbar {
+    width: calc(100% - 17px);
+  }
+
+  .hidden-till-xl {
+    display: block!important;
+  }
+
+  .display-till-xl {
+    display: none!important;
+  }
+  
+  .container, 
+  .container-xl {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .seemore-btn {
+    width: 140px;
+    font-size: 16px;
+  }
+
+  .navbar-collapse { /* collapse từ full màn giảm về auto */
+    margin-left: 0px;
+  }
+
+  .search-bar {  /*search box + search btn + cancel btn*/
+    padding: 10px 0px; /*bỏ padding 2 bên khi MAX*/
+  }
+
+  .nav-link {   /* xóa padding 2 bên các item để căn chuẩn */
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  .nav-item:nth-child(-n+4) {
+    font-size: 20px;
+  }
+
+  .log-max {
+    font-size: 18px;
+  }
+
+  .nav-item:nth-child(6) {   /* giãn cách lại search với cart*/
+    padding-right: 10px !important;
+    padding-left: 10px !important;
+    margin-right: 25px !important;
+  }
+
+  .log-reg {
+    margin-left: 271px !important;  /* giãn cách lại menu thông qua log-reg */
+  }
+
+  .logreg-togglers {
+    min-width: 200px;
+  }
+
+  .logreg-togglers-wrapper .dropdown-item {
+    padding: 7.5px 15px;
+  }
+
+  .nav-item:nth-child(-n+4) {   /* giãn cách lại các menu item */
+    margin: 0px 20px !important;
+  }
+
+  #main-carousel .logo-canon {
+    font-size: 70px;
+    line-height: 60px;
+  }
+
+  #logreg .modal-dialog {
+    max-width: 320px;
+  }
+
+  .logreg__logo {
+    height: 35px;
+  }
+
+  #logreg .modal-header .close {
+    font-size: 35px;
+    margin: 5px 13px 0px auto;
+    height: 35px;
+  }
+
+  #logreg .modal-body {
+    padding: 20px 25px !important;
+    font-size: 14px;
+  }
+
+  .logreg__platform {
+    display: flex;
+    height: 40px;
+    width: 150px;
+    margin: 10px 0px 10px 0px;
+    align-items: flex-end;
+  }
+
+  .platform__link {
+    width: 35px;
+  }
+
+  #logreg .modal-footer {
+    padding: 0px 0px 20px 0px;
+    font-size: 14px;
+  }
+  
+  .footer__link {
+    font-size: 20px;
+  } 
+
+  .footer__info {
+    font-size: 18px;
+  }
+
+  .copyright {
+    font-size: 16px;
+  }
+
+}
+
+@media only screen and (min-width: 1400px) {
+  nav, .breadcrumb {
+    height: 60px !important;
+    font-size: 20px;
+  }
+
+  main {
+    padding-top: 60px;
+    font-size: 16px;
+  }
+
+  .logreg-togglers-wrapper .dropdown-menu {
+    background-color: #222222;
+    min-width: 100%;
+    top: 48px ;
+  }
+}
+

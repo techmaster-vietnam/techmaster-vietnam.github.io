@@ -1,0 +1,123 @@
+/*navigation bar*/
+.navigation-register{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 60px;
+}
+.navigation-home-1{
+    float: left;
+    font-size: 16px;
+    color: black;
+}
+.next-image{
+    float: left;
+    margin-top: 20px;
+}
+.navigation-register-1{
+    float: left;
+    font-size: 16px;
+    color: black;
+}
+/*register*/
+.register-desktop{
+    position: relative;
+    width: 100%;
+    height: 650px;
+}
+.register-image{
+    height: 600px;
+    background-image: url(../img/banner-experts.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.register-form{
+    position: absolute;
+    top: 100px;
+    right: 10%;
+    height: 400px;
+    background-color: white;
+    margin: 20px;
+    max-width: 300px;
+    padding: 16px;
+}
+  
+  /* Full-width input fields */
+  .register-form>input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  .register-form>input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /* Set a style for the submit button */
+  .btn-register {
+    position: absolute;
+    top: 332px;
+    left: calc(50% - 75px);
+    background-color: red;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 150px;
+    opacity: 0.9;
+  }
+  
+  .btn-register:hover {
+    opacity: 1;
+  }
+  .register-word{
+      list-style-type: disc;      
+      list-style-position: inside; 
+      position: absolute;
+      top: 160px;
+      right: 40%;
+      color: white;
+      text-transform: uppercase;
+  }
+  .register-word-1{
+      display: block;
+    font-size: 32px;
+}
+.register-word-2:before{
+    content:"• ";
+}
+.error-1{
+    position: absolute;
+    top: 102px;
+    left: 149px;
+    color: red;
+}
+.error-2{
+    position: absolute;
+    top: 211px;
+    left: 46px;
+    color: red;
+    width: 238px;
+    height: 46px;
+    text-align: end;
+}
+.donator-form{
+    position: absolute;
+    top: 239px;
+    left: 16px;
+}
+.partner-form{
+    position: absolute;
+    top: 276px;
+    left: 16px;
+}
+@media (max-width:1532px){
+    .register-word{
+        display: none;
+    }
+}

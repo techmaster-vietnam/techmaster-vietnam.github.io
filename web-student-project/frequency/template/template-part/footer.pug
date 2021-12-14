@@ -1,0 +1,82 @@
+footer.footer
+    .container
+        .row 
+            .col-12.col-sm-6.col-md-4
+                .footer__content
+                    h1.footer__content-title THÔNG TIN LIÊN HỆ
+                    ul.footer__content-menu
+                        li.footer__content-menu-item Địa chỉ: 123 Nguyễn An Ninh, Tương Mai, Hoàng Mai, Hà Nội.
+                        li.footer__content-menu-item
+                            a(href="tel:0326979486")  Phone: 0326 979 486
+                        li.footer__content-menu-item Fax: (012) 800 888 789
+                        li.footer__content-menu-item
+                            a(href="mailto:mhoang0304@gmail.com")  Email: mhoang0304@gmail.com  
+            .col-12.col-sm-6.col-md-4
+                .footer__content
+                    h1.footer__content-title CỬA HÀNG
+                    ul.footer__content-menu 
+                        li.footer__content-menu-item Store 2: 9 B7 Phạm Ngọc Thạch, Đống Đa, Hà Nội.
+                        li.footer__content-menu-item Store 3: 173A Kim Mã, Ba Đình, Hà Nội.
+                        li Store 1: 38 Hàm Long, Hoàn Kiếm, Hà Nội.
+            .col-12.col-md-4
+                .footer__content
+                    h1.footer__content-title INSTAGRAM
+                    p.footer__content-sub Ghé thăm trang Instagram để cùng chia sẻ khoảnh khắc của bạn.
+                .d-flex.justify-content-between.footer__feed
+                    .footer__feedback.js-footer__feedback-1
+                        img(src="./img/footer-1.jpg" alt="feedback").footer__feedback-img
+                        i.fab.fa-instagram.footer__feedback-icon
+                    .footer__feedback.js-footer__feedback-2
+                        img(src="./img/footer-2.jpg" alt="feedback").footer__feedback-img
+                        i.fab.fa-instagram.footer__feedback-icon
+                    .footer__feedback.js-footer__feedback-3
+                        img(src="./img/footer-3.jpg" alt="feedback").footer__feedback-img
+                        i.fab.fa-instagram.footer__feedback-icon
+                    .footer__feedback.js-footer__feedback-4
+                        img(src="./img/footer-4.jpg" alt="feedback").footer__feedback-img
+                        i.fab.fa-instagram.footer__feedback-icon
+
+        .row.footer-sub
+            .col-6.d-flex.align-items-center
+                .footer-sub__copyright Frequency © 2021
+            .col-6.d-flex.align-items-center.justify-content-end
+                .footer-sub__social
+                    a(href="#").footer-sub__social-link  
+                        i.fab.fa-facebook-f
+                    a(href="#").footer-sub__social-link 
+                        i.fab.fa-youtube
+                    a(href="#").footer-sub__social-link 
+                        i.fab.fa-twitter
+
+    .instargram
+        .instargram__btn.js-instargram__btn-prev
+            i.fas.fa-chevron-left
+        .instargram__main
+            - var instagram = [{class:"js-ins-1",img:"./img/footer-img1.jpg", content:"Không ai mua được thời gian, nó luôn lạnh lùng với tất cả mọi người, với tất cả những sai lầm chúng ta muốn sửa chữa, với tất cả những kỉ niệm đẹp mà ta đã từng trải qua.", date: "31 tháng 07 2020"},{class:"js-ins-2",img:"./img/footer-img2.jpg", content:"Rồi sẽ có một ngày bạn thức dậy và không còn đủ thời gian để làm những điều hàng ngày mình mong muốn. Hãy làm ngay bây giờ.", date: "08 tháng 04 2020"},{class:"js-ins-3",img:"./img/footer-img3.jpg", content:" Có những lúc, không có lần sau, không có cơ hội bắt đầu lại. Có những lúc, bỏ lỡ hiện tại, vĩnh viễn không còn cơ hội nữa", date: "28 tháng 04 2021"},{class:"js-ins-4",img:"./img/footer-img4.jpg", content:"Khi đã trưởng thành, sẽ có đôi lúc, chúng ta nhớ lại thời gian thanh xuân tươi đẹp mà cũng đầy đau buồn ấy, và mỉm cười, thật nhẹ nhàng và thanh thản.", date: "03 tháng 04 2021"}]
+
+            each items in instagram
+                div(class= "ins " + items.class)
+                    .ins__main
+                        .ins__main-img
+                            a(href="https://www.instagram.com/" target="_blank") 
+                                img(src=items.img alt="instagram")
+                        .ins__main-comment
+                            .ins__main-header
+                                img.ins__main-header-avatar(src="./img/avatar.jpg" alt="avatar")
+                                span.ins__main-header-name mhoang0304
+                            .ins__main-body
+                                .ins__main-body-content
+                                    p= items.content
+                            .ins__main-footer
+                                span.ins__main-footer-date= items.date
+                                a.ins__main-footer-date-link(href="https://www.instagram.com/" target="_blank") View on Instagram
+
+        .instargram__btn.js-instargram__btn-next
+            i.fas.fa-chevron-right
+        .instargram__close
+            i.fas.fa-times
+
+                
+                
+
+

@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Dave Gourmet</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="icon" type="image/png" href="images/ice-logo.png"/>
+	<link rel="stylesheet" href="web-fonts-with-css/css/fontawesome-all.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/animate.css">
+</head>
+<body>
+	<div class="header">
+		<div class="menu">
+			<div class="menu-content">
+				<div class="container menu1">
+					<div class="call-us">
+						Call us&ensp;<i class="fas fa-phone-volume"></i>&ensp;999.999.999
+					</div>
+					<div class="login">
+						<i class="fas fa-user-circle"></i>&ensp;<a href="#signup" data-toggle="modal" data-target=".log-sign">Login / Sign up</a>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+			<div class="container menu2">
+				<nav class="navbar navbar-default">
+					<div class="container-fluid">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<a class="navbar-brand" href="http://disputebills.com"><img src="images/ice-logo.png" alt="Logo" class="img-responsive">
+							</a>
+						</div>
+						<div id="navbar" class="navbar-collapse collapse">
+							<ul class="nav navbar-nav navbar-left">
+								<li><a href="about.html">About us</a></li>
+								<li><a href="shop.html">Store</a></li>
+								<li><a href="promotion.html">Promotions</a></li>
+							</ul>
+							<ul class="nav navbar-nav navbar-right">
+								<li><a href="blog.html">Blog</a></li>
+								<li><a href="index.html#contact">Contact</a></li>
+								<li><a onclick="openSearch()"><i class="fas fa-search"></i></a></li>
+								<li id="last-menu-item"><a href="cart.html"><i class="fas fa-shopping-cart"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</nav>				
+			</div>
+		</div>
+	</div>
+	<div id="myOverlay" class="overlay">
+		<span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+		<div class="overlay-content">
+			<input id="search" type="text" placeholder="Search.." name="search" required>
+			<button><i class="fa fa-search"></i></button>
+			<div class="clear"></div>
+			<ul class="suggestion">
+			</ul>
+		</div>
+	</div>
+	<div class="banner">
+		<div class="banner-content">
+			<div id="myCarousel" class="carousel slide" data-ride="carousel">
+				<div class="carousel-inner">
+					<div class="item active">
+						<div class="name animated bounceInDown">Dave Gourmet</div>
+						<div class="slogan animated bounceInLeft">Keep Cool Keep Happy</div>
+						<div class="intro-shop  animated bounceInUp">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed dolor ac nunc suscipit blandit eget id odio. Vivamus sodales, elit tempus sagittis lacinia.
+						</div> 
+						<a href="shop.html"><button class="btn-shopping animated bounceInRight">Shopping now</button></a>
+					</div>
+					<div class="item">
+						<div class="name animated rollIn">Welcome To Dave Gourmet</div>
+						<div class="slogan  animated rollIn">
+							SWEETY & FRESH
+						</div> 
+						<a href="promotion.html"><button class="btn-shopping animated rollIn">Many promotions</button></a>
+					</div>
+					<div class="item">
+						<div class="slogan animated fadeInLeft">MELT IN HAPPINESS</div>
+						<div class="intro-shop  animated fadeInLeft">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed dolor ac nunc suscipit blandit eget id odio. Vivamus sodales, elit tempus sagittis lacinia.
+						</div>
+						<a href="shop.html"><button class="btn-shopping animated bounceInRight">Shopping now</button></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="about-us container">
+		<div class="row">
+			<div class="col-xs-12 title">
+				About us
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-8 about-left">
+				<div class="about-info">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed dolor ac nunc suscipit blandit eget id odio. Vivamus sodales, elit tempus sagittis lacinia, nisi odio ullamcorper tellus, eget luctus lectus tortor ac metus. Aliquam vitae sapien condimentum, euismod est sit amet, sagittis diam. Fusce vitae gravida nisl. Suspendisse a tortor consequat, ultricies tellus id, tempus nulla. Nunc non metus non dui ornare facilisis. Aenean lorem diam, condimentum nec odio quis, sodales cursus est. Sed vulputate ornare tortor quis vehicula. Curabitur accumsan ut sapien fringilla aliquet. Nulla facilisi. Morbi condimentum tincidunt diam vitae rutrum. 
+				</div>
+				<div class="our-story">
+					<a href="about.html">Our story&ensp;<i class="fas fa-angle-double-right"></i></a>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<img src="images/ice1.png" alt="Image" class="img-responsive">
+			</div>
+		</div>
+	</div>
+	<div class="digits-div">
+		<div class="container">
+			<div class="digits">
+				<div class="row">
+					<div class="col-sm-4">
+						<div class="line-digit"></div>
+						<div class="digit">
+							10
+						</div>
+						<div class="title-digit">
+							branches
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="line-digit"></div>
+						<div class="digit">
+							20
+						</div>
+						<div class="title-digit">
+							active hours
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="line-digit"></div>
+						<div class="digit">
+							789
+						</div>
+						<div class="title-digit">
+							icecreams per day
+						</div>
+					</div>
+				</div>
+				<br>
+				<div class="row">
+					<div class="col-xs-12 passion-div">
+						<span class="line line1"></span> 
+						<div class="passion">
+							OUR PASSION FOR<br>ICECREAM
+						</div>
+						<div class="line line2"></div>
+					</div>
+				</div>
+				<br>
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="passion-p passion-p1">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed dolor ac nunc suscipit blandit eget id odio. Vivamus sodales, elit tempus sagittis lacinia elit tempus.
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="passion-p passion-p2">
+							Nisi odio ullamcorper tellus, eget luctus lectus tortor ac metus. Aliquam vitae sapien condimentum, euismod est sit amet, sagittis diam. Fusce vitae gravida nisl pusce.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="why">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="title text-center">
+						Why should you choose us?
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="list-why">
+					<div class="col-md-4 col-sm-5">
+						<div class="reason">
+							<div class="icon-reason">
+								<img src="images/handmade.png" alt="Handmade" class="img-responsive">
+							</div>
+							<div class="reason-title">
+								Handmade
+							</div>
+							<div class="reason-content">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed dolor ac nunc suscipit blandit eget id odio. Vivamus sodales, elit tempus.
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-md-push-4 col-sm-5 col-sm-push-2">
+						<div class="reason">
+							<div class="icon-reason">
+								<img src="images/promotion.png" alt="Promotion" class="img-responsive">
+							</div>
+							<div class="reason-title">
+								Many promotions
+							</div>
+							<div class="reason-content">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed dolor ac nunc suscipit blandit eget id odio. Vivamus sodales, elit tempus.
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="list-why">
+					<div class="col-md-4 col-sm-5">
+						<div class="reason">
+							<div class="icon-reason">
+								<img src="images/certificate.png" alt="Certificate" class="img-responsive">
+							</div>
+							<div class="reason-title">
+								1st branch icecream
+							</div>
+							<div class="reason-content">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed dolor ac nunc suscipit blandit eget id odio. Vivamus sodales, elit tempus.
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-md-push-4 col-sm-5 col-sm-push-2">
+						<div class="reason">
+							<div class="icon-reason">
+								<img src="images/fresh.png" alt="Fresh" class="img-responsive">
+							</div>
+							<div class="reason-title">
+								100% fresh
+							</div>
+							<div class="reason-content">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed dolor ac nunc suscipit blandit eget id odio. Vivamus sodales, elit tempus.
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="video">
+		<div class="video-text">
+			<div class="title title-video">Video</div>
+			<div class="video-title">
+				How do we make your icecreams?
+			</div>
+			<div class="player">
+				<button class="play" onclick="playVideo()"><i class="fas fa-play-circle"></i></button>
+				<button class="pause" onclick="pauseVideo()"><i class="fas fa-pause-circle"></i></button>
+			</div>
+		</div>
+		<div class="video-container">
+			<video loop id="myVideo" poster="images/video.jpg">
+				<source src="public/videoplayback.mp4" type="video/mp4"/>
+				Your browser does not support HTML5 video.
+			</video>
+		</div>
+	</div>
+	<div class="catolog">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 title text-center">
+					Our Special Icecreams
+				</div>
+			</div>
+			<br>
+			<br>
+			<div class="row">
+				<div class="list-icecreams">
+					
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 text-center">
+					<button class="for-more">FOR MORE</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="review">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 text-center">
+					<div class="title">TESTIMONIALS</div>
+					<div id="myCarousel" class="carousel slide" data-ride="carousel">
+						<ol class="carousel-indicators">
+							<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+							<li data-target="#myCarousel" data-slide-to="1"></li>
+							<li data-target="#myCarousel" data-slide-to="2"></li>
+						</ol>
+						<div class="carousel-inner">
+							<div class="item active">
+								<div class="img-user">
+									<img src="images/download.png" alt="user" class="img-responsive">
+								</div>
+								<div class="review-content">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi adipisci dolores tenetur ducimus quae. Consequatur, culpa. Beatae aliquid magni,!
+								</div>
+							</div>
+							<div class="item">
+								<div class="img-user">
+									<img src="images/download.png" alt="user" class="img-responsive">
+								</div>
+								<div class="review-content">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi adipisci dolores tenetur ducimus quae.
+								</div>
+							</div>
+							<div class="item">
+								<div class="img-user">
+									<img src="images/download.png" alt="user" class="img-responsive">
+								</div>
+								<div class="review-content">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi adipisci dolores tenetur ducimus quae!
+								</div>
+							</div>
+						</div>
+						<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+							<span class="glyphicon glyphicon-chevron-left"></span>
+							<span class="sr-only">Previous</span>
+						</a>
+						<a class="right carousel-control" href="#myCarousel" data-slide="next">
+							<span class="glyphicon glyphicon-chevron-right"></span>
+							<span class="sr-only">Next</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="freeship">
+		<div class="container">
+			<div class="freeship-content">
+				<div class="freeship-text1">
+					FREESHIP
+				</div>
+				<div class="freeship-text2">
+					for all 200.000 VND bill
+				</div>
+				<div class="freeship-btn">
+					<a href="shop.html"><button class="btn-shopping">Shopping now</button></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="contact" id="contact">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6">
+					<div class="img-contact contact-con">
+						<img src="images/contact.png" alt="Icecream" class="img-responsive">
+					</div>
+				</div>
+				<div class="col-sm-5 col-sm-push-1 contact-con">
+					<div class="title-contact text-center">
+						<div class="title">
+							Contact us
+						</div>
+						<div class="listen">
+							We are ready listen to you!!!
+						</div>
+					</div>
+					<form action="">
+						<table>
+							<tr>
+								<td>Email</td>
+								<td>
+									<input type="email" name="email" required="required">
+								</td>
+							</tr>
+							<tr>
+								<td>Message</td>
+								<td>
+									<textarea name="message" id="message" rows="5" required></textarea>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2" class="text-right">
+									<button name="submit" class="btn btn-submit">SUBMIT</button>
+								</td>
+							</tr>
+						</table>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="map">
+		<div class="enter-mail">
+			<form>
+				<div class="input-group">
+					<input type="email" class="form-control" placeholder="Enter your email to get our news" required>
+					<div class="input-group-btn">
+						<button class="btn btn-default get-news" type="submit">
+							<i class="fas fa-forward"></i>
+						</button>
+					</div>
+				</div>
+			</form>
+		</div>
+		<div id="map"></div>
+	</div>
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-5 col-xs-6">
+					<div class="footer-title">
+						<i class="fas fa-map-marker-alt"></i>&emsp;LOCATION
+					</div>
+					<div class="container-fluid foot">
+						<div class="row">
+							<div class="col-sm-6">
+								<p>25 Lorem ipsum dolor</p>
+								<p>25 Lorem ipsum dolor</p>
+								<p>25 Lorem ipsum dolor</p>
+								<p>25 Lorem ipsum dolor</p>
+								<p>25 Lorem ipsum dolor</p>
+							</div>
+							<div class="col-sm-6">
+								<p>25 Lorem ipsum dolor</p>
+								<p>25 Lorem ipsum dolor</p>
+								<p>25 Lorem ipsum dolor</p>
+								<p>25 Lorem ipsum dolor</p>
+								<p>25 Lorem ipsum dolor</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4  col-xs-6">
+					<div class="footer-title">
+						<i class="fas fa-hourglass-half"></i>&emsp;OPEN AT
+					</div>
+					<div class="time">
+						<p>7.30 AM - 11.30 AM</p>
+						<p>13.00 PM - 23.00 PM</p>
+					</div>
+					<br>
+					<div class="footer-title">
+						<i class="fas fa-phone-volume"></i>&emsp; <span class="info-footer">999.999.999 - 888.888.888</span>
+					</div>
+					<div class="footer-title">
+						<i class="far fa-envelope"></i>&emsp;<span class="info-footer">abc@gmail.com</span>
+					</div>
+					<br>
+					<div class="footer-title">
+						<div class="social-title">
+							SOCIAL
+						</div>
+						<div class="social-grp">
+							<div class="social-item">
+								<a href=""><i class="fab fa-facebook"></i></a>
+							</div>
+							<div class="social-item">
+								<a href=""><i class="fab fa-twitter-square"></i></a>
+							</div>
+							<div class="social-item">
+								<a href=""><i class="fab fa-google-plus-square"></i></a>
+							</div>
+							<div class="social-item">
+								<a href=""><i class="fab fa-pinterest-square"></i></a>
+							</div>
+							<div class="social-item">
+								<a href=""><i class="fab fa-linkedin"></i></a>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3 col-xs-12">
+					<div class="imgs">
+						<div class="img-footer">
+							<div class="thumb">
+								<img src="images/ic-f2.jpeg" alt="img footer" class="img-responsive">
+							</div>
+						</div>
+						<div class="img-footer">
+							<div class="thumb">
+								<img src="images/ic-f1.jpg" alt="img footer" class="img-responsive">
+							</div>
+						</div>
+						<div class="img-footer">
+							<div class="thumb">
+								<img src="images/ic-f4.jpg" alt="img footer" class="img-responsive">
+							</div>
+						</div>
+						<div class="img-footer">
+							<div class="thumb">
+								<img src="images/ic-f3.jpg" alt="img footer" class="img-responsive">
+							</div>
+						</div>
+						<div class="img-footer">
+							<div class="thumb">
+								<img src="images/ic-f5.jpg" alt="img footer" class="img-responsive">
+							</div>
+						</div>
+						<div class="img-footer">
+							<div class="thumb">
+								<img src="images/ic-f6.jpg" alt="img footer" class="img-responsive">
+							</div>
+						</div>
+						<div class="img-footer">
+							<div class="thumb">
+								<img src="images/ic-f7.jpg" alt="img footer" class="img-responsive">
+							</div>
+						</div>
+						<div class="img-footer">
+							<div class="thumb">
+								<img src="images/ic-f8.jpg" alt="img footer" class="img-responsive">
+							</div>
+						</div>
+						<div class="img-footer">
+							<div class="thumb">
+								<img src="images/ic-f9.jpg" alt="img footer" class="img-responsive">
+							</div>
+						</div>
+						<div class="clear"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<div class="shopping-cart">
+		<a href="cart.html">
+			<div class="shopping-item">
+				<i class="fas fa-shopping-cart"></i>
+				<div class="count-item">
+					0
+				</div>
+			</a>
+		</div>
+	</div>
+
+	<div id="compare-table" class="compare-table">
+		<span class="closebtn" onclick="closeCompare()" title="Close Overlay">×</span>
+		<div class="compare-table-content">
+			<div class="table-responsive">
+				<table class="table">
+					<tr class="compare-tr"></tr>
+					<tr class="compare-tr"></tr>
+					<tr class="compare-tr"></tr>
+					<tr class="compare-tr"></tr>
+					<tr class="compare-tr"></tr>
+					<tr class="compare-tr"></tr>
+				</table>
+			</div>
+		</div>
+	</div>
+
+	<!--modal login / signup-->
+	<div class="modal fade bs-modal-sm log-sign" id="myModal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-sm">
+			<div class="modal-content">
+				<div class="bs-example bs-example-tabs">
+					<ul id="myTab" class="nav nav-tabs">
+						<li id="tab1" class=" active tab-style login-shadow "><a href="#signin" data-toggle="tab">Log In</a></li>
+						<li id="tab2" class=" tab-style "><a href="#signup" data-toggle="tab">Sign Up</a></li>
+					</ul>
+				</div>
+				<div class="modal-body">
+					<div id="myTabContent" class="tab-content">
+						<div class="tab-pane fade active in" id="signin">
+							<form class="form-horizontal">
+								<fieldset>
+									<div class="group">
+										<input required="" class="input" type="text"><span class="highlight"></span><span class="bar"></span>
+										<label class="label" for="date">Email address</label></div>
+										<div class="group">
+											<input required="" class="input" type="password"><span class="highlight"></span><span class="bar"></span>
+											<label class="label" for="date">Password</label>
+										</div>
+										<div class="forgot-link">
+											<a href="#forgot" data-toggle="modal" data-target="#forgot-password"> I forgot my password</a>
+										</div>
+										<div class="control-group">
+											<label class="control-label" for="signin"></label>
+											<div class="controls">
+												<button id="signin" name="signin" class="btn btn-block">Log In</button>
+											</div>
+										</div>
+									</fieldset>
+								</form>
+							</div>
+							<div class="tab-pane fade" id="signup">
+								<form class="form-horizontal">
+									<fieldset>
+										<div class="group">
+											<input required="" class="input" type="email"><span class="highlight"></span><span class="bar"></span>
+											<label class="label" for="date">Email</label>
+										</div>
+										<div class="group">
+											<input required="" class="input" type="text"><span class="highlight"></span><span class="bar"></span>
+											<label class="label" for="date">Full name</label>
+										</div>
+										<div class="group">
+											<input required="" class="input" type="tel"><span class="highlight"></span><span class="bar"></span>
+											<label class="label" for="date">Phone number</label></div>
+											<div class="group">
+												<input required="" class="input" type="text"><span class="highlight"></span><span class="bar"></span>
+												<label class="label" for="date">Address</label></div>
+												<div class="group2">
+													<input required="" class="input" type="password"><span class="highlight"></span><span class="bar"></span>
+													<label class="label" for="date">Password</label>
+												</div>
+												<div class="control-group">
+													<label class="control-label" for="confirmsignup"></label>
+													<div class="controls">
+														<button id="confirmsignup" name="confirmsignup" class="btn btn-block">Sign Up</button>
+													</div>
+												</div>
+											</fieldset>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--modal Forgot password-->
+	<div class="modal fade bs-modal-sm" id="forgot-password" tabindex="0" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-sm">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="myModalLabel">Password will be sent to your email</h4>
+				</div>
+				<div class="modal-body">
+					<form class="form-horizontal">
+						<fieldset>
+							<div class="group">
+								<input required="" class="input" type="text"><span class="highlight"></span><span class="bar"></span>
+								<label class="label" for="date">Email address</label></div>
+								<div class="control-group">
+									<label class="control-label" for="forpassword"></label>
+									<div class="controls">
+										<button id="forpasswodr" name="forpassword" class="btn btn-primary btn-block">Send</button>
+									</div>
+								</div>
+							</div>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<script src="js/script.js"></script>
+	<script src="js/index.js"></script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBEuf8DBhwL6DRYx1fOGDMvEtD9GGJ9vYY&callback=initMap">
+	</script>
+</body>
+</html>

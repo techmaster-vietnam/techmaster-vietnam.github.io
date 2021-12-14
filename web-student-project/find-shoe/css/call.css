@@ -1,0 +1,70 @@
+#contact-text{
+    max-width: 800px;
+}
+
+@media(max-width:576px){
+    #contact-text{
+        width: 100%;
+    }
+}
+
+#main {
+    width: 100%;
+    padding: 3rem;
+
+}
+
+#main img {
+    width: 100%;
+}
+
+#row8{
+    max-width: 800px;
+}
+
+#fullname, #dateofbirth, #phonenumber, #address, #email{
+    width: 100%;
+    border: solid 2px #CD2727;
+    font-size: 14px;
+    padding: 0.5rem;
+}
+
+#content{
+    width: 100%;
+    border: solid 2px #CD2727;
+    font-size: 14px;
+    padding: 0.5rem
+}
+
+#submit{
+    width: 15rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    background: #CD2727;
+    color: white;
+    border:none;
+    font-size: 14px;
+    padding: 0.5rem;
+    transition: all 0.6s linear;
+    border: solid 2px #CD2727;
+}
+
+#submit:hover{
+    background-color: black;
+    color: #ffffff;
+    border: solid 2px black;
+}
+
+.error{
+	color: #CD2727;
+}
+
+
+#main_2,#main_3{
+    margin-top: 2rem;
+    padding: 1rem 0;
+}
+
+#main_2{
+    border-bottom: 1px solid grey;
+}

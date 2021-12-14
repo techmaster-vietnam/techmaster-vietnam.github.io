@@ -1,0 +1,20 @@
+.hero{
+	background-image: url('../images/servicebanner.png');
+}
+.aboutService{
+	font-weight: 500;
+	font-size: 45px;
+	text-transform: uppercase;
+}
+.thcolspan2{
+	background-color: #FF8A00;
+	color: white;
+}
+.thinfo{
+	background-color: #FFB03F;
+	color: white;
+}
+.phancach{
+	background-color: #FFC666;
+	height: 10px;
+}

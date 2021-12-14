@@ -1,0 +1,107 @@
+extends parts/layout.pug
+
+block css
+  link(rel="stylesheet", href="css/review.css")
+
+
+block title
+  title HALO Đánh giá
+
+block content
+  .breadcrumb-wrapper.container-xl
+    ul.breadcrumb
+      li.breadcrumb-item
+        a(href='index.html') Trang chủ
+      li.breadcrumb-item.active Đánh giá
+
+  .review__main-banner
+    img.main-banner__logo(src="img/img--misc/logo-white.png", alt="đánh giá máy ảnh")
+    img.main-banner__text(src="img/img--review/banner-text.png", alt="đánh giá máy ảnh")
+
+  section.display-till-md
+    #sub-banner-area--min.carousel.slide(data-ride='carousel' data-touch='true' data-interval="false")
+
+      ul.carousel-indicators
+        li.active(data-target='#sub-banner-area--min' data-slide-to='0')
+        li(data-target='#sub-banner-area--min' data-slide-to='1')
+        li(data-target='#sub-banner-area--min' data-slide-to='2')
+        li(data-target='#sub-banner-area--min' data-slide-to='3')
+        
+      .carousel-inner
+        a.carousel-item.active(href="review-details.html") 
+          img(src='/halo/img/img--review/review-big-banner-xl-sfw.jpg' alt='Canon M5')
+          .carousel-caption
+            h3 Một ngày cùng Canon M5
+        a.carousel-item(href="review-details.html") 
+          img(src='img/img--review/review-small-banner-xl-sfw-1.jpg' alt='Sony A6400')
+          .carousel-caption
+            h3 Sony A6400 Review 
+          span.easter-egg 
+        a.carousel-item(href="review-details.html") 
+          img(src='img/img--review/review-small-banner-xl-sfw-2.jpg' alt='Canon 85mm f/1.8')
+          .carousel-caption
+            h3 Canon 85mm f/1.8 Review         
+        a.carousel-item(href="review-details.html") 
+          img(src='img/img--review/review-small-banner-xl-sfw-3.jpg' alt='150-600mm f/5-6.3')
+          .carousel-caption
+            h3 Sigma 150-600mm f/5-6.3 Review
+            
+      a.carousel-control-prev(href='#sub-banner-area--min' data-slide='prev')
+        span.carousel-control-prev-icon
+      a.carousel-control-next(href='#sub-banner-area--min' data-slide='next')
+        span.carousel-control-next-icon
+    
+  section#sub-banner-area--max.container-xl.hidden-till-md
+
+    a.review__sub-banner--big(href="review-details.html")
+      img.display-till-xl(src="/halo/img/img--review/review-big-banner-md-sfw.jpg", alt="Canon M5")
+      img.hidden-till-xl(src="/halo/img/img--review/review-big-banner-xl-sfw.jpg", alt="Canon M5")
+      .sub-banner__caption
+        span Một ngày cùng Canon M5
+
+    .review__sub-banner--small-area 
+
+      a.review__sub-banner--small(href="review-details.html")
+        img(src="img/img--review/review-small-banner-xl-sfw-1.jpg", alt="Sony A6400") 
+        .sub-banner__caption
+          span Sony A6400 Review
+
+      a.review__sub-banner--small(href="review-details.html")
+        img(src="img/img--review/review-small-banner-xl-sfw-2.jpg", alt="Nikon Z7") 
+        .sub-banner__caption
+          span Nikon Z7 Review
+
+      a.review__sub-banner--small.hidden-till-xl(href="review-details.html")
+        img(src="img/img--review/review-small-banner-xl-sfw-3.jpg", alt="Sigma 150-600mm f/5-6.3") 
+        .sub-banner__caption
+          span Sigma 150-600mm f/5-6.3 Review
+
+  section.main-area.container-xl
+    .review__post-area
+
+      .review__post-collection
+        include parts/review-post-1.pug
+        include parts/review-post-2.pug
+        include parts/review-post-3.pug
+
+      .loading-indicator.justify-content-center.mb-5
+        .spinner-grow.text-dark
+        .spinner-grow.text-dark.mx-3
+        .spinner-grow.text-dark
+
+      button.btn.btn--seemore.btn--dark Xem thêm
+
+    aside.review__aside-area.hidden-till-md
+      h3.aside__header Đọc nhiều nhất
+      a.aside__post.d-block(href="")
+        img.aside__post--img(src="img/img--review/aside-img-1.png", alt="đánh giá nikon D500")
+        p.aside__post--header D500 Review: Canh bạc của Nikon
+
+      a.aside__post.d-block(href="")
+        img.aside__post--img(src="img/img--review/aside-img-2.jpg", alt="nikon canon")
+        p.aside__post--header Vị thế hiện tại của 2 ông lớn Ca-Ni
+
+      a.aside__post.d-block(href="")
+        img.aside__post--img(src="img/img--review/aside-img-3.png", alt="đánh giá nikon D5600")
+        p.aside__post--header D5600 Review: Máy ảnh cho mọi nhà
+    

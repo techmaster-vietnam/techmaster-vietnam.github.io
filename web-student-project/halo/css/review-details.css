@@ -1,0 +1,85 @@
+
+.post__subtext {
+  margin: 10px 0px;
+}
+
+.review-article__preview,
+.article__header {
+  font-weight: 700;
+}
+
+.review-article__content {
+  padding: 15px 0px;
+}
+
+.article__header {
+  text-align: left;
+  margin: 10px 0px;
+}
+
+figure {
+  padding: 15px;
+}
+
+figcaption {
+  font-style: italic;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.review-article__links a {
+  margin-bottom: 5px;
+  display: block;
+}
+
+@media only screen and (min-width: 768px) {
+  main {
+    font-size: 15px;
+  }
+
+  .review-article__content {
+    padding: 30px 0px;
+  }
+
+  figure {
+    padding: 15px 50px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  figure {
+    padding: 15px 15%;
+  }
+
+}
+
+@media only screen and (min-width: 1200px) {
+  main {
+    font-size: 16px;
+  }
+
+  .article__section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .article__header {
+    width: 100%;
+  }
+
+  .review-article__content {
+    padding: 50px 0px;
+  }
+
+  .figure--full {
+    padding: 25px 25%;
+    width: 100%;
+  }
+
+  .figure--half {
+    padding: 25px;
+    width: calc(50% - 50px);
+  }
+}

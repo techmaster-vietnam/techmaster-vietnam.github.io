@@ -1,0 +1,508 @@
+/* ------------ ------------ ------------ ------------ */
+/* --Landing Page-- ------ */
+.landing-page
+  {
+    width: 100%;
+    height: 100vh;
+    padding-left: 10rem;
+    background-image: url(../Images/Home/LandingPageBackground.png);
+    background-color: #FAFAFA;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+.landing-page-bg
+  {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+.menu-social
+  {
+    padding-top: 2.8rem;
+    display: flex;
+    flex-direction: row;
+  }
+.social-icon
+  {
+    width: 2.4rem;
+    height: 2.4rem;
+    margin-right: 2rem;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 4px;
+  }
+.social-icon:hover
+  {
+    box-shadow: 0 0 0 0 rgba(230, 237, 255, 0.7);
+    animation: pulse 1.75s infinite cubic-bezier(0.66, 0, 0, 1);
+  }
+.social-icon1
+  {
+    background-image: url(../Images/Home/Icon-FB.png);
+  }
+.social-icon1:hover
+  {
+    background-image: url(../Images/Home/Icon-FB-hover.png);
+  }
+.social-icon2
+  {
+    background-image: url(../Images/Home/Icon-Mess.png);
+  }
+.social-icon2:hover
+  {
+    background-image: url(../Images/Home/Icon-Mess-hover.png);
+  }
+.social-icon3
+  {
+    background-image: url(../Images/Home/Icon-IG.png);
+  }
+.social-icon3:hover
+  {
+    background-image: url(../Images/Home/Icon-IG-hover.png);
+  }
+
+.landing-page-content
+  {
+    display: flex;
+    flex-direction: column;
+  }
+
+.credit-info
+  {
+    padding-bottom: 4rem;
+    display: flex;
+    flex-direction: row;
+  }
+.credit-item
+  {
+    margin-right: 2rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+
+/* ------------ ------------ ------------ ------------ */  
+/* --Background 1-- ------ */
+.bg1 
+  {
+    background-image: url(../Images/Home/BG1.png);
+    background-color: #FFFFFF;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+    /* --Expertise-- ------ */
+    .expertise-menu
+      {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+    .expertise-item
+      {
+        padding: 0 2.2rem 4rem 2.2rem;
+        width: 28rem;
+        min-height: 32rem;
+        background-color: #FFFFFF;
+        box-shadow: 4px 6px 12px 4px rgba(0, 0, 0, 0.06);
+        border-radius: 12px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+    .expertise-item-img
+      {
+        margin-top: -6rem;
+        width: 12rem;
+      }
+    .expertise-item-img img
+      {
+        width: 100%;
+      }
+
+    .expertise-item:hover
+      {
+        background-color: #7051EF;
+      }
+    .expertise-item:hover >span
+      {
+        color: #FFFFFF;
+      }
+    /* --Owl Carousel-- ------ */
+    .owl-stage-outer
+      {
+        padding: 6rem 2rem 2rem 0;
+      }
+    .owl-nav, .owl-dot
+      {
+        display: none;
+      }
+
+    /* --Projects-- ------ */
+    .grid-container
+      {
+        display: grid;
+        grid-gap: 2rem;
+        grid-template-columns: auto auto auto;
+      }
+    .grid-item
+      {
+        position: relative;
+      }
+    .grid-item img
+      {
+        width: 100%;
+      }
+    .grid-item-hover-bg
+      {
+        z-index: 1;
+        position: absolute;
+        width: 100%;
+        height: 0px;
+        bottom: 0;
+        background-color: #7051EF;
+
+        transition: all 400ms ease-out;
+      }
+    .grid-item-name
+      {
+        z-index: 2;
+        position: absolute;
+        display: none;
+
+        transition: all 400ms ease-out;
+        animation: peak-in 400ms ease-out forwards;
+      }
+
+    .grid-item:hover .grid-item-hover-bg
+      {
+        height: 100%;
+      }
+    .grid-item:hover .grid-item-name
+      {
+        display: flex;
+      }
+    @keyframes peak-in
+      {
+        from
+          {
+            top: 100%;
+            left: 10%;
+          }
+        to
+          {
+            top: 60%;
+            left: 10%;
+          }
+      }
+    
+      
+/* ------------ ------------ ------------ ------------ */
+/* --Quote-- ------ */
+.quote
+  {
+    z-index: -1;
+    position: fixed;
+    top: 50%;
+    left: calc(50% + 5rem);
+    transform: translate(-50%, -50%);
+    width: calc(100% - 10rem);
+    text-align: center;
+    color: #FFFFFF;
+  }
+
+
+/* ------------ ------------ ------------ ------------ */  
+/* --Background 2-- ------ */
+.bg2
+  {
+    background-image: url(../Images/Home/BG2.png);
+    background-color: #FFFFFF;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+    /* --Profile-- ------ */
+    .profile-menu
+      {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+    .profile-img
+      {
+        margin-right: 20px;
+        max-width: 44rem;
+        object-fit: cover;
+        overflow: hidden;
+      }
+    .profile-img img
+      {
+        height: 100%;
+      }
+    .profile-content
+      {
+        width: 53.2rem;
+      }
+    .profile-credit-info
+      {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+    /* --Contact-- ------ */
+    .contact-menu
+      {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+    .contact-info
+      {
+        width: 44rem;
+      }
+    .contact-form
+      {
+        padding: 6rem 7.2rem;
+        width: 53.2rem;
+        border-radius: 8px;
+        background-color: #FAFAFA;
+        box-shadow: 8px 12px 24px 8px rgba(0, 0, 0, 0.04);
+      }
+    .form-control, .contact-input
+      {
+        padding: 0;
+        margin: 0;
+        height: calc(2.4rem + 1px);
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        color: #B2B2B2;
+        background-color: #FAFAFA;
+        border: none;
+        border-bottom: 1px solid #B2B2B2;
+        border-radius: 0;
+      }
+    .fix-area
+      {
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        color: #B2B2B2 !important;
+      }
+
+
+/* ------------ ------------ ------------ ------------ */
+/* --RESPONSIVE-- ------ */ 
+@media (max-width: 1200px)
+  {
+    /* --Expertise-- ------ */
+    .expertise-item
+      {
+        width: 24rem;
+      }
+    
+    /* --Projects-- ------ */
+    .grid-container
+      {
+        grid-template-columns: auto auto;
+      }
+    .projects-item5, .projects-item6
+      {
+        display: none;
+      }
+
+    /* --Profile-- ------ */
+    .profile-content
+      {
+        width: 48rem;
+      }
+
+    /* --Contact-- ------ */
+    .contact-info
+      {
+        width: 40rem;
+      }
+    .contact-form
+      {
+        padding: 4rem 4.8rem;
+        width: 42rem;
+      }
+  }
+
+@media (max-width: 992px)
+  {
+    /* --Landing Page-- ------ */
+    .credit-item1
+      {
+        display: none;
+      }
+
+    /* --Profile-- ------ */
+    .profile-credit-info
+      {
+        flex-direction: column;
+      }
+
+    /* --Contact-- ------ */
+    .contact-menu
+      {
+        flex-direction: column-reverse;
+      }
+    .contact-form .responsiveStyle
+      {
+        text-align: center;
+      }
+    .contact-info
+      {
+        margin-top: 2rem;
+      }
+  }
+
+@media (max-width: 768px)
+  {
+    /* --Landing Page-- ------ */
+    .landing-page
+      {
+        padding-left: 0;
+      }
+    .landing-page
+      {
+        background-image: none;
+      }
+
+    /* --Projects-- ------ */
+    .grid-container
+      {
+        grid-template-columns: 100%;
+      }
+    .projects-item3, .projects-item4
+      {
+        display: none;
+      }
+
+    /* --Quote-- ------ */
+    .quote
+      {
+        left: 50%;
+        width: 100%;
+      }
+
+    /* --Profile-- ------ */
+    .profile-menu
+      {
+        flex-direction: column;
+        align-items: center;
+      }
+    .profile-img
+      {
+        margin-right: 0;
+      }
+    .profile-content
+      {
+        margin-top: 4rem;
+      }
+    .profile-menu .responsiveStyle
+      {
+        text-align: center;
+      }
+    .profile-credit-info
+      {
+        flex-direction: row;
+      }
+  }
+
+@media (max-width: 576px)
+  {
+    /* --Landing Page-- ------ */
+    .credit-info
+      {
+        flex-direction: column;
+      }
+
+    /* --Expertise-- ------ */
+    .expertise-item
+      {
+        padding-bottom: 2.8rem;
+        min-height: 28rem;
+      }
+    .expertise-item-img
+      {
+        margin-top: -4rem;
+        width: 10rem;
+        height: 10rem;
+      }
+
+    /* --Quote-- ------ */
+    .quote span
+      {
+        font-size: 1.2rem;
+        line-height: 2rem;
+      }
+
+    /* --Profile-- ------ */
+    .profile-img, .profile-content
+      {
+        width: 100%;
+      }
+    .profile-img img
+      {
+        height: unset;
+      }
+    .profile-credit-info
+      {
+        flex-direction: column;
+      }
+    .responsiveStyle .btn-secondary
+      {
+        margin-top: 1.4rem;
+      }
+
+    /* --Contact-- ------ */
+    .contact-form, .contact-info
+      {
+        width: 100%;;
+      }
+    .contact-form
+      {
+        padding: 2.6rem 2.8rem;
+      }
+    .form-control, .fix-area
+      {
+        font-size: 1.4rem;
+        line-height: 2.4rem;
+      }
+  }
+
+@media (max-width: 320px)
+  {
+    /* --Expertise-- ------ */
+    .expertise-item
+      {
+        padding: 1.8rem 2rem;
+        min-height: 24rem;
+      }
+
+    /* --Quote-- ------ */
+    .quote span
+      {
+        font-size: 1rem;
+        font-stretch: ultra-condensed;
+        line-height: 2rem;
+      }
+
+    /* --Contact-- ------ */
+    .form-control, .fix-area
+      {
+        font-size: 1.2rem;
+        line-height: 2rem;
+      }
+  }

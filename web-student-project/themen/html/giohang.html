@@ -1,0 +1,944 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- home css -->
+    <link rel="stylesheet" href="../css/home.css">
+
+    <!-- giohang css -->
+    <link rel="stylesheet" href="../css/giohang.css">
+
+    <!-- owl caruosel -->
+    <link rel="stylesheet" href="../owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="../owlcarousel/assets/owl.theme.default.min.css">
+
+    <title>The Men Shop</title>
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="../favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+    <link rel="manifest" href="../favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+        <div class="container headerfirt">
+            <!-- <a href="#" class="nabar-branch">
+                <i class="fa fa-street-view"></i>
+
+            </a> -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link signup" href="#"
+                            onclick="document.getElementById('id01').style.display='block'">Đăng ký <span
+                                class="sr-only">(current)</span></a>
+
+                        <div id="id01" class="modal">
+
+
+                            <form class="modal-content animate" action="/action_page.php">
+                                <div class="imgcontainer">
+                                    <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                                        title="Close Modal">&times;</span>
+
+                                </div>
+
+                                <div class="container">
+                                    <h1 class="text-center">sign up</h1>
+                                    <div class="form-group">
+                                        <label for="email">Email address</label>
+                                        <input type="email" class="form-control" id="email" placeholder="enter email">
+                                        <p class="emailError"></p>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="password">Password</label>
+                                        <input type="password" class="form-control" id="password"
+                                            placeholder="Password">
+                                        <p class="passwordError"></p>
+                                    </div>
+
+                                    <div class="form-check">
+
+                                        <input type="checkbox" class="form-check-input" id="rememberMe">
+                                        <label for="rememberMe" class="form-check-label">Check me out</label>
+                                    </div>
+
+                                    <button type="submit" class="btn brn-success btn-block my-3 signup_3">Sign
+                                        up</button>
+
+                                </div>
+
+                                <div class="container" style="background-color:#f1f1f1">
+                                    <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                                        class="cancelbtn">Cancel</button>
+
+                                </div>
+                            </form>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="fa fa-shopping-cart"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item iconsearch">
+
+
+
+                        <a class="nav-link iconsearch_1" href="#">
+                            <i class="fa fa-search"></i>
+                        </a>
+
+                        <!-- <div id="id02" class="mod"> -->
+                        <form class="example inpsearch animate" action="/action_page.php"
+                            style="margin:auto;max-width:500px">
+                            <input type="text" placeholder="Search.." name="search2" class="">
+                            <!-- <button type="submit"><i class="fa fa-search"></i></button> -->
+                        </form>
+                        <!-- </div> -->
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+    <!-- end Navigation-->
+
+    <!-- logo -->
+
+    <div class="container-fluid">
+        <div class="card logo_1" style="width: 18rem;">
+            <a href="#">
+                <img src="../img/logo1.jpg" class="card-img-top logo_1_1" alt="...">
+            </a>
+
+        </div>
+    </div>
+
+    <!-- end logo -->
+
+
+    <!-- menu -->
+
+    <nav class="navbar navbar-expand-md navbar-light bg-light menu">
+
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav menu_1">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../html/index.html">Trang chủ <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/sales.html">Khuyến mại</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="../html/suits.html"
+                            role="button" aria-haspopup="true" aria-expanded="false">Vest nam</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="../html/suits.html">Vest công sở</a>
+                            <a class="dropdown-item" href="../html/suits.html">Vest cưới</a>
+                            <a class="dropdown-item" href="../html/suits.html">Sơ mi</a>
+                            <a class="dropdown-item" href="../html/suits.html">Quần âu</a>
+                            <a class="dropdown-item" href="../html/suits.html">Áo măng tô</a>
+                            <a class="dropdown-item" href="../html/suits.html">Áo dạ</a>
+
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="../html/giay.html"
+                            role="button" aria-haspopup="true" aria-expanded="false">Giày</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="../html/giay.html">Giày nâng chiều cao</a>
+                            <a class="dropdown-item" href="../html/giay.html">Giày dây mũi nhọn</a>
+                            <a class="dropdown-item" href="../html/giay.html">Giày dây mũi vuông</a>
+                            <a class="dropdown-item" href="../html/giay.html">Giày lười</a>
+
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="../html/phukien.html"
+                            role="button" aria-haspopup="true" aria-expanded="false">Phụ kiện</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="../html/phukien.html">Caravat</a>
+                            <a class="dropdown-item" href="../html/phukien.html">Nơ cổ</a>
+                            <a class="dropdown-item" href="../html/phukien.html">Túi xách</a>
+                            <a class="dropdown-item" href="../html/phukien.html">Ghim cài</a>
+                            <a class="dropdown-item" href="../html/phukien.html">Ví da</a>
+                            <a class="dropdown-item" href="../html/phukien.html">Dây lưng</a>
+
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/maydo.html">May đo</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- end menu -->
+
+
+    <!-- giỏ hàng -->
+    <div class="container">
+        <h5 class="giohang">GIỎ HÀNG</h5>
+    </div>
+
+    <!-- thông tin khách hàng -->
+    <div class="container padding">
+        <div class="row padding">
+            <div class="col-12 col-sm-12 col-md-6 colform">
+
+                <form class="textform">
+                    <h6 class="text-center">THÔNG TIN KHÁCH HÀNG</h6>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+
+                                <label for="exampleFormControlSelect1">Hình thức thanh toán <span>*</span> :</label>
+                                <select class="form-control" id="exampleFormControlSelect1">
+                                    <option>Thanh toán bằng thẻ</option>
+                                    <option>Thanh toán trực tiếp</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="formGroupExampleInput">Điện thoại <span>*</span> :</label>
+                                <input type="text" class="form-control" id="formGroupExampleInput"
+                                    placeholder="034567890">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="exampleFormControlSelect1">Tỉnh/Thành phố <span>*</span> :</label>
+                                <select class="form-control" id="exampleFormControlSelect1">
+                                    <option>Hồ Chí Minh</option>
+                                    <option>Hà Nội</option>
+                                    <option>Lạng Sơn</option>
+                                    <option>Nam Định</option>
+                                    <option>Đà Nẵng</option>
+                                </select>
+                            </div>
+
+
+
+
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="formGroupExampleInput">Họ và tên <span>*</span> : </label>
+                                <input type="text" class="form-control" id="formGroupExampleInput"
+                                    placeholder="Nguyễn Văn A">
+                            </div>
+
+
+                            <div class="form-group">
+                                <label for="formGroupExampleInput">Địa chỉ <span>*</span> : </label>
+                                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="exampleFormControlSelect1">Quận/Huyện <span>*</span> :</label>
+                                <select class="form-control" id="exampleFormControlSelect1">
+                                    <option>Đống Đa</option>
+                                    <option>Cầu Giấy</option>
+                                    <option>Hoàn Kiếm</option>
+                                    <option>Hai Bà Trưng</option>
+                                    <option>Thanh Xuân</option>
+                                </select>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col">
+                            <div class="form-group">
+                                <label for="exampleFormControlTextarea1">Ghi chú : </label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+                </form>
+
+            </div>
+
+            <div class="col-md-6 colttgiohang">
+
+                <div class="container-fluid text-center contaittgiohang">
+
+                    <h6 class="text-center">THÔNG TIN GIỎ HÀNG</h6>
+
+
+                    <div class="row text-center ttgiohang">
+
+
+                        <div class="col-sm-4">
+
+                            <h6>SẢN PHẨM</h6>
+
+                        </div>
+
+                        <div class="col-sm-3">
+
+                            <h6>ĐƠN GIÁ</h6>
+
+                        </div>
+
+                        <div class="col-sm-1">
+
+                            <h6>SL</h6>
+
+                        </div>
+
+                        <div class="col-sm-1 delate">
+
+                            <h6>XÓA</h6>
+
+                        </div>
+
+                        <div class="col-sm-3">
+
+                            <h6>THÀNH TIỀN</h6>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+
+
+                <div class="container-fluid text-center contaittgiohang contaittgiohangtinh  cart-items">
+
+
+
+
+                    <div class="row text-center ttgiohang_1 ttgiohang_1tinh cart-row">
+
+
+                        <div class="col-sm-4 colboder">
+
+                            <div class="card mb-3 cardcart">
+                                <div class="row no-gutters">
+                                    <div class="col-md-4">
+                                        <img src="../img/vest1.png" class="card-img img-fluid" alt="...">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body cardtextgiohang">
+                                            <h5 class="card-title">Vest Công Sở</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+
+                        <div class="col-sm-3 colboder">
+
+                            <p class="monney dongia" style="padding-top: 1.5rem;">950000 đ</p>
+
+
+
+                        </div>
+
+                        <div class="col-sm-1 colboder sl">
+
+                            <input class="cart-quantity-input" type="number" value="1"
+                                style="width: 100% !important; padding-top: 2rem;">
+
+
+
+
+
+
+                        </div>
+
+                        <div class="col-sm-1 colboder">
+
+                            <p style="margin-top: 2.2rem;">
+                                <a class="btn-danger"><i class="fa fa-trash"></i></a>
+                            </p>
+
+
+
+
+                        </div>
+
+
+
+                        <div class="col-sm-3 colboder">
+
+                            <p class="monney  thanhtien" style="padding-top: 1.5rem;">1.950.000 đ</p>
+
+
+
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+
+
+
+                <div class="container-fluid text-center contaittgiohang">
+
+                    <div class="row text-center ttgiohang_1">
+
+                        <div class="col-sm-9 colboder">
+
+                            <p>Tạm Tính</p>
+
+                        </div>
+
+                        <div class="col-sm-3 colboder">
+
+                            <p class="monney tamtinh">0 đ</p>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="container-fluid text-center contaittgiohang">
+
+                    <div class="row text-center ttgiohang_1">
+
+                        <div class="col-sm-9 colboder">
+
+                            <p>Chiết Khấu (<span style="color: red;">%</span>)</p>
+
+                        </div>
+
+                        <div class="col-sm-3 colboder">
+
+                            <input type="number" class="monney chietkhau" value="20" min="0"
+                                style="width: 100% !important;">
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="container-fluid text-center contaittgiohang">
+
+                    <div class="row text-center ttgiohang_1">
+
+                        <div class="col-sm-9 colboder">
+
+                            <p>Tổng Tiền</p>
+
+                        </div>
+
+                        <div class="col-sm-3 colboder">
+
+                            <p class="monney tong">0 đ</p>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+                <div class="container-fluid text-center contaittgiohang">
+
+                    <div class="row text-center ttgiohang_1">
+
+                        <div class="col-sm-6 colboder">
+
+                            <div class="card cardcart">
+                                <div class="card-body">
+                                    <a href="../html/sales.html" class="btn btn-primary btnttmuahang">TIẾP TỤC MUA
+                                        HÀNG</a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-sm-6 colboder">
+
+                            <div class="card cardcart">
+                                <div class="card-body">
+                                    <a href="../html/xacnhan.html" class="btn btn-primary btndathang">ĐẶT HÀNG</a>
+
+
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+    <!-- sp nổi bật -->
+
+    <div class="container padding">
+        <div class="row welcome text-center">
+            <div class="col">
+                <!-- Horizontal Rule -->
+                <hr>
+                <hr>
+            </div>
+            <div class="col-4">
+                <h5><span><i class="fa fa-star"></i></span> SẢN PHẨM LIÊN QUAN <span><i class="fa fa-star"></i></span>
+                </h5>
+            </div>
+            <div class="col">
+                <!-- Horizontal Rule -->
+                <hr>
+                <hr>
+            </div>
+        </div>
+
+
+        <!-- owl carosel -->
+
+        <div class="container owl_1">
+
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+
+                    <div class="card cardow cardimg">
+                        <img src="../img/vest1.png" class="card-img-top imgowl_1 img-fluid" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Vest Cưới 1 Khuy</h5>
+                            <div>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                            <!-- Horizontal Rule -->
+                            <hr>
+                            <p class="card-text maugia"> 1.950.000 VNĐ</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="item">
+
+                    <div class="card cardimg">
+                        <img src="../img/vest2.png" class="card-img-top imgowl_1 img-fluid" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Vest Công Sở 1 Khuy</h5>
+                            <div>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                            <!-- Horizontal Rule -->
+                            <hr>
+                            <p class="card-text maugia"> 1.950.000 VNĐ</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="item">
+
+
+                    <div class="card cardimg">
+                        <img src="../img/vest3.png" class="card-img-top imgowl_1 img-fluid" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Vest Cưới Viền Cổ</h5>
+                            <div>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                            <!-- Horizontal Rule -->
+                            <hr>
+                            <p class="card-text maugia"> 1.950.000 VNĐ</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="item">
+
+                    <div class="card cardimg">
+                        <img src="../img/giayden1.png" class="card-img-top imgowl_1 img-fluid" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Giày Dây Mũi Nhọn</h5>
+                            <div>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                            <!-- Horizontal Rule -->
+                            <hr>
+                            <p class="card-text maugia"> 1.950.000 VNĐ</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="item">
+
+                    <div class="card cardimg">
+                        <img src="../img/giaynau1.png" class="card-img-top imgowl_1 img-fluid" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Giày Dây Mũi Vuông</h5>
+                            <div>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                            <!-- Horizontal Rule -->
+                            <hr>
+                            <p class="card-text maugia"> 1.950.000 VNĐ</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="item">
+
+                    <div class="card cardimg">
+                        <img src="../img/giaynau2.png" class="card-img-top imgowl_1 img-fluid" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Giày Nâng Chiều Cao</h5>
+                            <div>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                            <!-- Horizontal Rule -->
+                            <hr>
+                            <p class="card-text maugia"> 1.950.000 VNĐ</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="item">
+
+                    <div class="card cardimg">
+                        <img src="../img/ghim1.png" class="card-img-top imgowl_1 img-fluid" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Ghim Cài</h5>
+                            <div>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                            <!-- Horizontal Rule -->
+                            <hr>
+                            <p class="card-text maugia"> 250.000 VNĐ</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="item">
+
+                    <div class="card cardimg">
+                        <img src="../img/ghim2.png" class="card-img-top imgowl_1 img-fluid" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Ghim Cài</h5>
+                            <div>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                            <!-- Horizontal Rule -->
+                            <hr>
+                            <p class="card-text maugia"> 250.000 VNĐ</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="item">
+
+                    <div class="card cardimg">
+                        <img src="../img/ghim3.png" class="card-img-top imgowl_1 img-fluid" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Ghim Cài</h5>
+                            <div>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                            <!-- Horizontal Rule -->
+                            <hr>
+                            <p class="card-text maugia"> 1.950.000 VNĐ</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="item">
+
+                    <div class="card cardimg">
+                        <img src="../img/vest4.png" class="card-img-top imgowl_1 img-fluid" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Vest DeMi </h5>
+                            <div>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                            <!-- Horizontal Rule -->
+                            <hr>
+                            <p class="card-text maugia"> 1.950.000 VNĐ</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="item">
+
+
+                    <div class="card cardimg">
+                        <img src="../img/vest5.png" class="card-img-top imgowl_1 img-fluid" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Vest Công Sở 2 khuy</h5>
+                            <div>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                            <!-- Horizontal Rule -->
+                            <hr>
+                            <p class="card-text maugia"> 1.950.000 VNĐ</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="item">
+
+                    <div class="card cardimg">
+                        <img src="../img/spnb2.png" class="card-img-top imgowl_1 img-fluid" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Vest DeMi Xanh NaVi Kẻ Karo VDM24</h5>
+                            <div>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                            <!-- Horizontal Rule -->
+                            <hr>
+                            <p class="card-text maugia"> 1.950.000 VNĐ</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- end owl -->
+
+    <!-- end sp nổi bật -->
+
+
+
+
+
+
+    <!-- footer -->
+
+    <footer>
+        <div class="container-fluid" style="padding-top: 15px;">
+            <div class="row rowfooter">
+                <div class="col-md-4">
+                    <h5>Về The Men Fashion</h5>
+                    <hr class="light">
+                    <p>
+                        The Men ra đời với mong muốn giới thiệu đến các bạn những mẫu thời trang mới
+                        nhất bắt kịp với xu hướng của thời trang thế giới, với những phong cách đơn
+                        giản, đẹp mắt nhưng không kém phần lịch lãm và sang trọng.
+                    </p>
+
+                    <img src="../img/logo1.jpg" alt="" class="img-fluid logofooter">
+                </div>
+
+                <div class="col-md-4">
+                    <h5>Hỗ Trợ Khách Hàng</h5>
+                    <hr class="light">
+                    <p>
+                        <span><i class="fa fa-chevron-right"></i> </span> The Men - VinCom Lạng Sơn
+                        Hotline: 0866.576.585 <br>
+
+                        <span><i class="fa fa-chevron-right"></i> </span> The Men 306 Tôn Đức Thắng,
+                        Đống Đa, Hà Nội
+                        Hotline: 0343.156789 <br>
+
+                        <span><i class="fa fa-chevron-right"></i> </span> The Men 161 Lê Đại Hành,
+                        Thành Phố Lạng Sơn
+                        Hotline: 0916.564.888 <br>
+
+                        <span><i class="fa fa-chevron-right"></i> </span> Thanh Sài Gòn VinCom Lạng
+                        Son
+                        Hotline: 0983.278.088
+                        <p></p>
+
+                        <span><i class="fa fa-phone-alt" style="color: white;"></i></span> Hỗ trợ
+                        khách hàng <br>
+
+                        Hỗ trợ: 093 6368 266
+                    </p>
+
+
+                </div>
+
+                <div class="col-md-4">
+                    <h5>Liên Hệ</h5>
+                    <hr class="light">
+                    <p>
+                        <span><i class="fa fa-home"></i></span> The Men Fashion <br>
+
+                        <span><i class="fa fa-search-location"></i></span> Địa chỉ: Số 306 Tôn Đức
+                        Thắng, Đống Đa, Hà Nội <br>
+
+                        <span><i class="fa fa-phone-square-alt"></i></span> Điện thoại: 0936368266
+                        <br>
+
+                        <span><i class="fa fa-envelope"></i></span> Email:thoitrangthemen@gmail.com
+                        <br>
+
+                        <p></p>
+                        <p></p>
+                        <p></p>
+
+
+
+                        <span><i class="fa fa-user-plus"></i></span> Follow us :
+                        <span><i class="fa fa-youtube-square"></i></span>
+                        <span><i class="fa fa-facebook-square"></i></span>
+                        <span><i class="fa fa-twitter-square"></i></span>
+                    </p>
+
+
+                </div>
+                <div class="col-12">
+                    <hr class="light-100">
+                    <h5 class="copythe">
+                        &copy; The Men Fashion
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+                integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+                integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+                crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+                integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+                crossorigin="anonymous"></script> -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="../owlcarousel/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <!-- home js -->
+    <script src="../js/home.js"></script>
+
+    <!-- giohang js -->
+    <script src="../js/giohang.js"></script>
+
+
+
+</body>
+
+</html>

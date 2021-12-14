@@ -1,0 +1,47 @@
+.button {
+    &:link, &:visited {
+        display: block;
+        padding: 1.5rem 1.7rem; 
+        border-radius: 10rem;
+        text-decoration: none;
+        color: white;
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    &:hover {
+        background-color: white;
+    }
+
+    &--red {
+        background-color: #EB1212;
+        margin-bottom: 2rem;
+
+        &:hover {
+            color: #EB1212;
+        }
+
+        &:active {
+            transform: translateY(0.7rem);
+            cursor: pointer;
+        }
+    }
+
+    &--blue {
+        background-color: #20A4F3;
+
+        &:hover {
+            color: #20A4F3;
+        }
+
+        &:active {
+            transform: translateY(0.7rem);
+            cursor: pointer;
+        }
+    }
+}
+
+.btn-danger {
+    background-color: #EB1212;
+    border-color: #EB1212;
+}

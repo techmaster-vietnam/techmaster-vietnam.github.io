@@ -1,0 +1,480 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    outline: none;
+}
+
+.main--container-firstBanner{
+    margin-bottom: 100px ;
+    position: relative;
+    padding-top: 85px;
+}
+
+.main--container-firstBanner img{
+    width: 100%;
+}
+
+.firstBanner-content{
+    position: absolute;
+    z-index: 1;
+    top:200;
+    right: 50;
+    color: white;   
+    width: 30%;
+    text-align: left;
+}
+
+.firstBanner-content h2, .firstBanner-content h4{
+    width: 75%;
+}
+.main--container-secondBanner{
+    display: flex;
+    margin-top: 50px;
+    padding-top:50px;
+}
+
+.slider{
+    display: flex;
+    margin: auto;
+    width: 30%;
+    justify-content: space-between;
+}
+
+.carousel{
+    height: 100px;
+}
+
+.slick-active{
+    height: 300px !important;
+}
+
+
+.multiple-items{
+    height: 500px;
+}
+
+.prevArrow ,.nextArrow{
+   margin: auto;
+   margin-top: 200px;
+   font-size: 50px;
+   font-weight: lighter;
+   z-index: 1;
+}
+
+.prevArrow button, .nextArrow button{
+    background-color: white;
+    border: none;
+}
+
+
+
+.prevArrow button img, .nextArrow button img{
+    width: 60%;
+    height: auto;
+    cursor: pointer;
+}
+.slick-slide img {
+  max-width: 100%; 
+  transition: transform 1s; 
+ }
+
+.slick-slide.slick-center img{
+  transform: scale(1.5);
+  z-index: 99;
+}
+
+.slick-slide.slick-center{
+    margin-top: 70px;
+    
+}
+
+
+.thirdBanner-bg-img{
+    margin-top: -240px;
+    z-index: -3;
+    position: relative;
+}
+
+.thirdBanner-bg-img img{
+    width: 100%;
+    max-height: 479px;
+}
+
+.thirdBanner-Mask{
+    width: 100%;
+    height: 100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(94, 23, 23, 0.8);
+  z-index: 1;
+  position: absolute;
+}
+
+.thirdBanner-des-left{
+    position: absolute;
+    color: white;
+    top: 50;
+    z-index: 2;
+    width: 50%;
+}
+
+.thirdBanner-des-left h2{
+    font-size: 24px;
+    line-height: 42px;
+    width: 60%;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.thirdBanner-des-left h4{
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 500;
+    width: 60%;
+    margin: auto;
+}
+
+.thirdBanner-des-right-title{
+    position: absolute;
+    color: white;
+    top: 50;
+    left: 47%;
+    z-index: 3;
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.thirdBanner-des-right{
+     position: absolute;
+    color: white;
+    top: 100;
+    left: 65%;
+    z-index: 2;
+    width: 25%;
+    background-color: white;
+    color: black;
+    height: 250px;
+    padding: 10px;
+}
+
+.des-right-block-nutrition{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.nutrition-des-block{
+    display: flex;
+    width: 45%;
+    justify-content: space-between;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+.nutrution-line{
+    border: 1px solid #000000;
+    width: 100%;
+    height: 0;
+    background-color: #000000;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.des-block-line{
+    border: 1px solid #968F8F;
+    width: 100%;
+    height: 0px;
+    background-color: #968F8F;
+}
+
+.thirdBanner-des-right:last-child{
+    visibility: hidden;
+}
+
+.main--container-thirdBanner:nth-child(2),.main--container-thirdBanner:nth-child(3),.main--container-thirdBanner:nth-child(4){
+display: none;}
+
+
+.main-container--forth-banner{
+    margin-top: 100px;
+}
+
+
+.forth-banner-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.forth-banner-block{
+    width: 15%;
+    text-align: center;
+    margin: 20px;
+}
+
+.forth-banner-block-img img{
+    width: 100px;
+    height: 260px;
+}
+
+.forth-banner-more{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.forth-banner-more-line{
+    border: 1px solid #000000;
+    width: 30%;
+    height: 0px;
+    margin: auto;
+    text-align: end;
+}
+
+.forth-banner-more-button{
+    display: flex;
+    justify-content: space-between;
+}
+
+.forth-banner-more-button button{
+    margin-left: 10px ;
+    border: none;
+    background-color: white;
+}
+
+/* style fonts */
+
+.firstBanner-content h2{
+    margin-bottom: 20px;
+}
+
+.firstBanner-content h4{
+    font-weight: 400;
+}
+
+
+.des-right-block-nutrition h3{
+    width: 100%;
+}
+
+.thirdBanner-des-right-title button{
+    width: 30%;
+    font-size: 24px;
+    line-height: 42px;
+    font-weight: 500;
+    background: none;
+    border: none;
+    color: white;
+    text-align: start;
+    
+}
+
+.thirdBanner-des-right-title button:hover{
+    color: red;
+    font-size: 20px;
+}
+
+.nutrition-des-block h5{
+    text-align: end;
+}
+
+.nutrition-des-block h4{
+    width: 60%;
+    font-weight: 500;
+}
+
+.nutrition-des-block h5{
+    width: 30%;
+}
+
+.nutrition-des-block-ingre h5{
+   text-align: start;
+   margin: unset;
+   width: 100%;
+}
+
+
+
+h1{
+    font-size: 24px;
+}
+
+.forth-banner-block h3{
+    margin-top: 10px;
+    text-decoration-line: underline;
+    font-weight: 500;
+    text-align: center;
+    cursor: pointer;
+}
+
+.forth-banner-block:hover{
+    color: red;
+}
+
+.forth-banner-more-button h3{
+    font-weight: 500;
+    text-decoration-line: underline;
+}
+.forth-banner-more-button:hover h3,.forth-banner-more-button:hover .fa-plus-circle{
+    color: red !important;
+}
+
+
+
+@media only screen and (max-width: 1000px){
+    .firstBanner-content{
+        width: 40%;
+        top: 150;
+    }
+    
+}
+
+@media only screen and (max-width: 795px){
+    .forth-banner-block{
+        width: 30%;
+    }
+
+.firstBanner-content{
+        width: 60%;
+        top: 150;
+    }
+
+    .firstBanner-content h2, .firstBanner-content h4{
+        width: 100%;
+    }
+
+    h1{
+        font-size: 24px;
+    }
+
+    .thirdBanner-des-left h2,.firstBanner-content h2{
+        font-size: 18px;
+    }
+
+    h3{
+        font-size: 14px;
+    }
+
+    .thirdBanner-des-left h4{
+        font-size: 14px;
+    }
+
+    .thirdBanner-des-right-title button{
+        font-size: 18px;
+    }
+
+    .nutrition-des-block h4{
+        font-size: 14px;
+    }
+
+    .slick-slide img {
+        margin: auto;
+    }
+    .thirdBanner-des-right{
+        height: 160px;
+    }
+
+    .thirdBanner-des-right-title{
+        width: 50%;
+        left: 50%;
+        top: 10;
+        justify-content: start;
+    }
+    
+    .thirdBanner-des-right{
+        top: 50;
+        left: 50%;
+        width: 40%;
+    }
+
+    .nutrution-line{
+        margin-bottom: 0;
+    }
+
+    .thirdBanner-des-left{
+        top: 10;
+    }
+    .thirdBanner-des-left h2{
+        margin-bottom: 0;
+    }
+}
+
+
+@media only screen and (max-width: 750px){
+    .thirdBanner-bg-img img{
+        opacity: 0;
+    }
+
+    .thirdBanner-Mask{
+        opacity: 0;
+    }
+
+    .thirdBanner-des-left h2{
+        color: black;
+        font-size: 14px;
+        width: 90%;
+    }
+    .thirdBanner-des-left{
+        width: 43%;
+    }
+    .thirdBanner-des-left h4{
+        color: black;
+        width: 90%;
+    }
+
+
+    .des-right-block-nutrition h3{
+        font-weight: 500;
+        font-size: 14px;
+    }
+    
+    .thirdBanner-des-right-title{
+        width: 50%;
+        left: 43%;
+    }
+
+    .thirdBanner-des-right-title button{
+        color: black;
+        font-size: 14px;
+        width: 80%;
+        font-weight: 700;
+    }
+
+    .thirdBanner-des-right{
+        width: 60%;
+        left: 40%;
+        top: 45;
+    }
+    
+    .nutrition-des-block{
+        width: 49%;
+    }
+    .nutrition-des-block h4{
+        font-size: 10px;
+        width: 68%;
+    }
+
+    .nutrition-des-block h5{
+        font-size: 8px;
+        width: 32%;
+    }
+
+    .main--container-secondBanner{
+        margin-top: 0;
+    }
+    .h1-gold h1{
+        font-size: 20px;   
+        text-align: center; 
+    }
+
+    .main-container--forth-banner{
+        margin-top: 130px;
+    }
+
+}

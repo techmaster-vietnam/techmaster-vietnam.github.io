@@ -1,0 +1,474 @@
+extends template-part/layout.pug
+
+block style
+    
+    link(rel='stylesheet' type='text/css' href='./css/slick/slick.css')
+    
+    link(rel="stylesheet", href="./css/home.css")
+
+block title
+            title | Cake
+block banner
+block content
+    main.home
+        .content
+        .banner
+            .bamner-carousell
+                .bamner-carousell__item
+                    img(src="./img/banner1.png", alt="Giảm 50% khi đặt trên 2 loại bánh")
+                    form.banner-carousell__content
+                        h1.heading-primary Giảm 
+                            span 50%
+                            br
+                            | khi đặt trên 2 loại bánh
+                        button.btn.btn--red.btn--transtion-1 Mua ngay
+                .bamner-carousell__item 
+                    img(src="./img/banner2.jpg", alt="Giảm 70% khi đặt trên 3 loại bánh")
+                    form.banner-carousell__content.banner-carousell__content--modify
+                        h1.heading-primary Giảm 
+                            span 70%
+                            br
+                            | khi đặt trên 3 loại bánh
+                        button.btn.btn--red.btn--transtion Mua ngay
+        .banner-list
+            .container
+                .row
+                    .col-xl-6.col-lg-6.col-md-6.col-sm-12
+                        a(href="#")
+                            .banner-list__photo.js-photo-1
+                                .banner-list__title-box
+                                span.banner-list__title Bánh Cupcake đặt nhiều nhất
+                    .col-xl-6.col-lg-6.col-md-6.col-sm-12
+                        a(href="#" )
+                            .banner-list__photo-box
+                                .row
+                                    .col-xl-12.col-lg-12.col-md-12.col-sm-12.photo-3-4
+                                        a(href="#" )
+                                            .banner-list__photo-2.js-photo-2
+                                                .banner-list__box-2
+                                                    span.title Bánh Cake
+                                                    span.quaty 50%
+                                    .col-xl-12.col-lg-12.col-md-12.col-sm-12
+                                        .banner-list__photo-box-2
+                                            .row.banner-photo-3
+                                                .col-xl-6.col-lg-6.col-md-6.col-sm-6.col-12
+                                                    
+                                                        a(href="")
+                                                            .banner-list__photo-3.js-photo-3
+                                                .col-xl-6.col-lg-6.col-md-6.col-sm-6.col-12
+                                                    
+                                                        a(href="")
+                                                            .banner-list__photo-4.js-photo-3
+        .best-slice
+            
+                h2.heading-secondery Bánh Ngon Hôm Nay
+                .best-slice__list
+                    .container
+                        .row
+                            .col-xl-3.col-lg-3.col-md-4.col-sm-6
+                                .best-slice__card
+                                    .best-slice__photo
+                                        a(href="./details.html")
+                                            img(src="./img/banh-hamburger.jpg", alt="./img/banh-hamburger" title="Bánh Hamburger")
+                                    .best-slice__content
+                                        a(href="./details.html")
+                                            h3.best-slice__heading  Bánh Hamburger
+                                        .best-slice__rate
+                                            i.fas.fa-star
+                                            i.fas.fa-star
+                                            i.fas.fa-star
+                                            i.fas.fa-star
+                                            i.fas.fa-star
+                                        .best-slice__price 50,000 đ
+                                        a(href="./cart.html").best-slice__button
+                                            span Thêm Vào Giỏ
+                                            i.fas.fa-cart-plus
+                            .col-xl-3.col-lg-3.col-md-4.col-sm-6
+                                .best-slice__card
+                                    .best-slice__photo
+                                        a(href="./details.html")
+                                            img(src="./img/banh-2.jpg", alt="Banh-Cupcake" title="Bánh Cupcake")
+                                    .best-slice__content
+                                        a(href="./details.html")
+                                            h3.best-slice__heading  Bánh Cupcake
+                                        .best-slice__rate
+                                            i.fas.fa-star
+                                            i.fas.fa-star
+                                            i.fas.fa-star
+                                            i.fas.fa-star
+                                            i.fas.fa-star
+                                        .best-slice__price 30,000 đ
+                                        a(href="./cart.html").best-slice__button
+                                            span Thêm Vào Giỏ
+                                            i.fas.fa-cart-plus
+                            .col-xl-3.col-lg-3.col-md-4.col-sm-6
+                                .best-slice__card
+                                    .best-slice__photo
+                                        a(href="./details.html")
+                                            img(src="./img/banh-3.jpg", alt="Banh Bao" title="Bánh Bao")
+                                    .best-slice__content
+                                        a(href="./details.html")
+                                            h3.best-slice__heading  Bánh Bao
+                                        .best-slice__rate
+                                            i.fas.fa-star
+                                            i.fas.fa-star
+                                            i.fas.fa-star
+                                            i.fas.fa-star
+                                            i.fas.fa-star
+                                        .best-slice__price 40,000 đ
+                                        a(href="./cart.html").best-slice__button
+                                            span Thêm Vào Giỏ
+                                            i.fas.fa-cart-plus
+                            .col-xl-3.col-lg-3.col-md-4.col-sm-6
+                                .best-slice__card
+                                    .best-slice__photo
+                                        a(href="./details.html")
+                                            img(src="./img/banh-4.jpg", alt="Banh Mì" title="Bánh Mì")
+                                    .best-slice__content
+                                        a(href="./details.html")
+                                            h3.best-slice__heading  Bánh Mì
+                                        .best-slice__rate
+                                            i.fas.fa-star
+                                            i.fas.fa-star
+                                            i.fas.fa-star
+                                            i.fas.fa-star
+                                            i.fas.fa-star
+                                        .best-slice__price 30,000 đ
+                                        a(href="./cart.html").best-slice__button
+                                            span Thêm Vào Giỏ
+                                            i.fas.fa-cart-plus
+                            .col-xl-3.col-lg-3.col-md-4.col-sm-6
+                                .best-slice__card
+                                    .best-slice__photo
+                                        a(href="./details.html")
+                                            img(src="./img/banh-5.jpg", alt="Banh Sinh Nhật" title="Bánh Sinh Nhật")
+                                    .best-slice__content
+                                        a(href="./details.html")
+                                            h3.best-slice__heading  Bánh Sinh Nhật
+                                        .best-slice__rate
+                                            i.fas.fa-star
+                                            i.fas.fa-star
+                                            i.fas.fa-star
+                                            i.fas.fa-star
+                                            i.fas.fa-star
+                                        .best-slice__price 120,000 đ
+                                        a(href="./cart.html").best-slice__button
+                                            span Thêm Vào Giỏ
+                                            i.fas.fa-cart-plus
+                            .col-xl-3.col-lg-3.col-md-4.col-sm-6
+                                .best-slice__card
+                                    .best-slice__photo
+                                        a(href="./details.html")
+                                            img(src="./img/banh-6.jpg", alt="Banh Pizza" title="Bánh Pizza")
+                                    .best-slice__content
+                                        a(href="./details.html")
+                                            h3.best-slice__heading  Bánh Pizza
+                                        .best-slice__rate
+                                            i.fas.fa-star
+                                            i.fas.fa-star
+                                            i.fas.fa-star
+                                            i.fas.fa-star
+                                            i.fas.fa-star
+                                        .best-slice__price 150,000 đ
+                                        a(href="./cart.html").best-slice__button
+                                            span Thêm Vào Giỏ
+                                            i.fas.fa-cart-plus
+                            .col-xl-3.col-lg-3.col-md-4.col-sm-6
+                                .best-slice__card
+                                    .best-slice__photo
+                                        a(href="./details.html")
+                                            img(src="./img/banh-7.jpg", alt="Banh Cupcake" title="Bánh Cupcake")
+                                    .best-slice__content
+                                        a(href="./details.html")
+                                            h3.best-slice__heading  Bánh Cupcake
+                                        .best-slice__rate
+                                            i.fas.fa-star
+                                            i.fas.fa-star
+                                            i.fas.fa-star
+                                            i.fas.fa-star
+                                            i.fas.fa-star
+                                        .best-slice__price 50,000 đ
+                                        a(href="./cart.html").best-slice__button
+                                            span Thêm Vào Giỏ
+                                            i.fas.fa-cart-plus
+                            .col-xl-3.col-lg-3.col-md-4.col-sm-6
+                                .best-slice__card
+                                    .best-slice__photo
+                                        a(href="./details.html")
+                                            img(src="./img/banh-8.jpg", alt="Banh Tiramisu" title="Bánh Tiramisu")
+                                    .best-slice__content
+                                        a(href="./details.html")
+                                            h3.best-slice__heading  Bánh Tiramisu
+                                        .best-slice__rate
+                                            i.fas.fa-star
+                                            i.fas.fa-star
+                                            i.fas.fa-star
+                                            i.fas.fa-star
+                                            i.fas.fa-star
+                                        .best-slice__price 70,000 đ
+                                        a(href="#").best-slice__button
+                                            span Thêm Vào Giỏ
+                                            i.fas.fa-cart-plus
+        .order
+            .container.order-continer
+                .row
+                    .col
+                        h2.heading-secondery.heading-secondery--white Đặt Hàng Trong Ba Bước
+                        .order__list
+                            .order__content(data-aos="fade-up")
+                                .order__box-icon
+                                    img(src="./img/home-icon.svg", alt="Chọn Nhà Hàng")
+                                .order__title Chọn Nhà Hàng
+                            .order__content
+                                .order__box-icon
+                                    img(src="./img/select-icon.svg", alt="Chọn Bánh")
+                                .order__title Chọn Bánh
+                            .order__content
+                                .order__box-icon
+                                    img(src="./img/car-icon.svg", alt="Giao Hàng")
+                                .order__title Giao Hàng
+        .feature
+            .contaner
+                .row
+                    .col
+                        h2.heading-secondery(data-aos="fade-up") Bánh Mới
+                        .container
+                            .row
+                                .col    
+                                    .feature-carousell(data-aos="fade-up")
+                                        .best-slice__card
+                                                .best-slice__photo
+                                                    a(href="./details.html")
+                                                        img(src="./img/banh-9.jpg", alt="Banh-Bông Lan" title="Bánh Bông Lan")
+                                                .best-slice__content
+                                                    a(href="./details.html")
+                                                        h3.best-slice__heading  Bánh Bông Lan
+                                                    .best-slice__rate
+                                                        i.fas.fa-star
+                                                        i.fas.fa-star
+                                                        i.fas.fa-star
+                                                        i.fas.fa-star
+                                                        i.fas.fa-star
+                                                    .best-slice__price 50,000 đ
+                                                    a(href="./cart.html").best-slice__button
+                                                        span Thêm Vào Giỏ
+                                                        i.fas.fa-cart-plus
+                                        .best-slice__card
+                                                .best-slice__photo
+                                                    a(href="./details.html")
+                                                        img(src="./img/banh-10.jpg", alt="Banh Phô Mai" title="Bánh Phô Mai")
+                                                .best-slice__content
+                                                    a(href="./details.html")
+                                                        h3.best-slice__heading  Bánh Phô Mai
+                                                    .best-slice__rate
+                                                        i.fas.fa-star
+                                                        i.fas.fa-star
+                                                        i.fas.fa-star
+                                                        i.fas.fa-star
+                                                        i.fas.fa-star
+                                                    .best-slice__price 50,000 đ
+                                                    a(href="./cart.html").best-slice__button
+                                                        span Thêm Vào Giỏ
+                                                        i.fas.fa-cart-plus
+                                        .best-slice__card
+                                                .best-slice__photo
+                                                    a(href="./details.html")
+                                                        img(src="./img/banh-11.jpg", alt="Banh Bông Cuộn" title="Bánh Bông Cuộn")
+                                                .best-slice__content
+                                                    a(href="./details.html")
+                                                        h3.best-slice__heading  Bánh Bông Cuộn
+                                                    .best-slice__rate
+                                                        i.fas.fa-star
+                                                        i.fas.fa-star
+                                                        i.fas.fa-star
+                                                        i.fas.fa-star
+                                                        i.fas.fa-star
+                                                    .best-slice__price 70,000 đ
+                                                    a(href="./cart.html").best-slice__button
+                                                        span Thêm Vào Giỏ
+                                                        i.fas.fa-cart-plus
+                                        .best-slice__card
+                                                .best-slice__photo
+                                                    a(href="./details.html")
+                                                        img(src="./img/banh-12.jpg", alt="Banh Cupcake" title="Bánh Cupcake")
+                                                .best-slice__content
+                                                    a(href="./details.html")
+                                                        h3.best-slice__heading  Bánh Cupcake
+                                                    .best-slice__rate
+                                                        i.fas.fa-star
+                                                        i.fas.fa-star
+                                                        i.fas.fa-star
+                                                        i.fas.fa-star
+                                                        i.fas.fa-star
+                                                    .best-slice__price 90,000 đ
+                                                    a(href="./cart.html").best-slice__button
+                                                        span Thêm Vào Giỏ
+                                                        i.fas.fa-cart-plus
+                                        .best-slice__card
+                                                .best-slice__photo
+                                                    a(href="./details.html")
+                                                        img(src="./img/banh-6.jpg", alt="Banh Pizza" title="Bánh Pizza")
+                                                .best-slice__content
+                                                    a(href="./details.html")
+                                                        h3.best-slice__heading  Bánh Pizza
+                                                    .best-slice__rate
+                                                        i.fas.fa-star
+                                                        i.fas.fa-star
+                                                        i.fas.fa-star
+                                                        i.fas.fa-star
+                                                        i.fas.fa-star
+                                                    .best-slice__price 90,000 đ
+                                                    a(href="./cart.html").best-slice__button
+                                                        span Thêm Vào Giỏ
+                                                        i.fas.fa-cart-plus
+        .counter
+            .container
+                .row
+                    .col-xl-3.col-lg-3.col-md-3.col-sm-6.col-6
+                        .counter__content(data-aos="fade-right" data-aos-delay="100")
+                            .counter__icon
+                                img(src="./img/icon-1.png", alt="Món Ngon")
+                            .counter__number 250
+                            .counter__title Món Ngon
+                    .col-xl-3.col-lg-3.col-md-3.col-sm-6.col-6
+                        .counter__content(data-aos="fade-right")
+                            .counter__icon
+                                img(src="./img/icon-2.png", alt="Năm Kinh nghiệm ")
+                            .counter__number 20+
+                            .counter__title Năm Kinh nghiệm
+                    .col-xl-3.col-lg-3.col-md-3.col-sm-6.col-6
+                        .counter__content(data-aos="fade-left")
+                            .counter__icon
+                                img(src="./img/icon-3.png", alt="Khách Hàng")
+                            .counter__number 2000+
+                            .counter__title Khách Hàng
+                    .col-xl-3.col-lg-3.col-md-3.col-sm-6.col-6
+                        .counter__content(data-aos="fade-left" data-aos-delay="100")
+                            .counter__icon
+                                img(src="./img/icon-4.png", alt="Giải Thưởng")
+                            .counter__number 20
+                            .counter__title Giải Thưởng                         
+        .blog
+            .container
+                .row
+                    .col
+                        h2.heading-secondery Tin Tức Mới Nhất
+                        .container
+                            .row.blog__row
+                                .col-xl-6.col-lg-6.col-md-6.col-sm-6
+                                    .blog__list
+                                        .blog__content
+                                            .row
+                                                .col-xl-6.col-lg-12
+                                                    .blog__photo
+                                                        img(src="./img/blog-1.jpg", title="Cách giữ bánh Gato ngon và lâu hơn, bảo quản bánh Gato đúng cách" alt="Cách giữ bánh Gato ngon và lâu hơn, bảo quản bánh Gato đúng cách")
+                                                .col-xl-6.col-lg-12
+                                                    .blog__box-title
+                                                        h4.blog__heading Cách giữ bánh Gato ngon và lâu hơn, bảo quản bánh Gato
+                                                        .blog__counter
+                                                            i.far.fa-user 
+                                                            |  
+                                                            span Admin |
+                                                            |  
+                                                            i.far.fa-clock
+                                                            | 
+                                                            span 20/02/2020
+                                                        span.blog__tutorial Cách bảo quản bánh Gato như thế nào?. Bánh kem sinh nhật...
+                                                        a(href="./blog.html").blog__link
+                                                            .btn.btn--red.btn--blog Xem thêm
+                                .col-xl-6.col-lg-6.col-md-6.col-sm-6
+                                    .blog__list
+                                        .blog__content
+                                            .row
+                                                .col-xl-6.col-lg-12
+                                                    .blog__photo
+                                                        img(src="./img/blog-2.jpg",title="Những món bánh ngon không thể cưỡng lại của Ấn Độ" alt="Những món bánh ngon không thể cưỡng lại của Ấn Độ")
+                                                .col-xl-6.col-lg-12
+                                                    .blog__box-title
+                                                        h4.blog__heading Những món bánh ngon không thể cưỡng lại của Ấn Độ
+                                                        .blog__counter
+                                                            i.far.fa-user 
+                                                            |  
+                                                            span Admin |
+                                                            |  
+                                                            i.far.fa-clock
+                                                            | 
+                                                            span 20/02/2020
+                                                        span.blog__tutorial Là quốc gia đông dân thứ nhì và có diện tích đứng thứ 7...
+                                                        a(href="./blog.html")
+                                                            .btn.btn--red.btn--blog Xem thêm
+                                .col-xl-6.col-lg-6.col-md-6.col-sm-6
+                                    .blog__list
+                                        .blog__content
+                                            .row
+                                                .col-xl-6.col-lg-12
+                                                    .blog__photo
+                                                        img(src="./img/blog-3.jpg",title="Đến thủ đô Vienna bạn nhất định phải thử những món bánh" alt="Đến thủ đô Vienna bạn nhất định phải thử những món bánh")
+                                                .col-xl-6.col-lg-12
+                                                    .blog__box-title
+                                                        h4.blog__heading Đến thủ đô Vienna bạn nhất định phải thử những món bánh
+                                                        .blog__counter
+                                                            i.far.fa-user 
+                                                            |  
+                                                            span Admin |
+                                                            |  
+                                                            i.far.fa-clock
+                                                            | 
+                                                            span 08/02/2020
+                                                        span.blog__tutorial Không chỉ nổi tiếng với nhiều phong cảnh cổ kính độc đáo...
+                                                        a(href="./blog.html")
+                                                            .btn.btn--red.btn--blog Xem thêm
+                                .col-xl-6.col-lg-6.col-md-6.col-sm-6
+                                    .blog__list
+                                        .blog__content
+                                            .row
+                                                .col-xl-6.col-lg-12
+                                                    .blog__photo
+                                                        img(src="./img/blog-4.jpg",title="Đặc sản bánh bao kẹp thịt siêu lạ, nhất định phải thử khi tới Đài Loan" alt="Đặc sản bánh bao kẹp thịt siêu lạ, nhất định phải thử khi tới Đài Loan")
+                                                .col-xl-6.col-lg-12
+                                                    .blog__box-title
+                                                        h4.blog__heading Đặc sản bánh bao kẹp thịt siêu lạ, nhất định phải thử khi tới Đài Loan
+                                                        .blog__counter
+                                                            i.far.fa-user 
+                                                            |  
+                                                            span Admin |
+                                                            |  
+                                                            i.far.fa-clock
+                                                            | 
+                                                            span 08/02/2020
+                                                        span.blog__tutorial Ở Đài Loan, có một món ăn nức tiếng thu hút rất nhiều khách...
+                                                        a(href="./blog.html")
+                                                            .btn.btn--red.btn--blog Xem thêm                           
+        .company
+            .container
+                .row
+                    .col
+                        .company__carousel
+                            div
+                                a(href="#")
+                                    img(src="./img/icon-link-1.png", alt="")
+                            div
+                                a(href="#")
+                                    img(src="./img/icon-link-2.png", alt="")
+                            div
+                                a(href="#")
+                                    img(src="./img/icon-link-3.png", alt="")
+                            div
+                                a(href="#")
+                                    img(src="./img/icon-link-4.png", alt="")
+                            div
+                                a(href="#")
+                                    img(src="./img/icon-link-1.png", alt="")
+                            div
+                                a(href="#")
+                                    img(src="./img/icon-link-6.png", alt="")
+                      
+
+
+
+
+
+
+block script
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js' integrity='sha512-eP8DK17a+MOcKHXC5Yrqzd8WI5WKh6F1TIk5QZ/8Lbv+8ssblcz7oGC8ZmQ/ZSAPa7ZmsCU4e/hcovqR8jfJqA==' crossorigin='anonymous')
+    script(src='./js/home.js')

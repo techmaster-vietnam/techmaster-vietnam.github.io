@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  outline: none;
+}
+
+.main--wrapper {
+  max-width: 1440px;
+  padding: 14px;
+  margin: auto;
+}
+
+.pageNav {
+  padding-top: 85px;
+  display: flex;
+  margin-top: 50px;
+  margin-left: 100px;
+}
+
+.pageNav h4 {
+  color: #8a8a8a;
+  font-size: 16px;
+  line-height: 21px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.main--container-firstBanner{
+  display: flex;
+}
+
+.leftBlock-img h4 {
+  position: absolute;
+  top: 43%;
+  left: 42%;
+  /* background-color: unset;
+  border: none; */
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.leftBlock-img{
+  position: relative;
+}
+
+.firstBanner-leftBlock {
+  width: 55%;
+}
+
+
+.leftBlock-img{
+  max-width: 500px;
+  margin: auto;
+  margin-top: 80px;
+}
+
+.leftBlock-img img{
+  width: 100%;
+}
+
+
+.firstBanner-rightBlock {
+    margin-top: 60px;
+  width: 40%;
+  padding: 14px;
+}
+
+.item-price{
+  margin-bottom: 20px;
+}
+
+/* fonts */
+.firstBanner-rightBlock h1 {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.firstBanner-rightBlock h4{
+    font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #8a8a8a;
+  margin-bottom: 5px;
+}
+
+/* responsive  */
+
+@media only screen and (max-width: 769px){
+.input input{
+  width: 150px;
+}
+
+}
+
+@media only screen and (max-width: 600){
+.pageNav{
+    margin-left: 0 !important;
+    flex-wrap: wrap;
+  }
+
+  .pageNav h4{
+    font-size: 12px;
+  }
+
+  .firstBanner-leftBlock{
+    width: 100%;
+  }
+  .main--container-firstBanner{
+    flex-wrap: wrap;
+  }
+
+  .firstBanner-rightBlock{
+    width: 100%;
+  }
+}

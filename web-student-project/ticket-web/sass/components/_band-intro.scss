@@ -1,0 +1,19 @@
+.band-intro {
+    &__heading {
+        text-align: center;
+    }
+
+    &__main {
+        margin-top: 3rem;
+
+        &__img {
+            width: 100%;
+            margin-bottom: 2.5rem;
+        }
+
+        &__text {
+            font-size: 1.8rem;
+            text-align: justify;
+        }
+    }
+}

@@ -1,0 +1,47 @@
+let data=[
+    {
+        "name": "ABC",
+        "price":1000,
+    },
+
+    {
+        "name": "BCD",
+        "price":4000,
+    },
+
+    {
+        "name": "CDE",
+        "price":34000,
+    },
+
+    {
+        "name": "DEF",
+        "price":32000,
+    },
+
+    {
+        "name": "EFG",
+        "price":54300,
+    },
+
+    {
+        "name": "FGH",
+        "price":176000,
+    },
+
+    {
+        "name": "GHI",
+        "price":165000,
+    },
+
+    {
+        "name": "HIK",
+        "price":123000,
+    },
+
+    {
+        "name": "IKL",
+        "price":178000,
+    },
+
+]

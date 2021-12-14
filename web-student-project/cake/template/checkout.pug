@@ -1,0 +1,90 @@
+extends template-part/layout.pug
+block style
+    link(rel="stylesheet", href="./css/checkout.css")
+block title
+    title | Thanh Toán
+
+block heading
+    h1.heading-primary.heading-primary--white Thanh Toán
+block title-2
+    a(href="")
+        p.banner-common__title-2.banner-common__title-2--active Thanh Toán
+
+block content
+    form(action="./success.html").checkout#pay__submit
+        .container
+            .row.justify-content-between
+                .col-xl-6.col-lg-6.col-md-6.col-sm-6
+                    .checkout__infor(data-aos="fade-right" data-aos-delay="100")
+                        h2.infor__user Thông tin người nhận:
+                        .infor__group
+                            label(for="check__name") Họ và tên*
+                            .input-wraper
+                                input(type="text" name="fullname" id="check__name").infor__input
+                                .error Vui lòng nhập tên hợp lệ
+                        .infor__group
+                            label(for="thanhpho") Thành phố*
+                            .input-wraper
+                                select(name="thanhpho" id="thanhpho")
+                                    option(value="Hà Nội") Hà Nội
+                                    option(value="Đà Nẵng") Đà Nẵng
+                                    option(value="Thành Phố Hồ Chí Minh") Thành Phố Hồ Chí Minh  
+                                    option(value='' selected hidden disable='disable') Vui lòng chọn tỉnh/thành phố
+                                .error Vui lòng nhập tỉnh/thành phố hợp lệ
+                        .infor__group
+                            label(for="check__address") Địa chỉ giao hàng*
+                            .input-wraper
+                                input(type="text" name="check__address" id="check__address").infor__input
+                                .error Vui lòng nhập địa chỉ giao hàng hợp lệ
+                        .infor__group
+                            label(for="email") Địa chỉ Email
+                            .input-wraper
+                                input(type="text" id="email").infor__input
+                                
+                        .infor__group
+                            label(for="check__phone") Số điện thoại*
+                            .input-wraper
+                                input(type="number" id='check__phone').infor__input
+                                .error Vui lòng nhập số điện thoại hợp lệ
+                        .infor__text
+                            label(for="note") Ghi chú thêm   
+                                                  
+                            textarea(name="note" id="note", cols="20", rows="5").infor__input.infor__note           
+                .col-xl-4.col-lg-5.col-md-6.col-sm-6
+                    .checkout__pay(data-aos="fade-left" data-aos-delay="100")
+                        .h2.pay__heading Đơn hàng của tôi
+                        .pay__calc.pay__calc--active
+                            p.pay__title Thành Tiền
+                            .pay__item
+                                p Bánh Pizza  
+                                    span x1
+                                p 150,000 đ
+                            .pay__item
+                                p Bánh Humburger  
+                                    span x1
+                                p 100,000 đ
+                            .pay__item
+                                p Bánh Mì 
+                                    span x1
+                                p 50,000 đ
+                            .pay__total
+                                p Tổng cộng:
+                                p 300,000 đ
+                        .pay__method.pay__method--active
+                            p.pay__title Phương Thức Thanh Toán
+                            .pay__radio
+                                .pay__group
+                                    input(type="radio" id="vimomo" name="get" value="vimomo")
+                                    label(for="vimomo") Ví Momo
+                                .pay__group
+                                    input(type="radio" id="banking" name="get" value="banking")
+                                    label(for="banking") Thanh toán bằng ATM
+                                .pay__group
+                                    input(type="radio" id="get" name="get" value="nhanhang")
+                                    label(for="get") Thanh toán khi nhận hàng
+                            .error Vui lòng nhập phương thức thanh toán
+                        button.pay__paynow Thanh Toán
+
+
+block script
+    script(src="./js/checkout.js")

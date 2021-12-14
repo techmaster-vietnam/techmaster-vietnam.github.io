@@ -1,0 +1,41 @@
+.vip-svip-box{
+    padding: 20px 40px 20px 40px;
+    background-color: #FFCA00;
+}
+.vip-giam-gia{
+    padding-left: 20px
+}
+.vip-giam-gia .large{
+    font-weight: bold;
+    color: #134A9C;
+}
+.vip-30{
+    color:#C92036;
+}
+.mua-vip-svip p{
+    color: white;
+}
+.mua-vip-price{
+    margin-bottom: 20px;
+    color: #134A9B;
+}
+.sale{
+    position: relative;
+    margin-top: 120px;
+}
+.sale-text{
+    position: absolute;
+    top: 30%;
+    left: 40px;
+}
+.sale2{
+    margin-top: 2px;
+}
+.sale-text2{
+    position: absolute;
+    top: 25%;
+    right: 40px;
+}
+.footer{
+    margin-top: 2px;
+}

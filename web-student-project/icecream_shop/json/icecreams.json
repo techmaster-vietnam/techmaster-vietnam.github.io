@@ -1,0 +1,164 @@
+[
+	{
+		"id": "ic1",
+		"name": "Icecream 1",
+		"img": "images/ic1.png",
+		"price": 100000,
+		"rating": 4,
+		"sumary": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis cum voluptates sed commodi maxime quidem magnam.",
+		"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque ut laboriosam perferendis delectus nemo, aliquid culpa. Minus nesciunt magnam obcaecati quos totam, placeat vitae adipisci molestias asperiores labore, consequatur quidem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos iste quod impedit explicabo facere ducimus sint tenetur maiores vel culpa, in id minima incidunt, at nemo consectetur illo ratione fugiat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore dolor, veniam aspernatur ut, ullam labore commodi? Facere inventore, quaerat corporis suscipit ipsam nisi praesentium rerum similique, est sed, voluptates labore.",
+		"tag": "NEW",
+		"related": [
+			"ic2",
+			"ic3",
+			"ic4"
+		],
+		"review": [
+			{
+				"user": "User 1",
+				"rating": 4,
+				"comment": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio numquam cum iure. Quae consequuntur ullam vel suscipit mollitia maiores, libero nostrum tempora! Dolores autem accusamus repudiandae quia voluptatibus maiores placeat!"
+			}
+		]
+	},
+	{
+		"id": "ic2",
+		"name": "Icecream 2",
+		"img": "images/ic2.png",
+		"price": 78500,
+		"rating": 5,
+		"sumary": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis cum voluptates sed commodi maxime quidem magnam.",
+		"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque ut laboriosam perferendis delectus nemo, aliquid culpa. Minus nesciunt magnam obcaecati quos totam, placeat vitae adipisci molestias asperiores labore, consequatur quidem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos iste quod impedit explicabo facere ducimus sint tenetur maiores vel culpa, in id minima incidunt, at nemo consectetur illo ratione fugiat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore dolor, veniam aspernatur ut, ullam labore commodi? Facere inventore, quaerat corporis suscipit ipsam nisi praesentium rerum similique, est sed, voluptates labore.",
+		"tag": "NEW",
+		"related": [
+			"ic5",
+			"ic6",
+			"ic1"
+		],
+		"review": [
+			{
+				"user": "User 2",
+				"rating": 5,
+				"comment": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio numquam cum iure. Quae consequuntur ullam vel suscipit mollitia maiores, libero nostrum tempora! Dolores autem accusamus repudiandae quia voluptatibus maiores placeat!"
+			}
+		]
+	},
+	{
+		"id": "ic3",
+		"name": "Icecream 3",
+		"img": "images/ic3.png",
+		"price": 65000,
+		"rating": 3.5,
+		"sumary": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis cum voluptates sed commodi maxime quidem magnam.",
+		"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque ut laboriosam perferendis delectus nemo, aliquid culpa. Minus nesciunt magnam obcaecati quos totam, placeat vitae adipisci molestias asperiores labore, consequatur quidem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos iste quod impedit explicabo facere ducimus sint tenetur maiores vel culpa, in id minima incidunt, at nemo consectetur illo ratione fugiat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore dolor, veniam aspernatur ut, ullam labore commodi? Facere inventore, quaerat corporis suscipit ipsam nisi praesentium rerum similique, est sed, voluptates labore.",
+		"related": [
+			"ic2",
+			"ic1",
+			"ic4"
+		]
+	},
+	{
+		"id": "ic4",
+		"name": "Icecream 4",
+		"img": "images/ic4.png",
+		"price": 10500,
+		"rating": 4,
+		"sumary": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis cum voluptates sed commodi maxime quidem magnam.",
+		"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque ut laboriosam perferendis delectus nemo, aliquid culpa. Minus nesciunt magnam obcaecati quos totam, placeat vitae adipisci molestias asperiores labore, consequatur quidem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos iste quod impedit explicabo facere ducimus sint tenetur maiores vel culpa, in id minima incidunt, at nemo consectetur illo ratione fugiat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore dolor, veniam aspernatur ut, ullam labore commodi? Facere inventore, quaerat corporis suscipit ipsam nisi praesentium rerum similique, est sed, voluptates labore.",
+		"discount": 20,
+		"related": [
+			"ic2",
+			"ic3",
+			"ic5"
+		],
+		"review": [
+			{
+				"user": "User 1",
+				"rating": 5,
+				"comment": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio numquam cum iure. Quae consequuntur ullam vel suscipit mollitia maiores, libero nostrum tempora! Dolores autem accusamus repudiandae quia voluptatibus maiores placeat!"
+			}
+		]
+	},
+	{
+		"id": "ic5",
+		"name": "Icecream 5",
+		"img": "images/ic5.png",
+		"price": 178500,
+		"rating": 4,
+		"sumary": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis cum voluptates sed commodi maxime quidem magnam.",
+		"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque ut laboriosam perferendis delectus nemo, aliquid culpa. Minus nesciunt magnam obcaecati quos totam, placeat vitae adipisci molestias asperiores labore, consequatur quidem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos iste quod impedit explicabo facere ducimus sint tenetur maiores vel culpa, in id minima incidunt, at nemo consectetur illo ratione fugiat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore dolor, veniam aspernatur ut, ullam labore commodi? Facere inventore, quaerat corporis suscipit ipsam nisi praesentium rerum similique, est sed, voluptates labore.",
+		"related": [
+			"ic2",
+			"ic3",
+			"ic4"
+		]
+	},
+	{
+		"id": "ic6",
+		"name": "Icecream 6",
+		"img": "images/ic6.png",
+		"price": 105000,
+		"rating": 4.5,
+		"sumary": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis cum voluptates sed commodi maxime quidem magnam.",
+		"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque ut laboriosam perferendis delectus nemo, aliquid culpa. Minus nesciunt magnam obcaecati quos totam, placeat vitae adipisci molestias asperiores labore, consequatur quidem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos iste quod impedit explicabo facere ducimus sint tenetur maiores vel culpa, in id minima incidunt, at nemo consectetur illo ratione fugiat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore dolor, veniam aspernatur ut, ullam labore commodi? Facere inventore, quaerat corporis suscipit ipsam nisi praesentium rerum similique, est sed, voluptates labore.",
+		"related": [
+			"ic2",
+			"ic3",
+			"ic1"
+		],
+		"review": [
+			{
+				"user": "User 1",
+				"rating": 4,
+				"comment": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio numquam cum iure. Quae consequuntur ullam vel suscipit mollitia maiores, libero nostrum tempora! Dolores autem accusamus repudiandae quia voluptatibus maiores placeat!"
+			},
+			{
+				"user": "User 2",
+				"rating": 5,
+				"comment": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio numquam cum iure. Quae consequuntur ullam vel suscipit mollitia maiores, libero nostrum tempora! Dolores autem accusamus repudiandae quia voluptatibus maiores placeat!"
+			}
+		]
+	},
+	{
+		"id": "ic7",
+		"name": "Icecream 7",
+		"img": "images/ic7.png",
+		"price": 95000,
+		"rating": 4,
+		"sumary": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis cum voluptates sed commodi maxime quidem magnam.",
+		"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque ut laboriosam perferendis delectus nemo, aliquid culpa. Minus nesciunt magnam obcaecati quos totam, placeat vitae adipisci molestias asperiores labore, consequatur quidem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos iste quod impedit explicabo facere ducimus sint tenetur maiores vel culpa, in id minima incidunt, at nemo consectetur illo ratione fugiat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore dolor, veniam aspernatur ut, ullam labore commodi? Facere inventore, quaerat corporis suscipit ipsam nisi praesentium rerum similique, est sed, voluptates labore.",
+		"related": [
+			"ic2",
+			"ic3",
+			"ic4"
+		]
+	},
+	{
+		"id": "ic8",
+		"name": "Icecream 8",
+		"img": "images/ic8.png",
+		"price": 95000,
+		"rating": 4,
+		"sumary": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis cum voluptates sed commodi maxime quidem magnam.",
+		"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque ut laboriosam perferendis delectus nemo, aliquid culpa. Minus nesciunt magnam obcaecati quos totam, placeat vitae adipisci molestias asperiores labore, consequatur quidem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos iste quod impedit explicabo facere ducimus sint tenetur maiores vel culpa, in id minima incidunt, at nemo consectetur illo ratione fugiat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore dolor, veniam aspernatur ut, ullam labore commodi? Facere inventore, quaerat corporis suscipit ipsam nisi praesentium rerum similique, est sed, voluptates labore.",
+		"related": [
+			"ic2",
+			"ic3",
+			"ic4"
+		]
+	},
+	{
+		"id": "ic9",
+		"name": "Icecream 9",
+		"img": "images/ic9.png",
+		"price": 95000,
+		"rating": 4,
+		"sumary": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis cum voluptates sed commodi maxime quidem magnam.",
+		"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque ut laboriosam perferendis delectus nemo, aliquid culpa. Minus nesciunt magnam obcaecati quos totam, placeat vitae adipisci molestias asperiores labore, consequatur quidem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos iste quod impedit explicabo facere ducimus sint tenetur maiores vel culpa, in id minima incidunt, at nemo consectetur illo ratione fugiat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore dolor, veniam aspernatur ut, ullam labore commodi? Facere inventore, quaerat corporis suscipit ipsam nisi praesentium rerum similique, est sed, voluptates labore.",
+		"related": [
+			"ic2",
+			"ic3",
+			"ic4"
+		]
+	}
+]

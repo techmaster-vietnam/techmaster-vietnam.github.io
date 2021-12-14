@@ -1,0 +1,319 @@
+/*navigation bar*/
+.navigation-detailsproduct{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 60px;
+}
+.navigation-home-1{
+    float: left;
+    font-size: 16px;
+    color: black;
+}
+.next-image{
+    float: left;
+    margin-top: 20px;
+}
+.navigation-foodanddrink-1{
+    float: left;
+    font-size: 16px;
+    color: black;
+}
+.navigation-detailsproduct-1{
+    float: left;
+    font-size: 16px;
+    color: black;
+}
+/*detailsproduct-desktop*/
+.detailsproduct-desktop-container{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+.left-detailsproduct{
+    width: 50%;
+    border-right: 1px dashed black; 
+}
+.right-detailsproduct{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+}
+.left-detailsproduct-word{
+    margin-top: 50px;
+    font-size: 56px;
+    font-weight: bold;
+}
+.left-detailsproduct-word-1{
+    margin-top: 50px;
+    font-size: 18px;
+}
+.left-detailsproduct-price{
+    margin-top: 50px;
+    background-color: black;
+    width: 288px;
+    height: 75px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+}
+.write-review{
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    margin-top: 70px;
+    margin-bottom: 100px;
+    text-align: end;
+    margin-right: 100px;
+    width: 80%;
+}
+.btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+.pho-image{
+    position: absolute;
+    top: 1px;
+    width: 398px;
+    height: 266.67px;
+}
+.nuocchanh-image{
+    position: absolute;
+    top: 1px;
+    left: calc(50% - 150px);
+    width: 300px;
+    height: 300px;
+}
+.bunbo-image{
+    position: absolute;
+    top: 1px;
+    left: calc(50% - 150px);
+    width: 300px;
+    height: 300px;
+}
+.spaghetti-image{
+    position: absolute;
+    top: 30px;
+    left: calc(50% - 200px);
+    width: 400px;
+    height: 230px;
+}
+.friedchicken-image{
+    position: absolute;
+    top: 30px;
+    left: calc(50% - 200px);
+    width: 400px;
+    height: 200px;
+}
+.icecream-image{
+    position: absolute;
+    top: 1px;
+    left: calc(50% - 89px);
+    width: 178px;
+    height: 300px;
+}
+.comtam-image{
+    position: absolute;
+    top: 1px;
+    left: calc(50% - 199px);
+    width: 398px;
+    height: 300px;
+}
+.status-right-detailsproduct{
+    position: absolute;
+    top: 0;
+    left: 274px;
+    width: 133px;
+    height: 133px;
+    border-radius: 50%;
+    border: 1px dashed black;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+.right-detailsproduct-addtocart{
+    padding: 0;
+    background-color: red;
+    color: white;
+    border: none;
+    width: 188px;
+    height: 41px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cart-image{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+.right-detailsproduct-image-container{
+    position: relative;
+    width: 400px;
+    height: 400px;
+}
+.review-header{
+    margin-top: 100px;
+    font-weight: bold;
+    margin-left: 20px;
+    
+}
+.total-review-header{
+    margin-top: 30px;
+    font-weight: bold;
+}
+.detailsproduct-desktop-review-container{
+    width: 90%;
+    margin: 0 auto;
+}
+.line-review{
+    margin-top: 30px;
+    width: 100%;
+    border-top: 1px solid black;
+}
+.rating{
+    display: flex;
+    justify-content: start;
+    margin-top: 30px;
+}
+.star{
+    margin-right: 10px;
+}
+.review-content-header{
+    margin-top: 20px;
+    font-weight: bold;
+}
+.review-content-main{
+    margin-top: 10px;
+}
+.space{
+    height: 100px;
+}
+@media only screen and (min-width: 477px ) and (max-width:844px){
+    .detailsproduct-desktop-container{
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .left-detailsproduct{
+        width: 100%;
+        border-right: none; 
+        border-bottom: 1px dashed black;
+    }
+    .right-detailsproduct{
+        padding: 10px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-flow: column wrap;
+    }
+}
+@media only screen and (min-width: 300px ) and (max-width:477px){
+    .detailsproduct-desktop-container{
+        width: 99%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .left-detailsproduct{
+        width: 100%;
+        border-right: none; 
+        border-bottom: 1px dashed black;
+    }
+    .right-detailsproduct{
+        padding: 10px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-flow: column wrap;
+    }
+    .left-detailsproduct-price{
+        margin-top: 50px;
+        background-color: black;
+        width: 100%;
+        height: 75px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 32px;
+    }
+    .pho-image{
+        width: 298px;
+        height: 204.67px;
+    }
+    .status-right-detailsproduct{
+        position: absolute;
+        top: 0;
+        left: 184px;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: 1px dashed black;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 100;
+    }
+    .right-detailsproduct-image-container{
+        position: relative;
+        width: 300px;
+        height: 400px;
+    }
+    .pho-image{
+        position: absolute;
+        top: 56px;
+        width: 298px;
+        height: 204.67px;
+    }
+    .nuocchanh-image{
+        position: absolute;
+        top: 1px;
+        left: calc(50% - 149px);
+        width: 298px;
+        height: 300px;
+    }
+    .bunbo-image{
+        position: absolute;
+        top: 1px;
+        left: calc(50% - 147px);
+        width: 293px;
+        height: 300px;
+    }
+    .spaghetti-image{
+        position: absolute;
+        top: 75px;
+        left: calc(50% - 149px);
+        width: 299px;
+        height: 192px;
+    }
+    .friedchicken-image{
+        position: absolute;
+        top: 88px;
+        left: calc(50% - 152px);
+        width: 298px;
+        height: 179px;
+    }
+    .icecream-image{
+        position: absolute;
+        top: 1px;
+        left: calc(50% - 89px);
+        width: 178px;
+        height: 300px;
+    }
+    .comtam-image{
+        position: absolute;
+        top: 48px;
+        left: calc(50% - 149px);
+        width: 298px;
+        height: 249px;
+    }
+}

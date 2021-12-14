@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ShareKitchen</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"  crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="css/partner.css">
+        <link rel="stylesheet" type="text/css" href="css/fontawesome-with-css/css/all.css">
+        
+    </head>
+    <body>
+       <div class="wrapper">
+           <header class="desktop-header">
+               <div class="header-lv1">
+                   <div class="log-in-container">
+                        <a href="login.html" class="headerWord-2 border-1"><span class="fix">ĐĂNG NHẬP</span></a>
+                        <a href="register.html" class="headerWord-2"><span class="fix">ĐĂNG KÝ</span></a>
+                   </div>
+               </div>
+               <hr>
+               <div class="header-lv2">
+                <div class="logo">
+                    <span class="logoWord">SK</span>
+                </div>
+                <div class="header-lv2-content">
+                    <div class="navbar-1">
+                        <a href="#">TRANG CHỦ</a>
+                        <a href="about.html">GIỚI THIỆU</a>
+                        <div class="dropdown-1">
+                          <button class="dropbtn-1"><a href="foodanddrink.html">THỨC ĂN & ĐỒ UỐNG</a></button>
+                          <div class="dropdown-content-1">
+                            <a href="foodanddrink.html">THỨC ĂN</a>
+                            <a href="foodanddrink.html">ĐỒ UỐNG</a>
+                          </div>
+                        </div>
+                        <a href="partner.html">ĐỐI TÁC</a> 
+                        <a href="live.html">TRỰC TIẾP</a> 
+                        <a href="news.html">TIN TỨC</a>  
+                    </div>
+                </div>
+               
+                <form class="form-search">
+                    <input class="searchBar" type="text" placeholder="Tìm kiếm">
+                </form>    
+                <a href="addtocart.html" class="addToCart">
+                        <div class="addToCart">
+                            <img class="addToCartSVG" src="img/shopping-cart.svg">
+                        </div>
+                        </a>
+            </div>
+           </header>
+           <header class="mobile-header">
+                <div id="myNav" class="overlay">
+                    <div class="menu-container-2">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    </div>
+                    <div class="overlay-content">
+                        <form class="form-search">
+                            <input class="searchBar" type="text" placeholder="Tìm kiếm">
+                        </form>  
+                        <ul class="overlay-content-menu">
+                        <li><a href="index.html">TRANG CHỦ</a></li>
+                        <li><a href="about.html">GIỚI THIỆU</a></li>
+                        <li><a href="foodanddrink.html" class="m-drinkandfood">THỨC ĂN & ĐỒ UỐNG</a>
+                           <ul>
+                             <li><a href="foodanddrink.html">THỨC ĂN</a></li>
+                             <li><a href="foodanddrink.html">ĐỒ UỐNG</a></li>
+                           </ul>
+                        </li>
+                        <li><a href="partner.html">ĐỐI TÁC</a>
+                        <li><a href="live.html">TRỰC TIẾP</a>
+                        <li><a href="news.html">TIN TỨC</a>
+                        <li><a href="login.html">ĐĂNG NHẬP</a>
+                        <li><a href="register.html">ĐĂNG KÝ</a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="menu-container">
+                    <img src="img/menu-button-of-three-horizontal-lines.svg" onclick="openNav()">
+                </div> 
+                
+                <div class="logo">
+                    <span class="logoWord">SK</span>
+                </div>
+                <a href="addtocart.html" class="addToCart">
+                        <div class="addToCart">
+                            <img class="addToCartSVG" src="img/shopping-cart.svg">
+                        </div>
+                        </a>
+           </header>
+           <section class="image-partner-container">
+                <div class="word-partner-1">CHÚNG TÔI CẦN BẠN</div>
+                <div class="word-partner-2">Hãy trở thành đối tác của chúng tôi và kiếm lợi nhuận từ sự đóng góp của bạn</div>
+           </section> 
+           <section class="navigation-partner">
+            <a href="index.html" class="navigation-home-1">TRANG CHỦ</a>
+            <img class="next-image" src="img/next.svg">
+            <a href="partner.html" class="navigation-partner-1">ĐỐI TÁC</a>
+           </section>
+           <section class="partner-desktop"> 
+                <div class="type-partner">
+                    <span class="type-word">Loại</span>
+                    <img class="type-image" src="img/chevron.svg">
+                    <div class="type-box" style="display: none">
+                        <div class="word-type-box" onclick="changeTable1()">ĐỊA ĐIỂM</div>
+                        <hr>
+                        <div class="word-type-box" onclick="changeTable2()">DỤNG CỤ</div>
+                    </div>
+                </div>
+                <div class="responsive-table">
+                <table class="table-tools-desktop" >
+                    <tr>
+                        <th>ID</th>
+                        <th>Ảnh</th>
+                        <th>Miêu Tả</th>
+                        <th>Trạng Thái</th>
+                        <th>Số Lượng</th>
+                        <th>Giá trên thị trường</th>
+                        <th>Tổng Tiền</th>
+                        <th><input class="checkall-type" type="checkbox" onClick="toggle_1(this)"></th>
+                    </tr>
+                    <tr>
+                        <td>B01T</td>
+                        <td><img src="img/cucchiaino-posate-argentate-accessori-cucina-posate-design-funky-table-1-300x300.jpg"></td>
+                        <td>Còn sử dụng được, không bị thủng hay hỏng hóc gì</td>
+                        <td>Thiếu</td>
+                        <td>10</td>
+                        <td>10.000đ</td>
+                        <td>100.000đ</td>
+                        <td><input name="tick" type="checkbox"></td>
+                    </tr>
+                    <tr>
+                            <td>B02T</td>
+                            <td><img src="img/download (4).jpg"></td>
+                            <td>Còn sử dụng được, không bị thủng hay hỏng hóc gì</td>
+                            <td>Thiếu</td>
+                            <td>20</td>
+                            <td>20.000đ</td>
+                            <td>400.000đ</td>
+                            <td><input name="tick" type="checkbox"></td>
+                    </tr>
+                    <tr>
+                            <td>B03T</td>
+                            <td><img src="img/Messermeister-Meridian-Elite-Chefs-Knife-300x300.jpg"></td>
+                            <td>Còn sử dụng được, không bị thủng hay hỏng hóc gì</td>
+                            <td>Thiếu</td>
+                            <td>20</td>
+                            <td>20.000đ</td>
+                            <td>400.000đ</td>
+                            <td><input name="tick" type="checkbox"></td>
+                    </tr>
+                    <tr>
+                            <td>B04T</td>
+                            <td><img src="img/Saucepan-Glass-Cover-Silver-01-300x300.jpg"></td>
+                            <td>Còn sử dụng được, không bị thủng hay hỏng hóc gì</td>
+                            <td>Thiếu</td>
+                            <td>5</td>
+                            <td>50.000đ</td>
+                            <td>100.000đ</td>
+                            <td><input name="tick" type="checkbox"></td>
+                    </tr>
+                    <tr>
+                            <td>B05T</td>
+                            <td><img src="img/80852C__31_300x300.jpg"></td>
+                            <td>Còn sử dụng được, không bị hỏng hay bị mốc</td>
+                            <td>Thiếu</td>
+                            <td>5</td>
+                            <td>50.000đ</td>
+                            <td>100.000đ</td>
+                            <td><input name="tick" type="checkbox"></td>
+                    </tr>
+                </table>
+                 <table class="table-location-desktop" style="display: none;">
+                    <tr>
+                        <th>ID</th>
+                        <th>Miêu Tả</th>
+                        <th>Trạng Thái</th>
+                        <th>Địa chỉ</th>
+                        <th>Thời Gian Từ</th>
+                        <th>Giá Cho Thuê</th>
+                        <th><input class="checkall-type" type="checkbox" onClick="toggle_2(this)"></th>
+                    </tr>
+                    <tr>
+                        <td>A01T</td>
+                        <td>50m2 rộng thoáng mát</td>
+                        <td>Cho thuê</td>
+                        <td>Thành Phố Hồ Chí Minh, Quận 1</td>
+                        <td>3 - 6 tháng</td>
+                        <td>100.000.000đ</td>
+                        <td><input name="tick0" type="checkbox"></td>
+                    </tr>
+                    <tr>
+                            <td>A02T</td>
+                            <td>100m2 rộng thoáng mát</td>
+                            <td>Cho thuê</td>
+                            <td>Thủ Đô Hà Nội, Quận Đống Đa</td>
+                            <td>4 - 8 tháng</td>
+                            <td>200.000.000đ</td>
+                            <td><input name="tick0" type="checkbox"></td>
+                    </tr>
+                    <tr>
+                            <td>A03T</td>
+                            <td>70m2 rộng thoáng mát</td>
+                            <td>Cho thuê</td>
+                            <td>Thành Phố Đà Nẵng, Quận Cẩm Lệ</td>
+                            <td>2 - 4 tháng</td>
+                            <td>150.000.000đ</td>
+                            <td><input name="tick0" type="checkbox"></td>
+                    </tr>
+                    <tr>
+                            <td>A04T</td>
+                            <td>120m2 rộng thoáng mát</td>
+                            <td>Cho thuê</td>
+                            <td>Thành Phố Bình Dương, Quận Châu Thành</td>
+                            <td>1 năm</td>
+                            <td>300.000.000đ</td>
+                            <td><input name="tick0" type="checkbox"></td>
+                    </tr>
+                    <tr>
+                            <td>A05T</td>
+                            <td>90m2 rộng thoáng mát</td>
+                            <td>Cho thuê</td>
+                            <td>Thành Phố Thanh Hóa, Quận Hải Hậu</td>
+                            <td>2 - 3 tháng</td>
+                            <td>100.000.000đ</td>
+                            <td><input name="tick0" type="checkbox"></td>
+                    </tr>
+                    <tr>
+                            <td>A06T</td>
+                            <td>90m2 rộng thoáng mát</td>
+                            <td>Cho thuê</td>
+                            <td>Thành Phố Thanh Hóa, Quận Hải Tiến</td>
+                            <td>7 - 8 tháng</td>
+                            <td>200.000.000đ</td>
+                            <td><input name="tick0" type="checkbox"></td>
+                    </tr>
+                    <tr>
+                            <td>A07T</td>
+                            <td>130m2 rộng thoáng mát</td>
+                            <td>Cho thuê</td>
+                            <td>Thành Phố Hải Phòng, Quận Đồ Sơn</td>
+                            <td>9 - 10 tháng</td>
+                            <td>400.000.000đ</td>
+                            <td><input name="tick0" type="checkbox"></td>
+                    </tr>
+                    <tr>
+                            <td>A08T</td>
+                            <td>140m2 rộng thoáng mát</td>
+                            <td>Cho thuê</td>
+                            <td>Thành Phố Hà Nội, Quận Hai Bà Trưng</td>
+                            <td>10 - 11 tháng</td>
+                            <td>400.000.000đ</td>
+                            <td><input name="tick0" type="checkbox"></td>
+                    </tr>
+                    <tr>
+                            <td>A09T</td>
+                            <td>150m2 rộng thoáng mát</td>
+                            <td>Cho thuê</td>
+                            <td>Thành Phố Hà Nội, Quận Hoàng Mai</td>
+                            <td>1 - 2 tháng</td>
+                            <td>50.000.000đ</td>
+                            <td><input name="tick0" type="checkbox"></td>
+                    </tr>
+                </table>
+                </div>
+                <div class="outer-btn">
+                <button class="cooperate-partner one" onclick="GetSelected_1(); GetSelected_2();"><a class="button-a" href="partnerandonator.html">HỢP TÁC</a></button>
+                <button class="cooperate-partner two" onclick="GetSelected_1(); GetSelected_2();" style="display: none"><a class="button-a" href="partnerandonator.html">HỢP TÁC</a></button>
+                </div>
+           </section>
+               <footer class="footer-desktop">
+                   <div class="content-footer">
+                       <div class="word-footer">Vị trí</div>
+                       <div class="word-footer">14 Nguyễn Đình Triểu, </div>
+                       <div class="word-footer">Quận Hai Bà Trưng, Hà Nội</div>
+                   </div>
+                   <div class="content-footer-1">
+                       <span class="word-footer ">Dịch vụ chăm sóc khách hàng</span>
+                       <div class="word-footer">096123456789</div>
+                       <div class="word-footer">7 ngày trong tuần, 7 sáng - 8 tối</div>
+                       <div class="word-footer">ShareKitchen@gmail.com</div>
+                       <span class="content-footer"></span>
+                   </div>
+                   <div class="social-network">
+                       <img src="img/instagram.svg">
+                       <img src="img/facebook-logo.svg">
+                       <img src="img/youtube-logo.svg">
+                   </div>
+                   <div class="copyright">
+                        <div class="word-footer">Bản quyền thuộc về © 2019 ShareKitchen</div>
+                   </div>
+               </footer>
+               <footer class="footer-mobile">
+                    <div class="content-footer">
+                        <div class="word-footer">Vị trí</div>
+                        <div class="word-footer">14 Nguyễn Đình Triểu, </div>
+                        <div class="word-footer">Quận Hai Bà Trưng, Hà Nội</div>
+                    </div>
+                    <div class="content-footer-1">
+                        <span class="word-footer ">Dịch vụ chăm sóc khách hàng</span>
+                        <div class="word-footer">096123456789</div>
+                        <div class="word-footer">7 ngày trong tuần, 7 sáng - 8 tối</div>
+                        <div class="word-footer">ShareKitchen@gmail.com</div>
+                        <span class="content-footer"></span>
+                    </div>
+                    <div class="social-network">
+                        <img class="image-footer" src="img/instagram.svg">
+                        <img class="image-footer" src="img/facebook-logo.svg">
+                        <img class="image-footer" src="img/youtube-logo.svg">
+                    </div>
+                    <div class="copyright">
+                         <div class="word-footer">Bản quyền thuộc về © 2019 ShareKitchen</div>
+                    </div>
+                </footer>
+           
+       </div>
+      
+       <script src="js/main.js"></script>
+       <script src="js/partner.js"></script>
+       </body>    
+</html>
+

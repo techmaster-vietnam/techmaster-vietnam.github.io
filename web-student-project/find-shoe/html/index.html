@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../carousel/owl.carousel.css">
+    <link rel="stylesheet" href="../carousel/owl.theme.default.css">
+
+    <link rel="stylesheet" href="../css/card_hover.css">
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>FindShoe-Trang Chủ</title>
+</head>
+
+<body>
+    <div id="header">
+        <div id="a">
+            <div id="header_1">
+                <div class="row justify-content-between" id="header_11">
+                    <div class="col-6" id="header_11a">
+                        <p>Liên Hệ Ngay: <a href=""> 0978032402</a></p>
+                    </div>
+                    <div class="col-6" id="header_11b">
+                        <ul>
+                            <li><a href="infor_shop.html">Thông Tin Shop</a></li>
+                            <li><a href="news.html">Bài Viết</a></li>
+                            <li><a href="call.html">Liên Hệ</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div id="header_2">
+                <div class="row" id="header_21">
+                    <div class="col-4" id="header_21a">
+                        <a href="index.html"><img src="../img/logo2.png" alt=""></a>
+                    </div>
+
+                    <div class="col-4" id="header_21b">
+                        <ul>
+                            <li><a href="men.html">Giày Nam</a></li>
+                            <li><a href="women.html">Giày Nữ</a></li>
+                            <li><a href="sale.html">Khuyến Mãi</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-4" id="header_21c">
+                        <ul>
+                            <li>
+                                <form action="" id="search">
+                                    <input type="text" placeholder="Tìm Kiếm">
+                                    <span class="fas fa-search"></span>
+                                </form>
+                            </li>
+                            <li><i onclick="login()" class="fas fa-user"></i></li>
+                            <li> <a href="cart.html"> <i class="fas fa-shopping-bag"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div id="header_3">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <h6>What is Lorem Ipsum?</h5>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                        </div>
+                        <div class="carousel-item">
+                            <h6>XYZ</h6>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                        </div>
+                        <div class="carousel-item">
+                            <h6>ABC</h6>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="header_4">
+                <div id="banner">
+                    <img src="../img/banner (1).jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Responsive Header -->
+
+        <div id="b">
+            <div id="b_1">
+                <div id="b_1_1">
+                    <p>Liên Hệ Ngay: <a href=""> 0978032402</a></p>
+                </div>
+            </div>
+
+
+            <div id="header_responsive">
+                <nav class="navbar navbar-light" id="b_2">
+                    <div class="navbar-brand" id="b_2_1">
+                        <input type="checkbox" id="menuToggle">
+                        <label for="menuToggle" class="menu-icon"><i class="fas fa-bars"></i></label>
+
+                        <div class="menu">
+                            <ul>
+
+
+                                <a href="men.html">
+                                    <li>Giày Nam</li>
+                                </a>
+
+                                <a href="women.html">
+                                    <li>Giày Nữ</li>
+                                </a>
+
+                                <a href="sale.html">
+                                    <li>Khuyến Mãi</li>
+                                </a>
+                                <div id="ul_1">
+                                    <a href="#">
+                                        <li onclick="login()"><i class="fas fa-user"> Đăng Nhập</i></li>
+                                    </a>
+                                    <a href="infor_shop.html">
+                                        <li>Thông tin Shop</li>
+                                    </a>
+
+                                    <a href="news.html">
+                                        <li>Bài Viết</li>
+                                    </a>
+
+                                    <a href="call.html">
+                                        <li>Liên Hệ</li>
+                                    </a>
+                                </div>
+
+
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <div id="b_2_2">
+                        <button onclick="search_responsive()"><span class="fas fa-search"></span></button>
+                        <a href="cart.html"> <button><span class="fas fa-shopping-bag"></span></button></a>
+
+                    </div>
+
+                </nav>
+
+
+
+                <div id="logo_responsive">
+                    <a href="index.html"><img src="../img/logo2.png" alt=""></a>
+                </div>
+
+
+                <div id="input_search">
+                    <form action="">
+                        <input type="text" placeholder="Tìm Kiếm">
+                        <span class="fas fa-search"></span>
+                    </form>
+                </div>
+
+
+
+            </div>
+
+            <div id="b_3">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <h6>What is Lorem Ipsum?</h5>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                        </div>
+                        <div class="carousel-item">
+                            <h6>XYZ</h6>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                        </div>
+                        <div class="carousel-item">
+                            <h6>ABC</h6>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="b_4">
+                <div id="banner">
+                    <img src="../img/banner (1).jpg" alt="">
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+
+
+        <!--  -->
+
+
+
+
+    </div>
+
+    <div class="login-page" id="login-page">
+        <div class="form">
+            <form action="" class="register-form form_1">
+                <input type="text" placeholder="Tên">
+                <input type="text" placeholder="Email">
+                <input type="text" placeholder="Mật Khẩu">
+                <input type="text" placeholder="Địa Chỉ">
+                <button>ĐĂng Kí</button>
+
+                <p class="message"><a href="#">Đăng Nhập</a></p>
+            </form>
+
+            <form action="" class="login-form form_1">
+                <input type="text" placeholder="Email">
+                <input type="text" placeholder="Password">
+                <button>Đăng Nhập</button>
+                <p class="message">Quên Mật Khẩu<br><a href="#">Đăng Kí</a></p>
+            </form>
+
+            <span class="fas fa-times" id="close" onclick="off()"></span>
+        </div>
+
+
+    </div>
+
+
+    <div id="fullscreen" onclick="off()"></div>
+
+
+
+    <div id="main" class="main">
+        <div id="main_1" class="container">
+            <h3>Sản Phẩm Mới</h3>
+            <div id="newitem" class="row">
+
+            </div>
+        </div>
+
+        <div id="main_2" class="row">
+            <div id="men-sneaker" class="sneaker col-md-6">
+                <div id="hover-img">
+                    <img src="../img/men-sneaker.jpg" alt="">
+                    <a href="men.html"><button>Giày Nam</button></a>
+                </div>
+
+            </div>
+            <div id="women-sneaker" class="sneaker col-md-6">
+                <div id="hover-img">
+                    <img src="../img/women-sneaker.jpg" alt="">
+                    <a href="women.html"><button>Giày Nữ</button></a>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="main_3" class="container">
+            <h3>Sản Phẩm Bán Chạy</h3>
+            <div id="hotitem" class="row">
+
+            </div>
+        </div>
+
+        <div id="main_4">
+            <h3>Chia Sẻ Của Khách Hàng</h3>
+            <br>
+            <div class="container">
+                <div class="row">
+                    <div class="owl-carousel owl-theme" id="main_4_1">
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div id="main_5" class="container">
+            <h3>Tin Tức Mới</h3>
+            <br>
+            <div class="container">
+                <div class="row">
+                    <div class="owl-carousel owl-theme" id="main_5_1">
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div id="main_6">
+            <div id="main_6_1a"></div>
+            <div id="main_6_1">
+                <p>Liên Hệ Cửa hàng</p>
+                <a href="call.html"><button>Xem Ngay</button></a>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <!--Xem Chi Tiết sản phẩm  -->
+
+    <!-- Modal -->
+    <div id="modal">
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Chi Tiết Sản Phẩm</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <img src="../img/sản phẩm 5.jpg" alt="">
+                            </div>
+                            <div class="col-sm-6">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                </p>
+
+                                <span>Chọn Size</span><br>
+                                <select name="" id="" style="margin-bottom:12px">
+
+                                    <option value="" selected disabled>Chọn Size</option>
+                                    <option value="price_up">36</option>
+                                    <option value="price_down">37</option>
+                                    <option value="price_up">38</option>
+                                    <option value="price_down">39</option>
+                                    <option value="price_up">40</option>
+                                    <option value="price_down">41</option>
+                                    <option value="price_up">42</option>
+
+                                </select>
+                                <br>
+
+                                <span>Chọn Số Lượng</span><br>
+                                <input type="number" value="1" min="1" style="max-width:150px;margin-bottom:12px">
+
+                                <button id="btn2">Thêm Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  -->
+
+
+
+
+
+    <div id="footer">
+        <div id="footer_1" class="row">
+            <h3 class="col-md-6">Đăng Kí Để Nhận Khuyến Mãi</h3>
+            <div id="input" class="ml-auto col-md-6">
+                <form action="">
+                    <input type="text" placeholder="Nhập Email Của Bạn">
+                    <a href="#" class="fas fa-paper-plane"></a>
+                </form>
+            </div>
+        </div>
+
+        <div id="footer_2" class="container">
+            <div class="row">
+                <div class="col-md-4">
+
+                    <ul>
+                        <li>Liên Hệ</li>
+                        <li>SĐT: 0978032402</a></li>
+                        <li> <span>Store 1</span> 57 Quan Hoa, Cầu Giấy, HN</li>
+
+                        <li> <span>Store 2</span> 29 Trần Đại Nghĩa, Hai Bà Trưng, HN</li>
+
+                        <li> <span>Store 3</span> 123 Nguyễn Lương Bằng, Đống Đa, HN</li>
+
+                        <li> <span>Store 4</span> 61 Trần Phú, Hà Đông, HN</li>
+
+                        <li> <span>Store 5</span> 51A Phạm Tuấn Tài, Cầu Giấy, HN
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <ul>
+                        <li>ĐẶT HÀNG </li>
+                        <li>Đặt hàng thế nào ?</li>
+                        <li>Thông tin giao hàng </li>
+                        <li>Trả lại và trao đổi</li>
+                    </ul>
+                </div>
+
+                <div class="col-md-2">
+                    <ul>
+                        <li>HỖ TRỢ </li>
+                        <li>7 cách bảo quản giày thể thao tốt nhất</li>
+                        <li>Giữ “phong độ” cho Sneaker trắng ra sao</li>
+                        <li>9 kỹ thuật làm đẹp dành cho U30</li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4">
+                    <div id="fb-root"></div>
+                    <script async defer crossorigin="anonymous"
+                        src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v3.3"></script>
+
+                    <div class="fb-page"
+                        data-href="https://www.facebook.com/DemoProject-2585801611438970/?modal=admin_todo_tour"
+                        data-tabs="timeline" data-width="" data-height="300" data-small-header="false"
+                        data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                        <blockquote cite="https://www.facebook.com/DemoProject-2585801611438970/?modal=admin_todo_tour"
+                            class="fb-xfbml-parse-ignore"><a
+                                href="https://www.facebook.com/DemoProject-2585801611438970/?modal=admin_todo_tour">DemoProject</a>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="footer_3">
+            <div id="internet">
+                <a href="#" class="fab fa-facebook-square"></a>
+                <a href="#" class="fab fa-twitter-square"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-youtube-square"></a>
+            </div>
+            <p>Copyright 2019 <i class="far fa-copyright"></i> Designed by TungNguyen</p>
+
+        </div>
+    </div>
+
+
+
+    <div id="backtotop">
+        <a href="#header"><span class="fas fa-caret-up"></span></a>
+    </div>
+
+
+
+
+
+
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    
+
+    <!-- Your customer chat code -->
+    <div class="fb-customerchat" attribution=install_email page_id="2585801611438970" logged_in_greeting="Xin Chào !!!"
+        logged_out_greeting="Xin Chào !!!">
+    </div>
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script src='https://code.jquery.com/jquery-3.4.1.min.js
+    '> </script>
+    <script src="../js/header_footer.js"></script>
+    <script src="../carousel/owl.carousel.js"></script>
+
+    <script src="../js/home.js"></script>
+</body>
+</body>
+
+</html>

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ShareKitchen</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"  crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="css/detailsproduct.css">
+        <link rel="stylesheet" type="text/css" href="css/fontawesome-with-css/css/all.css">
+        
+    </head>
+    <body>
+       <div class="wrapper">
+           <header class="desktop-header">
+               <div class="header-lv1">
+                   <div class="log-in-container">
+                        <a href="login.html" class="headerWord-2 border-1"><span class="fix">ĐĂNG NHẬP</span></a>
+                        <a href="register.html" class="headerWord-2"><span class="fix">ĐĂNG KÝ</span></a>
+                   </div>
+               </div>
+               <hr>
+               <div class="header-lv2">
+                <div class="logo">
+                    <span class="logoWord">SK</span>
+                </div>
+                <div class="header-lv2-content">
+                    <div class="navbar-1">
+                        <a href="#">TRANG CHỦ</a>
+                        <a href="about.html">GIỚI THIỆU</a>
+                        <div class="dropdown-1">
+                          <button class="dropbtn-1"><a href="foodanddrink.html">THỨC ĂN & ĐỒ UỐNG</a></button>
+                          <div class="dropdown-content-1">
+                            <a href="foodanddrink.html">THỨC ĂN</a>
+                            <a href="foodanddrink.html">ĐỒ UỐNG</a>
+                          </div>
+                        </div>
+                        <a href="partner.html">ĐỐI TÁC</a> 
+                        <a href="live.html">TRỰC TIẾP</a> 
+                        <a href="news.html">TIN TỨC</a>  
+                    </div>
+                </div>
+               
+                <form class="form-search">
+                    <input class="searchBar" type="text" placeholder="Tìm kiếm">
+                </form>    
+                <a href="addtocart.html" class="addToCart">
+                        <div class="addToCart">
+                            <img class="addToCartSVG" src="img/shopping-cart.svg">
+                        </div>
+                        </a>
+            </div>
+           </header>
+           <header class="mobile-header">
+                <div id="myNav" class="overlay">
+                    <div class="menu-container-2">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    </div>
+                    <div class="overlay-content">
+                        <form class="form-search">
+                            <input class="searchBar" type="text" placeholder="Tìm kiếm">
+                        </form>  
+                        <ul class="overlay-content-menu">
+                        <li><a href="index.html">TRANG CHỦ</a></li>
+                        <li><a href="about.html">GIỚI THIỆU</a></li>
+                        <li><a href="foodanddrink.html" class="m-drinkandfood">THỨC ĂN & ĐỒ UỐNG</a>
+                           <ul>
+                             <li><a href="foodanddrink.html">THỨC ĂN</a></li>
+                             <li><a href="foodanddrink.html">ĐỒ UỐNG</a></li>
+                           </ul>
+                        </li>
+                        <li><a href="partner.html">ĐỐI TÁC</a>
+                        <li><a href="live.html">TRỰC TIẾP</a>
+                        <li><a href="news.html">TIN TỨC</a>
+                        <li><a href="login.html">ĐĂNG NHẬP</a>
+                        <li><a href="register.html">ĐĂNG KÝ</a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="menu-container">
+                    <img src="img/menu-button-of-three-horizontal-lines.svg" onclick="openNav()">
+                </div> 
+                
+                <div class="logo">
+                    <span class="logoWord">SK</span>
+                </div>
+                <a href="addtocart.html" class="addToCart">
+                        <div class="addToCart">
+                            <img class="addToCartSVG" src="img/shopping-cart.svg">
+                        </div>
+                        </a>
+           </header>
+           <section class="navigation-detailsproduct">
+            <a href="index.html" class="navigation-home-1">TRANG CHỦ</a>
+            <img class="next-image" src="img/next.svg">
+            <a href="foodanddrink.html" class="navigation-foodanddrink-1">THỨC ĂN & ĐỒ UỐNG</a>
+            <img class="next-image" src="img/next.svg">
+            <a href="detailsproduct.html" class="navigation-detailsproduct-1">PHỞ</a>
+           </section>
+           <section class="detailsproduct-desktop">
+                <div class="detailsproduct-desktop-container">
+               <div class="left-detailsproduct">
+                   <div class="left-detailsproduct-word">PHỞ BÒ</div>
+                   <div class="left-detailsproduct-word-1">Một trong số các món ăn ngon nhất thế giới</div>
+                   <div class="left-detailsproduct-price" data-value="">25.000đ</div>
+
+                   <!-- Button trigger modal -->
+                <button type="button" class="btn write-review" data-toggle="modal" data-target="#exampleModalCenter">
+                        Viết đánh giá
+                    </button>
+                    
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Đánh Giá</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="star">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                </div>
+                                <label>Tiêu đề</label>
+                                <br>
+                                <input type="text">
+                                <br>
+                                <label>Nội dung</label>
+                                <br>
+                                <input type="text">
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                            <button type="button" class="btn btn-primary">Lưu</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+               </div>
+               <div class="right-detailsproduct">
+                   <div class="right-detailsproduct-image-container">
+                   <img class="right-detailsproduct-image pho-image" src="img/to-pho-truyen-thong.jpg">
+                   <div class="status-right-detailsproduct">Còn hàng</div>
+                   </div>
+                   <button class="right-detailsproduct-addtocart">
+                       <img class="cart-image" src="img/shopping-cart.svg">
+                       <span class="right-detailsproduct-addtocart-word">MUA NGAY</span>
+                   </button>
+               </div>
+            </div>
+           </section>
+           <section class="detailsproduct-desktop-review">
+               <div class="detailsproduct-desktop-review-container">
+                    <div class="review-header">ĐÁNH GIÁ</div>
+                    <div class="total-review-header">1-4 trong 1000 đánh giá</div>
+                    <hr class="line-review">
+                    <div class="review-content">
+                        <div class="rating">
+                                <div class="star">
+                                        <i style="color: red" class="fas fa-star"></i>
+                                        <i style="color: red" class="fas fa-star"></i>
+                                        <i style="color: red" class="fas fa-star"></i>
+                                        <i style="color: red" class="fas fa-star"></i>
+                                        <i style="color: red" class="fas fa-star"></i>
+                                </div>
+                            <div class="account">FeelsBadMen</div>
+                        </div>
+                        <div class="review-content-header">Tôi rất thích sản phẩm này</div>
+                        <div class="review-content-main">Tôi khuyến khích mọi người ăn món này</div>
+                    </div>
+                    <hr class="line-review">
+                    <div class="review-content">
+                        <div class="rating">
+                            <div class="star">
+                                    <i style="color: red" class="fas fa-star"></i>
+                                    <i style="color: red" class="fas fa-star"></i>
+                                    <i style="color: red" class="fas fa-star"></i>
+                                    <i style="color: red" class="fas fa-star"></i>
+                                    <i style="color: red" class="fas fa-star"></i>
+                            </div>
+                            <div class="account">FeelsBadMen</div>
+                        </div>
+                        <div class="review-content-header">Tôi rất thích sản phẩm này</div>
+                        <div class="review-content-main">Tôi khuyến khích mọi người ăn món này</div>
+                    </div>
+            </div>
+           </section>
+           <div class="space"></div>
+               <footer class="footer-desktop">
+                   <div class="content-footer">
+                       <div class="word-footer">Vị trí</div>
+                       <div class="word-footer">14 Nguyễn Đình Triểu, </div>
+                       <div class="word-footer">Quận Hai Bà Trưng, Hà Nội</div>
+                   </div>
+                   <div class="content-footer-1">
+                       <span class="word-footer ">Dịch vụ chăm sóc khách hàng</span>
+                       <div class="word-footer">096123456789</div>
+                       <div class="word-footer">7 ngày trong tuần, 7 sáng - 8 tối</div>
+                       <div class="word-footer">ShareKitchen@gmail.com</div>
+                       <span class="content-footer"></span>
+                   </div>
+                   <div class="social-network">
+                       <img src="img/instagram.svg">
+                       <img src="img/facebook-logo.svg">
+                       <img src="img/youtube-logo.svg">
+                   </div>
+                   <div class="copyright">
+                        <div class="word-footer">Bản quyền thuộc về © 2019 ShareKitchen</div>
+                   </div>
+               </footer>
+               <footer class="footer-mobile">
+                    <div class="content-footer">
+                        <div class="word-footer">Vị trí</div>
+                        <div class="word-footer">14 Nguyễn Đình Triểu, </div>
+                        <div class="word-footer">Quận Hai Bà Trưng, Hà Nội</div>
+                    </div>
+                    <div class="content-footer-1">
+                        <span class="word-footer ">Dịch vụ chăm sóc khách hàng</span>
+                        <div class="word-footer">096123456789</div>
+                        <div class="word-footer">7 ngày trong tuần, 7 sáng - 8 tối</div>
+                        <div class="word-footer">ShareKitchen@gmail.com</div>
+                        <span class="content-footer"></span>
+                    </div>
+                    <div class="social-network">
+                        <img class="image-footer" src="img/instagram.svg">
+                        <img class="image-footer" src="img/facebook-logo.svg">
+                        <img class="image-footer" src="img/youtube-logo.svg">
+                    </div>
+                    <div class="copyright">
+                         <div class="word-footer">Bản quyền thuộc về © 2019 ShareKitchen</div>
+                    </div>
+                </footer>
+           
+       </div>
+      
+       <script src="js/main.js"></script>
+       <script src="js/detailsproduct.js"></script>
+       </body>    
+</html>
+

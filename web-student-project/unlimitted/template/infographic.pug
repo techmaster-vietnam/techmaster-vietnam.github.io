@@ -1,0 +1,636 @@
+extends template-part/layout.pug
+block style
+    link(rel="stylesheet", href="css/tai-nguyen-mien-phi-rieng.css")
+block title
+    title Infographic
+block header-content
+            .header-content-tai-nguyen-mien-phi-box
+                .profile#profile3.profilea
+                    .profile-box
+                        .profile-avatar.d-flex.justify-content-center
+                            div
+                                col-10
+                                    img.img-fluid(src="img/avatar3.png", alt="avatar")
+                                .d-flex.justify-content-center 
+                                    img.img-fluid(src="img/crown.png", alt="VIP")
+                                    p.text-center.small Phan Trí
+                        .d-flex.justify-content-center    
+                            .profile-content
+                                .profile-columnn.d-flex.justify-content-center
+                                    p.profile-text Email:
+                                    p &nbsp;phantri3@gmail.com
+                                .profile-columnn.d-flex.justify-content-center
+                                    p.profile-text Loại tài khoản:
+                                    p &nbsp;Tài khoản SVIP
+                                .profile-columnn.d-flex.justify-content-center
+                                    p.profile-text Ngày hết hạn:
+                                    p &nbsp;25/08/2021
+                                .profile-columnn.d-flex.justify-content-center
+                                    p.profile-text Đã tải xuống:
+                                    p &nbsp;203 file
+                        .d-flex.justify-content-center
+                            a#dang-xuat-btn3(href="")
+                                p Đăng xuất 
+                .profile#profile2.profilea
+                    .profile-box
+                        .profile-avatar.d-flex.justify-content-center
+                            div
+                                col-10
+                                    img.img-fluid(src="img/avatar2.png", alt="avatar")
+                                .d-flex.justify-content-center 
+                                    img.img-fluid(src="img/star2.png", alt="VIP")
+                                    p.text-center.small Phan Trí
+                        .d-flex.justify-content-center    
+                            .profile-content
+                                .profile-columnn.d-flex.justify-content-center
+                                    p.profile-text Email:
+                                    p &nbsp;phantri2@gmail.com
+                                .profile-columnn.d-flex.justify-content-center
+                                    p.profile-text Loại tài khoản:
+                                    p &nbsp;Tài khoản VIP
+                                .profile-columnn.d-flex.justify-content-center
+                                    p.profile-text Ngày hết hạn:
+                                    p &nbsp;15/09/2021
+                                .profile-columnn.d-flex.justify-content-center
+                                    p.profile-text Đã tải xuống:
+                                    p &nbsp;430 file
+                        .d-flex.justify-content-center
+                            a(href="muavip.html")
+                                .svip-button.svip-button2.goi-button.d-flex.justify-content-center
+                                    p.small MUA SVIP
+                        .d-flex.justify-content-center
+                            a#dang-xuat-btn2(href="")
+                                p Đăng xuất  
+                .profile#profile1.profilea
+                    .profile-box
+                        .profile-avatar.d-flex.justify-content-center
+                            div
+                                col-10
+                                    img.img-fluid(src="img/avatar1.png", alt="avatar")
+                                p.text-center.small Phan Trí
+                        .d-flex.justify-content-center    
+                            .profile-content
+                                .profile-columnn.d-flex.justify-content-center
+                                    p.profile-text Email:
+                                    p &nbsp;phantri@gmail.com
+                                .profile-columnn.d-flex.justify-content-center
+                                    p.profile-text Loại tài khoản:
+                                    p &nbsp;Tài khoản thường
+                                .profile-columnn.d-flex.justify-content-center
+                                    p.profile-text Ngày hết hạn:
+                                    p &nbsp;28/11/2021
+                                .profile-columnn.d-flex.justify-content-center
+                                    p.profile-text Đã tải xuống:
+                                    p &nbsp;132 file
+                        .d-flex.justify-content-center
+                            a(href="muavip.html")
+                                .svip-button.goi-button.d-flex.justify-content-center
+                                    p.small MUA VIP/SVIP
+                        .d-flex.justify-content-center
+                            a#dang-xuat-btn1(href="")
+                                p Đăng xuất 
+                .header-content
+                    .tieu-de-trang-box
+                        .tieu-de-trang
+                            .d-flex.justify-content-center
+                                .col-12.col-sm-10.col-md-8.col-lg-6.col-xl-5
+                                    div.d-flex.justify-content-center
+                                        p.xlarge Infographic
+                        .d-flex.justify-content-center
+                            .chu-thich-trang.chu-thich-trang-mien-phi.d-flex.justify-content-center
+                                p Kho tài nguyên Infographic vô tận
+                .search-box
+                        .d-flex.justify-content-center.search-box-content
+                            .col-11.col-sm-10.col-md-9.col-lg-8.col-xl-5.d-flex
+                                .filter.d-flex.align-items-center#filter-on-off
+                                    p Bộ lọc
+                                    .down-arrow.d-flex.align-items-center
+                                        img(src="img/down-arrow.png", alt="")
+                                input.search(type='search' placeholder='Tìm kiếm')
+                                button.search-button(type="submit")
+                                    div
+                                        img(src="img/search.png", alt="")
+                                block filter
+                                .col-12.col-sm-10.col-md-9.col-lg-8.col-xl-7.filter-box.d-flex.filter-box-a
+                                    .col-4.filter-row.ty-le
+                                        .filter-title.d-flex.justify-content-center
+                                            p Tỷ lệ
+                                        .d-flex.filter-content
+                                            .col-6
+                                                .d-flex.justify-content-end
+                                                    div.ty-le-img
+                                                        .d-flex.justify-content-end.ty-le-icon-img.ty-le-check1
+                                                            img(src="img/filter/ngang.png", alt="")
+                                                            img.ty-le-check.ty-le-check-icon-1(src="img/checkmark.png", alt="")   
+                                                        .d-flex.justify-content-end.ty-le-icon-img.ty-le-check2                 
+                                                            img(src="img/filter/doc.png", alt="")
+                                                            img.ty-le-check.ty-le-check-icon-2(src="img/checkmark.png", alt="")        
+                                                        .d-flex.justify-content-end.ty-le-icon-img.ty-le-check3             
+                                                            img(src="img/filter/vuong.png", alt="")
+                                                            img.ty-le-check.ty-le-check-icon-3(src="img/checkmark.png", alt="")                      
+                                                        .d-flex.justify-content-end.ty-le-icon-img.ty-le-check4
+                                                            img(src="img/filter/panorama.png", alt="")
+                                                            img.ty-le-check.ty-le-check-icon-4(src="img/checkmark.png", alt="")  
+                                            .col-6
+                                                .d-flex.justify-content-start   
+                                                    .ty-le-content               
+                                                        p.ty-le-check-text1 Ngang
+                                                        p.ty-le-check-text2 Dọc
+                                                        p.ty-le-check-text3 Vuông
+                                                        p.ty-le-check-text4 Panorama
+                                    .col-4.filter-row.mau-sac
+                                        .filter-title.d-flex.justify-content-center
+                                            p Màu sắc
+                                        .filter-content
+                                            .row.d-flex.justify-content-center
+                                                .color-box.color-box1
+                                                    img(src="img/filter/do.png", alt="")
+                                                    img.filter-check.color-check-1(src="img/checkmark.png", alt="")
+                                                .color-box.color-box2
+                                                    img(src="img/filter/cam.png", alt="")
+                                                    img.filter-check.color-check-2(src="img/checkmark.png", alt="")
+                                            .row.d-flex.justify-content-center
+                                                .color-box.color-box3
+                                                    img(src="img/filter/vang.png", alt="")
+                                                    img.filter-check.color-check-3(src="img/checkmark.png", alt="")
+                                                .color-box.color-box4
+                                                    img(src="img/filter/xanhla.png", alt="")
+                                                    img.filter-check.color-check-4(src="img/checkmark.png", alt="")
+                                            .row.d-flex.justify-content-center
+                                                .color-box.color-box5
+                                                    img(src="img/filter/xanhnhat.png", alt="")
+                                                    img.filter-check.color-check-5(src="img/checkmark.png", alt="")
+                                                .color-box.color-box6
+                                                    img(src="img/filter/xanhdam.png", alt="")
+                                                    img.filter-check.color-check-6(src="img/checkmark.png", alt="")
+                                            .row.d-flex.justify-content-center
+                                                .color-box.color-box7
+                                                    img(src="img/filter/tim.png", alt="")
+                                                    img.filter-check.color-check-7(src="img/checkmark.png", alt="")
+                                                .color-box.color-box8
+                                                    img(src="img/filter/trang.png", alt="")
+                                                    img.filter-check.color-check-8(src="img/checkmark.png", alt="")
+                                            .row.d-flex.justify-content-center
+                                                .color-box.color-box9
+                                                    img(src="img/filter/xam.png", alt="")
+                                                    img.filter-check.color-check-9(src="img/checkmark.png", alt="")
+                                                .color-box.color-box10
+                                                    img(src="img/filter/timthan.png", alt="")
+                                                    img.filter-check.color-check-10(src="img/checkmark.png", alt="")
+                                            .row.d-flex.justify-content-center.bo-loc
+                                                p.filter-bo-loc   Bỏ lọc
+                                    .col-4.filter-row.phan-loai
+                                        .filter-title.d-flex.justify-content-center
+                                            p Phân loại
+                                        .d-flex.justify-content-center.filter-content         
+                                            .d-flex.flex-column
+                                                .d-flex.align-items-center.phan-loai-box.phan-loai-box-1
+                                                    .checkbox
+                                                    label(for='vector') Vector
+                                                    img.filter-check.filter-check-1(src="img/checkmark.png", alt="")
+                                                .d-flex.align-items-center.phan-loai-box.phan-loai-box-2
+                                                    .checkbox
+                                                    label(for='psd') PSD
+                                                    img.filter-check.filter-check-2(src="img/checkmark.png", alt="")
+                                                .d-flex.align-items-center.phan-loai-box.phan-loai-box-3
+                                                    .checkbox
+                                                    label(for='photo') Photo
+                                                    img.filter-check.filter-check-3(src="img/checkmark.png", alt="")
+                                                .d-flex.align-items-center.phan-loai-box.phan-loai-box-4
+                                                    .checkbox
+                                                    label(for='icon') Icon
+                                                    img.filter-check.filter-check-4(src="img/checkmark.png", alt="")
+                                    .close
+                                        img#close-tab(src="img/close.png", alt="")
+block content
+    .content-tai-nguyen-mien-phi.container-md
+        div
+            .row.d-flex.tai-nguyen-mien-phi-content-box
+                .col-12.col-sm-12.col-md-6.col-lg-6.col-xl-6.d-flex.justify-content-center
+                    .col-4.tai-nguyen-mien-phi-content-frame
+                        img.img-fluid.img-mien-phi(src="img/tainguyenmienphi-vuong/40.png", alt="")
+                        a(href="download.html").img-tai-xuong-hover-box
+                            .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
+                                div
+                                    .d-flex.justify-content-center
+                                        p.small .EPS
+                                    .d-flex.justify-content-center
+                                        p File Vector
+                    .col-4.tai-nguyen-mien-phi-content-frame.vip-star-frame
+                        img.img-fluid.img-mien-phi(src="img/tainguyenmienphi-vuong/38.png", alt="")
+                        img.img-vip(src="img/download/star.png", alt="")
+                        a(href="download.html").img-tai-xuong-hover-box
+                            .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
+                                div
+                                    .d-flex.justify-content-center
+                                        p.small .PNG
+                                    .d-flex.justify-content-center
+                                        p File Photo
+                    .col-4.tai-nguyen-mien-phi-content-frame
+                        img.img-fluid.img-mien-phi(src="img/tainguyenmienphi-vuong/39.png", alt="")
+                        a(href="download.html").img-tai-xuong-hover-box
+                            .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
+                                div
+                                    .d-flex.justify-content-center
+                                        p.small .EPS
+                                    .d-flex.justify-content-center
+                                        p File Vector
+                .col-12.col-sm-12.col-md-6.col-lg-6.col-xl-6.d-flex.justify-content-center
+                    .col-8.tai-nguyen-mien-phi-content-frame
+                        img.img-fluid.img-mien-phi(src="img/tainguyenmienphi-ngang/20.png", alt="")
+                        a(href="download.html").img-tai-xuong-hover-box
+                            .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
+                                div
+                                    .d-flex.justify-content-center
+                                        p.small .PSD
+                                    .d-flex.justify-content-center
+                                        p File Photoshop
+                    .col-4.tai-nguyen-mien-phi-content-frame.vip-star-frame
+                        img.img-fluid.img-mien-phi(src="img/tainguyenmienphi-vuong/37.png", alt="")
+                        img.img-vip(src="img/loginviptodownload/star.png", alt="")
+                        a(href="download.html").img-tai-xuong-hover-box
+                            .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
+                                div
+                                    .d-flex.justify-content-center
+                                        p.small .EPS
+                                    .d-flex.justify-content-center
+                                        p File Vector
+            .row.d-flex.tai-nguyen-mien-phi-content-box
+                .col-12.col-sm-12.col-md-6.col-lg-6.col-xl-6.d-flex.justify-content-center
+                    .col-8.tai-nguyen-mien-phi-content-frame
+                        img.img-fluid.img-mien-phi(src="img/tainguyenmienphi-ngang/19.png", alt="")
+                        a(href="download.html").img-tai-xuong-hover-box
+                            .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
+                                div
+                                    .d-flex.justify-content-center
+                                        p.small .JPG
+                                    .d-flex.justify-content-center
+                                        p File Photo
+                    .col-4.tai-nguyen-mien-phi-content-frame
+                        img.img-fluid.img-mien-phi(src="img/tainguyenmienphi-vuong/36.png", alt="")
+                        a(href="download.html").img-tai-xuong-hover-box
+                            .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
+                                div
+                                    .d-flex.justify-content-center
+                                        p.small .SVG
+                                    .d-flex.justify-content-center
+                                        p File Icon
+                .col-12.col-sm-12.col-md-6.col-lg-6.col-xl-6.d-flex.justify-content-center
+                    .col-4.tai-nguyen-mien-phi-content-frame
+                        img.img-fluid.img-mien-phi(src="img/tainguyenmienphi-vuong/35.png", alt="")
+                        a(href="download.html").img-tai-xuong-hover-box
+                            .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
+                                div
+                                    .d-flex.justify-content-center
+                                        p.small .EPS
+                                    .d-flex.justify-content-center
+                                        p File Vector
+                    .col-8.tai-nguyen-mien-phi-content-frame
+                        img.img-fluid.img-mien-phi(src="img/tainguyenmienphi-ngang/18.png", alt="")
+                        a(href="download.html").img-tai-xuong-hover-box
+                            .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
+                                div
+                                    .d-flex.justify-content-center
+                                        p.small .PSD
+                                    .d-flex.justify-content-center
+                                        p File Photo
+            .row.d-flex.tai-nguyen-mien-phi-content-box
+                .col-12.col-sm-12.col-md-6.col-lg-6.col-xl-6.d-flex.justify-content-center
+                    .col-12.tai-nguyen-mien-phi-content-frame
+                        img.img-fluid.img-mien-phi(src="img/tainguyenmienphi-panorama/10.png", alt="")
+                        a(href="download.html").img-tai-xuong-hover-box
+                            .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
+                                div
+                                    .d-flex.justify-content-center
+                                        p.small .EPS
+                                    .d-flex.justify-content-center
+                                        p File Vector
+                .col-12.col-sm-12.col-md-6.col-lg-6.col-xl-6.d-flex.justify-content-center
+                    .col-12.tai-nguyen-mien-phi-content-frame.vip-star-frame
+                        img.img-fluid.img-mien-phi(src="img/tainguyenmienphi-panorama/9.png", alt="")
+                        img.img-vip(src="img/loginviptodownload/star.png", alt="")
+                        a(href="download.html").img-tai-xuong-hover-box
+                            .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
+                                div
+                                    .d-flex.justify-content-center
+                                        p.small .JPG
+                                    .d-flex.justify-content-center
+                                        p File Photo
+            .row.d-flex.tai-nguyen-mien-phi-content-box
+                .col-12.col-sm-12.col-md-6.col-lg-6.col-xl-6.d-flex.justify-content-center
+                    .col-4.tai-nguyen-mien-phi-content-frame
+                        img.img-fluid.img-mien-phi(src="img/tainguyenmienphi-vuong/34.png", alt="")
+                        a(href="download.html").img-tai-xuong-hover-box
+                            .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
+                                div
+                                    .d-flex.justify-content-center
+                                        p.small .EPS
+                                    .d-flex.justify-content-center
+                                        p File Vector
+                    .col-4.tai-nguyen-mien-phi-content-frame
+                        img.img-fluid.img-mien-phi(src="img/tainguyenmienphi-vuong/33.png", alt="")
+                        a(href="download.html").img-tai-xuong-hover-box
+                            .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
+                                div
+                                    .d-flex.justify-content-center
+                                        p.small .PSD
+                                    .d-flex.justify-content-center
+                                        p File Photo
+                    .col-4.tai-nguyen-mien-phi-content-frame
+                        img.img-fluid.img-mien-phi(src="img/tainguyenmienphi-vuong/32.png", alt="")
+                        a(href="download.html").img-tai-xuong-hover-box
+                            .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
+                                div
+                                    .d-flex.justify-content-center
+                                        p.small .EPS
+                                    .d-flex.justify-content-center
+                                        p File Vector
+                .col-12.col-sm-12.col-md-6.col-lg-6.col-xl-6.d-flex.justify-content-center
+                    .col-4.tai-nguyen-mien-phi-content-frame.vip-star-frame
+                        img.img-fluid.img-mien-phi(src="img/tainguyenmienphi-vuong/31.png", alt="")
+                        img.img-vip(src="img/loginviptodownload/star.png", alt="")
+                        a(href="download.html").img-tai-xuong-hover-box
+                            .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
+                                div
+                                    .d-flex.justify-content-center
+                                        p.small .SVG
+                                    .d-flex.justify-content-center
+                                        p File Icon
+                    .col-4.tai-nguyen-mien-phi-content-frame
+                        img.img-fluid.img-mien-phi(src="img/tainguyenmienphi-vuong/30.png", alt="")
+                        a(href="download.html").img-tai-xuong-hover-box
+                            .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
+                                div
+                                    .d-flex.justify-content-center
+                                        p.small .PSD
+                                    .d-flex.justify-content-center
+                                        p File Photo
+                    .col-4.tai-nguyen-mien-phi-content-frame.vip-star-frame
+                        img.img-fluid.img-mien-phi(src="img/tainguyenmienphi-vuong/29.png", alt="")
+                        img.img-vip(src="img/download/star.png", alt="")
+                        a(href="loginviptodownload.html").img-tai-xuong-hover-box
+                            .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
+                                div
+                                    .d-flex.justify-content-center
+                                        p.small .EPS
+                                    .d-flex.justify-content-center
+                                        p File Vector
+            .row.d-flex.tai-nguyen-mien-phi-content-box
+                .col-12.col-sm-12.col-md-6.col-lg-6.col-xl-6.d-flex.justify-content-center
+                    .col-4.tai-nguyen-mien-phi-content-frame
+                        img.img-fluid.img-mien-phi(src="img/tainguyenmienphi-vuong/28.png", alt="")
+                        a(href="download.html").img-tai-xuong-hover-box
+                                .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
+                                    div
+                                        .d-flex.justify-content-center
+                                            p.small .EPS
+                                        .d-flex.justify-content-center
+                                            p File Vector
+                    .col-8.tai-nguyen-mien-phi-content-frame
+                        img.img-fluid.img-mien-phi(src="img/tainguyenmienphi-ngang/17.png", alt="")
+                        a.img-tai-xuong-hover-box(href="dowload.html")
+                            .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
+                                div
+                                    .d-flex.justify-content-center
+                                        p.small .PSD
+                                    .d-flex.justify-content-center
+                                        p File Photo               
+                .col-12.col-sm-12.col-md-6.col-lg-6.col-xl-6.d-flex.justify-content-center
+                    .col-8.tai-nguyen-mien-phi-content-frame
+                        img.img-fluid.img-mien-phi(src="img/tainguyenmienphi-ngang/16.png", alt="")
+                        a(href="download.html").img-tai-xuong-hover-box
+                            .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
+                                div
+                                    .d-flex.justify-content-center
+                                        p.small .SVG
+                                    .d-flex.justify-content-center
+                                        p File Icon
+                    .col-4.tai-nguyen-mien-phi-content-frame.vip-star-frame
+                        img.img-fluid.img-mien-phi(src="img/tainguyenmienphi-vuong/27.png", alt="")
+                        a(href="loginviptodownload.html").img-tai-xuong-hover-box
+                            .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
+                                div
+                                    .d-flex.justify-content-center
+                                        p.small .EPS
+                                    .d-flex.justify-content-center
+                                        p File Vector
+
+            .row.d-flex.tai-nguyen-mien-phi-content-box
+                .col-12.col-sm-12.col-md-6.col-lg-6.col-xl-6.d-flex.justify-content-center
+                    .col-4.tai-nguyen-mien-phi-content-frame
+                        img.img-fluid.img-mien-phi(src="img/tainguyenmienphi-vuong/26.png", alt="")
+                        a(href="download.html").img-tai-xuong-hover-box
+                            .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
+                                div
+                                    .d-flex.justify-content-center
+                                        p.small .EPS
+                                    .d-flex.justify-content-center
+                                        p File Vector
+                    .col-4.tai-nguyen-mien-phi-content-frame
+                        img.img-fluid.img-mien-phi(src="img/tainguyenmienphi-vuong/25.png", alt="")
+                        a(href="download.html").img-tai-xuong-hover-box
+                            .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
+                                div
+                                    .d-flex.justify-content-center
+                                        p.small .JPG
+                                    .d-flex.justify-content-center
+                                        p File Photo
+                    .col-4.tai-nguyen-mien-phi-content-frame
+                        img.img-fluid.img-mien-phi(src="img/tainguyenmienphi-vuong/24.png", alt="")
+                        a(href="download.html").img-tai-xuong-hover-box
+                            .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
+                                div
+                                    .d-flex.justify-content-center
+                                        p.small .JPG
+                                    .d-flex.justify-content-center
+                                        p File Photo
+                .col-12.col-sm-12.col-md-6.col-lg-6.col-xl-6.d-flex.justify-content-center
+                    .col-8.tai-nguyen-mien-phi-content-frame
+                        img.img-fluid.img-mien-phi(src="img/tainguyenmienphi-ngang/15.png", alt="")
+                        a(href="download.html").img-tai-xuong-hover-box
+                            .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
+                                div
+                                    .d-flex.justify-content-center
+                                        p.small .EPS
+                                    .d-flex.justify-content-center
+                                        p File Vector
+                    .col-4.tai-nguyen-mien-phi-content-frame
+                        img.img-fluid.img-mien-phi(src="img/tainguyenmienphi-vuong/23.png", alt="")
+                        a(href="download.html").img-tai-xuong-hover-box
+                            .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
+                                div
+                                    .d-flex.justify-content-center
+                                        p.small .EPS
+                                    .d-flex.justify-content-center
+                                        p File Vector
+            .row.d-flex.tai-nguyen-mien-phi-content-box
+                .col-12.col-sm-12.col-md-6.col-lg-6.col-xl-6.d-flex.justify-content-center
+                    .col-8.tai-nguyen-mien-phi-content-frame.vip-star-frame
+                        img.img-fluid.img-mien-phi(src="img/tainguyenmienphi-ngang/14.png", alt="")
+                        img.img-vip(src="img/loginviptodownload/star.png", alt="")
+                        a(href="download.html").img-tai-xuong-hover-box
+                            .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
+                                div
+                                    .d-flex.justify-content-center
+                                        p.small .EPS
+                                    .d-flex.justify-content-center
+                                        p File Vector
+                    .col-4.tai-nguyen-mien-phi-content-frame
+                        img.img-fluid.img-mien-phi(src="img/tainguyenmienphi-vuong/22.png", alt="")
+                        a(href="download.html").img-tai-xuong-hover-box
+                            .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
+                                div
+                                    .d-flex.justify-content-center
+                                        p.small .EPS
+                                    .d-flex.justify-content-center
+                                        p File Vector
+                .col-12.col-sm-12.col-md-6.col-lg-6.col-xl-6.d-flex.justify-content-center
+                    .col-4.tai-nguyen-mien-phi-content-frame
+                        img.img-fluid.img-mien-phi(src="img/tainguyenmienphi-vuong/21.png", alt="")
+                        a(href="download.html").img-tai-xuong-hover-box
+                            .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
+                                div
+                                    .d-flex.justify-content-center
+                                        p.small .SVG
+                                    .d-flex.justify-content-center
+                                        p File Icon
+                    .col-8.tai-nguyen-mien-phi-content-frame
+                        img.img-fluid.img-mien-phi(src="img/tainguyenmienphi-ngang/13.png", alt="")
+                        a(href="download.html").img-tai-xuong-hover-box
+                            .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
+                                div
+                                    .d-flex.justify-content-center
+                                        p.small .EPS
+                                    .d-flex.justify-content-center
+                                        p File Vector
+            .row.d-flex.tai-nguyen-mien-phi-content-box
+                .col-12.col-sm-12.col-md-6.col-lg-6.col-xl-6.d-flex.justify-content-center
+                    .col-12.tai-nguyen-mien-phi-content-frame.vip-star-frame
+                        img.img-fluid.img-mien-phi(src="img/tainguyenmienphi-panorama/8.png", alt="")
+                        img.img-vip(src="img/loginviptodownload/star.png", alt="")
+                        a(href="download.html").img-tai-xuong-hover-box
+                            .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
+                                div
+                                    .d-flex.justify-content-center
+                                        p.small .JPG
+                                    .d-flex.justify-content-center
+                                        p File Photo
+                .col-12.col-sm-12.col-md-6.col-lg-6.col-xl-6.d-flex.justify-content-center
+                    .col-12.tai-nguyen-mien-phi-content-frame
+                        img.img-fluid.img-mien-phi(src="img/tainguyenmienphi-panorama/7.png", alt="")
+                        a(href="download.html").img-tai-xuong-hover-box
+                            .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
+                                div
+                                    .d-flex.justify-content-center
+                                        p.small .EPS
+                                    .d-flex.justify-content-center
+                                        p File Vector
+            .row.d-flex.tai-nguyen-mien-phi-content-box
+                .col-12.col-sm-12.col-md-6.col-lg-6.col-xl-6.d-flex.justify-content-center
+                    .col-4.tai-nguyen-mien-phi-content-frame
+                        img.img-fluid.img-mien-phi(src="img/tainguyenmienphi-vuong/20.png", alt="")
+                        a(href="download.html").img-tai-xuong-hover-box
+                            .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
+                                div
+                                    .d-flex.justify-content-center
+                                        p.small .JPG
+                                    .d-flex.justify-content-center
+                                        p File Photo
+                    .col-4.tai-nguyen-mien-phi-content-frame
+                        img.img-fluid.img-mien-phi(src="img/tainguyenmienphi-vuong/19.png", alt="")
+                        a(href="download.html").img-tai-xuong-hover-box
+                            .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
+                                div
+                                    .d-flex.justify-content-center
+                                        p.small .EPS
+                                    .d-flex.justify-content-center
+                                        p File Vector
+                    .col-4.tai-nguyen-mien-phi-content-frame
+                        img.img-fluid.img-mien-phi(src="img/tainguyenmienphi-vuong/18.png", alt="")
+                        a(href="download.html").img-tai-xuong-hover-box
+                            .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
+                                div
+                                    .d-flex.justify-content-center
+                                        p.small .SVG
+                                    .d-flex.justify-content-center
+                                        p File Icon
+                .col-12.col-sm-12.col-md-6.col-lg-6.col-xl-6.d-flex.justify-content-center
+                    .col-4.tai-nguyen-mien-phi-content-frame
+                        img.img-fluid.img-mien-phi(src="img/tainguyenmienphi-vuong/17.png", alt="")
+                        a(href="download.html").img-tai-xuong-hover-box
+                            .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
+                                div
+                                    .d-flex.justify-content-center
+                                        p.small .JPG
+                                    .d-flex.justify-content-center
+                                        p File Photo
+                    .col-4.tai-nguyen-mien-phi-content-frame
+                        img.img-fluid.img-mien-phi(src="img/tainguyenmienphi-vuong/16.png", alt="")
+                        a(href="download.html").img-tai-xuong-hover-box
+                            .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
+                                div
+                                    .d-flex.justify-content-center
+                                        p.small .SVG
+                                    .d-flex.justify-content-center
+                                        p File Icon
+                    .col-4.tai-nguyen-mien-phi-content-frame
+                        img.img-fluid.img-mien-phi(src="img/tainguyenmienphi-vuong/15.png", alt="")
+                        a(href="download.html").img-tai-xuong-hover-box
+                            .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
+                                div
+                                    .d-flex.justify-content-center
+                                        p.small .EPS
+                                    .d-flex.justify-content-center
+                                        p File Vector
+            .row.d-flex.tai-nguyen-mien-phi-content-box
+                .col-12.col-sm-12.col-md-6.col-lg-6.col-xl-6.d-flex.justify-content-center
+                    .col-4.tai-nguyen-mien-phi-content-frame
+                        img.img-fluid.img-mien-phi(src="img/tainguyenmienphi-vuong/14.png", alt="")
+                        a(href="download.html").img-tai-xuong-hover-box
+                            .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
+                                div
+                                    .d-flex.justify-content-center
+                                        p.small .JPG
+                                    .d-flex.justify-content-center
+                                        p File Photo
+                    .col-8.tai-nguyen-mien-phi-content-frame
+                        img.img-fluid.img-mien-phi(src="img/tainguyenmienphi-ngang/12.png", alt="")
+                        a(href="download.html").img-tai-xuong-hover-box
+                            .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
+                                div
+                                    .d-flex.justify-content-center
+                                        p.small .EPS
+                                    .d-flex.justify-content-center
+                                        p File Vector               
+                .col-12.col-sm-12.col-md-6.col-lg-6.col-xl-6.d-flex.justify-content-center
+                    .col-8.tai-nguyen-mien-phi-content-frame
+                        img.img-fluid.img-mien-phi(src="img/tainguyenmienphi-ngang/11.png", alt="")
+                        a(href="download.html").img-tai-xuong-hover-box
+                            .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
+                                div
+                                    .d-flex.justify-content-center
+                                        p.small .JPG
+                                    .d-flex.justify-content-center
+                                        p File Photo
+                    .col-4.tai-nguyen-mien-phi-content-frame
+                        img.img-fluid.img-mien-phi(src="img/tainguyenmienphi-vuong/13.png", alt="")
+                        a(href="download.html").img-tai-xuong-hover-box
+                            .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
+                                div
+                                    .d-flex.justify-content-center
+                                        p.small .EPS
+                                    .d-flex.justify-content-center
+                                        p File Vector
+        .d-flex.justify-content-center.so-trang.align-items-center
+            .d-flex.align-items-center
+                a.trang1(href="")
+                    p 1
+                a.trang2(href="")
+                    p 2
+                a.trang3(href="")
+                    p 3
+                p ...
+            a.trang-tiep-theo(href="")
+                p Trang tiếp theo
+            
+                    

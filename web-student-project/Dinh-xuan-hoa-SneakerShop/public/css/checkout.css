@@ -1,0 +1,69 @@
+.input-address{
+    height: 50px;
+    border: 1px solid #bdbdbd;
+    border-radius: 10px;
+    outline: none;
+    font-family: "Roboto", sans-serif;
+    color: #7e7e7e;
+    font-size: 17px;
+    line-height: 25px;
+}
+.textarria{
+    height: 163px;
+    border: 1px solid #bdbdbd;
+    border-radius: 10px;
+    outline: none;
+    font-family: "Roboto", sans-serif;
+    color: #7e7e7e;
+    font-size: 17px;
+    line-height: 25px;
+}
+.heading-checkout{
+    font-family: "Roboto", sans-serif;
+    font-size: 25px;
+    line-height: 38px;
+    font-weight: 800;
+    color: #f54f29;
+}
+.text-card-cart{
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 700;
+    color: #6d6d6d;
+}
+.card-cart{
+    background: #FFFFFF;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.13);
+    border-radius: 10px;
+    padding: 30px;
+}
+.product-checkout{
+    border-bottom: 1px solid rgb(207, 207, 207);
+}
+.img-card{
+    max-width: 100%;
+}
+.select-method{
+    width: 100%;
+    height: 100px;
+    border: 3px solid #b6b6b6;
+    box-sizing: border-box;
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 30px;
+    cursor: pointer;
+}
+
+.text-method{
+    font-family: "Roboto", sans-serif;
+    color: #7e7e7e;
+    font-size: 15px;
+    line-height: 23px;
+}
+.active-checked{
+    border: 3px solid #f54f29;
+}

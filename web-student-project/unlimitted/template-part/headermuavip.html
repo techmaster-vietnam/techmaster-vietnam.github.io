@@ -1,0 +1,210 @@
+
+<header>
+  <div class="menu">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="d-flex justify-content-between menu-content">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="index.html">Trang chủ</a></li>
+            <li class="nav-item"><a class="nav-link" href="tainguyenmienphi.html">Tài nguyên miễn phí</a></li>
+            <li class="nav-item"><a class="nav-link" href="tainguyenvip.html">Tài nguyên VIP</a></li>
+            <li class="nav-item" id="nav-mua-vip"><a class="nav-link" href="muavip.html">Mua VIP/SVIP</a></li>
+          </ul>
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="baiviet.html">Bài viết</a></li>
+            <li class="nav-item">
+              <button class="btn btn-primary nav-link nav-login-button" type="button" data-toggle="modal" data-target="#exampleModal">Đăng nhập/Đăng ký</button>
+            </li>
+            <li class="nav-item"><a class="nav-link nav-profile nav-profile-hover" href="#"><img src="img/user1.png" alt=""/></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content login-box">
+          <div class="login-button-box">
+            <div id="btn-login-box"></div>
+            <button class="login-button" onclick="login()"> 
+              <p>Đăng nhập</p>
+            </button>
+            <button class="login-button" onclick="register()"> 
+              <p>Register</p>
+            </button>
+          </div>
+          <div class="login-logo"><img class="img-fluid" src="img/logo.png" alt=""/></div>
+          <div class="social-icons"><img src="img/dangnhap/icon1.png" alt="icon1"/><img src="img/dangnhap/icon2.png" alt="icon2"/><img src="img/dangnhap/icon3.png" alt="icon3"/></div>
+          <form class="input-group" id="login-click">
+            <input class="input-field" id="name" type="text" name="name" placeholder="Email hoặc tên tài khoản" required="required"/>
+            <input class="input-field" id="pass" type="password" pass="pass" placeholder="Mật khẩu" required="required"/>
+            <div class="check-box">             
+              <input type="checkbox" name="name"/>
+              <p class="check-box-text">Ghi nhớ tài khoản</p>
+            </div>
+            <button class="submit-btn" type="submit"> 
+              <p>Đăng nhập</p>
+            </button>
+            <div class="xsmall" id="login-miss"></div>
+          </form>
+          <form class="input-group" id="register-click">
+            <input class="input-field" type="text" name="name" placeholder="Email hoặc tên tài khoản" required="required"/>
+            <input class="input-field" type="password" name="name" placeholder="Mật khẩu" required="required"/>
+            <input class="input-field" type="password" name="name" placeholder="Nhập lại mật khẩu" required="required"/>
+            <input class="input-field" type="text" name="name" placeholder="Tải avatar lên" required="required"/>
+            <div class="tai-ava"><a href="">
+                <div class="svip-button-index svip-button goi-button d-flex justify-content-center">
+                  <p>Tải lên      </p>
+                </div></a></div>
+            <div class="check-box">             
+              <input type="checkbox" name="name"/>
+              <p class="check-box-text">Ghi nhớ tài khoản</p>
+            </div>
+            <button class="submit-btn" type="submit"> 
+              <p>Đăng ký   </p>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header-content-box">
+    <div class="header-content-tai-nguyen-mien-phi-box">
+      <div class="profile profilea" id="profile3">
+        <div class="profile-box">
+          <div class="profile-avatar d-flex justify-content-center">
+            <div>
+              <col-10><img class="img-fluid" src="img/avatar3.png" alt="avatar"/></col-10>
+              <div class="d-flex justify-content-center"> <img class="img-fluid" src="img/crown.png" alt="VIP"/>
+                <p class="text-center small">Phan Trí</p>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex justify-content-center">   
+            <div class="profile-content">
+              <div class="profile-columnn d-flex justify-content-center">
+                <p class="profile-text">Email:</p>
+                <p>&nbsp;phantri3@gmail.com</p>
+              </div>
+              <div class="profile-columnn d-flex justify-content-center">
+                <p class="profile-text">Loại tài khoản:</p>
+                <p>&nbsp;Tài khoản SVIP</p>
+              </div>
+              <div class="profile-columnn d-flex justify-content-center">
+                <p class="profile-text">Ngày hết hạn:</p>
+                <p>&nbsp;25/08/2021</p>
+              </div>
+              <div class="profile-columnn d-flex justify-content-center">
+                <p class="profile-text">Đã tải xuống:</p>
+                <p>&nbsp;203 file</p>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex justify-content-center"><a id="dang-xuat-btn3" href="">
+              <p>Đăng xuất </p></a></div>
+        </div>
+      </div>
+      <div class="profile profilea" id="profile2">
+        <div class="profile-box">
+          <div class="profile-avatar d-flex justify-content-center">
+            <div>
+              <col-10><img class="img-fluid" src="img/avatar2.png" alt="avatar"/></col-10>
+              <div class="d-flex justify-content-center"> <img class="img-fluid" src="img/star2.png" alt="VIP"/>
+                <p class="text-center small">Phan Trí</p>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex justify-content-center">   
+            <div class="profile-content">
+              <div class="profile-columnn d-flex justify-content-center">
+                <p class="profile-text">Email:</p>
+                <p>&nbsp;phantri2@gmail.com</p>
+              </div>
+              <div class="profile-columnn d-flex justify-content-center">
+                <p class="profile-text">Loại tài khoản:</p>
+                <p>&nbsp;Tài khoản VIP</p>
+              </div>
+              <div class="profile-columnn d-flex justify-content-center">
+                <p class="profile-text">Ngày hết hạn:</p>
+                <p>&nbsp;15/09/2021</p>
+              </div>
+              <div class="profile-columnn d-flex justify-content-center">
+                <p class="profile-text">Đã tải xuống:</p>
+                <p>&nbsp;430 file</p>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex justify-content-center"><a href="muavip.html">
+              <div class="svip-button svip-button2 goi-button d-flex justify-content-center">
+                <p class="small">MUA SVIP</p>
+              </div></a></div>
+          <div class="d-flex justify-content-center"><a id="dang-xuat-btn2" href="">
+              <p>Đăng xuất  </p></a></div>
+        </div>
+      </div>
+      <div class="profile profilea" id="profile1">
+        <div class="profile-box">
+          <div class="profile-avatar d-flex justify-content-center">
+            <div>
+              <col-10><img class="img-fluid" src="img/avatar1.png" alt="avatar"/></col-10>
+              <p class="text-center small">Phan Trí</p>
+            </div>
+          </div>
+          <div class="d-flex justify-content-center">   
+            <div class="profile-content">
+              <div class="profile-columnn d-flex justify-content-center">
+                <p class="profile-text">Email:</p>
+                <p>&nbsp;phantri@gmail.com</p>
+              </div>
+              <div class="profile-columnn d-flex justify-content-center">
+                <p class="profile-text">Loại tài khoản:</p>
+                <p>&nbsp;Tài khoản thường</p>
+              </div>
+              <div class="profile-columnn d-flex justify-content-center">
+                <p class="profile-text">Ngày hết hạn:</p>
+                <p>&nbsp;28/11/2021</p>
+              </div>
+              <div class="profile-columnn d-flex justify-content-center">
+                <p class="profile-text">Đã tải xuống:</p>
+                <p>&nbsp;132 file</p>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex justify-content-center"><a href="muavip.html">
+              <div class="svip-button goi-button d-flex justify-content-center">
+                <p class="small">MUA VIP/SVIP</p>
+              </div></a></div>
+          <div class="d-flex justify-content-center"><a id="dang-xuat-btn1" href="">
+              <p>Đăng xuất</p></a></div>
+        </div>
+      </div>
+      <div class="header-content">
+        <div class="tieu-de-trang-box">
+          <div class="d-flex justify-content-center">
+            <div class="col-12 col-sm-12 col-md-10 col-lg-10 col-xl-10 d-flex justify-content-center align-items-center">                      
+              <div class="mua-vip-svip d-flex justify-content-end">
+                <div class="d-flex flex-column vip-svip-box">
+                  <div class="d-flex justify-content-center">
+                    <p class="xlarge">VIP</p>
+                  </div>
+                  <div class="d-flex justify-content-center">
+                    <p class="xlarge">SVIP</p>
+                  </div>
+                </div>
+              </div>
+              <div class="vip-giam-gia d-flex align-items-center flex-column">
+                <div class="d-flex align-items-center">
+                  <p class="large">Giảm giá</p>
+                  <p class="xlarge vip-30">&nbsp;30%</p>
+                </div>
+                <div>
+                  <p class="large">trong tháng 6</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

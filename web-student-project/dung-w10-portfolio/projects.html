@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>DungBu • Projects</title>
+    <link rel="shortcut icon" href="./Images/Favicon.jpg" type="image/x-icon">
+
+    <!-- Boootstrap CSS library -->
+    <link rel="stylesheet" href="./lib/Bootstrap-4.5.3/css/bootstrap.css">
+    <!-- CSS Chung - AOS -->
+    <link rel="stylesheet" href="./lib/AOS-Animation-On-Scroll/dist/aos.css">
+    <!-- CSS Chung - Slick -->
+    <link rel="stylesheet" href="./lib/Slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="./lib/Slick-1.8.1/slick/slick-theme.css">
+    <!-- CSS Chung - Owl Carousel -->
+    <link rel="stylesheet" href="./lib/OwlCarousel2-2.3.4/dist/assets/owl.carousel.css">
+    <link rel="stylesheet" href="./lib/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <!-- CSS Chung -->
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- CSS Riêng -->
+    <link rel="stylesheet" href="./css/projects.css">
+    <!-- CSS Chung - Hamburger menu -->
+    <link rel="stylesheet" href="./lib/burger-menu.css">
+    <!-- Font Awesome 5.14 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  </head>
+
+  <body>
+    <header id="headerID"> <!-- //////////// //////////// //////////// //////////// -->
+      <!-- Navbar - General Css------------------------------------------------------------------------------------------------ -->
+      <div class="vertical-navbar">
+        <a class="logo-MD" href="./index.html"><img src="./Images/Logo.png" alt="MD Logo"></a>
+
+        <nav class="navbar">
+          <a class="menu-item" href="index.html">
+            <span class="menu-title">home</span>
+            <div class="decor-mini"></div>
+          </a>
+          <a class="menu-item" href="projects.html">
+            <span class="menu-title">projects</span>
+            <div class="decor-mini"></div>
+          </a>
+          <a class="menu-item" href="profile.html">
+            <span class="menu-title">about</span>
+            <div class="decor-mini"></div>
+          </a>
+        </nav>
+
+        <a class="btn-CTA" href="./contact.html" role="button">Contact me</a>
+      </div>
+
+      <!-- Hamburger menu (RESPONSIVE Only) - Humburger menu css ------------------------------------------------------------------------------------------------ -->
+      <div class="hamburger">
+        <div class="burger-menu" onclick="hamburgerFunction()">
+          <div class="line-1"></div>
+          <div class="line-2"></div>
+          <div class="line-3"></div>
+        </div>
+        <div class="burger-menu-content">
+          <a href="index.html" class="burger-filling"><i class='fas fa-angle-right'></i>home</a>
+          <div class="break-20"></div>
+          <a href="projects.html" class="burger-filling"><i class='fas fa-angle-right'></i>projects</a>
+          <div class="break-20"></div>
+          <a href="profile.html" class="burger-filling"><i class='fas fa-angle-right'></i>about me</a>
+          <div class="break-20"></div>
+          <a href="contact.html" class="burger-filling"><i class='fas fa-angle-right'></i>contact</a>
+        </div>
+        <div class="burger-menu-blackscreen" onclick="hamburgerFunction()"></div>
+      </div>
+    </header> <!-- //////////// //////////// //////////// //////////// -->
+
+
+
+
+    <main id="mainID"> <!-- //////////// //////////// //////////// //////////// -->
+      <!-- Landing Page------------------------------------------------------------------------------------------------ -->
+      <div class="landing-page" id="home-landing-page">
+        <div class="container landing-page-bg">
+          <div class="landing-page-content" data-aos="fade-up" data-aos-offset="0" data-aos-delay="400">
+            <span class="header-42-46">Personal Portfolio</span>
+            <div class="break-8"></div>
+            <span class="header-42-46" style="color: #7051EF;">My Projects</span>
+            <div class="break-28"></div>
+            <span>Tổng hợp các Projects tôi đã từng làm từ trước đến nay. 
+                  Nghiêm cấm sao chép dưới mọi hình thức, xin cảm ơn.
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Background------------------------------------------------------------------------------------------------ -->
+      <div class="bg">
+        <div class="container">
+
+          <!-- Powerpoint Projects -->
+          <div class="break-200"></div>
+          <div class="break-40" id="home-projects"></div>
+          <div class="titleContent" data-aos="fade-up">
+            <div class="decor"></div>
+            <div class="break-8"></div>
+            <span class="header-32-36">Powerpoint projects</span>
+          </div>
+
+          <div class="break-60"></div>
+          <div class="grid-container" data-aos="fade-up">
+            <a href="./HTML-Projects/projectPPT01.html" class="grid-item" id="projects-PPT01">
+              <div class="grid-item-hover-bg"></div>
+              <img src="./Images/Projects/projectPPT01.png" alt="Project PPT01">
+              <div class="grid-item-name header-16-24" style="color: #FFFFFF;">#PP01</div>
+            </a>
+            <a href="./HTML-Projects/projectPPT02.html" class="grid-item" id="projects-PPT02" data-aos-delay="150">
+              <div class="grid-item-hover-bg"></div>
+              <img src="./Images/Projects/projectPPT02.png" alt="Project PPT02">
+              <div class="grid-item-name header-16-24" style="color: #FFFFFF;">#PP02</div>
+            </a>
+            <a href="./HTML-Projects/projectPPT03.html" class="grid-item" id="projects-PPT03" data-aos-delay="200">
+              <div class="grid-item-hover-bg"></div>
+              <img src="./Images/Projects/projectPPT03.png" alt="Project PPT03">
+              <div class="grid-item-name header-16-24" style="color: #FFFFFF;">#PP03</div>
+            </a>
+
+            <a href="./HTML-Projects/projectPPT04.html" class="grid-item" id="projects-PPT04" data-aos-delay="250">
+              <div class="grid-item-hover-bg"></div>
+              <img src="./Images/Projects/projectPPT04.png" alt="Project PPT04">
+              <div class="grid-item-name header-16-24" style="color: #FFFFFF;">#PP04</div>
+            </a>
+            <a href="./HTML-Projects/projectPPT05.html" class="grid-item" id="projects-PPT05" data-aos-delay="300">
+              <div class="grid-item-hover-bg"></div>
+              <img src="./Images/Projects/projectPPT05.png" alt="Project PPT05">
+              <div class="grid-item-name header-16-24" style="color: #FFFFFF;">#PP05</div>
+            </a>
+            <a href="./HTML-Projects/projectPPT06.html" class="grid-item" id="projects-PPT06" data-aos-delay="350">
+              <div class="grid-item-hover-bg"></div>
+              <img src="./Images/Projects/projectPPT06.png" alt="Project PPT06">
+              <div class="grid-item-name header-16-24" style="color: #FFFFFF;">#PP06</div>
+            </a>
+
+            <a href="./HTML-Projects/projectPPT07.html" class="grid-item" id="projects-PPT07" data-aos-delay="400">
+              <div class="grid-item-hover-bg"></div>
+              <img src="./Images/Projects/projectPPT07.png" alt="Project PPT07">
+              <div class="grid-item-name header-16-24" style="color: #FFFFFF;">#PP07</div>
+            </a>
+            <a href="./HTML-Projects/projectPPT08.html" class="grid-item" id="projects-PPT08" data-aos-delay="450">
+              <div class="grid-item-hover-bg"></div>
+              <img src="./Images/Projects/projectPPT08.png" alt="Project PPT08">
+              <div class="grid-item-name header-16-24" style="color: #FFFFFF;">#PP08</div>
+            </a>
+          </div>
+
+          <div class="break-60"></div>
+          <div class="btn-loadmore" onclick="loadMorePPT" style="text-align: center;" data-aos="fade-up" data-aos-delay="250">
+            <button type="button" class="btn btn-secondary" onclick="loadMorePPT()">Load more</button>
+          </div>
+
+          <!-- Web Projects -->
+          <div class="break-200"></div>
+          <div class="break-40" id="home-projects"></div>
+          <div class="titleContent" data-aos="fade-up">
+            <div class="decor"></div>
+            <div class="break-8"></div>
+            <span class="header-32-36">Web projects</span>
+          </div>
+
+          <div class="break-60"></div>
+          <div class="grid-container" data-aos="fade-up">
+            <a href="https://dungbubu.github.io/Web10/Clone-Instagram/IG-Login.html" target="_blank" class="grid-item" id="projects-WEB01">
+              <div class="grid-item-hover-bg"></div>
+              <img src="./Images/Projects/projectWEB01.png" alt="Project WEB01">
+              <div class="grid-item-name header-16-24" style="color: #FFFFFF;">#WEB01</div>
+            </a>
+            <a href="https://dungbubu.github.io/Web10/Source-code-day-8/BTVN-B8-Clone-FB.html" target="_blank" class="grid-item" id="projects-WEB02" data-aos-delay="150">
+              <div class="grid-item-hover-bg"></div>
+              <img src="./Images/Projects/projectWEB02.png" alt="Project WEB02">
+              <div class="grid-item-name header-16-24" style="color: #FFFFFF;">#WEB02</div>
+            </a>
+            <a href="https://dungbubu.github.io/Web10/Clone-Crypto/Crypto.html" target="_blank" class="grid-item" id="projects-WEB03" data-aos-delay="200">
+              <div class="grid-item-hover-bg"></div>
+              <img src="./Images/Projects/projectWEB03.png" alt="Project WEB03">
+              <div class="grid-item-name header-16-24" style="color: #FFFFFF;">#WEB03</div>
+            </a>
+          </div>
+
+          <!-- <div class="break-60"></div>
+          <div class="btn-loadmore" onclick="loadMoreWEB" style="text-align: center;" data-aos="fade-up" data-aos-delay="250">
+            <button type="button" class="btn btn-secondary" onclick="loadMoreWEB()">Load more</button>
+          </div> -->
+
+          <!-- Instagram Paintings -->
+          <div class="break-200"></div>
+          <div class="break-40" id="home-projects"></div>
+          <div class="titleContent" data-aos="fade-up">
+            <div class="decor"></div>
+            <div class="break-8"></div>
+            <span class="header-32-36">Paintings</span>
+          </div>
+
+          <div class="break-60"></div>
+          <div class="grid-container2" data-aos="fade-up">
+            <a href="https://www.instagram.com/p/-uqiCfKO4t/" target="_blank" class="grid-item" id="projects-IG01">
+              <div class="grid-item-hover-bg"></div>
+              <img src="./Images/Projects/projectIG01.png" alt="Project IG01">
+              <div class="grid-item-name header-16-24" style="color: #FFFFFF;">#IG01</div>
+            </a>
+            <a href="https://www.instagram.com/p/B-mx2d5DY77/" target="_blank" class="grid-item" id="projects-IG02" data-aos-delay="150">
+              <div class="grid-item-hover-bg"></div>
+              <img src="./Images/Projects/projectIG02.png" alt="Project IG02">
+              <div class="grid-item-name header-16-24" style="color: #FFFFFF;">#IG02</div>
+            </a>
+            <a href="https://www.instagram.com/p/B-myHvsDsxk/" target="_blank" class="grid-item" id="projects-IG03" data-aos-delay="200">
+              <div class="grid-item-hover-bg"></div>
+              <img src="./Images/Projects/projectIG03.png" alt="Project IG03">
+              <div class="grid-item-name header-16-24" style="color: #FFFFFF;">#IG03</div>
+            </a>
+
+            <a href="https://www.instagram.com/p/B-my_Z8DkGa/" target="_blank" class="grid-item" id="projects-IG04" data-aos-delay="250">
+              <div class="grid-item-hover-bg"></div>
+              <img src="./Images/Projects/projectIG04.png" alt="Project IG04">
+              <div class="grid-item-name header-16-24" style="color: #FFFFFF;">#IG04</div>
+            </a>
+            <a href="https://www.instagram.com/p/B-m0k5jDVzW/" target="_blank" class="grid-item" id="projects-IG05" data-aos-delay="300">
+              <div class="grid-item-hover-bg"></div>
+              <img src="./Images/Projects/projectIG05.png" alt="Project IG05">
+              <div class="grid-item-name header-16-24" style="color: #FFFFFF;">#IG05</div>
+            </a>
+            <a href="https://www.instagram.com/p/B_AWrFSjcC0/" target="_blank" class="grid-item" id="projects-IG06" data-aos-delay="350">
+              <div class="grid-item-hover-bg"></div>
+              <img src="./Images/Projects/projectIG06.png" alt="Project IG06">
+              <div class="grid-item-name header-16-24" style="color: #FFFFFF;">#IG06</div>
+            </a>
+
+            <a href="https://www.instagram.com/p/B-myoDpjX5i/" target="_blank" class="grid-item" id="projects-IG07" data-aos-delay="400">
+              <div class="grid-item-hover-bg"></div>
+              <img src="./Images/Projects/projectIG07.png" alt="Project IG07">
+              <div class="grid-item-name header-16-24" style="color: #FFFFFF;">#IG07</div>
+            </a>
+            <a href="https://www.instagram.com/p/B-m1OZnDcyJ/" target="_blank" class="grid-item" id="projects-IG08" data-aos-delay="450">
+              <div class="grid-item-hover-bg"></div>
+              <img src="./Images/Projects/projectIG08.png" alt="Project IG08">
+              <div class="grid-item-name header-16-24" style="color: #FFFFFF;">#IG08</div>
+            </a>
+            <a href="https://www.instagram.com/p/B-m06SJDzy7/" target="_blank" class="grid-item" id="projects-IG09" data-aos-delay="500">
+              <div class="grid-item-hover-bg"></div>
+              <img src="./Images/Projects/projectIG09.png" alt="Project IG09">
+              <div class="grid-item-name header-16-24" style="color: #FFFFFF;">#IG09</div>
+            </a>
+          </div>
+
+          <div class="break-60"></div>
+          <div class="btn-loadmore" style="text-align: center;"  data-aos="fade-up" data-aos-delay="200" data-aos-offset="0">
+            <button type="button" class="btn btn-secondary" onclick="loadMoreIG()">Load more</button>
+          </div>
+          <div class="break-120"></div>
+
+        </div>
+      </div>
+    </main> <!-- //////////// //////////// //////////// //////////// -->
+
+
+
+    
+    <footer id="footerID"> <!-- //////////// //////////// //////////// //////////// -->
+      <!-- Footer - General Css------------------------------------------------------------------------------------------------ -->
+      <div class="footer">
+        <div class="container">
+          <div class="footer-menu">
+            <a href="./HTML-Footer/error404.html" target="_blank">404</a>
+            <a href="./HTML-Footer/map.html" target="_blank" style="margin-left: 2rem;">Map</a>
+            <a href="./HTML-Footer/styleGuide.html" target="_blank" style="margin-left: 2rem;">Style guide</a>
+            <a href="./HTML-Footer/liscense.html" target="_blank" style="margin-left: 2rem;">Liscense</a>
+          </div>
+        </div>
+      </div>
+    </footer> <!-- //////////// //////////// //////////// //////////// -->
+
+
+
+
+    <!-- //////////// //////////// //////////// //////////// //////////// //////////// -->
+    <!-- jQuerry Ajax JS library -->
+    <script src="./lib/jQuerry-Ajax-3.5.1/jquery-3.5.1.js"></script>
+    <!-- Boootstrap JS library -->
+    <script src="./lib/Bootstrap-4.5.3/js/bootstrap.js"></script>
+    <!-- AOS JS library -->
+    <script src="./lib/AOS-Animation-On-Scroll/dist/aos.js"></script>
+    <!-- Slick JS library -->
+    <script src="./lib/Slick-1.8.1/slick/slick.min.js"></script>
+    <!-- Owl Carousel JS library -->
+    <script src="./lib/OwlCarousel2-2.3.4/dist/owl.carousel.js"></script>
+    <script src="./lib/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <!-- //////////// //////////// //////////// //////////// //////////// //////////// -->
+
+
+
+
+    <!-- //////////// //////////// //////////// //////////// //////////// //////////// -->
+    <!-- Javascript ------------------------------------------------------------------------------------------------ -->
+    <script>
+      // ------------ ------------ ------------ ------------ ------------ ------------
+      // Cài đặt thư viện hiệu ứng AOS ------------ ------------
+      AOS.init(
+        {
+          offset: 200,
+          delay: 100,
+          duration: 1000,
+          easing: 'ease-out',
+          mirror: true,
+        });
+
+
+      // ------------ ------------ ------------ ------------ ------------ ------------
+      // Đảm bảo khi load trang xong thì code bên dưới sẽ chạy luôn ------------ ------------
+      $(() => 
+            {
+              activeStateOnLoad();
+            });
+        
+      let menuItemActive = [...document.getElementsByClassName("menu-item")];
+      let burgerFilling = [...document.getElementsByClassName("burger-filling")];
+
+      function activeStateOnLoad()
+        {
+          menuItemActive[1].classList.add("active");
+          burgerFilling[1].classList.add("active");
+        }
+            
+
+      // ------------ ------------ ------------ ------------ ------------ ------------
+      // Hàm chạy thư viện Slick ------------ ------------
+
+
+      // ------------ ------------ ------------ ------------ ------------ ------------
+      // Hàm chạy thư viện Owl Carousel ------------ ------------
+      $('.owl-carousel').owlCarousel(
+        {
+          margin:40,
+          loop:true,
+          autoplay:true,
+          autoplayTimeout:2800,
+          autoplayHoverPause:true,
+          nav:true,
+          autoWidth:true,
+          responsive:
+            {
+              0:
+                {items:1},
+              576:
+                {items:2},
+              992:
+                {items:3}
+            }
+        })
+
+
+      // ------------ ------------ ------------ ------------ ------------ ------------
+      // Hàm tạo hiệu ứng cho Humburger menu ------------ ------------
+      function hamburgerFunction() 
+        {
+          document.querySelector(".burger-menu").classList.toggle("burger-menu-toggle");
+          document.querySelector(".burger-menu-content").classList.toggle("burger-menu-toggle");
+          document.querySelector(".burger-menu-blackscreen").classList.toggle("burger-menu-toggle");
+        }
+
+
+      // ------------ ------------ ------------ ------------ ------------ ------------
+      // Hàm ẩn Humburger menu khi ấn vào từng menu con ------------ ------------
+      document.querySelectorAll(".burger-menu-content a").forEach(function(element)
+        {
+          element.addEventListener("click" ,function()
+            {
+              setTimeout(function(){ hamburgerFunction(); }, 600);
+            });
+        });
+
+
+      // ------------ ------------ ------------ ------------ ------------ ------------
+      // Hàm tải thêm PPT Projects ------------ ------------
+      let l = 4;
+      function loadMorePPT()
+        {
+          $("#projects-PPT0" + l).slideDown("slow")
+          $("#projects-PPT0" + (l+1)).slideDown("slow")
+          $("#projects-PPT0" + (l+2)).slideDown("slow")
+          l = l + 3;
+        }
+
+
+      // ------------ ------------ ------------ ------------ ------------ ------------
+      // Hàm tải thêm WEB Projects ------------ ------------
+      // let m = 4;
+      // function loadMoreWEB()
+      //   {
+      //     $("#projects-WEB0" + m).slideDown("slow")
+      //     $("#projects-WEB0" + (m+1)).slideDown("slow")
+      //     $("#projects-WEB0" + (m+2)).slideDown("slow")
+      //     m = m + 3;
+      //   }
+
+
+      // ------------ ------------ ------------ ------------ ------------ ------------
+      // Hàm tải thêm IG Paintings ------------ ------------
+      let n = 4;
+      function loadMoreIG()
+        {
+          $("#projects-IG0" + n).slideDown("slow")
+          $("#projects-IG0" + (n+1)).slideDown("slow")
+          $("#projects-IG0" + (n+2)).slideDown("slow")
+          n = n + 3;
+        }
+    </script>
+    <!-- //////////// //////////// //////////// //////////// //////////// //////////// -->
+  </body>
+</html>

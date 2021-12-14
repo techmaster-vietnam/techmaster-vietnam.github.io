@@ -1,0 +1,23 @@
+.hero{
+	background-image: url('../images/purchassecontinue.png');
+}
+.inputemail,.inputsdt,textarea{
+	padding: 10px 10px;
+	margin-bottom: 30px;
+	border:1px solid black;
+}
+textarea{
+	margin-bottom: 0;
+}
+.width{
+	width: 45%;
+}
+span{
+	padding-left: 15px;
+}
+.khoithanhtoan{
+	font-weight: 500;
+	font-size: 22px;
+	line-height: 26px;
+	text-transform: capitalize;
+}

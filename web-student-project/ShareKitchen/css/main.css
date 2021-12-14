@@ -1,0 +1,835 @@
+/*Css for whole page*/
+*{
+    box-sizing: border-box;
+}
+body, html {
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: auto; /* this will fix 100% strech page*/
+    overflow-x: hidden;
+}
+.wrapper{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: auto; 
+    overflow-x: hidden;
+}
+/*Css for header 1*/
+.desktop-header{
+    display: block;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    height: 114px;
+    width: 100%;
+    background-color: black;
+}
+.mobile-header{
+    display: none;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    height: 114px;
+    width: 100%;
+    background-color: black;
+}
+.header-lv1{
+    position: relative;
+    display: flex;
+    height: 50px;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.headerWord-2{
+    cursor: pointer; 
+    font-size: 16px;
+}
+.fix{
+    color: white;
+}
+.log-in-container{
+    margin-left: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+}
+.border-1{
+    border-right: 1px solid white;
+    padding-right: 10px;
+}
+hr{
+    border:none;
+    border-top:1px dashed white;
+    width:100%;
+    margin: 0;
+}
+/*Css for header 2*/
+.logo{
+    cursor: pointer;
+    background-color: black;
+    background-image: url(../img/noodles.svg);
+    background-position: 57px 1px;
+    background-repeat: no-repeat;
+    margin-left: 15px;
+    position: relative;
+    width: 99px;
+    height: 40px;
+    margin-right: auto;
+    border: 1px solid white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+.logoWord{
+    position: absolute;
+    top: -4px;
+    font-size: 30px;
+    left: calc(50% - 38px);
+    color: white;
+}
+.header-lv2{
+    position: relative;
+    display: flex;
+    height: 64px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.header-lv2-content{
+    top:0px;
+    height: 63px;
+    width: 800px;
+    display: flex;
+    position: absolute;
+}
+.addToCart{
+    cursor: pointer;
+    position: absolute;
+    top:-1px;
+    left: calc(100% - 64px);
+    width: 64px;
+    height: 64px;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-1{
+    overflow: hidden;
+    background-color: black;
+}
+a{
+    height: 100%;
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    text-decoration: none !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 15px ;
+    padding-right: 15px;
+}
+  
+.dropdown-1{
+    text-decoration: none;
+    float: left;
+    overflow: hidden;
+}
+.dropdown-1 .dropbtn-1 {
+    text-decoration: none;
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 23px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+  
+.navbar-1 a:hover, .dropdown-1:hover .dropbtn-1 {
+    background-color: red;
+    color: white;
+}
+.dropdown-content-1 {
+    text-decoration: none;
+    top: 63px;
+    color: white;
+    display: none;
+    position: absolute;
+    background-color: red;
+    width: 217.53px;
+    z-index: 9999;
+}
+.dropdown-content-1 a {
+    width: 100%;
+    float: none;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+  
+.dropdown-content-1 a:hover {
+    background-color: #DF2323;
+}
+  
+.dropdown-1:hover .dropdown-content-1 {
+    display: block;
+}
+.form-search{
+    position: absolute;
+    width: 100px;
+    height: 40px;
+    left:calc(100% - 284px);
+}
+.form-search>input[type=text] {
+    width: 140px;
+    height: 40px;
+    background-color: black;
+    border: 1px solid #C4C4C4;
+    padding-left: 10px;
+    display:block;
+    margin: 0 0 0 auto;
+    font-size: 16px;
+    background-image: url('../img/magnifier-tool.svg');
+    padding: 12px 20px 12px 40px;
+    transition: width 0.4s ease-in-out;
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+}
+  
+.form-search>input[type=text]:focus {
+    width: 200px;
+    background-color: white;
+}
+
+
+/*footer*/
+.footer-desktop{
+    display: block;
+    height: 200px;
+    width: 100%;
+    background-color: black;
+    position: relative;
+}
+.footer-mobile{
+    display: none;
+    height: 200px;
+    width: 100%;
+    background-color: black;
+    position: relative;
+}
+.content-footer{
+    position: absolute;
+    top: calc(50% - 58px);
+    left: calc(0% - -67px);
+}
+.content-footer-1{
+    position: absolute;
+    top: calc(50% - 58px);
+    left: calc(0% - -305px);
+}
+.word-footer{
+    color: white;
+}
+.copyright{
+    position: absolute;
+    top: calc(100% - 39px);
+    left: calc(50% - 133px);
+}
+.social-network{
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 70px;
+    position: absolute;
+    top: calc(100% - 154px);
+    left: calc(100% - 390px);
+}
+
+@media only screen and (min-width: 300px ) and (max-width:647px){
+    /*header*/
+    .desktop-header{
+        display: none;
+        position: sticky;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        height: 114px;
+        width: 100%;
+        background-color: black;
+    }
+    .mobile-header{
+        position: relative;
+        display: block;
+        position: sticky;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        height: 63px;
+        width: 100%;
+        background-color: black;
+    }
+    .logo{
+        display: block;
+        position: absolute;
+        top: calc(50% - 20px);
+        left: calc(50% - 66.5px);
+    }
+    .overlay {
+        height: 0%;
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: black;
+        overflow-y: hidden;
+        transition: 0.5s;
+      }
+      
+      .overlay-content {
+        position: relative;
+        top: -30px;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+        height: 100%;
+        display: block;
+      }
+      
+      .overlay a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 16px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+      }
+      
+      .overlay a:hover, .overlay a:focus {
+        color: white;
+      }
+      
+      .overlay .closebtn {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        color: white;
+        font-size: 60px;
+      }
+      .menu-container{
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 63px;
+          width: 64px;
+          display: flex;
+          justify-content: center;
+          align-content: center;
+      }
+      .menu-container-2{
+        position: relative;
+        top: 0;
+        left: 0;
+        height: 63px;
+        width: 64px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+      }
+      .form-search{
+        position: absolute;
+        left: auto;
+        margin-left: 1%;
+        margin-right: 1%;
+        width: 98%;
+        height: 40px;
+      }
+      .form-search>input[type=text] {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        border: 1px solid #C4C4C4;
+        padding-left: 10px;
+        display:block;
+        margin: 0 0 0 auto;
+        font-size: 16px;
+        background-image: url('../img/magnifier-tool.svg');
+        padding: 12px 20px 12px 40px;
+        transition: width 0.4s ease-in-out;
+        background-position: 10px 10px; 
+        background-repeat: no-repeat;
+        display: flex;
+        flex-grow: 1;
+    }
+      
+    .form-search>input[type=text]:focus {
+        width: 100%;
+        background-color: white;
+    }
+    .overlay-content-menu{
+        position: absolute;
+        width: 190px;
+        top: 50px;
+        left: calc(50% - 95px);
+    }
+    li{
+        width: 182px;
+        height: 57px;
+        cursor: pointer;
+        list-style-type: none;
+    }
+    li > a{
+        height: 100%;
+        width: 100%;
+    }
+    ul{
+        padding-inline-start: 0;
+        cursor: pointer;
+        list-style-type: none;
+    }
+    .m-drinkandfood{
+        width: 182px;
+    }
+    .fix{
+        color: #818181;
+    }
+    .fix:hover{
+        color: white;
+    }
+    /*footer*/
+    .footer-desktop{
+        display: none;
+        height: 200px;
+        width: 100%;
+        background-color: black;
+        position: relative;
+    }
+    .footer-mobile{
+        display: block;
+        height: 319px;
+        width: 100%;
+        background-color: black;
+        position: relative;
+    }
+    .content-footer{
+        position: absolute;
+        top: 65px;
+        left: calc(50% - 110.705px);
+    }
+    .content-footer-1{
+        position: absolute;
+        top: 158px;
+        left: calc(50% - 110px);
+    }
+    .word-footer{
+        color: white;
+    }
+    .copyright{
+        position: absolute;
+        top: calc(100% - 39px);
+        left: calc(50% - 133px);
+    }
+    .social-network{
+        cursor: pointer;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 70px;
+        position: absolute;
+        top: 20px;
+        left: calc(50% - 110.705px);
+    }
+    .image-footer{
+        
+        height: 27.17px;
+    }
+}
+@media only screen and (min-width: 962px ) and (max-width:1300px){
+     /*header*/
+     .desktop-header{
+        display: none;
+        position: sticky;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        height: 114px;
+        width: 100%;
+        background-color: black;
+    }
+    .mobile-header{
+        position: relative;
+        display: block;
+        position: sticky;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        height: 63px;
+        width: 100%;
+        background-color: black;
+    }
+    .fix{
+        color: #818181;
+    }
+    .fix:hover{
+        color: white;
+    }
+    .logo{
+        display: block;
+        position: absolute;
+        top: calc(50% - 20px);
+        left: calc(50% - 66.5px);
+    }
+    .overlay {
+        height: 0%;
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: black;
+        overflow-y: hidden;
+        transition: 0.5s;
+      }
+      
+      .overlay-content {
+        position: relative;
+        top: -30px;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+        height: 100%;
+        display: block;
+      }
+      
+      .overlay a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 16px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+      }
+      
+      .overlay a:hover, .overlay a:focus {
+        color: white;
+      }
+      
+      .overlay .closebtn {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        color: white;
+        font-size: 60px;
+      }
+      .menu-container{
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 63px;
+          width: 64px;
+          display: flex;
+          justify-content: center;
+          align-content: center;
+      }
+      .menu-container-2{
+        position: relative;
+        top: 0;
+        left: 0;
+        height: 63px;
+        width: 64px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+      }
+      .form-search{
+        position: absolute;
+        left: auto;
+        margin-left: 1%;
+        margin-right: 1%;
+        width: 98%;
+        height: 40px;
+      }
+      .form-search>input[type=text] {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        border: 1px solid #C4C4C4;
+        padding-left: 10px;
+        display:block;
+        margin: 0 0 0 auto;
+        font-size: 16px;
+        background-image: url('../img/magnifier-tool.svg');
+        padding: 12px 20px 12px 40px;
+        transition: width 0.4s ease-in-out;
+        background-position: 10px 10px; 
+        background-repeat: no-repeat;
+        display: flex;
+        flex-grow: 1;
+    }
+      
+    .form-search>input[type=text]:focus {
+        width: 100%;
+        background-color: white;
+    }
+    .overlay-content-menu{
+        position: absolute;
+        width: 190px;
+        top: 50px;
+        left: calc(50% - 95px);
+    }
+    li{
+        width: 182px;
+        height: 57px;
+        cursor: pointer;
+        list-style-type: none;
+    }
+    li > a{
+        height: 100%;
+        width: 100%;
+    }
+    ul{
+        padding-inline-start: 0;
+        cursor: pointer;
+        list-style-type: none;
+    }
+    .m-drinkandfood{
+        width: 182px;
+    }
+    /*footer*/
+    .footer-desktop{
+        display: none;
+        height: 200px;
+        width: 100%;
+        background-color: black;
+        position: relative;
+    }
+    .footer-mobile{
+        display: block;
+        height: 200px;
+        width: 100%;
+        background-color: black;
+        position: relative;
+    }
+    .word-footer{
+        color: white;
+    }
+    .copyright{
+        position: absolute;
+        top: calc(100% - 39px);
+        left: calc(50% - 133px);
+    }
+    .social-network{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 70px;
+        position: absolute;
+        top: calc(100% - 154px);
+        left: calc(100% - 390px);
+    }
+}
+@media only screen and (min-width: 648px ) and (max-width:961px){
+      /*header*/
+      .desktop-header{
+        display: none;
+        position: sticky;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        height: 114px;
+        width: 100%;
+        background-color: black;
+    }
+    .mobile-header{
+        position: relative;
+        display: block;
+        position: sticky;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        height: 63px;
+        width: 100%;
+        background-color: black;
+    }
+    .logo{
+        display: block;
+        position: absolute;
+        top: calc(50% - 20px);
+        left: calc(50% - 66.5px);
+    }
+    .overlay {
+        height: 0%;
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: black;
+        overflow-y: hidden;
+        transition: 0.5s;
+      }
+      
+      .overlay-content {
+        position: relative;
+        top: -30px;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+        height: 100%;
+        display: block;
+      }
+      
+      .overlay a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 16px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+      }
+      
+      .overlay a:hover, .overlay a:focus {
+        color: white;
+      }
+      
+      .overlay .closebtn {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        color: white;
+        font-size: 60px;
+      }
+      .menu-container{
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 63px;
+          width: 64px;
+          display: flex;
+          justify-content: center;
+          align-content: center;
+      }
+      .menu-container-2{
+        position: relative;
+        top: 0;
+        left: 0;
+        height: 63px;
+        width: 64px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+      }
+      .form-search{
+        position: absolute;
+        left: auto;
+        margin-left: 1%;
+        margin-right: 1%;
+        width: 98%;
+        height: 40px;
+      }
+      .form-search>input[type=text] {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        border: 1px solid #C4C4C4;
+        padding-left: 10px;
+        display:block;
+        margin: 0 0 0 auto;
+        font-size: 16px;
+        background-image: url('../img/magnifier-tool.svg');
+        padding: 12px 20px 12px 40px;
+        transition: width 0.4s ease-in-out;
+        background-position: 10px 10px; 
+        background-repeat: no-repeat;
+        display: flex;
+        flex-grow: 1;
+    }
+      
+    .form-search>input[type=text]:focus {
+        width: 100%;
+        background-color: white;
+    }
+    .overlay-content-menu{
+        position: absolute;
+        width: 190px;
+        top: 50px;
+        left: calc(50% - 95px);
+    }
+    li{
+        width: 182px;
+        height: 57px;
+        cursor: pointer;
+        list-style-type: none;
+    }
+    li > a{
+        height: 100%;
+        width: 100%;
+    }
+    ul{
+        padding-inline-start: 0;
+        cursor: pointer;
+        list-style-type: none;
+    }
+    .m-drinkandfood{
+        width: 182px;
+    }
+    /*footer*/
+    .footer-desktop{
+        display: none;
+        height: 200px;
+        width: 100%;
+        background-color: black;
+        position: relative;
+    }
+    .footer-mobile{
+        display: block;
+        height: 300px;
+        width: 100%;
+        background-color: black;
+        position: relative;
+    }
+    .word-footer{
+        color: white;
+    }
+    .copyright{
+        position: absolute;
+        top: calc(100% - 39px);
+        left: calc(50% - 133px);
+    }
+    .social-network{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 70px;
+        position: absolute;
+        top: calc(67% - 154px);
+        left: calc(50% - 154px);
+    }
+    .content-footer{
+        position: absolute;
+        top: calc(50% - 14px);
+        left: calc(50% - 214px);
+    }
+    .content-footer-1{
+        position: absolute;
+        top: calc(50% - 17px);
+        left: calc(50% - -25px);
+    }
+}
+

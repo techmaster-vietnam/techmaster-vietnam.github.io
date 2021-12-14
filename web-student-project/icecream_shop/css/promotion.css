@@ -1,0 +1,60 @@
+.my-banner {
+	background-image: url('../images/promo-bg.png');
+}
+
+.btn-getinfo {
+	background-color: #363739;
+	color: white;
+	padding: 10px 15px;
+	font-weight: bold;
+	transition: all 0.5s linear;
+	margin-left: 1em;
+}
+
+.btn-getinfo:hover {
+	background-color: #add8a6;
+	color: #363739;
+	box-shadow: 0 0 10px 2px lightgray;
+}
+
+.promotion-content {
+	padding: 80px 0px;
+}
+
+.annouce {
+	font-size: 1.2em;
+}
+
+.promo {
+	padding: 0px;
+	transition: all 0.5s linear;
+}
+
+.promo:hover {
+	box-shadow: 0 0 10px 5px gray;
+	transform: translateY(-2%);
+}
+
+.info-promo {
+	padding: 1em;
+	background-color: white;
+	text-align: justify;
+}
+
+.title-promo {
+	color: #493521;
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+@media (min-width: 992px) {
+	.info-promo {
+		padding: 3em;
+	}
+}
+
+a, a:hover {
+	text-decoration: none;
+	color: #363739;
+}

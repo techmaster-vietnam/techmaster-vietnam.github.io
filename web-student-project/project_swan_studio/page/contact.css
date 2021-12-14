@@ -1,0 +1,46 @@
+#contact-text{
+    max-width: 800px;
+}
+
+@media(max-width:576px){
+    #contact-text{
+        width: 100%;
+    }
+}
+
+#row8{
+    max-width: 800px;
+}
+
+#fullname, #dateofbirth, #phonenumber, #address, #email{
+    width: 100%;
+    border: solid 2px #E0BE07;
+    font-size: 14px;
+    padding: 0.5rem;
+}
+
+#content{
+    width: 100%;
+    border: solid 2px #E0BE07;
+    font-size: 14px;
+    padding: 0.5rem
+}
+
+#submit{
+    width: 150px;
+    border: solid 2px #E0BE07;
+    font-size: 14px;
+    padding: 0.5rem;
+    background-color: #ffffff;
+    transition: all 0.6s linear;
+}
+
+#submit:hover{
+    background-color: #E0BE07;
+    color: #ffffff;
+    border: solid 2px #E0BE07;
+}
+
+.error{
+	color: #E0BE07;
+}

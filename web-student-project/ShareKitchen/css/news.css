@@ -1,0 +1,227 @@
+/*navigation bar*/
+.navigation-news{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 60px;
+}
+.navigation-home-1{
+    float: left;
+    font-size: 16px;
+    color: black;
+}
+.next-image{
+    float: left;
+    margin-top: 20px;
+}
+.navigation-news-1{
+    float: left;
+    font-size: 16px;
+    color: black;
+}
+/*news*/
+.news-desktop{
+    position: relative;
+    width: 100%;
+    height: 1152px;
+}
+.word-news-1{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 32px;
+    color: red;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+.news-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    padding: 0 4px;
+}
+.column-news-1{
+    margin: 50px;
+}
+.column-news-2{
+    margin: 50px;
+}
+.column-news-3{
+    margin: 50px;
+}
+.box-1{
+    margin-top: 20px;
+    border: 1px solid #C4C4C4;
+    position: relative;
+    width: 300px;
+    height: 400px;
+}
+.box-2{
+    margin-top: 20px;
+    border: 1px solid #C4C4C4;
+    position: relative;
+    width: 300px;
+    height: 500px;
+}
+.image-box-2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+}
+.word-box-4{
+    position: absolute;
+    top: 436px;
+    left: calc(50% - 103.025px);
+    font-size: 16px;
+}
+.box-3{
+    margin-top: 20px;
+    border: 1px solid #C4C4C4;
+    position: relative;
+    width: 300px;
+    height: 300px;
+}
+.image-box-3{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+}
+.word-box-5{
+    position: absolute;
+    top: 234px;
+    left: calc(50% - 113.75px);
+    font-size: 16px;
+}
+.box-4{
+    margin-top: 20px;
+    border: 1px solid #C4C4C4;
+    position: relative;
+    width: 300px;
+    height: 549px;
+}
+.image-box-4{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../img/keo-ku-do-ha-tinh.jpg);
+    width: 300px;
+    height: 449px;
+}
+.word-box-6{
+    position: absolute;
+    top: 483px;
+    left: calc(50% - 113px);
+    font-size: 16px;
+}
+.image-box-1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+}
+.word-box-1{
+    position: absolute;
+    top: 337px;
+    left: calc(50% - 102.735px);
+    font-size: 16px;
+}
+.word-box-2{
+    position: absolute;
+    top: 337px;
+    left: calc(50% - 128.68px);
+    font-size: 16px;
+}
+.word-box-3{
+    position: absolute;
+    top: 337px;
+    left: calc(50% - 120.1px);
+    font-size: 16px;
+}
+@media only screen and (min-width: 827px ) and (max-width:1235px){
+    .news-desktop{
+        position: relative;
+        width: 100%;
+        height: 2192px;
+    }
+}
+@media only screen and (min-width: 300px ) and (max-width:826px){
+    .news-desktop{
+        position: relative;
+        width: 100%;
+        height: 3032px;
+    }
+}
+/*modal*/
+.myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+ 
+#myImg:hover {opacity: 0.7;}
+ 
+/* định dạng phần nền của modal */
+.modal-1 {
+    display: none; /* mặc định được ẩn đi */
+    position: fixed; /* vị trí được cố định */
+    z-index: 9999; /* ưu tiên hiển thị đầu tiên */
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.9); 
+    overflow-y: scroll;
+}
+ 
+/* Phần nội hình ảnh của modal */
+.modal-content-1 {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 300px;
+}
+ 
+/* phần caption của modal image */
+#caption-1 {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    color: #ccc;
+    padding: 10px 0;
+    height: 100%;
+}
+ 
+/* Hiệu ứng chuyển động*/
+.modal-content-1, #caption-1 {    
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+ 
+/* Button đóng Modal */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+ 
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}

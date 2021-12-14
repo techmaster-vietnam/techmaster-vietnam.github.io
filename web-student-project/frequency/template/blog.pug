@@ -1,0 +1,93 @@
+extends ./template-part/layout.pug
+
+block title
+    title Blog - Frequency
+    link(rel="stylesheet" href="./css/blog.css")
+
+block banner
+    .banner 
+        .banner__overlay
+        .banner__title BLOG
+        .banner__subtitle
+            p.banner__subtitle--align Chúng tôi chia sẻ những câu chuyện 
+            p với mục đích truyền cảm hứng cho những bạn trẻ
+
+block content
+    .main
+        h1.title FREQUENCY
+            span.title--regular BLOG
+
+        .container.px-0
+            .post
+                .post__main
+                    .post__title
+                        img(src="./img/post-blog.jpg" alt="post-banner")
+                        .post__title-body
+                            h1.post__title-h1 Why Not?
+                            p.post__title-content Với mục đích truyền cảm hứng đến cho các bạn trẻ, đây là nơi chúng ta tâm sự, trò chuyện, chia sẻ những điều người trẻ đang trăn trở, những câu chuyện truyền cảm hứng mang tinh thần "Why not?", với hy vọng giúp các bạn thay đổi cách nhìn cũng như cách giải quyết mọi vấn đề trong cuộc sống...
+                            a(href="#").post__title-link
+                                | Đọc tiếp
+                                i.fas.fa-chevron-right
+
+                    -var arr = [{img: "./img/banner-blog-1.jpg", title: "Kẻ dám nghĩ - Người dám làm", content: "Dreamer được xem là những người dành nhiều thời gian cho việc mơ mộng về những thứ không-bình thường, hoặc không tầm thường..."},{img: "./img/banner-blog-2.jpg", title: "Chiếc đồng hồ đầu tiên bạn sở hữu là khi nào?", content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..."},{img: "./img/banner-blog-3.jpg", title: "Chiếc đồng hồ đầu tiên bạn sở hữu là khi nào?", content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..."},{img: "./img/banner-blog-4.jpg", title: "Chiếc đồng hồ đầu tiên bạn sở hữu là khi nào?", content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..."}]
+
+                    each post in arr    
+                        .post__subtitle
+                            img(src= post.img alt="post")
+                            .post__subtitle-content
+                                h1= post.title 
+                                p= post.content
+                                a(href="#") 
+                                    | Đọc tiếp
+                                    i.fas.fa-chevron-right
+                .info
+                    .info__founder
+                        img(src="./img/founder.jpg" alt="founder")
+                        .info__founder-main
+                            h1.info__founder-main-name Minh Hoàng
+                            h2.info__founder-main-description Developer web & Founder FREQUENCY 
+                            p.info__founder-main-content Lập trình viên và là nhà sáng lập hãng đồng hồ FREQUENCY, với mục tiêu là tạo ra những sản phẩm giúp cuộc sống của mọi người trở nên dễ dàng hơn... 
+                            .info__founder-main-icon
+                                a(href="#").info__founder-main-social
+                                    i.fab.fa-facebook-f
+                                a(href="#").info__founder-main-social    
+                                    i.fab.fa-twitter
+                                a(href="#").info__founder-main-social    
+                                    i.fab.fa-instagram
+                    .info__search
+                        h1.info__search-title Tìm kiếm bài viết
+                        .info__search-line
+                        .info__search-group
+                            button.info__search-group-btn 
+                                i.fas.fa-search
+                            input.info__search-group-input(type="text" placeholder="Search")
+                        h1.info__search-subtitle Bài viết phổ biến
+
+                        - var post = [{img: "./img/popular-blog.jpg", title: "Inside The Garden & Blooming Flowers", date: "Jan 20.2021"},{img: "./img/popular-blog.jpg", title: "Inside The Garden & Blooming Flowers", date: "Jan 20.2021"},{img: "./img/popular-blog.jpg", title: "Inside The Garden & Blooming Flowers", date: "Jan 20.2021"},{img: "./img/popular-blog.jpg", title: "Inside The Garden & Blooming Flowers", date: "Jan 20.2021"}]
+
+                        each i in post
+                            .info__search-popular
+                                img(src= i.img alt="post").info__search-popular--border
+                                .info__search-popular-short
+                                    a(href="#")= i.title
+                                    p= i.date
+
+                        .info__search-follow
+                            img(src="./img/blog-follow.jpg" alt="follow")
+                            .info__search-follow-content
+                                p Đăng kí theo dõi chúng tôi tại
+                                .info__search-follow-social
+                                    a(href="#").info__search-follow-social--link
+                                        i.fab.fa-facebook-f
+                                    a(href="#").info__search-follow-social--link
+                                        i.fab.fa-twitter
+                                    a(href="#").info__search-follow-social--link
+                                        i.fab.fa-instagram
+
+        //- .container
+        //-     .page
+        //- //-         h1.page-title Bài viết bạn có thể thích    
+
+
+block javascript
+    script(src="./js/blog.js") 

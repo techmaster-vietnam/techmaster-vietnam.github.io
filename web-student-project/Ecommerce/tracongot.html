@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700italic,700,800,800italic&subset=latin,vietnamese' rel='stylesheet' type='text/css' />
+    <link href="assets/styles/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/styles/font-awesome.min.css" rel="stylesheet" />
+    <link href="assets/styles/slick.css" rel="stylesheet" />
+    <link href="assets/styles/owl.carousel.min.css" rel="stylesheet" />
+	<script src="assets/js/jwplayer.js"></script>
+    <script src="assets/js/key.js"></script>
+    <script type="text/javascript">jwplayer.key = "5qMQ1qMprX8KZ79H695ZPnH4X4zDHiI0rCXt1g==";</script>
+    <!--main style-->
+    <link href="assets/styles/style.css" rel="stylesheet" />
+    <link href="assets/styles/fonts.css" rel="stylesheet" />
+    <link href="assets/styles/site.css" rel="stylesheet" />
+    <link href="assets/styles/site-respon.css" rel="stylesheet" />
+    <!--end main style-->
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript">
+        function changeActiveMenu(page) {
+            $('#menu li').removeClass("active");
+            $('#menu li a[href*="' + page + '"]').parent("li").addClass("active");
+        }
+        function changeSubActiveMenu(page) {
+            $('#menu li li').removeClass("active");
+            $('#menu li li a[href$="' + page + '"]').parents("li").addClass("active");
+            $('.menu-list li').removeClass("active");
+            $('.menu-list li a[href$="' + page + '"]').parents("li").addClass("active");
+            var value1 = $('a.a-link-sp').attr('href');
+            $('#menu li li a[href$="' + value1 + '"]').parents("li").addClass("active");
+            $('.menu-list li a[href$="' + value1 + '"]').parents("li").addClass("active");
+            var value2 = $('a.a-link-spc').attr('href');
+            $('#menu li li a[href$="' + value2 + '"]').parents("li").addClass("active");
+            $('.menu-list li a[href$="' + value2 + '"]').parents("li").addClass("active");
+        }
+    </script>
+    <title>Organic Food</title>
+</head>
+<body>
+        <div id="wrapper">
+                <div id="wrapper-in">
+                    <div id="header">
+                        <div class="top-head">
+                            <div class="container">
+                                <div class="pull-left">
+                                    <p>Liên hệ đặt hàng: <span>0988.669.167</span> (24/7)</p>
+                                </div>
+                                
+                        <div class="logo">
+                            <a href="index.html">
+                                <img src="assets/images/logogreen.png" alt="" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bot-head">
+                    <div class="container">
+                        <div class="menu">
+                            <ul id="menu" class="desktop-992">
+                                <li id="a12"><a href="index.html">trang chủ</a></li>
+                                <li>
+                                    <a href="introduce.html">giới thiệu</a>
+                                </li>
+                                <li><a href="products.html">sản phẩm</a></li>
+                                <li><a href="news.html">Mẹo sạch</a></li>
+                                <li><a href="contact.html">Liên hệ</a></li>
+                            </ul>
+                            <a class="panel-a menu-mo ipadmo-992" href="#menumobile" data-position="true" data-type="false">
+                                <span class="fa fa-reorder"></span>Menu
+                            </a>
+                        </div>
+                        <!--slide_df-->
+                    </div>
+                </div>
+            </div>
+            <div class="clr"></div>
+            <div id="main-content">
+
+                   
+                    <div class="clr"></div>
+                    <div class="main">
+                        <div class="aside">
+                            <div class="cate-rice">
+                                <ul>
+                                    <li><a href="raucu.html">Rau củ</a></li>
+                                    <li><a href="hoaqua.html">Hoa quả</a></li>
+                                    <li><a href="tra.html">Trà</a></li>
+                                    <li><a href="nam.html">Nấm</a></li>
+                                    <li><a href="hatgiong.html">Hạt giống</a></li>
+                                </ul>
+                            </div>
+                            <div class="sp_noibat">
+                                <h1>Sản phẩm nổi bật</h1>
+                                <div class="sp-cate">
+                                    <div class="item">
+                                        <a href="tao.html"><img src="assets/images/hoaqua1.jpg" alt="" /></a>
+                                        <a href="tao.html">Táo</a>
+                                        <span>35.000 <sup>đ</sup>/kg</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wrap-main">
+                            <div class="head-cate-pro">
+                                <div role="tabpanel">
+                                    <!-- Nav tabs -->
+                                    
+
+                                    <!-- Tab panes -->
+                                    <div class="tab-content">
+                                        <div role="tabpanel" class="tab-pane" id="sp1">
+                                                <div class="product-cate">
+                                                        <div class="item">
+                                                            <div class="wrap-content">
+                                                                <div class="img">
+                                                                    <a href="tracongot.html">
+                                                                        <img src="assets/images/tra6.jpg" alt="" />
+                                                                    </a>
+                                                                    <div class="sale">
+                                                                        <img src="assets/images/sale.png" alt="" />
+                                                                    </div>
+                                                                </div>
+                                                                <div class="content">
+                                                                    <a href="tracongot.html">Trà cỏ ngọt</a>
+                                                                    <span>16.000 <sup>đ</sup>/kg</span>
+                                                                </div>
+                                                                
+                                                            </div>
+                                                        </div>
+                                                        <div class="item">
+                                                            <p class="mota">TRÀ CỎ NGỌT</p></br>
+                                                            <p class="mota">Trà cỏ ngọt dùng chữa bệnh như đau đầu, hoa mắt, nhịp tim nhanh.</p></br>
+                                                            <p class="mota">Mỗi lần dùng 3g rửa sạch với 200ml nước, hãm với nước sôi trong bình kín, sau chừng 10 phút thì dùng được, uống thay trà trong ngày.</p></br>
+                                                            <p class="mota">Đối với bệnh mất ngủ nên chế trà uống vào chiều tối sẽ có tác dụng nhanh nhất.</p>
+                                                        </div>
+            
+                                                    </div>
+                                                </div>
+                                                </div>
+                                            
+                                                </div>
+                                                </div>
+                                                </div>
+                                                <footer id="footer1">
+                                                        <div class="container">
+                                                            <div class="row">
+                                                                <div class="pull-left col-md-4 col-sm-6">
+                                                                    <p>
+                                                                    Hotline đặt hàng (24/7)
+                                                                    <span>0988.669.167</span>
+                                                                    </p>
+                                                                    <span class="info">
+                                                                    Fax: 043.123.123</br></br></br></span>
+                                                                    <em><span class="info2">Phục vụ quý khách hàng 24h!</span></em>
+                                                                </div>
+                                                                <div class="pull-right col-md-4 col-sm-6">
+                                                                   <h4 class="title"><b>Địa chỉ</b></h4>
+                                                                    <span>Số nhà 131, Lĩnh Nam, Hoàng Mai, Hà Nội</span></br>
+                                                                    <span>Điện thoại: (043) 1900 1000</span></br>
+                                                                    <span>Email : greenfood@gmail.com</span></br>
+                                                                </div>
+                                                                <div class="pull-right col-md-4 col-sm-6">
+                                                                    <span class="footerTitle xs-center-block">Giải thưởng</span>
+                                                                    <img class="alignnone size-medium wp-image-1472 img-responsive" src="https://miss-organic.com/wpData/wp-content/uploads/2017/08/logos1-1-300x106.png" alt="" srcset="https://miss-organic.com/wpData/wp-content/uploads/2017/08/logos1-1-300x106.png 300w, https://miss-organic.com/wpData/wp-content/uploads/2017/08/logos1-1.png 317w" sizes="(max-width: 300px) 100vw, 300px"/>
+                                                                    <span class="footerTitle xs-center-block">Đối tác</span>
+                                                                    <img src="https://miss-organic.com/wpData/wp-content/uploads/2017/08/logos2-300x48.png" alt="" class="alignnone size-medium wp-image-1468 img-responsive" srcset="https://miss-organic.com/wpData/wp-content/uploads/2017/08/logos2-300x48.png 300w, https://miss-organic.com/wpData/wp-content/uploads/2017/08/logos2.png 320w" sizes="(max-width: 300px) 100vw, 300px"/>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    
+                                                    </footer>
+                                                    <div class="copyright">
+                                                        <p>Copyright © 2019 Vu Anh - All rights reserved.</p>
+                                                    </div>
+        <a href="#" class="scroll-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a>
+        <div id="runScript"></div>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/jquery.panel.mobile.js"></script>
+        <script src="assets/js/slick.min.js"></script>
+        <script src="assets/js/owl.carousel.min.js"></script>
+        <!-- main js -->
+        <script src="assets/js/jquery.main.js"></script>
+    
+        <!-- end main js -->
+    </body>
+    </html>

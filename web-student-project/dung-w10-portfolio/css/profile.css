@@ -1,0 +1,471 @@
+/* ------------ ------------ ------------ ------------ */
+/* --Landing Page-- ------ */
+.landing-page
+  {
+    width: 100%;
+    height: 100vh;
+    padding-left: 10rem;
+    background-image: url(../Images/Profile/ProfileBackground.png);
+    background-color: #FAFAFA;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+.landing-page-bg
+  {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+.landing-page-content
+  {
+    margin-top: 24rem;
+    width: 48rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+
+/* ------------ ------------ ------------ ------------ */
+/* --Background 1-- ------ */
+.bg1 
+  {
+    background-image: url(../Images/Profile/BG1.png);
+    background-color: #FFFFFF;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+    /* --Profile-- ------ */
+    .profile-menu
+      {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+    .profile-img
+      {
+        margin-right: 20px;
+        max-width: 44rem;
+        object-fit: cover;
+        overflow: hidden;
+      }
+    .profile-img img
+      {
+        height: 100%;
+      }
+    .profile-content
+      {
+        width: 53.2rem;
+      }
+    .profile-credit-info
+      {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+    /*-- My Profile - More information */
+    .profile-moreInfo
+      {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+    .moreInfo-content
+      {
+        padding: 6rem 2.2rem 10rem 2.2rem;
+        width: 52rem;
+        height: 42.4rem;
+        border-radius: 8px;
+        background-color: #FFFFFF;
+        box-shadow: 6px 12px 24px rgba(0, 0, 0, 0.06);
+      }
+    .moreInfo-decor
+      {
+        margin: 2px 20px 2px 0;
+        width: 20px;
+        height: 20px;
+        border-radius: 10px;
+        background-color: #7051EF;
+      }
+    .moreInfo-text
+      {
+        max-width: calc(52rem - 40px - 2.2rem - 2.2rem);
+      }
+
+    /* --Expertise-- ------ */
+    .expertise-menu
+      {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+    .expertise-item
+      {
+        padding: 0 2.2rem 4rem 2.2rem;
+        width: 28rem;
+        min-height: 32rem;
+        background-color: #FFFFFF;
+        box-shadow: 4px 6px 12px 4px rgba(0, 0, 0, 0.06);
+        border-radius: 12px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+    .expertise-item-img
+      {
+        margin-top: -6rem;
+        width: 12rem;
+      }
+    .expertise-item-img img
+      {
+        width: 100%;
+      }
+
+    .expertise-item:hover
+      {
+        background-color: #7051EF;
+      }
+    .expertise-item:hover >span
+      {
+        color: #FFFFFF;
+      }
+    /* --Owl Carousel-- ------ */
+    .owl-stage-outer
+      {
+        padding: 6rem 2rem 2rem 0;
+      }
+    .owl-nav, .owl-dot
+      {
+        display: none;
+      }
+    
+
+/* ------------ ------------ ------------ ------------ */
+/* --Experience-- ------ */
+.experience-menu
+  {
+    z-index: -1;
+    position: fixed;
+    top: 50%;
+    left: calc(50% + 5rem);
+    transform: translate(-50%, -50%);
+    padding: 0;
+    width: 108.4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #FFFFFF;
+  }
+.experience-item
+  {
+    width: 25.6rem;
+    text-align: center;
+  }
+.experience-item p
+  {
+    margin: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+  }
+
+  
+/* ------------ ------------ ------------ ------------ */
+/* --Background 2-- ------ */
+.bg2
+  {
+    background-image: url(../Images/Profile/BG2.png);
+    background-color: #FFFFFF;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+    /* --My Cilent-- ------ */
+    .grid-container
+      {
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-columns: auto auto auto auto;
+      }
+    .grid-item
+      {
+        box-shadow: 6px 12px 24px rgba(0, 0, 0, 0.06);
+      }
+    .grid-item img
+      {
+        width: 100%;
+      }
+
+    /* --Follow me-- ------ */
+    .grid-container2
+      {
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-columns: auto auto auto;
+      }
+    .grid-item-follow-hover
+      {
+        z-index: 1;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        opacity: 0;
+      }
+    .follow1:hover .grid-item-follow-hover,
+    .follow2:hover .grid-item-follow-hover,
+    .follow3:hover .grid-item-follow-hover
+      {
+        opacity: 1;
+      }
+
+
+/* ------------ ------------ ------------ ------------ */
+/* --RESPONSIVE-- ------ */ 
+@media (max-width: 1200px)
+  {
+    /* --Profile-- ------ */
+    .profile-content
+      {
+        width: 48rem;
+      }
+    /*-- My Profile - More information */
+    .moreInfo-content
+      {
+        padding: 6rem 2.2rem 10rem 2.2rem;
+        width: 40rem;
+      }
+    .moreInfo-text
+      {
+        max-width: calc(40rem - 40px - 2.2rem - 2.2rem);
+      }
+
+    /* --Expertise-- ------ */
+    .expertise-item
+      {
+        width: 24rem;
+      }
+
+    /* --Experience-- ------ */
+    .experience-menu
+      {
+        width: 84rem;
+      }
+  }
+
+@media (max-width: 992px)
+  {
+    /* --Profile-- ------ */
+    .profile-credit-info
+      {
+        flex-direction: column;
+      }
+
+    /*-- My Profile - More information */
+    .moreInfo-content
+      {
+        padding: 2.8rem 2.2rem 4.4rem 2.2rem;
+        width: 30rem;
+        height: 50rem;
+      }
+    .moreInfo-text
+      {
+        max-width: calc(30rem - 40px - 2.2rem - 2.2rem);
+      }
+
+    /* --Experience-- ------ */
+    .experience-menu
+      {
+        width: 64rem;
+      }
+    .experience-item
+      {
+        width: 10rem;
+      }
+  }
+
+@media (max-width: 768px)
+  {
+    /* --Landing Page-- ------ */
+    .landing-page
+      {
+        padding-left: 0;
+      }
+    .landing-page
+      {
+        background-image: none;
+      }
+
+    /* --Profile-- ------ */
+    .profile-menu
+      {
+        flex-direction: column;
+        align-items: center;
+      }
+    .profile-img
+      {
+        margin-right: 0;
+      }
+    .profile-content
+      {
+        margin-top: 4rem;
+      }
+    .profile-menu .responsiveStyle
+      {
+        text-align: center;
+      }
+    .profile-credit-info
+      {
+        flex-direction: row;
+      }
+    
+    /*-- My Profile - More information */
+    .profile-moreInfo
+      {
+        flex-direction: column;
+      }
+    .profile-moreInfo .break
+      {
+        margin-top: 8rem;
+      }
+    .moreInfo-content
+      {
+        padding: 2.8rem 2.2rem 4rem 2.2rem;
+        width: 100%;
+        min-height: 36rem;
+      }
+    .moreInfo-text
+      {
+        max-width: calc(100% - 40px - 2.2rem - 2.2rem);
+      }
+
+    /* --Experience-- ------ */
+    .experience-menu
+      {
+        left: 50%;
+        padding: 0 1.2rem;
+        width: 54rem;
+      }
+  }
+
+@media (max-width: 576px)
+  {
+    /* --Landing Page-- ------ */
+    .landing-page-content
+      {
+        width: 100%;
+      }
+    /* --Profile-- ------ */
+    .responsiveStyle .btn-primary
+      {
+        margin-top: 1.4rem;
+      }
+
+    /*-- My Profile - More information */
+    .profile-moreInfo .break
+      {
+        margin-top: 4rem;
+      }
+    .moreInfo-content
+      {
+        min-height: 46rem;
+      }
+
+    /* --Expertise-- ------ */
+    .expertise-item
+      {
+        padding-bottom: 2.8rem;
+        min-height: 28rem;
+      }
+    .expertise-item-img
+      {
+        margin-top: -4rem;
+        width: 10rem;
+        height: 10rem;
+      }
+
+    /* --Experience-- ------ */
+    .experience-menu
+      {
+        padding: 0 0.4rem;
+        width: 32rem;
+      }
+    .experience-item
+      {
+        width: 6.2rem;
+      }
+    .experience-item p
+      {
+        font-size: 3.2rem;
+        line-height: 3.6rem;
+        font-stretch: ultra-condensed;
+      } 
+    .experience-item span
+      {
+        font-size: 1rem;
+        line-height: 1.2rem;
+        font-stretch: ultra-condensed;
+      }
+
+    /* --Profile-- ------ */
+    .profile-img, .profile-content
+      {
+        width: 100%;
+      }
+    .profile-img img
+      {
+        height: unset;
+      }
+    .profile-credit-info
+      {
+        flex-direction: column;
+      }
+  }
+
+@media (max-width: 320px)
+  {
+    /*-- My Profile - More information */
+    .moreInfo-content
+      {
+        min-height: 32rem;
+      }
+
+    /* --Expertise-- ------ */
+    .expertise-item
+      {
+        padding: 1.8rem 2rem;
+        min-height: 24rem;
+      }
+
+    /* --Experience-- ------ */
+    .experience-menu
+      {
+        padding: 0 0.4rem;
+        width: 100%;
+      }
+    .experience-menu span
+      {
+        font-size: 1rem;
+        line-height: 2rem;
+      }
+
+    /* --My Cilent-- ------ */
+    .grid-container
+      {
+        grid-gap: 0.4rem;
+      }
+
+    /* --Follow me-- ------ */
+    .grid-container2
+      {
+        grid-gap: 0.4rem;
+      }
+  }

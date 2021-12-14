@@ -1,0 +1,468 @@
+/**************** PRODUCT **************/
+
+.product {
+  padding-top: 2.2rem;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+}
+
+#product__filter {
+  padding-right: 1rem;
+}
+#product__filter-icon {
+  display: none;
+}
+#product__filter.isMobile {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 30rem;
+  padding: 5rem 3rem;
+  z-index: 20;
+  background-color: white;
+  height: 100vh;
+  overflow-y: auto !important;
+
+  transform: translateX(0);
+  transition: transform 0.3s ease-in-out;
+  
+}
+.product__background {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--color-grey-9);
+  top: 0;
+  left: 0;
+  z-index: 10;
+  display: none;
+}
+
+#product__filter.isMobile.isClose {
+  transform: translateX(-100%);
+}
+@media (max-width: 991px) {
+  #product__filter-icon {
+    display: block;
+    position: fixed;
+    top: 25%;
+    left: 0;
+    font-size: 1.5rem;
+    z-index: 1;
+
+    color: var(--color-white);
+    width: 3.5rem;
+    background-color: var(--color-red);
+    height: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:0 .5rem .5rem 0;
+  }
+}
+
+.product__section {
+  margin-bottom: 2rem;
+  color: var(--color-grey);
+}
+
+.product__section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.4rem;
+}
+
+.product__section__title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  color: var(--color-grey);
+}
+
+.product__section-header span i {
+  font-size: 1.8rem;
+  transform: rotate(-90deg);
+  color: var(--color-grey);
+
+  transition: transform 0.3s ease-in-out;
+}
+
+.product__section-header span.isOpen i {
+  transform: rotate(90deg);
+}
+
+.product__wraper {
+  overflow: hidden;
+
+  height: 0;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.product__wraper.isOpen {
+  height: auto;
+  opacity: 1;
+}
+.fa-chevron-right {
+  transform: rotate(90deg);
+  transition: all 0.3s ease-in-out;
+}
+
+.isOpen ~ .fa-chevron-right {
+  transform: rotate(-90deg);
+}
+.product__checkbox-group {
+  position: relative;
+  margin-bottom: 0.8rem;
+}
+
+.product__checkbox-group input {
+  opacity: 0;
+}
+
+.product__checkbox-group label::before {
+  content: "";
+  height: 1.3rem;
+  width: 1.3rem;
+  position: absolute;
+  top: 0.5rem;
+  left: 0;
+  background-color: white;
+  border-radius: 2px;
+  border: 1px solid var(--color-grey);
+}
+
+.product__checkbox-group input:checked ~ label::after {
+  display: block;
+}
+
+.product__checkbox-group label::after {
+  content: "\f00c";
+  color: var(--color-grey);
+  transition: all 0.25s;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  top: 0.1rem;
+  left: 0;
+  font-size: 1.5rem;
+  display: none;
+}
+
+.product__checkbox-group label {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+
+  padding-left: 0.5rem;
+}
+
+.product__border {
+  width: 100%;
+  height: 0;
+  border-bottom: 1px solid var(--color-grey);
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.product__btn {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  background-color: var(--color-red);
+  padding: 0.8rem 1rem 0.8rem 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-red);
+
+  color: var(--color-white);
+  transition: all 0.3s ease-in-out;
+}
+
+.product__btn--white {
+  background-color: var(--color-white);
+  color: var(--color-grey);
+  border: 1px solid var(--color-grey);
+}
+
+.product__btn--white:hover {
+  color: var(--color-white);
+  border: none;
+}
+.product__action {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+#product__close {
+  display: none;
+}
+
+@media (max-width: 991px) {
+  #product__close {
+    display: block;
+  }
+}
+
+#product__close p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.8rem;
+  line-height: 1.9rem;
+
+  border: 1px solid var(--color-grey);
+  border-radius: 0.5rem;
+  padding: 1rem 1rem;
+  text-align: center;
+  color: var(--color-grey);
+}
+.product__btn:focus {
+  outline: none;
+}
+
+.product__btn:hover {
+  background-color: var(--color-red-2);
+}
+
+.product__sort {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+.product__sort-title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+
+  color: var(--color-grey);
+  margin: 0;
+  margin-right: 1rem;
+}
+
+#product__select {
+  width: 19rem;
+  height: 3.6rem;
+  border-color: var(--color-grey);
+  border-radius: 0.5rem;
+  background-color: var(--color-white);
+  color: var(--color-grey);
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  padding: 0 1rem;
+  outline: none;
+}
+
+.product__sort-icon {
+  margin-left: -2.3rem;
+  color: var(--color-grey);
+  font-size: 1.8rem;
+  transform: rotate(90deg);
+}
+
+/* LIST PRODUCT */
+
+.best-slice {
+  padding: 7.4rem 0;
+}
+
+.heading-secondery {
+  font-family: Pattaya;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 4rem;
+  line-height: 5.6rem;
+
+  display: block;
+  text-align: center;
+  margin-bottom: 5rem;
+  position: relative;
+  padding-bottom: 0.6rem;
+  width: 100%;
+}
+
+.heading-secondery::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  background-color: var(--color-red);
+  height: 0.5rem;
+  width: 15rem;
+
+  transform: translateX(-50%);
+}
+
+.heading-secondery--white {
+  color: var(--color-white);
+}
+
+.best-slice a:link,
+.best-slice a:visited {
+  text-decoration: none;
+}
+
+.best-slice__card {
+  box-shadow: 0 1.2rem 3rem rgba(0, 0, 0, 0.07);
+  border-radius: 5px;
+  overflow: hidden;
+  transition: box-shadow 0.5s ease-in;
+
+  margin-bottom: 3rem;
+}
+
+.best-slice__card:hover {
+  box-shadow: 0 1.2rem 3rem rgba(0, 0, 0, 0.2);
+}
+
+.best-slice__photo {
+  overflow: hidden;
+}
+
+.best-slice__card a img {
+  transition: transform 0.5s ease-in;
+  width: 100%;
+  height: 100%;
+}
+.best-slice__card:hover a img {
+  transform: scale(1.2);
+}
+.best-slice__content {
+  text-align: center;
+  padding: 2.1rem 1rem;
+}
+
+.best-slice__content a {
+  text-decoration: none;
+}
+
+.best-slice__heading {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+  color: var(--color-grey);
+  margin-bottom: 0.9rem;
+
+  transition: color 0.3s linear;
+}
+
+.best-slice__heading:hover {
+  color: var(--color-red);
+}
+
+.best-slice__rate {
+  font-size: 2rem;
+  color: var(--color-yellow);
+  margin-bottom: 0.9rem;
+}
+
+.best-slice__rate i {
+  margin-right: 0.6rem;
+}
+.best-slice__rate i:last-child {
+  margin-right: 0;
+}
+
+.best-slice__price {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 2.3rem;
+  margin-bottom: 0.9rem;
+}
+
+.best-slice__button:link,
+.best-slice__button:visited {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  background-color: var(--color-red);
+  padding: 1rem 2.2rem;
+  border-radius: 5px;
+  display: inline-block;
+  color: var(--color-white);
+
+  transition: background-color 0.2s linear;
+  text-decoration: none;
+}
+
+.best-slice__button span {
+  font-size: 2rem;
+  line-height: 2.3rem;
+  margin-right: 2.2rem;
+}
+
+.best-slice__button i {
+  font-size: 2.2rem;
+  text-decoration: none;
+}
+
+.best-slice__button:hover,
+.best-slice__button:active {
+  background-color: var(--color-red-2);
+}
+
+@media (max-width: 1199px) {
+  .best-slice__button:link {
+    padding: 1rem 0.8rem;
+  }
+}
+
+.product__pages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product__pages a:link,
+.product__pages a:visited {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.6;
+  line-height: 1.9;
+  background-color: var(--color-white);
+
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  margin-right: 3.3rem;
+  margin-top: 2rem;
+  color: var(--color-red);
+  display: inline-block;
+
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+.product__pages a.active {
+  background-color: var(--color-red);
+  color: var(--color-white);
+}
+.product__pages a:hover,
+.product__pages a:active {
+  background-color: var(--color-red-2);
+  color: var(--color-white);
+}

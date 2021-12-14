@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="header.js"></script>
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Unlimitted</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/headerstyle.css"/>
+    <link rel="stylesheet" href="css/styleindex.css"/>
+    <link rel="stylesheet" href="css/tainguyenmienphi.css"/>
+    <link rel="stylesheet" href="css/hover.css"/>
+    <link rel="stylesheet" href="css/download.css"/>
+    <link rel="stylesheet" href="css/download1.css"/>
+    <link rel="stylesheet" href="css/reponsive.css"/>
+  </head>
+  <body>
+    <header>
+      <div class="menu">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="d-flex justify-content-between menu-content">
+              <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="index.html">Trang chủ</a></li>
+                <li class="nav-item"><a class="nav-link" href="tainguyenmienphi.html">Tài nguyên miễn phí</a></li>
+                <li class="nav-item"><a class="nav-link" href="tainguyenvip.html">Tài nguyên VIP</a></li>
+                <li class="nav-item" id="nav-mua-vip"><a class="nav-link" href="muavip.html">Mua VIP/SVIP</a></li>
+              </ul>
+              <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="baiviet.html">Bài viết</a></li>
+                <li class="nav-item">
+                  <button class="btn btn-primary nav-link nav-login-button" type="button" data-toggle="modal" data-target="#exampleModal">Đăng nhập/Đăng ký</button>
+                </li>
+                <li class="nav-item"><a class="nav-link nav-profile" href="#"><img src="img/user1.png" alt=""/></a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content login-box">
+            <div class="login-button-box">
+              <div id="btn-login-box"></div>
+              <button class="login-button" onclick="login()"> 
+                <p>Đăng nhập</p>
+              </button>
+              <button class="login-button" onclick="register()"> 
+                <p>Register</p>
+              </button>
+            </div>
+            <div class="login-logo"><img class="img-fluid" src="img/logo.png" alt=""/></div>
+            <div class="social-icons"><img src="img/dangnhap/icon1.png" alt="icon1"/><img src="img/dangnhap/icon2.png" alt="icon2"/><img src="img/dangnhap/icon3.png" alt="icon3"/></div>
+            <form class="input-group" id="login-click">
+              <input class="input-field" id="name" type="text" name="name" placeholder="Email hoặc tên tài khoản" required="required"/>
+              <input class="input-field" id="pass" type="password" pass="pass" placeholder="Mật khẩu" required="required"/>
+              <div class="check-box">             
+                <input type="checkbox" name="name"/>
+                <p class="check-box-text">Ghi nhớ tài khoản</p>
+              </div>
+              <button class="submit-btn" type="submit"> 
+                <p>Đăng nhập</p>
+              </button>
+              <div class="xsmall" id="login-miss"></div>
+            </form>
+            <form class="input-group" id="register-click">
+              <input class="input-field" type="text" name="name" placeholder="Email hoặc tên tài khoản" required="required"/>
+              <input class="input-field" type="password" name="name" placeholder="Mật khẩu" required="required"/>
+              <input class="input-field" type="password" name="name" placeholder="Nhập lại mật khẩu" required="required"/>
+              <input class="input-field" type="text" name="name" placeholder="Tải avatar lên" required="required"/>
+              <div class="tai-ava"><a href="">
+                  <div class="svip-button-index svip-button goi-button d-flex justify-content-center">
+                    <p>Tải lên     </p>
+                  </div></a></div>
+              <div class="check-box">             
+                <input type="checkbox" name="name"/>
+                <p class="check-box-text">Ghi nhớ tài khoản</p>
+              </div>
+              <button class="submit-btn" type="submit"> 
+                <p>Đăng ký </p>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="d-flex justify-content-center download">
+      <div class="row col-10 d-flex download-box">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8 d-flex justify-content-center img-frame">
+          <div class="col-9 d-flex justify-content-center img-frame-content"><img class="img-fluid" src="img/download/img.png" alt="anh"/></div>
+          <div class="download-icon d-flex flex-column"><a href=""><img src="img/download/heart.png" alt="heart"/></a><a href=""><img src="img/download/share.png" alt="share"/></a><a href=""><img src="img/download/comment.png" alt="comment"/></a></div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 download-content">
+          <div class="row">
+            <div class="col-12 col-sm-5 col-md-4 col-lg-12 col-xl-12 quang-cao">
+              <div class="d-flex justify-content-center">
+                <p class="large">VIP/SVIP</p>
+              </div>
+              <div class="d-flex justify-content-center">
+                <p>Không giới hạn tài nguyên</p>
+              </div>
+              <div class="d-flex justify-content-center">
+                <p>Không quảng cáo</p>
+              </div>
+              <div class="d-flex justify-content-center">                       <a href="#">
+                  <div class="svip-button goi-button quang-cao-button d-flex justify-content-center">
+                    <p class="small">MUA NGAY</p>
+                  </div></a></div>
+            </div>
+            <div class="col-12 col-sm-7 col-md-8 col-lg-12 col-xl-12 download-content-box">
+              <p class="xsmall">Sport-poster-with-photo</p>
+              <div class="d-flex justify-content-start">
+                <p>File:&nbsp;</p><a href=""> 
+                  <p>Vector</p></a>
+              </div>
+              <p>Định dạng: .EPS</p><a href="#">
+                <div class="download-button d-flex justify-content-center tai-ve-mien-phi">
+                  <p class="normal">Tải về</p>
+                </div></a>
+              <div class="row d-flex justify-content-between align-items-center dowload-ty-le-mau-sac">
+                <div class="yeu-cau-box">
+                  <div class="yeu-cau-dang-nhap d-flex justify-content-center flex-column">
+                    <div class="d-flex justify-content-center">
+                      <p class="yeu-cau">Bạn phải đăng nhập để tải về</p>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                      <div class="svip-button-index svip-button goi-button d-flex justify-content-center dong-y-dang-nhap">
+                        <p>Đăng nhập</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tai-xuong-thanh-cong">
+                  <div class="d-flex justify-content-center">
+                    <p class="small">Tải xuống thành công</p>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 d-flex justify-content-start align-items-center dowload-ty-le">
+                  <p>Tỷ lệ:&nbsp;</p>
+                  <div class="ty-le-icon-img">                 <img src="img/filter/doc.png" alt=""/></div>
+                  <p>&nbsp;Dọc</p>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 d-flex justify-content-end align-items-center dowload-mau-sac">
+                  <p>Màu sắc:&nbsp;</p><img src="img/filter/timthan.png" alt="mauden"/><img src="img/filter/do.png" alt="maudo"/><img src="img/filter/trang.png" alt="mautrang"/>
+                </div>
+              </div>
+              <p>Số lượt tải xuống: 1295845 lượt</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"></script>
+  <script src="js/dangnhap.js"></script>
+  <script src="js/header.js"></script>
+</html>

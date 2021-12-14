@@ -1,0 +1,87 @@
+.main-page {
+    .jumbotron {
+        margin-top: 6.5rem;
+        text-align: center;
+
+        h1 {
+            font-size: 4rem;
+        }
+
+        p {
+            font-size: 2.8rem;
+        }
+    }
+
+    .img {
+        max-width: 100%;
+    }
+
+    &-show {
+        box-shadow: 0.5px 0.5px 1px 0.5px rgba(0,0,0,0.75);
+        margin-bottom: 6rem;
+
+        h4 {
+            font-size: 2.5rem;
+            margin-top: 2rem;
+        }
+
+        p {
+            font-size: 2.5rem;
+            color: #EB1212;
+            font-weight: bold;
+        }
+        
+        //ticket
+        &__ticket {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 1rem;
+        
+            h3{
+                font-size: 2.5rem;
+            }
+        }
+
+        //icon
+        &__icon {
+            margin-bottom: 1.5rem;
+            .btn {
+                font-size: 2.5rem;
+                font-weight: 500;
+            }
+        }
+
+        //date
+        &__date {
+            border: 1px solid gainsboro;
+            p {
+                margin:0;
+                text-align: center;
+                color: gray;
+            }
+
+            p:first-child {
+                background-color: #36acfe;
+                color: white;
+                padding: 0.5rem 2rem;
+                font-size: 1.5rem;
+                font-weight: bold;
+            }
+
+            p:nth-child(2) {
+                font-size: 2rem;
+                color: black;
+                font-weight: bold;
+                background-color: whitesmoke;
+            }
+
+            p:nth-child(3) {
+                font-size: 2rem;
+                color: black;
+                font-weight: bold;
+                background-color: whitesmoke;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,26 @@
+.anh-bia {
+    position: relative;
+}
+
+.anh-bia img{
+    width: 100%;
+    height: auto;
+}
+
+.ten-bia {
+    position: absolute;
+    text-align: center;
+    width: fit-content;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.ten-bia span {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.ten-bia ul {
+    list-style: none;
+}

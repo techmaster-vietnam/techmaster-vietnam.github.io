@@ -1,0 +1,271 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    outline: none;
+}
+
+button{
+    border: none;cursor: pointer;
+}
+
+.main--wrapper{
+    padding-top: 85px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-container-leftBlock{
+    width: 20%;
+    padding: 14px;
+    background-color: #F4F4F4;
+}
+
+.info-img{
+    width: 20%;
+    margin-right: 5px;
+}
+
+.info-name{
+    width: 80%;
+}
+
+.fa-user-circle{
+    font-size: 40px;
+    color: #D0D0D0;
+}
+
+.leftBlock-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info-edit{
+    display: flex;
+    justify-content: start;
+}
+
+.info-edit button{
+    margin-left: 20px;
+}
+
+.info-edit button{
+    background-color: #F4F4F4;
+}
+
+.leftBlock-addr,.leftBlock-transac{
+    display: flex;
+    justify-content: start;
+    width: 70%;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.leftBlock-addr h3{
+    margin-left: 20px;
+}
+.leftBlock-transac h3{
+    margin-left: 14px;
+}
+
+.main-container-rightBlock-acc{
+    width: 75%;
+    margin-top: 30px;
+    padding: 14px;
+}
+
+.acc-line{
+    border: 1px solid #DEDEDE;
+    background-color: #DEDEDE;
+    width: 80%;
+    margin-bottom: 30px;
+}
+
+.acc-detail{
+    width: 60%;
+}
+
+.acc-ava{
+    width: 30%;
+}
+
+.acc-detail input{
+    height: 35px;
+    width: 80%;
+}
+
+.acc-wrapper{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.gender-check{
+    display: flex;
+    align-items: center;
+}
+.gender-check input{
+    width: unset;
+    height: unset;
+}
+
+.button-red{
+    margin-top: 15px;
+    background-color: #ff0000;
+    border-radius: 30px;
+    border: none;
+    width: 102px;
+    height: 33px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.acc-wrapper-line{
+    border: 1px solid #DEDEDE;
+}
+
+.fa-user{
+    color: red;
+}
+.acc-ava{
+    text-align: center;
+}
+.button-white button{
+background: #FFFFFF;
+border: 1px solid #C4C4C4;
+margin-top: 10px;
+margin-bottom: 10px ;
+height: 35px;
+font-size: 14px;
+line-height: 16px;
+
+color: #8A8A8A;
+}
+/* fonts */
+
+.info-name h2{
+    font-size: 18px;
+line-height: 16px;
+font-weight: 700;
+color: #000000;
+}
+
+.main-container-leftBlock h3{
+    font-size: 14px;
+line-height: 16px;
+
+color: #606060;
+font-weight: 500;
+}
+
+.main-container-rightBlock-acc h1{
+font-weight: 600;
+font-size: 24px;
+line-height: 28px;
+color: #000000;
+}
+
+.main-container-rightBlock-acc h2{
+font-size: 18px;
+line-height: 20px;
+font-weight: 500;
+color: #606060;
+margin-top: 10px;
+margin-bottom: 30px;
+}
+
+.main-container-rightBlock-acc h3{
+    font-size: 16px;
+line-height: 18px;
+font-weight: 500;
+color: #606060;
+margin-bottom: 5px;
+margin-top: 15px;
+transition: all 0.3s ease-in-out;
+}
+
+.gender-check h4{
+    color: #808080;
+    font-weight: 500;
+    margin-left: 5px;
+    margin-right: 15px ;
+}
+.ava-img .fa-user-circle{
+    font-size: 60px;
+}
+
+/* effect */
+.button-red:hover{
+    background-color: #000000;
+}
+
+.main-container-leftBlock h3:hover{
+    color: red;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.leftBlock-transac:hover,.leftBlock-transac:hover h3,.leftBlock-addr:hover,.leftBlock-addr:hover h3{
+     color: red;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.info-edit h3{
+    color: red;
+}
+.svg-inline--fa:hover{
+    color: red;
+    transition: all 0.3s ease-in-out;
+}
+
+@media only screen and (max-width: 900px){
+    .main-container-leftBlock{
+        width: 30%;
+    }
+
+    .info-img{
+        display: none;
+    }
+}
+@media only screen and (max-width: 600px){
+    .leftBlock-addr, .leftBlock-transac{
+        width: 100%;
+    }
+    .info-name{
+        width: 100%;
+    }
+    .acc-wrapper{
+        flex-wrap: wrap;
+    }
+
+    .acc-detail{
+        width: 90%;
+    }
+    .acc-wrapper-line{
+        display: none;
+    }
+    .acc-ava{
+        width: 80%;
+        margin-top: 50px;
+    }
+    .main-container-leftBlock h3{
+        font-size: 10px;
+        margin-left: 5px;
+    }
+
+    .info-name h2{
+        font-size: 14px;
+    }
+
+    .info-edit{ 
+        flex-wrap: wrap;
+    }
+
+    .info-edit button{
+        margin: auto;
+    }
+}

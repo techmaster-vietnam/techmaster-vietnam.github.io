@@ -1,0 +1,102 @@
+.header-content-tai-nguyen-mien-phi-box{
+    background-image: url("../img/background2.jpg");
+    background-size: cover;
+}
+.bo-loc-tai-nguyen-mien-phi{
+    position: absolute;
+    bottom: 10px;
+    margin: 0px;
+    width: 100%;
+}
+.mau-sac-mien-phi{
+    margin-bottom: 40px;
+}
+.chu-thich-trang-mien-phi p{
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.img-mien-phi{
+    box-sizing: border-box;
+    padding: 2px;
+}
+.tai-nguyen-mien-phi-content-box .d-flex{
+    padding: 0px;
+}
+.tai-nguyen-mien-phi-content-frame{
+    padding: 0px;
+}
+.content-tai-nguyen-mien-phi{
+    margin-top: 80px;
+}
+.so-trang{
+    margin: 40px 0 40px 0;
+}
+.so-trang p{
+    color: black;
+    margin: 0 5px 0 5px;
+}
+.trang-tiep-theo p{
+    color: #FFCA00;
+    font-weight: bold;
+}
+.chu-thich-trang-mien-phi{
+    margin-top: 0px;
+}
+
+/*---------------------------------reponsive------------------------------*/
+@media(max-width:1200px){
+    .chu-thich-trang p,.large{
+        font-size: 30px;
+    }
+    .xlarge{
+        font-size: 40px;
+    }
+    .normal{
+        font-size: 26px;
+    }
+    .small{
+        font-size: 18px;
+    }
+
+}
+@media(max-width:800px){
+    .chu-thich-trang p,.large{
+        font-size: 25px;
+    }
+    .xlarge{
+        font-size: 35px;
+    }
+    .normal{
+        font-size: 22px;
+    }
+    .small{
+        font-size: 17px;
+    }
+}
+@media(max-width:500px){
+    .chu-thich-trang p,.large{
+        font-size: 20px;
+    }
+    .xlarge{
+        font-size: 30px;
+    }
+    .normal{
+        font-size: 18px;
+    }
+    .small{
+        font-size: 16px;
+    }
+}
+@media(max-width:400px){
+    .chu-thich-trang p,.large{
+        font-size: 18px;
+    }
+    .xlarge{
+        font-size: 25px;
+    }
+    .normal{
+        font-size: 16px;
+    }
+    .small{
+        font-size: 13px;
+    }
+}

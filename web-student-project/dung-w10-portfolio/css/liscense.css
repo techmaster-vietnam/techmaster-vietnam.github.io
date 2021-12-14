@@ -1,0 +1,68 @@
+/* ------------ ------------ ------------ ------------ */
+/* --Landing Page-- ------ */
+.landing-page
+  {
+    width: 100%;
+    height: 100vh;
+    padding-left: 10rem;
+    background-image: url(../Images/Liscense/LiscenseBackground.png);
+    background-color: #FAFAFA;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+.landing-page-bg
+  {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+.landing-page-content
+  {
+    margin-top: 24rem;
+    width: 48rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+/* ------------ ------------ ------------ ------------ */
+/* --Background-- ------ */
+.bg
+  {
+    background-color: #FFFFFF;
+  }
+
+
+/* ------------ ------------ ------------ ------------ */
+/* --RESPONSIVE-- ------ */ 
+@media (max-width: 1200px)
+  {
+    /* --Landing Page-- ------ */
+    .landing-page img
+      {
+        height: 100%;
+      }
+  }
+
+@media (max-width: 992px)
+  {
+    /* --Landing Page-- ------ */
+    .landing-page-content
+      {
+        width: 100%;
+      }
+  }
+
+@media (max-width: 768px)
+  {
+    /* --Landing Page-- ------ */
+    .landing-page
+      {
+        padding-left: 0;
+      }
+    .landing-page
+      {
+        background-image: none;
+      }
+  }

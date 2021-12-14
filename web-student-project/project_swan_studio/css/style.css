@@ -1,0 +1,361 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+span {
+    font-size: 14px;
+    color: #535353;
+}
+
+a {
+    cursor: pointer;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+body {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+h4 {
+    color: #E0BE07;
+    font-size: 20px;
+}
+
+.carousel-caption a {
+    color: #ffffff;
+}
+
+.carousel-caption{
+    right: 0;
+    left: 0;
+    background-color: #3a303047;
+}
+/* phần header */
+
+.navbar {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.nav-item {
+    margin: 0rem 1rem;
+}
+
+.nav-item>a {
+    border-bottom: 1px solid #ffffff;
+}
+
+.nav-item-active>a {
+    border-bottom: 1px solid #535353;
+}
+
+.nav-item>a:hover {
+    border-bottom: 1px solid #535353;
+    transition: all 1s linear;
+}
+
+@media (max-width:576px) {
+    .navbar {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+}
+
+#logo {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+}
+
+#logo img {
+    height: 80px;
+}
+
+@media (max-width:992px) {
+    #logo img {
+        height: 60px;
+    }
+    #logo {
+        left: 60%;
+    }
+    .navbar-collapse {
+        position: absolute;
+        background-color: #ffffff;
+        top: 30px;
+        z-index: 1;
+    }
+}
+
+/* phần giới thiệu section1  */
+
+#section1 {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+#title1 {
+    text-align: center;
+    margin: auto;
+    max-width: 450px;
+    /* border-top: #535353 1px solid; */
+    border-bottom: #535353 1px solid;
+}
+
+#title_text {
+    font-size: 24px;
+    line-height: 34px;
+    color: #E0BE07;
+}
+
+@media(max-width:576px){
+    #title_text{
+        font-size: 20px;
+    }
+}
+
+.img-border {
+    border-radius: 25px;
+    transition: all 0.5s linear;
+}
+
+.row0 .cl1 span, .row0 .cl2, .row0 .cl1 {
+    padding: 3rem;
+    font-size: 14px;
+}
+
+.row0 .cl2 .img-border:hover {
+    opacity: 0.6;
+}
+
+#xem_them1 {
+    background: #535353;
+    color: #ffffff;
+    border: #535353 1px solid;
+    transition: all 0.5s linear;
+}
+
+#xem_them1:hover{
+    background: #ffffff;
+    color: #535353;
+}
+
+@media (max-width:576px) {
+    #section1 {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    #span1, #span2, br {
+        display: none;
+    }
+    .row0 .cl1, .row0 .cl2 {
+        padding: 1rem;
+    }
+    #xem_them1 {
+        margin-top: 1rem;
+    }
+}
+
+/* phần dịch vụ section2 */
+
+#section2 {
+    background-color: #EBEBEB;
+}
+
+.row1 .cl1, .row1 .cl2 {
+    padding: 1.5rem;
+    transition: all 0.5s linear;
+}
+
+.row1 .cl1:hover, .row1 .cl2:hover{
+    box-shadow: 5px 10px 8px #888888;
+    transform: translate(5px, -5px);
+}
+
+
+@media (max-width:576px) {
+    .row1 .cl1, .row1 .cl2 {
+        padding: 0rem;
+    }
+    span{
+        font-size: 14px;
+    }
+}
+
+/* phần sản phẩm section3 */
+section
+.wrap {
+    height: 550px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    background-image: url(../img/img-111.jpg);
+}
+
+.reservation-homepage {
+    position: absolute;
+    width: 35%;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+}
+
+.reservation-homepage p{
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.reservation-detail{
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+@media (max-width:992px){
+    section .wrap{
+        height: 450px;       
+    }
+}
+
+@media (max-width:768px){
+    section .wrap{
+        height: 400px;       
+    }
+    .reservation-homepage p{
+        font-size: 18px;
+    }
+}
+@media (max-width:576px){
+    .reservation-homepage {
+        width: 50%;
+    }
+    section .wrap{
+        height: 300px;       
+    }
+    .reservation-homepage p{
+        font-size: 16px;
+    }
+    .reservation-detail{
+        font-size: 12px;
+    }
+}
+
+/* phần bài viết section4 */
+#section4{
+    padding-top: 4rem;
+}
+
+.card{
+    transition: all 0.5s linear;
+}
+
+#post-content{
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #535353;
+}
+
+#main-post{
+    overflow: hidden;
+}
+
+#main-post>img{
+    transition: all 1s linear; 
+    cursor: pointer;
+}
+
+#main-post:hover img{
+    opacity: 0.6;
+    transform: scale(1.1)
+}
+
+#more-post{
+    padding: 2rem 0;
+    display: block;
+    column-count: 3;
+}
+
+#wrap-more-post{
+    position: relative;
+    overflow: hidden;
+}
+
+.title-post{
+    position: absolute;
+    bottom:0;
+    left: 0;
+    background-color: #ffffff;
+    opacity: 0;
+    transition: all 1s linear;
+}
+
+#wrap-more-post>img{
+    transition: all 0.5s linear; 
+    cursor: pointer;
+}
+
+
+#wrap-more-post:hover .title-post{
+    opacity: 1;
+}
+
+#wrap-more-post:hover img{
+    opacity: 0.6;
+}
+
+.btn-style{
+    border-radius: 5px;
+    color: #ffffff;
+    background-color: #535353;
+    border: #535353 1px solid;
+    transition: all 0.5s linear;
+}
+
+.btn-style:hover{
+    color: #535353;
+    background-color: #ffffff;
+}
+
+/* phần footer */
+footer{
+    background-color: #535353;
+}
+
+footer span, footer span a{
+    color: #ffffff;
+}
+
+footer span a:hover{
+    color: #ffffff;
+}
+
+.fa-caret-square-up{
+    font-size: 30px;
+    right: 30px;
+    bottom: 30px;
+    color: #888888;
+}
+
+#myBtn {
+    background-color:transparent;
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+  }
+
+.fa-facebook:hover,.fa-instagram:hover,.fa-youtube:hover{
+    color: #E0BE07;
+}
+

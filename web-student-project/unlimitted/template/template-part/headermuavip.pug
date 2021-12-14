@@ -1,0 +1,168 @@
+header
+    .menu
+        nav.navbar.navbar-expand-lg.navbar-dark
+                button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarNav' aria-controls='navbarNav' aria-expanded='false' aria-label='Toggle navigation')
+                    span.navbar-toggler-icon
+                .collapse.navbar-collapse#navbarNav
+                    .d-flex.justify-content-between.menu-content
+                        ul.navbar-nav
+                            li.nav-item
+                                a.nav-link(href='index.html') Trang chủ
+                            li.nav-item
+                                a.nav-link(href='tainguyenmienphi.html') Tài nguyên miễn phí
+                            li.nav-item
+                                a.nav-link(href='tainguyenvip.html') Tài nguyên VIP
+                            li.nav-item#nav-mua-vip
+                                a.nav-link(href='muavip.html') Mua VIP/SVIP
+                            
+                        ul.navbar-nav
+                            li.nav-item
+                                a.nav-link(href='baiviet.html') Bài viết
+                            li.nav-item
+                                button.btn.btn-primary.nav-link.nav-login-button(type='button' data-toggle='modal' data-target='#exampleModal').
+                                    Đăng nhập/Đăng ký
+                            li.nav-item
+                                a.nav-link.nav-profile.nav-profile-hover(href='#')
+                                    img(src="img/user1.png", alt="")
+        .modal.fade#exampleModal(tabindex='-1' role='dialog' aria-labelledby='exampleModalLabel' aria-hidden='true')
+            .modal-dialog
+                .modal-content.login-box
+                        .login-button-box
+                            #btn-login-box
+                            button.login-button(onclick='login()') 
+                                p Đăng nhập
+                            button.login-button(onclick='register()') 
+                                p Register
+                        .login-logo
+                            img.img-fluid(src="img/logo.png", alt="")
+                        .social-icons
+                            img(src="img/dangnhap/icon1.png", alt="icon1")
+                            img(src="img/dangnhap/icon2.png", alt="icon2")
+                            img(src="img/dangnhap/icon3.png", alt="icon3")
+                        form#login-click.input-group
+                            input.input-field#name(type='text' name placeholder='Email hoặc tên tài khoản' required)
+                            input.input-field#pass(type='password' pass placeholder='Mật khẩu' required)      
+                            .check-box              
+                                input(type='checkbox' name)
+                                p.check-box-text Ghi nhớ tài khoản
+                            button.submit-btn(type='submit') 
+                                p Đăng nhập
+                            #login-miss.xsmall
+                        form#register-click.input-group
+                            input.input-field(type='text' name placeholder='Email hoặc tên tài khoản' required)
+                            input.input-field(type='password' name placeholder='Mật khẩu' required) 
+                            input.input-field(type='password' name placeholder='Nhập lại mật khẩu' required) 
+                            input.input-field(type='text' name placeholder='Tải avatar lên' required)
+                            .tai-ava
+                                a(href="")
+                                    .svip-button-index.svip-button.goi-button.d-flex.justify-content-center
+                                        p Tải lên      
+                            .check-box              
+                                input(type='checkbox' name)
+                                p.check-box-text Ghi nhớ tài khoản
+                            button.submit-btn(type='submit') 
+                                p Đăng ký   
+
+    .header-content-box
+        .header-content-tai-nguyen-mien-phi-box
+            .profile#profile3.profilea
+                        .profile-box
+                            .profile-avatar.d-flex.justify-content-center
+                                div
+                                    col-10
+                                        img.img-fluid(src="img/avatar3.png", alt="avatar")
+                                    .d-flex.justify-content-center 
+                                        img.img-fluid(src="img/crown.png", alt="VIP")
+                                        p.text-center.small Phan Trí
+                            .d-flex.justify-content-center    
+                                .profile-content
+                                    .profile-columnn.d-flex.justify-content-center
+                                        p.profile-text Email:
+                                        p &nbsp;phantri3@gmail.com
+                                    .profile-columnn.d-flex.justify-content-center
+                                        p.profile-text Loại tài khoản:
+                                        p &nbsp;Tài khoản SVIP
+                                    .profile-columnn.d-flex.justify-content-center
+                                        p.profile-text Ngày hết hạn:
+                                        p &nbsp;25/08/2021
+                                    .profile-columnn.d-flex.justify-content-center
+                                        p.profile-text Đã tải xuống:
+                                        p &nbsp;203 file
+                            .d-flex.justify-content-center
+                                a#dang-xuat-btn3(href="")
+                                    p Đăng xuất 
+            .profile#profile2.profilea
+                .profile-box
+                    .profile-avatar.d-flex.justify-content-center
+                        div
+                            col-10
+                                img.img-fluid(src="img/avatar2.png", alt="avatar")
+                            .d-flex.justify-content-center 
+                                img.img-fluid(src="img/star2.png", alt="VIP")
+                                p.text-center.small Phan Trí
+                    .d-flex.justify-content-center    
+                        .profile-content
+                            .profile-columnn.d-flex.justify-content-center
+                                p.profile-text Email:
+                                p &nbsp;phantri2@gmail.com
+                            .profile-columnn.d-flex.justify-content-center
+                                p.profile-text Loại tài khoản:
+                                p &nbsp;Tài khoản VIP
+                            .profile-columnn.d-flex.justify-content-center
+                                p.profile-text Ngày hết hạn:
+                                p &nbsp;15/09/2021
+                            .profile-columnn.d-flex.justify-content-center
+                                p.profile-text Đã tải xuống:
+                                p &nbsp;430 file
+                    .d-flex.justify-content-center
+                        a(href="muavip.html")
+                            .svip-button.svip-button2.goi-button.d-flex.justify-content-center
+                                p.small MUA SVIP
+                    .d-flex.justify-content-center
+                        a#dang-xuat-btn2(href="")
+                            p Đăng xuất  
+            .profile#profile1.profilea
+                .profile-box
+                    .profile-avatar.d-flex.justify-content-center
+                        div
+                            col-10
+                                img.img-fluid(src="img/avatar1.png", alt="avatar")
+                            p.text-center.small Phan Trí
+                    .d-flex.justify-content-center    
+                        .profile-content
+                            .profile-columnn.d-flex.justify-content-center
+                                p.profile-text Email:
+                                p &nbsp;phantri@gmail.com
+                            .profile-columnn.d-flex.justify-content-center
+                                p.profile-text Loại tài khoản:
+                                p &nbsp;Tài khoản thường
+                            .profile-columnn.d-flex.justify-content-center
+                                p.profile-text Ngày hết hạn:
+                                p &nbsp;28/11/2021
+                            .profile-columnn.d-flex.justify-content-center
+                                p.profile-text Đã tải xuống:
+                                p &nbsp;132 file
+                    .d-flex.justify-content-center
+                        a(href="muavip.html")
+                            .svip-button.goi-button.d-flex.justify-content-center
+                                p.small MUA VIP/SVIP
+                    .d-flex.justify-content-center
+                        a#dang-xuat-btn1(href="")
+                            p Đăng xuất
+            .header-content
+                .tieu-de-trang-box
+                    .d-flex.justify-content-center
+                        .col-12.col-sm-12.col-md-10.col-lg-10.col-xl-10.d-flex.justify-content-center.align-items-center                       
+                            .mua-vip-svip.d-flex.justify-content-end
+                                    .d-flex.flex-column.vip-svip-box
+                                        .d-flex.justify-content-center
+                                            p.xlarge VIP
+                                        .d-flex.justify-content-center
+                                            p.xlarge SVIP
+                            .vip-giam-gia.d-flex.align-items-center.flex-column
+                                .d-flex.align-items-center
+                                    p.large Giảm giá
+                                    p.xlarge.vip-30 &nbsp;30%
+                                div
+                                    p.large trong tháng 6
+                    

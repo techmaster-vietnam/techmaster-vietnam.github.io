@@ -1,0 +1,106 @@
+.buy-ticket {
+    margin-top: 10rem;
+
+    // style table
+    &__table {
+        width: 100%;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+
+        th {
+            border-bottom: 1px solid lightslategrey;
+            &:first-child {
+                border-right: 1px solid lightslategrey;
+            }    
+        }
+
+        td:first-child {
+            border-right: 1px solid lightslategrey;
+        }
+
+        th, td {
+            padding: 1.5rem;
+            font-size: 3.5rem;
+            text-align: center;
+        }
+
+        &__book {
+            &:link, &:visited {
+                display: inline-block;
+                width: 7.5rem;
+                height: 7.5rem;
+                font-size: 5.8rem;
+                border: 1px solid #5A6650;
+                border-radius: 100%;
+                text-decoration: none;
+                text-align: center;
+                color: black;
+                line-height: 1;
+
+            }
+            
+            &:hover {
+                background-color: lightslategray;
+            }
+        }
+
+        &__num {
+            display: inline-block;
+            width: 7.5rem;
+            height: 7.5rem;
+            font-size: 6rem;
+            border: 1px solid #5A6650;
+            border-radius: 100%;
+            text-align: center;
+            color: black;
+            line-height: 1;
+        }
+    }
+
+    // style button
+    &__payment {
+        &:link, &:visited {
+            display: inline-block;
+            color: white;
+            text-decoration: none;
+            padding: 1rem 1.1rem;
+            border-radius: 10rem;
+            font-size: 2.9rem;
+            text-align: center; 
+            width: 100%;
+        }
+        
+        &:hover {
+            background-color: white;
+        }
+
+        &:active {
+            transform: translateY(0.7rem);
+        }
+        
+        // background color for buttons
+        &--visa {
+            background-color: #E70E02;
+            border: 1px solid #E70E02;
+            &:hover {
+                color: #E70E02;
+            }
+        }
+
+        &--atm {
+            background-color: #20A4F3;
+            border: 1px solid #20A4F3;
+            &:hover {
+                color: #20A4F3;
+            }
+        }
+
+        &--cod {
+            background-color: #28a745;
+            border: 1px solid #28a745;
+            &:hover {
+                color: #28a745;
+            }
+        }
+    }
+}

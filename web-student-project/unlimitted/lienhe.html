@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Liên hệ</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/headerstyle.css"/>
+    <link rel="stylesheet" href="css/styleindex.css"/>
+    <link rel="stylesheet" href="css/tainguyenmienphi.css"/>
+    <link rel="stylesheet" href="css/header2style.css"/>
+    <link rel="stylesheet" href="css/baiviet.css"/>
+    <link rel="stylesheet" href="css/thanhtoan.css"/>
+    <link rel="stylesheet" href="css/reponsive.css"/>
+    <link rel="stylesheet" href="css/hover.css"/>
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+  </head>
+  <body>
+    <header>
+      <div class="menu">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="d-flex justify-content-between menu-content">
+              <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="index.html">Trang chủ</a></li>
+                <li class="nav-item"><a class="nav-link" href="tainguyenmienphi.html">Tài nguyên miễn phí</a></li>
+                <li class="nav-item"><a class="nav-link" href="tainguyenvip.html">Tài nguyên VIP</a></li>
+                <li class="nav-item" id="nav-mua-vip"><a class="nav-link" href="muavip.html">Mua VIP/SVIP</a></li>
+              </ul>
+              <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="baiviet.html">Bài viết</a></li>
+                <li class="nav-item">
+                  <button class="btn btn-primary nav-link nav-login-button" type="button" data-toggle="modal" data-target="#exampleModal">Đăng nhập/Đăng ký</button>
+                </li>
+                <li class="nav-item"><a class="nav-link nav-profile nav-profile-hover" href="#"><img src="img/user1.png" alt=""/></a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content login-box">
+            <div class="login-button-box">
+              <div id="btn-login-box"></div>
+              <button class="login-button" onclick="login()"> 
+                <p>Đăng nhập</p>
+              </button>
+              <button class="login-button" onclick="register()"> 
+                <p>Register</p>
+              </button>
+            </div>
+            <div class="login-logo"><img class="img-fluid" src="img/logo.png" alt=""/></div>
+            <div class="social-icons"><img src="img/dangnhap/icon1.png" alt="icon1"/><img src="img/dangnhap/icon2.png" alt="icon2"/><img src="img/dangnhap/icon3.png" alt="icon3"/></div>
+            <form class="input-group" id="login-click">
+              <input class="input-field" id="name" type="text" name="name" placeholder="Email hoặc tên tài khoản" required="required"/>
+              <input class="input-field" id="pass" type="text" pass="pass" placeholder="Mật khẩu" required="required"/>
+              <div class="check-box">             
+                <input type="checkbox" name="name"/>
+                <p class="check-box-text">Ghi nhớ tài khoản</p>
+              </div>
+              <button class="submit-btn" type="submit"> 
+                <p>Đăng nhập</p>
+              </button>
+              <div class="xsmall" id="login-miss"></div>
+            </form>
+            <form class="input-group" id="register-click">
+              <input class="input-field" type="text" name="name" placeholder="Email hoặc tên tài khoản" required="required"/>
+              <input class="input-field" type="text" name="name" placeholder="Mật khẩu" required="required"/>
+              <input class="input-field" type="text" name="name" placeholder="Nhập lại mật khẩu" required="required"/>
+              <input class="input-field" type="text" name="name" placeholder="Tải avatar lên" required="required"/>
+              <div class="tai-ava"><a href="">
+                  <div class="svip-button-index svip-button goi-button d-flex justify-content-center">
+                    <p>Tải lên   </p>
+                  </div></a></div>
+              <div class="check-box">             
+                <input type="checkbox" name="name"/>
+                <p class="check-box-text">Ghi nhớ tài khoản</p>
+              </div>
+              <button class="submit-btn" type="submit"> 
+                <p>Đăng ký     </p>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="header-content-box">
+        <div class="header-content-tai-nguyen-mien-phi-box">
+          <div class="profile profilea" id="profile3">
+            <div class="profile-box">
+              <div class="profile-avatar d-flex justify-content-center">
+                <div>
+                  <col-10><img class="img-fluid" src="img/avatar3.png" alt="avatar"/></col-10>
+                  <div class="d-flex justify-content-center"> <img class="img-fluid" src="img/crown.png" alt="VIP"/>
+                    <p class="text-center small">Phan Trí</p>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex justify-content-center">   
+                <div class="profile-content">
+                  <div class="profile-columnn d-flex justify-content-center">
+                    <p class="profile-text">Email:</p>
+                    <p>&nbsp;phantri3@gmail.com</p>
+                  </div>
+                  <div class="profile-columnn d-flex justify-content-center">
+                    <p class="profile-text">Loại tài khoản:</p>
+                    <p>&nbsp;Tài khoản SVIP</p>
+                  </div>
+                  <div class="profile-columnn d-flex justify-content-center">
+                    <p class="profile-text">Ngày hết hạn:</p>
+                    <p>&nbsp;25/08/2021</p>
+                  </div>
+                  <div class="profile-columnn d-flex justify-content-center">
+                    <p class="profile-text">Đã tải xuống:</p>
+                    <p>&nbsp;203 file</p>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex justify-content-center"><a id="dang-xuat-btn3" href="">
+                  <p>Đăng xuất </p></a></div>
+            </div>
+          </div>
+          <div class="profile profilea" id="profile2">
+            <div class="profile-box">
+              <div class="profile-avatar d-flex justify-content-center">
+                <div>
+                  <col-10><img class="img-fluid" src="img/avatar2.png" alt="avatar"/></col-10>
+                  <div class="d-flex justify-content-center"> <img class="img-fluid" src="img/star2.png" alt="VIP"/>
+                    <p class="text-center small">Phan Trí</p>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex justify-content-center">   
+                <div class="profile-content">
+                  <div class="profile-columnn d-flex justify-content-center">
+                    <p class="profile-text">Email:</p>
+                    <p>&nbsp;phantri2@gmail.com</p>
+                  </div>
+                  <div class="profile-columnn d-flex justify-content-center">
+                    <p class="profile-text">Loại tài khoản:</p>
+                    <p>&nbsp;Tài khoản VIP</p>
+                  </div>
+                  <div class="profile-columnn d-flex justify-content-center">
+                    <p class="profile-text">Ngày hết hạn:</p>
+                    <p>&nbsp;15/09/2021</p>
+                  </div>
+                  <div class="profile-columnn d-flex justify-content-center">
+                    <p class="profile-text">Đã tải xuống:</p>
+                    <p>&nbsp;430 file</p>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex justify-content-center"><a href="muavip.html">
+                  <div class="svip-button svip-button2 goi-button d-flex justify-content-center">
+                    <p class="small">MUA SVIP</p>
+                  </div></a></div>
+              <div class="d-flex justify-content-center"><a id="dang-xuat-btn2" href="">
+                  <p>Đăng xuất  </p></a></div>
+            </div>
+          </div>
+          <div class="profile profilea" id="profile1">
+            <div class="profile-box">
+              <div class="profile-avatar d-flex justify-content-center">
+                <div>
+                  <col-10><img class="img-fluid" src="img/avatar1.png" alt="avatar"/></col-10>
+                  <p class="text-center small">Phan Trí</p>
+                </div>
+              </div>
+              <div class="d-flex justify-content-center">   
+                <div class="profile-content">
+                  <div class="profile-columnn d-flex justify-content-center">
+                    <p class="profile-text">Email:</p>
+                    <p>&nbsp;phantri@gmail.com</p>
+                  </div>
+                  <div class="profile-columnn d-flex justify-content-center">
+                    <p class="profile-text">Loại tài khoản:</p>
+                    <p>&nbsp;Tài khoản thường</p>
+                  </div>
+                  <div class="profile-columnn d-flex justify-content-center">
+                    <p class="profile-text">Ngày hết hạn:</p>
+                    <p>&nbsp;28/11/2021</p>
+                  </div>
+                  <div class="profile-columnn d-flex justify-content-center">
+                    <p class="profile-text">Đã tải xuống:</p>
+                    <p>&nbsp;132 file</p>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex justify-content-center"><a href="muavip.html">
+                  <div class="svip-button goi-button d-flex justify-content-center">
+                    <p class="small">MUA VIP/SVIP</p>
+                  </div></a></div>
+              <div class="d-flex justify-content-center"><a id="dang-xuat-btn1" href="">
+                  <p>Đăng xuất</p></a></div>
+            </div>
+          </div>
+          <div class="header-content">
+            <div class="tieu-de-trang-box">
+              <div class="tieu-de-trang">
+                <div class="d-flex justify-content-center">
+                  <div class="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-5">
+                    <div class="d-flex justify-content-center">
+                      <p class="xlarge">Liên hệ với chúng tôi</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex justify-content-center">
+                <div class="chu-thich-trang chu-thich-trang-mien-phi d-flex justify-content-center flex-column">
+                  <div class="d-flex justify-content-center">
+                    <p>Website: https//unlimited.com.vn</p>
+                  </div>
+                  <div class="d-flex justify-content-center">
+                    <p>Hotline: 19001001</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="thanh-toan-content bai-viet container-md">
+      <div class="thanh-toan-logo d-flex justify-content-center">
+        <div class="col-4 col-sm-4 col-md-3 col-lg-3 col-xl-2"><img class="img-fluid" src="img/logo.png" alt=""/></div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6"><img class="img-fluid" src="img/map.png" alt=""/>
+          <div class="location">
+            <p class="truso">Trụ sở chính:&nbsp;</p>
+            <p>Tâng 15, KeangNam LandMark 72,Phạm Hùng,Từ Liêm, Hà nội</p>
+          </div>
+          <div class="lien-he-box d-flex row">
+            <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 support-box support-box1 support-box-border">
+              <div class="col-12 d-flex justify-content-center">  
+                <div class="col-5 col-sm-3 col-md-8 col-lg-10 col-xl-8"><img class="img-fluid" src="img/lienhe/call.png" alt="call-icon"/></div>
+              </div>
+              <div class="col-12 d-flex justify-content-center support-text">
+                <p>Viết thư, gọi điện hoặc gửi tin nhắn </p>
+              </div>
+            </div>
+            <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 support-box support-box1 support-box-border support-box-border2">
+              <div class="col-12 d-flex justify-content-center">  
+                <div class="col-5 col-sm-3 col-md-8 col-lg-10 col-xl-8"><img class="img-fluid" src="img/lienhe/location.png" alt="location"/></div>
+              </div>
+              <div class="col-12 d-flex justify-content-center support-text">
+                <p>Đến chi nhánh gần Quý khách nhất </p>
+              </div>
+            </div>
+            <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 support-box support-box2 support-box-border">
+              <div class="col-12 d-flex justify-content-center">  
+                <div class="col-5 col-sm-3 col-md-8 col-lg-10 col-xl-8"><img class="img-fluid" src="img/lienhe/support.png" alt="support"/></div>
+              </div>
+              <div class="col-12 d-flex justify-content-center support-text">
+                <p>Tìm lời giải đáp thắc mắc</p>
+              </div>
+            </div>
+            <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 support-box support-box2">
+              <div class="col-12 d-flex justify-content-center">  
+                <div class="col-5 col-sm-3 col-md-8 col-lg-10 col-xl-8"><img class="img-fluid" src="img/lienhe/info.png" alt="support"/></div>
+              </div>
+              <div class="col-12 d-flex justify-content-center support-text">
+                <p>Quý khách cần thêm thông tin</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 lien-he-content">             
+          <div class="bai-viet-border1">
+            <p class="small">1.Thắc mắc về sản phẩm/ dịch vụ         </p>
+            <div class="bai-viet-text">
+              <p>Nếu Quý khách có bất kỳ thắc mắc nào liên quan đến các sản phẩm, dịch vụ của chúng tôi, vui lòng tham khảo mục Câu Hỏi Thường GặpCâu Hỏi Thường Gặp để tìm hiểu thêm về các câu hỏi thường gặp liên quan đến sản phẩm và dịch vụ của chúng tôi để tìm nhanh câu trả lời. Ngoài ra Quý khách cũng có thể lựa chọn cách thức liên lạc phù hợp để chúng tôi có thể hỗ trợ Quý khách tốt nhất.</p>
+            </div>
+          </div>
+          <div class="bai-viet-border2 bai-viet-down">
+            <p class="small">2.Khen ngợi nhân viên chúng tôi         </p>
+            <div class="bai-viet-text">
+              <p>Tại Unlimitted, chúng tôi cam kết mang đến cho Quý khách trải nghiệm đẳng cấp thế giới với các sản phẩm và dịch vụ tối ưu. Nếu Quý khách cảm thấy hài lòng khi làm việc với chúng tôi hoặc đơn giản đã có những trải nghiệm tuyệt vời, chúng tôi rất mong được lắng nghe những khen ngợi của Quý khách. Đây là động lực để chúng tôi có thể phục vụ Quý khách ngày càng tốt hơn </p>
+            </div>
+          </div>
+          <div class="bai-viet-border1 bai-viet-down">
+            <p class="small">3.Đóng góp ý kiến        </p>
+            <div class="bai-viet-text">
+              <p>Ý kiến đóng góp của Quý khách rất quý giá, giúp chúng tôi phục vụ Quý khách và tất cả khách hàng ngày càng tốt hơn. Những ý kiến này cũng giúp chúng tôi duy trì tiêu chuẩn cao với các sản phẩm và dịch vụ và đáp ứng nhu cầu khách hàng tối ưu nhất. Chúng tôi rất muốn được lắng nghe những ý kiến đóng góp của Quý khách</p>
+            </div>
+          </div>
+          <div class="bai-viet-border2 bai-viet-down">
+            <p class="small">4.Gửi khiếu nại       </p>
+            <div class="bai-viet-text">
+              <p>Nếu chúng tôi chưa đáp ứng được sự hài lòng của Quý khách, chúng tôi rất muốn lắng nghe ý kiến của Quý khách để ngày càng hoàn thiện. Sau khi nhận được khiếu nại của Quý khách, chúng tôi sẽ phúc đáp trong thời gian sớm nhất. Các khiếu nại sẽ được giải quyết trong vòng bảy ngày làm việc, trừ khi pháp luật hiện hành có quy định khác. Trường hợp phức tạp có thể cần thêm thời gian để xem xét giải quyết, chúng tôi sẽ thông báo cho Quý khách.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="d-flex footer">
+        <div class="col-5 d-flex align-items-center"><a class="footer-link" href="lienhe.html">
+            <p class="footer-small">Liên hệ</p></a><a class="footer-link" href="vechungtoi.html">
+            <p class="footer-small">Về chúng tôi</p></a><a class="footer-link" href="dieukhoan.html">
+            <p class="footer-small">Điều khoản</p></a></div>
+        <div class="col-2 footer-logo d-flex align-items-center"><a href="index.html"><img class="img-fluid" src="img/logo.png" alt="logo"/></a></div>
+        <div class="col-5 d-flex align-items-center justify-content-end"><a class="footer-icon" href=""><img src="img/facebook.png" alt="facebook"/></a><a class="footer-icon" href=""><img src="img/twister.png" alt="twister"/></a><a class="footer-icon" href=""><img src="img/youtube.png" alt="youtube"/></a></div>
+      </div>
+    </footer>
+  </body>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"></script>
+  <script src="js/dangnhap.js"></script>
+  <script src="js/header.js"></script>
+</html>

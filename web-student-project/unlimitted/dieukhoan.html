@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Điều khoản</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/headerstyle.css"/>
+    <link rel="stylesheet" href="css/styleindex.css"/>
+    <link rel="stylesheet" href="css/tainguyenmienphi.css"/>
+    <link rel="stylesheet" href="css/header2style.css"/>
+    <link rel="stylesheet" href="css/baiviet.css"/>
+    <link rel="stylesheet" href="css/reponsive.css"/>
+    <link rel="stylesheet" href="css/hover.css"/>
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+  </head>
+  <body>
+    <header>
+      <div class="menu">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="d-flex justify-content-between menu-content">
+              <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="index.html">Trang chủ</a></li>
+                <li class="nav-item"><a class="nav-link" href="tainguyenmienphi.html">Tài nguyên miễn phí</a></li>
+                <li class="nav-item"><a class="nav-link" href="tainguyenvip.html">Tài nguyên VIP</a></li>
+                <li class="nav-item" id="nav-mua-vip"><a class="nav-link" href="muavip.html">Mua VIP/SVIP</a></li>
+              </ul>
+              <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="baiviet.html">Bài viết</a></li>
+                <li class="nav-item">
+                  <button class="btn btn-primary nav-link nav-login-button" type="button" data-toggle="modal" data-target="#exampleModal">Đăng nhập/Đăng ký</button>
+                </li>
+                <li class="nav-item"><a class="nav-link nav-profile nav-profile-hover" href="#"><img src="img/user1.png" alt=""/></a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content login-box">
+            <div class="login-button-box">
+              <div id="btn-login-box"></div>
+              <button class="login-button" onclick="login()"> 
+                <p>Đăng nhập</p>
+              </button>
+              <button class="login-button" onclick="register()"> 
+                <p>Register</p>
+              </button>
+            </div>
+            <div class="login-logo"><img class="img-fluid" src="img/logo.png" alt=""/></div>
+            <div class="social-icons"><img src="img/dangnhap/icon1.png" alt="icon1"/><img src="img/dangnhap/icon2.png" alt="icon2"/><img src="img/dangnhap/icon3.png" alt="icon3"/></div>
+            <form class="input-group" id="login-click">
+              <input class="input-field" id="name" type="text" name="name" placeholder="Email hoặc tên tài khoản" required="required"/>
+              <input class="input-field" id="pass" type="text" pass="pass" placeholder="Mật khẩu" required="required"/>
+              <div class="check-box">             
+                <input type="checkbox" name="name"/>
+                <p class="check-box-text">Ghi nhớ tài khoản</p>
+              </div>
+              <button class="submit-btn" type="submit"> 
+                <p>Đăng nhập</p>
+              </button>
+              <div class="xsmall" id="login-miss"></div>
+            </form>
+            <form class="input-group" id="register-click">
+              <input class="input-field" type="text" name="name" placeholder="Email hoặc tên tài khoản" required="required"/>
+              <input class="input-field" type="text" name="name" placeholder="Mật khẩu" required="required"/>
+              <input class="input-field" type="text" name="name" placeholder="Nhập lại mật khẩu" required="required"/>
+              <input class="input-field" type="text" name="name" placeholder="Tải avatar lên" required="required"/>
+              <div class="tai-ava"><a href="">
+                  <div class="svip-button-index svip-button goi-button d-flex justify-content-center">
+                    <p>Tải lên   </p>
+                  </div></a></div>
+              <div class="check-box">             
+                <input type="checkbox" name="name"/>
+                <p class="check-box-text">Ghi nhớ tài khoản</p>
+              </div>
+              <button class="submit-btn" type="submit"> 
+                <p>Đăng ký     </p>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="header-content-box">
+        <div class="header-content-tai-nguyen-mien-phi-box">
+          <div class="profile profilea" id="profile3">
+            <div class="profile-box">
+              <div class="profile-avatar d-flex justify-content-center">
+                <div>
+                  <col-10><img class="img-fluid" src="img/avatar3.png" alt="avatar"/></col-10>
+                  <div class="d-flex justify-content-center"> <img class="img-fluid" src="img/crown.png" alt="VIP"/>
+                    <p class="text-center small">Phan Trí</p>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex justify-content-center">   
+                <div class="profile-content">
+                  <div class="profile-columnn d-flex justify-content-center">
+                    <p class="profile-text">Email:</p>
+                    <p>&nbsp;phantri3@gmail.com</p>
+                  </div>
+                  <div class="profile-columnn d-flex justify-content-center">
+                    <p class="profile-text">Loại tài khoản:</p>
+                    <p>&nbsp;Tài khoản SVIP</p>
+                  </div>
+                  <div class="profile-columnn d-flex justify-content-center">
+                    <p class="profile-text">Ngày hết hạn:</p>
+                    <p>&nbsp;25/08/2021</p>
+                  </div>
+                  <div class="profile-columnn d-flex justify-content-center">
+                    <p class="profile-text">Đã tải xuống:</p>
+                    <p>&nbsp;203 file</p>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex justify-content-center"><a id="dang-xuat-btn3" href="">
+                  <p>Đăng xuất </p></a></div>
+            </div>
+          </div>
+          <div class="profile profilea" id="profile2">
+            <div class="profile-box">
+              <div class="profile-avatar d-flex justify-content-center">
+                <div>
+                  <col-10><img class="img-fluid" src="img/avatar2.png" alt="avatar"/></col-10>
+                  <div class="d-flex justify-content-center"> <img class="img-fluid" src="img/star2.png" alt="VIP"/>
+                    <p class="text-center small">Phan Trí</p>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex justify-content-center">   
+                <div class="profile-content">
+                  <div class="profile-columnn d-flex justify-content-center">
+                    <p class="profile-text">Email:</p>
+                    <p>&nbsp;phantri2@gmail.com</p>
+                  </div>
+                  <div class="profile-columnn d-flex justify-content-center">
+                    <p class="profile-text">Loại tài khoản:</p>
+                    <p>&nbsp;Tài khoản VIP</p>
+                  </div>
+                  <div class="profile-columnn d-flex justify-content-center">
+                    <p class="profile-text">Ngày hết hạn:</p>
+                    <p>&nbsp;15/09/2021</p>
+                  </div>
+                  <div class="profile-columnn d-flex justify-content-center">
+                    <p class="profile-text">Đã tải xuống:</p>
+                    <p>&nbsp;430 file</p>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex justify-content-center"><a href="muavip.html">
+                  <div class="svip-button svip-button2 goi-button d-flex justify-content-center">
+                    <p class="small">MUA SVIP</p>
+                  </div></a></div>
+              <div class="d-flex justify-content-center"><a id="dang-xuat-btn2" href="">
+                  <p>Đăng xuất  </p></a></div>
+            </div>
+          </div>
+          <div class="profile profilea" id="profile1">
+            <div class="profile-box">
+              <div class="profile-avatar d-flex justify-content-center">
+                <div>
+                  <col-10><img class="img-fluid" src="img/avatar1.png" alt="avatar"/></col-10>
+                  <p class="text-center small">Phan Trí</p>
+                </div>
+              </div>
+              <div class="d-flex justify-content-center">   
+                <div class="profile-content">
+                  <div class="profile-columnn d-flex justify-content-center">
+                    <p class="profile-text">Email:</p>
+                    <p>&nbsp;phantri@gmail.com</p>
+                  </div>
+                  <div class="profile-columnn d-flex justify-content-center">
+                    <p class="profile-text">Loại tài khoản:</p>
+                    <p>&nbsp;Tài khoản thường</p>
+                  </div>
+                  <div class="profile-columnn d-flex justify-content-center">
+                    <p class="profile-text">Ngày hết hạn:</p>
+                    <p>&nbsp;28/11/2021</p>
+                  </div>
+                  <div class="profile-columnn d-flex justify-content-center">
+                    <p class="profile-text">Đã tải xuống:</p>
+                    <p>&nbsp;132 file</p>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex justify-content-center"><a href="muavip.html">
+                  <div class="svip-button goi-button d-flex justify-content-center">
+                    <p class="small">MUA VIP/SVIP</p>
+                  </div></a></div>
+              <div class="d-flex justify-content-center"><a id="dang-xuat-btn1" href="">
+                  <p>Đăng xuất</p></a></div>
+            </div>
+          </div>
+          <div class="header-content">
+            <div class="tieu-de-trang-box">
+              <div class="tieu-de-trang">
+                <div class="d-flex justify-content-center">
+                  <div class="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-5">
+                    <div class="d-flex justify-content-center">
+                      <p class="xlarge">Điều khoản</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex justify-content-center">
+                <div class="chu-thich-trang chu-thich-trang-mien-phi d-flex justify-content-center flex-column">
+                  <div class="d-flex justify-content-center">
+                    <p>Điều khoản và chính sách của chúng tôi</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="bai-viet container-md">
+      <div class="bai-viet-logo d-flex justify-content-center">
+        <div class="col-4 col-sm-4 col-md-2 col-lg-2 col-xl-2"><img class="img-fluid" src="img/logo.png" alt=""/></div>
+      </div>
+      <div class="bai-viet-border1">
+        <p class="small">1.Thay đổi các Thỏa thuận          </p>
+        <div class="bai-viet-text">
+          <p>Đôi khi chúng tôi có thể thay đổi các Thỏa thuận vì các lý do hợp lý, chẳng hạn như cải thiện các chức năng hoặc tính năng hiện có hoặc bổ sung thêm các chức năng hoặc tính năng mới cho Dịch vụ, áp dụng các tiến bộ khoa học và công nghệ và các điều chỉnh kỹ thuật hợp lý cho Dịch vụ, đảm bảo khả năng hoạt động hoặc tính bảo mật của Dịch vụ và vì lý do pháp lý hoặc quy định. Khi chúng tôi tiến hành các thay đổi quan trọng với các Thỏa thuận, chúng tôi sẽ thông báo cho bạn thông tin phù hợp trong các tình huống, ví dụ như bằng cách đăng thông báo nổi bật hoặc tìm kiếm sự đồng ý của bạn bên trong Dịch vụ hoặc gửi email cho bạn. Trong một số trường hợp, chúng tôi sẽ thông báo cho bạn trước và việc bạn tiếp tục sử dụng Dịch vụ sau khi thay đổi được thực hiện sẽ đồng nghĩa với việc bạn chấp nhận các thay đổi đó. Do đó, vui lòng đảm bảo rằng bạn đọc kỹ bất kỳ thông báo nào như vậy. Nếu bạn không muốn tiếp tục sử dụng Dịch vụ theo phiên bản Thỏa thuận mới, bạn có thể chấm dứt tài khoản của mình bằng cách liên hệ với chúng tôi. Nếu bạn nhận được Dịch vụ dùng thử hoặc Dịch vụ trả phí thông qua bên thứ ba, bạn phải hủy Dịch vụ trả phí trong phạm vi áp dụng thông qua bên thứ ba đó.</p>
+        </div>
+      </div>
+      <div class="bai-viet-border2 bai-viet-down">
+        <p class="small">2.Tùy chọn dịch vụ         </p>
+        <div class="bai-viet-text">
+          <p>Bạn có thể tìm thấy bản mô tả các tùy chọn Dịch vụ trên trang web của chúng tôi và chúng tôi sẽ giải thích các tùy chọn Dịch vụ nào có sẵn khi bạn tạo một tài khoản. Một số tùy chọn được cung cấp miễn phí cho bạn. Dịch vụ Unlimitted không yêu cầu thanh toán hiện được gọi là “Dịch vụ miễn phí”. Các tùy chọn khác yêu cầu thanh toán trước khi bạn có thể truy cập (“Dịch vụ trả phí”). Chúng tôi cũng có thể cung cấp các chương trình ưu đãi khuyến mại đặc biệt, quyền thành viên hoặc các dịch vụ khác, bao gồm việc cung cấp các sản phẩm và dịch vụ của bên thứ ba kết hợp với hoặc thông qua Dịch vụ Spotify. Chúng tôi không chịu trách nhiệm về các sản phẩm và dịch vụ do các bên thứ ba này cung cấp. Chúng tôi bảo lưu quyền điều chỉnh, chấm dứt hoặc sửa đổi các chương trình đăng ký sử dụng dịch vụ và chương trình ưu đãi khuyến mại được cung cấp vào bất kỳ thời điểm nào phù hợp với các Điều khoản này.Dịch vụ không giới hạn có thể không được cung cấp cho tất cả người dùng. Chúng tôi sẽ nói rõ các dịch vụ nào khi đăng ký sử dụng dịch vụ. Nếu bạn hủy đăng ký Dịch vụ không giới hạn hoặc nếu đăng ký Dịch vụ không giới hạn của bạn bị gián đoạn (ví dụ: nếu bạn thay đổi thông tin thanh toán) thì có khả năng bạn sẽ không thể đăng ký lại Dịch vụ không giới hạn. Xin lưu ý rằng Dịch vụ không giới hạn có thể được ngừng cung cấp trong tương lai, trong trường hợp đó, bạn sẽ không còn phải trả phí Dịch vụ nữa. Nếu bạn đã mua hoặc nhận mã, thẻ quà tặng, phiếu mua hàng trả trước hoặc ưu đãi khác được cung cấp hoặc bán trực tiếp bởi Spotify hoặc thay mặt cho Spotify để truy cập Dịch vụ trả phí (“Mã”), thì các điều khoản và điều kiện riêng biệt được trình bày cho bạn kèm theo Mã cũng có thể áp dụng cho việc bạn truy cập vào Dịch vụ và bạn đồng ý tuân thủ các điều khoản và điều kiện đó. Bạn cũng có thể mua quyền truy cập Dịch vụ trả phí thông qua bên thứ ba. Trong những trường hợp này, các điều khoản và điều kiện riêng biệt với bên thứ ba đó ngoài các Thỏa thuận này có thể áp dụng cho việc bạn truy cập vào Dịch vụ.          </p>
+        </div>
+      </div>
+      <div class="bai-viet-border1 bai-viet-down">
+        <p class="small">3.Thanh toán, hủy và xét duyệt        
+          <div class="bai-viet-text">
+            <p>Bạn có thể mua Dịch vụ trả phí trực tiếp từ Unlimiited hoặc thông qua một bên thứ ba bằng cách (1) trả phí sử dụng dịch vụ hàng tháng hoặc trả phí sử dụng dịch vụ trong một khoảng thời gian định kỳ khác được tiết lộ cho bạn trước khi mua Dịch vụ; hoặc (2) trả trước phí dịch vụ cho phép bạn truy cập Dịch vụ trong một khoảng thời gian cụ thể (“Thời gian trả trước”). Unlimiited có thể thay đổi mức phí Dịch vụ trả phí, bao gồm phí đăng ký định kỳ, Thời gian trả trước (đối với khoảng thời gian chưa thanh toán) hoặc Mã dịch vụ tùy từng thời điểm và sẽ thông báo trước cho bạn bất kỳ thay đổi nào về mức giá và cách chấp nhận những thay đổi, nếu có. Thay đổi mức giá sẽ có hiệu lực vào đầu thời gian đăng ký sử dụng dịch vụ tiếp theo sau ngày thay đổi mức phí. Theo luật áp dụng, bạn chấp nhận mức giá mới khi tiếp tục sử dụng Dịch vụ Spotify sau khi mức giá thay đổi có hiệu lực. Nếu không đồng ý với mức giá thay đổi, bạn có quyền từ chối thay đổi bằng cách hủy đăng ký Dịch vụ trả phí trước khi mức giá thay đổi có hiệu lực.</p>
+          </div>
+        </p>
+      </div>
+      <div class="bai-viet-border2 bai-viet-down">
+        <p class="small">4.Gia hạn; Hủy        
+          <div class="bai-viet-text">
+            <p>Trừ khi bạn đã mua Dịch vụ trả phí trong Thời gian trả trước, khoản thanh toán của bạn cho Unlimitted hoặc bên thứ ba mà bạn đã mua Dịch vụ trả phí sẽ tự động gia hạn khi kết thúc kỳ đăng ký dịch vụ áp dụng trừ khi bạn hủy đăng ký Dịch vụ trả phí trước khi kết thúc kỳ đăng ký dịch vụ đang diễn ra vào thời điểm đó nếu mua Dịch vụ trả phí qua Unlimitted hoặc hủy Dịch vụ trả phí thông qua bên thứ ba nếu bạn đã mua Dịch vụ trả phí thông qua bên thứ ba này. Yêu cầu hủy dịch vụ sẽ có hiệu lực vào ngày sau ngày cuối cùng của kỳ dịch vụ hiện tại và cấp dịch vụ của bạn sẽ hạ xuống Dịch vụ miễn phí. Nếu bạn mua Dịch vụ trả phí qua Unlimitted và hủy bỏ thanh toán hoặc Dịch vụ trả phí và/hoặc chấm dứt bất kỳ Thỏa thuận nào (1) sau Thời gian xét duyệt (nếu có) hoặc (2) trước khi kết thúc kỳ dịch vụ hiện tại, chúng tôi sẽ không hoàn lại bất kỳ khoản phí sử dụng dịch vụ nào đã thanh toán cho chúng tôi. Nếu muốn nhận hoàn lại toàn bộ số tiền thanh toán cho Unlimitted trước khi kết thúc Thời gian xét duyệt, bạn phải liên hệ với Bộ phận hỗ trợ khách hàng. Khi hoàn lại bất kỳ khoản phí nào, chúng tôi sẽ thực hiện hoàn phí bằng đúng phương thức bạn đã sử dụng để thanh toán. Nếu bạn đã mua Dịch vụ trả phí bằng Mã dịch vụ, đăng ký dịch vụ của bạn sẽ tự động chấm dứt vào cuối khoảng thời gian được nêu trong Mã hoặc khi số dư trả trước không đủ để thanh toán cho Dịch vụ. Nếu bạn đã mua Dịch vụ trả phí thông qua bên thứ ba, bạn phải đưa ra yêu cầu hủy trực tiếp với bên thứ ba đó.</p>
+          </div>
+        </p>
+      </div>
+    </div>
+    <footer>
+      <div class="d-flex footer">
+        <div class="col-5 d-flex align-items-center"><a class="footer-link" href="lienhe.html">
+            <p class="footer-small">Liên hệ</p></a><a class="footer-link" href="vechungtoi.html">
+            <p class="footer-small">Về chúng tôi</p></a><a class="footer-link" href="dieukhoan.html">
+            <p class="footer-small">Điều khoản</p></a></div>
+        <div class="col-2 footer-logo d-flex align-items-center"><a href="index.html"><img class="img-fluid" src="img/logo.png" alt="logo"/></a></div>
+        <div class="col-5 d-flex align-items-center justify-content-end"><a class="footer-icon" href=""><img src="img/facebook.png" alt="facebook"/></a><a class="footer-icon" href=""><img src="img/twister.png" alt="twister"/></a><a class="footer-icon" href=""><img src="img/youtube.png" alt="youtube"/></a></div>
+      </div>
+    </footer>
+  </body>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"></script>
+  <script src="js/dangnhap.js"></script>
+  <script src="js/header.js"></script>
+</html>

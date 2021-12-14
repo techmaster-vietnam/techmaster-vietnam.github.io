@@ -1,0 +1,143 @@
+/* Game search */
+.game-search {
+  width: 100%;
+  padding: 0;
+  background: url(../img/game-seach-bg.png) center center no-repeat;
+}
+.game-search-wrapper {
+  padding: 50px 0 40px;
+}
+.inner-item > .item {
+  width: 15%;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  height: auto;
+  display: block;
+}
+.inner-item > .game-title {
+  font-family: title-font;
+  color: white;
+  font-size: 3rem;
+  width: max-content;
+}
+.game-keyword > input {
+  outline: none;
+  padding: 13px 20px;
+  background-color: transparent;
+  border: 1px solid white;
+  width: 100%;
+  line-height: 1.5;
+  height: auto;
+}
+.game-keyword > input::placeholder {
+  color: white;
+}
+.form-select {
+  background-color: transparent;
+  border-color: white;
+  border-radius: 0;
+  color: white;
+  padding: 13px 20px;
+  margin-right: 10px;
+  font-size: 1.5rem;
+}
+.form-select:focus {
+  border-color: white;
+  border-radius: 0;
+  box-shadow: none;
+}
+.form-select > .select-title {
+  color: white;
+}
+.form-select > .select-option {
+  color: black;
+}
+.submit > button {
+  padding: 13px 20px;
+  color: #ffc311;
+  background-color: white;
+  border: 1px solid white;
+  text-transform: uppercase;
+  font-family: text-font-bold;
+  width: 100%;
+  line-height: 1.5;
+}
+.submit > button:hover {
+  background-color: black;
+  border: 1px solid black;
+  transition: 0.3s;
+}
+/* Gametab */
+.game {
+  margin-bottom: 2rem;
+}
+.game > .poster {
+  position: relative;
+  margin-bottom: 15px;
+}
+.poster a img {
+  width: 100%;
+  background-size: cover;
+}
+.game > .poster > .gerne {
+  position: absolute;
+  bottom: 7%;
+  right: 7%;
+}
+.game > .poster > .gerne > ul {
+  display: flex;
+  margin-right: 10px;
+}
+.game > .poster > .gerne > ul > li a {
+  font-size: 1.2rem;
+}
+.game > .poster > .gerne > ul > li:first-child > a:after {
+  content: ",";
+  padding-right: 5px;
+}
+.game > .poster > .gerne > i {
+  color: #ffc311;
+  font-size: 1.2rem;
+}
+.game > .content > .game-title {
+  margin-bottom: 7px;
+}
+.game > .content > .game-title > a {
+  color: black;
+  font-family: text-font-black;
+  font-size: 2.3rem;
+  margin-bottom: 13px;
+}
+.game > .content > .game-detail {
+  margin-bottom: 10px;
+}
+.game > .content > .game-detail > .platform > i {
+  color: #ffc311;
+  margin-right: 10px;
+}
+.game > .content > .game-detail > .platform > ul > li > a {
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #999999;
+}
+.game > .content > .game-detail > .platform > ul > li:first-child > a:after {
+  content: ",";
+}
+.game > .content > .game-detail > .platform > ul > li > a:hover {
+  color: #ffc311;
+}
+.game > .content > .summary {
+  color: #999999;
+  font-size: 1.2rem;
+}
+.game-list-button {
+  margin-top: 25px;
+}
+.game-list-button a {
+  font-size: 1.3rem;
+}
+.gametab {
+  padding-top: 10rem;
+  padding-bottom: 8rem;
+}

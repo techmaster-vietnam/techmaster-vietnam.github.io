@@ -1,0 +1,456 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  outline: none;
+}
+
+.pageNav {
+  padding-top: 85px;
+  display: flex;
+  margin-top: 50px;
+  margin-left: 100px;
+}
+
+.pageNav h4 {
+  color: #8a8a8a;
+  font-size: 16px;
+  line-height: 21px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.main--wrapper {
+  max-width: 1440px;
+  padding: 14px;
+  margin: auto;
+}
+
+.main--container-firstBanner {
+  display: flex;
+}
+
+.firstBanner-leftBlock {
+  width: 55%;
+}
+
+.leftBlock-wrapper {
+  display: flex;
+}
+
+.carouselTop {
+  max-width: 750px;
+}
+
+.carouselTop img {
+  width: 100%;
+}
+
+.prevArrow,
+.nextArrow {
+  width: 25px;
+  margin: auto;
+}
+
+.prevArrow button,
+.nextArrow button {
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  width: 20px;
+}
+
+.prevArrow button img,
+.nextArrow button img {
+  width: 100%;
+}
+
+.slider-for {
+  width: 85%;
+}
+
+.slider-nav {
+  display: flex;
+  justify-content: center;
+}
+
+.carousel {
+  max-width: 150px;
+  transition: all 0.3s ease-in-out;
+}
+
+.carousel img {
+  width: 100%;
+}
+
+.firstBanner-rightBlock {
+    margin-top: 60px;
+  width: 40%;
+  padding: 14px;
+}
+
+.rightBlock-star {
+  margin-top: 20px;
+  display: flex;
+}
+
+.star-filled {
+  color: red;
+}
+
+.item-price {
+  margin-top: 15px;
+  display: flex;
+}
+
+.filter-color {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.color-block button {
+  border: none;
+}
+
+.checkmark i{
+    padding-top: 10px;
+}
+
+.svg-inline--fa{
+    margin-top: 8px;
+}
+
+.checkmark{
+    color: white;
+    opacity: 0;
+}
+
+.blue .checkmark{
+  opacity: 1;
+}
+
+
+.blue {
+  background: #121f95;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.red {
+  background: #ff0000;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.grey {
+  background: #8a8a8a;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.product-size{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.size-block{
+    background: #C4C4C4;
+
+width: 30px;
+  height: 30px;
+  cursor: pointer;
+  margin-right: 5px;
+  font-size: 18px;
+line-height: 21px;
+font-weight: 500;
+text-align: center;
+padding-top: 4px;
+color: #000000;
+transition: all 0.3s ease-in-out;
+
+}
+
+
+
+.product-numb input{
+    width: 30px;
+    height: 30px;
+    background: #FFFDFD;
+border: 1px solid #000000;
+text-align: center;
+font-size: 18px;
+line-height: 21px;
+font-weight: 500;
+margin-bottom: 30px;
+}
+
+
+.button-black button{
+    background: #000000;
+    margin-bottom: 20px;
+     width: 269px;
+    height: 40px;
+    color: white;
+    border-radius: 30px;
+     border: none;
+     font-size: 18px;
+line-height: 21px;
+cursor: pointer;
+}
+
+.button-red button{
+   background: #FF0000;
+ width: 269px;
+    height: 40px;
+    color: white;
+    border-radius: 30px;
+     border: none;
+   margin-bottom: 30px;
+   font-size: 18px;
+line-height: 21px;
+cursor: pointer;
+}
+
+.dropblock ul li:first-child{
+    display: flex;
+}
+
+.dropblock ul li{
+  color: #8A8A8A;
+  margin-top: 3px;
+}
+
+.dropblock ul li:first-child h3{
+    font-size: 18px;
+line-height: 21px;
+font-weight: 700;
+color: #000000;
+
+}
+
+.dropblock span{
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#firstLi, #firstLiTop{
+  cursor: pointer;
+}
+
+
+
+.li-wrapper,.liTop-wrapper{
+  transition: all 0.3s ease-in-out;
+  display: none;
+}
+
+.main--container-secondBanner{
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.secondBanner-block{
+    width: 20%;
+    display: flex;
+}
+.secondBanner-block-img{
+    margin-right: 10px ;
+}
+
+.secondBanner-block-img img{
+    width: 100%;
+}
+
+.main--container-thirdBanner {
+    margin-top: 30px;
+  height: 102px;
+  background-color: #ff0000;
+}
+
+.thirdBanner-wrapper {
+  padding-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 14px;
+  padding-right: 14px;
+  max-width: 1320px;
+  margin: auto;
+  color: #ffffff;
+}
+
+.thirdBanner-des {
+  padding-top: 5px;
+}
+
+.input--discount button {
+  margin-left: -10px;
+  border: none;
+  background-color: #ff0000;
+  color: white;
+  border: 1px solid #000000;
+  width: 76px;
+  height: 39px;
+}
+
+/* fonts */
+.firstBanner-rightBlock h1 {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.price-sale h6 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 14px;
+  color: #f40000;
+  margin-right: 20px;
+}
+.price-normal h6 {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 14px;
+  color: #8a8a8a;
+  text-decoration: line-through;
+}
+
+.filter-color h4 {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #8a8a8a;
+}
+
+.firstBanner-rightBlock h4{
+    font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #8a8a8a;
+  margin-bottom: 5px;
+}
+
+.secondBanner-block-des h5{
+    width: 100%;
+    text-align: start;
+}
+
+.slider-nav .item2{
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border: 1px solid #ff0000;
+  transition: all 0.3s ease-in-out;
+  scale: 1.1;
+}
+
+/* effect */
+
+.carousel:hover {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border: 1px solid #ff0000;
+  transition: all 0.3s ease-in-out;
+  scale: 1.1;
+}
+
+.input--discount button:hover {
+  background-color: black;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.pageNav h4:hover{
+  color: red;
+}
+
+.size-block:hover{
+border: 1px solid #000000;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);}
+
+.button-black button:hover{
+  background: blue;
+}
+
+.button-red button:hover{
+  background: blue;
+}
+
+
+.dropLi span, .dropLiTop span{
+  transform: rotate(180deg);
+  transition: all 0.3s ease-in-out;
+}
+
+@media only screen and (max-width: 769px){
+
+
+}
+
+@media only screen and (max-width: 600px){
+  .pageNav{
+    margin-left: 0;
+    flex-wrap: wrap;
+  }
+
+  .pageNav h4{
+    font-size: 12px;
+  }
+.main--container-firstBanner{
+  flex-wrap: wrap;
+}
+
+  .firstBanner-leftBlock{
+    width: 100%;
+  }
+
+  .firstBanner-rightBlock{
+    width: 100%;
+  }
+
+  .main--container-secondBanner{
+    flex-wrap: wrap;
+  }
+
+  .secondBanner-block{
+    width: 50%;
+  }
+
+  .secondBanner-block-des h4{
+    font-size: 10px;
+  }
+
+  .secondBanner-block:first-child{
+    margin-bottom: 20px;
+
+  }
+
+
+   .thirdBanner-wrapper {
+    padding-top: 0;
+    display: block;
+  }
+
+  .thirdBanner-des {
+    text-align: center;
+  }
+
+  .input--discount {
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .input input {
+    margin: auto;
+    width: unset;
+    max-width: 237px;
+    max-height: 39px;
+  }
+
+  .main--container-thirdBanner{
+      height:112px;
+  }
+}

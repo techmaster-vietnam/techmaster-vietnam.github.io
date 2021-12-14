@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon.png"/>
+    <link rel="stylesheet" href="./library/fontawesome/fontawesome-free-5.15.2-web/css/all.min.css"/>
+    <link rel="stylesheet" href="./library/bootstrap-5.0.0-dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="./css/main.css"/>
+    <title>Frequency</title>
+  </head>
+  <body>
+    <div class="loading"> 
+      <div class="loading__animation"></div>
+    </div>
+    <header>
+      <nav class="nav">
+        <div class="container-fluid container-xl gx-xl-0 nav-main">
+          <div class="nav__moblie-btn"><i class="fas fa-bars"></i></div><a class="nav__main-logo" href="./index.html">FREQUENCY</a>
+          <ul class="nav__main-menu">
+            <li class="nav__main-menu-item"><a href="./index.html">TRANG CHỦ</a></li>
+            <li class="nav__main-menu-item"><a href="./shop.html">ĐỒNG HỒ</a></li>
+            <li class="nav__main-menu-item"><a href="./story.html">ABOUT US</a></li>
+            <li class="nav__main-menu-item"><a href="./blog.html">BLOG</a></li>
+            <li class="nav__main-menu-item"><a href="#">LIÊN HỆ</a></li>
+          </ul>
+          <div class="nav__main-button">  
+            <svg class="nav__main-button-search" width="19" height="19" viewbox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M18.8357 18.031L14.2173 13.4137C15.4562 11.9898 16.2063 10.1319 16.2063 8.10133C16.2063 3.63149 12.5697 0 8.10313 0C3.63229 0 0 3.6357 0 8.10133C0 12.567 3.63651 16.2027 8.10313 16.2027C10.1342 16.2027 11.9925 15.4528 13.4167 14.2142L18.035 18.8315C18.1446 18.941 18.2921 19 18.4354 19C18.5786 19 18.7261 18.9452 18.8357 18.8315C19.0548 18.6124 19.0548 18.2501 18.8357 18.031ZM1.13351 8.10133C1.13351 4.2592 4.26015 1.13747 8.09891 1.13747C11.9419 1.13747 15.0643 4.26342 15.0643 8.10133C15.0643 11.9392 11.9419 15.0694 8.09891 15.0694C4.26015 15.0694 1.13351 11.9435 1.13351 8.10133Z" fill="white"></path>
+            </svg><a href="./bag.html">
+              <svg class="nav__main-button-bag" width="15" height="19" viewbox="0 0 15 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.9962 16.4239L13.9231 4.17301C13.9001 3.90102 13.674 3.69509 13.4096 3.69509H11.2021C11.1714 1.65133 9.5235 0 7.5 0C5.47649 0 3.82856 1.65133 3.7979 3.69509H1.59044C1.32218 3.69509 1.0999 3.90102 1.0769 4.17301L0.00383248 16.4239C0.00383248 16.4395 0 16.455 0 16.4706C0 17.8654 1.26086 19 2.81298 19H12.187C13.7391 19 15 17.8654 15 16.4706C15 16.455 15 16.4395 14.9962 16.4239ZM7.5 1.04908C8.95248 1.04908 10.1367 2.23027 10.1673 3.69509H4.83265C4.86331 2.23027 6.04752 1.04908 7.5 1.04908ZM12.187 17.9509H2.81298C1.83955 17.9509 1.05008 17.2982 1.03475 16.4939L2.06183 4.74806H3.79407V6.3411C3.79407 6.63251 4.02402 6.86564 4.31145 6.86564C4.59888 6.86564 4.82882 6.63251 4.82882 6.3411V4.74806H10.1673V6.3411C10.1673 6.63251 10.3973 6.86564 10.6847 6.86564C10.9722 6.86564 11.2021 6.63251 11.2021 6.3411V4.74806H12.9343L13.9653 16.4939C13.9499 17.2982 13.1566 17.9509 12.187 17.9509Z" fill="white"></path>
+              </svg></a>
+            <div class="nav__main-account">
+              <div class="nav__main-account-log"><span class="nav__main-account-name" id="account-name"></span>
+                <div class="nav__main-account-options">
+                  <p> <a href="#">Tài khoản</a></p>
+                  <p id="log-out">Đăng xuất</p>
+                </div>
+              </div>
+              <div class="nav__main-group-button">
+                <div class="nav__main-button-login">
+                  <button class="login-btn">Login</button>
+                </div>
+                <div class="nav__main-button-register">
+                  <button class="register-btn">Register</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="nav__overlay"></div>
+      <div class="nav__moblie">
+        <div class="nav__moblie-close"><i class="fas fa-times nav__moblie-close--link"></i></div>
+        <ul class="nav__moblie-menu">
+          <li class="nav__mobile-menu-item"><a href="./index.html">TRANG CHỦ</a></li>
+          <li class="nav__mobile-menu-item"><a href="./shop.html">ĐỒNG HỒ</a></li>
+          <li class="nav__mobile-menu-item"><a href="./story.html">ABOUT US</a></li>
+          <li class="nav__mobile-menu-item"><a href="#">LIÊN HỆ</a></li>
+          <li class="nav__mobile-menu-item"><a href="./blog.html">BLOG</a></li>
+          <li class="nav__mobile-menu-item"><a href="#">TÌM KIẾM</a></li>
+          <li class="nav__mobile-menu-item"><a class="login-btn" href="#">ĐĂNG NHẬP</a></li>
+          <li class="nav__mobile-menu-item"><a class="register-btn" href="#">ĐĂNG KÝ</a></li>
+        </ul>
+      </div>
+      <div class="nav__overlay-form" id="overlay-form"></div>
+      <div class="login" id="login-form">
+        <div class="login__close"><i class="fas fa-times login__close-button" id="login-close"></i></div>
+        <form class="login__form" action="">
+          <div class="login__form-status">
+            <h1 class="login__form-status--login">Đăng Nhập</h1>
+            <h2 class="login__form-status--register" id="change-register">Đăng Ký</h2>
+          </div>
+          <input class="login__form-input" id="login-username" type="text" placeholder="Địa chỉ Email" name="email"/>
+          <input class="login__form-input login__form-input--align" id="login-password" type="password" placeholder="Mật khẩu" name="password"/>
+          <div class="login__form-password">
+            <div class="login__form-password-remember">
+              <input class="login__form-password-input" type="checkbox" id="remember" name="remember"/>
+              <label class="login__form-password-label" for="remember">Lưu mật khẩu</label>
+            </div><a class="login__form-password-forgot" href="#">Quên mật khẩu?</a>
+          </div>
+          <input class="login__form-submit" id="btn-login" type="button" value="Đăng nhập"/>
+          <p class="login__form-title">Hoặc đăng nhập qua</p>
+          <div class="login__form-social">
+            <button class="login__form-social-btn login__form-social-btn--facebook"><i class="fab fa-facebook-f"> </i>Facebook</button>
+            <button class="login__form-social-btn login__form-social-btn--google"><i class="fab fa-google"> </i>Google</button>
+          </div>
+        </form>
+      </div>
+      <div class="register" id="register-form">
+        <div class="register__close"><i class="fas fa-times register__close-button" id="register-close"></i></div>
+        <form class="register__form" action="">
+          <div class="register__form-status">
+            <h1 class="register__form-status--register">Đăng Ký</h1>
+            <h2 class="register__form-status--login" id="change-login">Đăng Nhập</h2>
+          </div>
+          <input class="register__form-input" id="register-name" type="text" placeholder="Họ tên" name="name"/>
+          <input class="register__form-input" id="register-email" type="text" placeholder="Email" name="email"/>
+          <input class="register__form-input" type="password" placeholder="Mật khẩu từ 6 đến 23 kí tự" name="password"/>
+          <input class="register__form-input register__form-input--align" id="register-password" type="password" placeholder="Nhập lại mật khẩu" name="password"/>
+          <div class="register__form-radio"><span class="register__form-radio--circle">
+              <input class="register__form-radio-male" type="radio" name="gender" id="male" value="male"/>
+              <label class="register__form-radio-label" for="male">Nam</label></span><span class="register__form-radio--circle register__form-radio--align">
+              <input class="register__form-radio-female" type="radio" name="gender" id="female" value="female"/>
+              <label class="register__form-radio-label" for="female">Nữ</label></span></div>
+          <input class="register__form-policy" type="checkbox" id="policy"/><span class="register__form-title">
+            <label for="policy">Tôi đã đọc và đồng ý theo</label><a class="register__form-title--link" href="#"> điều kiện sử dụng và chính sách của Frequency</a></span>
+          <input class="register__form-btn" id="btn-register" type="button" value="Tạo tài khoản"/>
+        </form>
+      </div>
+    </header>
+    <footer class="footer">
+      <div class="container">
+        <div class="row"> 
+          <div class="col-12 col-sm-6 col-md-4">
+            <div class="footer__content">
+              <h1 class="footer__content-title">THÔNG TIN LIÊN HỆ</h1>
+              <ul class="footer__content-menu">
+                <li class="footer__content-menu-item">Địa chỉ: 123 Nguyễn An Ninh, Tương Mai, Hoàng Mai, Hà Nội.</li>
+                <li class="footer__content-menu-item"><a href="tel:0326979486"> Phone: 0326 979 486</a></li>
+                <li class="footer__content-menu-item">Fax: (012) 800 888 789</li>
+                <li class="footer__content-menu-item"><a href="mailto:mhoang0304@gmail.com"> Email: mhoang0304@gmail.com  </a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4">
+            <div class="footer__content">
+              <h1 class="footer__content-title">CỬA HÀNG</h1>
+              <ul class="footer__content-menu"> 
+                <li class="footer__content-menu-item">Store 2: 9 B7 Phạm Ngọc Thạch, Đống Đa, Hà Nội.</li>
+                <li class="footer__content-menu-item">Store 3: 173A Kim Mã, Ba Đình, Hà Nội.</li>
+                <li>Store 1: 38 Hàm Long, Hoàn Kiếm, Hà Nội.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="footer__content">
+              <h1 class="footer__content-title">INSTAGRAM</h1>
+              <p class="footer__content-sub">Ghé thăm trang Instagram để cùng chia sẻ khoảnh khắc của bạn.</p>
+            </div>
+            <div class="d-flex justify-content-between footer__feed">
+              <div class="footer__feedback js-footer__feedback-1"><img class="footer__feedback-img" src="./img/footer-1.jpg" alt="feedback"/><i class="fab fa-instagram footer__feedback-icon"></i></div>
+              <div class="footer__feedback js-footer__feedback-2"><img class="footer__feedback-img" src="./img/footer-2.jpg" alt="feedback"/><i class="fab fa-instagram footer__feedback-icon"></i></div>
+              <div class="footer__feedback js-footer__feedback-3"><img class="footer__feedback-img" src="./img/footer-3.jpg" alt="feedback"/><i class="fab fa-instagram footer__feedback-icon"></i></div>
+              <div class="footer__feedback js-footer__feedback-4"><img class="footer__feedback-img" src="./img/footer-4.jpg" alt="feedback"/><i class="fab fa-instagram footer__feedback-icon"></i></div>
+            </div>
+          </div>
+        </div>
+        <div class="row footer-sub">
+          <div class="col-6 d-flex align-items-center">
+            <div class="footer-sub__copyright">Frequency © 2021</div>
+          </div>
+          <div class="col-6 d-flex align-items-center justify-content-end">
+            <div class="footer-sub__social"><a class="footer-sub__social-link" href="#"> <i class="fab fa-facebook-f"></i></a><a class="footer-sub__social-link" href="#"> <i class="fab fa-youtube"></i></a><a class="footer-sub__social-link" href="#"> <i class="fab fa-twitter"></i></a></div>
+          </div>
+        </div>
+      </div>
+      <div class="instargram">
+        <div class="instargram__btn js-instargram__btn-prev"><i class="fas fa-chevron-left"></i></div>
+        <div class="instargram__main">
+          <div class="ins js-ins-1">
+            <div class="ins__main">
+              <div class="ins__main-img"><a href="https://www.instagram.com/" target="_blank"> <img src="./img/footer-img1.jpg" alt="instagram"/></a></div>
+              <div class="ins__main-comment">
+                <div class="ins__main-header"><img class="ins__main-header-avatar" src="./img/avatar.jpg" alt="avatar"/><span class="ins__main-header-name">mhoang0304</span></div>
+                <div class="ins__main-body">
+                  <div class="ins__main-body-content">
+                    <p>Không ai mua được thời gian, nó luôn lạnh lùng với tất cả mọi người, với tất cả những sai lầm chúng ta muốn sửa chữa, với tất cả những kỉ niệm đẹp mà ta đã từng trải qua.</p>
+                  </div>
+                </div>
+                <div class="ins__main-footer"><span class="ins__main-footer-date">31 tháng 07 2020</span><a class="ins__main-footer-date-link" href="https://www.instagram.com/" target="_blank">View on Instagram</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="ins js-ins-2">
+            <div class="ins__main">
+              <div class="ins__main-img"><a href="https://www.instagram.com/" target="_blank"> <img src="./img/footer-img2.jpg" alt="instagram"/></a></div>
+              <div class="ins__main-comment">
+                <div class="ins__main-header"><img class="ins__main-header-avatar" src="./img/avatar.jpg" alt="avatar"/><span class="ins__main-header-name">mhoang0304</span></div>
+                <div class="ins__main-body">
+                  <div class="ins__main-body-content">
+                    <p>Rồi sẽ có một ngày bạn thức dậy và không còn đủ thời gian để làm những điều hàng ngày mình mong muốn. Hãy làm ngay bây giờ.</p>
+                  </div>
+                </div>
+                <div class="ins__main-footer"><span class="ins__main-footer-date">08 tháng 04 2020</span><a class="ins__main-footer-date-link" href="https://www.instagram.com/" target="_blank">View on Instagram</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="ins js-ins-3">
+            <div class="ins__main">
+              <div class="ins__main-img"><a href="https://www.instagram.com/" target="_blank"> <img src="./img/footer-img3.jpg" alt="instagram"/></a></div>
+              <div class="ins__main-comment">
+                <div class="ins__main-header"><img class="ins__main-header-avatar" src="./img/avatar.jpg" alt="avatar"/><span class="ins__main-header-name">mhoang0304</span></div>
+                <div class="ins__main-body">
+                  <div class="ins__main-body-content">
+                    <p> Có những lúc, không có lần sau, không có cơ hội bắt đầu lại. Có những lúc, bỏ lỡ hiện tại, vĩnh viễn không còn cơ hội nữa</p>
+                  </div>
+                </div>
+                <div class="ins__main-footer"><span class="ins__main-footer-date">28 tháng 04 2021</span><a class="ins__main-footer-date-link" href="https://www.instagram.com/" target="_blank">View on Instagram</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="ins js-ins-4">
+            <div class="ins__main">
+              <div class="ins__main-img"><a href="https://www.instagram.com/" target="_blank"> <img src="./img/footer-img4.jpg" alt="instagram"/></a></div>
+              <div class="ins__main-comment">
+                <div class="ins__main-header"><img class="ins__main-header-avatar" src="./img/avatar.jpg" alt="avatar"/><span class="ins__main-header-name">mhoang0304</span></div>
+                <div class="ins__main-body">
+                  <div class="ins__main-body-content">
+                    <p>Khi đã trưởng thành, sẽ có đôi lúc, chúng ta nhớ lại thời gian thanh xuân tươi đẹp mà cũng đầy đau buồn ấy, và mỉm cười, thật nhẹ nhàng và thanh thản.</p>
+                  </div>
+                </div>
+                <div class="ins__main-footer"><span class="ins__main-footer-date">03 tháng 04 2021</span><a class="ins__main-footer-date-link" href="https://www.instagram.com/" target="_blank">View on Instagram</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="instargram__btn js-instargram__btn-next"><i class="fas fa-chevron-right"></i></div>
+        <div class="instargram__close"><i class="fas fa-times"></i></div>
+      </div>
+    </footer>
+    <script src="./library/jquery-3.5.1.min.js"></script>
+    <script src="./library/bootstrap-5.0.0-dist/js/bootstrap.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

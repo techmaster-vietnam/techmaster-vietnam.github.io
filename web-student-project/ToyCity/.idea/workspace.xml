@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="854d145d-f60c-48bb-afdd-35a433bf5b34" name="Default" comment="" />
+    <ignored path="Dochoithongminh.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="Dochoithongminh" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="chitietsanpham.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/chitietsanpham/chitietsanpham.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="44" column="33" selection-start-line="44" selection-start-column="33" selection-end-line="44" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="database.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/js/jquery-3.0.0.min.js" />
+        <option value="$PROJECT_DIR$/huongdanmuahang.html" />
+        <option value="$PROJECT_DIR$/gioithieu.html" />
+        <option value="$PROJECT_DIR$/css/login.css" />
+        <option value="$PROJECT_DIR$/js/login.js" />
+        <option value="$PROJECT_DIR$/register.html" />
+        <option value="$PROJECT_DIR$/js/register.js" />
+        <option value="$PROJECT_DIR$/js/script.js" />
+        <option value="$PROJECT_DIR$/sanpham.html" />
+        <option value="$PROJECT_DIR$/login.html" />
+        <option value="$PROJECT_DIR$/chitietsanpham.html" />
+        <option value="$PROJECT_DIR$/Vua Địa Hình EADGE-3.html" />
+        <option value="$PROJECT_DIR$/FT011.html" />
+        <option value="$PROJECT_DIR$/van-truot-surfboard-rc.html" />
+        <option value="$PROJECT_DIR$/SymaX8HW.html" />
+        <option value="$PROJECT_DIR$/js/script-sanpham.js" />
+        <option value="$PROJECT_DIR$/include/magnific-popup.css" />
+        <option value="$PROJECT_DIR$/tauthuysanbay.html" />
+        <option value="$PROJECT_DIR$/danhsachsanpham/sanphamnoibat.html" />
+        <option value="$PROJECT_DIR$/danhsachsanpham/taucanomohinh.html" />
+        <option value="$PROJECT_DIR$/chitietsanpham/tauthuysanbay.html" />
+        <option value="$PROJECT_DIR$/danhsachsanpham/sanpham.html" />
+        <option value="$PROJECT_DIR$/danhsachsanpham/maybaymohinh.html" />
+        <option value="$USER_HOME$/Documents/GitHub/Hungmaix94.github.io/Dochoithongminh/chitietsanpham/Vua Địa Hình EADGE-3.html" />
+        <option value="$PROJECT_DIR$/include/thumbnail-slider.js" />
+        <option value="$PROJECT_DIR$/include/thumbnail-slider.css" />
+        <option value="$PROJECT_DIR$/include/ninja-slider.js" />
+        <option value="$PROJECT_DIR$/include/ninja-slider.css" />
+        <option value="$PROJECT_DIR$/giohang.html" />
+        <option value="$PROJECT_DIR$/chitietsanpham/SymaX8HW.html" />
+        <option value="$PROJECT_DIR$/../ref/pure-css-tab-with-fade-animation/pure-css-tab-with-fade-animation/index.html" />
+        <option value="$PROJECT_DIR$/danhsachsanpham/xemohinh.html" />
+        <option value="$PROJECT_DIR$/chitietsanpham/FT011.html" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/css/style.css" />
+        <option value="$PROJECT_DIR$/chitietsanpham/Vua Địa Hình EADGE-3.html" />
+        <option value="$PROJECT_DIR$/css/style-sanpham.css" />
+        <option value="$PROJECT_DIR$/chitietsanpham/chitietsanpham.php" />
+        <option value="$PROJECT_DIR$/database.php" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="PhpServers">
+    <servers />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="width" value="1378" />
+    <option name="height" value="744" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>PHP</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ToyCity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ToyCity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ToyCity" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ToyCity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ToyCity" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="danhsachsanpham" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ToyCity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ToyCity" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chitietsanpham" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Techmaster\Dochoithongminh\danhsachsanpham" />
+      <recent name="D:\Techmaster\Dochoithongminh\img\sanphamnoibat" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Techmaster\Dochoithongminh\include" />
+      <recent name="D:\Techmaster\Dochoithongminh\css" />
+      <recent name="D:\Techmaster\Dochoithongminh\js" />
+      <recent name="D:\Techmaster\Dochoithongminh" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.register.html">
+    <configuration default="false" name="register.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:49303/Dochoithongminh/register.html">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.register.html" />
+    </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.register.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="854d145d-f60c-48bb-afdd-35a433bf5b34" name="Default" comment="" />
+      <created>1467167443506</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1467167443506</updated>
+      <workItem from="1467167445213" duration="1161000" />
+      <workItem from="1467168890982" duration="102000" />
+      <workItem from="1467254154175" duration="1387000" />
+      <workItem from="1467294035381" duration="1202000" />
+      <workItem from="1467425130624" duration="19120000" />
+      <workItem from="1467475114349" duration="34043000" />
+      <workItem from="1467598264962" duration="24860000" />
+      <workItem from="1467639639677" duration="10918000" />
+      <workItem from="1467684544417" duration="22393000" />
+      <workItem from="1467723141496" duration="4340000" />
+      <workItem from="1467771045136" duration="21732000" />
+      <workItem from="1467810018230" duration="5648000" />
+      <workItem from="1467856382194" duration="24380000" />
+      <workItem from="1467898015603" duration="10544000" />
+      <workItem from="1467942943649" duration="21071000" />
+      <workItem from="1468004729987" duration="1191000" />
+      <workItem from="1468064231841" duration="2308000" />
+      <workItem from="1468141309723" duration="1714000" />
+      <workItem from="1468154986334" duration="4453000" />
+      <workItem from="1468202978548" duration="20752000" />
+      <workItem from="1468290699753" duration="20484000" />
+      <workItem from="1468339709814" duration="110000" />
+      <workItem from="1468376208458" duration="20658000" />
+      <workItem from="1468421843343" duration="12864000" />
+      <workItem from="1468465362647" duration="10374000" />
+      <workItem from="1468480981166" duration="2668000" />
+      <workItem from="1468670483658" duration="697000" />
+      <workItem from="1468894305628" duration="36000" />
+      <workItem from="1469518960281" duration="7935000" />
+      <workItem from="1469540043967" duration="13370000" />
+      <workItem from="1469585560565" duration="1547000" />
+      <workItem from="1469624073842" duration="41618000" />
+      <workItem from="1469757448819" duration="23998000" />
+      <workItem from="1470045565917" duration="3025000" />
+      <workItem from="1470059432649" duration="596000" />
+      <workItem from="1470095580917" duration="3018000" />
+      <workItem from="1470148879745" duration="595000" />
+      <workItem from="1470235763946" duration="1500000" />
+      <workItem from="1470266466652" duration="595000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="399007000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="0" width="1378" height="744" extended-state="1" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19575115" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952693" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952693" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952693" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33006537" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952693" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2549168" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952693" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/img/4.jpg" />
+    <entry file="file://$PROJECT_DIR$/img/6.jpg" />
+    <entry file="file://$PROJECT_DIR$/include/ionicons.min.css" />
+    <entry file="file://$PROJECT_DIR$/include/jquery.smartmenus.bootstrap.css" />
+    <entry file="file://$PROJECT_DIR$/img/sanphamnoibat/vuadiahinh_eadge_3.jpg" />
+    <entry file="file://$PROJECT_DIR$/img/2.jpg" />
+    <entry file="file://$PROJECT_DIR$/result.html" />
+    <entry file="file://$PROJECT_DIR$/js/register.js" />
+    <entry file="file://$PROJECT_DIR$/register.html" />
+    <entry file="file://$PROJECT_DIR$/include/jquery.breadcrumbs-generator.js" />
+    <entry file="file://$PROJECT_DIR$/img/sanphamnoibat/van-truot-surfboard-rc-vuamohinh-5.jpg" />
+    <entry file="file://$PROJECT_DIR$/img/sanphamnoibat/Syma X8HW - Máy bay Drone Flycam FPV HD truyền hình ảnh trực tiếp, tự động giữ độ cao !!! MỚI NHẤT.jpg" />
+    <entry file="file://$PROJECT_DIR$/img/sanphamnoibat/eagle-03-oto-dieu-khien-vuamohinh-com-2-1dd56dcf-14c0-4873-812c-1a9216cac521.jpg" />
+    <entry file="file://$PROJECT_DIR$/img/sanphamnoibat/wltoys-q202-a-500x500.jpg" />
+    <entry file="file://$PROJECT_DIR$/login.html" />
+    <entry file="file://$PROJECT_DIR$/include/jquery.magnific-popup.min.js" />
+    <entry file="file://$PROJECT_DIR$/include/magnific-popup.css" />
+    <entry file="file://$PROJECT_DIR$/chitietsanpham/van-truot-surfboard-rc.html" />
+    <entry file="file://$PROJECT_DIR$/danhsachsanpham/sanphamkhuyenmai.html" />
+    <entry file="file://$PROJECT_DIR$/danhsachsanpham/sanphamnoibat.html" />
+    <entry file="file://$PROJECT_DIR$/danhsachsanpham/taucanomohinh.html" />
+    <entry file="file://$PROJECT_DIR$/js/script.js" />
+    <entry file="file://$PROJECT_DIR$/js/script-sanpham.js" />
+    <entry file="file://$PROJECT_DIR$/css/login.css" />
+    <entry file="file://$PROJECT_DIR$/chitietsanpham/tauthuysanbay.html" />
+    <entry file="file://$PROJECT_DIR$/img/design/asd.psd" />
+    <entry file="file://$PROJECT_DIR$/img/design/logo Toycity thanh pho do choi.JPG" />
+    <entry file="file://$PROJECT_DIR$/img/design/logo.psd" />
+    <entry file="file://$PROJECT_DIR$/img/design/big-toy-storage-logo.png" />
+    <entry file="file://$PROJECT_DIR$/include/star-off.svg" />
+    <entry file="file://$PROJECT_DIR$/include/star-on.svg" />
+    <entry file="file://$PROJECT_DIR$/img/1.jpg" />
+    <entry file="file://$PROJECT_DIR$/danhsachsanpham/sanpham.html" />
+    <entry file="file://$USER_HOME$/Documents/GitHub/Hungmaix94.github.io/Dochoithongminh/chitietsanpham/Vua Địa Hình EADGE-3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="13" column="39" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ref/jsImgSlider/jsImgSlider/demo1.html" />
+    <entry file="file://$PROJECT_DIR$/../ref/thumbnailSlider/thumbnailSlider/demo1.html" />
+    <entry file="file://$PROJECT_DIR$/include/thumbnail-slider.js" />
+    <entry file="file://$PROJECT_DIR$/include/thumbnail-slider.css" />
+    <entry file="file://$PROJECT_DIR$/include/ninja-slider.css" />
+    <entry file="file://$PROJECT_DIR$/include/ninja-slider.js" />
+    <entry file="file://$PROJECT_DIR$/chitietsanpham/SymaX8HW.html" />
+    <entry file="file://$PROJECT_DIR$/../ref/pure-css-tab-with-fade-animation/pure-css-tab-with-fade-animation/index.html" />
+    <entry file="file://$PROJECT_DIR$/giohang.html" />
+    <entry file="file://$PROJECT_DIR$/danhsachsanpham/xemohinh.html" />
+    <entry file="file://$PROJECT_DIR$/chitietsanpham/FT011.html" />
+    <entry file="file://$PROJECT_DIR$/danhsachsanpham/maybaymohinh.html" />
+    <entry file="file://$PROJECT_DIR$/css/style.css" />
+    <entry file="file://$PROJECT_DIR$/css/style-sanpham.css" />
+    <entry file="file://$PROJECT_DIR$/index.html" />
+    <entry file="file://$PROJECT_DIR$/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chitietsanpham/chitietsanpham.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="44" column="33" selection-start-line="44" selection-start-column="33" selection-end-line="44" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

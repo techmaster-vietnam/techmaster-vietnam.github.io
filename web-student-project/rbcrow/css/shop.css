@@ -1,0 +1,52 @@
+.header-search{
+    display: none;
+}
+
+#btn-header-cart {
+    display: flex;
+}
+
+.anh-bia button {
+    border: none;
+    border-radius: 100%;
+    height: 35px;
+    width: 35px;
+    outline: none;
+    margin: 0px 10px;
+    padding: 0px;
+}
+
+.ten-bia ul {
+    padding: 0px;
+}
+
+.anh-bia li {
+    margin: 5px 0px;
+}
+
+.anh-bia form {
+    display: flex;
+    align-items: center;
+    margin: 5px 0px;
+}
+
+.anh-bia input {
+    padding: 5px 20px;
+    border-radius: 20px;
+    border: none;
+    width: 100%;
+    color: #08BBB7;
+}
+
+.anh-bia input::placeholder {
+    color: #08BBB7;
+}
+
+.anh-bia {
+    margin-bottom: 50px;
+}
+
+.banner-text {
+    padding: 50px 0px;
+}
+

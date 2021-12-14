@@ -1,0 +1,31 @@
+﻿@font-face {
+  font-family: 'RobotoCondensed';
+  src: url('../fonts/font-web/Roboto-Condensed.eot');
+  src: url('../fonts/font-web/Roboto-Condensed.woff') format('woff'),
+       url('../fonts/font-web/Roboto-Condensed.ttf') format('truetype'),
+       url('../fonts/font-web/Roboto-Condensed.svg#Roboto-Condensed') format('svg'),
+       url('../fonts/font-web/Roboto-Condensed.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'RobotoCondensed';
+  src: url('../fonts/font-web/Roboto-BoldCondensed.eot');
+  src: url('../fonts/font-web/Roboto-BoldCondensed.woff') format('woff'),
+       url('../fonts/font-web/Roboto-BoldCondensed.ttf') format('truetype'),
+       url('../fonts/font-web/Roboto-BoldCondensed.svg#Roboto-BoldCondensed') format('svg'),
+       url('../fonts/font-web/Roboto-BoldCondensed.eot?#iefix') format('embedded-opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'RobotoCondensed';
+  src: url('../fonts/font-web/RobotoCondensedLight.eot');
+  src: url('../fonts/font-web/RobotoCondensedLight.eot?#iefix') format('embedded-opentype');
+  src: url('../fonts/font-web/RobotoCondensed-Light.woff') format('woff'),
+       url('../fonts/font-web/RobotoCondensed-Light.ttf') format('truetype'),
+       url('../fonts/font-web/RobotoCondensed-Light.svg#RobotoCondensed-Light') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+

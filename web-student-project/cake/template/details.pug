@@ -1,0 +1,177 @@
+extends template-part/layout.pug
+block style
+    link(rel='stylesheet' type='text/css' href='./css/slick/slick.css')
+    link(rel="stylesheet", href="./css/slick/slick-theme.css")
+    link(rel="stylesheet", href="./css/details.css")
+block title
+    title | Chi Tiết Sản phẩm
+block heading
+    h1.heading-primary.heading-primary--white Chi Tiết Sản Phẩm
+block title-2
+    a(href="")
+        p.banner-common__title-2 Sản Phẩm
+    .banner-common__icon
+        img(src="./img/arrows-banner.svg", alt="")
+    a(href="")
+        p.banner-common__title-2.banner-common__title-2--active Chi Tiết Sản Phẩm
+block content
+    main.details
+        .container
+            .row.justify-content-between
+                .col-xl-6.col-lg-6.col-md-6
+                    .details__photo(data-aos="fade-right" data-aos-delay="0")
+                        img(src="./img/details-1.png", alt="Bánh Humburger" title="Bánh Humburger", data-index='1').details__pho.details__photo--active
+                        img(src="./img/details-2.png", alt="Bánh Humburger" title="Bánh Humburger" data-index='2').details__pho
+                        img(src="./img/details-3.png", alt="Bánh Humburger" title="Bánh Humburger" data-index='3').details__pho
+                        img(src="./img/details-4.png", alt="Bánh Humburger" title="Bánh Humburger" data-index='4').details__pho
+                        img(src="./img/details-5.png", alt="Bánh Humburger" title="Bánh Humburger" data-index='5').details__pho
+                    .details__carousel(data-aos="fade-right" data-aos-delay="0")
+                        .details__carousel-list
+                            img(src="./img/details-mini-1.png", alt="" , data-index='1').js-details-mini.details-mini--active
+                            img(src="./img/details-mini-2.png", alt=""  data-index='2').js-details-mini
+                            img(src="./img/details-mini-3.png", alt=""  data-index='3').js-details-mini
+                            img(src="./img/details-mini-4.png", alt=""  data-index='4').js-details-mini
+                            img(src="./img/details-mini-5.png", alt=""  data-index='5').js-details-mini
+                .col-xl-5.col-lg-5.col-md-6
+                    .details__info(data-aos="fade-left" data-aos-delay="0")
+                        h2.heading__primary Bánh Humburger
+                        .details__price
+                            p Giá bán: 
+                                span 100,000 đ
+                        .details__rate
+                            p Đánh giá: 
+                                span
+                                    i.fas.fa-star
+                                    i.fas.fa-star
+                                    i.fas.fa-star
+                                    i.fas.fa-star
+                                    i.fas.fa-star
+                        .details__stocking
+                            i.fas.fa-check
+                            span Còn Hàng
+                        .details__description
+                            p.details__title Mô tả sản phẩm:
+                            p.details__text - Thành phần : Bột mỳ, trứng, bơ, choocolate ...
+                            p.details__text - Bảo quản ở nhiệt độ 25 -28 độ C
+                        .details__select
+                            .details__number
+                                span.details__number-minus
+                                    i.fas.fa-minus
+                                span.details__number-basket 1 
+                                span.details__number-plus   
+                                    i.fas.fa-plus
+
+                            a(href="./cart.html").details__add-to-basket Thêm vào giỏ
+                            a(href="./checkout.html").details__buy-now Mua ngay
+                        .details__share
+                            .details__share-title Chia sẻ sản phẩm:
+                            a(href="#")    
+                                i.fab.fa-google-plus-square
+                            a(href="#")      
+                                i.fab.fa-facebook-square
+                            a(href="#")      
+                                i.fab.fa-twitter-square
+                            a(href="#")      
+                                i.fab.fa-youtube-square
+    .popula
+        .container
+            .row
+                .col
+                    h2.heading__primary.heading__primary--bot(data-aos="fade-up" data-aos-delay="0") Sản Phẩm Liên Quan
+                    .popula__carousel(data-aos="fade-up" data-aos-delay="0")
+                        
+                            .best-slice__card
+                                .best-slice__photo
+                                    a(href="./details.html")
+                                        img(src="./img/banh-9.jpg", alt="Banh-Bông Lan" title="Bánh Bông Lan" )
+                                .best-slice__content
+                                    a(href="./details.html")
+                                        h3.best-slice__heading  Bánh Bông Lan
+                                    .best-slice__rate
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                    .best-slice__price 50,000 đ
+                                    a(href="./cart.html").best-slice__button
+                                        span Thêm Vào Giỏ
+                                        i.fas.fa-cart-plus
+                            .best-slice__card
+                                .best-slice__photo
+                                    a(href="./details.html")
+                                        img(src="./img/banh-10.jpg", alt="Banh Phô Mai" title="Bánh Phô Mai")
+                                .best-slice__content
+                                    a(href="./details.html")
+                                        h3.best-slice__heading  Bánh Phô Mai
+                                    .best-slice__rate
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                    .best-slice__price 50,000 đ
+                                    a(href="./cart.html").best-slice__button
+                                        span Thêm Vào Giỏ
+                                        i.fas.fa-cart-plus
+                            .best-slice__card
+                                .best-slice__photo
+                                    a(href="./details.html")
+                                        img(src="./img/banh-11.jpg", alt="Banh Bông Cuộn" title="Bánh Bông Cuộn")
+                                .best-slice__content
+                                    a(href="./details.html")
+                                        h3.best-slice__heading  Bánh Bông Cuộn
+                                    .best-slice__rate
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                    .best-slice__price 70,000 đ
+                                    a(href="./cart.html").best-slice__button
+                                        span Thêm Vào Giỏ
+                                        i.fas.fa-cart-plus
+                            .best-slice__card
+                                .best-slice__photo
+                                    a(href="./details.html")
+                                        img(src="./img/banh-12.jpg", alt="Banh Cupcake" title="Bánh Cupcake")
+                                .best-slice__content
+                                    a(href="./details.html")
+                                        h3.best-slice__heading  Bánh Cupcake
+                                    .best-slice__rate
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                    .best-slice__price 90,000 đ
+                                    a(href="./cart.html").best-slice__button
+                                        span Thêm Vào Giỏ
+                                        i.fas.fa-cart-plus
+                            .best-slice__card
+                                .best-slice__photo
+                                    a(href="./details.html")
+                                        img(src="./img/banh-6.jpg", alt="Banh Pizza" title="Bánh Pizza")
+                                .best-slice__content
+                                    a(href="./details.html")
+                                        h3.best-slice__heading  Bánh Pizza
+                                    .best-slice__rate
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                    .best-slice__price 90,000 đ
+                                    a(href="./cart.html").best-slice__button
+                                        span Thêm Vào Giỏ
+                                        i.fas.fa-cart-plus
+                            
+
+
+
+
+
+block script
+    script(src="./js/jquery.elevateZoom.js")
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js' integrity='sha512-eP8DK17a+MOcKHXC5Yrqzd8WI5WKh6F1TIk5QZ/8Lbv+8ssblcz7oGC8ZmQ/ZSAPa7ZmsCU4e/hcovqR8jfJqA==' crossorigin='anonymous')
+    script(src="./js/details.js")

@@ -1,0 +1,20 @@
+.download{
+    background-image: url("../img/download/downloadbg2.png");
+}
+.download-text1{
+    color: white;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.download-text2{
+    color: #FFCA00;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.download-content-box .download-name{
+    margin-bottom: 0px;
+}
+.download-text2b{
+    margin-top: 0px;
+    margin-bottom: 10px;
+}

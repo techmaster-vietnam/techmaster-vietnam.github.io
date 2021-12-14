@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ShareKitchen</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"  crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="css/payment.css">
+        <link rel="stylesheet" type="text/css" href="css/fontawesome-with-css/css/all.css">
+        
+    </head>
+    <body>
+       <div class="wrapper">
+           <header class="desktop-header">
+               <div class="header-lv1">
+                   <div class="log-in-container">
+                        <a href="login.html" class="headerWord-2 border-1"><span class="fix">ĐĂNG NHẬP</span></a>
+                        <a href="register.html" class="headerWord-2"><span class="fix">ĐĂNG KÝ</span></a>
+                   </div>
+               </div>
+               <hr>
+               <div class="header-lv2">
+                <div class="logo">
+                    <span class="logoWord">SK</span>
+                </div>
+                <div class="header-lv2-content">
+                    <div class="navbar-1">
+                        <a href="#">TRANG CHỦ</a>
+                        <a href="about.html">GIỚI THIỆU</a>
+                        <div class="dropdown-1">
+                          <button class="dropbtn-1"><a href="foodanddrink.html">THỨC ĂN & ĐỒ UỐNG</a></button>
+                          <div class="dropdown-content-1">
+                            <a href="#">THỨC ĂN</a>
+                            <a href="#">ĐỒ UỐNG</a>
+                          </div>
+                        </div>
+                        <a href="partner.html">ĐỐI TÁC</a> 
+                        <a href="live.html">TRỰC TIẾP</a> 
+                        <a href="news.html">TIN TỨC</a>  
+                    </div>
+                </div>
+               
+                <form class="form-search">
+                    <input class="searchBar" type="text" placeholder="Tìm kiếm">
+                </form>    
+                <a href="addtocart.html" class="addToCart">
+                        <div class="addToCart">
+                            <img class="addToCartSVG" src="img/shopping-cart.svg">
+                        </div>
+                        </a>
+            </div>
+           </header>
+           <header class="mobile-header">
+                <div id="myNav" class="overlay">
+                    <div class="menu-container-2">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    </div>
+                    <div class="overlay-content">
+                        <form class="form-search">
+                            <input class="searchBar" type="text" placeholder="Tìm kiếm">
+                        </form>  
+                        <ul class="overlay-content-menu">
+                        <li><a href="index.html">TRANG CHỦ</a></li>
+                        <li><a href="about.html">GIỚI THIỆU</a></li>
+                        <li><a href="foodanddrink.html" class="m-drinkandfood">THỨC ĂN & ĐỒ UỐNG</a>
+                           <ul>
+                             <li><a href="#">THỨC ĂN</a></li>
+                             <li><a href="#">ĐỒ UỐNG</a></li>
+                           </ul>
+                        </li>
+                        <li><a href="partner.html">ĐỐI TÁC</a>
+                        <li><a href="live.html">TRỰC TIẾP</a>
+                        <li><a href="news.html">TIN TỨC</a>
+                        <li><a href="login.html">ĐĂNG NHẬP</a>
+                        <li><a href="register.html">ĐĂNG KÝ</a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="menu-container">
+                    <img src="img/menu-button-of-three-horizontal-lines.svg" onclick="openNav()">
+                </div> 
+                
+                <div class="logo">
+                    <span class="logoWord">SK</span>
+                </div>
+                <a href="addtocart.html" class="addToCart">
+                        <div class="addToCart">
+                            <img class="addToCartSVG" src="img/shopping-cart.svg">
+                        </div>
+                        </a>
+           </header>
+           <section class="navigation-partnerandonator">
+            <a href="index.html" class="navigation-home-1">TRANG CHỦ</a>
+            <img class="next-image" src="img/next.svg">
+            <a href="partner.html" class="navigation-partner-1">ĐỐI TÁC</a>
+            <img class="next-image" src="img/next.svg">
+            <a href="partnerandonator.html" class="navigation-partnerandonator-1">ĐỐI TÁC & TÀI TRỢ</a>
+            <img class="next-image" src="img/next.svg">
+            <a href="payment.html" class="navigation-payment-1">THANH TOÁN</a>
+           </section>
+           <section class="payment-desktop">
+               <div class="form-payment">
+                   <div class="header-form-payment">THANH TOÁN</div>
+                   <form action="thank.html" class="form-payment-content">
+                        <div class="form-payment-content-1">
+                        <div class="card-1">
+                            <div class="visa-container visa-container-origin" onclick="changeBorder1()"><img class="visa" src="img/visa (1).svg"></div>
+                            <div class="mastercard-container mastercard-container-origin" onclick="changeBorder2()"><img class="mastercard" src="img/mastercard.svg"></div>
+                            <div class="paypal-container paypal-container-origin" onclick="changeBorder3()"><img class="paypal" src="img/paypal.svg"></div>
+                        </div>
+                        <div class="numberofcard">
+                            <label for="numberofcard-text">SỐ THẺ</label>
+                            <br>
+                            <input type="text" class="numberofcard-text">
+                        </div>
+                        <div class="info-container">
+                        <div class="expiry-date">
+                            <label for="expiry-date-text">HẠN SỬ DỤNG</label>
+                            <br>
+                            <input type="date" class="expiry-date-input">
+                        </div>
+                        <div class="cvc">
+                            <label for="cvc-text">CVC</label>
+                            <br>
+                            <input type="text" class="cvc-input">
+                        </div>
+                        </div>
+                        </div>
+                        <button type="submit" class="btn-payment">TIẾP TỤC</button>
+                    </form>
+               </div>
+           </section>
+           <div class="space"></div>
+               <footer class="footer-desktop">
+                   <div class="content-footer">
+                       <div class="word-footer">Vị trí</div>
+                       <div class="word-footer">14 Nguyễn Đình Triểu, </div>
+                       <div class="word-footer">Quận Hai Bà Trưng, Hà Nội</div>
+                   </div>
+                   <div class="content-footer-1">
+                       <span class="word-footer ">Dịch vụ chăm sóc khách hàng</span>
+                       <div class="word-footer">096123456789</div>
+                       <div class="word-footer">7 ngày trong tuần, 7 sáng - 8 tối</div>
+                       <div class="word-footer">ShareKitchen@gmail.com</div>
+                       <span class="content-footer"></span>
+                   </div>
+                   <div class="social-network">
+                       <img src="img/instagram.svg">
+                       <img src="img/facebook-logo.svg">
+                       <img src="img/youtube-logo.svg">
+                   </div>
+                   <div class="copyright">
+                        <div class="word-footer">Bản quyền thuộc về © 2019 ShareKitchen</div>
+                   </div>
+               </footer>
+               <footer class="footer-mobile">
+                    <div class="content-footer">
+                        <div class="word-footer">Vị trí</div>
+                        <div class="word-footer">14 Nguyễn Đình Triểu, </div>
+                        <div class="word-footer">Quận Hai Bà Trưng, Hà Nội</div>
+                    </div>
+                    <div class="content-footer-1">
+                        <span class="word-footer ">Dịch vụ chăm sóc khách hàng</span>
+                        <div class="word-footer">096123456789</div>
+                        <div class="word-footer">7 ngày trong tuần, 7 sáng - 8 tối</div>
+                        <div class="word-footer">ShareKitchen@gmail.com</div>
+                        <span class="content-footer"></span>
+                    </div>
+                    <div class="social-network">
+                        <img class="image-footer" src="img/instagram.svg">
+                        <img class="image-footer" src="img/facebook-logo.svg">
+                        <img class="image-footer" src="img/youtube-logo.svg">
+                    </div>
+                    <div class="copyright">
+                         <div class="word-footer">Bản quyền thuộc về © 2019 ShareKitchen</div>
+                    </div>
+                </footer>
+           
+       </div>
+      
+       <script src="js/main.js"></script>
+       <script src="js/payment.js"></script>
+       </body>    
+</html>
+

@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Chi tiết sản phẩm</title>
+	<link rel="stylesheet" type="text/css" href="plugins/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="plugins/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Arsenal" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cantata+One" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<nav class="header-top">
+			<span class="quick-mobile">
+				<i class="fa fa-phone"></i> 0986090925
+			</span>
+			<span class="quick-mail hidden-xs">
+				<i class="fa fa-envelope-o"></i> hieu.do212@gmail.com
+			</span>
+			<span class="pull-right">
+				<div class="before-log">
+					<button data-toggle="modal" data-tabs="login" data-target=".user-modal">Đăng nhập</button>
+					<button data-toggle="modal" data-tabs="signup" data-target=".user-modal">Đăng ký</button>
+				</div>
+				<div class="logged">
+					<!-- <i class="fa fa-user-o"></i> -->
+					<img src="img/feedback_1.jpg">
+					<div class="dropdown">
+						<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Đỗ Hoàng Hiếu</button>
+						<ul class="dropdown-menu dropdown-menu-right">
+							<li><a href="user-account.html">Quản lý tài khoản</a></li>
+							<li><a id="logout-btn" href="#">Đăng xuất</a></li>
+						</ul>
+					</div>
+				</div>
+			</span>
+		</nav>
+		<nav class="navbar navbar-default">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a href="#" class="search" data-toggle="slide-collapse" data-target="#search-form">
+				<i class="fa fa-search"></i><span class="hidden-xs"> Tìm kiếm</span>
+			</a>
+			<div class="container">
+				<div class="menu row">
+					<div class="collapse navbar-collapse" id="menu-collapse">
+						<ul class="nav navbar-nav navbar-left">
+							<li><a href="home.html">Trang chủ</a></li>
+							<li><a href="shop.html">Sản phẩm</a></li>
+							<li><a href="blog.html">Dự án</a></li>
+						</ul>
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="about.html">Về Min</a></li>
+							<li><a href="blog.html">Blog</a></li>
+							<li><a href="contact.html">Liên hệ</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="cart-box">
+				<a href="wishlist.html">
+					<i class="fa fa-heart-o"></i>
+				</a>
+				<a href="cart.html">
+					<i class="fa fa-shopping-cart"></i>
+				</a>
+			</div>
+			<a class="logo" href="home.html"><img src="img/logo-min.png"></a>
+			<div id="search-form">
+				<form>
+					<input type="text" placeholder="Nhập từ khóa cần tìm">
+					<button type="submit"><i class="fa fa-search"></i></button>
+				</form>
+			</div>
+		</nav>
+		<div class="modal fade user-modal" tabindex="-1">
+			<div class="modal-dialog modal-sm">
+				<div class="modal-content">
+					<ul class="nav nav-tabs" role="tablist">
+						<li id="login-indicator" class="active">
+							<a href="#login" role="tab" data-toggle="tab">Đăng nhập</a>
+						</li>
+						<li id="signup-indicator">
+							<a href="#signup" role="tab" data-toggle="tab" >Đăng ký</a>
+						</li>
+					</ul>
+
+					<div class="tab-content">
+						<div role="tabpanel" class="tab-pane active fade in" id="login">
+							<form>
+								<div class="input-field">
+									<input type="email" name="Email" id="email" placeholder="Email"/>
+								</div>
+								<div class="input-field">
+									<input type="password" name="Password" id="password" placeholder="Mật khẩu"/>
+								</div>
+								<div class="input-field check-field">
+									<input type="checkbox" id="remember" name="remember"/><label for="remember">Ghi nhớ tài khoản</label><br/>
+								</div>
+								<div class="input-field">
+									<input id="login-btn" data-dismiss="modal" value="Đăng nhập"/>
+								</div>
+								<button data-toggle="modal" data-target="#reset-password" data-dismiss="modal" class="btn btn-default"><i class="fa fa-question-circle-o"></i> Quên mật khẩu?</button>
+							</form>
+						</div>
+						<div role="tabpanel" class="tab-pane fade" id="signup">
+							<form>
+								<div class="input-field">
+									<input type="email" name="Email" id="email" placeholder="Email"/>
+								</div>
+								<div class="input-field">
+									<input type="password" name="Password" id="password" placeholder="Mật khẩu"/>
+								</div>
+								<div class="input-field check-field">
+									<input type="checkbox" id="remember" name="remember"/><label for="remember">Hiển thị mật khẩu</label><br/>
+								</div>
+								<div class="input-field">
+									<input type="text" name="Name" id="name" placeholder="Họ tên"/>
+								</div>
+								<div class="input-field">
+									<input type="text" name="Phone" id="phone" placeholder="Số điện thoại"/>
+								</div>
+								<div class="input-field">
+									<input id="signup-btn" type="submit" value="Đăng ký"/>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="container-fluid page-heading shop-heading">
+		<div class="heading-content">
+			<h1>Chi tiết Sản phẩm</h1>
+			<p>Mỗi món đồ là một câu chuyện nhỏ. MIN cùng bạn viết nên câu chuyện ngôi nhà mình.</p>
+			<ol class="breadcrumb">
+				<li><a href="home.html">Trang chủ</a></li>
+				<li><a href="shop.html">Sản phẩm</a></li>
+				<li class="active">Chi tiết Sản phẩm</li>
+			</ol>
+		</div>
+	</div>
+	<div class="single-product">
+		<div class="images">
+			<div id="single-1" class="carousel slide" data-ride="carousel" data-interval="false">
+				<ol class="carousel-indicators">
+					<li data-target="#single-1" data-slide-to="0" class="active">
+						<img src="img/thumb/thumb_2b.jpg" class="img-responsive">
+					</li>
+					<li data-target="#single-1" data-slide-to="1">
+						<img src="img/thumb/thumb_2a.jpg" class="img-responsive">
+					</li>
+					<li data-target="#single-1" data-slide-to="2">
+						<img src="img/thumb/thumb_2c.jpg" class="img-responsive">
+					</li>
+					<li data-target="#single-1" data-slide-to="3">
+						<img src="img/thumb/thumb_2d.jpg" class="img-responsive">
+					</li>
+				</ol>
+
+				<div class="carousel-inner" role="listbox">
+					<div class="item active">
+						<img src="img/product_2b.jpg">
+					</div>
+					<div class="item">
+						<img src="img/product_2a.jpg">
+					</div>
+					<div class="item">
+						<img src="img/product_2c.jpg">
+					</div>
+					<div class="item">
+						<img src="img/product_2d.jpg">
+					</div>
+				</div>
+				<a class="left carousel-control" href="#single-1" data-slide="prev">
+					<i class="fa fa-long-arrow-left"></i>
+				</a>
+				<a class="right carousel-control" href="#single-1" data-slide="next">
+					<i class="fa fa-long-arrow-right"></i>
+				</a>
+			</div>
+		</div>
+		<div class="summary">
+			<h1 class="product-title">Signature Chair</h1>
+			<div class="single-price">
+				<del>4.800.000₫</del>
+				<ins>4.400.000₫</ins>
+			</div>
+			<div class="description">
+				<p>Carl Hansen & Søn tái hiện lại chiếc ghế Signature, tác phẩm nội thất cuối cùng được thiết kế và sản xuất bởi Frits Henningsen năm 1954.</p>
+			</div>
+			<p class="stock">Tình trạng: <span class="in-stock">Còn hàng</span></p>
+			<form class="cart">
+				<span>Số lượng:</span>
+				<div class="quantity">
+					<button class="qty-decrease" onclick="" type="button">-</button>
+					<input id="qty" type="text" name="quantity" value="1" class="" size="4">
+					<button class="qty-increase" onclick="" type="button">+</button>
+				</div>
+				<div class="cart-button">
+					<button type="submit" class="add-to-cart link-to">Thêm vào giỏ hàng</button>
+					<a href="#"><i class="fa fa-heart-o"></i></a>
+				</div>
+			</form>
+			<div class="product-category">
+				Danh mục: <a href="shop.html">Ghế</a>, <a href="shop.html">Ghế tựa</a>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="commerce-tabs">
+			<ul class="nav nav-tabs tabs">
+				<li class="active">
+					<a data-toggle="tab" href="#tab-description">Mô tả</a>
+				</li>
+				<li>
+					<a data-toggle="tab" href="#tab-info">Thông tin</a>
+				</li>
+				<li>
+					<a data-toggle="tab" href="#tab-reviews">Đánh giá</a>
+				</li>
+			</ul>
+			<div class="tab-content">
+				<div class="tab-pane fade active in" id="tab-description">
+					<p>Chiếc ghế Signature là tác phẩm cuối cùng, cũng là tác phẩm đỉnh cao nhất trong sự nghiệp thiết kế và sản xuất đồ nội thất của Frits Henningsen. Chiếc ghế với những đường cong duyên dáng hài hòa, đã đạt đến sự cân bằng tuyệt đối giữa nét sang trọng và sự thoải mái dễ chịu khi sử dụng.</p>
+					<p>Chiếc ghế Signature phản ánh rõ ràng triết lý thiết kế của Frits Henningsen: chú trọng đến sự đơn giản và chính xác. Phần đệm ghế với hình dạng mềm mại, đầy mời gọi, phần tựa tay thanh thoát, tổng hòa nên một trong những thiết kế đơn giản và tinh tế nhất của Frits Henningsen. </p>
+					<p>Sản phẩm cuối cùng, khép lại sự nghiệp của Frits Henningsen chỉ được sản xuất chưa đến 20 chiếc. Nhưng nhờ được tiếp cận những bản thiết kế còn lưu trữ lại của ông, cùng với sự giúp đỡ nhiệt thành từ gia đình ông, nay chiếc ghế đã được Carl Hansen & Søn tái sản xuất trở lại, đưa sản phẩm này đến gần hơn với đại chúng.</p>
+				</div>
+				<div class="tab-pane fade" id="tab-info">
+					<p><strong>Vật liệu khung</strong>: Gỗ sồi / Gỗ óc chó</p>
+					<p><strong>Kích thước</strong>: 102cm x 89cm x 67cm</p>
+					<img src="img/signature_dim.jpg" class="img-responsive">
+					
+				</div>
+				<div id="tab-reviews" class="tab-pane fade">
+					<div class="comments-section">
+						<ul class="comments-list">
+							<li class="comment">
+								<div class="comment-wrap">
+									<div class="comment-img">
+										<img src="img/feedback_2.jpg">
+									</div>
+									<div class="comment-block">
+										<div class="comment-header">
+											<span class="comment-author"><a href="#">Lê Cát Trọng Lý</a></span>
+											<span>2 tuần trước </span>
+											<span class="pull-right">
+												<a class="comment-reply-link" href="#"><i class="fa fa-reply"></i><span class="hidden-sm"> Trả lời</span></a> 
+											</span>
+										</div>
+										<div class="comment-content">
+											<p>Chiếc ghế quá hoàn hảo. Mới nhìn thôi cũng đã muốn ngả lưng lên luôn rồi. Mình vừa đặt hàng một chiếc màu da bò, shop kiểm tra lại và ship sớm cho mình nhé!</p>
+										</div>
+									</div>
+								</div>
+								<ul class="children">
+									<li class="comment">
+										<div class="comment-wrap">
+											<div class="comment-img">
+												<img alt="" src="img/feedback_1.jpg">
+											</div>
+											<div class="comment-block">
+												<div class="comment-header">
+													<span class="comment-author"><a href="#">Admin</a></span>
+													<span>2 tuần trước </span>
+													<span class="pull-right">
+														<a class="comment-reply-link" href="#"><i class="fa fa-reply"></i><span class="hidden-sm"> Trả lời</span></a>
+													</span>
+												</div>
+												<div class="comment-content">
+													<p>Chào chị ạ! Cảm ơn chị đã quan tâm và đặt mua sản phầm này. MIN đã nhận được đơn đặt hàng của chị, nhân viên đang tiến hành xuất kho và sẽ giao cho chị trong ngày hôm nay ạ.</p>
+												</div>
+											</div>
+										</div>
+									</li> 
+								</ul>
+							</li>
+						</ul>
+						<div class="respond-wrap">
+							<h3 class="comment-reply-title">Viết bình luận</h3> 
+							<form class="comment-form">
+								<div class="row">
+									<div class="comment-form-author col-md-6">
+										<input id="author" name="author" type="text" placeholder="Họ tên *" value="" size="30">
+									</div>
+									<div class="comment-form-email col-md-6">
+										<input id="email" name="email" type="text" placeholder="Email *" value="" size="30">
+									</div>
+								</div>
+								<div class="row">
+									<div class="comment-form-comment col-md-12">
+										<textarea placeholder="Bình luận *" id="comment" name="comment" cols="40" rows="6"></textarea>
+									</div>
+									<div class="col-md-12 submit-wrap">
+										<div class="form-submit">
+											<input name="submit" type="submit" id="submit" class="submit" value="Gửi bình luận">
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid relate-products">
+		<div class="section-title">
+			<h2>Sản phẩm liên quan</h2>
+		</div>
+		<div class="row">
+			<div class="col-item col-xs-6 col-md-3">
+				<div class="item-container">
+					<div class="name">
+						<h3>Casiers Standard</h3>	
+						<p>by Le Corbusier</p>
+					</div>
+					<div class="photo">
+						<div id="casiers" class="carousel slide" data-ride="carousel" data-interval="false">
+							<ol class="carousel-indicators">
+								<li data-target="#casiers" data-slide-to="0" class="active"></li>
+								<li data-target="#casiers" data-slide-to="1"></li>
+							</ol>
+
+							<div class="carousel-inner" role="listbox">
+								<div class="item active">
+									<img src="img/casiers_1.jpg">
+								</div>
+								<div class="item">
+									<img src="img/casiers_2.jpg">
+								</div>
+							</div>
+						</div>
+						<div class="vertical-icon">
+							<a href="#"><i class="fa fa-heart-o"></i></a>
+							<a href="#"><i class="fa fa-shopping-cart"></i></a>
+							<a href="shop-detail.html"><i class="fa fa-search-plus"></i></a>
+						</div>
+					</div>
+					<div class="price">
+						<strong>6.600.000₫</strong>	
+					</div>
+				</div>
+			</div>
+			<div class="col-item col-xs-6 col-md-3">
+				<div class="item-container">
+					<div class="name">
+						<h3>La Rotonda</h3>	
+						<p>by Mario Bellini</p>
+					</div>
+					<div class="photo">
+						<div id="rotonda" class="carousel slide" data-ride="carousel" data-interval="false">
+							<ol class="carousel-indicators">
+								<li data-target="#rotonda" data-slide-to="0" class="active"></li>
+								<li data-target="#rotonda" data-slide-to="1"></li>
+							</ol>
+
+							<div class="carousel-inner" role="listbox">
+								<div class="item active">
+									<img src="img/rotonda_1.jpg">
+								</div>
+								<div class="item">
+									<img src="img/rotonda_2.jpg">
+								</div>
+							</div>
+						</div>
+						<div class="vertical-icon">
+							<a href="#"><i class="fa fa-heart-o"></i></a>
+							<a href="#"><i class="fa fa-shopping-cart"></i></a>
+							<a href="shop-detail.html"><i class="fa fa-search-plus"></i></a>
+						</div>
+					</div>
+					<div class="price">
+						<strong>3.200.000₫</strong>	
+					</div>
+					<div class="tag tag-right sale"></div>
+					<div class="tag-name-right">Sale!</div>
+				</div>
+			</div>
+			<div class="col-item col-xs-6 col-md-3">
+				<div class="item-container">
+					<div class="name">
+						<h3>Hansen Ro</h3>
+						<p>by Fritz Hansen</p>	
+					</div>
+					<div class="photo">
+						<div id="product3" class="carousel slide" data-ride="carousel" data-interval="false">
+							<ol class="carousel-indicators">
+								<li data-target="#product3" data-slide-to="0" class="active"></li>
+								<li data-target="#product3" data-slide-to="1"></li>
+								<li data-target="#product3" data-slide-to="2"></li>
+							</ol>
+
+							<div class="carousel-inner" role="listbox">
+								<div class="item active">
+									<img src="img/product_4a.jpg">
+								</div>
+								<div class="item">
+									<img src="img/product_4b.jpg">
+								</div>
+								<div class="item">
+									<img src="img/product_4c.jpg">
+								</div>
+							</div>
+						</div>
+						<div class="vertical-icon">
+							<a href="#"><i class="fa fa-heart-o"></i></a>
+							<a href="#"><i class="fa fa-shopping-cart"></i></a>
+							<a href="shop-detail.html"><i class="fa fa-search-plus"></i></a>
+						</div>
+					</div>
+					<div class="price">
+						<strong>6.600.000₫</strong>	
+					</div>
+				</div>
+			</div>
+			<div class="col-item col-xs-6 col-md-3">
+				<div class="item-container">
+					<div class="name">
+						<h3>Cuba Chair</h3>	
+						<p>by Morten Goettler</p>
+					</div>
+					<div class="photo">
+						<div id="product4" class="carousel slide" data-ride="carousel" data-interval="false">
+							<ol class="carousel-indicators">
+								<li data-target="#product4" data-slide-to="0" class="active"></li>
+								<li data-target="#product4" data-slide-to="1"></li>
+								<li data-target="#product4" data-slide-to="2"></li>
+								<li data-target="#product4" data-slide-to="3"></li>
+							</ol>
+
+							<div class="carousel-inner" role="listbox">
+								<div class="item active">
+									<img src="img/product_6a.jpg">
+								</div>
+								<div class="item">
+									<img src="img/product_6b.jpg">
+								</div>
+								<div class="item">
+									<img src="img/product_6c.jpg">
+								</div>
+								<div class="item">
+									<img src="img/product_6d.jpg">
+								</div>
+							</div>
+						</div>
+						<div class="vertical-icon">
+							<a href="#"><i class="fa fa-heart-o"></i></a>
+							<a href="#"><i class="fa fa-shopping-cart"></i></a>
+							<a href="shop-detail.html"><i class="fa fa-search-plus"></i></a>
+						</div>
+					</div>
+					<div class="price">
+						<strong>1.900.000₫</strong>	
+					</div>
+					<div class="tag tag-left new"></div>
+					<div class="tag-name-left">New!</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<a href="#"><i class="fa fa-angle-up back-top"></i></a>
+	<footer>
+		<div class="container">
+			<div class="row footer-top">
+				<div class="col-xs-6 col-md-3 footer-item">
+					<h4>Thông tin liên hệ</h4>
+					<ul>
+						<li><i class="fa fa-map-marker"></i>Đ/c: 40 Giảng Võ, Đống Đa, Hà Nội</li>
+						<li><i class="fa fa-mobile"></i>Hotline: 0986090925</li>
+						<li><i class="fa fa-envelope-o"></i>Email: hieu.do212@gmail.com</li>
+					</ul>
+				</div>
+				<div class="col-xs-6 col-md-3 footer-item">
+					<h4>Thời gian mở cửa</h4>
+					<ul>
+						<li>Thứ 2 - thứ 6: 8AM - 10PM</li>
+						<li>Thứ 7: 9AM - 8PM</li>
+						<li>Nghỉ Chủ Nhật và các ngày Lễ Tết</li>
+					</ul>
+				</div>
+				<div class="col-xs-6 col-md-3 footer-item">
+					<h4>Hỗ trợ khách hàng</h4>
+					<ul>
+						<li><a href="contact.html">Liên hệ & Góp ý</a></li>
+						<li><a href="#">Hướng dẫn mua hàng online</a></li>
+						<li><a href="#">Câu hỏi thường gặp</a></li>
+						<li><a href="#">Chính sách bảo mật</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-6 col-md-3 footer-item">
+					<h4>Chính sách mua hàng</h4>
+					<ul>
+						<li><a href="#">Chính sách bảo hành, đổi trả</a></li>
+						<li><a href="#">Chính sách hội viên</a></li>
+						<li><a href="#">Giao hàng và lắp đặt</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="row footer-bot">
+				<a href="#" title="Kết nối qua Facebook"><i class="fa fa-facebook-official"></i></a>
+				<a href="#" title="Kết nối qua Google+"><i class="fa fa-google-plus-official"></i></a>
+				<a href="#" title="Kết nối qua Pinterest"><i class="fa fa-pinterest"></i></a>
+				<a href="#" title="Kết nối qua Instagram"><i class="fa fa-instagram"></i></a>
+			</div>
+		</div>
+		<div class="container-fluid copyright">
+			<div class="row">
+				<p>Copyright 2017 <i class="fa fa-copyright"></i> Designed by Hieudo</p>
+			</div>
+		</div>
+	</footer>
+	<script type="text/javascript" src="js/jquery-3.1.1.js" ></script>
+	<script src="owlcarousel/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="plugins/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/script.js" ></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+.my-banner {
+	background-image: url('../images/info.jpg');
+}
+
+.info-content {
+	padding: 80px 0px;
+}
+
+.table-info {
+	background-color: white;
+	border-radius: 5px;
+	padding: 5%;
+	padding-bottom: 2%;
+	padding-top: 3%;
+}
+
+.title-table {
+	border-bottom: 1px solid #363739;
+	padding-bottom: 1em;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.detail-info, .shopping-info {
+	padding-top: 1em;
+}
+
+.td-btn {
+	text-align: right;
+}
+
+.detail-info table{
+	border-collapse: initial;
+	width: 100%;
+}
+
+tr > td {
+	padding-bottom: 1em;
+}
+
+.shopping-info table {
+	width: 100%;
+	border-collapse: initial;
+}
+
+.shopping-info table td, th {
+	text-align: center;
+}
+
+.see-btn {
+	background-color: transparent;
+	outline: none;
+	border: none;
+}
+
+.annouce {
+	background-color: transparent;
+}
+
+#bill .modal-body {
+	padding: 0px;
+}
+
+#myinfo input {
+	border: 1px solid #363739;
+}
+
+.grp-btn {
+	text-align: right;
+}

@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sản phẩm</title>
+	<link rel="stylesheet" type="text/css" href="plugins/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="plugins/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Arsenal" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cantata+One" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<nav class="header-top">
+			<span class="quick-mobile">
+				<i class="fa fa-phone"></i> 0986090925
+			</span>
+			<span class="quick-mail hidden-xs">
+				<i class="fa fa-envelope-o"></i> hieu.do212@gmail.com
+			</span>
+			<span class="pull-right">
+				<div class="before-log">
+					<button data-toggle="modal" data-tabs="login" data-target=".user-modal">Đăng nhập</button>
+					<button data-toggle="modal" data-tabs="signup" data-target=".user-modal">Đăng ký</button>
+				</div>
+				<div class="logged">
+					<!-- <i class="fa fa-user-o"></i> -->
+					<img src="img/feedback_1.jpg">
+					<div class="dropdown">
+						<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Đỗ Hoàng Hiếu</button>
+						<ul class="dropdown-menu dropdown-menu-right">
+							<li><a href="user-account.html">Quản lý tài khoản</a></li>
+							<li><a id="logout-btn" href="#">Đăng xuất</a></li>
+						</ul>
+					</div>
+				</div>
+			</span>
+		</nav>
+		<nav class="navbar navbar-default">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a href="#" class="search" data-toggle="slide-collapse" data-target="#search-form">
+				<i class="fa fa-search"></i><span class="hidden-xs"> Tìm kiếm</span>
+			</a>
+			<div class="container">
+				<div class="menu row">
+					<div class="collapse navbar-collapse" id="menu-collapse">
+						<ul class="nav navbar-nav navbar-left">
+							<li><a href="home.html">Trang chủ</a></li>
+							<li><a href="shop.html">Sản phẩm</a></li>
+							<li><a href="blog.html">Dự án</a></li>
+						</ul>
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="about.html">Về Min</a></li>
+							<li><a href="blog.html">Blog</a></li>
+							<li><a href="contact.html">Liên hệ</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="cart-box">
+				<a href="wishlist.html">
+					<i class="fa fa-heart-o"></i>
+				</a>
+				<a href="cart.html">
+					<i class="fa fa-shopping-cart"></i>
+				</a>
+			</div>
+			<a class="logo" href="home.html"><img src="img/logo-min.png"></a>
+			<div id="search-form">
+				<form>
+					<input type="text" placeholder="Nhập từ khóa cần tìm">
+					<button type="submit"><i class="fa fa-search"></i></button>
+				</form>
+			</div>
+		</nav>
+		<div class="modal fade user-modal" tabindex="-1">
+			<div class="modal-dialog modal-sm">
+				<div class="modal-content">
+					<ul class="nav nav-tabs" role="tablist">
+						<li id="login-indicator" class="active">
+							<a href="#login" role="tab" data-toggle="tab">Đăng nhập</a>
+						</li>
+						<li id="signup-indicator">
+							<a href="#signup" role="tab" data-toggle="tab" >Đăng ký</a>
+						</li>
+					</ul>
+
+					<div class="tab-content">
+						<div role="tabpanel" class="tab-pane active fade in" id="login">
+							<form>
+								<div class="input-field">
+									<input type="email" name="Email" id="email" placeholder="Email"/>
+								</div>
+								<div class="input-field">
+									<input type="password" name="Password" id="password" placeholder="Mật khẩu"/>
+								</div>
+								<div class="input-field check-field">
+									<input type="checkbox" id="remember" name="remember"/><label for="remember">Ghi nhớ tài khoản</label><br/>
+								</div>
+								<div class="input-field">
+									<input id="login-btn" data-dismiss="modal" value="Đăng nhập"/>
+								</div>
+								<button data-toggle="modal" data-target="#reset-password" data-dismiss="modal" class="btn btn-default"><i class="fa fa-question-circle-o"></i> Quên mật khẩu?</button>
+							</form>
+						</div>
+						<div role="tabpanel" class="tab-pane fade" id="signup">
+							<form>
+								<div class="input-field">
+									<input type="email" name="Email" id="email" placeholder="Email"/>
+								</div>
+								<div class="input-field">
+									<input type="password" name="Password" id="password" placeholder="Mật khẩu"/>
+								</div>
+								<div class="input-field check-field">
+									<input type="checkbox" id="remember" name="remember"/><label for="remember">Hiển thị mật khẩu</label><br/>
+								</div>
+								<div class="input-field">
+									<input type="text" name="Name" id="name" placeholder="Họ tên"/>
+								</div>
+								<div class="input-field">
+									<input type="text" name="Phone" id="phone" placeholder="Số điện thoại"/>
+								</div>
+								<div class="input-field">
+									<input id="signup-btn" type="submit" value="Đăng ký"/>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="container-fluid page-heading shop-heading">
+		<div class="heading-content">
+			<h1>Sản phẩm</h1>
+			<p>Mỗi món đồ là một câu chuyện nhỏ. MIN cùng bạn viết nên câu chuyện ngôi nhà mình.</p>
+			<ol class="breadcrumb">
+				<li><a href="home.html">Trang chủ</a></li>
+				<li class="active">Sản phẩm</li>
+			</ol>
+		</div>
+	</div>
+	<div class="container shop-main">
+		<div class="row">
+			<nav class="navbar navbar-default" id="shop-menu">
+				<button type="button" class="navbar-toggle collapsed pull-left" data-toggle="slide-collapse" data-target=".shop-nav">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+
+				<div class="collapse navbar-collapse pull-left shop-nav">
+					<ul class="nav navbar-nav">
+						<li class="dropdown">
+							<form>
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Lọc theo hãng sản xuất <span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li class="checkbox"><input type="checkbox" name="brand1" value="brand1">IKEA</li>
+									<li role="separator" class="divider"></li>
+									<li class="checkbox"><input type="checkbox" name="brand2" value="brand2">Hooker</li>
+									<li role="separator" class="divider"></li>
+									<li class="checkbox"><input type="checkbox" name="brand3" value="brand3">Ashley</li>
+									<li role="separator" class="divider"></li>
+									<li class="checkbox"><input type="checkbox" name="brand4" value="brand4">Stanford</li>
+									<li role="separator" class="divider"></li>
+									<li class="checkbox"><input type="checkbox" name="brand5" value="brand5">Stickley</li>
+									<li role="separator" class="divider"></li>
+									<li><input class="filter" id="brand" type="submit" value="Xem kết quả"/></li>
+								</ul>
+							</form>
+						</li>
+						<li class="dropdown">
+							<form>
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Lọc theo mức giá <span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li class="checkbox"><input type="checkbox" name="price1" value="price1">Dưới 1 triệu</li>
+									<li role="separator" class="divider"></li>
+									<li class="checkbox"><input type="checkbox" name="price2" value="price2">Từ 1 triệu đến 3 triệu</li>
+									<li role="separator" class="divider"></li>
+									<li class="checkbox"><input type="checkbox" name="price3" value="price3">Từ 3 triệu đến 5 triệu</li>
+									<li role="separator" class="divider"></li>
+									<li class="checkbox"><input type="checkbox" name="price4" value="price4">Từ 5 triệu đến 10 triệu</li>
+									<li role="separator" class="divider"></li>
+									<li class="checkbox"><input type="checkbox" name="price5" value="price5">Trên 10 triệu</li>
+									<li role="separator" class="divider"></li>
+									<li><input class="filter" id="price" type="submit" value="Xem kết quả"/></li>
+								</ul>
+							</form>
+						</li>
+						<li class="dropdown">
+							<form>
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Lọc theo màu sắc <span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li class="checkbox"><input type="checkbox" name="color1" value="color1">Đen</li>
+									<li role="separator" class="divider"></li>
+									<li class="checkbox"><input type="checkbox" name="color2" value="color2">Trắng</li>
+									<li role="separator" class="divider"></li>
+									<li class="checkbox"><input type="checkbox" name="color3" value="color3">Nâu</li>
+									<li role="separator" class="divider"></li>
+									<li class="checkbox"><input type="checkbox" name="color4" value="color4">Xám</li>
+									<li role="separator" class="divider"></li>
+									<li class="checkbox"><input type="checkbox" name="color5" value="color5">Xanh lá</li>
+									<li role="separator" class="divider"></li>
+									<li><input class="filter" id="color" type="submit" value="Xem kết quả"/></li>
+								</ul>
+							</form>
+						</li>
+					</ul>
+				</div>
+
+				<select class="form-control pull-right">
+					<option disabled selected hidden>Sắp xếp</option>
+					<option value="sort1">Thứ tự mặc định</option>
+					<option value="sort2">Thứ tự theo sản phẩm mới</option>
+					<option value="sort3">Thứ tự theo giá: thấp đến cao</option>
+					<option value="sort4">Thứ tự theo giá: cao đến thấp</option>
+				</select>
+			</nav>
+			<div class="product-list">
+				<ul class="nav nav-stacked col-xs-3 collapse navbar-collapse shop-nav">
+					<li class="search-box">
+						<div class="nav-title"><h4>Tìm sản phẩm</h4></div>
+						<form class="navbar-form">
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Search">
+							</div>
+							<button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+						</form>
+					</li>
+					<li class="nav-title"><a data-toggle="display-all"><h4>Danh mục sản phẩm</h4></a></li>
+					<li><button class="product-group" type="button" data-toggle="filter-display" data-target=".tablee"><h4>Bàn</h4></button>
+						<ul class="nested-tab">
+							<li><button class="sub-group" type="button" data-toggle="filter-display" data-target=".tea-table"><h5>Bàn trà</h5></button></li>
+							<li><button class="sub-group" type="button" data-toggle="filter-display" data-target=".dining-table"><h5>Bàn ăn</h5></button></li>
+							<li><button class="sub-group" type="button" data-toggle="filter-display" data-target=".work-table"><h5>Bàn làm việc</h5></button></li>
+						</ul>
+					</li>
+					<li><button class="product-group" type="button" data-toggle="filter-display" data-target=".chair"><h4>Ghế</h4></button>
+						<ul class="nested-tab">
+							<li><button class="sub-group" type="button" data-toggle="filter-display" data-target=".sofa-chair"><h5>Ghế sofa</h5></button></li>
+							<li><button class="sub-group" type="button" data-toggle="filter-display" data-target=".arm-chair"><h5>Ghế bành</h5></button></li>
+							<li><button class="sub-group" type="button" data-toggle="filter-display" data-target=".lounge-chair"><h5>Ghế tựa</h5></button></li>
+							<li><button class="sub-group" type="button" data-toggle="filter-display" data-target=".stool"><h5>Ghế đẩu</h5></button></li>
+							<li><button class="sub-group" type="button" data-toggle="filter-display" data-target=".folding-chair"><h5>Ghế xếp</h5></button></li>
+						</ul>
+					</li>
+					<li><button class="product-group" type="button" data-toggle="filter-display" data-target=".cabinet"><h4>Tủ & Kệ</h4></button>
+						<ul class="nested-tab">
+							<li><button class="sub-group" type="button" data-toggle="filter-display" data-target=".store-cabinet"><h5>Tủ để đồ</h5></button></li>
+							<li><button class="sub-group" type="button" data-toggle="filter-display" data-target=".multi-cabinet"><h5>Tủ đa năng</h5></button></li>
+							<li><button class="sub-group" type="button" data-toggle="filter-display" data-target=".tv-bench"><h5>Kệ Tivi</h5></button></li>
+							<li><button class="sub-group" type="button" data-toggle="filter-display" data-target=".book-shelf"><h5>Kệ sách</h5></button></li>
+						</ul>
+					</li>
+					<li><button class="product-group" type="button" data-toggle="filter-display" data-target=".decor"><h4>Đồ trang trí</h4></button></li>
+				</ul>
+
+				<div class="item-list col-xs-12 col-sm-9">
+					<div class="row">
+						<div class="col-item chair arm-chair col-xs-6 col-lg-4">
+							<div class="item-container">
+								<div class="name">
+									<h3>Eros Papasan</h3>
+									<p>by Kartell</p>	
+								</div>
+								<div class="photo">
+									<div id="product1" class="carousel slide" data-ride="carousel" data-interval="false">
+										<ol class="carousel-indicators">
+											<li data-target="#product1" data-slide-to="0" class="active"></li>
+											<li data-target="#product1" data-slide-to="1"></li>
+										</ol>
+
+										<div class="carousel-inner" role="listbox">
+											<div class="item active">
+												<img src="img/product_1a.jpg">
+											</div>
+											<div class="item">
+												<img src="img/product_1b.jpg">
+											</div>
+										</div>
+									</div>
+									<div class="vertical-icon">
+										<a href="#"><i class="fa fa-heart-o"></i></a>
+										<a href="#"><i class="fa fa-shopping-cart"></i></a>
+										<a href="shop-detail.html"><i class="fa fa-search-plus"></i></a>
+									</div>
+								</div>
+								<div class="price">
+									<strong>4.800.000₫</strong>	
+								</div>
+							</div>
+						</div>
+						<div class="col-item tablee tea-table col-xs-6 col-lg-4">
+							<div class="item-container">
+								<div class="name">
+									<h3>Rio</h3>	
+									<p>by Charlotte Perriand</p>
+								</div>
+								<div class="photo">
+									<div id="rio" class="carousel slide" data-ride="carousel" data-interval="false">
+										<ol class="carousel-indicators">
+											<li data-target="#rio" data-slide-to="0" class="active"></li>
+											<li data-target="#rio" data-slide-to="1"></li>
+											<li data-target="#rio" data-slide-to="2"></li>
+											<li data-target="#rio" data-slide-to="3"></li>
+										</ol>
+
+										<div class="carousel-inner" role="listbox">
+											<div class="item active">
+												<img src="img/rio_1.jpg">
+											</div>
+											<div class="item">
+												<img src="img/rio_2.jpg">
+											</div>
+											<div class="item">
+												<img src="img/rio_3.jpg">
+											</div>
+											<div class="item">
+												<img src="img/rio_4.jpg">
+											</div>
+										</div>
+									</div>
+									<div class="vertical-icon">
+										<a href="#"><i class="fa fa-heart-o"></i></a>
+										<a href="#"><i class="fa fa-shopping-cart"></i></a>
+										<a href="shop-detail.html"><i class="fa fa-search-plus"></i></a>
+									</div>
+								</div>
+								<div class="price">
+									<strong>4.900.000₫</strong>	
+								</div>
+							</div>
+						</div>
+						<div class="col-item cabinet store-cabinet col-xs-6 col-lg-4">
+							<div class="item-container">
+								<div class="name">
+									<h3>Casiers Standard</h3>	
+									<p>by Le Corbusier</p>
+								</div>
+								<div class="photo">
+									<div id="casiers" class="carousel slide" data-ride="carousel" data-interval="false">
+										<ol class="carousel-indicators">
+											<li data-target="#casiers" data-slide-to="0" class="active"></li>
+											<li data-target="#casiers" data-slide-to="1"></li>
+										</ol>
+
+										<div class="carousel-inner" role="listbox">
+											<div class="item active">
+												<img src="img/casiers_1.jpg">
+											</div>
+											<div class="item">
+												<img src="img/casiers_2.jpg">
+											</div>
+										</div>
+									</div>
+									<div class="vertical-icon">
+										<a href="#"><i class="fa fa-heart-o"></i></a>
+										<a href="#"><i class="fa fa-shopping-cart"></i></a>
+										<a href="shop-detail.html"><i class="fa fa-search-plus"></i></a>
+									</div>
+								</div>
+								<div class="price">
+									<strong>6.600.000₫</strong>	
+								</div>
+							</div>
+						</div>
+						<div class="col-item chair lounge-chair col-xs-6 col-lg-4">
+							<div class="item-container">
+								<div class="name">
+									<h3>Signature Chair</h3>
+									<p>by Frits Henningsen</p>	
+								</div>
+								<div class="photo">
+									<div id="product2" class="carousel slide" data-ride="carousel" data-interval="false">
+										<ol class="carousel-indicators">
+											<li data-target="#product2" data-slide-to="0" class="active"></li>
+											<li data-target="#product2" data-slide-to="1"></li>
+											<li data-target="#product2" data-slide-to="2"></li>
+											<li data-target="#product2" data-slide-to="3"></li>
+										</ol>
+
+										<div class="carousel-inner" role="listbox">
+											<div class="item active">
+												<img src="img/product_2a.jpg">
+											</div>
+											<div class="item">
+												<img src="img/product_2b.jpg">
+											</div>
+											<div class="item">
+												<img src="img/product_2c.jpg">
+											</div>
+											<div class="item">
+												<img src="img/product_2d.jpg">
+											</div>
+										</div>
+									</div>
+									<div class="vertical-icon">
+										<a href="#"><i class="fa fa-heart-o"></i></a>
+										<a href="#"><i class="fa fa-shopping-cart"></i></a>
+										<a href="shop-detail.html"><i class="fa fa-search-plus"></i></a>
+									</div>
+								</div>
+								<div class="price">
+									<strong>4.400.000₫</strong>	
+								</div>
+								<div class="tag tag-right sale"></div>
+								<div class="tag-name-right">Sale!</div>
+							</div>
+						</div>
+						<div class="col-item tablee tea-table col-xs-6 col-lg-4">
+							<div class="item-container">
+								<div class="name">
+									<h3>La Rotonda</h3>	
+									<p>by Mario Bellini</p>
+								</div>
+								<div class="photo">
+									<div id="rotonda" class="carousel slide" data-ride="carousel" data-interval="false">
+										<ol class="carousel-indicators">
+											<li data-target="#rotonda" data-slide-to="0" class="active"></li>
+											<li data-target="#rotonda" data-slide-to="1"></li>
+										</ol>
+
+										<div class="carousel-inner" role="listbox">
+											<div class="item active">
+												<img src="img/rotonda_1.jpg">
+											</div>
+											<div class="item">
+												<img src="img/rotonda_2.jpg">
+											</div>
+										</div>
+									</div>
+									<div class="vertical-icon">
+										<a href="#"><i class="fa fa-heart-o"></i></a>
+										<a href="#"><i class="fa fa-shopping-cart"></i></a>
+										<a href="shop-detail.html"><i class="fa fa-search-plus"></i></a>
+									</div>
+								</div>
+								<div class="price">
+									<strong>3.200.000₫</strong>	
+								</div>
+								<div class="tag tag-right sale"></div>
+								<div class="tag-name-right">Sale!</div>
+							</div>
+						</div>
+						<div class="col-item cabinet multi-cabinet col-xs-6 col-lg-4">
+							<div class="item-container">
+								<div class="name">
+									<h3>LC16</h3>	
+									<p>by Le Corbusier</p>
+								</div>
+								<div class="photo">
+									<div id="lc16" class="carousel slide" data-ride="carousel" data-interval="false">
+										<ol class="carousel-indicators">
+											<li data-target="#lc16" data-slide-to="0" class="active"></li>
+											<li data-target="#lc16" data-slide-to="1"></li>
+										</ol>
+
+										<div class="carousel-inner" role="listbox">
+											<div class="item active">
+												<img src="img/lc16_1.jpg">
+											</div>
+											<div class="item">
+												<img src="img/lc16_2.jpg">
+											</div>
+										</div>
+									</div>
+									<div class="vertical-icon">
+										<a href="#"><i class="fa fa-heart-o"></i></a>
+										<a href="#"><i class="fa fa-shopping-cart"></i></a>
+										<a href="shop-detail.html"><i class="fa fa-search-plus"></i></a>
+									</div>
+								</div>
+								<div class="price">
+									<strong>4.800.000₫</strong>	
+								</div>
+							</div>
+						</div>
+						<div class="col-item chair arm-chair col-xs-6 col-lg-4">
+							<div class="item-container">
+								<div class="name">
+									<h3>Hansen Ro</h3>
+									<p>by Fritz Hansen</p>	
+								</div>
+								<div class="photo">
+									<div id="product3" class="carousel slide" data-ride="carousel" data-interval="false">
+										<ol class="carousel-indicators">
+											<li data-target="#product3" data-slide-to="0" class="active"></li>
+											<li data-target="#product3" data-slide-to="1"></li>
+											<li data-target="#product3" data-slide-to="2"></li>
+										</ol>
+
+										<div class="carousel-inner" role="listbox">
+											<div class="item active">
+												<img src="img/product_4a.jpg">
+											</div>
+											<div class="item">
+												<img src="img/product_4b.jpg">
+											</div>
+											<div class="item">
+												<img src="img/product_4c.jpg">
+											</div>
+										</div>
+									</div>
+									<div class="vertical-icon">
+										<a href="#"><i class="fa fa-heart-o"></i></a>
+										<a href="#"><i class="fa fa-shopping-cart"></i></a>
+										<a href="shop-detail.html"><i class="fa fa-search-plus"></i></a>
+									</div>
+								</div>
+								<div class="price">
+									<strong>6.600.000₫</strong>	
+								</div>
+							</div>
+						</div>
+						<div class="col-item tablee dining-table col-xs-6 col-lg-4">
+							<div class="item-container">
+								<div class="name">
+									<h3>Rotor</h3>	
+									<p>by Piero Lissoni</p>
+								</div>
+								<div class="photo">
+									<div id="rotor" class="carousel slide" data-ride="carousel" data-interval="false">
+										<ol class="carousel-indicators">
+											<li data-target="#rotor" data-slide-to="0" class="active"></li>
+											<li data-target="#rotor" data-slide-to="1"></li>
+										</ol>
+
+										<div class="carousel-inner" role="listbox">
+											<div class="item active">
+												<img src="img/rotor_1.jpg">
+											</div>
+											<div class="item">
+												<img src="img/rotor_2.jpg">
+											</div>
+										</div>
+									</div>
+									<div class="vertical-icon">
+										<a href="#"><i class="fa fa-heart-o"></i></a>
+										<a href="#"><i class="fa fa-shopping-cart"></i></a>
+										<a href="shop-detail.html"><i class="fa fa-search-plus"></i></a>
+									</div>
+								</div>
+								<div class="price">
+									<strong>5.600.000₫</strong>	
+								</div>
+								<div class="tag tag-left new"></div>
+								<div class="tag-name-left">New!</div>
+							</div>
+						</div>
+						<div class="col-item cabinet book-shelf col-xs-6 col-lg-4">
+							<div class="item-container">
+								<div class="name">
+									<h3>Nuvola Rossa</h3>	
+									<p>by Vico Magistretti</p>
+								</div>
+								<div class="photo">
+									<div id="rossa" class="carousel slide" data-ride="carousel" data-interval="false">
+										<ol class="carousel-indicators">
+											<li data-target="#rossa" data-slide-to="0" class="active"></li>
+											<li data-target="#rossa" data-slide-to="1"></li>
+										</ol>
+
+										<div class="carousel-inner" role="listbox">
+											<div class="item active">
+												<img src="img/rossa_1.jpg">
+											</div>
+											<div class="item">
+												<img src="img/rossa_2.jpg">
+											</div>
+										</div>
+									</div>
+									<div class="vertical-icon">
+										<a href="#"><i class="fa fa-heart-o"></i></a>
+										<a href="#"><i class="fa fa-shopping-cart"></i></a>
+										<a href="shop-detail.html"><i class="fa fa-search-plus"></i></a>
+									</div>
+								</div>
+								<div class="price">
+									<strong>3.900.000₫</strong>	
+								</div>
+							</div>
+						</div>
+						<div class="col-item chair folding-chair col-xs-6 col-lg-4">
+							<div class="item-container">
+								<div class="name">
+									<h3>Cuba Chair</h3>	
+									<p>by Morten Goettler</p>
+								</div>
+								<div class="photo">
+									<div id="product4" class="carousel slide" data-ride="carousel" data-interval="false">
+										<ol class="carousel-indicators">
+											<li data-target="#product4" data-slide-to="0" class="active"></li>
+											<li data-target="#product4" data-slide-to="1"></li>
+											<li data-target="#product4" data-slide-to="2"></li>
+											<li data-target="#product4" data-slide-to="3"></li>
+										</ol>
+
+										<div class="carousel-inner" role="listbox">
+											<div class="item active">
+												<img src="img/product_6a.jpg">
+											</div>
+											<div class="item">
+												<img src="img/product_6b.jpg">
+											</div>
+											<div class="item">
+												<img src="img/product_6c.jpg">
+											</div>
+											<div class="item">
+												<img src="img/product_6d.jpg">
+											</div>
+										</div>
+									</div>
+									<div class="vertical-icon">
+										<a href="#"><i class="fa fa-heart-o"></i></a>
+										<a href="#"><i class="fa fa-shopping-cart"></i></a>
+										<a href="shop-detail.html"><i class="fa fa-search-plus"></i></a>
+									</div>
+								</div>
+								<div class="price">
+									<strong>1.900.000₫</strong>	
+								</div>
+								<div class="tag tag-left new"></div>
+								<div class="tag-name-left">New!</div>
+							</div>
+						</div>
+						<div class="col-item tablee work-table col-xs-6 col-lg-4">
+							<div class="item-container">
+								<div class="name">
+									<h3>Ventaglio</h3>	
+									<p>by Charlotte Perriand</p>
+								</div>
+								<div class="photo">
+									<div id="ventaglio" class="carousel slide" data-ride="carousel" data-interval="false">
+										<ol class="carousel-indicators">
+											<li data-target="#ventaglio" data-slide-to="0" class="active"></li>
+											<li data-target="#ventaglio" data-slide-to="1"></li>
+											<li data-target="#ventaglio" data-slide-to="2"></li>
+										</ol>
+
+										<div class="carousel-inner" role="listbox">
+											<div class="item active">
+												<img src="img/ventaglio_1.jpg">
+											</div>
+											<div class="item">
+												<img src="img/ventaglio_2.jpg">
+											</div>
+											<div class="item">
+												<img src="img/ventaglio_3.jpg">
+											</div>
+										</div>
+									</div>
+									<div class="vertical-icon">
+										<a href="#"><i class="fa fa-heart-o"></i></a>
+										<a href="#"><i class="fa fa-shopping-cart"></i></a>
+										<a href="shop-detail.html"><i class="fa fa-search-plus"></i></a>
+									</div>
+								</div>
+								<div class="price">
+									<strong>7.700.000₫</strong>	
+								</div>
+							</div>
+						</div>
+						<div class="col-item cabinet tv-bench col-xs-6 col-lg-4">
+							<div class="item-container">
+								<div class="name">
+									<h3>Riflesso</h3>	
+									<p>by Charlotte Perriand</p>
+								</div>
+								<div class="photo">
+									<div id="riflesso" class="carousel slide" data-ride="carousel" data-interval="false">
+										<ol class="carousel-indicators">
+											<li data-target="#riflesso" data-slide-to="0" class="active"></li>
+											<li data-target="#riflesso" data-slide-to="1"></li>
+										</ol>
+
+										<div class="carousel-inner" role="listbox">
+											<div class="item active">
+												<img src="img/riflesso_1.jpg">
+											</div>
+											<div class="item">
+												<img src="img/riflesso_2.jpg">
+											</div>
+										</div>
+									</div>
+									<div class="vertical-icon">
+										<a href="#"><i class="fa fa-heart-o"></i></a>
+										<a href="#"><i class="fa fa-shopping-cart"></i></a>
+										<a href="shop-detail.html"><i class="fa fa-search-plus"></i></a>
+									</div>
+								</div>
+								<div class="price">
+									<strong>4.400.000₫</strong>	
+								</div>
+							</div>
+						</div>
+					</div>
+					<nav>
+						<div class="pagination">
+							<a class="prev page-no" href="#">
+								<i class="fa fa-long-arrow-left"></i>
+							</a>
+							<a href="#" class="page-no">1</a>
+							<a href="#" class="page-no current">2</a>
+							<a href="#" class="page-no">3</a>
+							<a href="#" class="page-no">4</a>
+							<a href="#" class="page-no">5</a>
+							<a class="next page-no" href="#">
+								<i class="fa fa-long-arrow-right"></i>
+							</a>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+	<a href="#"><i class="fa fa-angle-up back-top"></i></a>
+	<footer>
+		<div class="container">
+			<div class="row footer-top">
+				<div class="col-xs-6 col-md-3 footer-item">
+					<h4>Thông tin liên hệ</h4>
+					<ul>
+						<li><i class="fa fa-map-marker"></i>Đ/c: 40 Giảng Võ, Đống Đa, Hà Nội</li>
+						<li><i class="fa fa-mobile"></i>Hotline: 0986090925</li>
+						<li><i class="fa fa-envelope-o"></i>Email: hieu.do212@gmail.com</li>
+					</ul>
+				</div>
+				<div class="col-xs-6 col-md-3 footer-item">
+					<h4>Thời gian mở cửa</h4>
+					<ul>
+						<li>Thứ 2 - thứ 6: 8AM - 10PM</li>
+						<li>Thứ 7: 9AM - 8PM</li>
+						<li>Nghỉ Chủ Nhật và các ngày Lễ Tết</li>
+					</ul>
+				</div>
+				<div class="col-xs-6 col-md-3 footer-item">
+					<h4>Hỗ trợ khách hàng</h4>
+					<ul>
+						<li><a href="contact.html">Liên hệ & Góp ý</a></li>
+						<li><a href="#">Hướng dẫn mua hàng online</a></li>
+						<li><a href="#">Câu hỏi thường gặp</a></li>
+						<li><a href="#">Chính sách bảo mật</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-6 col-md-3 footer-item">
+					<h4>Chính sách mua hàng</h4>
+					<ul>
+						<li><a href="#">Chính sách bảo hành, đổi trả</a></li>
+						<li><a href="#">Chính sách hội viên</a></li>
+						<li><a href="#">Giao hàng và lắp đặt</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="row footer-bot">
+				<a href="#" title="Kết nối qua Facebook"><i class="fa fa-facebook-official"></i></a>
+				<a href="#" title="Kết nối qua Google+"><i class="fa fa-google-plus-official"></i>
+				<a href="#" title="Kết nối qua Pinterest"><i class="fa fa-pinterest"></i>
+				<a href="#" title="Kết nối qua Instagram"><i class="fa fa-instagram"></i>
+			</div>
+		</div>
+		<div class="container-fluid copyright">
+			<div class="row">
+				<p>Copyright 2017 <i class="fa fa-copyright"></i> Designed by Hieudo</p>
+			</div>
+		</div>
+	</footer>
+	<script type="text/javascript" src="js/jquery-3.1.1.js" ></script>
+	<script src="owlcarousel/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="plugins/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/script.js" ></script>
+</body>
+</html>

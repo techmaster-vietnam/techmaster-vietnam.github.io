@@ -1,0 +1,33 @@
+.trang1 p{
+    color: #FFCA00;
+    font-weight: bold;
+    border: 2px solid #FFCA00;
+    border-radius: 5px;
+    padding: 0px 5px 0px 5px;
+}
+.header-content-tai-nguyen-mien-phi-box{
+    position: relative;
+}
+.img-vip{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+}
+.vip-frame{
+    position: relative;
+}
+.img-tai-xuong-hover p{
+    color: white;
+}
+.img-tai-xuong-hover{
+    background-color: #00000078;
+}
+.img-tai-xuong-hover-box{
+    display: none;
+    cursor: pointer;
+}
+
+
+

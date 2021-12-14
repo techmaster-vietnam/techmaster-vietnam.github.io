@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="../conponent/header/index.css">
+    <link rel="stylesheet" href="../conponent/footer/index.css">
+    <link rel="stylesheet" href="category.css">
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <div id="header">
+
+    </div>
+    <div id="main">
+        <div class="shop-title">
+            <div class="link-category">
+                <a class="extra-link" href="../index.html">Trang chủ &nbsp;/&nbsp; </a>
+                <a class="primary-link" href="">Cửa hàng</a>
+            </div>
+            <div class="product-hightlight-mobile">
+                <span><i class="fad fa-ellipsis-v"></i>&nbsp;&nbsp;Tìm kiếm</span>
+            </div>
+            <div class="after1 hide">
+                <div class="close-hightlight">
+                    <i class="far fa-times"></i>
+                </div>
+            </div>
+            <div class="sort-product">
+                <div class="show-product" id="show-product-count">
+                    Hiển thị 9 sản phẩm&nbsp;&nbsp;
+                </div>
+            </div>
+        </div>
+        <div class="product-hightlight">
+            <div class="left-hightlight">
+                <h2>Tìm kiếm theo</h2>
+                <div class="product-list-extra" id="product-list-extra">
+                    <div class="category-sorting">
+                        <h3>Danh mục</h3>
+                        <ul class="menu-sorting">
+                            <li onclick="filterByCategory(1)" class="item-sorting">
+                                <input type="radio" id="category1" name="category" value="1">
+                                <label for="category1">Rau hữu cơ</label>
+                            </li>
+                            <li onclick="filterByCategory(2)" class="item-sorting">
+                                <input type="radio" id="category2" name="category" value="2">
+                                <label for="category2">Hoa quả</label>
+                            </li>
+                            <li onclick="filterByCategory(3)" class="item-sorting">
+                                <input type="radio" id="category3" name="category" value="3">
+                                <label for="category3">Thực phẩm khô</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="price-sorting">
+                        <h3>Giá tiền</h3>
+                        <ul class="menu-sorting">
+                            <li onclick="filterByPrice(1)" class="item-sorting">
+                                <input type="radio" id="price1" name="price" value="1">
+                                <label for="price1">Dưới 10,000 đ</label>
+                            </li>
+                            <li onclick="filterByPrice(2)" class="item-sorting">
+                                <input type="radio" id="price2" name="price" value="2">
+                                <label for="price2">Từ 10,000 đ - 20,000 đ</label>
+                            </li>
+                            <li onclick="filterByPrice(3)" class="item-sorting">
+                                <input type="radio" id="price3" name="price" value="3">
+                                <label for="price3">Từ 20,000 đ - 30,000 đ</label>
+                            </li>
+                            <li onclick="filterByPrice(4)" class="item-sorting">
+                                <input type="radio" id="price4" name="price" value="3">
+                                <label for="price4">Trên 30,000 đ</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="price-sorting">
+                        <h3>Khác</h3>
+                        <ul class="menu-sorting">
+                            <li onclick="filterByOther(1)" class="item-sorting">
+                                <input type="radio" id="other1" name="other" value="1">
+                                <label for="other1">Nổi bật</label>
+                            </li>
+                            <li onclick="filterByOther(2)" class="item-sorting">
+                                <input type="radio" id="other2" name="other" value="2">
+                                <label for="other2">Bán chạy</label>
+                            </li>
+                            <li onclick="filterByOther(3)" class="item-sorting">
+                                <input type="radio" id="other3" name="other" value="3">
+                                <label for="other3">Mới nhất</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="right-hightlight">
+               <div class="product-menu-item" id="main-product">
+
+               </div>
+               <div id="paging" class="paging">
+
+               </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="category.js"></script>
+</body>
+</html>

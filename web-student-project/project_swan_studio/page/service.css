@@ -1,0 +1,56 @@
+#row6{
+    padding-bottom: 2rem;
+}
+
+@media (max-width:576px){
+    #row6{
+        padding-bottom: 1rem;
+    }
+}
+
+.card:hover{
+    transform: none;
+    box-shadow: none;
+}
+
+.card-svc:hover{
+    box-shadow: 5px 5px 15px 5px #888888;
+}
+
+.card-gift{
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.gift-content{
+    position: absolute;
+    width: calc(100% - 40px);
+    height: calc(100% - 40px);
+    top: 20px;
+    left: 20px;
+    background-color: #ffffff;
+    color: #535353;
+    opacity: 0;
+    z-index: 2;
+    transition: all 0.6s linear;
+}
+
+.card-gift img{
+    transition: all 0.6s linear;
+}
+
+.card-gift:hover .gift-content{
+    opacity: 0.8;
+}
+
+.card-gift:hover img{
+    transform: scale(1.1);
+}
+
+#filter{
+    border: 1px solid #535353;
+    font-size: 14px;
+    color: #535353;
+    padding: 0.5rem 0;
+}

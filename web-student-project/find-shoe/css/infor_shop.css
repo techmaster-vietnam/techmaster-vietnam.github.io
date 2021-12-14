@@ -1,0 +1,35 @@
+#main{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+#main img {
+    width: 100%;
+}
+
+#main #main_1{
+    margin: 30px 0;
+    padding-bottom: 20px;
+    border-bottom: 1px solid grey;
+}
+
+#main h4{
+    font-size: 24px;
+}
+
+#main h5{
+    
+    font-size: 18px;
+}
+
+#main p{
+    font-size: 16px;
+}
+
+#main a{
+    font-size: 16px;
+}
+
+video{
+    margin: 40px 0;
+}

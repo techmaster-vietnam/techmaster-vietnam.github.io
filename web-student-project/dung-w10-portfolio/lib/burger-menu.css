@@ -1,0 +1,242 @@
+/* //////////// //////////// //////////// //////////// */
+/* ------------ --Source: Craig Roush-- ------------ */
+/* //////////// //////////// //////////// //////////// */
+
+
+
+
+/* Burger menu ------------ ------------ */
+.burger-menu
+  {
+    z-index: 4;
+    position: fixed;
+    top: 28px;
+    right: 28px;
+    width: 32px;
+    height: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-box-pack: justify;
+    transition: all 400ms ease-out;
+  }
+.burger-menu:hover
+  {
+    cursor: pointer;
+  }
+.line-1, .line-2, .line-3
+  {
+    margin-left: auto;
+    height: 2px;
+    background-color: #7051EF;
+
+    transition: all 240ms ease-out;
+    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1)
+    rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+  }
+.line-1
+  {
+    width: 100%;
+    transform-origin: 0% 50%;
+  }
+.line-2
+  {
+    width: 40%;
+    transform-origin: 100% 50%;
+  }
+.line-3
+  {
+    width: 80%;
+    transform-origin: 0% 50%;
+  }
+
+.burger-menu.burger-menu-toggle .line-1
+  {
+    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1)
+    rotateX(0deg) rotateY(0deg) rotateZ(45deg) skew(0deg, 0deg);
+  }
+.burger-menu.burger-menu-toggle .line-2
+  {
+    transform: translate3d(0px, 0px, 0px) scale3d(0, 1, 1)
+    rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  }
+.burger-menu.burger-menu-toggle .line-3
+  {
+    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1)
+    rotateX(0deg) rotateY(0deg) rotateZ(-45deg) skew(0deg, 0deg);
+  }
+.burger-menu.burger-menu-toggle .line-1,
+.burger-menu.burger-menu-toggle .line-2,
+.burger-menu.burger-menu-toggle .line-3
+  {
+    width: 100%;
+    background-color: #FFFFFF;
+    transform-style: preserve-3d;
+  }
+
+
+/* Burger menu content ------------ ------------ */
+.burger-menu-content
+  {
+    z-index: 3;
+    position: fixed;
+    top: 0;
+    right: -60vw;
+    padding-top: 28px;
+    padding-left: 10rem;
+    width: 60vw;
+    height: 100vh;
+    color: #FFFFFF !important;
+    background-color: rgba(112,81,239,0); /* #7051EF */
+
+    transition: all 400ms ease-out;
+  }
+.burger-filling
+  {
+    color: #FFFFFF;
+  }
+.burger-filling i
+  {
+    display: none;
+    margin-right: 1rem;
+  }
+.burger-filling:hover i, .burger-filling.active i
+  {
+    display: inline;
+  }
+
+.burger-menu-content.burger-menu-toggle
+  {
+    right: 0;
+    background-color: rgba(112,81,239,1); /* #7051EF */
+  }
+
+  
+/* Burger menu blackscreen ------------ ------------ */
+.burger-menu-blackscreen
+  {
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    left: -100vw;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(48,48,48,0);
+
+    transition: all 400ms ease-out;
+  }
+
+.burger-menu-blackscreen.burger-menu-toggle
+  {
+    left: 0;
+    background-color: rgba(48,48,48,0.8);
+  }
+
+
+/* ------------ ------------ ------------ ------------ */
+/* --RESPONSIVE-- ------ */ 
+@media (max-width: 576px)
+  {
+    .burger-menu-content
+      {
+        padding-left: 4rem;
+      }
+  }
+
+@media (max-width: 320px)
+  {
+    .burger-menu-content
+      {
+        padding-left: 2rem;
+      }
+  }
+
+
+
+
+/* //////////// //////////// //////////// //////////// */
+/* Thêm đoạn body sau vào trang html ------------ ------------ */
+/*
+<div class="hamburger">
+  <div class="burger-menu" onclick="hamburgerFunction()">
+    <div class="line-1"></div>
+    <div class="line-2"></div>
+    <div class="line-3"></div>
+  </div>
+  <div class="burger-menu-content">
+    <a href="#home-landing-page" class="burger-filling"><i class='fas fa-angle-right'></i>home</a>
+    <div class="break-20"></div>
+    <a href="#home-expertise" class="burger-filling"><i class='fas fa-angle-right'></i>services</a>
+    <div class="break-20"></div>
+    <a href="#home-projects" class="burger-filling"><i class='fas fa-angle-right'></i>projects</a>
+    <div class="break-20"></div>
+    <a href="#home-profile" class="burger-filling"><i class='fas fa-angle-right'></i>about me</a>
+    <div class="break-20"></div>
+    <a href="#home-contact" class="burger-filling"><i class='fas fa-angle-right'></i>contact</a>
+  </div>
+  <div class="burger-menu-blackscreen" onclick="hamburgerFunction()"></div>
+</div>
+*/
+
+
+
+
+/* //////////// //////////// //////////// //////////// */
+/* Thêm đoạn script sau vào trang html ------------ ------------ */
+/*
+// ------------ ------------ ------------ ------------ ------------ ------------
+// Hàm tạo hiệu ứng cho Humburger menu ------------ ------------
+function hamburgerFunction() 
+  {
+    document.querySelector(".burger-menu").classList.toggle("burger-menu-toggle");
+    document.querySelector(".burger-menu-content").classList.toggle("burger-menu-toggle");
+    document.querySelector(".burger-menu-blackscreen").classList.toggle("burger-menu-toggle");
+  }
+
+// ------------ ------------ ------------ ------------ ------------ ------------
+// Hàm add/remove trạng thái Active khi "scroll" qua các vị trí trên trang ------------ ------------
+let burgerFilling = [...document.getElementsByClassName("burger-filling")];
+window.addEventListener("scroll", function()
+  {
+    let windowViewpoint = window.pageYOffset + 400;
+    
+    burgerFilling.forEach(function(element)
+      {
+        element.classList.remove("active");
+      });
+
+    if (idOffSet[1] > windowViewpoint && windowViewpoint >= idOffSet[0])
+      {
+        burgerFilling[0].classList.add("active");
+      }
+    else if (idOffSet[2] > windowViewpoint && windowViewpoint >= idOffSet[1])
+      {
+        burgerFilling[1].classList.add("active");
+      }
+    else if (idOffSet[3] > windowViewpoint && windowViewpoint >= idOffSet[2])
+      {
+        burgerFilling[2].classList.add("active");
+      }
+    else if (idOffSet[4] > windowViewpoint && windowViewpoint >= idOffSet[3])
+      {
+        burgerFilling[3].classList.add("active");
+      }
+    else
+      {
+        burgerFilling[4].classList.add("active");
+      }
+  });
+
+  // ------------ ------------ ------------ ------------ ------------ ------------
+  // Hàm ẩn Humburger menu khi ấn vào từng menu con ------------ ------------
+  document.querySelectorAll(".burger-menu-content a").forEach(function(element)
+    {
+      element.addEventListener("click" ,function()
+        {
+          setTimeout(function(){ hamburgerFunction(); }, 600);
+        });
+    });
+*/

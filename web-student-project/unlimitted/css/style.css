@@ -1,0 +1,65 @@
+@font-face{
+    font-family: 'Roboto';
+    src: url( link(rel="stylesheet", href="<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">"));
+}
+p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    margin: 0px;
+}
+a{
+    text-decoration: none!important;
+}
+.de-muc{
+    margin: 80px 0px 80px 0px;
+}
+.normal{
+    font-size: 25px;
+    color: white;
+}
+.small{
+    font-size: 20px;
+    font-weight: bold;
+}
+.xsmall{
+    font-size: 18px;
+}
+.large{
+    font-size:35px;
+}
+.xlarge{
+    font-size: 45px;
+    font-weight: bold;
+    color: #013889;
+}
+
+/*---------------------------------footer------------------------------*/
+.footer{
+    background-color: #134A9C;
+    height: 150px;
+    margin-top: 100px;
+    text-align: center;
+}
+.footer a{
+    color: white;
+    margin: 0 10px 0 10px;
+}
+.footer-icon img{
+    width: 20px;
+    height: 20px;
+}
+.footer-icon{
+    margin: 0 15px 0 15px!important;
+}
+.footer-logo{
+    padding: 0px;
+}
+.footer-logo a{
+    margin: 0px;
+}
+
+
+
+
+
+

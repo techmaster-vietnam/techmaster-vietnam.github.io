@@ -1,0 +1,26 @@
+.header-content{
+    padding: 100px 0 100px 0;
+}
+.thanh-toan-logo{
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+.thanh-toan-content .large{
+    font-weight: bold;
+    color: #013889;
+    margin: 05px 0 30px 0;
+}
+.chon-the{
+    font-weight: bold;
+    margin: 30px 0 20px 0;
+}
+.tai-khoan-ngan-hang .svip-button{
+    margin-top: 20px;
+}
+.thanh-toan-button{
+    cursor: pointer;
+}
+.chuc-mung{
+    color: red;
+    text-align: center;
+}

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="./font/fontawesome/css/all.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Pattaya&amp;display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="./css/style.css"/>
+    <link rel="stylesheet" href="./css/footer.css"/>
+    <link href="./img/favicon.svg" type="image/x-icon" rel="icon"/>
+    <link rel="stylesheet" href="./css/blogdetails.css"/>
+    <title>| Cách giữ bánh Gato ngon và lâu hơn, bảo quản bánh Gato</title>
+  </head>
+  <body>
+    <header>
+      <div class="container header">
+        <div class="header-left">
+          <div class="logo"><a class="logo__link" href="./index.html"><img src="./img/logo.png" alt="Cake"/></a></div>
+          <div class="header-left__search desktop">
+            <div class="header-left__search-box">
+              <form class="header-left__form" action="#">
+                <input class="header-left__input" type="text" placeholder="Tìm kiếm..."/><a class="header-left__link"><i class="fas fa-search header-left__icon"></i></a>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="header-right">
+          <nav class="header-right__main-menu desktop">
+            <ul class="header-right__list">
+              <li class="header-right__item"><a class="header-right__link home--active" href="./index.html">Trang chủ</a></li>
+              <li class="header-right__item"> <a class="header-right__link product--active" href="./product.html">Sản Phẩm</a></li>
+              <li class="header-right__item"> <a class="header-right__link blog--active" href="./blog.html">Tin Tức</a></li>
+              <li class="header-right__item"> <a class="header-right__link contact--active" href="./contact.html">Liên Hệ</a></li>
+            </ul>
+          </nav>
+          <div class="header-right__avatar"><i class="fas fa-user header-right__icon"></i></div>
+          <div class="header-right__search"><i class="fas fa-search header-right__icon mobile">        </i></div>
+          <div class="header-right__cart"><a class="header-right__link cart--active" href="./cart.html"><i class="fas fa-cart-arrow-down header-right__icon"></i></a></div>
+          <div class="header-right__open-draw"><i class="fas fa-bars mobile"></i></div>
+        </div>
+        <div class="mobile" id="clone-menu">
+          <nav class="header-right__main-menu">
+            <ul class="header-right__list">
+              <li class="header-right__item"><a class="header-right__link home--active" href="./index.html">Trang chủ</a></li>
+              <li class="header-right__item"> <a class="header-right__link product--active" href="./product.html">Sản Phẩm</a></li>
+              <li class="header-right__item"> <a class="header-right__link blog--active" href="./blog.html">Tin Tức</a></li>
+              <li class="header-right__item"> <a class="header-right__link contact--active" href="./contact.html">Liên Hệ</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="clone-menu__box"></div>
+        <div class="scroll"><i class="fas fa-arrow-up"></i></div>
+        <div id="header-right__search-box"><i class="fas fa-times header-right__search-icon"></i>
+          <div class="header-right__search-box-input">
+            <div class="header-right__search-input">
+              <input type="text" placeholder="Tìm kiếm loại bánh..."/><i class="far fa-paper-plane"></i>
+            </div>
+          </div>
+        </div>
+        <div id="header__user">
+          <div class="user__box">
+            <p class="user--active user__action">Đăng nhập</p>
+            <p class="user__action">Đăng kí</p>
+          </div>
+          <form class="user__form" action="./index.html" data-number="0" id="user__signin">
+            <div class="group-input">
+              <input type="text" placeholder="Email" id="form__email"/>
+              <p class="error">Vui lòng nhập email hợp lệ</p>
+            </div>
+            <div class="group-input group-last">
+              <input type="password" placeholder="Password" id="form__password"/>
+              <p class="error">Vui lòng nhập Password hợp lệ</p>
+            </div><a class="user__form__box" href="#"><i class="far fa-question-circle"></i>
+              <p>Quên mật khẩu</p></a>
+            <button class="user__btn">ĐĂNG NHẬP</button>
+            <div class="user__socail">
+              <p>Hoặc đăng nhập với</p>
+              <div class="user__socail__list"><a class="user__socail__box" href="#"><img src="./img/user-1.svg" alt="facebook"/></a><a class="user__socail__box" href="#"><img src="./img/user-2.svg" alt="google"/></a><a class="user__socail__box" href="#"><img src="./img/user-3.svg" alt="twiter"/></a></div>
+            </div>
+          </form>
+          <form class="user__form" action="./index.html" data-number="1" id="user__signup">
+            <div class="group-input">
+              <input type="text" placeholder="Họ và Tên" id="signup__fullname"/>
+              <p class="error">Vui lòng nhập họ và tên hợp lệ</p>
+            </div>
+            <div class="group-input">
+              <input type="number" placeholder="Số điện thoại" id="signup__phone"/>
+              <p class="error">Vui lòng nhập số điện thoại hợp lệ</p>
+            </div>
+            <div class="group-input">
+              <input type="text" placeholder="Email" id="signup__email"/>
+              <p class="error">Vui lòng nhập Email hợp lệ</p>
+            </div>
+            <div class="group-input">
+              <input type="text" placeholder="Mật khẩu" id="signup__password"/>
+              <p class="error">Vui lòng nhập nhập mật khẩu hợp lệ</p>
+            </div>
+            <div class="group-input">
+              <input type="text" placeholder="Nhập lại mật khẩu" id="signup__match"/>
+              <p class="error">Vui lòng nhập lại mật khẩu hợp lệ</p>
+            </div>
+            <button class="user__btn user__signin">Đăng kí</button>
+          </form>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="banner-common">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="banner-common__content">
+                <h1 class="heading-primary heading-primary--white">Cách giữ bánh Gato ngon và lâu hơn, bảo quản bánh Gato</h1>
+                <div class="banner-common__box"><a href="./index.html">
+                    <p class="banner-common__title">Trang chủ</p></a>
+                  <div class="banner-common__icon"><img src="./img/arrows-banner.svg" alt=""/></div><a href="">
+                    <p class="banner-common__title-2 banner-common__title-2--active">Tin Tức</p></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="detail-blog">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-9 col-lg-9 col-md-12 col-sm-12">
+              <div class="detail-blog__infor">
+                <h2 class="infor__heading-secondery">Cách giữ bánh Gato ngon và lâu hơn, bảo quản bánh gato đúng cách</h2>
+                <p class="infor__time">By <span>Admin </span>· 27/04/2020</p>
+                <p class="infor__text"><span>Cách bảo quản bánh Gato </span>như thế nào? Bánh kem sinh nhật bảo quản được bao lâu là câu hỏi của nhiều người. Tưởng chừng một vấn đề không mấy khó khăn này nhưng nếu không biết cách thì không hề dễ dàng đâu nhé. Bài viết hôm nay chúng tôi sẽ bật mí cho các bạn các cách giữ bánh gato ngon và lâu hơn, rất dễ thực hiện, các bạn cùng theo dõi ngay dưới đây nhé.</p>
+                <div class="infor__photo"><img src="./img/blogdetails-1.png" alt="Cách bảo quản bánh Gato ngon và lâu hơn như thế nào?" title="Cách bảo quản bánh Gato ngon và lâu hơn như thế nào?"/>
+                  <h3 class="infor__heading-tertiary">Cách bảo quản bánh Gato ngon và lâu hơn như thế nào?</h3>
+                </div>
+                <p class="infor__text"><span>Bánh sinh nhật </span>hay bánh kem ngọt, bông lan, bánh gato là tên gọi chung của bánh sinh nhật, một loại bánh rất được yêu thích và không thể thiếu mỗi dịp sinh nhật. Đây cũng là loại bánh thơm ngon, dễ ăn với rất nhiều hương vị, thể loại khác nhau.</p>
+                <p class="infor__text">Bình thường, chúng ta ra một tiệm bánh sinh nhật để mua bánh thì sẽ dùng luôn trong ngày. Tuy nhiên, cũng có rất nhiều trường hợp, bánh mua về chưa cần dùng đến ngay thì việc bảo quản là cần thiết. Điều này cũng đúng trong trường hợp bạn có một tiệm bánh riêng, nướng bánh xong nhưng sử dụng chưa hết hay chưa sử dụng đến thì cách bảo quản bánh ngọt thế nào để vẫn đảm bảo được chất lượng của bánh là điều bạn cần biết.</p>
+                <p class="infor__text"><span>Cách giữ bánh gato ngon và lâu hơn </span>không những để đảm bảo độ ngon, mùi vị của bánh, mà quan trọng là chất lượng, độ an toàn vệ sinh thực phẩm được đảm bảo. Trường hợp nếu bánh sinh nhật không được bảo quản tốt, nó sẽ rất nhanh hỏng, khô và biến chất do gặp phải các điều kiện không thuận lợi như thời tiết, nhiệt độ hay sự xâm nhập của các loài côn trùng như ruồi, gián, chuột…</p>
+                <div class="infor__photo"><img src="./img/blogdetails-2.png" alt="Bánh vừa nướng xong không nên bọc vào ngay" title="Bánh vừa nướng xong không nên bọc vào ngay"/>
+                  <h3 class="infor__heading-tertiary">Bánh vừa nướng xong không nên bọc vào ngay</h3>
+                </div>
+                <p class="infor__text">Sau khi bánh đã được bọc kín, tiếp theo, để giữ bánh được lâu và ngon hơn, hãy để bánh ở nơi khô ráo, thoáng mát, tránh ánh sáng mặt trời trực tiếp và nhiệt độ quá cao.</p>
+                <p class="infor__text">Trường hợp nhiệt độ quá nóng, cách bảo quản bánh Gato được lâu thì tốt nhất nên để vào tủ lạnh. Cách bảo quản bánh Gato trong tủ lạnh này sẽ giúp giữ bánh được vài ngày. Nhưng chú ý là trước khi cho bánh vào tủ lạnh phải đảm báo bánh đã được bọc kín và để  riêng biệt với các loại thực phẩm khác có trong tủ lạnh nhé. Bởi nếu để gần bánh sẽ dễ hấp thụ mùi của các loại thực phẩm khác, ảnh hưởng đến chất lượng cũng như mùi vị của bánh.</p>
+                <p class="infor__text">Hy vọng bài viết đã cung cấp cho bạn đọc những thông tin bổ ích về cách bảo quản bánh kem sinh nhật đúng cách, thơm ngon nhất. Bên cạnh việc tư vấn về các sản phẩm bánh kẹo, Siêu thị Aloola cũng là địa chỉ cung cấp các sản phẩm chăm sóc sức khỏe và làm đẹp hàng đầu hiện nay, là kênh trực tuyến online chuyên cung cấp các tin tư vấn sức khỏe và tư vấn làm đẹp tốt nhất, sát thực nhất cho mọi người, được cập nhật liên tục từng ngày.</p>
+              </div>
+              <form class="detail-blog__form">
+                <p class="form__title">Để lại bình luận</p>
+                <div class="form__box">
+                  <div class="group-input">
+                    <label for="name">Tên</label>
+                    <input type="text" id="name" name="name"/>
+                    <div class="error">Vui lòng nhập tên</div>
+                  </div>
+                  <div class="group-input">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email"/>
+                    <div class="error">Vui lòng nhập email</div>
+                  </div>
+                </div>
+                <div class="group-input">
+                  <label for="title">Tiêu đề</label>
+                  <input type="text" id="title" name="title"/>
+                  <div class="error">Vui lòng nhập tiêu đề</div>
+                </div>
+                <div class="group-input textarea">
+                  <label for="note">Nội dung</label>
+                  <textarea name="note" cols="30" rows="5" id="note"></textarea>
+                  <div class="error">Vui lòng nhập nội dung</div>
+                </div>
+                <button class="btn--note" type="submit" id="blogSubmit">Bình luận</button>
+                <div class="success">Gửi thành công</div>
+              </form>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12">
+              <div class="details-blog__sidebar"> 
+                <form class="sidebar__form">
+                  <input type="text" placeholder="Tìm kiếm bài viết"/><i class="fas fa-search"></i>
+                </form>
+                <div class="sidebar__topic"> 
+                  <p class="sidebar__title">Chủ đề</p><a class="sidebar__link" href="#">Bánh sinh nhật</a><a class="sidebar__link" href="#">Bánh mì</a><a class="sidebar__link" href="#">Cách làm bánh</a><a class="sidebar__link" href="#">Khuyến mại</a><a class="sidebar__link" href="#">Mã giảm giá</a>
+                </div>
+                <div class="sidebar__blog">
+                  <p class="sidebar__title">Tin tức nổi bật</p><a class="sidebar__blog__link" href="">
+                    <div class="sidebar__photo"><img src="./img/popula-1.png" alt="blog"/></div>
+                    <div class="sidebar__box">
+                      <p>Lạ lùng thay món bánh su trứng muối thân tre độc đáo</p>
+                      <p> <i class="far fa-clock"> </i><span>27/04/2020</span></p>
+                    </div></a><a class="sidebar__blog__link" href="">
+                    <div class="sidebar__photo"><img src="./img/popula-2.png" alt="blog"/></div>
+                    <div class="sidebar__box">
+                      <p>Lạ lùng thay món bánh su trứng muối thân tre độc đáo</p>
+                      <p> <i class="far fa-clock"> </i><span>27/04/2020</span></p>
+                    </div></a><a class="sidebar__blog__link" href="">
+                    <div class="sidebar__photo"><img src="./img/popula-3.png" alt="blog"/></div>
+                    <div class="sidebar__box">
+                      <p>Lạ lùng thay món bánh su trứng muối thân tre độc đáo</p>
+                      <p> <i class="far fa-clock"> </i><span>27/04/2020</span></p>
+                    </div></a>
+                </div>
+                <div class="sidebar__tag">
+                  <p class="sidebar__title">Tag</p><a href="#">Bánh Pizza </a><a href="http://">Bánh Mì</a><a href="http://">Bánh Cake</a><a href="http://">Bánh Nướng</a><a href="http://">Bánh Sinh Nhật</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__top">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="footer__box">
+                <h4 class="footer__top-heading">ĐĂNG KÍ NHẬN THÔNG BÁO</h4>
+                <p class="footer__top-title">Đăng ký nhận thông tin khuyến mãi và cập nhật sản phẩm mới nhất từ Cake.</p>
+                <form class="footer__top-form">
+                  <div class="row">
+                    <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-12">
+                      <input class="footer__top-input" type="text" placeholder="Nhập địa chỉ Email của bạn"/>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+                      <button class="btn btn--form">ĐĂNG KÝ</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__main">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+              <div class="footer__main-logo"><img src="./img/logo.svg" alt="Cake"/></div>
+              <div class="footer__main-title">Bí quyết và tâm huyết chắt chiu hơn 20 năm kinh nghiệm bậc thầy tạo nên vị ngon đặc trưng khó cưỡng, khiến mỗi chiếc bánh là một công trình ẩm thực kỳ công và đẳng cấp.</div>
+              <div class="footer__main-box-icon"><a href="#"><i class="fab fa-youtube"></i></a><a href="#"><i class="fab fa-twitter-square"></i></a><a href="#"><i class="fab fa-facebook-square"></i></a><a href="#"><i class="fab fa-instagram"></i></a></div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+              <h4 class="footer__main-header">Liên kiết nhanh</h4>
+              <ul class="footer__main-list">
+                <li class="footer__main-item"><a class="footer__main-link" href="#">Về chúng tôi</a><a class="footer__main-link" href="#">Sản phẩm bán chạy</a><a class="footer__main-link" href="#">Tin tức sản phẩm</a><a class="footer__main-link" href="#">Liên hệ</a><a class="footer__main-link" href="#">Góp ý</a><a class="footer__main-link" href="./error.html">Trang lỗi</a></li>
+              </ul>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+              <h4 class="footer__main-header">Thông tin cửa hàng</h4><a class="footer__main-link" href="#">
+                <p class="footer__main-map">Cơ sở 1:</p>
+                <p>Điện thoại: 039 539 0668</p>
+                <p class="footer__main-margin">Địa chỉ: Số 4, đường Nguyễn Chí Thanh, Đống Đa</p></a><a class="footer__main-link" href="#">
+                <p class="footer__main-map">Cơ sở 2:</p>
+                <p>  Điện thoại: 039 539 0668</p>
+                <p>  Địa chỉ: Số 6, đường Nguyễn Chí Thanh, Đống Đa</p></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bot">
+        <p>Cake © 2020.</p>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="./js/jQuery.js"></script>
+    <script src="./js/layout.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./js/blogdetails.js"></script>
+  </body>
+</html>

@@ -1,0 +1,214 @@
+extends parts/layout.pug
+
+block css
+  link(rel="stylesheet", href="css/dslr-hub.css")
+  link(rel="stylesheet", href="css/item.css")
+
+block title
+  title Máy ảnh DSLR
+
+block script
+  script(src='https://npmcdn.com/isotope-layout@3/dist/isotope.pkgd.js')
+  script(src='js/isotope-init.js')
+
+block content
+  .container-xl.breadcrumb-wrapper
+    ul.breadcrumb
+      li.breadcrumb-item
+        a(href='index.html') Trang chủ
+      li.breadcrumb-item
+        a(href='camera-hub.html') Máy ảnh
+      li.breadcrumb-item.active Máy ảnh DSLR
+
+  .dslr-hub__banner.w-100
+    h1 DSLR 
+    p SÁNG TẠO KHÔNG GIỚI HẠN    
+
+  .dslr-hub__display-area.container-xl
+    aside.dslr-hub__aside-area
+
+      .technical-filter--min.display-till-md
+        .dropdown
+          button.btn.dropdown-toggle(type='button' data-toggle='dropdown') Sắp xếp theo
+          .dropdown-menu
+            a.dropdown-item(href='#') Giá từ cao đến thấp
+            a.dropdown-item(href='#') Giá từ thấp đến cao
+            a.dropdown-item(href='#') Mới nhất
+
+        .dropdown
+          button.btn.dropdown-toggle(type='button' data-toggle='dropdown') Thương hiệu
+          .dropdown-menu
+            a.dropdown-item(href='#') Canon
+            a.dropdown-item(href='#') Nikon
+            a.dropdown-item(href='#') Khác 
+
+        .dropdown
+          button.btn.dropdown-toggle(type='button' data-toggle='dropdown') ISO tối đa
+          .dropdown-menu
+            a.dropdown-item(href='#') Dưới 6.400
+            a.dropdown-item(href='#') 6.400 - 25.600
+            a.dropdown-item(href='#') Trên 25.600
+
+        .dropdown
+          button.btn.dropdown-toggle(type='button' data-toggle='dropdown') Kích cỡ cảm biến
+          .dropdown-menu
+            a.dropdown-item(href='#') Crop
+            a.dropdown-item(href='#') Full-frame
+
+        .dropdown
+          button.btn.dropdown-toggle(type='button' data-toggle='dropdown') Độ phân giải
+          .dropdown-menu
+            a.dropdown-item(href='#') 10 - 18 MP
+            a.dropdown-item(href='#') 19 - 25 MP
+            a.dropdown-item(href='#') Trên 25 MP
+
+
+      .technical-filter--max.hidden-till-md
+
+        form.technical-filter--max__filter-group
+          .technical-filter--max__header Sắp xếp theo
+          .technical-filter--max__item 
+            label(for="filter--new") Mới nhất
+            .input-container
+              input.technical-filter--max__radio#filter--new(type="radio" name="arrange" checked)
+              span.customize-radio
+          .technical-filter--max__item
+            label(for="filter--high") Giá từ cao đến thấp
+            .input-container
+              input.technical-filter--max__radio#filter--high(type="radio" name="arrange")
+              span.customize-radio
+          .technical-filter--max__item 
+            label(for="filter--low") Giá từ thấp đến cao
+            .input-container
+              input.technical-filter--max__radio#filter--low(type="radio" name="arrange") 
+              span.customize-radio
+
+        form.technical-filter--max__filter-group
+          .technical-filter--max__header Thương hiệu
+          .technical-filter--max__item
+            label(for="filter--all-brand") Tất cả 
+            .input-container
+              input.technical-filter--max__radio#filter--all-brand(type="radio" name="brand" checked)
+              span.customize-radio
+          .technical-filter--max__item
+            label(for="filter--canon") Canon 
+            .input-container
+              input.technical-filter--max__radio#filter--canon(type="radio" name="brand")
+              span.customize-radio
+          .technical-filter--max__item 
+            label(for="filter--nikon") Nikon
+            .input-container
+              input.technical-filter--max__radio#filter--nikon(type="radio" name="brand")
+              span.customize-radio
+          .technical-filter--max__item 
+            label(for="filter--other") Khác
+            .input-container
+              input.technical-filter--max__radio#filter--other(type="radio" name="brand")
+              span.customize-radio
+
+        form.technical-filter--max__filter-group
+          .technical-filter--max__header Kích cỡ cảm biến
+          .technical-filter--max__item
+            label(for="filter--all-size") Tất cả 
+            .input-container
+              input.technical-filter--max__radio#filter--all-size(type="radio" name="size" checked)
+              span.customize-radio
+          .technical-filter--max__item
+            label(for="filter--crop") Crop
+            .input-container
+              input.technical-filter--max__radio#filter--crop(type="radio" name="size")
+              span.customize-radio
+          .technical-filter--max__item 
+            label(for="filter--ff") Full-frame
+            .input-container
+              input.technical-filter--max__radio#filter--ff(type="radio" name="size")
+              span.customize-radio
+
+        form.technical-filter--max__filter-group
+          .technical-filter--max__header Độ phân giải
+          .technical-filter--max__item 
+            label(for="filter--18mp") 10 - 18 MP
+            .input-container
+              input.technical-filter--max__radio#filter--18mp(type="radio" name="mp" checked)
+              span.customize-radio
+          .technical-filter--max__item
+            label(for="filter--25mp") 19 - 25 MP
+            .input-container
+              input.technical-filter--max__radio#filter--25mp(type="radio" name="mp")
+              span.customize-radio
+          .technical-filter--max__item
+            label(for="filter--26mp") Trên 25 MP
+            .input-container
+              input.technical-filter--max__radio#filter--26mp(type="radio" name="mp")
+              span.customize-radio
+
+        form.technical-filter--max__filter-group
+          .technical-filter--max__header ISO đối đa
+          .technical-filter--max__item
+            label(for="filter--6400") Dưới 6400
+            .input-container
+              input.technical-filter--max__radio#filter--6400(type="radio" name="iso" checked)
+              span.customize-radio
+          .technical-filter--max__item
+            label(for="filter--25600") 6400 - 25600
+            .input-container
+              input.technical-filter--max__radio#filter--25600(type="radio" name="iso")
+              span.customize-radio
+          .technical-filter--max__item 
+            label(for="filter--25601") Trên 25600
+            .input-container
+              input.technical-filter--max__radio#filter--25601(type="radio" name="iso")
+              span.customize-radio
+
+
+      .promo--aside.hidden-till-md
+        h1 Tin khuyến mại
+
+        .promo__collection
+          img.promo-item(src="img/img--misc/promo-img-1.jpg", alt="khuyến mại máy ảnh")
+          img.promo-item(src="img/img--misc/promo-img-2.jpg", alt="khuyến mại máy ảnh") 
+          img.promo-item(src="img/img--misc/promo-img-1.jpg", alt="khuyến mại máy ảnh")
+      
+    .dslr-hub__main-area
+      .main-area__sub-filter-area
+        span.sub-filter-header.hidden-till-sm Bộ lọc:
+        .sub-filter-wrapper.button-group.filters-button-group
+          button.sub-filter.button.is-checked(data-filter="*") Tất cả
+          button.sub-filter.button(data-filter=".item--hot") Bán chạy
+          button.sub-filter.button(data-filter=".item--love") Đánh giá tốt
+          button.sub-filter.button(data-filter=".item--sale") Khuyến mại
+
+      .main-area__items-area.grid
+        include parts/card-1.pug
+        include parts/card-2.pug
+        include parts/card-3.pug
+        include parts/card-4.pug
+        include parts/card-5.pug
+        include parts/card-1.pug
+        include parts/card-2.pug
+        include parts/card-3.pug
+        include parts/card-4.pug
+
+      ul.main-area__pagination.pagination
+        li.page-item.active
+          a.page-link(href='#') 1
+        li.page-item
+          a.page-link(href='#') 2
+        li.page-item
+          a.page-link(href='#') 3
+        li.page-item
+          a.page-link(href='#') 
+            i.fas.fa-angle-right
+        li.page-item
+          a.page-link(href='#') 
+            i.fas.fa-angle-double-right
+
+        
+
+
+
+
+
+
+      
+      
