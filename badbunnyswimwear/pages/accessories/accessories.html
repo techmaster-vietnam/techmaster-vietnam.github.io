@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessories</title>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./accessories.css">
+    <link rel="stylesheet" href="../../component/header/header-copy.css">
+    <link rel="stylesheet" href="../../component/footer/footer.css">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <div id="header">
+    </div>
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="https://rinzielinh.github.io/BADBUNNYSWIMWEAR/myProject.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Accessories</li>
+        </ol>
+    </nav>
+    <div class="banner">
+        <img class="banner-img" src="../../img/accesories.png" alt="">
+    </div>
+    <div class="wrap-all-products">
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Categories
+                </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <div class="all-categories box-wrap">
+                            <input onchange="filterByBrandNew(this)" type="radio" id="bands1" name="brand" value="1">
+                            <label class="small-categories" for="bands1">Hats</label><br>
+
+                            <input onchange="filterByBrandNew(this)" type="radio" id="bands2" name="brand" value="2">
+                            <label class="small-categories" for="bands2">Footwear</label><br>
+
+                            <input onchange="filterByBrandNew(this)" type="radio" id="bands3" name="brand" value="3">
+                            <label class="small-categories" for="bands3">Bags</label><br>
+
+                            <input onchange="filterByBrandNew(this)" type="radio" id="bands4" name="brand" value="4">
+                            <label class="small-categories" for="bands4">Others</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Filter by Price
+                </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+
+                        <div>
+                            <label class="label-price" for="">from</label>
+                            <input id="from_price" onchange="changePriceRange(this)" name="from" type="number" min="1">
+                        </div>
+                        <div>
+                            <label class="label-price" for="">to</label>
+                            <input id="to_price" onchange="changePriceRange(this)" name="to" type="number" min="1">
+                        </div>
+
+                        <button class="apply button button5" onclick="handleFilter()">Apply</button>
+
+                        <div></div>
+
+
+                        <input class="price_input" onchange="filterByPrice(this)" type="radio" id="prices1" name="price" value="1">
+                        <label class="small-categories" for="prices1">Less than $10</label><br>
+
+                        <input class="price_input" onchange="filterByPrice(this)" type="radio" id="prices2" name="price" value="2">
+                        <label class="small-categories" for="prices2">$10 to $50</label><br>
+
+                        <input class="price_input" onchange="filterByPrice(this)" type="radio" id="prices3" name="price" value="3">
+                        <label class="small-categories" for="prices3">$50 - $100</label><br>
+
+                        <input class="price_input" onchange="filterByPrice(this)" type="radio" id="prices4" name="price" value="4">
+                        <label class="small-categories" for="prices4">Above $100</label>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Accordion Item #3
+                </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+
+                    </div>
+                </div>
+            </div> -->
+        </div>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-sm-3">
+                    <div class="all-categories box-wrap">
+                        <div class="big-categories hover-me">CATEGORY</div>
+
+                        <input onchange="filterByBrandNew(this)" type="radio" id="band1" name="brand" value="1">
+                        <label class="small-categories" for="band1">Hats</label><br>
+
+                        <input onchange="filterByBrandNew(this)" type="radio" id="band2" name="brand" value="2">
+                        <label class="small-categories" for="band2">Footwear</label><br>
+
+                        <input onchange="filterByBrandNew(this)" type="radio" id="band3" name="brand" value="3">
+                        <label class="small-categories" for="band3">Bags</label><br>
+
+                        <input onchange="filterByBrandNew(this)" type="radio" id="band4" name="brand" value="4">
+                        <label class="small-categories" for="band4">Others</label>
+
+
+                    </div>
+
+                    <div class="wrap-filter">
+                        <div class="big-categories hover-me">FILTER BY</div>
+                        <div class="filter-colors filter-by">Colors
+                            <div class="filter-row">
+                                <div class="filter-by-color">
+                                    <svg width="26" height="23" viewBox="0 0 26 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13 0L25.9904 22.5H0.00961876L13 0Z" fill="#95E8E3"/>
+                                    </svg>
+                                </div>
+                                <div class="filter-by-color">
+                                    <svg width="26" height="23" viewBox="0 0 26 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13 0L25.9904 22.5H0.00961876L13 0Z" fill="#D5CBFE"/>
+                                    </svg>
+                                </div>
+                                <div class="filter-by-color">
+                                    <svg width="26" height="23" viewBox="0 0 26 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13 0L25.9904 22.5H0.00961876L13 0Z" fill="#F4BFBF"/>
+                                    </svg>
+                                </div>
+                                <div class="filter-by-color">
+                                    <svg width="26" height="23" viewBox="0 0 26 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13 0L25.9904 22.5H0.00961876L13 0Z" fill="#F5542C"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="filter-row">
+                                <div class="filter-by-color">
+                                    <svg width="26" height="23" viewBox="0 0 26 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13 0L25.9904 22.5H0.00961876L13 0Z" fill="#FDF5AA"/>
+                                    </svg>
+                                </div>
+                                <div class="filter-by-color">
+                                    <svg width="26" height="23" viewBox="0 0 26 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13 0L25.9904 22.5H0.00961876L13 0Z" fill="#000000"/>
+                                    </svg>
+                                </div>
+                                <div class="filter-by-color">
+                                    <svg width="26" height="23" viewBox="0 0 26 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13 0L25.9904 22.5H0.00961876L13 0Z" fill="#E5E5E5"/>
+                                    </svg>
+                                </div>
+                                <div class="filter-by-color">
+                                    <svg width="26" height="23" viewBox="0 0 26 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13 0L25.9904 22.5H0.00961876L13 0Z" fill="#3F56A0"/>
+                                    </svg>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="filter-price">Price</div>
+                        <div>
+                            <label class="label-price" for="">from</label>
+                            <input id="from_price" onchange="changePriceRange(this)" name="from" type="number" min="1">
+                        </div>
+                        <div>
+                            <label class="label-price" for="">to</label>
+                            <input id="to_price" onchange="changePriceRange(this)" name="to" type="number" min="1">
+                        </div>
+
+                        <button class="apply button button5" onclick="handleFilter()">Apply</button>
+
+                        <div></div>
+
+
+                        <input class="price_input" onchange="filterByPrice(this)" type="radio" id="price1" name="price" value="1">
+                        <label class="small-categories" for="price1">Less than $10</label><br>
+
+                        <input class="price_input" onchange="filterByPrice(this)" type="radio" id="price2" name="price" value="2">
+                        <label class="small-categories" for="price2">$10 to $50</label><br>
+
+                        <input class="price_input" onchange="filterByPrice(this)" type="radio" id="price3" name="price" value="3">
+                        <label class="small-categories" for="price3">$50 - $100</label><br>
+
+                        <input class="price_input" onchange="filterByPrice(this)" type="radio" id="price4" name="price" value="4">
+                        <label class="small-categories" for="price4">Above $100</label>
+
+
+
+
+
+                    </div>
+
+
+                </div>
+
+
+
+                <div class="col-sm-9">
+                    <div class="row">
+                        <div class="productlist">
+                            <div id="productlist_item" class="productlist_item"></div>
+
+                        </div>
+                        <div id="paging" class="paging"></div>
+
+
+                        <!-- <div class="col-sm">
+                            <div class="suggest">
+                                <div class="suggest-photo">
+                                    <img class="suggest-photo" src="../../img/all-product-page/all-products1.jpeg" alt="">
+                                </div>
+                                <div class="suggest-name">Shiny Bottom </div>
+                                <div class="suggest-price">$50</div>
+                                <div class="suggest-colors">
+                                    <svg width="100" height="40" viewBox="0 0 100 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10 0L18.6603 15H1.33975L10 0Z" fill="#F5542C"/>
+                                            <path d="M30 0L38.6603 15H21.3397L30 0Z" fill="#95E8E3"/>
+                                            <path d="M50 0L58.6603 15H41.3397L50 0Z" fill="#F4BFBF"/>
+                                            <path d="M70 0L78.6603 15H61.3397L70 0Z" fill="#D5CBFE"/>
+                                            <path d="M90 0L98.6603 15H81.3397L90 0Z" fill="#FDF5AA"/>
+                                            <path d="M10 20L18.6603 35H1.33975L10 20Z" fill="#F5542C"/>
+                                            <path d="M30 20L38.6603 35H21.3397L30 20Z" fill="#F5542C"/>
+                                            </svg>
+                                </div>
+                                <div class="btn-addToCart-suggest">
+                                    <button type="submit" name="add" aria-label="Add to cart" class="btn atc-button product-form__cart-submit" data-add-to-cart="" ecl="true">
+                                        <span data-add-to-cart-text="" ecl="true">ADD TO CART</span>
+                                        <span class="hide" data-loader="" ecl="true">
+                                          <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-spinner" viewBox="0 0 20 20" ecl="true"><path d="M7.229 1.173a9.25 9.25 0 1 0 11.655 11.412 1.25 1.25 0 1 0-2.4-.698 6.75 6.75 0 1 1-8.506-8.329 1.25 1.25 0 1 0-.75-2.385z" fill="#919EAB" ecl="true"></path></svg>
+                                        </span>
+                                    </button></div>
+
+                            </div>
+                        </div>
+                        <div class="col-sm">
+                            <div class="suggest">
+                                <div class="suggest-photo">
+                                    <img class="suggest-photo" src="../../img/all-product-page/all-products2.jpeg" alt="">
+                                </div>
+                                <div class="suggest-name">Charles Bottom</div>
+                                <div class="suggest-price">$50</div>
+                                <div class="suggest-colors">
+                                    <svg width="100" height="40" viewBox="0 0 100 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10 0L18.6603 15H1.33975L10 0Z" fill="#F5542C"/>
+                                            <path d="M30 0L38.6603 15H21.3397L30 0Z" fill="#95E8E3"/>
+                                            <path d="M50 0L58.6603 15H41.3397L50 0Z" fill="#F4BFBF"/>
+                                            <path d="M70 0L78.6603 15H61.3397L70 0Z" fill="#D5CBFE"/>
+                                            <path d="M90 0L98.6603 15H81.3397L90 0Z" fill="#FDF5AA"/>
+                                            <path d="M10 20L18.6603 35H1.33975L10 20Z" fill="#F5542C"/>
+                                            <path d="M30 20L38.6603 35H21.3397L30 20Z" fill="#F5542C"/>
+                                            </svg>
+                                </div>
+                                <div class="btn-addToCart-suggest">
+                                    <button type="submit" name="add" aria-label="Add to cart" class="btn atc-button product-form__cart-submit" data-add-to-cart="" ecl="true">
+                                        <span data-add-to-cart-text="" ecl="true">ADD TO CART</span>
+                                        <span class="hide" data-loader="" ecl="true">
+                                          <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-spinner" viewBox="0 0 20 20" ecl="true"><path d="M7.229 1.173a9.25 9.25 0 1 0 11.655 11.412 1.25 1.25 0 1 0-2.4-.698 6.75 6.75 0 1 1-8.506-8.329 1.25 1.25 0 1 0-.75-2.385z" fill="#919EAB" ecl="true"></path></svg>
+                                        </span>
+                                    </button></div>
+
+                            </div>
+                        </div>
+                        <div class="col-sm">
+                            <div class="suggest">
+                                <div class="suggest-photo">
+                                    <img class="suggest-photo" src="../../img/all-product-page/all-products3.jpeg" alt="">
+                                </div>
+                                <div class="suggest-name">Clovelly Sharrong</div>
+                                <div class="suggest-price">$50</div>
+                                <div class="suggest-colors">
+                                    <svg width="100" height="40" viewBox="0 0 100 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10 0L18.6603 15H1.33975L10 0Z" fill="#F5542C"/>
+                                            <path d="M30 0L38.6603 15H21.3397L30 0Z" fill="#95E8E3"/>
+                                            <path d="M50 0L58.6603 15H41.3397L50 0Z" fill="#F4BFBF"/>
+                                            <path d="M70 0L78.6603 15H61.3397L70 0Z" fill="#D5CBFE"/>
+                                            <path d="M90 0L98.6603 15H81.3397L90 0Z" fill="#FDF5AA"/>
+                                            <path d="M10 20L18.6603 35H1.33975L10 20Z" fill="#F5542C"/>
+                                            <path d="M30 20L38.6603 35H21.3397L30 20Z" fill="#F5542C"/>
+                                            </svg>
+                                </div>
+                                <div class="btn-addToCart-suggest">
+                                    <button type="submit" name="add" aria-label="Add to cart" class="btn atc-button product-form__cart-submit" data-add-to-cart="" ecl="true">
+                                        <span data-add-to-cart-text="" ecl="true">ADD TO CART</span>
+                                        <span class="hide" data-loader="" ecl="true">
+                                          <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-spinner" viewBox="0 0 20 20" ecl="true"><path d="M7.229 1.173a9.25 9.25 0 1 0 11.655 11.412 1.25 1.25 0 1 0-2.4-.698 6.75 6.75 0 1 1-8.506-8.329 1.25 1.25 0 1 0-.75-2.385z" fill="#919EAB" ecl="true"></path></svg>
+                                        </span>
+                                    </button></div>
+
+                            </div>
+                        </div> -->
+                    </div>
+                    <!-- <div class="row">
+                        <div class="col-sm">
+                            <div class="suggest">
+                                <div class="suggest-photo">
+                                    <img class="suggest-photo" src="../../img/all-product-page/all-products4.jpeg" alt="">
+                                </div>
+                                <div class="suggest-name">Shiny Bottom </div>
+                                <div class="suggest-price">$50</div>
+                                <div class="suggest-colors">
+                                    <svg width="100" height="40" viewBox="0 0 100 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10 0L18.6603 15H1.33975L10 0Z" fill="#F5542C"/>
+                                            <path d="M30 0L38.6603 15H21.3397L30 0Z" fill="#95E8E3"/>
+                                            <path d="M50 0L58.6603 15H41.3397L50 0Z" fill="#F4BFBF"/>
+                                            <path d="M70 0L78.6603 15H61.3397L70 0Z" fill="#D5CBFE"/>
+                                            <path d="M90 0L98.6603 15H81.3397L90 0Z" fill="#FDF5AA"/>
+                                            <path d="M10 20L18.6603 35H1.33975L10 20Z" fill="#F5542C"/>
+                                            <path d="M30 20L38.6603 35H21.3397L30 20Z" fill="#F5542C"/>
+                                            </svg>
+                                </div>
+                                <div class="btn-addToCart-suggest">
+                                    <button type="submit" name="add" aria-label="Add to cart" class="btn atc-button product-form__cart-submit" data-add-to-cart="" ecl="true">
+                                        <span data-add-to-cart-text="" ecl="true">ADD TO CART</span>
+                                        <span class="hide" data-loader="" ecl="true">
+                                          <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-spinner" viewBox="0 0 20 20" ecl="true"><path d="M7.229 1.173a9.25 9.25 0 1 0 11.655 11.412 1.25 1.25 0 1 0-2.4-.698 6.75 6.75 0 1 1-8.506-8.329 1.25 1.25 0 1 0-.75-2.385z" fill="#919EAB" ecl="true"></path></svg>
+                                        </span>
+                                    </button></div>
+
+                            </div>
+                        </div>
+                        <div class="col-sm">
+                            <div class="suggest">
+                                <div class="suggest-photo">
+                                    <img class="suggest-photo" src="../../img/all-product-page/all-products5.jpeg" alt="">
+                                </div>
+                                <div class="suggest-name">Charles Bottom</div>
+                                <div class="suggest-price">$50</div>
+                                <div class="suggest-colors">
+                                    <svg width="100" height="40" viewBox="0 0 100 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10 0L18.6603 15H1.33975L10 0Z" fill="#F5542C"/>
+                                            <path d="M30 0L38.6603 15H21.3397L30 0Z" fill="#95E8E3"/>
+                                            <path d="M50 0L58.6603 15H41.3397L50 0Z" fill="#F4BFBF"/>
+                                            <path d="M70 0L78.6603 15H61.3397L70 0Z" fill="#D5CBFE"/>
+                                            <path d="M90 0L98.6603 15H81.3397L90 0Z" fill="#FDF5AA"/>
+                                            <path d="M10 20L18.6603 35H1.33975L10 20Z" fill="#F5542C"/>
+                                            <path d="M30 20L38.6603 35H21.3397L30 20Z" fill="#F5542C"/>
+                                            </svg>
+                                </div>
+                                <div class="btn-addToCart-suggest">
+                                    <button type="submit" name="add" aria-label="Add to cart" class="btn atc-button product-form__cart-submit" data-add-to-cart="" ecl="true">
+                                        <span data-add-to-cart-text="" ecl="true">ADD TO CART</span>
+                                        <span class="hide" data-loader="" ecl="true">
+                                          <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-spinner" viewBox="0 0 20 20" ecl="true"><path d="M7.229 1.173a9.25 9.25 0 1 0 11.655 11.412 1.25 1.25 0 1 0-2.4-.698 6.75 6.75 0 1 1-8.506-8.329 1.25 1.25 0 1 0-.75-2.385z" fill="#919EAB" ecl="true"></path></svg>
+                                        </span>
+                                    </button></div>
+
+                            </div>
+                        </div>
+                        <div class="col-sm">
+                            <div class="suggest">
+                                <div class="suggest-photo">
+                                    <img class="suggest-photo" src="../../img/all-product-page/all-products10.jpeg" alt="">
+                                </div>
+                                <div class="suggest-name">Clovelly Sharrong</div>
+                                <div class="suggest-price">$50</div>
+                                <div class="suggest-colors">
+                                    <svg width="100" height="40" viewBox="0 0 100 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10 0L18.6603 15H1.33975L10 0Z" fill="#F5542C"/>
+                                            <path d="M30 0L38.6603 15H21.3397L30 0Z" fill="#95E8E3"/>
+                                            <path d="M50 0L58.6603 15H41.3397L50 0Z" fill="#F4BFBF"/>
+                                            <path d="M70 0L78.6603 15H61.3397L70 0Z" fill="#D5CBFE"/>
+                                            <path d="M90 0L98.6603 15H81.3397L90 0Z" fill="#FDF5AA"/>
+                                            <path d="M10 20L18.6603 35H1.33975L10 20Z" fill="#F5542C"/>
+                                            <path d="M30 20L38.6603 35H21.3397L30 20Z" fill="#F5542C"/>
+                                            </svg>
+                                </div>
+                                <div class="btn-addToCart-suggest">
+                                    <button type="submit" name="add" aria-label="Add to cart" class="btn atc-button product-form__cart-submit" data-add-to-cart="" ecl="true">
+                                        <span data-add-to-cart-text="" ecl="true">ADD TO CART</span>
+                                        <span class="hide" data-loader="" ecl="true">
+                                          <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-spinner" viewBox="0 0 20 20" ecl="true"><path d="M7.229 1.173a9.25 9.25 0 1 0 11.655 11.412 1.25 1.25 0 1 0-2.4-.698 6.75 6.75 0 1 1-8.506-8.329 1.25 1.25 0 1 0-.75-2.385z" fill="#919EAB" ecl="true"></path></svg>
+                                        </span>
+                                    </button></div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm">
+                            <div class="suggest">
+                                <div class="suggest-photo">
+                                    <img class="suggest-photo" src="../../img/all-product-page/all-products11.jpeg" alt="">
+                                </div>
+                                <div class="suggest-name">Shiny Bottom </div>
+                                <div class="suggest-price">$50</div>
+                                <div class="suggest-colors">
+                                    <svg width="100" height="40" viewBox="0 0 100 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10 0L18.6603 15H1.33975L10 0Z" fill="#F5542C"/>
+                                            <path d="M30 0L38.6603 15H21.3397L30 0Z" fill="#95E8E3"/>
+                                            <path d="M50 0L58.6603 15H41.3397L50 0Z" fill="#F4BFBF"/>
+                                            <path d="M70 0L78.6603 15H61.3397L70 0Z" fill="#D5CBFE"/>
+                                            <path d="M90 0L98.6603 15H81.3397L90 0Z" fill="#FDF5AA"/>
+                                            <path d="M10 20L18.6603 35H1.33975L10 20Z" fill="#F5542C"/>
+                                            <path d="M30 20L38.6603 35H21.3397L30 20Z" fill="#F5542C"/>
+                                            </svg>
+                                </div>
+                                <div class="btn-addToCart-suggest">
+                                    <button type="submit" name="add" aria-label="Add to cart" class="btn atc-button product-form__cart-submit" data-add-to-cart="" ecl="true">
+                                        <span data-add-to-cart-text="" ecl="true">ADD TO CART</span>
+                                        <span class="hide" data-loader="" ecl="true">
+                                          <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-spinner" viewBox="0 0 20 20" ecl="true"><path d="M7.229 1.173a9.25 9.25 0 1 0 11.655 11.412 1.25 1.25 0 1 0-2.4-.698 6.75 6.75 0 1 1-8.506-8.329 1.25 1.25 0 1 0-.75-2.385z" fill="#919EAB" ecl="true"></path></svg>
+                                        </span>
+                                    </button></div>
+
+                            </div>
+                        </div>
+                        <div class="col-sm">
+                            <div class="suggest">
+                                <div class="suggest-photo">
+                                    <img class="suggest-photo" src="../../img/all-product-page/all-products8.jpeg" alt="">
+                                </div>
+                                <div class="suggest-name">Charles Bottom</div>
+                                <div class="suggest-price">$50</div>
+                                <div class="suggest-colors">
+                                    <svg width="100" height="40" viewBox="0 0 100 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10 0L18.6603 15H1.33975L10 0Z" fill="#F5542C"/>
+                                            <path d="M30 0L38.6603 15H21.3397L30 0Z" fill="#95E8E3"/>
+                                            <path d="M50 0L58.6603 15H41.3397L50 0Z" fill="#F4BFBF"/>
+                                            <path d="M70 0L78.6603 15H61.3397L70 0Z" fill="#D5CBFE"/>
+                                            <path d="M90 0L98.6603 15H81.3397L90 0Z" fill="#FDF5AA"/>
+                                            <path d="M10 20L18.6603 35H1.33975L10 20Z" fill="#F5542C"/>
+                                            <path d="M30 20L38.6603 35H21.3397L30 20Z" fill="#F5542C"/>
+                                            </svg>
+                                </div>
+                                <div class="btn-addToCart-suggest">
+                                    <button type="submit" name="add" aria-label="Add to cart" class="btn atc-button product-form__cart-submit" data-add-to-cart="" ecl="true">
+                                        <span data-add-to-cart-text="" ecl="true">ADD TO CART</span>
+                                        <span class="hide" data-loader="" ecl="true">
+                                          <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-spinner" viewBox="0 0 20 20" ecl="true"><path d="M7.229 1.173a9.25 9.25 0 1 0 11.655 11.412 1.25 1.25 0 1 0-2.4-.698 6.75 6.75 0 1 1-8.506-8.329 1.25 1.25 0 1 0-.75-2.385z" fill="#919EAB" ecl="true"></path></svg>
+                                        </span>
+                                    </button></div>
+
+                            </div>
+                        </div>
+                        <div class="col-sm">
+                            <div class="suggest">
+                                <div class="suggest-photo">
+                                    <img class="suggest-photo" src="../../img/all-product-page/all-products9.jpeg" alt="">
+                                </div>
+                                <div class="suggest-name">Clovelly Sharrong</div>
+                                <div class="suggest-price">$50</div>
+                                <div class="suggest-colors">
+                                    <svg width="100" height="40" viewBox="0 0 100 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10 0L18.6603 15H1.33975L10 0Z" fill="#F5542C"/>
+                                            <path d="M30 0L38.6603 15H21.3397L30 0Z" fill="#95E8E3"/>
+                                            <path d="M50 0L58.6603 15H41.3397L50 0Z" fill="#F4BFBF"/>
+                                            <path d="M70 0L78.6603 15H61.3397L70 0Z" fill="#D5CBFE"/>
+                                            <path d="M90 0L98.6603 15H81.3397L90 0Z" fill="#FDF5AA"/>
+                                            <path d="M10 20L18.6603 35H1.33975L10 20Z" fill="#F5542C"/>
+                                            <path d="M30 20L38.6603 35H21.3397L30 20Z" fill="#F5542C"/>
+                                            </svg>
+                                </div>
+                                <div class="btn-addToCart-suggest">
+                                    <button type="submit" name="add" aria-label="Add to cart" class="btn atc-button product-form__cart-submit" data-add-to-cart="" ecl="true">
+                                        <span data-add-to-cart-text="" ecl="true">ADD TO CART</span>
+                                        <span class="hide" data-loader="" ecl="true">
+                                          <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-spinner" viewBox="0 0 20 20" ecl="true"><path d="M7.229 1.173a9.25 9.25 0 1 0 11.655 11.412 1.25 1.25 0 1 0-2.4-.698 6.75 6.75 0 1 1-8.506-8.329 1.25 1.25 0 1 0-.75-2.385z" fill="#919EAB" ecl="true"></path></svg>
+                                        </span>
+                                    </button></div>
+
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <div id="component-footer">
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"></script>
+
+    <script src="../../component/header/header-copy.js"></script>
+    <script src="../../component/footer/footer.js"></script>
+    <script src="../../pages/accessories/accessories.js"></script>
+
+</body>
+
+</html>

@@ -1,5 +1,5 @@
 # Project web tĩnh
 
-Đề tài: SneakerShop
+Đề tài: sneakershop
 
 Author: Đinh Xuân Hòa

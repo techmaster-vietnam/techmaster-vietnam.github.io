@@ -1,5 +1,5 @@
 # Project web tĩnh
 
-Đề tài: Greentech
+Đề tài: greentech
 
 Author: Nguyễn Công Minh
