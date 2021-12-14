@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  padding: 20px;
+  width: 1280px;
+  margin: 40px auto;
+}
+
+section ul {
+  display: flex;
+  margin-bottom: 10px;
+}
+section ul li {
+  list-style: none;
+  background: gainsboro;
+  padding: 8px 20px;
+  margin: 5px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+section ul li.active {
+  background: pink;
+  color: white;
+}
+.product {
+  display: flex;
+  flex-wrap: wrap;
+}
+.product .itemBox {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 5px;
+}
+.product .itemBox img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #e74c3c;
+  font-size: 20px;
+  color: white;
+  padding: 10px 20px;
+}
+#box, #box-1 {
+  width: 500px;
+  background: #f1f1f1;
+  overflow: hidden;
+  display: none;
+  box-shadow: 0 0 20px black;
+  border-radius: 8px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  padding: 10px;
+  text-align: center;
+}
+#box span ,#box-1 span  {
+  color: #2ecc71;
+  font-size: 40px;
+  display: block;
+  margin: 20px 0;
+}
+#box h1, #box-1 h1  {
+  color: #333;
+}
+.close {
+  font-size: 20px;
+  color: white;
+  padding: 10px 30px;
+  margin-top: 20px;
+  cursor: pointer;
+  background: #3498db;
+  display: inline-block;
+  border-radius: 4px;
+}

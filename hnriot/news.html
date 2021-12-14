@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tạp chí</title>
+    <link rel="shortcut icon" href="./img/logo.png" />
+    <!-- font chu  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- jquery -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+    ></script>
+
+    <!-- CSS bootsrap only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="./css/app.css" />
+    <link rel="stylesheet" href="./css/news.css" />
+  </head>
+  <body>
+    <div class="loading-screen"></div>
+    <!-- scrolling -->
+    <div class="progress-wrap active-progress">
+      <svg
+        class="progress-circle svg-content"
+        width="100%"
+        height="100%"
+        viewBox="-1 -1 102 102"
+      >
+        <path
+          d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"
+          style="
+            transition: stroke-dashoffset 10ms linear 0s;
+            stroke-dasharray: 307.919, 307.919;
+            stroke-dashoffset: 249.357;
+          "
+        ></path>
+      </svg>
+      <i class="bi bi-arrow-up arrow"></i>
+    </div>
+    <!-- header -->
+    <header>
+      <div class="header-wrapper">
+        <!-- top header -->
+        <div class="top-header container">
+          <a href="index.html" class="logo"
+            ><img src="./img/logo.png" alt=""
+          /></a>
+          <div class="search">
+            <input type="text" placeholder="Tìm kiếm" />
+            <i class="bi bi-search"></i>
+          </div>
+
+          <ul class="user-menu d-flex">
+            <li>
+              <a href="acount.html"><i class="bi bi-person-fill"></i></a>
+            </li>
+            <li class="cart__icon">
+              <i class="bi bi-bag"></i>
+              <span class="item__total">0</span>
+            </li>
+            <li>
+              <span
+                class="mb-menu-toggle"
+                id="mb-menu-toggle"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                <i class="bi bi-list"></i>
+              </span>
+            </li>
+          </ul>
+        </div>
+        <!-- end top header -->
+        <!-- mid header -->
+        <div class="bg-second">
+          <div class="mid-header container">
+            <ul class="main-menu d-flex justify-content-around">
+              <li>
+                <a href="index.html">Trang chủ</a>
+              </li>
+              <li class="mega-dropdown">
+                <a href="#"
+                  >Sản phẩm
+                  <i class="bi bi-chevron-down"></i>
+                </a>
+
+                <div class="mega-content">
+                  <div class="row">
+                    <div class="col-xl-6 col-lg-12">
+                      <div class="box">
+                        <div class="subtitle">Kính râm</div>
+                        <ul>
+                          <li>
+                            <a href="product-list.html"
+                              >the assembled sunglasses</a
+                            >
+                          </li>
+                          <li>
+                            <a href="product-list.html">the cut sunglasses</a>
+                          </li>
+                          <li><a href="product-list.html">the metal</a></li>
+                          <li>
+                            <a href="product-list.html">the combination</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-12">
+                      <div class="box">
+                        <h4>Kính cận</h4>
+                        <ul>
+                          <li>
+                            <a href="product-list.html">the assembled </a>
+                          </li>
+                          <li><a href="product-list.html">the cut</a></li>
+                          <li><a href="product-list.html">the metal</a></li>
+                          <li><a href="product-list.html">the basic</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row img-row">
+                    <div class="col-lg-6 col-md-12">
+                      <img
+                        src="./img/kinhram-removebg-edit.webp"
+                        class="img-mega"
+                        alt=""
+                      />
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                      <img
+                        src="./img/kinhcan-removebg-edit.webp"
+                        class="img-mega"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a href="service.html">dịch vụ</a>
+              </li>
+              <li class="active">
+                <a href="news.html">Tạp chí</a>
+              </li>
+
+              <li>
+                <a href="store.html">Cửa hàng</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- end mid header -->
+      </div>
+    </header>
+    <!-- end header -->
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="search-box mb-search">
+              <div class="icon"><i class="bi bi-search"></i></div>
+              <div class="input">
+                <input type="text" placeholder="Tìm kiếm" id="mysearch" />
+              </div>
+              <span
+                class="clear"
+                onclick="document.getElementById('mysearch').value = ''"
+                ><i class="bi bi-x"></i
+              ></span>
+            </div>
+
+            <ul class="main-menu d-flex justify-content-around">
+              <li>
+                <a href="index.html">Trang chủ</a>
+              </li>
+              <li class="mega-dropdown">
+                <a href="#"
+                  >Sản phẩm
+                  <i class="bi bi-chevron-down"></i>
+                </a>
+
+                <div class="mega-content">
+                  <div class="row">
+                    <div class="col-xl-6 col-lg-12">
+                      <div class="box">
+                        <a href="product-list.html" class="subtitle"
+                          >Kính râm</a
+                        >
+                        <ul class="hide-product">
+                          <li>
+                            <a href="product-list.html"
+                              >the assembled sunglasses</a
+                            >
+                          </li>
+                          <li>
+                            <a href="product-list.html">the cut sunglasses</a>
+                          </li>
+                          <li><a href="product-list.html">the metal</a></li>
+                          <li>
+                            <a href="product-list.html">the combination</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-12">
+                      <div class="box">
+                        <a href="product-list.html" class="subtitle"
+                          >Kính cận</a
+                        >
+                        <ul class="hide-product">
+                          <li>
+                            <a href="product-list.html">the assembled </a>
+                          </li>
+                          <li><a href="product-list.html">the cut</a></li>
+                          <li><a href="product-list.html">the metal</a></li>
+                          <li><a href="product-list.html">the basic</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row img-row">
+                    <div class="col-lg-6 col-md-12">
+                      <img
+                        src="./img/kinhram-removebg-edit.webp"
+                        class="img-mega"
+                        alt=""
+                      />
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                      <img
+                        src="./img/kinhcan-removebg-edit.webp"
+                        class="img-mega"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a href="service.html">dịch vụ</a>
+              </li>
+              <li class="active">
+                <a href="news.html">Tạp chí</a>
+              </li>
+
+              <li>
+                <a href="store.html">Cửa hàng</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- banner-->
+    <div
+      class="banner-parallax parallax-window position-relative"
+      data-parallax="scroll"
+      data-image-src="./img/news-banner-w.webp"
+      data-z-index="2"
+    >
+      <div class="title-banner">
+        <h1>Tạp chí</h1>
+      </div>
+    </div>
+    <!-- end banner  -->
+
+    <!-- section 1 -->
+    <section class="news-list">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 news-details line-bottom">
+            <div class="row">
+              <div class="col-sm-12 col-xl-6 line-right">
+                <div class="news-left">
+                  <div class="news-info">
+                    <div class="label">Kiến thức</div>
+                    <div class="news-title">
+                      <h2><a href="news-detail.html">Nguồn cảm hứng của HANOI-RIOT</a></h2>
+                    </div>
+                  </div>
+                  <div class="news-img">
+                    <a href="news-detail.html"><img src="./img/news-1-w.webp" alt="" /></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-xl-6">
+                <div class="news-text news-right">
+                  <p>
+                    Bước ra từ câu chuyện của những người trẻ khao khát tìm thấy
+                    “định nghĩa” về chính bản thân mình giữa những hoài nghi về
+                    nhận thức, năng lực và cuộc sống, HANOI-RIOT được tạo ra như
+                    một người bạn đồng hành, một lăng kính đa chiều và rộng mở
+                    để bạn “nhìn rõ” chính mình và thế giới xung quanh. Với
+                    thông điệp “WHEN IN DOUBT, WEAR GLASSES”, HANOI-RIOT mong
+                    muốn hiện diện trong cuộc sống của bạn hằng ngày, đưa cho
+                    bạn những góc nhìn thật khác biệt, gợi cho bạn cảm hứng tìm
+                    ra điều tích cực ngay cả trong những khoảnh khắc bạn bối
+                    rối, mông lung.
+                  </p>
+                  <p>
+                    Đối với HANOI-RIOT, bạn chính là “độc bản”. Chúng tôi mong
+                    muốn bạn có một góc nhìn đủ rộng, đủ tốt để đưa ra những lựa
+                    chọn khiến bạn hạnh phúc, đủ tự tin để theo đuổi những gì
+                    bạn đam mê. Chúng tôi biết rằng bạn có cá tính, có tri thức,
+                    có lập trường riêng. Đâu cần phải chạy theo số đông, bạn chỉ
+                    cần “bắt kịp” lý tưởng của riêng mình.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 news-details line-bottom">
+            <div class="row reverse">
+              <div class="col-md-12 col-xl-6 line-right">
+                <div class="news-text news-left">
+                  <p>
+                    Kính mắt là một loại phụ kiện không thể thiếu đối với những
+                    người yêu thời trang. Chúng không chỉ có chức năng che nắng,
+                    che gió mà chúng còn là một trong những phụ kiện để thể hiện
+                    sắc đẹp, phong thái của người đeo chúng. Nhưng liệu bạn có
+                    biết rõ về các thương hiệu kính mắt chưa? Nếu chưa, hãy cùng
+                    HANOI-RIOT tìm hiểu về các thương hiệu kính mắt nổi tiếng
+                    trên toàn thế giớ
+                  </p>
+                  <p>
+                    Dior đã là thương hiệu nổi tiếng trên khắp thế giới với các
+                    sản phẩm mang đậm tính quyến rũ và gợi cảm. Tất cả các thiết
+                    kế đều là sự kết hợp hoàn hảo giữa sự nữ quyền, hiện đại với
+                    lãng mạn, vậy nên tên tuổi của Dior đã đi khắp thế giới và
+                    là thương hiệu tạo nên tiếng vang đến tận bây giờ. Các dòng
+                    kính mắt của Dior như là được sinh ra để dành cho phái nữ.
+                    Mỗi chiếc kính để thể hiện sự thanh lịch, quý phái, vừa nhìn
+                    cũng đủ đắm say. Với gọng kim loại mảnh kết hợp với tròng
+                    kính to mang lại sự sang chảnh cũng như là một nét đẹp riêng
+                    của mỗi người.
+                  </p>
+                  <p>
+                    Với những người yêu thời trang, Gucci chắc hẳn đã quá quen
+                    thuộc. Gucci là nhãn hiệu Ý bán chạy hàng đầu với 425 cửa
+                    hiệu trên toàn thế giới. Gucci đã khẳng định vị thế của họ
+                    và dần dần trở thành bá chủ trong giới thời trang thượng
+                    hạng. Mỗi chiếc kính mắt đều thể hiện sự tinh tế trong từng
+                    chi biết, làm nổi bật nên vẻ đẹp khuôn mặt của bạn. Mang
+                    phong cách nhẹ nhàng khiến người nhìn cảm thấy thoải mái, dễ
+                    chịu, điểm những nét dịu dàng, trìu mến. Các tín đồ thời
+                    trang sẽ khó lòng mà bỏ qua.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-12 col-xl-6">
+                <div class="news-right">
+                  <div class="news-info">
+                    <div class="label">Thời trang</div>
+                    <div class="news-title">
+                      <h2>
+                        <a href="news-detail.html">
+                          Kính mắt hàng hiệu nổi tiếng, bạn đã biết những thương
+                          hiệu đó chưa?
+                        </a>
+                      </h2>
+                    </div>
+                  </div>
+                  <div class="news-img">
+                    <!-- <img src="./img/news-5.jpg" alt="" /> -->
+                    <a href="news-detail.html"><img src="./img/banner-2.jpg" alt="" /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 news-details line-bottom">
+            <div class="row">
+              <div class="col-md-12 col-xl-6 line-right">
+                <div class="news-left">
+                  <div class="news-info">
+                    <div class="label">Lời khuyên</div>
+                    <div class="news-title">
+                      <h2><a href="news-detail.html">Lựa chọn kính mắt cho nam giới</a></h2>
+                    </div>
+                  </div>
+                  <div class="news-img">
+                    <a href="news-detail.html"><img src="./img/news-4-w.webp" alt="" /></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12 col-xl-6">
+                <div class="news-text news-right">
+                  <p>
+                    Các quy tắc chọn kính tưởng chừng rất phổ biến nhưng nhiều
+                    người chưa biết rõ. Gương mặt hình trái tim có kiểu dáng
+                    nhọn dần về phía cằm. Bởi vậy, những mẫu kính mắt viền kim
+                    loại mỏng sẽ giúp gương mặt nhìn cân đối. Trong khi đó,
+                    những người có dáng mặt vuông nên ưu tiên kính viền đen.
+                    Phái mạnh cần cân nhắc đến các dáng kính viền dày để mẫu phụ
+                    kiện không bị quá nhỏ so với tổng thể.Kính mắt dáng vuông là
+                    lựa chọn hoàn hảo cho những người có gương mặt tròn. Ngoài
+                    ra, nam giới nên cân nhắc kính bầu dục hoặc kính mắt phi
+                    công khi có dáng mặt hình kim cương.Tuy nhiên, bạn không
+                    nhất thiết phải tuân thủ hoàn toàn các quy tắc khi chọn kính
+                    mắt. Thay vào đó, phái mạnh có thể cân nhắc dựa trên những
+                    đặc điểm gương mặt. Đối với khuôn hàm và xương gò má sắc
+                    nét, nam giới nên chọn kính gọng tròn. Bên cạnh đó, cặp kính
+                    có kiểu dáng góc cạnh sẽ phù hợp với gương mặt tròn.
+                  </p>
+                  <p>
+                    Những năm gần đây, kính viền dày và mỏng đang trở nên phổ
+                    biến. Dáng tròn, góc cạnh là 2 kiểu mắt kính thường xuyên
+                    được nam giới lựa chọn. Bên cạnh đó, họa tiết trong suốt
+                    hoặc màu xám dễ kết hợp cùng nhiều dáng mặt. Các mẫu kính
+                    dáng tròn và viền nhỏ mang đến vẻ ngoài thanh lịch, tạo vẻ
+                    ngoài thông minh. Trong khi đó, dáng kính dày có xu hướng
+                    sành điệu. Thiết kế viền đen của Gentle Monster đang trở
+                    thành mốt được giới trẻ Việt Nam ưa chuộng.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 news-details">
+            <div class="row reverse">
+              <div class="col-md-12 col-xl-6 line-right">
+                <div class="news-text news-left">
+                  <p>
+                    Bước ra từ câu chuyện của những người trẻ khao khát tìm thấy
+                    “định nghĩa” về chính bản thân mình giữa những hoài nghi về
+                    nhận thức, năng lực và cuộc sống, HANOI-RIOT được tạo ra như
+                    một người bạn đồng hành, một lăng kính đa chiều và rộng mở
+                    để bạn “nhìn rõ” chính mình và thế giới xung quanh. Với
+                    thông điệp “WHEN IN DOUBT, WEAR GLASSES”, HANOI-RIOT mong
+                    muốn hiện diện trong cuộc sống của bạn hằng ngày, đưa cho
+                    bạn những góc nhìn thật khác biệt, gợi cho bạn cảm hứng tìm
+                    ra điều tích cực ngay cả trong những khoảnh khắc bạn bối
+                    rối, mông lung.
+                  </p>
+                  <p>
+                    Đối với HANOI-RIOT, bạn chính là “độc bản”. Chúng tôi mong
+                    muốn bạn có một góc nhìn đủ rộng, đủ tốt để đưa ra những lựa
+                    chọn khiến bạn hạnh phúc, đủ tự tin để theo đuổi những gì
+                    bạn đam mê. Chúng tôi biết rằng bạn có cá tính, có tri thức,
+                    có lập trường riêng. Đâu cần phải chạy theo số đông, bạn chỉ
+                    cần “bắt kịp” lý tưởng của riêng mình.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-12 col-xl-6">
+                <div class="news-right">
+                  <div class="news-info">
+                    <div class="label">Kiến thức</div>
+                    <div class="news-title">
+                      <h2><a href="news-detail.html">Nguồn cảm hứng của HANOI-RIOT</a></h2>
+                    </div>
+                  </div>
+                  <div class="news-img">
+                    <!-- <img src="./img/news-5.jpg" alt="" /> -->
+                    <a href="news-detail.html"><img src="./img/store-w.webp" alt="" /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- end section 1 -->
+
+    <!-- <div class="card-img">
+      <div class="front"><img src="img/service-1.jpeg" alt="" /></div>
+      <div class="back">
+        <div class="details">
+          <h2>Kieu Huy <br /><span>Developer</span></h2>
+          <div class="social-icons">
+            <a href="#">
+              <i class="bi bi-facebook"></i>
+            </a>
+            <a href="#">
+              <i class="bi bi-google"></i>
+            </a>
+            <a href="#">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="#">
+              <i class="bi bi-youtube"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+
+
+    <!-- cart overlay -->
+    <section class="cart__overlay">
+      <div class="cart">
+        <span class="close__cart">
+          <i class="bi bi-x-lg"></i>
+        </span>
+        <h2>Giỏ Hàng</h2>
+        <div class="cart__center">
+          <!-- Cart Item -->
+        </div>
+
+        <div class="cart__footer">
+          <h3>Tổng tiền: $ <span class="cart__total">0</span></h3>
+          <!-- <button class="clear__cart btn-flat-reverse btn-hover-reverse">
+            Clear Cart
+          </button> -->
+          <a href="checkout.html" class="btn-flat-reverse btn-hover-reverse"
+            >Thanh toán</a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- END cart overlay -->
+
+    <!-- footer -->
+    <footer class="bg-second">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-12">
+            <h4 class="footer-head">Bạn cần trợ giúp ?</h4>
+            <ul class="menu">
+              <li>
+                <a href="#"
+                  ><i class="bi bi-telephone-fill"></i>hotline: 036.8523.966</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="bi bi-clock-fill"></i>Mon-Sun | 8:30 - 22:00</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="bi bi-envelope-fill"></i>Email:
+                  contact@gmail.com</a
+                >
+              </li>
+              <li>
+                <a href="#"><i class="bi bi-geo-alt-fill"></i>Shop: Hà Nội</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-12">
+            <h4 class="footer-head">Dịch vụ</h4>
+            <ul class="menu">
+              <li><a href="#">Khám mắt miễn phí</a></li>
+              <li><a href="#">Bảo hành hai năm</a></li>
+              <li><a href="#">Thu cũ đổi mới</a></li>
+              <li><a href="#">1 đổi 1 trong 30 ngày</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-12">
+            <h4 class="footer-head">Bạn cần biết</h4>
+            <ul class="menu">
+              <li><a href="#">Chính sách vận chuyển</a></li>
+              <li><a href="#">Chính sách bảo hành</a></li>
+
+              <li><a href="#">Vệ sinh và bảo quản kính mắt</a></li>
+              <li><a href="#">Câu hỏi thường gặp</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-12">
+            <div class="contact">
+              <h4 class="contact-header">HANOI-RIOT</h4>
+              <ul class="contact-socials">
+                <li>
+                  <a href="#"><i class="bi bi-facebook"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="bi bi-twitter"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="email-box">
+              <i class="bi bi-envelope-fill" style="color: white"></i>
+              <input
+                class="tbox"
+                type="email"
+                placeholder="Nhập địa chỉ email"
+                style="color: black"
+              />
+              <button class="btn-email" type="button" name="button">
+                đăng ký
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end footer -->
+    <!-- js -->
+
+    <script src="./js/cart.js"></script>
+
+    <!-- JS parallax -->
+    <script src="./js/parallax.js"></script>
+    <!-- JS scrolling -->
+    <script src="./js/scrolling.js"></script>
+    <!-- JS bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- JS MAIN -->
+    <script src="./js/main.js"></script>
+  </body>
+</html>

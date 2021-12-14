@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HANOI-RIOT</title>
+    <link rel="shortcut icon" href="./img/logo.png" />
+    <!-- font chu  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS swiper -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <!-- CSS bootsrap only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="./css/app.css" />
+    <style>
+       .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        /* text-align: center; */
+        font-size: 18px;
+        background: #fff;
+        justify-content: center;
+    display: flex;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 90px;
+        height: 100%;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="loading-screen"></div>
+
+    <!-- header -->
+    <header>
+      <div class="header-wrapper">
+        <!-- top header -->
+        <div class="top-header container">
+          <a href="index.html" class="logo"
+            ><img src="./img/logo.png" alt=""
+          /></a>
+          <div class="search">
+            <input type="text" placeholder="Tìm kiếm" />
+            <i class="bi bi-search"></i>
+          </div>
+
+          <ul class="user-menu d-flex">
+            
+            <li>
+              <a href="acount.html"><i class="bi bi-person-fill"></i></a>
+            </li>
+            <li class="cart__icon">
+              <i class="bi bi-bag"></i>
+              <span class="item__total">0</span>
+            </li>
+            <li>
+              <span
+                class="mb-menu-toggle"
+                id="mb-menu-toggle"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                <i class="bi bi-list"></i>
+              </span>
+            </li>
+          </ul>
+        </div>
+        <!-- end top header -->
+        <!-- mid header -->
+        <div class="bg-second">
+          <div class="mid-header container">
+            <ul class="main-menu d-flex justify-content-around">
+              <li class="active">
+                <a href="index.html">Trang chủ</a>
+              </li>
+              <li class="mega-dropdown">
+                <a href="#"
+                  >Sản phẩm
+                  <i class="bi bi-chevron-down"></i>
+                </a>
+
+                <div class="mega-content">
+                  <div class="row">
+                    <div class="col-xl-6 col-lg-12">
+                      <div class="box">
+                        <div class="subtitle">Kính râm</div>
+                        <ul>
+                          <li>
+                            <a href="product-list.html"
+                              >the assembled sunglasses</a
+                            >
+                          </li>
+                          <li>
+                            <a href="product-list.html">the cut sunglasses</a>
+                          </li>
+                          <li><a href="product-list.html">the metal</a></li>
+                          <li>
+                            <a href="product-list.html">the combination</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-12">
+                      <div class="box">
+                        <div class="subtitle">Kính cận</div>
+                        <ul>
+                          <li>
+                            <a href="product-list.html">the assembled </a>
+                          </li>
+                          <li><a href="product-list.html">the cut</a></li>
+                          <li><a href="product-list.html">the metal</a></li>
+                          <li><a href="product-list.html">the basic</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row img-row">
+                    <div class="col-lg-6 col-md-12">
+                      <img
+                        src="./img/kinhram-removebg-edit.webp"
+                        class="img-mega"
+                        alt=""
+                      />
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                      <img
+                        src="./img/kinhcan-removebg-edit.webp"
+                        class="img-mega"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a href="service.html">dịch vụ</a>
+              </li>
+              <li>
+                <a href="news.html">Tạp chí</a>
+              </li>
+
+              <li>
+                <a href="store.html">Cửa hàng</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- end mid header -->
+      </div>
+    </header>
+    <!-- end header -->
+
+    <!-- Modal menu-->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            
+            <div class="search-box mb-search">
+              <div class="icon"><i class="bi bi-search"></i></div>
+              <div class="input">
+                  <input type="text" placeholder="Tìm kiếm" id="mysearch">
+              </div>
+              <span class="clear" onclick="document.getElementById('mysearch').value = ''"><i class="bi bi-x"></i></span>
+            </div>
+            
+            <ul class="main-menu d-flex justify-content-around">
+              <li class="active">
+                <a href="index.html">Trang chủ</a>
+              </li>
+              <li class="mega-dropdown">
+                <a href="#"
+                  >Sản phẩm
+                  <i class="bi bi-chevron-down"></i>
+                </a>
+
+                <div class="mega-content">
+                  <div class="row">
+                    <div class="col-xl-6 col-lg-12">
+                      <div class="box">
+                        <a href="product-list.html" class="subtitle"
+                          >Kính râm</a
+                        >
+                        <ul class="hide-product">
+                          <li>
+                            <a href="product-list.html"
+                              >the assembled sunglasses</a
+                            >
+                          </li>
+                          <li>
+                            <a href="product-list.html">the cut sunglasses</a>
+                          </li>
+                          <li><a href="product-list.html">the metal</a></li>
+                          <li>
+                            <a href="product-list.html">the combination</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-12">
+                      <div class="box">
+                        <a href="product-list.html" class="subtitle"
+                          >Kính cận</a
+                        >
+                        <ul class="hide-product">
+                          <li>
+                            <a href="product-list.html">the assembled </a>
+                          </li>
+                          <li><a href="product-list.html">the cut</a></li>
+                          <li><a href="product-list.html">the metal</a></li>
+                          <li><a href="product-list.html">the basic</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row img-row">
+                    <div class="col-lg-6 col-md-12">
+                      <img
+                        src="./img/kinhram-removebg-edit.webp"
+                        class="img-mega"
+                        alt=""
+                      />
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                      <img
+                        src="./img/kinhcan-removebg-edit.webp"
+                        class="img-mega"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a href="service.html">dịch vụ</a>
+              </li>
+              <li>
+                <a href="news.html">Tạp chí</a>
+              </li>
+
+              <li>
+                <a href="store.html">Cửa hàng</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- banner -->
+    <div class="banner">
+   
+      <div class="slider">
+        <!--slider controller -->
+        <div class="container">
+          <!-- slider item -->
+          <div class="slide active">
+            <div class="info">
+              <div class="info-content">
+                <h2 class="top-down">BST Deep into the nature</h2>
+                <p class="top-down trans-delay-0-2 pt-3 label">
+                  Một mầm non nhú xanh trước sự vẫy gọi diệu kỳ của ánh nắng mặt
+                  trời đến nguồn năng lượng toả ra mạnh mẽ từ nét trầm mặc ngàn
+                  năm của rêu phong, nằm im lìm bất chấp sự biến đổi của thời
+                  gian đều được khéo léo biến tấu, “thổi hồn” vào từng sản phẩm
+                  trong Deep Into The Nature. Hãy bước vào cuộc đối thoại với tự
+                  nhiên để tìm ra bản ngã của chính mình thông qua một lăng kính
+                  mới.
+                </p>
+                <div class="top-down trans-delay-0-4 pt-md-3 pb-3">
+                  <a href="./product-list.html" class="btn-flat btn-hover">
+                    KHÁM PHÁ THÊM
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="img top-down">
+              <img src="./img/nu-remove.png" alt="" />
+            </div> -->
+          </div>
+          <!-- end slider item -->
+          <!-- slider item -->
+          <div class="slide">
+            <div class="info">
+              <div class="info-content">
+                <h2 class="top-down">BST Nature Spirit</h2>
+                <p class="top-down trans-delay-0-2 pt-3 label">
+                  Lấy cảm hứng từ Mặt Trời, từ Rừng Cây, Gió, Hoa và Biển,
+                  Nature Spirit mang những sắc độ rực rỡ và tươi vui như một món
+                  quà mà thiên nhiên ban tặng. Tươi sáng và mới lạ như thiên
+                  nhiên trong nắng hạ, Nature Spirit sẽ truyền cho bạn nguồn cảm
+                  hứng yêu đời và bay bổng trong từng chiếc kính. Không còn là
+                  những items basic, Nature Spirit mang đến sự phá cách về màu
+                  sắc và kiểu dáng, đúng với tinh thần “chill” của mùa hè.
+                </p>
+                <div class="top-down trans-delay-0-4 pt-md-3 pb-3">
+                  <a href="./product-list.html" class="btn-flat btn-hover">
+                    KHÁM PHÁ THÊM
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="img top-down right-left">
+              <img src="./img/nam-removebg.png" class="big-img" alt="" />
+            </div> -->
+          </div>
+          <!-- end slider item -->
+        </div>
+        <button class="slide-controll slide-prev">
+          <i class="bi bi-chevron-left"></i>
+        </button>
+        <button class="slide-controll slide-next">
+          <i class="bi bi-chevron-right"></i>
+        </button>
+        
+        <!-- end slider controller -->
+      </div>
+    </div>
+    <!-- end banner -->
+    <!-- scrolling -->
+    <div class="progress-wrap active-progress">
+      <svg
+        class="progress-circle svg-content"
+        width="100%"
+        height="100%"
+        viewBox="-1 -1 102 102"
+      >
+        <path
+          d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"
+          style="
+            transition: stroke-dashoffset 10ms linear 0s;
+            stroke-dasharray: 307.919, 307.919;
+            stroke-dashoffset: 249.357;
+          "
+        ></path>
+      </svg>
+      <i class="bi bi-arrow-up arrow"></i>
+    </div>
+    <!-- section 1 -->
+    <section class="best-seller">
+      <div class="container">
+        <div class="section-header">
+          <h3>Nổi bật</h3>
+        </div>
+
+        <div class="row">
+          <div class="col-6 col-lg-3 pb-4 pb-xxl-0">
+            <div class="product-card">
+              <a href="./product-detail.html">
+                <div class="product-card-img">
+                  <img src="./img/lm-black-edit.webp" alt="" />
+                  <img src="./img/nam-edit.webp" alt="" />
+                </div>
+              </a>
+
+              <div class="product-card-info">
+                <!-- <div class="product-btn">
+                  <a
+                    href="product-detail.html"
+                    class="btn-flat-reverse btn-hover-reverse"
+                    >Mua ngay</a
+                  >
+                </div> -->
+                <div class="product-card-name"><h4>Hardy</h4></div>
+                <div class="product-price">
+                  <span><del>$249</del></span>
+                  <span class="curr-price">$190</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3 pb-4 pb-xxl-0">
+            <div class="product-card">
+              <a href="./product-detail.html">
+                <div class="product-card-img">
+                  <img src="./img/hd-havana-edit.webp" alt="" />
+                  <img src="./img/nam2-edit.webp" alt="" />
+                </div>
+              </a>
+              <div class="product-card-info">
+                <!-- <div class="product-btn">
+                  <a
+                    href="product-detail.html"
+                    class="btn-flat-reverse btn-hover-reverse"
+                    >Mua ngay</a
+                  >
+                </div> -->
+                <div class="product-card-name"><h4>Kubo 01</h4></div>
+                <div class="product-price">
+                  <span><del>$300</del></span>
+                  <span class="curr-price">$269</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3 pb-4 pb-xxl-0">
+            <div class="product-card">
+              <a href="./product-detail.html">
+                <div class="product-card-img">
+                  <img src="./img/vuong-edit.webp" alt="" />
+                  <img src="./img/nu2-edit.webp" alt="" />
+                </div>
+              </a>
+              <div class="product-card-info">
+                <!-- <div class="product-btn">
+                  <a
+                    href="product-detail.html"
+                    class="btn-flat-reverse btn-hover-reverse"
+                    >Mua ngay</a
+                  >
+                  
+                </div> -->
+                <div class="product-card-name"><h4>Uno</h4></div>
+                <div class="product-price">
+                  <span><del>$269</del></span>
+                  <span class="curr-price">$249</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3 pb-0 mb-0">
+            <div class="product-card">
+              <a href="./product-detail.html">
+                <div class="product-card-img">
+                  <img src="./img/er-pink-edit.webp" alt="" />
+                  <img src="./img/nu-edit.webp" alt="" />
+                </div>
+              </a>
+              <div class="product-card-info">
+                <!-- <div class="product-btn">
+                  <a
+                    href="product-detail.html"
+                    class="btn-flat-reverse btn-hover-reverse"
+                    >Mua ngay</a
+                  >
+                </div> -->
+                <div class="product-card-name"><h4>Ena</h4></div>
+                <div class="product-price">
+                  <span><del>$300</del></span>
+                  <span class="curr-price">$269</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end section 1 -->
+    <!-- cart overlay -->
+    <section class="cart__overlay">
+      <div class="cart">
+        <span class="close__cart">
+          <i class="bi bi-x-lg"></i>
+        </span>
+        <h2>Giỏ Hàng</h2>
+        <div class="cart__center">
+          <!-- Cart Item -->
+          <!-- <div class="cart__item">
+            <img src="./img/hd-havana-1.jpg" alt="" />
+            <div>
+              <h3>The Hardy</h3>
+              <h3 class="price">1,750,000 VND</h3>
+            </div>
+            <div>
+              <span>
+                <i class="bi bi-plus-lg"></i>
+              </span>
+              <p>3</p>
+              <span>
+                <i class="bi bi-dash-lg"></i>
+              </span>
+            </div>
+
+            <div>
+              <span class="remove__item">
+                <i class="bi bi-trash-fill"></i>
+              </span>
+            </div>
+          </div> -->
+        </div>
+
+        <div class="cart__footer">
+          <h3>Tổng tiền: $ <span class="cart__total">0</span></h3>
+          <!-- <button class="clear__cart btn-flat-reverse btn-hover-reverse">
+            Clear Cart
+          </button> -->
+          <a href="checkout.html" class="btn-flat-reverse btn-hover-reverse"
+            >Thanh toán</a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- END cart overlay -->
+
+    <!-- section 2 -->
+    <section class="grid">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-lg-6 line-right">
+            <div class="collection">
+              <div class="collection-info">
+                <div class="collection-title">
+                  <h2>BST Nature Spirit</h2>
+                </div>
+                <p class="body2">
+                  Lấy cảm hứng từ Mặt Trời, từ Rừng Cây, Gió, Hoa và Biển,
+                  Nature Spirit mang những sắc độ rực rỡ và tươi vui như một món
+                  quà mà thiên nhiên ban tặng.
+                </p>
+                <a href="./product-list.html" class="btn-flat btn-hover mt-5"
+                  >Khám phá thêm</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-12 col-lg-6 collection-right">
+            <div class="row pl">
+              <div class="col-12 line-bottom">
+                <div class="right-1 position-relative">
+                  <div class="collection-right-info">
+                    <div class="collection-title">
+                      <h2>Khám mắt miễn phí</h2>
+                    </div>
+                    <p class="body2 mb-1">Miễn phí toàn bộ các dịch vụ</p>
+                    <p class="body2 mb-4">Đo mắt - Kiểm tra thị lực</p>
+                    <a href="./service.html" class="btn-flat btn-hover"
+                      >Đặt lịch ngay</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="right-2 position-relative">
+                  <div class="collection-right-info">
+                    <div class="collection-title">
+                      <h2>Theo dõi bản tin </h2>
+                    </div>
+                    <div class="email-box justify-content-lg-start">
+                      <i class="bi bi-envelope-fill"></i>
+                      <input
+                        class="tbox"
+                        type="email"
+                        placeholder="Nhập địa chỉ email"
+                      />
+                      <button class="btn-email" type="button" name="button">
+                        đăng ký
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end section 2 -->
+
+    <!-- section 3 -->
+    <section class="blog">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-lg-6 line-right">
+            <div class="blog-right">
+              <div class="blog-img">
+                <img src="./img/blog-main.webp" alt="" />
+              </div>
+              <div class="blog-info">
+                <p class="label">Lời khuyên</p>
+                <div class="blog-title">
+                  <h2><a href="news-detail.html">chọn kính phù hợp</a></h2>
+                </div>
+                <i>
+                  <a href="news-detail.html">
+                    Gọng kính phù hợp nhất với khuôn mặt của bạn chính là gọng
+                    kính đẹp nhất. Nên lựa chọn kính mắt như thế nào?
+                  </a>
+                </i>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 col-lg-6">
+            <div class="row pl">
+              <div class="col-12 line-bottom">
+                <div class="blog-left mt-xl-0">
+                  <div class="row pd-left">
+                    <div class="col-sm-12 col-md-4">
+                      <div class="blog-img">
+                        <img src="./img/blog-1-edit.webp" alt="" />
+                      </div>
+                    </div>
+                    <div class="col-sm-12 col-md-8">
+                      <div class="blog-info">
+                        <p class="label">Kiến thức</p>
+                        <div class="blog-title">
+                          <div class="subtitle">
+                            <a href="news-detail.html">Nguồn cảm hứng cua HANOI-RIOT</a>
+                          </div>
+                        </div>
+                        <i
+                          ><a href="news-detail.html">
+                            Bước ra từ câu chuyện của những người trẻ khao khát
+                            tìm thấy “định nghĩa”
+                          </a></i
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 line-bottom">
+                <div class="blog-left">
+                  <div class="row pd-left">
+                    <div class="col-sm-12 col-md-4">
+                      <div class="blog-img">
+                        <img src="./img/blog-2-edit.webp" alt="" />
+                      </div>
+                    </div>
+                    <div class="col-sm-12 col-md-8">
+                      <div class="blog-info">
+                        <p class="label">Thời trang</p>
+                        <div class="blog-title">
+                          <div class="subtitle">
+                            <a href="news-detail.html">Kính mắt hàng hiệu nổi tiếng</a>
+                          </div>
+                        </div>
+                        <i
+                          ><a href="news-detail.html">
+                            Kính mắt là một loại phụ kiện không thể thiếu đối với
+                            những người yêu thời trang.
+                          </a></i
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="blog-left">
+                  <div class="row pd-left">
+                    <div class="col-sm-12 col-md-4">
+                      <div class="blog-img">
+                        <img src="./img/blog-3-edit.webp" alt="" />
+                      </div>
+                    </div>
+                    <div class="col-sm-12 col-md-8">
+                      <div class="blog-info">
+                        <p class="label">Kiến thức</p>
+                        <div class="blog-title">
+                          <div class="subtitle">
+                            <a href="news-detail.html">Gọng kính nhựa tròn thời trang ở Hà Nội</a>
+                          </div>
+                        </div>
+                        <i
+                          ><a href="news-detail.html">
+                            Gọng kính nhựa tròn được biết đến là loại gọng kính
+                            thời trang đẹp, mới lạ và ...
+                          </a></i
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section-footer enter">
+        <a href="./news.html" class="btn-flat btn-hover">Đọc thêm về tạp chí</a>
+      </div>
+    </section>
+    <!-- end section 3 -->
+    <!-- section 4 -->
+    
+    <section
+      class="location parallax-window"
+      data-parallax="scroll"
+      data-image-src="./img/location-edit.webp""
+      data-z-index="2"
+    >
+      <div class="container-fluid position-relative">
+        <div class="location-info">
+          <div class="location-title">
+            <h2>10 cửa hàng tại hà nội</h2>
+          </div>
+          <h3 class="mb-3">Tìm địa chỉ gần nhất</h3>
+          <div class="email-box">
+            <i class="bi bi-geo-alt-fill"></i>
+            <input class="tbox" type="text" placeholder="Nhập địa chỉ" />
+            <button class="btn-email" type="button" name="button">
+              tìm kiếm
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end section 4 -->
+
+     <!-- ===== SPONSORS ====== -->
+      <section class="sponsor section">
+        <div class="sponsor__container container d-grid">
+          <div class="sponsor__content">
+            <img src="img/sponsors1.png" alt="" class="sponsor__img" />
+          </div>
+          <div class="sponsor__content">
+            <img src="img/sponsors2.png" alt="" class="sponsor__img" />
+          </div>
+          <div class="sponsor__content">
+            <img src="img/sponsors3.png" alt="" class="sponsor__img" />
+          </div>
+          <div class="sponsor__content">
+            <img src="img/sponsors4.png" alt="" class="sponsor__img" />
+          </div>
+          <div class="sponsor__content">
+            <img src="img/sponsors5.png" alt="" class="sponsor__img" />
+          </div>
+        </div>
+      </section>
+
+      <section class="sponsor section sponsor-mobile">
+        <div class="swiper mySwiper container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide sponsor__content">
+          <img src="img/sponsors1.png" alt="" class="sponsor__img" />
+        </div>
+        <div class="swiper-slide sponsor__content">
+          <img src="img/sponsors2.png" alt="" class="sponsor__img" />
+        </div>
+        <div class="swiper-slide sponsor__content">
+          <img src="img/sponsors3.png" alt="" class="sponsor__img" />
+        </div>
+        <div class="swiper-slide sponsor__content">
+          <img src="img/sponsors4.png" alt="" class="sponsor__img" />
+        </div>
+        <div class="swiper-slide sponsor__content">
+          <img src="img/sponsors5.png" alt="" class="sponsor__img" />
+        </div>
+      </div>
+    </div>
+      </section>
+      <!-- End sponsors -->
+    <!-- footer -->
+    <footer class="bg-second">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-12">
+            <h4 class="footer-head">Bạn cần trợ giúp ?</h4>
+            <ul class="menu">
+              <li>
+                <a href="tel:036.8523.966"
+                  ><i class="bi bi-telephone-fill"></i>hotline: 036.8523.966</a
+                >
+              </li>
+              <li >
+                <a href="#"><i class="bi bi-clock-fill"></i>Mon-Sun | 8:30 - 22:00</a>
+              </li>
+              <li>
+                <a href="mailto: Contact@gmail.com"
+                  ><i class="bi bi-envelope-fill"></i>Email:
+                  contact@gmail.com</a
+                >
+              </li>
+              <li>
+                <a href="https://www.google.com/maps/place/48+T%E1%BB%91+H%E1%BB%AFu,+Trung+V%C4%83n,+T%E1%BB%AB+Li%C3%AAm,+H%C3%A0+N%E1%BB%99i,+Vi%E1%BB%87t+Nam/@20.9981259,105.7921159,17z/data=!3m1!4b1!4m5!3m4!1s0x3135acba8ad197a5:0xa55e51322131e722!8m2!3d20.9981209!4d105.7943046?hl=vi-VN"><i class="bi bi-geo-alt-fill"></i>Shop: Hà Nội</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-12">
+            <h4 class="footer-head">Dịch vụ</h4>
+            <ul class="menu">
+              <li><a href="service.html">Khám mắt miễn phí</a></li>
+              <li><a href="service.html">Bảo hành hai năm</a></li>
+              <li><a href="service.html">Thu cũ đổi mới</a></li>
+              <li><a href="service.html">1 đổi 1 trong 30 ngày</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-12">
+            <h4 class="footer-head">Bạn cần biết</h4>
+            <ul class="menu">
+              <li><a href="#">Chính sách vận chuyển</a></li>
+              <li><a href="#">Chính sách bảo hành</a></li>
+
+              <li><a href="#">Vệ sinh và bảo quản kính mắt</a></li>
+              <li><a href="#">Câu hỏi thường gặp</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-12">
+            <div class="contact">
+              <h4 class="contact-header">HANOI-RIOT</h4>
+              <ul class="contact-socials">
+                <li>
+                  <a href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/"><i class="bi bi-twitter"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="email-box">
+              <i class="bi bi-envelope-fill" style="color: white"></i>
+              <input
+                class="tbox"
+                type="email"
+                placeholder="Nhập địa chỉ email"
+                style="color: black"
+              />
+              <button class="btn-email" type="button" name="button">
+                đăng ký
+              </button>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </footer>
+    <!-- end footer -->
+
+   
+    <!-- jquery -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+    ></script>
+    <!-- JS Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- JS Cart -->
+    <script src="./js/cart.js"></script>
+    <!-- JS scrolling -->
+    <script src="./js/scrolling.js"></script>
+    
+    <!-- parallax -->
+    <script src="./js/parallax.js"></script>
+    <!-- JS MAIN -->
+    <script src="./js/main.js"></script>
+    <script src="./js/home.js"></script>
+        <!-- JS swiper -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+  </body>
+</html>

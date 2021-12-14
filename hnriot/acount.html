@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Account</title>
+    <link rel="shortcut icon" href="./img/logo.png" />
+    <!-- font chu  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- jquery -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+    ></script>
+
+    <!-- CSS bootsrap only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="./css/app.css" />
+    <link rel="stylesheet" href="./css/news.css" />
+    <link rel="stylesheet" href="./css/accout.css" />
+  </head>
+  <body>
+    <div class="loading-screen"></div>
+
+    <!-- header -->
+    <header>
+      <div class="header-wrapper">
+        <!-- top header -->
+        <div class="top-header container">
+          <a href="index.html" class="logo"
+            ><img src="./img/logo.png" alt=""
+          /></a>
+          <div class="search">
+            <input type="text" placeholder="Tìm kiếm" />
+            <i class="bi bi-search"></i>
+          </div>
+
+          <ul class="user-menu d-flex">
+            <li>
+              <a href="acount.html"><i class="bi bi-person-fill"></i></a>
+            </li>
+            <li class="cart__icon">
+              <i class="bi bi-bag"></i>
+              <span class="item__total">0</span>
+            </li>
+            <li>
+              <span
+                class="mb-menu-toggle"
+                id="mb-menu-toggle"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                <i class="bi bi-list"></i>
+              </span>
+            </li>
+          </ul>
+        </div>
+        <!-- end top header -->
+ 
+      </div>
+    </header>
+    <!-- end header -->
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="search-box mb-search">
+              <div class="icon"><i class="bi bi-search"></i></div>
+              <div class="input">
+                <input type="text" placeholder="Tìm kiếm" id="mysearch" />
+              </div>
+              <span
+                class="clear"
+                onclick="document.getElementById('mysearch').value = ''"
+                ><i class="bi bi-x"></i
+              ></span>
+            </div>
+
+            <ul class="main-menu d-flex justify-content-around">
+              <li class="active">
+                <a href="index.html">Trang chủ</a>
+              </li>
+              <li class="mega-dropdown">
+                <a href="#"
+                  >Sản phẩm
+                  <i class="bi bi-chevron-down"></i>
+                </a>
+
+                <div class="mega-content">
+                  <div class="row">
+                    <div class="col-xl-6 col-lg-12">
+                      <div class="box">
+                        <a href="product-list.html" class="subtitle"
+                          >Kính râm</a
+                        >
+                        <ul class="hide-product">
+                          <li>
+                            <a href="product-list.html"
+                              >the assembled sunglasses</a
+                            >
+                          </li>
+                          <li>
+                            <a href="product-list.html">the cut sunglasses</a>
+                          </li>
+                          <li><a href="product-list.html">the metal</a></li>
+                          <li>
+                            <a href="product-list.html">the combination</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-12">
+                      <div class="box">
+                        <a href="product-list.html" class="subtitle"
+                          >Kính cận</a
+                        >
+                        <ul class="hide-product">
+                          <li>
+                            <a href="product-list.html">the assembled </a>
+                          </li>
+                          <li><a href="product-list.html">the cut</a></li>
+                          <li><a href="product-list.html">the metal</a></li>
+                          <li><a href="product-list.html">the basic</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row img-row">
+                    <div class="col-lg-6 col-md-12">
+                      <img
+                        src="./img/kinhram-removebg-edit.webp"
+                        class="img-mega"
+                        alt=""
+                      />
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                      <img
+                        src="./img/kinhcan-removebg-edit.webp"
+                        class="img-mega"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a href="service.html">dịch vụ</a>
+              </li>
+              <li>
+                <a href="news.html">Tạp chí</a>
+              </li>
+
+              <li>
+                <a href="store.html">Cửa hàng</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- account -->
+    <section class="account">
+      <div class="container">
+        <div class="blueBg">
+          <div class="box-ac signin">
+            <div class="subtitle">Đã có tài khoản</div>
+            <button class="signinBtn">Đăng nhập</button>
+          </div>
+          <div class="box-ac signup">
+            <div class="subtitle">Chưa có tài khoản?</div>
+            <button class="signupBtn">Đăng ký</button>
+          </div>
+        </div>
+        <div class="formBx">
+          <div class="form signinForm">
+            <!-- <form>
+              <h3>Sign in</h3>
+              <input type="text" placeholder="Username" />
+              <input type="password" placeholder="Password" />
+              <input type="submit" value="Login" />
+              <a href="#" class="forgot">Forgot Password</a>
+            </form> -->
+
+            <form action="" name="demo" class="form-floating needs-validation">
+              <h4>Đăng nhập</h4>
+              <div class="form-floating mb-3">
+                <input
+                  type="text"
+                  name="user"
+                  class="form-control"
+                  id="floatingInput"
+                  placeholder="h"
+                />
+                <label for="floatingInput">Tài khoản</label>
+                <div class="invalid-feedback error-user">
+                  Please choose a username.
+                </div>
+                <div class="valid-tooltip">Looks good!</div>
+              </div>
+
+              <div class="form-floating mb-3">
+                <input
+                  type="password"
+                  name="pass"
+                  class="form-control"
+                  id="floatingPassword"
+                  placeholder="Password"
+                />
+                <label for="floatingPassword">Mật khẩu</label>
+                <div class="invalid-feedback error-pass">
+                  Please choose a username.
+                </div>
+              </div>
+
+              <input type="submit" value="Đăng nhập" />
+              <a href="#" class="forgot">Quên mật khẩu</a>
+            </form>
+          </div>
+
+          <div class="form signupForm">
+            <!-- <form>
+              <h3>Sign Up</h3>
+              <input type="text" placeholder="Username" />
+              <input type="text" placeholder="Email Address" />
+              <input type="password" placeholder="Password" />
+              <input type="password" placeholder="Confirm Password" />
+              <input type="submit" value="Register" />
+            </form> -->
+
+            <form action="" name="demo2" class="form-floating needs-validation">
+              <h3>Đăng ký</h3>
+              <div class="form-floating mb-3">
+                <input
+                  type="text"
+                  name="user"
+                  class="form-control"
+                  id="floatingInput"
+                  placeholder="h"
+                />
+                <label for="floatingInput">Tài khoản</label>
+                <div class="invalid-feedback error-user-2">
+                  Please choose a username.
+                </div>
+              </div>
+              <div class="form-floating mb-3">
+                <input
+                  type="email"
+                  name="email"
+                  class="form-control"
+                  id="floatingInput"
+                  placeholder="name@example.com"
+                />
+                <label for="floatingInput">Email </label>
+                <div class="invalid-feedback error-email">
+                  Please choose a username.
+                </div>
+              </div>
+
+              <div class="form-floating mb-3">
+                <input
+                  type="password"
+                  name="pass"
+                  class="form-control"
+                  id="floatingPassword"
+                  placeholder="Password"
+                />
+                <label for="floatingPassword">Mật khẩu</label>
+                <div class="invalid-feedback error-pass-2">
+                  Please choose a username.
+                </div>
+              </div>
+              <div class="form-floating">
+                <input
+                  type="password"
+                  name="rePass"
+                  class="form-control"
+                  id="floatingPassword"
+                  placeholder="Password"
+                />
+                <label for="floatingPassword">Nhập lại mật khẩu</label>
+                <div class="invalid-feedback error-repass">
+                  Please choose a username.
+                </div>
+              </div>
+              <input type="submit" value="Đăng ký" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end account -->
+    <!-- cart overlay -->
+    <section class="cart__overlay">
+      <div class="cart">
+        <span class="close__cart">
+          <i class="bi bi-x-lg"></i>
+        </span>
+        <h2>Giỏ Hàng</h2>
+        <div class="cart__center">
+          <!-- Cart Item -->
+          <!-- <div class="cart__item">
+            <img src="./img/hd-havana-1.jpg" alt="" />
+            <div>
+              <h3>The Hardy</h3>
+              <h3 class="price">1,750,000 VND</h3>
+            </div>
+            <div>
+              <span>
+                <i class="bi bi-plus-lg"></i>
+              </span>
+              <p>3</p>
+              <span>
+                <i class="bi bi-dash-lg"></i>
+              </span>
+            </div>
+
+            <div>
+              <span class="remove__item">
+                <i class="bi bi-trash-fill"></i>
+              </span>
+            </div>
+          </div> -->
+        </div>
+
+        <div class="cart__footer">
+          <h3>Tổng tiền: $ <span class="cart__total">0</span></h3>
+          <!-- <button class="clear__cart btn-flat-reverse btn-hover-reverse">
+            Clear Cart
+          </button> -->
+          <a href="checkout.html" class="btn-flat-reverse btn-hover-reverse"
+            >Thanh toán</a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- END cart overlay -->
+
+    <!-- js -->
+
+    
+    <script src="./js/cart.js"></script>
+    <script src="./js/validate.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- JS MAIN -->
+    <script src="./js/main.js"></script>
+    <script>
+      
+      // Dang ky
+      const signinBtn = document.querySelector(".signinBtn");
+      const signupBtn = document.querySelector(".signupBtn");
+      const formBx = document.querySelector(".formBx");
+      const body = document.querySelector("body");
+
+      signupBtn.onclick = function () {
+        formBx.classList.add("active");
+        body.classList.add("active");
+      };
+      signinBtn.onclick = function () {
+        formBx.classList.remove("active");
+        body.classList.remove("active");
+      };
+      
+    </script>
+  </body>
+  <!-- footer -->
+  <footer class="bg-second">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-12">
+          <h4 class="footer-head">Bạn cần trợ giúp ?</h4>
+          <ul class="menu">
+            <li>
+              <a href="#"
+                ><i class="bi bi-telephone-fill"></i>hotline: 036.8523.966</a
+              >
+            </li>
+            <li >
+                <a href="#"><i class="bi bi-clock-fill"></i>Mon-Sun | 8:30 - 22:00</a>
+              </li>
+            <li>
+              <a href="#"
+                ><i class="bi bi-envelope-fill"></i>Email: contact@gmail.com</a
+              >
+            </li>
+            <li>
+              <a href="#"><i class="bi bi-geo-alt-fill"></i>Shop: Hà Nội</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-12">
+          <h4 class="footer-head">Dịch vụ</h4>
+          <ul class="menu">
+            <li><a href="#">Khám mắt miễn phí</a></li>
+            <li><a href="#">Bảo hành hai năm</a></li>
+            <li><a href="#">Thu cũ đổi mới</a></li>
+            <li><a href="#">1 đổi 1 trong 30 ngày</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-12">
+          <h4 class="footer-head">Bạn cần biết</h4>
+          <ul class="menu">
+            <li><a href="#">Chính sách vận chuyển</a></li>
+            <li><a href="#">Chính sách bảo hành</a></li>
+
+            <li><a href="#">Vệ sinh và bảo quản kính mắt</a></li>
+            <li><a href="#">Câu hỏi thường gặp</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-12">
+          <div class="contact">
+            <h4 class="contact-header">HANOI-RIOT</h4>
+            <ul class="contact-socials">
+              <li>
+                <a href="#"><i class="bi bi-facebook"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="bi bi-twitter"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="email-box">
+            <i class="bi bi-envelope-fill" style="color: white"></i>
+            <input
+              class="tbox"
+              type="email"
+              placeholder="Nhập địa chỉ email"
+              style="color: black"
+            />
+            <button class="btn-email" type="button" name="button">
+              đăng ký
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- end footer -->
+</html>

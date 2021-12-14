@@ -1,0 +1,139 @@
+.form-title {
+  color: #e55039;
+  text-align: center;
+}
+
+.check-out {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.main-check {
+  margin-top: 30px;
+  border-right: 1px solid gainsboro;
+  padding-right: 50px;
+}
+.breadcumb span {
+  margin: 0 15px;
+}
+.form-floating > .form-control {
+  padding: 5px 10px;
+}
+
+.form-floating > .form-control,
+.form-floating > .form-select {
+  height: 50px;
+  line-height: 1.25;
+}
+.shipping-address label {
+  padding-left: 25px;
+}
+
+.btn-danger {
+  width: 50%;
+  padding: 12px 0;
+}
+.checkout-product {
+  
+  padding-left: 38px;
+}
+.checkout-product .cart__item {
+  width: 100%;
+}
+.checkout-product .cart__item img {
+  height: 75px;
+  width: 75px;
+  border-radius: 10px;
+}
+.checkout-product .cart__item p {
+  font-weight: 500;
+  color: rgb(170, 167, 167);
+}
+.checkout-product .cart__item {
+  text-transform: uppercase;
+}
+.discount {
+  padding: 32px 0;
+  border-bottom: 1px solid gainsboro;
+}
+.discount label {
+  padding-left: 25px;
+}
+.total-money {
+  padding-top: 32px;
+}
+.check-out .accordion {
+  display: none;
+}
+.check-out .accordion .contentBx {
+  margin: 0;
+}
+.check-out .accordion .contentBx .label {
+  align-items: center;
+  border: none;
+  padding: 10px 0;
+}
+.cart-check i:first-child {
+  font-size: 30px;
+  padding-right: 20px;
+}
+/*  */
+
+.success-title {
+  text-align: center;
+}
+.success-info {
+  padding: 20px 0;
+}
+.success-line {
+  display: flex;
+  padding: 10px 0;
+  justify-content: space-between;
+  border-bottom: 1px solid gainsboro;
+}
+.success-form h4 {
+  color: #e55039;
+}
+.success-form .total {
+  padding-top: 10px;
+  padding-bottom: 60px;
+}
+.success-form h2 {
+  padding-top: 20px;
+}
+.go-back-home {
+  text-align: center;
+  padding-bottom: 30px;
+}
+.go-back-home .btn-danger {
+  width: 200px;
+}
+@media only screen and (max-width: 1200px) {
+  .main-check {
+    padding: 0;
+    border: none;
+  }
+  .checkout-product {
+    padding-left: 0;
+    display: none;
+  }
+  .form-reverse {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .form-box {
+    border-top: 1px solid gainsboro;
+    border-bottom: 1px solid gainsboro;
+  }
+  .check-out .accordion {
+    display: block;
+  }
+  .column-success {
+    flex-direction: column;
+  }
+  .column-success .content {
+    padding: 10px 0;
+  }
+}
+/* @media only screen and (max-width: 576px) {
+
+} */

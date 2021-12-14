@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart Project</title>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- StyleSheet -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- <link rel="stylesheet" href="./css/style.css" /> -->
+    <link rel="stylesheet" href="./css/app.css" />
+  </head>
+
+  <body>
+    <div class="loading-screen"></div>
+
+    <!-- end mobile menu-->
+    <!-- header -->
+    <header>
+      <div class="header-wrapper">
+        <!-- top header -->
+        <div class="top-header container">
+          <a href="index.html" class="logo"
+            ><img src="./img/logo.png" alt=""
+          /></a>
+          <div class="search">
+            <input type="text" placeholder="Tìm kiếm" />
+            <i class="bi bi-search"></i>
+          </div>
+
+          <ul class="user-menu d-flex">
+            <li>
+              <a href=""><i class="bi bi-person-fill"></i></a>
+            </li>
+
+            <li class="cart__icon">
+              <i class="bi bi-bag"></i>
+              <span class="item__total">0</span>
+            </li>
+          </ul>
+        </div>
+        <!-- end top header -->
+        <!-- mid header -->
+        <div class="bg-second">
+          <div class="mid-header container">
+            <ul class="main-menu d-flex justify-content-around">
+              <li>
+                <a href="index.html">Trang chủ</a>
+              </li>
+              <li class="mega-dropdown">
+                <a href="#"
+                  >Sản phẩm
+                  <i class="bi bi-chevron-down"></i>
+                </a>
+
+                <div class="mega-content">
+                  <div class="row">
+                    <div class="col-xl-6 col-lg-12">
+                      <div class="box">
+                        <h4>Kính râm</h4>
+                        <ul>
+                          <li>
+                            <a href="product-list-2.html"
+                              >the assembled sunglasses</a
+                            >
+                          </li>
+                          <li>
+                            <a href="product-list-2.html">the cut sunglasses</a>
+                          </li>
+                          <li><a href="product-list-2.html">the metal</a></li>
+                          <li>
+                            <a href="product-list-2.html">the combination</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-12">
+                      <div class="box">
+                        <h4>Kính cận</h4>
+                        <ul>
+                          <li>
+                            <a href="product-list.html">the assembled </a>
+                          </li>
+                          <li><a href="product-list.html">the cut</a></li>
+                          <li><a href="product-list.html">the metal</a></li>
+                          <li><a href="product-list.html">the basic</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row img-row">
+                    <div class="col-lg-6 col-md-12">
+                      <img
+                        src="./img/kinhram-removebg-preview.png"
+                        class="img-mega"
+                        alt=""
+                      />
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                      <img
+                        src="./img/kinhcan-removebg-preview.png"
+                        class="img-mega"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a href="#">bộ sưu tập</a>
+              </li>
+              <li class="active">
+                <a href="news.html">Tạp chí</a>
+              </li>
+
+              <li>
+                <a href="#">giới thiệu</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- end mid header -->
+      </div>
+    </header>
+    <!-- end header -->
+
+    <!-- Products -->
+    <section class="products">
+      <div class="container">
+        <div class="section-header">
+          <h3>Nổi bật</h3>
+        </div>
+
+        <div class="row product__center">
+          <!-- Single Product   -->
+          <div class="col-12 col-md-6 col-xxl-4">
+            <div class="product-card">
+              <div class="product-card-img">
+                <img src="./img/lm-black.jpg" alt="" />
+                <img src="./img/nam.jpg" alt="" />
+              </div>
+              <div class="product-card-info">
+                <div class="product-btn">
+                  <a
+                    href="product-detail.html"
+                    class="btn-flat-reverse btn-hover-reverse"
+                    >Mua ngay</a
+                  >
+
+                  <button class="btn-flat btn-hover addToCart">
+                    <i class="bi bi-cart-plus-fill"></i>
+                  </button>
+                  <!-- <a href="#" class="btn-flat btn-hover addToCart"
+                      >Add to Cart</a
+                    > -->
+                </div>
+                <div class="product-card-name"><h4>Kubo</h4></div>
+                <div class="product-price">
+                  <span><del>1.200.00 VND</del></span>
+                  <span class="curr-price">990,000 VND</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end Single Product   -->
+        </div>
+      </div>
+    </section>
+    <!-- Cart -->
+    <section class="cart__overlay">
+      <div class="cart">
+        <div class="cart__header">
+          <span class="close__cart"><i class="bi bi-x-lg"></i></span>
+          <h2>Gio hang</h2>
+        </div>
+        <div class="cart__center">
+          <div class="cart__item"></div>
+        </div>
+
+        <div class="cart__footer">
+          <h3>Total: $ <span class="cart__total">0</span></h3>
+          <button class="clear__cart btn-flat-reverse btn-hover-reverse">
+            Clear Cart
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Button trigger modal -->
+    <button
+      type="button"
+      class="btn btn-primary"
+      data-bs-toggle="modal"
+      data-bs-target="#exampleModal"
+    >
+      Launch demo modal
+    </button>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">...</div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- JS Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/cart.js"></script>
+    <script src="./js/app.js"></script>
+
+    <script>
+      // loading
+      let loadingWrapper = document.querySelector(".loading-screen");
+
+      window.addEventListener("load", function () {
+        loadingWrapper.parentElement.removeChild(loadingWrapper);
+      });
+    </script>
+  </body>
+</html>
