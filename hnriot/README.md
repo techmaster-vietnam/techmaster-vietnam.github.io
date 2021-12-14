@@ -1,5 +1,5 @@
-# Bài tập DOM
+# Project web tĩnh
 
-Đề tài: hnriot
+Đề tài: HNRIOT
 
 Author: Kiều Phúc Huy
