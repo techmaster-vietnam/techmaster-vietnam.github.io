@@ -1,0 +1,18 @@
+{
+  "name": "ticket-web",
+  "version": "1.0.0",
+  "description": "ticket sales",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "keywords": [
+    "ticket",
+    "sales"
+  ],
+  "author": "Moe",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.5.3"
+  }
+}

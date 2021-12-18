@@ -1,0 +1,146 @@
+#group-img {
+    display: block;
+    column-count: 3;
+} 
+
+@media(max-width:768px){
+    #group-img {
+        display: block;
+        column-count: 2;
+    } 
+}
+
+@media(max-width:576px){
+    #group-img {
+        display: block;
+        column-count: 1;
+    } 
+}
+
+.group-img1 {
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+
+.group-img1::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.3);
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+
+.group-img1:hover::before{
+    opacity: 1;
+}
+
+.more{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #E0BE07;
+    opacity: 0;
+    transition: all 0.6s ease;
+}
+
+.top-left, .right-bottom {
+    position: absolute;
+    width: calc(100% - 40px);
+    height: calc(100% - 40px);
+    content: '';
+    left: 20px;
+    top: 20px;
+}
+
+.top-left::after {
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    left: 0;
+    top: 0;
+    content: '';
+    transform: scale(0);
+}
+
+.top-left::before{
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    background-color: #fff;
+    left: 0;
+    top: 0;
+    content: '';
+    transform: scale(0);
+}
+
+.right-bottom::after {
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    left: 0;
+    bottom: 0;
+    content: '';
+    transform: scale(0);
+}
+
+.right-bottom::before{
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    background-color: #fff;
+    right: 0;
+    top: 0;
+    content: '';
+    transform: scale(0);
+}
+
+.group-img1 span::before, .group-img1 span::after {
+	transition: all 0.6s ease;
+}
+.group-img1:hover span::before, .group-img1:hover span::after {
+	transform: scale(1);
+}
+
+.group-img1:hover .more{
+    opacity: 1;
+}
+
+#more{
+    cursor: pointer;
+}
+
+.wrap1 {
+    height: 550px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    background-image: url(../img/HIEN3936_resize-min.jpg);
+}
+
+@media (max-width:992px){
+    section .wrap1{
+        height: 450px;       
+    }
+}
+
+@media (max-width:768px){
+    section .wrap1{
+        height: 400px;       
+    }
+}
+@media (max-width:576px){
+    section .wrap1{
+        height: 300px;       
+    }
+}

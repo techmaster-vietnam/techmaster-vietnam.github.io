@@ -1,0 +1,176 @@
+* {
+	border: 0px;
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+.clear {
+	clear: both;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	background-image: url('../images/bg.jpg');
+	background-repeat: repeat;
+}
+
+.wrapper {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	top: 10%;
+	height: 90%;
+}
+
+.quiz {
+	width: 30%;
+	margin-left: 35%;
+	animation: 3s quiz ease 1;	
+}
+
+.quiz img {
+	width: 100%;
+}
+
+.btn_start {
+	width: 100%;
+}
+
+.btn_start button {
+	display: block;
+	margin: 0 auto;
+	width: 30%;
+	height: 40px;
+	color: white;
+	text-transform: uppercase;
+	background-color: #3366ff;
+	border-radius: 10px;
+	font-weight: bolder;
+	animation: button 3s linear infinite;
+}
+
+@keyframes button {
+	0% {
+		transform:scale(0.8,0.8);
+	}
+	50% {
+		transform:scale(1.2,1.2);
+	}
+	100% {
+		transform:scale(0.8,0.8);
+	}
+
+}
+
+@keyframes quiz {
+	0% {
+		transform: rotateX(90deg);
+	}
+	100% {
+		transform: none;
+	}
+}
+
+.content, .retry {
+	width: 60%;
+	margin-left: 20%;
+}
+
+.img_sorry img{
+	width: 100%;
+}
+
+.score {
+	text-align: center;
+	color: #3366ff;
+	font-size: 3vw;
+}
+
+.btn_retry {
+	text-align: center;
+}
+
+#btn_retry {
+	width: 100px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #82c282;
+    color: white;
+    font-weight: bold;
+}
+
+#btn_retry:hover {
+	background-color: white;
+	color: #82c282;
+	border: 1px solid #82c282;
+}
+
+.img_sorry {
+	width: 50%;
+	margin-left: 25%;
+}
+
+.question {
+	width: 80%;
+	text-align: center;
+	margin-left: 10%;
+	padding: 5px;
+	background-color: white;
+	opacity: 0.8;
+	font-size: 1.5em;
+	border-radius: 15px;
+	box-shadow: 4px 4px 10px gray;
+}
+
+.choices {
+	width: 100%;
+}
+
+.choice {
+	float: left;
+	width: 50%;
+	padding: 1%;
+}
+
+.btn {
+	outline:none;
+	width: 100%;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	background: linear-gradient(to bottom, #3366ff 0%, #ffffff 100%);
+	border-radius: 15px;
+	text-align: center;
+	color: black;
+	font-size: 1.4em;
+	box-shadow: 4px 4px 10px gray;
+}
+
+.next {
+	width: 10%;
+	margin-left: 90%;
+	animation: 1s next ease infinite;
+}
+
+.next button {
+	outline:none;
+	background-color: transparent;
+}
+
+.next img {
+	width: 100%;
+}
+
+@keyframes next{
+	0% {
+		transform:translateX(-20px);
+	}
+	100% {
+		0% {
+		transform:translateX(20px);
+	}
+}
+
+
+

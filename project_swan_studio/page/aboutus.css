@@ -1,0 +1,52 @@
+#section5 {
+    padding: 1rem 0;
+}
+
+.row5 {
+    margin: 3rem 0;
+}
+
+@media (max-width:768px) {
+    #section5 {
+        padding: 0;
+    }
+    .row5 {
+        margin: 1rem 0;
+    }
+}
+
+.bgc3 {
+    background-color: #ebebeb;
+}
+
+.bgc4 {
+    background-color: #ffffff;
+}
+
+@media (max-width:767px) {
+    .bgc3 {
+        background-color: #ffffff;
+    }
+    .bgc4 {
+        background-color: #ebebeb;
+    }
+}
+
+/* phần comment */
+#comment{
+    padding: 1.5rem 0;
+}
+
+.wrap-comment{
+    padding: 1.5rem;
+    border-radius: 15px;
+    border: #ebebeb 1px solid;
+    background-color: #ebebeb;
+}
+
+.img-cmt{
+    width: 80px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+}

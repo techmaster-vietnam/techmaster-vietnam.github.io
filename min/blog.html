@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Blog</title>
+	<link rel="stylesheet" type="text/css" href="plugins/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="plugins/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Arsenal" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cantata+One" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<nav class="header-top">
+			<span class="quick-mobile">
+				<i class="fa fa-phone"></i> 0986090925
+			</span>
+			<span class="quick-mail hidden-xs">
+				<i class="fa fa-envelope-o"></i> hieu.do212@gmail.com
+			</span>
+			<span class="pull-right">
+				<div class="before-log">
+					<button data-toggle="modal" data-tabs="login" data-target=".user-modal">Đăng nhập</button>
+					<button data-toggle="modal" data-tabs="signup" data-target=".user-modal">Đăng ký</button>
+				</div>
+				<div class="logged">
+					<!-- <i class="fa fa-user-o"></i> -->
+					<img src="img/feedback_1.jpg">
+					<div class="dropdown">
+						<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Đỗ Hoàng Hiếu</button>
+						<ul class="dropdown-menu dropdown-menu-right">
+							<li><a href="user-account.html">Quản lý tài khoản</a></li>
+							<li><a id="logout-btn" href="#">Đăng xuất</a></li>
+						</ul>
+					</div>
+				</div>
+			</span>
+		</nav>
+		<nav class="navbar navbar-default">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a href="#" class="search" data-toggle="slide-collapse" data-target="#search-form">
+				<i class="fa fa-search"></i><span class="hidden-xs"> Tìm kiếm</span>
+			</a>
+			<div class="container">
+				<div class="menu row">
+					<div class="collapse navbar-collapse" id="menu-collapse">
+						<ul class="nav navbar-nav navbar-left">
+							<li><a href="home.html">Trang chủ</a></li>
+							<li><a href="shop.html">Sản phẩm</a></li>
+							<li><a href="blog.html">Dự án</a></li>
+						</ul>
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="about.html">Về Min</a></li>
+							<li><a href="blog.html">Blog</a></li>
+							<li><a href="contact.html">Liên hệ</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="cart-box">
+				<a href="wishlist.html">
+					<i class="fa fa-heart-o"></i>
+				</a>
+				<a href="cart.html">
+					<i class="fa fa-shopping-cart"></i>
+				</a>
+			</div>
+			<a class="logo" href="home.html"><img src="img/logo-min.png"></a>
+			<div id="search-form">
+				<form>
+					<input type="text" placeholder="Nhập từ khóa cần tìm">
+					<button type="submit"><i class="fa fa-search"></i></button>
+				</form>
+			</div>
+		</nav>
+		<div class="modal fade user-modal" tabindex="-1">
+			<div class="modal-dialog modal-sm">
+				<div class="modal-content">
+					<ul class="nav nav-tabs" role="tablist">
+						<li id="login-indicator" class="active">
+							<a href="#login" role="tab" data-toggle="tab">Đăng nhập</a>
+						</li>
+						<li id="signup-indicator">
+							<a href="#signup" role="tab" data-toggle="tab" >Đăng ký</a>
+						</li>
+					</ul>
+
+					<div class="tab-content">
+						<div role="tabpanel" class="tab-pane active fade in" id="login">
+							<form>
+								<div class="input-field">
+									<input type="email" name="Email" id="email" placeholder="Email"/>
+								</div>
+								<div class="input-field">
+									<input type="password" name="Password" id="password" placeholder="Mật khẩu"/>
+								</div>
+								<div class="input-field check-field">
+									<input type="checkbox" id="remember" name="remember"/><label for="remember">Ghi nhớ tài khoản</label><br/>
+								</div>
+								<div class="input-field">
+									<input id="login-btn" data-dismiss="modal" value="Đăng nhập"/>
+								</div>
+								<button data-toggle="modal" data-target="#reset-password" data-dismiss="modal" class="btn btn-default"><i class="fa fa-question-circle-o"></i> Quên mật khẩu?</button>
+							</form>
+						</div>
+						<div role="tabpanel" class="tab-pane fade" id="signup">
+							<form>
+								<div class="input-field">
+									<input type="email" name="Email" id="email" placeholder="Email"/>
+								</div>
+								<div class="input-field">
+									<input type="password" name="Password" id="password" placeholder="Mật khẩu"/>
+								</div>
+								<div class="input-field check-field">
+									<input type="checkbox" id="remember" name="remember"/><label for="remember">Hiển thị mật khẩu</label><br/>
+								</div>
+								<div class="input-field">
+									<input type="text" name="Name" id="name" placeholder="Họ tên"/>
+								</div>
+								<div class="input-field">
+									<input type="text" name="Phone" id="phone" placeholder="Số điện thoại"/>
+								</div>
+								<div class="input-field">
+									<input id="signup-btn" type="submit" value="Đăng ký"/>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="container-fluid page-heading blog-heading">
+		<div class="heading-content">
+			<h1>Blog</h1>
+			<p>Nơi MIN chia sẻ những ý tưởng độc đáo, những kiến thức hữu ích, và những câu chuyện thú vị về nội thất.</p>
+			<ol class="breadcrumb">
+				<li><a href="home.html">Trang chủ</a></li>
+				<li class="active">Blog</li>
+			</ol>
+		</div>
+	</div>
+	<div class="container blog-main">
+		<nav class="navbar navbar-default">
+			<button type="button" class="navbar-toggle pull-right" data-toggle="slide-collapse" data-target="#blog-nav">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+		</nav>
+		<div class="row">
+			<ul class="nav nav-stacked collapse navbar-collapse pull-right" id="blog-nav">
+				<li class="search-box">
+					<div class="nav-title"><h4>Tìm kiếm bài viết</h4></div>
+					<form class="navbar-form">
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="Search">
+						</div>
+						<button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+					</form>
+				</li>
+				<li class="nav-title"><a data-toggle="display-all"><h4>Danh mục bài viết</h4></a></li>
+				<li><button class="product-group" type="button" data-toggle="filter-display" data-target=".tips"><h4>Mẹo hữu ích</h4></button><span class="number"></span></li>
+				<li><button class="product-group" type="button" data-toggle="filter-display" data-target=".idea"><h4>Ý tưởng độc đáo</h4></button><span class="number"></span></li>
+				<li><button class="product-group" type="button" data-toggle="filter-display" data-target=".yinyang"><h4>Phong thủy</h4></button><span class="number"></span></li>
+				<li><button class="product-group" type="button" data-toggle="filter-display" data-target=".trend"><h4>Xu hướng nội thất</h4><span class="number"></span></button></li>
+				<li><button class="product-group" type="button" data-toggle="filter-display" data-target=".room"><h4>Những căn phòng đẹp</h4><span class="number"></span></button></li>
+				<li class="nav-title"><h4>Bài viết gần đây</h4></a></li>
+				<li class="post"><a href="blog-detail.html"><h4>Nội thất cổ điển cho không gian nhỏ</h4></a></li>
+				<li class="post"><a href="blog-detail.html"><h4>Nội thất đẹp cho căn hộ dưới 40m²</h4></a></li>
+				<li class="post"><a href="blog-detail.html"><h4>5 mẹo giúp căn hộ luôn khô thoáng</h4></a></li>
+				<li class="post"><a href="blog-detail.html"><h4>Một số lưu ý về phong thủy trong thiết kế</h4></a></li>
+				<li class="post"><a href="blog-detail.html"><h4>Ngắm căn hộ với phong cách Rustic độc đáo</h4></a></li>
+				<li class="nav-title"><a data-toggle="display-all"><h4>Blog Tag</h4></a></li>
+				<li class="tags">
+					<button type="button" data-toggle="filter-display" data-target=".dining-room"><h5>Phòng ăn</h5></button>
+					<button type="button" data-toggle="filter-display" data-target=".living-room"><h5>Phòng khách</h5></button>
+					<button type="button" data-toggle="filter-display" data-target=".bedroom"><h5>Phòng ngủ</h5></button>
+					<button type="button" data-toggle="filter-display" data-target=".tips"><h5>Mẹo hay</h5></button>
+					<button type="button" data-toggle="filter-display" data-target=".wood"><h5>Đồ gỗ</h5></button>
+					<button type="button" data-toggle="filter-display" data-target=".idea"><h5>Ý tưởng</h5></button>
+					<button type="button" data-toggle="filter-display" data-target=".decor"><h5>Trang trí</h5></button>
+					<button type="button" data-toggle="filter-display" data-target=".trend"><h5>Xu hướng</h5></button>
+					<button type="button" data-toggle="filter-display" data-target=".yinyang"><h5>Phong thủy</h5></button>
+				</li>
+			</ul>
+			<div class="blog-list pull-left col-md-9 col-sm-8 col-xs-12">
+				<div class="col-item col-xs-12">
+					<div class="item-container">
+						<div class="blog-img">
+							<a href="blog-detail.html">
+								<img src="img/blog_3.jpg" class="img-responsive"/>
+								<span class="cross"></span>
+							</a>
+						</div>
+						<div class="blog-content-small">
+							<h3><a href="blog-detail.html">Nội thất cổ điển cho không gian nhỏ</a></h3>
+							<span class="blog-info">
+								<span class="date">
+									<i class="fa fa-clock-o"></i>20 Th.4, 2017
+								</span>
+								<span class="author">
+									<i class="fa fa-pencil-square-o"></i>
+									<a href="#">admin</a>
+								</span>
+								<span class="comments">
+									<i class="fa fa-comments-o"></i>
+									<a href="#">2</a>
+								</span>
+							</span>
+							<div class="blog-excerpt">
+								<p>Nói đến thiết kế cổ điển chúng ta thường hình dung ra những mẫu thiết kế chắc chắn và bề thế. Tuy nhiên để phù hợp với xu hướng hiện đại...</p>
+								<div class="link-container">
+									<a class="link-to" href="blog-detail.html">Đọc thêm <i class="fa fa-angle-right"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-item col-xs-12">
+					<div class="item-container">
+						<div class="blog-img">
+							<img src="img/blog_6.jpeg" class="img-responsive"/>
+							<span class="cross"></span>
+						</div>
+						<div class="blog-content-small">
+							<h3><a href="blog-detail.html">Một số lưu ý về phong thủy trong thiết kế nội thất</a></h3>
+							<span class="blog-info">
+								<span class="date">
+									<i class="fa fa-clock-o"></i>03 Th.4, 2017
+								</span>
+								<span class="author">
+									<i class="fa fa-pencil-square-o"></i>
+									<a href="#">hieudo</a>
+								</span>
+								<span class="comments">
+									<i class="fa fa-comments-o"></i>
+									<a href="#">5</a>
+								</span>
+							</span>
+							<div class="blog-excerpt">
+								<p>Không gian sống ngày càng thu hẹp nên thiết kế nội thất căn hộ nhỏ hiện đã trở thành mẫu căn hộ phổ biến. Bạn sẽ làm thế nào để bài trí phòng ốc đúng phong thủy nếu phòng ngủ là một phần của phòng khách, và phòng bếp với bàn ăn cũng nằm trong nhau?...</p>
+								<div class="link-container">
+									<a class="link-to" href="blog-detail.html">Đọc thêm <i class="fa fa-angle-right"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-item col-xs-12">
+					<div class="item-container">
+						<div class="blog-img">
+							<img src="img/blog_10.jpeg" class="img-responsive"/>
+							<span class="cross"></span>
+						</div>
+						<div class="blog-content-small">
+							<h3><a href="blog-detail.html">Ngắm căn hộ với phong cách Rustic độc đáo</a></h3>
+							<span class="blog-info">
+								<span class="date">
+									<i class="fa fa-clock-o"></i>18 Th.3, 2017
+								</span>
+								<span class="author">
+									<i class="fa fa-pencil-square-o"></i>
+									<a href="#">hieudo</a>
+								</span>
+								<span class="comments">
+									<i class="fa fa-comments-o"></i>
+									<a href="#">6</a>
+								</span>
+							</span>
+							<div class="blog-excerpt">
+								<p>Phong cách Rustic có nghĩa là giữ lại những gì đẹp nhất, có hồn nhất của món nội thất để tạo nên sự mộc mạc nhưng không kém phần quyến rũ và cá tính...</p>
+								<div class="link-container">
+									<a class="link-to" href="blog-detail.html">Đọc thêm <i class="fa fa-angle-right"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-item col-xs-12">
+					<div class="item-container">
+						<div class="blog-img">
+							<img src="img/blog_8.jpg" class="img-responsive"/>
+							<span class="cross"></span>
+						</div>
+						<div class="blog-content-small">
+						<h3><a href="blog-detail.html">5 Mẹo giúp nội thất căn hộ luôn khô thoáng</a></h3>
+							<span class="blog-info">
+								<span class="date">
+									<i class="fa fa-clock-o"></i>10 Th.4, 2017
+								</span>
+								<span class="author">
+									<i class="fa fa-pencil-square-o"></i>
+									<a href="#">admin</a>
+								</span>
+								<span class="comments">
+									<i class="fa fa-comments-o"></i>
+									<a href="#">2</a>
+								</span>
+							</span>
+							<div class="blog-excerpt">
+								<p>Căn nhà của bạn luôn bị thay đổi mỗi khi thời tiết giao mùa hoặc mưa phùn, hiện tượng nồm ẩm xuất hiện mang đến cảm giác khó chịu và bực bội...</p>
+								<div class="link-container">
+									<a class="link-to" href="blog-detail.html">Đọc thêm <i class="fa fa-angle-right"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-item col-xs-12">
+					<div class="item-container">
+						<div class="blog-img">
+							<img src="img/blog_9.jpg" class="img-responsive"/>
+							<span class="cross"></span>
+						</div>
+						<div class="blog-content-small">
+							<h3><a href="blog-detail.html">Mẹo lưu trữ đồ đạc cho phòng bếp thêm gọn gàng</a></h3>
+							<span class="blog-info">
+								<span class="date">
+									<i class="fa fa-clock-o"></i>28 Th.3, 2017
+								</span>
+								<span class="author">
+									<i class="fa fa-pencil-square-o"></i>
+									<a href="#">admin</a>
+								</span>
+								<span class="comments">
+									<i class="fa fa-comments-o"></i>
+									<a href="#">3</a>
+								</span>
+							</span>
+							<div class="blog-excerpt">
+								<p>Phòng bếp chính là nơi mà bạn phải tốn thời gian và công sức nhất cho việc sắp xếp mọi thứ. Với những mẹo trong thiết kế nội thất dưới đây, bạn sẽ giữ phòng bếp nhà mình thoát khỏi sự lộn xộn, luôn trong trạng thái gọn gàng, ngăn nắp nhất...</p>
+								<div class="link-container">
+									<a class="link-to" href="blog-detail.html">Đọc thêm <i class="fa fa-angle-right"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-item col-xs-12">
+					<div class="item-container">
+						<div class="blog-img">
+							<img src="img/blog_4.jpg" class="img-responsive"/>
+							<span class="cross"></span>
+						</div>
+						<div class="blog-content-small">
+							<h3><a href="blog-detail.html">Nội thất đẹp cho căn hộ dưới 40m²</a></h3>
+							<span class="blog-info">
+								<span class="date">
+									<i class="fa fa-clock-o"></i>18 Th.4, 2017
+								</span>
+								<span class="author">
+									<i class="fa fa-pencil-square-o"></i>
+									<a href="#">hieudo</a>
+								</span>
+								<span class="comments">
+									<i class="fa fa-comments-o"></i>
+									<a href="#">5</a>
+								</span>
+							</span>
+							<div class="blog-excerpt">
+								<p>Dạng căn hộ dưới 40m² ngày càng phổ biến trên thế giới. Bất chấp diện tích có hạn, chỉ cần sáng tạo và bài trí hợp lý, chúng vẫn là những không gian sống đáng mơ ước...</p>
+								<div class="link-container">
+									<a class="link-to" href="blog-detail.html">Đọc thêm <i class="fa fa-angle-right"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-item col-xs-12">
+					<div class="item-container">
+						<div class="blog-img">
+							<img src="img/blog_7.jpg" class="img-responsive"/>
+							<span class="cross"></span>
+						</div>
+						<div class="blog-content-small">
+							<h3><a href="blog-detail.html">Mở rộng không gian phòng ngủ với nội thất tinh tế</a></h3>
+							<span class="blog-info">
+								<span class="date">
+									<i class="fa fa-clock-o"></i>17 Th.4, 2017
+								</span>
+								<span class="author">
+									<i class="fa fa-pencil-square-o"></i>
+									<a href="#">robin</a>
+								</span>
+								<span class="comments">
+									<i class="fa fa-comments-o"></i>
+									<a href="#">6</a>
+								</span>
+							</span>
+							<div class="blog-excerpt">
+								<p>Nội thất phòng ngủ bằng chất liệu thông dụng, sử dụng những gam màu trung tính nhẹ nhàng mà vẫn lôi cuốn, là cách để mở rộng hơn không gian sinh hoạt, đồng thời mang đến cho người dùng cảm giác thoải mái và dễ chịu...</p>
+								<div class="link-container">
+									<a class="link-to" href="blog-detail.html">Đọc thêm <i class="fa fa-angle-right"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-item col-xs-12">
+					<div class="item-container">
+						<div class="blog-img">
+							<img src="img/blog_5.jpg" class="img-responsive"/>
+							<span class="cross"></span>
+						</div>
+						<div class="blog-content-small">
+							<h3><a href="blog-detail.html">Những căn bếp tràn ngập ánh sáng</a></h3>
+							<span class="blog-info">
+								<span class="date">
+									<i class="fa fa-clock-o"></i>19 Th.4, 2017
+								</span>
+								<span class="author">
+									<i class="fa fa-pencil-square-o"></i>
+									<a href="#">admin</a>
+								</span>
+								<span class="comments">
+									<i class="fa fa-comments-o"></i>
+									<a href="#">3</a>
+								</span>
+							</span>
+							<div class="blog-excerpt">
+								<p>Thiết kế những mảng tường bằng kính hoặc cửa sổ lớn sẽ là sự lựa chọn thông minh đem đến cho phòng bếp những góc nhìn tuyệt vời và đầy cảm hứng mỗi ngày...</p>
+								<div class="link-container">
+									<a class="link-to" href="blog-detail.html">Đọc thêm <i class="fa fa-angle-right"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<nav class="col-xs-12 col-sm-8 col-md-9">
+				<div class="pagination">
+					<a class="prev page-no" href="#">
+						<i class="fa fa-long-arrow-left"></i>
+					</a>
+					<a href="#" class="page-no">1</a>
+					<a href="#" class="page-no current">2</a>
+					<a href="#" class="page-no">3</a>
+					<a href="#" class="page-no">4</a>
+					<a href="#" class="page-no">5</a>
+					<a class="next page-no" href="#">
+						<i class="fa fa-long-arrow-right"></i>
+					</a>
+				</div>
+			</nav>
+		</div>
+	</div>
+	<a href="#"><i class="fa fa-angle-up back-top"></i></a>
+	
+	<footer>
+		<div class="container">
+			<div class="row footer-top">
+				<div class="col-xs-6 col-md-3 footer-item">
+					<h4>Thông tin liên hệ</h4>
+					<ul>
+						<li><i class="fa fa-map-marker"></i>Đ/c: 40 Giảng Võ, Đống Đa, Hà Nội</li>
+						<li><i class="fa fa-mobile"></i>Hotline: 0986090925</li>
+						<li><i class="fa fa-envelope-o"></i>Email: hieu.do212@gmail.com</li>
+					</ul>
+				</div>
+				<div class="col-xs-6 col-md-3 footer-item">
+					<h4>Thời gian mở cửa</h4>
+					<ul>
+						<li>Thứ 2 - thứ 6: 8AM - 10PM</li>
+						<li>Thứ 7: 9AM - 8PM</li>
+						<li>Nghỉ Chủ Nhật và các ngày Lễ Tết</li>
+					</ul>
+				</div>
+				<div class="col-xs-6 col-md-3 footer-item">
+					<h4>Hỗ trợ khách hàng</h4>
+					<ul>
+						<li><a href="contact.html">Liên hệ & Góp ý</a></li>
+						<li><a href="#">Hướng dẫn mua hàng online</a></li>
+						<li><a href="#">Câu hỏi thường gặp</a></li>
+						<li><a href="#">Chính sách bảo mật</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-6 col-md-3 footer-item">
+					<h4>Chính sách mua hàng</h4>
+					<ul>
+						<li><a href="#">Chính sách bảo hành, đổi trả</a></li>
+						<li><a href="#">Chính sách hội viên</a></li>
+						<li><a href="#">Giao hàng và lắp đặt</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="row footer-bot">
+				<a href="#" title="Kết nối qua Facebook"><i class="fa fa-facebook-official"></i></a>
+				<a href="#" title="Kết nối qua Google+"><i class="fa fa-google-plus-official"></i>
+				<a href="#" title="Kết nối qua Pinterest"><i class="fa fa-pinterest"></i>
+				<a href="#" title="Kết nối qua Instagram"><i class="fa fa-instagram"></i>
+			</div>
+		</div>
+		<div class="container-fluid copyright">
+			<div class="row">
+				<p>Copyright 2017 <i class="fa fa-copyright"></i> Designed by Hieudo</p>
+			</div>
+		</div>
+	</footer>
+	<script type="text/javascript" src="js/jquery-3.1.1.js" ></script>
+	<script src="owlcarousel/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="plugins/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/script.js" ></script>
+</body>
+</html>

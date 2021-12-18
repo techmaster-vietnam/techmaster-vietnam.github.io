@@ -1,0 +1,61 @@
+.my-banner {
+	background-image: url('../images/story.png');
+}
+
+.about-content {
+	padding: 80px 0px;
+}
+
+.about-left {
+	text-align: justify;
+	padding-right: 10%;
+}
+
+.sign {
+	position: relative;
+	padding-bottom: 3em;
+}
+
+.sign-img {
+	position: absolute;
+	right: 0px;
+	top:0px;
+	width: 30%;
+}
+
+.gallery {
+	width: 100%;
+}
+
+.gallery .carousel {
+	height: 100%;
+}
+
+.gallery .carousel .carousel-inner {
+	height: 100%;
+}
+
+.gallery .carousel .carousel-inner .item {
+	width: 100%;
+	height: 100%;
+}
+
+.img-slide {
+	height: 100%;
+	padding: 0;
+	overflow: hidden;
+}
+
+.item > .img-slide img {
+	width: 100%;
+}
+
+@media (max-width: 767px) {
+	.about-left {
+		padding-right: 15px;
+	}
+
+	.img-about {
+		margin-top: 2em;
+	}
+}

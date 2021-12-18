@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đồ chơi thông minh</title>
+    <link rel="icon" href="img/favicon.png" type="image/png" sizes="16x16">
+    <link href="include/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+    <link rel="stylesheet" href="css/style-sanpham.css"/>
+    <!--<link rel="stylesheet" href="css/font-awesome.min.css" type="text/css"/>-->
+    <!--<link rel="stylesheet" href="include/ninja-slider.css" type="text/css"/>-->
+    <!--<link rel="stylesheet" href="include/thumbnail-slider.css" type="text/css"/>-->
+    <link rel="stylesheet" href="include/magnific-popup.css" type="text/css"/>
+    <link href="include/jquery.smartmenus.bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="include/magnific-popup.css" type="text/css"/>
+</head>
+<body>
+<header>
+    <div id="top-nav" class="nav-wrapper container">
+        <div class="container-fluid">
+            <ul class="nav navbar-nav navbar-right">
+                <li><span class="hidden-xs">Chào mừng bạn đến với Toy City</span></li>
+                <li>
+                    <a href="login.html">Đăng nhập</a>
+                </li>
+                <li>
+                    <a href="register.html">Đăng kí</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="main-nav" class="nav-wrapper container">
+        <div class="container-fluid">
+            <div class="row">
+                <div id="logo">
+                    <a href="/" class="navbar-brand" style="padding-top:0px;padding-bottom:0px" title="logo">
+                        <img src="img/design/logo2.png" alt="logo" class="img-responsive">
+                    </a>
+                </div>
+                <div class="shopping-cart">
+                    <a href="giohang.html"><i  class=" fa fa-2x fa-shopping-cart"
+                                               aria-hidden="true"></i></a>
+                </div>
+                <div class="box-search">
+                    <div class="box">
+                        <div class="search-box">
+                            <button class="icon" id="btn-search"><i class="fa fa-2x fa-search"></i></button>
+                            <input type="search" id="search" placeholder="Tìm kiếm"/>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+        </div>
+    </div>
+    <!--main menu-->
+    <div class="bottom-nav">
+        <nav class="navbar navbar-default">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="container">
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">Trang chủ</a></li>
+                        <li class="dropdown">
+                            <a href="index.html" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                               aria-haspopup="true" aria-expanded="false">
+                                Sản phẩm<span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="index.html#sanphamnoibat">SẢN PHẨM NỔI BẬT <i class="fa fa-star-o"
+                                                                                           style="color: yellow"
+                                                                                           aria-hidden="true"></i></a>
+                                </li>
+                                <li>
+                                    <a href="index.html#sanphamkhuyenmai">SẢN PHẨM KHUYẾN MẠI <i class="fa fa-usd"
+                                                                                                 aria-hidden="true"></i></a>
+                                </li>
+                                <li>
+                                    <a href="danhsachsanpham/maybaymohinh.html">MÁY BAY MÔ HÌNH</a>
+                                </li>
+                                <li>
+                                    <a href="#xemohinh">XE MÔ HÌNH</a>
+                                </li>
+                                <li>
+                                    <a href="#canomohinh">TÀU CANO MÔ HÌNH</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="gioithieu.html">Giới thiệu</a></li>
+                        <li><a href="huongdanmuahang.html">Hướng dẫn mua hàng</a></li>
+                    </ul>
+
+
+                </div>
+
+            </div>
+        </nav>
+    </div>
+</header>
+
+<!--content-->
+<div id="content">
+    <div class="breadcrumb">
+        <ul class="breadcrumb">
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="giohang.html">Giỏ hàng</a></li>
+            <li><a href="giohang.html"></a></li>
+        </ul>
+    </div>
+   <div id="main-content">
+       <h2 style="text-transform: uppercase; padding-left: 8.3333%;color:blue">Giỏ hàng của bạn</h2>
+       <table class="donhang">
+           <tr>
+               <th>Hình ảnh</th>
+               <th>Tên sản phẩm</th>
+               <th>Số lượng</th>
+               <th>Đơn giá</th>
+               <th>Tổng cộng</th>
+               <th ><span style="display: none">Thao tác</span></th>
+           </tr>
+           <tr>
+               <td><img src="img/tay-dk-x600.jpg" height="100px" width="100px" alt=""></td>
+               <td style="color: red; font-size: 20px">Tay điều khiển</td>
+               <td>1</td>
+               <td>350.000 VNĐ</td>
+               <td>350.000VNĐ</td>
+               <td><a href="#">Xóa</a></td>
+           </tr>
+
+       </table>
+       <div class="row" style=" margin-right: 8.33333%; padding-top: 20px" >
+           <div class="action-cart" style=" margin-top: 10px;">
+               <a href="#" style="text-decoration: none;color: white"><span>Thanh toán</span></a>
+
+           </div>
+           <div class="action-cart" style=" margin-top: 10px">
+               <a href="#" style="text-decoration: none;color: white"><span>Cập nhật</span></a>
+           </div>
+       </div>
+
+   </div>
+
+
+</div>
+
+
+<!--footer-->
+<div class="footer">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="detail">
+                    <h3 class="header">
+                        ToyCity Uy tín- tận tậm
+                    </h3>
+                    <div class="custom">
+                        <span>Chúng tôi chỉ bán hàng chính hãng</span>
+                        <div class="about_us">
+                            <p class="phone"><span>Hotline: </span><strong>0974053980</strong></p>
+                            <p class="phone"><span>Hỗ trợ kỹ thuật: </span><strong>0974053980</strong></p>
+                            <p class="email"><span>Hotline: </span><strong>phamhung.bk94@gmail.com</strong></p>
+                        </div>
+                    </div>
+                </div>
+
+                </address>
+            </div>
+            <div class="col-md-3 ">
+                <div class="about_me">
+                    <h3 class="header">
+                        Về chúng tôi
+                    </h3>
+                    <ul class="nav">
+                        <li>Giới thiệu</li>
+                        <li>Khuyến mại</li>
+                        <li>Chính sách & quy định</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="support">
+                    <h3 class="header">
+                        Hỗ trợ
+                    </h3>
+                    <ul class="nav">
+                        <li>Chính sách vận chuyển</li>
+                        <li>Chính sách thanh toán</li>
+                        <li>Bản đồ</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="address">
+                    <h3 class="header">Địa chỉ showroom</h3>
+                    <div>
+                        <p><span class="showroom">Cơ sở 1: <i
+                                class="icon ion-ios-location"></i> <strong>Số 14, ngõ 4, Nguyễn Đình Chiểu, quận Hai Bà Trưng, Hà nội, Việt Nam.</strong></span></p>
+                        <p><span class="showroom">Cơ sở 2: </span><strong>Phòng 2304, tầng 23,StarCity, 81 Lê Văn Lương, Nhân Chính, Thanh Xuân, Hà Nội.</strong></p>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<!--<script src="include/thumbnail-slider.js"></script>-->
+<!--<script src="include/ninja-slider.js"></script>-->
+<script src="include/jquery-3.0.0.min.js"></script>
+<script src="include/bootstrap.min.js"></script>
+<script type="text/javascript" src="include/jquery.smartmenus.min.js"></script>
+<script src="include/jquery.breadcrumbs-generator.js"></script>
+<!-- SmartMenus jQuery Bootstrap Addon -->
+<script type="text/javascript" src="include/jquery.smartmenus.bootstrap.min.js"></script>
+<script src="js/script.js" type="javascript">
+
+</script>
+<script src="js/script-sanpham.js"></script>
+</body>
+</html>

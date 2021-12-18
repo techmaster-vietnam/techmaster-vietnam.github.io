@@ -1,0 +1,170 @@
+/* Main */
+
+#main {
+    width: 100%;
+    padding: 1.5rem;
+
+}
+
+#main img {
+    width: 100%;
+}
+
+
+#main h3 {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 46px;
+    margin: 50px 0;
+}
+
+@media(max-width:400px){
+    
+#main h3{
+    font-size: 36px;
+}
+}
+
+
+
+
+.card {
+    border: none;
+    margin: 1rem 0;
+}
+
+.card-body {
+    padding: 0 0 0.5rem 0;
+}
+
+
+#main #main_2 {
+    width: 100%;
+    background: #D66161;
+    padding: 3%;
+    display: flex;
+    margin-top: 2rem;
+}
+
+#main #main_2 .sneaker {
+    width: 50%;
+    padding: 2%;
+    position: relative;
+    overflow: hidden;
+}
+
+#main #main_2 .sneaker #hover-img {
+    overflow: hidden;
+    border-radius: 1.5rem;
+}
+
+
+#main #main_2 button {
+    position: absolute;
+    top: 45%;
+    left: 40%;
+    background: rgba(196, 196, 196, 49%);
+    border: 1px solid black;
+    width: 8rem;
+    height: 3rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: white;
+}
+
+#main #main_3 {
+    margin-top: 5rem;
+}
+
+#main #main_2 button:hover {
+    border-radius: 2rem 0;
+    transition: all 0.5s linear;
+    background: #D66161;
+    text-decoration: underline;
+    border: 3px solid white;
+}
+
+#main #main_2 .sneaker #hover-img:hover>img {
+    transform: scale(1.2);
+    opacity: 0.8;
+    transition: all 0.8s linear;
+}
+
+#main_4 {
+    margin-top: 5rem;
+}
+
+#main_4_1 {
+    position: relative;
+    padding-top: 2.5rem;
+}
+
+#comment_1 {
+
+    position: absolute;
+    top: -1.2rem;
+    left: 7rem;
+}
+
+#comment_2 {
+    background: #585353;
+    padding: 2.5rem 0.8rem 0.2rem 0.8rem;
+    color: white;
+    box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, 25%);
+}
+
+#main_5 {
+    margin-top: 5rem;
+}
+
+#news #news_1 {
+    box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, 25%);
+}
+
+#news #news_1 p {
+    padding: 1rem;
+}
+
+
+#main_6 {
+    position: relative;
+    margin: 3rem 0;
+}
+
+#main_6 #main_6_1 {
+    width: 100%;
+    position: absolute;
+    top: 30%;
+    text-align: center;
+
+}
+
+#main_6 #main_6_1 p {
+    font-size: 2.4rem;
+    color: white;
+    font-weight: bold;
+
+}
+
+#main_6 #main_6_1 button {
+    background: rgba(196, 196, 196, 49%);
+    border: 1px solid black;
+    width: 8rem;
+    height: 3rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: white;
+}
+
+#main #main_6 #main_6_1 button:hover {
+    border-radius: 2rem 0;
+    border: 3px solid white;
+    background: #D66161;
+    text-decoration: underline;
+    transition: all 0.5s linear;
+}
+
+#main #main_6:hover>img {
+    opacity: 0.8;
+    transition: all 0.5s linear;
+}

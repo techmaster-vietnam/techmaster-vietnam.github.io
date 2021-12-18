@@ -1,0 +1,17 @@
+* {
+	box-sizing: border-box;
+}
+
+@font-face {
+	font-family: cocabold;
+	src: url(FONT/Oswald-Regular.ttf);
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: cocabold1;
+	src: url(FONT/Oswald-Light.ttf);
+	font-weight: normal;
+	font-style: normal;
+}

@@ -1,0 +1,65 @@
+.navbar-inverse .navbar-nav>li>a {
+    padding: 35px 12px;
+}
+
+
+#img1 {
+	position: relative;
+}
+
+.test-absolute {
+	position: absolute;
+	top: 450px;
+	left: 550px;
+}
+
+.menu1 {
+    position: absolute;
+	color: #ffffff;
+}
+
+.menu1 h4{
+    font-size: 18px;
+}
+
+.menu1 p{
+	font-size: 16px;
+}
+
+.circle {
+    position: absolute;
+    top: 5px;
+    left: -45px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 42px;
+    height: 42px;
+    text-align: center;
+    color: #ffcb0a;
+    font-size: 14px;
+    line-height: 42px;
+    border: 2px solid #ffcb0a;
+    border-radius: 50%;
+    font-style: normal;
+    }
+
+ div.menu1>a {
+    text-decoration: none;
+    opacity: 1;
+ }   
+
+ div.menu1>a:hover {
+    opacity: 0.8;
+ }
+
+ .maps {
+    visibility: hidden;
+ }
+ .maps2 {
+    visibility: visible;
+ }
+
+.maps-1 {
+    visibility: hidden;
+} 

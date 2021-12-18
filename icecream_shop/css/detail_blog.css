@@ -1,0 +1,23 @@
+.my-banner {
+	background-image: url('../images/blog.png');
+}
+
+.blog-content {
+	padding: 80px 0px;
+}
+
+.content-text-blog p {
+	text-align: justify;
+	text-indent: 3em;
+}
+
+.content-text-blog {
+	padding: 0px 15px;
+}
+
+.img-blog {
+	width: 100%;
+	padding-right: 10%;
+	padding-left: 10%;
+	padding-bottom: 1em;
+}

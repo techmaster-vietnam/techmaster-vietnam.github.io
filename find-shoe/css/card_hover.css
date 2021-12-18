@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+}
+
+.sanpham .product {
+
+    box-shadow: 0 5px 15px grey;
+    overflow: hidden;
+
+    float: left;
+    margin-bottom: 1rem;
+}
+
+.sanpham .product .imgbox img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.sanpham .product .imgbox {
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+}
+
+.sanpham .product .imgbox .details {
+    position: absolute;
+    bottom: -1000px;
+    width: 100%;
+    background: white;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    transition: 0.5s;
+    padding: 7px;
+}
+
+.sanpham .product .imgbox .details h4 {
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+.sanpham .product .info {
+    padding: 5px 10px;
+}
+
+.sanpham .product .info .price_old{
+    text-decoration: line-through;
+    font-size: 16px;
+}
+
+.sanpham .product .info .price_new {
+    
+    font-weight: bold;
+    color: red;
+    font-size: 20px;
+}
+
+.sanpham .product .imgbox .details label {
+    display: block;
+    margin-top: 5px;
+    font-family: bold;
+}
+
+.sanpham .product .imgbox .details a {
+    color: white;
+    display: block;
+    padding: 5px;
+    margin: 15px 0 0;
+    background: #ce2a2a;
+    border: 2px solid #ce2a2a;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.sanpham .product .imgbox .details a:nth-child(1){
+    border: 2px solid #ce2a2a;
+    background: white;
+    color: #ce2a2a;
+}
+
+.sanpham .product .imgbox .details a:hover {
+    color: #fff;
+    background: black;
+    border:2px solid black;
+    box-shadow: 5px 5px 5px grey;
+}
+
+.sanpham .product:hover .details {
+    bottom: 0;
+}
+
+.sanpham .product:hover {
+
+    box-shadow: 0 5px 15px black;
+}
+
+
+
+
+
+ .price_new::after{
+    content: " vnđ";
+}

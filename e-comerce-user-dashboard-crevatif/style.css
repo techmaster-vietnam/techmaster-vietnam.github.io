@@ -1,0 +1,158 @@
+body {
+    height: 100vh;
+    margin:0;
+}
+
+.main {
+    display:flex;
+    height: 100%;
+}
+
+.menu {
+    width: 16%;
+    background: #34495E;
+}
+
+.avatar-name-left-corner {
+    display: flex;
+    align-items:center;
+    width: 70%;
+    margin:auto;
+}
+
+.avatar-name-left-corner .avatar {
+    width:48px;
+    height:48px;
+    border-radius: 50%;
+}
+
+.avatar-name-left-corner .name {
+    margin-left: 10px;
+    color:white;
+}
+
+.dashboard {
+    background: #34495E;
+    color: white;
+}
+
+.dashboard .item {
+    display: flex;
+    align-items:baseline;
+    padding-top: 40px;
+    margin:auto;
+    width: 75%;
+}
+
+.dashboard .item .info {
+    padding-left: 15px;
+}
+
+.info {
+    width: 84%;
+}
+
+.top-icon {
+    height:90px;
+    border-bottom: 1px solid black;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+
+.top-icon .cute {
+    display:flex;
+    align-items:center;
+    justify-content: space-around;
+    width: 15%;
+}
+
+.top-icon .avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.top-icon .search {
+    display:flex;
+    align-items:center;
+}
+
+.personal {
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding-left: 20px;
+}
+
+.personal .avatar img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.personal .non-avatar {
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.personal .name-job {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display:inline-block;
+}
+
+.pen-logout {
+    border:1px solid gainsboro;
+    border-radius:100%;
+    padding:10px;
+    margin-right: 10px;
+}
+
+.knowledge {
+    margin-top: 50px;
+    padding-left: 25px;
+    border-bottom: 1px solid gainsboro;
+}
+
+.knowledge span {
+    margin-right: 50px;
+}
+
+.learn-info {
+    display:flex;
+    justify-content:space-between;
+    width:90%;
+    margin:auto;
+}
+
+.learn-info .course {
+    width: 30%;
+    display:flex;
+}
+
+.learn-info .course .detail {
+    padding: 20px;
+    text-align: center;
+}
+
+.learn-info .question {
+    width: 33%;
+    display:flex;
+}
+
+.learn-info .question .detail {
+    padding: 20px;
+    text-align: center;
+}
+
+.learn-info .exam {
+    width: 30%;
+    display:flex;
+}
+
+.learn-info .exam .detail {
+    padding: 20px;
+    text-align: center;
+}

@@ -1,0 +1,513 @@
+/*bg-image*/
+.bg-image{
+    position: relative;
+    width: 100%;
+    height: 800px;
+    background-image: url(../img/Ela_CoverOptions-005-slideshow-1920x800.jpg);
+    clip-path: polygon(0 0, 100% 0, 100% 88%, 52% 100%, 0 88%);
+    background-position-x: 50%;
+}
+.word-foodanddrink{
+    position: absolute;
+    top:39%;
+    left: calc(50% - 584.415px);
+    color: white;
+    font-size: 96px;
+}
+@media only screen and (min-width: 300px ) and (max-width:647px){
+    .word-foodanddrink{
+        position: absolute;
+        top: 39%;
+        left: calc(50% - 158.28px);
+        color: white;
+        font-size: 26px;
+        text-align: center;
+    }
+}
+@media only screen and (min-width: 648px ) and (max-width:1300px){
+    .word-foodanddrink{
+        position: absolute;
+        top: 39%;
+        left: calc(50% - 292.21px);
+        color: white;
+        font-size: 48px;
+    }
+}
+/*navigation bar*/
+.navigation-foodanddrink{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 60px;
+}
+.navigation-home-1{
+    float: left;
+    font-size: 16px;
+    color: black;
+}
+.next-image{
+    float: left;
+    margin-top: 20px;
+}
+.navigation-foodanddrink-1{
+    float: left;
+    font-size: 16px;
+    color: black;
+}
+/*foodanddrink-banner*/
+.productCount{
+    position: absolute;
+    top: 10px;
+    left: 27px;
+    background-color: red;
+    color: white;
+    width: 16px;
+    font-size: 16px;
+    pointer-events: none;
+}
+.tap{
+    display: flex;
+    flex-direction: row;
+    width: 400px;
+    height: 400px;
+}
+.banner-container{
+    display: flex;
+}
+.filter-foodanddrink{
+    margin-left: 40px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.filter-word{
+    margin-right: 10px;
+    font-weight: bold;
+}
+.filter-image{
+    cursor: pointer;
+}    
+.sort-foodanddrink{
+    margin-left: 22px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.sort-word{
+    margin-right: 10px;
+    font-weight: bold;
+}
+.sort-image{
+    cursor: pointer;
+}    
+.filter-box{
+    position: relative;
+    width: 496px;
+    height: 200px;
+    background-color: black;
+    font-size: 17px;
+    color: #b9b7b2;
+}
+.filter-box-word{
+    cursor: pointer;
+    width: 248px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.filter-box-word:hover{
+    color: white;
+}
+.left-side{
+    position: absolute;
+    left: 0;
+    width: 248px;
+    height: 200px;
+    border-right: 1px dashed white;
+}
+.right-side{
+    padding: 24px;
+    position: absolute;
+    left: 248px;
+    width: 248px;
+    height: 200px;
+}
+.header-right-side{
+    font-size: 18px;
+    margin-bottom: 6px;
+}
+.label-price:hover{
+    color: white;
+}
+.sort-box{
+    position: relative;
+    width: 240px;
+    height: 128px;
+    background-color: black;
+    font-size: 17px;
+    color: #b9b7b2;
+}
+.filter-box-word-1{
+    cursor: pointer;
+    width: 240px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.filter-box-word-1:hover{
+    color: white;
+}
+.pho-image{
+    width: 398px;
+    height: 266.67px;
+}
+.nuocchanh-image{
+   
+    width: 300px;
+    height: 300px;
+}
+.bunbo-image{
+   
+    width: 300px;
+    height: 300px;
+}
+.spaghetti-image{
+   
+    width: 400px;
+    height: 230px;
+}
+.friedchicken-image{
+    
+    width: 400px;
+    height: 200px;
+}
+.icecream-image{
+    
+    width: 178px;
+    height: 300px;
+}
+.comtam-image{
+    
+    width: 398px;
+    height: 300px;
+}
+@media only screen and (min-width: 562px ) and (max-width:683px){
+    .banner-container{
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .sort-foodanddrink{
+        margin-left: 40px;
+        margin-bottom: 20px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+}
+@media only screen and (min-width: 300px ) and (max-width:562px){
+    .banner-container{
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .sort-foodanddrink{
+        margin-left: 40px;
+        margin-bottom: 20px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .filter-box{
+        position: relative;
+        width: 248px;
+        height: 400px;
+        background-color: black;
+        font-size: 17px;
+        color: #b9b7b2;
+    }
+    .right-side{
+        padding: 24px;
+        position: absolute;
+        left: 0px;
+        top:200px;
+        width: 248px;
+        height: 200px;
+    }
+    .filter-box-word{
+        cursor: pointer;
+        width: 248px;
+        height: 64px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+
+/*foodanddrink*/
+.foodanddrink-mobile{
+    display: none;
+}
+.foodanddrink-desktop{
+    display: block;
+}
+.foodanddrink-tablet{
+    display: none;
+}
+.shop-container{
+    width: 99%;
+    height: 100%;
+    margin: 0 auto;
+}
+.shop-items{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    border: 1px solid #C4C4C4;
+}
+.one{
+    border-right-width: 0;
+}
+.two{
+    border-bottom-width: 0;
+}
+
+.shop-item-price{
+    position: absolute;
+    top: 350px;
+    left: 32px;
+    color: red;
+}
+.shop-item-title{
+    position: absolute;
+    top: 319px;
+    left: 32px;
+    font-size: 22px;
+    font-weight: bold;
+}
+.addtocart-button-container{
+    position: absolute;
+    top: 319px;
+    left: 314px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 64px;
+    height: 64px;
+    border: 1px dashed black;
+    cursor: pointer;
+}
+.addtocart-image{
+    cursor: pointer;
+    width: 28px;
+    height: 24px;
+}
+.pho-image{
+    position: absolute;
+    top: 1px;
+    width: 398px;
+    height: 266.67px;
+}
+.nuocchanh-image{
+    position: absolute;
+    top: 1px;
+    left: calc(50% - 150px);
+    width: 300px;
+    height: 300px;
+}
+.bunbo-image{
+    position: absolute;
+    top: 1px;
+    left: calc(50% - 150px);
+    width: 300px;
+    height: 300px;
+}
+.spaghetti-image{
+    position: absolute;
+    top: 30px;
+    left: calc(50% - 200px);
+    width: 400px;
+    height: 230px;
+}
+.friedchicken-image{
+    position: absolute;
+    top: 30px;
+    left: calc(50% - 200px);
+    width: 400px;
+    height: 200px;
+}
+.icecream-image{
+    position: absolute;
+    top: 1px;
+    left: calc(50% - 89px);
+    width: 178px;
+    height: 300px;
+}
+.comtam-image{
+    position: absolute;
+    top: 1px;
+    left: calc(50% - 199px);
+    width: 398px;
+    height: 300px;
+}
+.row{
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+.flex-row{
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+.space{
+    height: 100px;
+}
+@media only screen and (min-width: 795px ) and (max-width:1228px){
+    .foodanddrink-desktop{
+        display: none;
+    }
+    .foodanddrink-tablet{
+        display: block;
+    }
+    .foodanddrink-mobile{
+        display: none;
+    }
+    .three{
+        border-right-width: 0;
+    }
+    .four{
+        border-bottom-width: 0;
+    }
+}
+@media only screen and (min-width: 426px ) and (max-width:795px){
+    .foodanddrink-desktop{
+        display: none;
+    }
+    .foodanddrink-tablet{
+        display: none;
+    }
+    .foodanddrink-mobile{
+        display: block;
+    }
+    .one{
+        border-right-width: 1px;
+    }
+    .two{
+        border-bottom-width: 1px;
+    }
+    .five{
+        border-bottom-width: 0;
+    }
+}
+@media only screen and (min-width: 300px ) and (max-width:426px){
+    .foodanddrink-desktop{
+        display: none;
+    }
+    .foodanddrink-tablet{
+        display: none;
+    }
+    .foodanddrink-mobile{
+        display: block;
+    }
+    .shop-items{
+        position: relative;
+        width: 300px;
+        height: 500px;
+        border: 1px solid #C4C4C4;
+    }
+    .one{
+        border-right-width: 1px;
+    }
+    .two{
+        border-bottom-width: 0;
+    }
+    .shop-item-price{
+        position: unset;
+        color: red;
+    }
+    .shop-item-details{
+        width: 100%;
+        top: 336px;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-flow: column wrap;
+        text-align: center;
+        height: 150px;
+    }
+    .shop-item-title{
+        position: unset;
+        font-size: 22px;
+        font-weight: bold;
+    }
+    .addtocart-button-container{
+        position: unset;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 64px;
+        height: 64px;
+        border: 1px dashed black;
+        cursor: pointer;
+    }
+    .addtocart-image{
+        cursor: pointer;
+        width: 28px;
+        height: 24px;
+    }
+    .pho-image{
+        position: absolute;
+        top: 56px;
+        width: 298px;
+        height: 204.67px;
+    }
+    .nuocchanh-image{
+        position: absolute;
+        top: 1px;
+        left: calc(50% - 149px);
+        width: 298px;
+        height: 300px;
+    }
+    .bunbo-image{
+        position: absolute;
+        top: 1px;
+        left: calc(50% - 147px);
+        width: 293px;
+        height: 300px;
+    }
+    .spaghetti-image{
+        position: absolute;
+        top: 75px;
+        left: calc(50% - 149px);
+        width: 299px;
+        height: 192px;
+    }
+    .friedchicken-image{
+        position: absolute;
+        top: 88px;
+        left: calc(50% - 152px);
+        width: 298px;
+        height: 179px;
+    }
+    .icecream-image{
+        position: absolute;
+        top: 1px;
+        left: calc(50% - 89px);
+        width: 178px;
+        height: 300px;
+    }
+    .comtam-image{
+        position: absolute;
+        top: 48px;
+        left: calc(50% - 149px);
+        width: 298px;
+        height: 249px;
+    }
+    .row{
+        display: flex;
+        justify-content: center;
+        flex-flow: row wrap;
+    }
+}

@@ -1,0 +1,18 @@
+.detail {
+    margin-top: 10.5rem;
+
+    &--img {
+        max-width: 100%;
+    } 
+
+    input, button {
+        font-size: 3rem;
+    }
+
+    a {
+        display: inline-block;
+        width: 100%;
+        font-size: 3rem;
+        
+    }
+}

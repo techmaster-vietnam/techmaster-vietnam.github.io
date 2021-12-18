@@ -1,0 +1,153 @@
+/*navigation bar*/
+.navigation-partner{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 60px;
+}
+.navigation-home-1{
+    float: left;
+    font-size: 16px;
+    color: black;
+}
+.next-image{
+    float: left;
+    margin-top: 20px;
+}
+.navigation-partner-1{
+    float: left;
+    font-size: 16px;
+    color: black;
+}
+/*background-image-banner*/
+.image-partner-container{
+    background-image: url(../img/top-chef-coria-1920x600.jpg) ;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position-x: center;
+    position: relative;
+    width: 100%;
+    height: 600px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column wrap;
+}
+.word-partner-1{
+    font-size: 32px;
+    color: white;
+}
+.word-partner-2{
+    font-size: 16px;
+    color: white;
+}
+
+/*partner*/
+.partner-desktop{
+    position: relative;
+    width: 100%;
+}
+.type-partner{
+    margin-left: 40px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.type-word{
+    margin-right: 10px;
+}
+.type-image{
+    cursor: pointer;
+}
+.table-tools-desktop{
+    text-align: center;
+    width: 98%;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+.table-location-desktop{
+    text-align: center;
+    width: 98%;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+th{
+    color: white;
+    background-color: black;
+    height: 100px;
+}
+th, td {
+    white-space: nowrap;
+    padding: 8px;
+}
+tr:hover{
+    color: red;
+}
+.outer-btn{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cooperate-partner{
+    margin: 0 auto;
+    width: 221px;
+    height: 62px;
+    font-size: 16px;
+    background-color: transparent;
+    border: dashed 1px red;
+}
+.cooperate-partner:hover{
+    background-color: red;
+    color: white;
+}
+.button-a{
+    padding-left: 0;
+    padding-right: 0;
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+    color: red !important;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.button-a:hover{
+    color: white!important;
+}
+.type-box{
+    width: 252.8px;
+    height: 128px;
+    background-color: black;
+    text-align: center;
+    font-weight: normal;
+}
+.word-type-box{
+    cursor: pointer;
+    padding-top: 18px; 
+    height: 64px;
+    color: #b9b7b2;
+}
+.word-type-box:hover{
+    cursor: pointer;
+    padding-top: 18px; 
+    height: 64px;
+    color: white;
+}
+.responsive-table{
+    overflow-x:auto;
+}
+.partner-what-is{
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+}
+.donator-what-is{
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+}

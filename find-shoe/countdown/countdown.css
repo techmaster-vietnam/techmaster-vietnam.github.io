@@ -1,0 +1,73 @@
+#banner{
+    background-image: url('../img/banner(2).jpg');
+    width: 100%;
+    
+    background-position: bottom center;
+    background-size: cover;
+}
+
+.countdown{
+    padding:100px 0;
+    width: 40%;
+    margin: auto;
+}
+
+.countdown h1{
+    text-align: center;
+    font-size: 60px;
+}
+
+#countdown_1 #title_clock{
+    padding: 30px 0;
+    background: black;
+    color: white;
+    
+}
+
+#countdown_1 #title_clock p{
+    text-align: center;
+    margin: 0;
+    font-size: 36px;
+} 
+
+#clock{
+    
+    display: flex;
+    justify-content: center;
+    background: yellow;
+}
+
+#clock div{
+    padding: 10px;
+    position: relative;
+    width: 25%;
+    border: 2px solid black;
+    text-align: center;
+    
+}
+
+#clock div span:nth-child(1){
+    font-size: 36px;
+    font-weight: bold;
+}
+
+
+
+#banner .countdown p{
+    text-align: center;
+    margin-top: 40px;
+    font-size: 18px;
+}
+
+
+@media(max-width:720px){
+    .countdown{
+        width: 80%;
+    }
+}
+
+@media(max-width:400px){
+    .countdown{
+        width: 95%;
+    }
+}

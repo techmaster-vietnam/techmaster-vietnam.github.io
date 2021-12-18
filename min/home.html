@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Trang chủ</title>
+	<link rel="stylesheet" type="text/css" href="plugins/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="plugins/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Arsenal" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cantata+One" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<nav class="header-top">
+			<span class="quick-mobile">
+				<i class="fa fa-phone"></i> 0986090925
+			</span>
+			<span class="quick-mail hidden-xs">
+				<i class="fa fa-envelope-o"></i> hieu.do212@gmail.com
+			</span>
+			<span class="pull-right">
+				<div class="before-log">
+					<button data-toggle="modal" data-tabs="login" data-target=".user-modal">Đăng nhập</button>
+					<button data-toggle="modal" data-tabs="signup" data-target=".user-modal">Đăng ký</button>
+				</div>
+				<div class="logged">
+					<!-- <i class="fa fa-user-o"></i> -->
+					<img src="img/feedback_1.jpg">
+					<div class="dropdown">
+						<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Đỗ Hoàng Hiếu</button>
+						<ul class="dropdown-menu dropdown-menu-right">
+							<li><a href="user-account.html">Quản lý tài khoản</a></li>
+							<li><a id="logout-btn" href="#">Đăng xuất</a></li>
+						</ul>
+					</div>
+				</div>
+			</span>
+		</nav>
+		<nav class="navbar navbar-default">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a href="#" class="search" data-toggle="slide-collapse" data-target="#search-form">
+				<i class="fa fa-search"></i><span class="hidden-xs"> Tìm kiếm</span>
+			</a>
+			<div class="container">
+				<div class="menu row">
+					<div class="collapse navbar-collapse" id="menu-collapse">
+						<ul class="nav navbar-nav navbar-left">
+							<li><a href="home.html">Trang chủ</a></li>
+							<li><a href="shop.html">Sản phẩm</a></li>
+							<li><a href="blog.html">Dự án</a></li>
+						</ul>
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="about.html">Về Min</a></li>
+							<li><a href="blog.html">Blog</a></li>
+							<li><a href="contact.html">Liên hệ</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="cart-box">
+				<a href="wishlist.html">
+					<i class="fa fa-heart-o"></i>
+				</a>
+				<a href="cart.html">
+					<i class="fa fa-shopping-cart"></i>
+				</a>
+			</div>
+			<a class="logo" href="home.html"><img src="img/logo-min.png"></a>
+			<div id="search-form">
+				<form>
+					<input type="text" placeholder="Nhập từ khóa cần tìm">
+					<button type="submit"><i class="fa fa-search"></i></button>
+				</form>
+			</div>
+		</nav>
+		<div class="modal fade user-modal" tabindex="-1">
+			<div class="modal-dialog modal-sm">
+				<div class="modal-content">
+					<ul class="nav nav-tabs" role="tablist">
+						<li id="login-indicator" class="active">
+							<a href="#login" role="tab" data-toggle="tab">Đăng nhập</a>
+						</li>
+						<li id="signup-indicator">
+							<a href="#signup" role="tab" data-toggle="tab" >Đăng ký</a>
+						</li>
+					</ul>
+
+					<div class="tab-content">
+						<div role="tabpanel" class="tab-pane active fade in" id="login">
+							<form>
+								<div class="input-field">
+									<input type="email" name="Email" id="email" placeholder="Email"/>
+								</div>
+								<div class="input-field">
+									<input type="password" name="Password" id="password" placeholder="Mật khẩu"/>
+								</div>
+								<div class="input-field check-field">
+									<input type="checkbox" id="remember" name="remember"/><label for="remember">Ghi nhớ tài khoản</label><br/>
+								</div>
+								<div class="input-field">
+									<input id="login-btn" data-dismiss="modal" value="Đăng nhập"/>
+								</div>
+								<button data-toggle="modal" data-target="#reset-password" data-dismiss="modal" class="btn btn-default"><i class="fa fa-question-circle-o"></i> Quên mật khẩu?</button>
+							</form>
+						</div>
+						<div role="tabpanel" class="tab-pane fade" id="signup">
+							<form>
+								<div class="input-field">
+									<input type="email" name="Email" id="email" placeholder="Email"/>
+								</div>
+								<div class="input-field">
+									<input type="password" name="Password" id="password" placeholder="Mật khẩu"/>
+								</div>
+								<div class="input-field check-field">
+									<input type="checkbox" id="remember" name="remember"/><label for="remember">Hiển thị mật khẩu</label><br/>
+								</div>
+								<div class="input-field">
+									<input type="text" name="Name" id="name" placeholder="Họ tên"/>
+								</div>
+								<div class="input-field">
+									<input type="text" name="Phone" id="phone" placeholder="Số điện thoại"/>
+								</div>
+								<div class="input-field">
+									<input id="signup-btn" type="submit" value="Đăng ký"/>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="container-fluid banner">
+		<div class="row">
+			<div class="box-col col-sm-4 pull-left hidden-xs">
+				<div class="box product">
+					<div class="content front">
+						<img class="img-responsive" src="img/chair.png">
+					</div>
+					<div class="content back">
+						<div class="count">23</div>
+						<h4>Thương hiệu</h4>
+					</div>
+				</div>
+				<div class="box-title product">
+					<h4>Sản phẩm Nội thất</h4>
+				</div>
+			</div>
+			<div class="box-col col-sm-4 pull-right hidden-xs">
+				<div class="box project">
+					<div class="content front">
+						<img class="img-responsive" src="img/hammer.png">
+					</div>
+					<div class="content back">
+						<div class="count">96</div>
+						<h4>Dự án</h4>
+					</div>
+				</div>
+				<div class="box-title project">
+					<h4>Thiết kế & Thi công</h4>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-4">
+				<div class="slogan">
+					<h1>min</h1>
+					<h3>Giản đơn & Tinh tế</h3>
+					<a id="to-about" href="#"><img src="img/down.png"></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid about" id="about-min">
+		<div class="section-title">
+			<h2>Giới thiệu về Min</h2>
+		</div>
+		<i>MIN, được viết tắt từ Minimalist, có nghĩa là sự đơn giản, giảm thiểu các chi tiết thừa, chỉ giữ lại những phần thật sự cần thiết cho công năng và thẩm mỹ để mang lại nét tinh tế thanh lịch cho không gian thiết kế.</i>
+		<br/>
+		<i>MIN mang đến cho khách hàng những sản phẩm nội thất mộc mạc, đơn giản mà vẫn có cá tính riêng, đồng thời thực hiện các dự án thiết kế và thi công nội thất với mong muốn tạo dựng những không gian khác biệt, tinh tế và sáng tạo.</i>
+		<div class="link-container">
+			<a class="link-to" href="about.html">Xem thêm <i class="fa fa-angle-right"></i></a>
+		</div>
+	</div>
+<!-- Sản phẩm mới -->
+	<div class="container-fluid">
+		<div class="section-title">
+			<h2>Sản phẩm mới</h2>
+			<p>Những sản phẩm mới nhất T4/2017</p>
+		</div>
+		<div class="row block-container">
+			<div class="block block1 col-xs-6 col-sm-6 col-md-3">
+				<div class="banner-content">
+					<h3>Bộ bàn ghế sân vườn BJ Pappilon</h3>
+					<a href="shop-detail.html">Xem chi tiết <i class="fa fa-long-arrow-right"></i></a> 
+				</div>
+				<img src="img/banner_1.jpg" class="img-responsive">	
+			</div>
+			<div class="block single block2 col-xs-6 col-sm-6 col-md-3">
+				<img src="img/banner_2.jpg" class="img-responsive">
+			</div>
+			<div class="block single block5 col-xs-6 col-sm-6 col-md-3">
+				<img src="img/banner_5.jpg" class="img-responsive">
+			</div>
+			<div class="block double block4 col-xs-12 col-md-6">
+				<div class="banner-content">
+					<h3>Bộ gốm sứ Kakiemon Unique</h3>
+					<a href="shop-detail.html">Xem chi tiết <i class="fa fa-long-arrow-right"></i></a> 
+				</div>
+				<img src="img/banner_4.jpg" class="img-responsive">
+			</div>
+			<div class="block double block3 col-xs-12 col-md-6">
+				<div class="banner-content">
+					<h3>Bộ sofa DH Breland</h3>
+					<a href="shop-detail.html">Xem chi tiết <i class="fa fa-long-arrow-right"></i></a> 
+				</div>
+				<img src="img/banner_3.jpg" class="img-responsive">
+			</div>
+		</div>
+	</div>
+
+<!-- Sản phẩm nổi bật -->
+	<div class="container-fluid featured">
+		<div class="section-title">
+			<h2>Sản phẩm nổi bật</h2>
+			<p>Top những sản phẩm được đánh giá cao</p>
+		</div>
+		<div class="row">
+			<ul class="nav nav-tabs">
+				<li class="active"><a href="#chair" data-toggle="tab">Ghế</a></li>
+				<li><a href="#table" data-toggle="tab">Bàn</a></li>
+				<li><a href="#cabinet" data-toggle="tab">Tủ & Giá</a></li>
+			</ul>
+			<div class="tab-content">
+				<div class="tab-pane active fade in" id="chair">
+					<div class="col-item col-xs-6 col-md-3">
+						<div class="item-container">
+							<div class="name">
+								<h3>Eros Papasan</h3>
+								<p>by Kartell</p>	
+							</div>
+							<div class="photo">
+								<div id="product1" class="carousel slide" data-ride="carousel" data-interval="false">
+									<ol class="carousel-indicators">
+										<li data-target="#product1" data-slide-to="0" class="active"></li>
+										<li data-target="#product1" data-slide-to="1"></li>
+									</ol>
+
+									<div class="carousel-inner" role="listbox">
+										<div class="item active">
+											<img src="img/product_1a.jpg">
+										</div>
+										<div class="item">
+											<img src="img/product_1b.jpg">
+										</div>
+									</div>
+								</div>
+								<div class="vertical-icon">
+									<a href="#"><i class="fa fa-heart-o"></i></a>
+									<a href="#"><i class="fa fa-shopping-cart"></i></a>
+									<a href="shop-detail.html"><i class="fa fa-search-plus"></i></a>
+								</div>
+							</div>
+							<div class="price">
+								<strong>4.800.000₫</strong>	
+							</div>
+						</div>
+					</div>
+					<div class="col-item col-xs-6 col-md-3">
+						<div class="item-container">
+							<div class="name">
+								<h3>Signature Chair</h3>
+								<p>by Frits Henningsen</p>	
+							</div>
+							<div class="photo">
+								<div id="product2" class="carousel slide" data-ride="carousel" data-interval="false">
+									<ol class="carousel-indicators">
+										<li data-target="#product2" data-slide-to="0" class="active"></li>
+										<li data-target="#product2" data-slide-to="1"></li>
+										<li data-target="#product2" data-slide-to="2"></li>
+										<li data-target="#product2" data-slide-to="3"></li>
+									</ol>
+
+									<div class="carousel-inner" role="listbox">
+										<div class="item active">
+											<img src="img/product_2a.jpg">
+										</div>
+										<div class="item">
+											<img src="img/product_2b.jpg">
+										</div>
+										<div class="item">
+											<img src="img/product_2c.jpg">
+										</div>
+										<div class="item">
+											<img src="img/product_2d.jpg">
+										</div>
+									</div>
+								</div>
+								<div class="vertical-icon">
+									<a href="#"><i class="fa fa-heart-o"></i></a>
+									<a href="#"><i class="fa fa-shopping-cart"></i></a>
+									<a href="shop-detail.html"><i class="fa fa-search-plus"></i></a>
+								</div>
+							</div>
+							<div class="price">
+								<strong>4.400.000₫</strong>	
+							</div>
+							<div class="tag tag-right sale"></div>
+							<div class="tag-name-right">Sale!</div>
+						</div>
+					</div>
+					<div class="col-item col-xs-6 col-md-3">
+						<div class="item-container">
+							<div class="name">
+								<h3>Hansen Ro</h3>
+								<p>by Fritz Hansen</p>	
+							</div>
+							<div class="photo">
+								<div id="product3" class="carousel slide" data-ride="carousel" data-interval="false">
+									<ol class="carousel-indicators">
+										<li data-target="#product3" data-slide-to="0" class="active"></li>
+										<li data-target="#product3" data-slide-to="1"></li>
+										<li data-target="#product3" data-slide-to="2"></li>
+									</ol>
+
+									<div class="carousel-inner" role="listbox">
+										<div class="item active">
+											<img src="img/product_4a.jpg">
+										</div>
+										<div class="item">
+											<img src="img/product_4b.jpg">
+										</div>
+										<div class="item">
+											<img src="img/product_4c.jpg">
+										</div>
+									</div>
+								</div>
+								<div class="vertical-icon">
+									<a href="#"><i class="fa fa-heart-o"></i></a>
+									<a href="#"><i class="fa fa-shopping-cart"></i></a>
+									<a href="shop-detail.html"><i class="fa fa-search-plus"></i></a>
+								</div>
+							</div>
+							<div class="price">
+								<strong>6.600.000₫</strong>	
+							</div>
+						</div>
+					</div>
+					<div class="col-item col-xs-6 col-md-3">
+						<div class="item-container">
+							<div class="name">
+								<h3>Cuba Chair</h3>	
+								<p>by Morten Goettler</p>
+							</div>
+							<div class="photo">
+								<div id="product4" class="carousel slide" data-ride="carousel" data-interval="false">
+									<ol class="carousel-indicators">
+										<li data-target="#product4" data-slide-to="0" class="active"></li>
+										<li data-target="#product4" data-slide-to="1"></li>
+										<li data-target="#product4" data-slide-to="2"></li>
+										<li data-target="#product4" data-slide-to="3"></li>
+									</ol>
+
+									<div class="carousel-inner" role="listbox">
+										<div class="item active">
+											<img src="img/product_6a.jpg">
+										</div>
+										<div class="item">
+											<img src="img/product_6b.jpg">
+										</div>
+										<div class="item">
+											<img src="img/product_6c.jpg">
+										</div>
+										<div class="item">
+											<img src="img/product_6d.jpg">
+										</div>
+									</div>
+								</div>
+								<div class="vertical-icon">
+									<a href="#"><i class="fa fa-heart-o"></i></a>
+									<a href="#"><i class="fa fa-shopping-cart"></i></a>
+									<a href="shop-detail.html"><i class="fa fa-search-plus"></i></a>
+								</div>
+							</div>
+							<div class="price">
+								<strong>1.900.000₫</strong>	
+							</div>
+							<div class="tag tag-left new"></div>
+							<div class="tag-name-left">New!</div>
+						</div>
+					</div>
+				</div>
+				<div class="tab-pane fade" id="table">
+					<div class="col-item col-xs-6 col-md-3">
+						<div class="item-container">
+							<div class="name">
+								<h3>Rio</h3>	
+								<p>by Charlotte Perriand</p>
+							</div>
+							<div class="photo">
+								<div id="rio" class="carousel slide" data-ride="carousel" data-interval="false">
+									<ol class="carousel-indicators">
+										<li data-target="#rio" data-slide-to="0" class="active"></li>
+										<li data-target="#rio" data-slide-to="1"></li>
+										<li data-target="#rio" data-slide-to="2"></li>
+										<li data-target="#rio" data-slide-to="3"></li>
+									</ol>
+
+									<div class="carousel-inner" role="listbox">
+										<div class="item active">
+											<img src="img/rio_1.jpg">
+										</div>
+										<div class="item">
+											<img src="img/rio_2.jpg">
+										</div>
+										<div class="item">
+											<img src="img/rio_3.jpg">
+										</div>
+										<div class="item">
+											<img src="img/rio_4.jpg">
+										</div>
+									</div>
+								</div>
+								<div class="vertical-icon">
+									<a href="#"><i class="fa fa-heart-o"></i></a>
+									<a href="#"><i class="fa fa-shopping-cart"></i></a>
+									<a href="shop-detail.html"><i class="fa fa-search-plus"></i></a>
+								</div>
+							</div>
+							<div class="price">
+								<strong>4.900.000₫</strong>	
+							</div>
+						</div>
+					</div>
+					<div class="col-item col-xs-6 col-md-3">
+						<div class="item-container">
+							<div class="name">
+								<h3>Rotor</h3>	
+								<p>by Piero Lissoni</p>
+							</div>
+							<div class="photo">
+								<div id="rotor" class="carousel slide" data-ride="carousel" data-interval="false">
+									<ol class="carousel-indicators">
+										<li data-target="#rotor" data-slide-to="0" class="active"></li>
+										<li data-target="#rotor" data-slide-to="1"></li>
+									</ol>
+
+									<div class="carousel-inner" role="listbox">
+										<div class="item active">
+											<img src="img/rotor_1.jpg">
+										</div>
+										<div class="item">
+											<img src="img/rotor_2.jpg">
+										</div>
+									</div>
+								</div>
+								<div class="vertical-icon">
+									<a href="#"><i class="fa fa-heart-o"></i></a>
+									<a href="#"><i class="fa fa-shopping-cart"></i></a>
+									<a href="shop-detail.html"><i class="fa fa-search-plus"></i></a>
+								</div>
+							</div>
+							<div class="price">
+								<strong>5.600.000₫</strong>	
+							</div>
+							<div class="tag tag-left new"></div>
+							<div class="tag-name-left">New!</div>
+						</div>
+					</div>
+					<div class="col-item col-xs-6 col-md-3">
+						<div class="item-container">
+							<div class="name">
+								<h3>La Rotonda</h3>	
+								<p>by Mario Bellini</p>
+							</div>
+							<div class="photo">
+								<div id="rotonda" class="carousel slide" data-ride="carousel" data-interval="false">
+									<ol class="carousel-indicators">
+										<li data-target="#rotonda" data-slide-to="0" class="active"></li>
+										<li data-target="#rotonda" data-slide-to="1"></li>
+									</ol>
+
+									<div class="carousel-inner" role="listbox">
+										<div class="item active">
+											<img src="img/rotonda_1.jpg">
+										</div>
+										<div class="item">
+											<img src="img/rotonda_2.jpg">
+										</div>
+									</div>
+								</div>
+								<div class="vertical-icon">
+									<a href="#"><i class="fa fa-heart-o"></i></a>
+									<a href="#"><i class="fa fa-shopping-cart"></i></a>
+									<a href="shop-detail.html"><i class="fa fa-search-plus"></i></a>
+								</div>
+							</div>
+							<div class="price">
+								<strong>3.200.000₫</strong>	
+							</div>
+							<div class="tag tag-right sale"></div>
+							<div class="tag-name-right">Sale!</div>
+						</div>
+					</div>
+					<div class="col-item col-xs-6 col-md-3">
+						<div class="item-container">
+							<div class="name">
+								<h3>Ventaglio</h3>	
+								<p>by Charlotte Perriand</p>
+							</div>
+							<div class="photo">
+								<div id="ventaglio" class="carousel slide" data-ride="carousel" data-interval="false">
+									<ol class="carousel-indicators">
+										<li data-target="#ventaglio" data-slide-to="0" class="active"></li>
+										<li data-target="#ventaglio" data-slide-to="1"></li>
+										<li data-target="#ventaglio" data-slide-to="2"></li>
+									</ol>
+
+									<div class="carousel-inner" role="listbox">
+										<div class="item active">
+											<img src="img/ventaglio_1.jpg">
+										</div>
+										<div class="item">
+											<img src="img/ventaglio_2.jpg">
+										</div>
+										<div class="item">
+											<img src="img/ventaglio_3.jpg">
+										</div>
+									</div>
+								</div>
+								<div class="vertical-icon">
+									<a href="#"><i class="fa fa-heart-o"></i></a>
+									<a href="#"><i class="fa fa-shopping-cart"></i></a>
+									<a href="shop-detail.html"><i class="fa fa-search-plus"></i></a>
+								</div>
+							</div>
+							<div class="price">
+								<strong>7.700.000₫</strong>	
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="tab-pane fade" id="cabinet">
+					<div class="col-item col-xs-6 col-md-3">
+						<div class="item-container">
+							<div class="name">
+								<h3>Casiers Standard</h3>	
+								<p>by Le Corbusier</p>
+							</div>
+							<div class="photo">
+								<div id="casiers" class="carousel slide" data-ride="carousel" data-interval="false">
+									<ol class="carousel-indicators">
+										<li data-target="#casiers" data-slide-to="0" class="active"></li>
+										<li data-target="#casiers" data-slide-to="1"></li>
+									</ol>
+
+									<div class="carousel-inner" role="listbox">
+										<div class="item active">
+											<img src="img/casiers_1.jpg">
+										</div>
+										<div class="item">
+											<img src="img/casiers_2.jpg">
+										</div>
+									</div>
+								</div>
+								<div class="vertical-icon">
+									<a href="#"><i class="fa fa-heart-o"></i></a>
+									<a href="#"><i class="fa fa-shopping-cart"></i></a>
+									<a href="shop-detail.html"><i class="fa fa-search-plus"></i></a>
+								</div>
+							</div>
+							<div class="price">
+								<strong>6.600.000₫</strong>	
+							</div>
+						</div>
+					</div>
+					<div class="col-item col-xs-6 col-md-3">
+						<div class="item-container">
+							<div class="name">
+								<h3>LC16</h3>	
+								<p>by Le Corbusier</p>
+							</div>
+							<div class="photo">
+								<div id="lc16" class="carousel slide" data-ride="carousel" data-interval="false">
+									<ol class="carousel-indicators">
+										<li data-target="#lc16" data-slide-to="0" class="active"></li>
+										<li data-target="#lc16" data-slide-to="1"></li>
+									</ol>
+
+									<div class="carousel-inner" role="listbox">
+										<div class="item active">
+											<img src="img/lc16_1.jpg">
+										</div>
+										<div class="item">
+											<img src="img/lc16_2.jpg">
+										</div>
+									</div>
+								</div>
+								<div class="vertical-icon">
+									<a href="#"><i class="fa fa-heart-o"></i></a>
+									<a href="#"><i class="fa fa-shopping-cart"></i></a>
+									<a href="shop-detail.html"><i class="fa fa-search-plus"></i></a>
+								</div>
+							</div>
+							<div class="price">
+								<strong>4.800.000₫</strong>	
+							</div>
+							<div class="tag tag-left new"></div>
+							<div class="tag-name-left">New!</div>
+						</div>
+					</div>
+					<div class="col-item col-xs-6 col-md-3">
+						<div class="item-container">
+							<div class="name">
+								<h3>Nuvola Rossa</h3>	
+								<p>by Vico Magistretti</p>
+							</div>
+							<div class="photo">
+								<div id="rossa" class="carousel slide" data-ride="carousel" data-interval="false">
+									<ol class="carousel-indicators">
+										<li data-target="#rossa" data-slide-to="0" class="active"></li>
+										<li data-target="#rossa" data-slide-to="1"></li>
+									</ol>
+
+									<div class="carousel-inner" role="listbox">
+										<div class="item active">
+											<img src="img/rossa_1.jpg">
+										</div>
+										<div class="item">
+											<img src="img/rossa_2.jpg">
+										</div>
+									</div>
+								</div>
+								<div class="vertical-icon">
+									<a href="#"><i class="fa fa-heart-o"></i></a>
+									<a href="#"><i class="fa fa-shopping-cart"></i></a>
+									<a href="shop-detail.html"><i class="fa fa-search-plus"></i></a>
+								</div>
+							</div>
+							<div class="price">
+								<strong>3.900.000₫</strong>	
+							</div>
+						</div>
+					</div>
+					<div class="col-item col-xs-6 col-md-3">
+						<div class="item-container">
+							<div class="name">
+								<h3>Riflesso</h3>	
+								<p>by Charlotte Perriand</p>
+							</div>
+							<div class="photo">
+								<div id="riflesso" class="carousel slide" data-ride="carousel" data-interval="false">
+									<ol class="carousel-indicators">
+										<li data-target="#riflesso" data-slide-to="0" class="active"></li>
+										<li data-target="#riflesso" data-slide-to="1"></li>
+									</ol>
+
+									<div class="carousel-inner" role="listbox">
+										<div class="item active">
+											<img src="img/riflesso_1.jpg">
+										</div>
+										<div class="item">
+											<img src="img/riflesso_2.jpg">
+										</div>
+									</div>
+								</div>
+								<div class="vertical-icon">
+									<a href="#"><i class="fa fa-heart-o"></i></a>
+									<a href="#"><i class="fa fa-shopping-cart"></i></a>
+									<a href="shop-detail.html"><i class="fa fa-search-plus"></i></a>
+								</div>
+							</div>
+							<div class="price">
+								<strong>4.400.000₫</strong>	
+							</div>
+							<div class="tag tag-right sale"></div>
+							<div class="tag-name-right">Sale!</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="link-container">
+			<a class="link-to" href="shop.html">Xem toàn bộ sản phẩm <i class="fa fa-angle-right"></i></a>
+		</div>
+	</div>
+<!-- Thương hiệu owl carousel -->
+	<div class="container-fluid brand-slide">
+		<div class="container">
+			<div class="brand-owl owl-carousel">
+				<div class="brand-item">
+					<img src="img/logo_1.png" class="img-responsive">
+				</div>
+				<div class="brand-item">
+					<img src="img/logo_2.png" class="img-responsive">
+				</div>
+				<div class="brand-item">
+					<img src="img/logo_3.png" class="img-responsive">
+				</div>
+				<div class="brand-item">
+					<img src="img/logo_4.png" class="img-responsive">
+				</div>
+				<div class="brand-item">
+					<img src="img/logo_5.png" class="img-responsive">
+				</div>
+				<div class="brand-item">
+					<img src="img/logo_6.png" class="img-responsive">
+				</div>
+				<div class="brand-item">
+					<img src="img/logo_7.png" class="img-responsive">
+				</div>
+				<div class="brand-item">
+					<img src="img/logo_8.png" class="img-responsive">
+				</div>
+				<div class="brand-item">
+					<img src="img/logo_9.png" class="img-responsive">
+				</div>
+				<div class="brand-item">
+					<img src="img/logo_10.png" class="img-responsive">
+				</div>
+				<div class="brand-item">
+					<img src="img/logo_11.png" class="img-responsive">
+				</div>
+				<div class="brand-item">
+					<img src="img/logo_12.png" class="img-responsive">
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- Bộ sưu tập nổi bật -->
+	<div class="container collection">
+		<div class="section-title">
+			<h2>Bộ sưu tập mới</h2>
+			<p>Ikea VIKTIGT Collection 2017</p>
+		</div>
+		<div class="col-xs-6 col-item">
+			<div class="img-container">
+				<div class="img-info">
+					<h3>VIKTIGT Long Chair</h3>
+					<strong>2.800.000₫</strong>
+				</div>
+				<span class="top-left"></span>
+				<span class="right-bottom"></span>
+				<img src="img/viktigt_1.jpg" class="img-responsive">
+			</div>
+		</div>
+		<div class="col-xs-6 col-md-3 col-item right-first">
+			<div class="img-container">
+				<div class="img-info">
+					<h3>VIKTIGT Lamp</h3>
+					<strong>700.000₫</strong>
+				</div>
+				<span class="top-left"></span>
+				<span class="right-bottom"></span>
+				<img src="img/viktigt_2.jpg" class="img-responsive">
+			</div>
+		</div>
+		<div class="col-xs-6 col-md-3 col-item right-first">
+			<div class="img-container">
+				<div class="img-info">
+					<h3>VIKTIGT Chair</h3>
+					<strong>1.000.000₫</strong>
+				</div>
+				<span class="top-left"></span>
+				<span class="right-bottom"></span>
+				<img src="img/viktigt_3.png" class="img-responsive">
+			</div>
+		</div>
+		<div class="col-xs-6 col-md-3 col-item">
+			<div class="img-container">
+				<div class="img-info">
+					<h3>VIKTIGT Basket</h3>
+					<strong>360.000₫</strong>
+				</div>
+				<span class="top-left"></span>
+				<span class="right-bottom"></span>
+				<img src="img/viktigt_4.jpg" class="img-responsive">
+			</div>
+		</div>
+		<div class="col-xs-6 col-md-3 col-item">
+			<div class="img-container">
+				<div class="img-info">
+					<h3>VIKTIGT Sofa</h3>
+					<strong>3.200.000₫</strong>
+				</div>
+				<span class="top-left"></span>
+				<span class="right-bottom"></span>
+				<img src="img/viktigt_5.jpg" class="img-responsive">
+			</div>
+		</div>
+		<div class="col-xs-6 col-item right-last">
+			<div class="img-container">
+				<div class="img-info">
+					<h3>VIKTIGT Plates</h3>
+					<strong>1.300.000₫</strong>
+				</div>
+				<span class="top-left"></span>
+				<span class="right-bottom"></span>
+				<img src="img/viktigt_6.jpg" class="img-responsive">
+			</div>
+		</div>
+		<div class="link-container">
+			<a class="link-to" href="shop.html">Xem trọn bộ sưu tập <i class="fa fa-angle-right"></i></a>
+		</div>
+	</div>
+
+<!-- Nhận xét của khách hàng -->
+	<div class="container-fluid">
+		<div class="row">
+		<div id="feedback" class="carousel slide" data-ride="carousel" data-interval="false">
+			<ol class="carousel-indicators">
+				<li data-target="#feedback" data-slide-to="0"></li>
+				<li data-target="#feedback" data-slide-to="1" class="active"></li>
+				<li data-target="#feedback" data-slide-to="2"></li>
+			</ol>
+
+			<div class="carousel-inner" role="listbox">
+				<div class="item">
+					<i class="fa fa-quote-left"></i>					
+					<p>Min là địa chỉ yêu thích của mình mỗi khi cần mua đồ nội thất. Sản phẩm nào cũng đẹp, cá tính. Nhân viên lại rất thân thiện. Nhà mình góc nào cũng thấy đồ mua từ Min.</p>
+					<i class="fa fa-quote-right"></i>
+					<strong>-- <span>Tony Stark</span>, Giám đốc kỹ thuật</strong>
+				</div>
+				<div class="item active">
+					<i class="fa fa-quote-left"></i>
+					<p>Một không gian đủ sáng tạo dành cho ai yêu sự độc đáo, đủ ấm áp thân quen với những người đôi chút hoài cổ, đủ phù hợp cho những người tìm kiếm “trang sức” cho ngôi nhà, cửa hàng hay không gian của mình. Yêu Min lắm!</p>
+					<i class="fa fa-quote-right"></i>
+					<strong>-- <span>Lê Cát Trọng Lý</span>, Nhạc sĩ / Ca sĩ</strong>
+				</div>
+				<div class="item">
+					<i class="fa fa-quote-left"></i>					
+					<p>Căn hộ chung cư tôi đang ở do Min thiết kế và thi công nội thất. Thật sự là hoàn hảo. Nội thất đơn giản, nhẹ nhàng và ấm áp, tôi luôn thấy thư thái bình yên mỗi khi trở về tổ ấm của mình.</p>
+					<i class="fa fa-quote-right"></i>
+					<strong>-- <span>Haruki Murakami</span>, Nhà văn</strong>
+				</div>
+			</div>
+		</div>
+		</div>
+	</div>
+<!-- Dự án gần đây -->
+	<div class="container-fluid new-project">
+		<div class="section-title">
+			<h2>Thiết kế & Thi công</h2>
+			<p>Các dự án mới thực hiện</p>
+		</div>
+		<div class="project-container single">
+			<div class="project-title">
+				<h3>Homestay Lacaito</h3>
+				<p>Số 2 ngõ Dã Tượng, phố Dã Tượng, Hà Nội</p>
+			</div>
+		</div>
+		<div class="project-container double">
+			<div class="project-title">
+				<h3>Văn phòng BnW</h3>
+				<p>Số 196 Vương Thừa Vũ, Đống Đa, Hà Nội</p>
+			</div>
+		</div>
+		<div class="project-container double">
+			<div class="project-title">
+				<h3>Fika Cafe</h3>
+				<p>Số 50 Lò Đúc, Hai Bà Trưng, Hà Nội</p>
+			</div>
+		</div>
+		<div class="project-container single">
+			<div class="project-title">
+				<h3>Gardenista Cafe</h3>
+				<p>Số 50 Vạn Bảo, Ba Đình, Hà Nội</p>
+			</div>
+		</div>
+		<div class="link-container">
+			<a class="link-to" href="blog.html">Xem tất cả dự án <i class="fa fa-angle-right"></i></a>
+		</div>
+	</div>
+<!-- Phong cách -->
+	<div class="section-title style">
+		<h2>Phong cách</h2>
+		<p>Các phong cách thiết kế tại MIN</p>
+	</div>
+	<div class="container-fluid project-style">
+		<div class="row">
+			<div class="style-title">
+				<p>Bạn chọn phong cách nào cho</p>
+				<div><a href="#"><i class="fa fa-home"></i> Ngôi Nhà</a> | <a href="#"><i class="fa fa-coffee"></i> Cửa Hàng</a></div>
+				<p class="separator">hay</p>
+				<div><a href="#"><i class="fa fa-building-o"></i> Không gian Làm việc</a></div>
+				<p>sắp tới của bạn?</p>
+			</div>
+			<ul class="nav custom-nav nav-tabs container">
+				<li><a href="#scandi" data-toggle="tab">Tối giản hiện đại</a></li>
+				<li class="active "><a href="#modern" data-toggle="tab">Scandinavian</a></li>
+				<li><a href="#wabi" data-toggle="tab">Wabi Sabi</a></li>
+			</ul>
+			<div class="link-container">
+				<a class="link-to" href="#">Xem dự án liên quan <i class="fa fa-angle-right"></i></a>
+			</div>
+			<div class="tab-content custom-tab">
+				<div class="tab-pane fade" id="scandi">
+				</div>
+				<div class="tab-pane active fade in" id="modern">
+				</div>
+				<div class="tab-pane fade" id="wabi">
+				</div>
+			</div>	
+		</div>
+	</div>
+<!-- Blog -->
+	<div class="container blog-section">
+		<div class="section-title">
+			<h2>Blog</h2>
+			<p>Bài viết mới nhất</p>
+		</div>
+		<div class="row">
+			<div class="blog-container" id="blog1">
+				<div class="blog-thumbnail">
+					<a href="blog-detail.html"><span class="cross"></span></a>
+				</div>
+				<div class="blog-content">
+					<h3>Nội thất cổ điển cho không gian nhỏ</h3>
+					<p>Nói đến thiết kế cổ điển chúng ta thường hình dung ra những mẫu thiết kế chắc chắn và bề thế. Tuy nhiên để phù hợp với xu hướng hiện đại, các nhà thiết kế nội thất đã sáng tạo ra những mẫu thiết kế vừa mang tính chất sang trọng của cổ điển, vừa nhỏ gọn và tiết kiệm không gian.</p>
+					<a class="link-to" href="blog-detail.html">Đọc thêm <i class="fa fa-angle-right"></i></a>
+				</div>
+			</div>
+			<div class="blog-container" id="blog2">
+				<div class="blog-thumbnail">
+					<a href="blog-detail.html"><span class="cross"></span></a>
+				</div>
+				<div class="blog-content">
+					<h3>Nội thất đẹp cho căn hộ dưới 40m²</h3>
+					<p>Dạng căn hộ dưới 40m² ngày càng phổ biến trên thế giới. Bất chấp diện tích có hạn, chỉ cần sáng tạo và bài trí hợp lý, chúng vẫn là những không gian sống đáng mơ ước. Cùng tham khảo 4 mẫu căn hộ nhỏ xinh dưới đây và học tập cách bài trí thông minh của những căn hộ này nhé.</p>
+					<a class="link-to" href="blog-detail.html">Đọc thêm <i class="fa fa-angle-right"></i></a>
+				</div>
+			</div>
+		</div>
+		<div class="link-container">
+			<a class="link-to" href="blog.html">Xem tất cả bài viết <i class="fa fa-angle-right"></i></a>
+		</div>
+	</div>
+<!-- Subcribe -->
+	<div class="container-fluid subscribe">
+		<h1>Đăng ký nhận tin</h1>
+		<form>
+			<input type="text" name="email" placeholder="Địa chỉ Email của bạn">
+			<button type="submit"><i class="fa fa-envelope-o"></i></button>
+		</form>
+	</div>
+	<a href="#"><i class="fa fa-angle-up back-top"></i></a>
+	
+	<footer>
+		<div class="container">
+			<div class="row footer-top">
+				<div class="col-xs-6 col-md-3 footer-item">
+					<h4>Thông tin liên hệ</h4>
+					<ul>
+						<li><i class="fa fa-map-marker"></i>Đ/c: 40 Giảng Võ, Đống Đa, Hà Nội</li>
+						<li><i class="fa fa-mobile"></i>Hotline: 0986090925</li>
+						<li><i class="fa fa-envelope-o"></i>Email: hieu.do212@gmail.com</li>
+					</ul>
+				</div>
+				<div class="col-xs-6 col-md-3 footer-item">
+					<h4>Thời gian mở cửa</h4>
+					<ul>
+						<li>Thứ 2 - thứ 6: 8AM - 10PM</li>
+						<li>Thứ 7: 9AM - 8PM</li>
+						<li>Nghỉ Chủ Nhật và các ngày Lễ Tết</li>
+					</ul>
+				</div>
+				<div class="col-xs-6 col-md-3 footer-item">
+					<h4>Hỗ trợ khách hàng</h4>
+					<ul>
+						<li><a href="contact.html">Liên hệ & Góp ý</a></li>
+						<li><a href="#">Hướng dẫn mua hàng online</a></li>
+						<li><a href="#">Câu hỏi thường gặp</a></li>
+						<li><a href="#">Chính sách bảo mật</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-6 col-md-3 footer-item">
+					<h4>Chính sách mua hàng</h4>
+					<ul>
+						<li><a href="#">Chính sách bảo hành, đổi trả</a></li>
+						<li><a href="#">Chính sách hội viên</a></li>
+						<li><a href="#">Giao hàng và lắp đặt</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="row footer-bot">
+				<a href="#" title="Kết nối qua Facebook"><i class="fa fa-facebook-official"></i></a>
+				<a href="#" title="Kết nối qua Google+"><i class="fa fa-google-plus-official"></i></a>
+				<a href="#" title="Kết nối qua Pinterest"><i class="fa fa-pinterest"></i></a>
+				<a href="#" title="Kết nối qua Instagram"><i class="fa fa-instagram"></i></a>
+			</div>
+		</div>
+		<div class="container-fluid copyright">
+			<div class="row">
+				<p>Copyright 2017 <i class="fa fa-copyright"></i> Designed by Hieudo</p>
+			</div>
+		</div>
+	</footer>
+	<script type="text/javascript" src="js/jquery-3.1.1.js" ></script>
+	<script src="owlcarousel/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="plugins/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/script.js" ></script>
+</body>
+</html>

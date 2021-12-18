@@ -1,0 +1,74 @@
+.landing {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+    url("../images/index-page/ngot_mobile.jpg");
+    background-size: cover;
+    background-position: center;
+
+    article {
+        margin-top: 5rem;
+    }
+
+
+    &__button {
+        max-width: 70vw;
+        margin: auto;
+        //margin-top: 6vh
+    }
+
+    @media screen and (min-width: 768px) {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+            url("../images/index-page/ngot_tablet.jpg");
+            background-size: cover;
+            background-position: center;
+    }
+    
+    @media screen and (min-width: 992px) {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+            url("../images/index-page/ngot_lap.jpg");
+            background-size: cover;
+            background-position: center;
+    }
+
+    @media screen and (min-height: 640px) {
+        article {
+            margin-top: 140px;
+        }
+
+        &__button {
+            margin-top: 50px;
+        }
+    }
+
+    @media screen and (min-height: 667px) {
+        article {
+            margin-top: 150px;
+        } 
+    }
+
+    @media screen and (min-height: 768px) {
+        article {
+            margin-top: 180px;
+        }
+    }
+
+    @media screen and (min-height: 812px) {
+        article {
+            margin-top: 200px;
+        }
+    }
+
+    @media screen and (min-height: 900px) {
+        article {
+            margin-top: 230px;
+        }
+    }
+
+    @media screen and (min-height: 1024px) {
+        article {
+            margin-top: 380px;
+        }
+    }
+}
+

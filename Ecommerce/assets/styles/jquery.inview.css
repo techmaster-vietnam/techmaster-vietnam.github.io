@@ -1,0 +1,267 @@
+﻿/*===========================
+            DEFAULT
+    ============================*/
+/* banner 1 */
+.wrap-sec-first > p {
+    opacity: 0;
+    position: relative;
+}
+
+.wrap-sec-first > p:nth-of-type(1) {
+    left: -50px;
+}
+
+.wrap-sec-first > p:nth-of-type(2) {
+    right: -50px;
+}
+
+.wrap-sec-first > p > strong {
+    opacity: 0;
+    right: -50px;
+    position: relative;
+}
+
+.wrap-sec-first > p > span {
+}
+
+.wrap-sec-first > span {
+    opacity: 0;
+}
+
+.wrap-sec-first > span.in-view {
+}
+
+.wrap-sec-first > span::before {
+    left: -100%;
+    transition: all 4.5s ease;
+    -webkit-transition: all 4.5s ease;
+    -moz-transition: all 4.5s ease;
+    -o-transition: all 4.5s ease;
+}
+
+.wrap-sec-first > span::after {
+    right: -100%;
+    left: auto;
+    transition: all 4.5s ease;
+    -webkit-transition: all 4.5s ease;
+    -moz-transition: all 4.5s ease;
+    -o-transition: all 4.5s ease;
+}
+
+.wrap-sec-first > span.in-view::before {
+    left: 0%;
+}
+
+.wrap-sec-first > span.in-view::after {
+    right: 0%;
+}
+
+.read-more a {
+    opacity: 0;
+}
+.wrap-sec-first .first-cir-item {
+    opacity:0;
+}
+.wrap-sec-first .first-cir-item .item {
+}
+.wrap-sec-first .first-cir-item .item.in-view {
+    animation: zoomIn 3s linear;
+    -webkit-animation: zoomIn 3s linear;
+    -moz-animation: zoomIn 3s linear;
+    -o-animation: zoomIn 3s linear;
+}
+@-webkit-keyframes zoomIn {
+    from {
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes zoomIn {
+    from {
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+.section_df .line {
+    opacity:0;
+}
+.section_df .line.in-view {
+    opacity:1;
+}
+.section_df .line.in-view img{
+    -webkit-animation: flower 3s ease-out;
+    animation: flower 3s ease-out;
+    transition:all 0.5s ease;
+}
+.line::after,.line::before {
+    width:0;
+    transition: all 6.5s ease;
+    -webkit-transition: all 6.5s ease;
+    -moz-transition: all 6.5s ease;
+    -o-transition: all 6.5s ease;
+}
+.section_df .line.in-view::before {
+    width:1000%;
+}
+.section_df .line.in-view::after {
+    width:1000%;
+}
+
+@-webkit-keyframes flower {
+    from {
+        -webkit-transform: scale(0) rotate(0deg);
+        -moz-transform: scale(0) rotate(0deg);
+        -ms-transform: scale(0) rotate(0deg);
+        transform: scale(0) rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: scale(1) rotate(360deg);
+        -moz-transform: scale(1) rotate(360deg);
+        -ms-transform: scale(1) rotate(360deg);
+        transform: scale(1) rotate(360deg);
+    }
+}
+@keyframes flower {
+    from {
+        -webkit-transform: scale(0) rotate(0deg);
+        -moz-transform: scale(0) rotate(0deg);
+        -ms-transform: scale(0) rotate(0deg);
+        transform: scale(0) rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: scale(1) rotate(360deg);
+        -moz-transform: scale(1) rotate(360deg);
+        -ms-transform: scale(1) rotate(360deg);
+        transform: scale(1) rotate(360deg);
+    }
+}
+
+
+/* banner 2 */
+.backgroundclip .wrap-sec-second > h2{
+    background: url(../images/footer-bg.png) no-repeat bottom center;
+}
+.backgroundclip .wrap-sec-second > h2 {
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-moz-background-clip: text;
+	-moz-text-fill-color: transparent;
+}
+.wrap-sec-second > h2 {
+    opacity:0;
+    right:-50px;
+    position:relative;
+}
+.wrap-sec-second > span {
+    opacity:0;
+}
+.wrap-sec-second > span::before{
+    width:0%;
+    transition: all 6.5s ease-in-out;
+    -webkit-transition: all 6.5s ease-in-out;
+    -moz-transition: all 6.5s ease-in-out;
+    -o-transition: all 6.5s ease-in-out;
+}
+.wrap-sec-second > span.in-view::before{
+    width:100%;
+}
+.wrap-sec-second .second-item {
+    opacity:0;
+}
+/* banner 3 */
+.wrap-sec-third .third-wrap {
+    right:100px;
+    opacity:0;
+    position:relative;
+}
+
+/* banner 4 */
+.wrap-sec-fourth > h2{
+    left:-50px;
+    opacity:0;
+    position:relative;
+}
+.wrap-sec-fourth > p{
+    right:-50px;
+    opacity:0;
+    position:relative;
+}
+.wrap-sec-fourth > ul {
+    opacity:0;
+}
+
+@media (max-width: 992px) {
+    .wrap-sec-first > p:nth-of-type(1) {
+        left: 0 !important;
+        opacity: 1 !important;
+    }
+
+    .wrap-sec-first > p > strong {
+        right: 0 !important;
+        opacity: 1 !important;
+    }
+
+    .wrap-sec-first > p:nth-of-type(2) {
+        left: 0 !important;
+        opacity: 1 !important;
+    }
+
+    .wrap-sec-first .first-cir-item {
+        opacity: 1 !important;
+    }
+    .wrap-sec-first > span {
+        opacity:1 !important;
+    }
+    .wrap-sec-first > span::before {
+        left:0 !important;
+    }
+    .wrap-sec-first > span::after {
+        right:0 !important;
+    }
+
+    .read-more a {
+        opacity: 1 !important;
+    }
+
+    .wrap-sec-second > h2 {
+        opacity: 1 !important;
+        right: 0 !important;
+    }
+
+    .wrap-sec-second > span {
+        opacity: 1 !important;
+    }
+
+    .wrap-sec-second > span::before {
+        width:1000% !important;
+        left: 50px !important;
+    }
+    .wrap-sec-second .second-item {
+        opacity:1 !important;
+    }
+    .wrap-sec-third .third-wrap {
+        opacity:1 !important;
+        right:0 !important;
+    }
+    .wrap-sec-fourth > h2 {
+        left: 0 !important;
+        opacity: 1 !important;
+    }
+    .wrap-sec-fourth > p {
+        right: 0 !important;
+        opacity: 1 !important;
+    }
+    .wrap-sec-fourth > ul {
+        opacity:1 !important;
+    }
+}

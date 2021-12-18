@@ -1,0 +1,838 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- home css -->
+    <link rel="stylesheet" href="../css/home.css">
+
+    <!-- chitiet css -->
+    <link rel="stylesheet" href="../css/chitiet.css">
+
+    <!-- owl caruosel -->
+    <link rel="stylesheet" href="../owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="../owlcarousel/assets/owl.theme.default.min.css">
+
+    <title>The Men Shop</title>
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="../favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+    <link rel="manifest" href="../favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+        <div class="container headerfirt">
+            <!-- <a href="#" class="nabar-branch">
+                <i class="fa fa-street-view"></i>
+
+            </a> -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link signup" href="#"
+                            onclick="document.getElementById('id01').style.display='block'">Đăng ký <span
+                                class="sr-only">(current)</span></a>
+
+                        <div id="id01" class="modal">
+
+
+                            <form class="modal-content animate" action="/action_page.php">
+                                <div class="imgcontainer">
+                                    <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                                        title="Close Modal">&times;</span>
+
+                                </div>
+
+                                <div class="container">
+                                    <h1 class="text-center">sign up</h1>
+                                    <div class="form-group">
+                                        <label for="email">Email address</label>
+                                        <input type="email" class="form-control" id="email" placeholder="enter email">
+                                        <p class="emailError"></p>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="password">Password</label>
+                                        <input type="password" class="form-control" id="password"
+                                            placeholder="Password">
+                                        <p class="passwordError"></p>
+                                    </div>
+
+                                    <div class="form-check">
+
+                                        <input type="checkbox" class="form-check-input" id="rememberMe">
+                                        <label for="rememberMe" class="form-check-label">Check me out</label>
+                                    </div>
+
+                                    <button type="submit" class="btn brn-success btn-block my-3 signup_3">Sign
+                                        up</button>
+
+                                </div>
+
+                                <div class="container" style="background-color:#f1f1f1">
+                                    <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                                        class="cancelbtn">Cancel</button>
+
+                                </div>
+                            </form>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/giohang.html">
+                            <i class="fa fa-shopping-cart"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item iconsearch">
+
+
+
+                        <a class="nav-link iconsearch_1" href="#">
+                            <i class="fa fa-search"></i>
+                        </a>
+
+                        <!-- <div id="id02" class="mod"> -->
+                        <form class="example inpsearch animate" action="/action_page.php"
+                            style="margin:auto;max-width:500px">
+                            <input type="text" placeholder="Search.." name="search2" class="">
+                            <!-- <button type="submit"><i class="fa fa-search"></i></button> -->
+                        </form>
+                        <!-- </div> -->
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+    <!-- end Navigation-->
+
+    <!-- logo -->
+
+    <div class="container-fluid">
+        <div class="card logo_1" style="width: 18rem;">
+            <a href="#">
+                <img src="../img/logo1.jpg" class="card-img-top logo_1_1" alt="...">
+            </a>
+
+        </div>
+    </div>
+
+    <!-- end logo -->
+
+
+    <!-- menu -->
+
+    <nav class="navbar navbar-expand-md navbar-light bg-light menu">
+
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav menu_1">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../html/index.html">Trang chủ <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/sales.html">Khuyến mại</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="../html/suits.html"
+                            role="button" aria-haspopup="true" aria-expanded="false">Vest nam</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="../html/suits.html">Vest công sở</a>
+                            <a class="dropdown-item" href="../html/suits.html">Vest cưới</a>
+                            <a class="dropdown-item" href="../html/suits.html">Sơ mi</a>
+                            <a class="dropdown-item" href="../html/suits.html">Quần âu</a>
+                            <a class="dropdown-item" href="../html/suits.html">Áo măng tô</a>
+                            <a class="dropdown-item" href="../html/suits.html">Áo dạ</a>
+
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="../html/giay.html"
+                            role="button" aria-haspopup="true" aria-expanded="false">Giày</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="../html/giay.html">Giày nâng chiều cao</a>
+                            <a class="dropdown-item" href="../html/giay.html">Giày dây mũi nhọn</a>
+                            <a class="dropdown-item" href="../html/giay.html">Giày dây mũi vuông</a>
+                            <a class="dropdown-item" href="../html/giay.html">Giày lười</a>
+
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="../html/phukien.html"
+                            role="button" aria-haspopup="true" aria-expanded="false">Phụ kiện</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="../html/phukien.html">Caravat</a>
+                            <a class="dropdown-item" href="../html/phukien.html">Nơ cổ</a>
+                            <a class="dropdown-item" href="../html/phukien.html">Túi xách</a>
+                            <a class="dropdown-item" href="../html/phukien.html">Ghim cài</a>
+                            <a class="dropdown-item" href="../html/phukien.html">Ví da</a>
+                            <a class="dropdown-item" href="../html/phukien.html">Dây lưng</a>
+
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/maydo.html">May đo</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- end menu -->
+
+    <!-- breadcrumb -->
+    <nav aria-label="breadcrumb">
+        <div class="container">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">The Men</a></li>
+                <li class="breadcrumb-item"><a href="#">Suits</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Vest công sở</li>
+            </ol>
+        </div>
+
+    </nav>
+    <!-- end breadcrumb -->
+
+
+    <!-- tiêu đề chi tiết sản phẩm -->
+    <div class="container padding">
+
+        <div class="row welcome text-center">
+            <div class="col">
+                <!-- Horizontal Rule -->
+                <hr>
+                <hr>
+            </div>
+            <div class="col-4">
+                <h5><span><i class="fa fa-star"></i></span> CHI TIẾT SẢN PHẨM <span><i class="fa fa-star"></i></span>
+                </h5>
+            </div>
+            <div class="col">
+                <!-- Horizontal Rule -->
+                <hr>
+                <hr>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="container padding">
+        <div class="row text-center padding">
+
+            <div class="col-md-3">
+
+                <div data-spy="scroll" data-target=".col-md-3" data-offset="0">
+
+                    <div class="card anyClass">
+
+                        <div class="card-body">
+                            <h5 class="card-title">Miêu Tả</h5>
+                            <p class="card-text">Trải nghiệm truyền thống Made in Italy tốt nhất với bộ đồ Siena đương
+                                đại tinh tế của chúng tôi được tạo ra với Công trình "Hàng đầu" độc quyền của chúng tôi.
+                                Quá trình sartorial đòi hỏi thêm các chi tiết sang trọng như khuy áo bằng lụa nguyên
+                                chất, nút sừng thật và khâu trên khuỷu tay. Ngoài ra, phần tay áo và phần ống quần còn
+                                dang dở để bạn có thể tùy chỉnh chúng theo số đo của mình. Mô-típ pindot năng động này
+                                tạo ra một mô hình quang học độc đáo, bắt mắt và tinh tế cùng một lúc..</p>
+
+                        </div>
+
+                        <div class="card-body">
+                            <h5 class="card-title">Chi Tiết và Thành Phần</h5>
+                            <p class="card-text">
+                                - Áo khoác: ngực đơn, hai nút, túi nắp, túi ngực
+                                - Cấu trúc "trên cùng": phết trên vai, khuy áo bằng lụa nguyên chất, nút sừng thật, phi
+                                tiêu khâu trước, đáy tay áo có lỗ thông hơi / nút / khuy áo giả, túi vé bên trong hai
+                                bên, khâu ở khuỷu tay
+                                - Quần: túi phẳng phía trước, túi tứ quý, hai túi vây lưng, chân dưới: 20 cm / 7,9 "
+                                - Sản xuất tại Ý.
+                                - 100% len.</p>
+
+                        </div>
+
+                    </div>
+
+
+
+
+
+                </div>
+
+
+
+            </div>
+
+
+
+            <div class="col-md-4">
+
+
+                <ul class="product-images">
+                    <li class="preview"><img src="../img/chiti6.png" alt="" class="d-block w-100 img-fluid"></li>
+
+                </ul>
+
+                <!-- <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../img/chitiet1_0.png" href="#anh1" class="d-block w-100 img-fluid" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../img/chitiet1_01.png" href="#anh2" class="d-block w-100 img-fluid" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../img/chitiet1_02.png" href="#anh3" class="d-block w-100 img-fluid" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../img/chitiet1_1.png" href="#anh3" class="d-block w-100 img-fluid" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../img/chitiet6.png" href="#anh3" class="d-block w-100 img-fluid" alt="...">
+                        </div>
+                    </div>
+                </div> -->
+
+            </div>
+
+
+            <div class="col-md-2">
+                <ul class="product-images">
+                    <li>
+                        <a href="javascript:void(0)"><img src="../img/chiti1.png" class="img-fluid"
+                                alt="Responsive image" id="anh1"></a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)"><img src="../img/chiti7.png" class="img-fluid"
+                                alt="Responsive image" id="anh2"></a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)"><img src="../img/chiti4.png" class="img-fluid anh3"
+                                alt="Responsive image" id="anh3"></a>
+                    </li>
+                    <!-- <li>
+                        <a href="javascript:void(0)"><img src="../img/chitiet1_1.png" class="img-fluid" alt="Responsive image"></a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)"><img src="../img/chitiet6.png" class="img-fluid" alt="Responsive image"></a>
+                    </li> -->
+                </ul>
+
+            </div>
+
+            <div class="col-md-3">
+
+                <p class="newarrival">Sản phẩm :</p>
+                <h3>VEST CÔNG SỞ</h3>
+                <P class="price">1.950.000 đ <span>(-20%)</span></P>
+                <hr class="saleprice">
+                <p class="price_1">1.560.000 đ</p>
+                <div class="row welcome text-center welcome_1">
+                    <div class="col-6">
+
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Chọn màu
+                            </button>
+                            <div class="dropdown-menu dropdown-menu_1" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Black</a>
+                                <a class="dropdown-item" href="#">Blue</a>
+                                <a class="dropdown-item" href="#">gray</a>
+                                <a class="dropdown-item" href="#">Red</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-6">
+
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Cọn size
+                            </button>
+                            <div class="dropdown-menu dropdown-menu_1" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">S</a>
+                                <a class="dropdown-item" href="#">M</a>
+                                <a class="dropdown-item" href="#">L</a>
+                                <a class="dropdown-item" href="#">XL</a>
+                                <a class="dropdown-item" href="#">XXL</a>
+                                <a class="dropdown-item" href="#">3XL</a>
+                                <a class="dropdown-item" href="#">4XL</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+
+
+                </div>
+
+                <a href="../html/giohang.html"><button type="button" class="btn btn-default cart">Mua Ngay</button></a>
+                <button type="button" class="btn btn-default cart_2">Thêm vào giỏ hàng</button>
+
+                <span class="spanicon">
+                    <a href="#" class="icon">
+                        <i class="fa fa-youtube-square"></i>
+
+
+
+                    </a>
+                    <a href="#" class="icon"><i class="fa fa-facebook-square"></i></a>
+                    <a href="#" class="icon"><i class="fa fa-twitter-square"></i></a>
+                    <a href="#" class="icon"><i class="fa fa-instagram"></i></a>
+                </span>
+
+            </div>
+            <div id="id03">
+                <p class="componentalert"><span><i class="fa fa-check"></i></span> Thêm vào giỏ hàng thành công
+                    <span style="color: rgb(247, 128, 128);" class="closecart"> <a><i class="fa fa-times"></i></a>
+                    </span>
+
+                </p>
+            </div>
+        </div>
+
+
+
+        <!-- sp nổi bật -->
+
+        <div class="container padding">
+            <div class="row welcome text-center">
+                <div class="col">
+                    <!-- Horizontal Rule -->
+                    <hr>
+                    <hr>
+                </div>
+                <div class="col-4">
+                    <h5><span><i class="fa fa-star"></i></span> SẢN PHẨM NỔI BẬT <span><i class="fa fa-star"></i></span>
+                    </h5>
+                </div>
+                <div class="col">
+                    <!-- Horizontal Rule -->
+                    <hr>
+                    <hr>
+                </div>
+            </div>
+
+
+
+            <!-- owl carosel -->
+
+            <div class="container owl_1">
+
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+
+                        <div class="card cardow cardimg">
+                            <img src="../img/vest1.png" class="card-img-top imgowl_1 img-fluid" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Vest Cưới 1 Khuy</h5>
+                                <div>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+                                <!-- Horizontal Rule -->
+                                <hr>
+                                <p class="card-text maugia"> 1.950.000 VNĐ</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="item">
+
+                        <div class="card cardimg">
+                            <img src="../img/vest2.png" class="card-img-top imgowl_1 img-fluid" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Vest Công Sở 1 Khuy</h5>
+                                <div>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+                                <!-- Horizontal Rule -->
+                                <hr>
+                                <p class="card-text maugia"> 1.950.000 VNĐ</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="item">
+
+
+                        <div class="card cardimg">
+                            <img src="../img/vest3.png" class="card-img-top imgowl_1 img-fluid" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Vest Cưới Viền Cổ</h5>
+                                <div>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+                                <!-- Horizontal Rule -->
+                                <hr>
+                                <p class="card-text maugia"> 1.950.000 VNĐ</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="item">
+
+                        <div class="card cardimg">
+                            <img src="../img/giayden1.png" class="card-img-top imgowl_1 img-fluid" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Giày Dây Mũi Nhọn</h5>
+                                <div>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+                                <!-- Horizontal Rule -->
+                                <hr>
+                                <p class="card-text maugia"> 1.950.000 VNĐ</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="item">
+
+                        <div class="card cardimg">
+                            <img src="../img/giaynau1.png" class="card-img-top imgowl_1 img-fluid" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Giày Dây Mũi Vuông</h5>
+                                <div>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+                                <!-- Horizontal Rule -->
+                                <hr>
+                                <p class="card-text maugia"> 1.950.000 VNĐ</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="item">
+
+                        <div class="card cardimg">
+                            <img src="../img/giaynau2.png" class="card-img-top imgowl_1 img-fluid" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Giày Nâng Chiều Cao</h5>
+                                <div>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+                                <!-- Horizontal Rule -->
+                                <hr>
+                                <p class="card-text maugia"> 1.950.000 VNĐ</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="item">
+
+                        <div class="card cardimg">
+                            <img src="../img/ghim1.png" class="card-img-top imgowl_1 img-fluid" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Ghim Cài</h5>
+                                <div>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+                                <!-- Horizontal Rule -->
+                                <hr>
+                                <p class="card-text maugia"> 250.000 VNĐ</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="item">
+
+                        <div class="card cardimg">
+                            <img src="../img/ghim2.png" class="card-img-top imgowl_1 img-fluid" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Ghim Cài</h5>
+                                <div>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+                                <!-- Horizontal Rule -->
+                                <hr>
+                                <p class="card-text maugia"> 250.000 VNĐ</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="item">
+
+                        <div class="card cardimg">
+                            <img src="../img/ghim3.png" class="card-img-top imgowl_1 img-fluid" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Ghim Cài</h5>
+                                <div>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+                                <!-- Horizontal Rule -->
+                                <hr>
+                                <p class="card-text maugia"> 1.950.000 VNĐ</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="item">
+
+                        <div class="card cardimg">
+                            <img src="../img/vest4.png" class="card-img-top imgowl_1 img-fluid" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Vest DeMi </h5>
+                                <div>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+                                <!-- Horizontal Rule -->
+                                <hr>
+                                <p class="card-text maugia"> 1.950.000 VNĐ</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="item">
+
+
+                        <div class="card cardimg">
+                            <img src="../img/vest5.png" class="card-img-top imgowl_1 img-fluid" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Vest Công Sở 2 khuy</h5>
+                                <div>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+                                <!-- Horizontal Rule -->
+                                <hr>
+                                <p class="card-text maugia"> 1.950.000 VNĐ</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="item">
+
+                        <div class="card cardimg">
+                            <img src="../img/spnb2.png" class="card-img-top imgowl_1 img-fluid" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Vest DeMi Xanh NaVi Kẻ Karo VDM24</h5>
+                                <div>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+                                <!-- Horizontal Rule -->
+                                <hr>
+                                <p class="card-text maugia"> 1.950.000 VNĐ</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- end owl -->
+
+
+        <!-- end sp nổi bật -->
+
+
+
+
+
+
+        <!-- footer -->
+
+        <footer>
+            <div class="container-fluid" style="padding-top: 15px;">
+                <div class="row rowfooter">
+                    <div class="col-md-4">
+                        <h5>Về The Men Fashion</h5>
+                        <hr class="light">
+                        <p>
+                            The Men ra đời với mong muốn giới thiệu đến các bạn những mẫu thời trang mới
+                            nhất bắt kịp với xu hướng của thời trang thế giới, với những phong cách đơn
+                            giản, đẹp mắt nhưng không kém phần lịch lãm và sang trọng.
+                        </p>
+
+                        <img src="../img/logo1.jpg" alt="" class="img-fluid logofooter">
+                    </div>
+
+                    <div class="col-md-4">
+                        <h5>Hỗ Trợ Khách Hàng</h5>
+                        <hr class="light">
+                        <p>
+                            <span><i class="fa fa-chevron-right"></i> </span> The Men - VinCom Lạng Sơn
+                            Hotline: 0866.576.585 <br>
+
+                            <span><i class="fa fa-chevron-right"></i> </span> The Men 306 Tôn Đức Thắng,
+                            Đống Đa, Hà Nội
+                            Hotline: 0343.156789 <br>
+
+                            <span><i class="fa fa-chevron-right"></i> </span> The Men 161 Lê Đại Hành,
+                            Thành Phố Lạng Sơn
+                            Hotline: 0916.564.888 <br>
+
+                            <span><i class="fa fa-chevron-right"></i> </span> Thanh Sài Gòn VinCom Lạng
+                            Son
+                            Hotline: 0983.278.088
+                            <p></p>
+
+                            <span><i class="fa fa-phone-alt" style="color: white;"></i></span> Hỗ trợ
+                            khách hàng <br>
+
+                            Hỗ trợ: 093 6368 266
+                        </p>
+
+
+                    </div>
+
+                    <div class="col-md-4">
+                        <h5>Liên Hệ</h5>
+                        <hr class="light">
+                        <p>
+                            <span><i class="fa fa-home"></i></span> The Men Fashion <br>
+
+                            <span><i class="fa fa-search-location"></i></span> Địa chỉ: Số 306 Tôn Đức
+                            Thắng, Đống Đa, Hà Nội <br>
+
+                            <span><i class="fa fa-phone-square-alt"></i></span> Điện thoại: 0936368266
+                            <br>
+
+                            <span><i class="fa fa-envelope"></i></span> Email:thoitrangthemen@gmail.com
+                            <br>
+
+                            <p></p>
+                            <p></p>
+                            <p></p>
+
+
+
+                            <span><i class="fa fa-user-plus"></i></span> Follow us :
+                            <span><i class="fa fa-youtube-square"></i></span>
+                            <span><i class="fa fa-facebook-square"></i></span>
+                            <span><i class="fa fa-twitter-square"></i></span>
+                        </p>
+
+
+                    </div>
+                    <div class="col-12">
+                        <hr class="light-100">
+                        <h5 class="copythe">
+                            &copy; The Men Fashion
+                        </h5>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- end footer -->
+
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+                integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+                integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+                crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+                integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+                crossorigin="anonymous"></script> -->
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="../owlcarousel/owl.carousel.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+
+        <!-- chitiet js -->
+        <script src="../js/chitiet.js"></script>
+
+        <!-- home js -->
+        <script src="../js/home.js"></script>
+</body>
+
+</footer>

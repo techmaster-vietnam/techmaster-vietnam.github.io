@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- font -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!--css -->
+	<link rel="stylesheet" href="style/user.css">
+	<link rel="stylesheet" href="style/reponsive.css">
+
+
+	<!-- owl caruosel -->
+	<link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
+	<title>signup</title>
+</head>
+
+<body>
+
+	<div class="userProfile d-flex" id="divAuthentication">
+            <li class="nav-item">
+                <a class="nav-link" href="#" data-toggle="modal" data-target="#loginModal">
+                    Đăng nhập
+                </a>
+            </li>
+            <li class="nav-item btn-register">
+                <a class="btn btn-submit" href="#" data-toggle="modal" data-target="#registerModal">
+                    Đăng ký
+                </a>
+            </li>
+    </div>
+
+	
+	<form action="#" method="POST" id="formLogin" class="animate" novalidate="novalidate">
+		<div class="modal fade show" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" style="display: block; padding-right: 17px;">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">Đăng nhập</h5>
+					</div>
+					<div class="modal-body">
+						<div class="input-modal panel panel-default panel-auth">
+							<div class="form-group" id="divMessage">
+
+							</div>
+							<div class="form-group">
+								<label for="email">E-mail/Số điện thoại</label>
+								<input type="text" name="information" class="form-control" placeholder="E-mail hoặc số diện thoại" id="loginInformation">
+							</div>
+							<div class="form-group">
+								<label for="password">Mật khẩu</label>
+								<input type="password" name="password" class="form-control" placeholder="Mật khẩu" id="loginPassword">
+							</div>
+							<div class="justify-content-end d-flex">
+								<a href="index.html" onclick="Authentication.openRestorePassword();">Quên mật khẩu?</a>
+							</div>
+							<button class="btn btn-submit w-100 my-3" id="btnLogin">Đăng nhập</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</form>
+
+	<form action="#" method="POST" id="formRegister" class="animate" novalidate="novalidate">
+        <div class="modal fade show" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" style="display: block; padding-right: 17px;">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Đăng ký</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="input-modal panel panel-default panel-auth">
+
+                            <div class="form-group">
+                                <label for="email">E-mail</label>
+                                <input class="form-control" type="email" name="registerEmail" placeholder="E-mail" id="registerEmail">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Số điện thoại</label>
+                                <input class="form-control" name="registerPhoneNumber" placeholder="Số điện thoại" id="registerPhoneNumber">
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Mật khẩu</label>
+                                <input class="form-control" type="password" name="registerPassword" placeholder="Mật khẩu" id="registerPassword">
+                            </div>
+                            <div class="form-group">
+                                <label for="repassword">Nhập lại mật khẩu</label>
+                                <input class="form-control" type="password" name="registerConfirmPassword" placeholder="Xác nhận mật khẩu" id="registerConfirmPassword">
+                            </div>
+
+                            <button class="btn btn-submit w-100 my-3" id="btnRegister">Đăng ký</button>
+
+                        </div>
+                    </div>
+                    <div class="row grey-bg no-gutters py-3">
+                        <div class="col-6 text-center text-footer-register">
+                            <span>Bạn đã có tài khoản?</span>
+                        </div>
+                        <div class="col-6 text-center">
+                            <button class="btn btn-submit" id="btnOpenLoginModal">Đăng nhập ngay</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

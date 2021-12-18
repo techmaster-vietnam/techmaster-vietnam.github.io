@@ -1,0 +1,63 @@
+.item, .item1{
+    font-size: 14px;
+    color: #535353;
+}
+
+.item_name label{
+    padding-right: 2rem;
+}
+
+@media(max-width:450px){
+    .item_name label{
+        padding-right: 0.5rem;
+    }
+}
+
+.item_name>span{
+    padding-top: 0.5rem;
+}
+
+table{
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.item td, .item1 .item_name{
+    padding-left: 1rem;
+}
+
+.list{
+    font-size: 16px;
+    font-weight: normal;
+    color: #535353;
+    background-color: #ebebeb;
+}
+
+table, th, tr, td{
+    border: solid 1px #535353;
+}
+
+#confirm{
+    color: #ffffff;
+    background-color: #535353;
+    border-radius: 5px;
+    transition: all 0.5s linear;
+}
+
+#confirm:hover{
+    color: #535353;
+    background-color: #ebebeb;
+}
+
+.item1{
+    height: 59px;
+}
+
+.money{
+    padding-left: 1rem;
+}
+
+.money::after{
+    content: " VNĐ"
+}

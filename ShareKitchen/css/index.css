@@ -1,0 +1,526 @@
+
+
+/*css for main page*/
+/*slideshow*/
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: white;
+}
+.carousel-control-prev-icon{
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    background: no-repeat 50%/50% 50% red;
+    background-image: url(../img/left-arrow.svg);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.carousel-control-next, .carousel-control-prev {
+    width: 90px;
+    opacity: 1;
+}
+.carousel-caption{
+    position: absolute;
+    top: 16%;
+    color: white;
+    font-size: 96px;
+}
+.carousel-control-next-icon{
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    background: no-repeat 50%/50% 50% red;
+    background-image: url(../img/right-arrow.svg);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.carousel-indicators {
+    bottom: -14px;
+}
+.carousel-caption{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.image{
+    width: 100%;
+    height: auto;
+}
+.slider-1-desktop{
+    display: block;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.slider-1-mobile{
+    display: none;
+    width: 100%;
+    height: 300px;
+    position: relative;
+}
+.carousel-item{
+    height: 300px;
+}
+#box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.prew{
+    position: absolute;
+    top:calc(50% - 29px);
+    left: 10px;
+}
+.next{
+    position: absolute;
+    top:calc(50% - 29px);
+    left:calc(100% - 67px);
+}
+.btn-slide{
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    background-color: red;
+}
+.word{
+    position: absolute;
+    color: white;
+    font-size: 96px;
+}
+.btn-details{
+    width: 221px;
+    height: 62px;
+    position: absolute;
+    top:calc(50% - -54px);
+    left:calc(50% - 111px);
+    color: white ;
+    font-size: 16px;
+    background-color: transparent;
+    border: dashed 1px white;
+    z-index: 100;
+}
+.btn-details:hover{
+    background-color: #DF2323;
+    border: none;
+    z-index: 100;
+}
+.btn-details a{
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+@keyframes leftarrow {
+    0% { -webkit-transform: translateX(0);  }
+    100% { -webkit-transform: translateX(-0.4em);  }
+}
+@keyframes rightarrow {
+    0% { -webkit-transform: translateX(0);  }
+    100% { -webkit-transform: translateX(0.4em);  }
+}
+.left:hover {
+    animation: leftarrow 0.6s infinite alternate ease-in-out;
+}
+.right:hover {
+    animation: rightarrow 0.6s infinite alternate ease-in-out;
+}
+/*content of home page*/
+/*content-lv1*/
+.word-header{
+    margin-top: 15px;
+    margin-bottom: 15px; 
+    font-size: 32px;
+    color: red;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+.content-lv1-desktop{
+    display: block;
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+.content-lv1-mobile{
+    display: none;
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+.image1{
+    border-right: 1px dashed black; 
+}
+
+.content-image{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+.btn-content{
+    width: 221px;
+    height: 62px;
+    position: absolute;
+    top:calc(100% - 84px);
+    left:calc(50% - 111px);
+    color: white ;
+    font-size: 16px;
+    background-color: transparent;
+    border: dashed 1px red;
+}
+.btn-content:hover{
+    background-color: red;
+    color: white;
+}
+.btn-a{
+    height: 100%;
+    width: 100%;
+    float: left;
+    font-size: 16px;
+    color: red;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-a:hover{
+    height: 100%;
+    width: 100%;
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 15px ;
+    padding-right: 15px;
+}
+/*content-lv2*/
+.content-lv2-desktop{
+    background-image: url(../img/Sailrock-Resort-Cove-Restaurant.jpg);
+    display: block;
+    width: 100%;
+    height: 600px;
+    position: relative;
+}
+.content-lv2-mobile{
+    display: none;
+    width: 100%;
+    height: 600px;
+    position: relative;
+}
+.word-content{
+    position: absolute;
+    color: white;
+    top: calc(50% - 100px);
+    left: calc(50% - 298px);
+    font-size: 32px;
+}
+.word-content-1{
+    position: absolute;
+    color: white;
+    top: 100px;
+    left: 100px;
+    top:calc(50% - 31px);
+    left:calc(50% - 346px);
+    font-size: 16px;
+}
+.word-content-3{
+    position: absolute;
+    color: white;
+    top: 100px;
+    left: 100px;
+    top:calc(50%);
+    left:calc(50% - 319px);
+    font-size: 16px;
+}
+.btn-details-1{
+    width: 221px;
+    height: 62px;
+    position: absolute;
+    top:calc(50% - -203px);
+    left:calc(50% - 111px);
+    color: white ;
+    font-size: 16px;
+    background-color: transparent;
+    border: dashed 1px white;
+}
+.btn-details-1:hover{
+    background-color: #DF2323;
+    border: none;
+}
+.btn-details-1 a{
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+/*content-lv3*/
+.content-lv3{
+    width: 100%;
+    height: 300px;
+    position: relative;
+}
+
+.word-content-2{
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    top:calc(50% - -73px);
+    left:calc(50% - 111px);
+}
+.word-content-4{
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    top:calc(50% - 48px);
+    left:calc(50% - 81.195px);
+}
+.word-content-5{
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    top:calc(50% - 10px);
+    left:calc(50% - 163.155px);
+}
+.word-content-6{
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    top:calc(50% - 83px);
+    left:calc(50% - 173.315px);
+}
+/*content-lv4*/
+.content-lv4-desktop{
+    display: block;
+    width: 100%;
+    height: 600px;
+    position: relative;
+    background-color: #f7f4ef;
+}
+.content-lv4-mobile{
+    display: none;
+    width: 100%;
+    height: 600px;
+    position: relative;
+    background-color: #f7f4ef;
+}
+.word-header-1{
+    margin-top: 15px;
+    padding-top: 15px;
+    margin-bottom: 15px; 
+    font-size: 32px;
+    color: red;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+.word-content-7{
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    top:calc(50% - 231px);
+    left:calc(50% - 119.71px);
+}
+.word-content-8{
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    top:calc(50% - 199px);
+    left:calc(50% - 249.79px);
+}
+.recipe-1{
+    width: 600px;
+    height: 300px;
+    background-color: white;
+    position: absolute;
+    top:calc(50% - 142px);
+    left: calc(50% - 631px);
+}
+.recipe-2{
+    width: 600px;
+    height: 300px;
+    background-color: white;
+    position: absolute;
+    top:calc(50% - 142px);
+    left: calc(50% - -61px);
+}
+.image-content-lv4{
+    position: absolute;
+}
+.text-header-1{
+    font-weight: bold;
+}
+.text-1{
+    position: absolute;
+    top: 0;
+    left: calc(50%);
+    padding: 10px;
+}
+@media only screen and (min-width: 300px ) and (max-width:647px){
+    /*slideshow*/
+    .slider-1-desktop{
+        display: none;
+        width: 100%;
+        height: 300px;
+        position: relative;
+    }
+    .slider-1-mobile{
+        display: block;
+        width: 100%;
+        height: 300px;
+        position: relative;
+    }
+    .carousel-caption{
+        position: absolute;
+        top: 32%;
+        color: white;
+        font-size: 26px;
+    }
+    /*content-lv1*/
+    .content-lv1-desktop{
+        display: none;
+        width: 100%;
+        height: 500px;
+        position: relative;
+    }
+    .content-lv1-mobile{
+        display: block;
+        width: 100%;
+        height: 800px;
+        position: relative;
+    }.word-header{
+        font-size: 24px;
+        text-align: center;
+    }
+    .image1{
+        position: absolute;
+        left: calc(50% - 150px);
+        border-right: none;
+        border-bottom: 1px dashed black;
+    }
+    .image2{
+        position: absolute;
+        top: 388px;
+        left: calc(50% - 150px);
+        border-right: none;
+    }
+    /*content-lv2*/
+    .content-lv2-desktop{
+        display: none;
+        width: 100%;
+        height: 600px;
+        position: relative;
+    }
+    .content-lv2-mobile{
+        background-image: url(../img/Sailrock-Resort-Cove-Restaurant.jpg);
+        display: block;
+        width: 100%;
+        height: 600px;
+        position: relative;
+    }
+    .word-content{
+        position: absolute;
+        top: 142px;
+        left: calc(50% - 147.1px);
+        text-align: center;
+    }
+    .word-content-1{
+        position: absolute;
+        top: 261px;
+        left: calc(50% - 130.525px);
+        text-align: center;
+    }
+    .word-content-3{
+        position: absolute;
+        top: 362px;
+        left: calc(50% - 109.315px);
+        text-align: center;
+    }
+    /*content-lv4*/
+    .content-lv4-desktop{
+        display: none;
+        width: 100%;
+        height: 600px;
+        position: relative;
+        background-color: #f7f4ef;
+    }
+    .content-lv4-mobile{
+        display: block;
+        width: 100%;
+        height: 1571px;
+        position: relative;
+        background-color: #f7f4ef;
+    }
+    .word-header-1{
+        font-size: 24px;
+    }
+    .word-content-7{
+        position: absolute;
+        top: 79px;
+        left: 100px;
+        top:100px;
+        left:calc(50% - 107.65px);
+    }
+    .word-content-8{
+        text-align: center;
+        top: 124px;
+        left: calc(50% - 127.875px);
+    }
+    .recipe-1{
+        height: 622px;
+        width: 300px;
+        top:206px;
+        left: calc(50% - 150px);
+    }
+    .text-1{
+        position: absolute;
+        top: 305px;
+        left: 0;
+        padding: 10px;
+    }
+    .recipe-2{
+        height: 622px;
+        width: 300px;
+        top:853px;
+        left: calc(50% - 150px);
+    }
+}
+@media only screen and (min-width: 648px ) and (max-width:1300px){
+    .carousel-caption{
+        position: absolute;
+        top: 32%;
+        color: white;
+        font-size: 48px;
+    }
+    .content-lv4-desktop{
+        height: 900px;
+    }
+    .recipe-1{
+        top: 158px;
+        left: calc(50% - 300px);
+    }
+    .recipe-2{
+        top: 487px;
+        left: calc(50% - 300px);
+    }
+    .word-content-7{
+        top: 69px;
+    }
+    .word-content-8{
+        top: 101px;
+    }
+}

@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+
+a {
+    color: #000;
+    transition: all 0.4s ease;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #508690!important;
+
+}
+
+/*signin*/
+label {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 0.5rem;
+    pointer-events: none;
+}
+
+a:not([href]):not([tabindex]) {
+    text-decoration: none;
+}
+
+.btn-submit {
+    background-color: #508690!important;
+}

@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Bài viết</title>
+	<link rel="stylesheet" type="text/css" href="plugins/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="plugins/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Arsenal" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cantata+One" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<nav class="header-top">
+			<span class="quick-mobile">
+				<i class="fa fa-phone"></i> 0986090925
+			</span>
+			<span class="quick-mail hidden-xs">
+				<i class="fa fa-envelope-o"></i> hieu.do212@gmail.com
+			</span>
+			<span class="pull-right">
+				<div class="before-log">
+					<button data-toggle="modal" data-tabs="login" data-target=".user-modal">Đăng nhập</button>
+					<button data-toggle="modal" data-tabs="signup" data-target=".user-modal">Đăng ký</button>
+				</div>
+				<div class="logged">
+					<!-- <i class="fa fa-user-o"></i> -->
+					<img src="img/feedback_1.jpg">
+					<div class="dropdown">
+						<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Đỗ Hoàng Hiếu</button>
+						<ul class="dropdown-menu dropdown-menu-right">
+							<li><a href="user-account.html">Quản lý tài khoản</a></li>
+							<li><a id="logout-btn" href="#">Đăng xuất</a></li>
+						</ul>
+					</div>
+				</div>
+			</span>
+		</nav>
+		<nav class="navbar navbar-default">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a href="#" class="search" data-toggle="slide-collapse" data-target="#search-form">
+				<i class="fa fa-search"></i><span class="hidden-xs"> Tìm kiếm</span>
+			</a>
+			<div class="container">
+				<div class="menu row">
+					<div class="collapse navbar-collapse" id="menu-collapse">
+						<ul class="nav navbar-nav navbar-left">
+							<li><a href="home.html">Trang chủ</a></li>
+							<li><a href="shop.html">Sản phẩm</a></li>
+							<li><a href="blog.html">Dự án</a></li>
+						</ul>
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="about.html">Về Min</a></li>
+							<li><a href="blog.html">Blog</a></li>
+							<li><a href="contact.html">Liên hệ</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="cart-box">
+				<a href="wishlist.html">
+					<i class="fa fa-heart-o"></i>
+				</a>
+				<a href="cart.html">
+					<i class="fa fa-shopping-cart"></i>
+				</a>
+			</div>
+			<a class="logo" href="home.html"><img src="img/logo-min.png"></a>
+			<div id="search-form">
+				<form>
+					<input type="text" placeholder="Nhập từ khóa cần tìm">
+					<button type="submit"><i class="fa fa-search"></i></button>
+				</form>
+			</div>
+		</nav>
+		<div class="modal fade user-modal" tabindex="-1">
+			<div class="modal-dialog modal-sm">
+				<div class="modal-content">
+					<ul class="nav nav-tabs" role="tablist">
+						<li id="login-indicator" class="active">
+							<a href="#login" role="tab" data-toggle="tab">Đăng nhập</a>
+						</li>
+						<li id="signup-indicator">
+							<a href="#signup" role="tab" data-toggle="tab" >Đăng ký</a>
+						</li>
+					</ul>
+
+					<div class="tab-content">
+						<div role="tabpanel" class="tab-pane active fade in" id="login">
+							<form>
+								<div class="input-field">
+									<input type="email" name="Email" id="email" placeholder="Email"/>
+								</div>
+								<div class="input-field">
+									<input type="password" name="Password" id="password" placeholder="Mật khẩu"/>
+								</div>
+								<div class="input-field check-field">
+									<input type="checkbox" id="remember" name="remember"/><label for="remember">Ghi nhớ tài khoản</label><br/>
+								</div>
+								<div class="input-field">
+									<input id="login-btn" data-dismiss="modal" value="Đăng nhập"/>
+								</div>
+								<button data-toggle="modal" data-target="#reset-password" data-dismiss="modal" class="btn btn-default"><i class="fa fa-question-circle-o"></i> Quên mật khẩu?</button>
+							</form>
+						</div>
+						<div role="tabpanel" class="tab-pane fade" id="signup">
+							<form>
+								<div class="input-field">
+									<input type="email" name="Email" id="email" placeholder="Email"/>
+								</div>
+								<div class="input-field">
+									<input type="password" name="Password" id="password" placeholder="Mật khẩu"/>
+								</div>
+								<div class="input-field check-field">
+									<input type="checkbox" id="remember" name="remember"/><label for="remember">Hiển thị mật khẩu</label><br/>
+								</div>
+								<div class="input-field">
+									<input type="text" name="Name" id="name" placeholder="Họ tên"/>
+								</div>
+								<div class="input-field">
+									<input type="text" name="Phone" id="phone" placeholder="Số điện thoại"/>
+								</div>
+								<div class="input-field">
+									<input id="signup-btn" type="submit" value="Đăng ký"/>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="container-fluid page-heading blog-heading">
+		<div class="heading-content">
+			<h1>Bài viết</h1>
+			<p>Nơi MIN chia sẻ những ý tưởng độc đáo, những kiến thức hữu ích, và những câu chuyện thú vị về nội thất.</p>
+			<ol class="breadcrumb">
+				<li><a href="home.html">Trang chủ</a></li>
+				<li><a href="blog.html">Blog</a></li>
+				<li class="active">Bài viết</li>
+			</ol>
+		</div>
+	</div>
+	<div class="container blog-main">
+		<nav class="navbar navbar-default">
+			<button type="button" class="navbar-toggle pull-right" data-toggle="slide-collapse" data-target="#blog-nav">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+		</nav>
+		<div class="row">
+			<ul class="nav nav-stacked collapse navbar-collapse pull-right" id="blog-nav">
+				<li class="search-box">
+					<div class="nav-title"><h4>Tìm kiếm bài viết</h4></div>
+					<form class="navbar-form">
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="Search">
+						</div>
+						<button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+					</form>
+				</li>
+				<li class="nav-title"><a data-toggle="display-all"><h4>Danh mục bài viết</h4></a></li>
+				<li><button class="product-group" type="button" data-toggle="filter-display" data-target=".tips"><h4>Mẹo hữu ích</h4></button><span class="number"></span></li>
+				<li><button class="product-group" type="button" data-toggle="filter-display" data-target=".idea"><h4>Ý tưởng độc đáo</h4></button><span class="number"></span></li>
+				<li><button class="product-group" type="button" data-toggle="filter-display" data-target=".yinyang"><h4>Phong thủy</h4></button><span class="number"></span></li>
+				<li><button class="product-group" type="button" data-toggle="filter-display" data-target=".trend"><h4>Xu hướng nội thất</h4><span class="number"></span></button></li>
+				<li><button class="product-group" type="button" data-toggle="filter-display" data-target=".room"><h4>Những căn phòng đẹp</h4><span class="number"></span></button></li>
+				<li class="nav-title"><h4>Bài viết gần đây</h4></a></li>
+				<li class="post"><a href="#"><h4>Nội thất cổ điển cho không gian nhỏ</h4></a></li>
+				<li class="post"><a href="#"><h4>Nội thất đẹp cho căn hộ dưới 40m²</h4></a></li>
+				<li class="post"><a href="#"><h4>5 mẹo giúp căn hộ luôn khô thoáng</h4></a></li>
+				<li class="post"><a href="#"><h4>Một số lưu ý về phong thủy trong thiết kế</h4></a></li>
+				<li class="post"><a href="#"><h4>Ngắm căn hộ với phong cách Rustic độc đáo</h4></a></li>
+				<li class="nav-title"><a data-toggle="display-all"><h4>Blog Tag</h4></a></li>
+				<li class="tags">
+					<button type="button" data-toggle="filter-display" data-target=".dining-room"><h5>Phòng ăn</h5></button>
+					<button type="button" data-toggle="filter-display" data-target=".living-room"><h5>Phòng khách</h5></button>
+					<button type="button" data-toggle="filter-display" data-target=".bedroom"><h5>Phòng ngủ</h5></button>
+					<button type="button" data-toggle="filter-display" data-target=".tips"><h5>Mẹo hay</h5></button>
+					<button type="button" data-toggle="filter-display" data-target=".wood"><h5>Đồ gỗ</h5></button>
+					<button type="button" data-toggle="filter-display" data-target=".idea"><h5>Ý tưởng</h5></button>
+					<button type="button" data-toggle="filter-display" data-target=".decor"><h5>Trang trí</h5></button>
+					<button type="button" data-toggle="filter-display" data-target=".trend"><h5>Xu hướng</h5></button>
+					<button type="button" data-toggle="filter-display" data-target=".yinyang"><h5>Phong thủy</h5></button>
+				</li>
+			</ul>
+			<div class="blog-detail">
+				<div class="blog-detail-wrap">
+					<h1>Nội thất đẹp cho căn hộ dưới 40m²</h1>
+					<img class="img-responsive" src="img/blog_4.jpg">
+					<p>Dạng căn hộ dưới 40m² ngày càng phổ biến trên thế giới. Bất chấp diện tích có hạn, chỉ cần sáng tạo và bài trí hợp lý, chúng vẫn là những không gian sống đáng mơ ước.</p>
+					<p>Cùng tham khảo 4 mẫu căn hộ nhỏ xinh dưới đây và học tập cách bài trí thông minh của chúng nhé!</p>
+					<p><strong>1. Căn hộ tối giản</strong></p>
+					<p>Căn hộ đầu tiên được lấy cảm hứng từ kiểu thiết kế nhỏ gọn nhưng đầy đủ rất đặc trưng của Nhật Bản. Các không gian tiếp khách, nghỉ ngơi, nấu nướng tuy nằm liền kề trong một căn phòng nhưng vẫn có sự riêng tư nhất định.</p>
+					<div class="align-center">
+						<img class="img-responsive" src="img/blog-detail/detail_01.jpg">
+						<p><em>Không gian bao quát của căn hộ.</em></p>
+						<img class="img-responsive" src="img/blog-detail/detail_02.jpg">
+						<p><em>Sofa – bếp – bàn ăn thiết kế quây quần được cung cấp ánh sáng từ ô cửa sổ nhỏ</em></p>
+						<img class="img-responsive" src="img/blog-detail/detail_03.jpg">
+						<p><em>Các hệ tủ trong nhà đều thiết kế âm tường gọn gàng. Liền với đó là gầm sofa, phần trần nhà cũng được tận dụng làm nơi lưu trữ đồ.</em></p>
+						<img class="img-responsive" src="img/blog-detail/detail_04.jpg">
+						<p><em>Bếp nhỏ xinh nhưng đủ dùng nhờ thiết kế hiện đại.</em></p>
+						<img class="img-responsive" src="img/blog-detail/detail_05.jpg"><br>
+						<p><em>Bàn ăn có thể di chuyển khi cần, những chiếc ghế có thể gập gọn khi không cần sử dụng.</em></p>
+						<img class="img-responsive" src="img/blog-detail/detail_06.jpg">
+						<p><em>Nơi nghỉ ngơi được phân tách bằng rèm.</em></p>
+						<img class="img-responsive" src="img/blog-detail/detail_07.jpg">
+						<p><em>Nhờ được tiếp xúc với mặt sáng nên nơi này không bị cảm giác chật bí</em></p>
+					</div>
+					<p><strong>2. Căn hộ Pastel</strong></p>
+					<p>Căn hộ 35m² này được bài trí theo lối đơn giản với màu sắc pastel tươi sáng nhằm mang đến sự vui tươi, trẻ trung. Không chọn cách “quây” không gian riêng cho nơi nghỉ ngơi, trong căn hộ này chủ nhà đã sử dụng tường lửng cũng như vách ngăn nhẹ để phân tách khu vực tiếp khách, nghỉ ngơi với khu vực nấu nướng, ăn uống.</p>
+					<div class="align-center">
+						<img class="img-responsive" src="img/blog-detail/detail_08.jpg">
+						<p><em>Căn hộ nhỏ nhưng vuông vắn, ngập tràn ánh sáng. Chiếc sofa lớn ở khu vực phòng khách kiêm luôn nơi ngủ nghi của chủ nhà chỉ bằng vài thao tác sắp xếp đơn giản.</em></p>
+						<img class="img-responsive" src="img/blog-detail/detail_09.jpg">
+						<p><em>Tường lửng và vách ngăn được sử dụng để tạo ra sự riêng tư cho các không gian.</em></p>
+						<img class="img-responsive" src="img/blog-detail/detail_10.jpg">
+						<p><em>Khu vực bàn ăn, góc làm việc linh hoạt.</em></p>
+						<img class="img-responsive" src="img/blog-detail/detail_11.jpg">
+						<p><em>Dù nhỏ căn hộ vẫn có góc đọc sách xinh xắn.</em></p>
+						<img class="img-responsive" src="img/blog-detail/detail_12.jpg">
+						<p><em>Nhờ thiết kế chữ L mà khu bếp rất rộng rãi với khu vực lưu trữ lớn, thông minh.</em></p>
+					</div>
+					<p><strong>3. Căn hộ ấn tượng với màu trầm</strong></p>
+					<p>Dù diện tích dưới 40m² nhưng căn hộ này lại chọn gam màu trầm chủ đạo để trang trí. Nhưng nhờ phần trần nhà cao, mặt thoáng rộng cũng như các phối màu linh hoạt và sự xuất hiện của cây xanh mà căn hộ này trông vẫn rất thoáng mắt, đủ sáng mà lại không kém phần cá tính.</p>
+					<div class="align-center">
+						<img class="img-responsive" src="img/blog-detail/detail_13.jpg">
+						<p><em>Khu vực tiếp khách là nơi ấn tượng nhất trong căn hộ với tông màu đen – ghi – trắng phối hợp hài hòa.</em></p>
+						<img class="img-responsive" src="img/blog-detail/detail_14.jpg">
+						<p><em>Những chậu cây xanh treo tường được xem là một điểm nhấn ấn tượng và mềm mại cho phòng khách.</em></p>
+						<img class="img-responsive" src="img/blog-detail/detail_15.jpg">
+						<p><em>Ngay lập tức ở mảng tường đối diện là những gam màu tươi sáng để mang đến sự cân bằng cho không gian chung.</em></p>
+						<img class="img-responsive" src="img/blog-detail/detail_16.jpg">
+						<p><em>Bàn ăn dạng chữ I còn đóng vai trò vách ngăn giữa phòng khách và bếp.</em></p>
+						<img class="img-responsive" src="img/blog-detail/detail_17.jpg">
+						<p><em>Khu bếp nấu bàn ăn thiết kế gọn nhẹ, linh hoạt</em></p>
+					</div>
+					<p><strong>4. Căn hộ 34m² cho cặp đôi</strong></p>
+					<p>Đối với một căn hộ của cặp đôi thì sự đầy đủ không gian cùng với thiết kế ấm cúng luôn được ưu tiên hàng đầu. Trong trường hợp cụ thể của căn hộ này thì nền tường màu trắng rất hoàn hảo để bạn có thể thỏa sức sáng tạo và trang trí. Căn hộ này được chia làm 2 không gian chính gồm khách – ăn và một căn phòng nhỏ xinh dành riêng cho nơi nghỉ ngơi.</p>
+					<div class="align-center">
+						<img class="img-responsive" src="img/blog-detail/detail_18.jpg">
+						<p><em>Không gian phòng khách cực xinh xắn và ấm cúng với nội thất mang hơi hướng vintage.</em></p>
+						<img class="img-responsive" src="img/blog-detail/detail_19.jpg">
+						<p><em>Sự đơn giản và mộc mạc của nội thất khiến nơi này trông rất gọn gàng.</em></p>
+						<img class="img-responsive" src="img/blog-detail/detail_20.jpg">
+						<p><em>Những giá, kệ lưu trữ ở góc này cũng rất sáng tạo.</em></p>
+						<img class="img-responsive" src="img/blog-detail/detail_21.jpg">
+						<p><em>Khu vực bếp, bàn ăn siêu nhỏ gọn.</em></p>
+						<img class="img-responsive" src="img/blog-detail/detail_22.jpg">
+						<p><em>Đặc biệt bàn ăn và ghế đều có thể gấp gọn khi không dùng đến.</em></p>
+						<img class="img-responsive" src="img/blog-detail/detail_23.jpg">
+						<p><em>Thiết kế khu nấu nướng dạng đảo bếp nhỏ gọn nhưng đa chức năng.</em></p>
+					</div>
+					<div class="blog-sub">
+						<div class="tags col-xs-12 col-md-9">
+							<strong>Tag: </strong>
+							<a href="#">Phòng ăn</a>
+							<a href="#">Phòng khách</a>
+							<a href="#">Phòng ngủ</a>
+							<a href="#">Ý tưởng</a>
+							<a href="#">Xu hướng</a>
+							<!-- <button type="button" data-toggle="filter-display" data-target=".dining-room"><h5>Phòng ăn</h5></button>
+							<button type="button" data-toggle="filter-display" data-target=".living-room"><h5>Phòng khách</h5></button>
+							<button type="button" data-toggle="filter-display" data-target=".bedroom"><h5>Phòng ngủ</h5></button>
+							<button type="button" data-toggle="filter-display" data-target=".idea"><h5>Ý tưởng</h5></button>
+							<button type="button" data-toggle="filter-display" data-target=".trend"><h5>Xu hướng</h5></button> -->
+						</div>
+						<div class="share col-xs-12 col-md-3">
+							<strong>Share: </strong>
+							<a href="#" title="Chia sẻ qua Facebook"><i class="fa fa-facebook-official"></i></a>
+							<a href="#" title="Chia sẻ qua Google+"><i class="fa fa-google-plus-official"></i></a>
+							<a href="#" title="Chia sẻ qua Pinterest"><i class="fa fa-pinterest"></i></a>
+							<a href="#" title="Chia sẻ qua Instagram"><i class="fa fa-instagram"></i></a>
+						</div>
+					</div>	
+				</div>
+				<div class="comments-section">
+					<h3 class="comments-section-title">Bình luận</h3>
+					<ul class="comments-list">
+						<li class="comment">
+							<div class="comment-wrap">
+								<div class="comment-img">
+									<img alt="" src="img/feedback_3.jpeg">
+								</div>
+								<div class="comment-block">
+									<div class="comment-header">
+										<span class="comment-author"><a href="#">Haruki Murakami</a></span>
+										<span>1 tháng trước </span>
+										<span class="pull-right">
+											<a class="comment-reply-link" href="#"><i class="fa fa-reply"></i><span class="hidden-sm"> Trả lời</span></a> 
+										</span>
+									</div>
+									<div class="comment-content">
+										<p>Nhà đẹp quá. Tôi cũng đang có nhu cầu thiết kế nội thất lại căn hộ chung cư của mình giống như căn hộ thứ 2 trong bài. Có thể tư vấn thêm giúp tôi được không?</p>
+									</div>
+								</div>
+							</div>
+							<ul class="children">
+								<li class="comment">
+									<div class="comment-wrap">
+										<div class="comment-img">
+											<img alt="" src="img/feedback_1.jpg">
+										</div>
+										<div class="comment-block">
+											<div class="comment-header">
+												<span class="comment-author"><a href="#">Admin</a></span>
+												<span>1 tháng trước </span>
+												<span class="pull-right">
+													<a class="comment-reply-link" href="#"><i class="fa fa-reply"></i><span class="hidden-sm"> Trả lời</span></a>
+												</span>
+											</div>
+											<div class="comment-content">
+												<p>Chào anh Murakami! Cảm ơn anh đã quan tâm và để lại bình luận. Nhân viên của MIN sẽ liên lạc trực tiếp với anh qua email để tư vấn thêm ạ.</p>
+											</div>
+										</div>
+									</div>
+								</li> 
+							</ul>
+						</li>
+					</ul>
+					<div class="respond-wrap">
+						<h3 class="comment-reply-title">Viết bình luận</h3> 
+						<form class="comment-form">
+							<div class="row">
+								<div class="comment-form-author col-md-6">
+									<input id="author" name="author" type="text" placeholder="Họ tên *" value="" size="30">
+								</div>
+								<div class="comment-form-email col-md-6">
+									<input id="email" name="email" type="text" placeholder="Email *" value="" size="30">
+								</div>
+							</div>
+							<div class="row">
+								<div class="comment-form-comment col-md-12">
+									<textarea placeholder="Bình luận *" id="comment" name="comment" cols="40" rows="6"></textarea>
+								</div>
+								<div class="col-md-12 submit-wrap">
+									<div class="form-submit">
+										<input name="submit" type="submit" id="submit" class="submit" value="Gửi bình luận">
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<a href="#"><i class="fa fa-angle-up back-top"></i></a>
+	
+	<footer>
+		<div class="container">
+			<div class="row footer-top">
+				<div class="col-xs-6 col-md-3 footer-item">
+					<h4>Thông tin liên hệ</h4>
+					<ul>
+						<li><i class="fa fa-map-marker"></i>Đ/c: 40 Giảng Võ, Đống Đa, Hà Nội</li>
+						<li><i class="fa fa-mobile"></i>Hotline: 0986090925</li>
+						<li><i class="fa fa-envelope-o"></i>Email: hieu.do212@gmail.com</li>
+					</ul>
+				</div>
+				<div class="col-xs-6 col-md-3 footer-item">
+					<h4>Thời gian mở cửa</h4>
+					<ul>
+						<li>Thứ 2 - thứ 6: 8AM - 10PM</li>
+						<li>Thứ 7: 9AM - 8PM</li>
+						<li>Nghỉ Chủ Nhật và các ngày Lễ Tết</li>
+					</ul>
+				</div>
+				<div class="col-xs-6 col-md-3 footer-item">
+					<h4>Hỗ trợ khách hàng</h4>
+					<ul>
+						<li><a href="contact.html">Liên hệ & Góp ý</a></li>
+						<li><a href="#">Hướng dẫn mua hàng online</a></li>
+						<li><a href="#">Câu hỏi thường gặp</a></li>
+						<li><a href="#">Chính sách bảo mật</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-6 col-md-3 footer-item">
+					<h4>Chính sách mua hàng</h4>
+					<ul>
+						<li><a href="#">Chính sách bảo hành, đổi trả</a></li>
+						<li><a href="#">Chính sách hội viên</a></li>
+						<li><a href="#">Giao hàng và lắp đặt</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="row footer-bot">
+				<a href="#" title="Kết nối qua Facebook"><i class="fa fa-facebook-official"></i></a>
+				<a href="#" title="Kết nối qua Google+"><i class="fa fa-google-plus-official"></i>
+				<a href="#" title="Kết nối qua Pinterest"><i class="fa fa-pinterest"></i>
+				<a href="#" title="Kết nối qua Instagram"><i class="fa fa-instagram"></i>
+			</div>
+		</div>
+		<div class="container-fluid copyright">
+			<div class="row">
+				<p>Copyright 2017 <i class="fa fa-copyright"></i> Designed by Hieudo</p>
+			</div>
+		</div>
+	</footer>
+	<script type="text/javascript" src="js/jquery-3.1.1.js" ></script>
+	<script src="owlcarousel/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="plugins/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/script.js" ></script>
+</body>
+</html>

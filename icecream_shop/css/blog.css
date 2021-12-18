@@ -1,0 +1,81 @@
+.my-banner {
+	background-image: url('../images/blog.png');
+}
+
+.blog-content {
+	padding: 80px 0px;
+}
+
+.search {
+	width: 50%;
+}
+
+.search-btn {
+	background-color: #363739;
+	color: white;
+	border: 1px solid #363739;
+}
+
+.pagination> li > a{
+	color: #363739;
+	border: 1px solid #363739;
+}
+
+.pagination > .active > a {
+	background-color: #363739;
+	border: 1px solid #363739;
+}
+
+.pagination> li > a:hover,  .pagination > .active > a:hover{
+	background-color: #add8a6;
+	border: 1px solid #363739;
+}
+
+.blog {
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 4em;
+}
+
+.blog-img {
+	flex: 1.5;
+}
+
+.blog-space {
+	flex: 0.5;
+}
+
+.summary {
+	flex: 5;
+	text-align: justify;
+}
+
+.title-blog {
+	font-weight: bold;
+	color: #493521;
+	font-size: 24px;
+}
+
+.view-more a {
+	color: #363739;
+	text-decoration: none;
+	font-style: italic;
+}
+
+@media (max-width: 499px) {
+	.blog {
+		flex-direction: column;
+		margin-top: 2em;
+	}
+
+	.blog-img, .summary {
+		flex: 1 100%;
+	}
+}
+
+@media (max-width: 767px) and (min-width: 500px){
+	form {
+		width: 60%;
+		margin-left: 40%;
+	}
+}

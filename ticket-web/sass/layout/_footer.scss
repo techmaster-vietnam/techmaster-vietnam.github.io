@@ -1,0 +1,46 @@
+.footer {
+    background-color: #343a40;
+
+    .about {
+        color: white;
+
+        &__info {
+            margin-left: 1.3rem;
+
+            img {
+                margin-right: 1rem;
+            }
+
+            h2 {
+                font-size: 4rem;
+            }
+        }
+
+        &__social {
+            img {
+                margin-left: 1.3rem;
+                margin-right: 1.3rem;
+            }
+            
+        }
+
+    }
+
+    .contact {
+        font-size: 3rem;
+        color: white;
+
+        a:link, a:visited {
+            color: white;
+            text-decoration: none;
+        }
+
+        article {
+            display: flex;
+
+            div {
+                margin-right: 1.5rem;
+            }
+        }
+    }
+}

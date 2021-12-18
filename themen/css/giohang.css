@@ -1,0 +1,180 @@
+/* giỏ hàng */
+.giohang {
+    border-bottom: 1px solid rgb(99, 95, 95);
+}
+
+.colform {
+    background-color: rgb(66, 62, 62);
+    margin: 3rem auto;
+    right: 1%;
+    border: 1px solid rgb(66, 62, 62);
+    border-radius: 25px;
+    
+   
+}
+
+.textform {
+    color: white;
+    margin: 2rem 0.5rem;
+}
+
+.textform h6 {
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.textform span {
+    color: red;
+}
+
+
+/* tt giỏ hàng */
+
+
+.colttgiohang {
+    /* background-color: rgb(221, 125, 125); */
+    margin: 3rem auto;
+    border: 1px solid rgb(22, 24, 22);
+    border-radius: 25px;
+    
+    
+    
+}
+
+.colttgiohang h6 {
+    font-weight: bold;
+    margin: 2rem auto;
+}
+
+.contaittgiohang {
+    margin: 0rem auto 0 auto;
+}
+
+.ttgiohang {
+    border: 1px solid black;
+}
+
+.ttgiohang div {
+    border-right: 1px solid black;
+}
+
+.ttgiohang h6 {
+
+    margin: 1rem auto;
+}
+
+.ttgiohang_1 {
+    border: 1px solid black;
+}
+
+.ttgiohang_1 .colboder {
+    border-right: 1px solid black;
+    
+    /* margin: auto; */
+}
+
+
+.colboder p {
+    margin: 1rem auto;
+    font-weight: bold;
+    
+}
+
+
+.colboder .card {
+    margin-top: 1rem;
+}
+
+.colboder .form-group {
+    margin-top: 1rem;
+}
+
+.icon {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.cardcart {
+    border: 0px solid black;
+}
+
+.cardtextgiohang {
+    padding: 0.5rem;
+}
+
+.monney {
+    color: red;
+}
+
+.btnttmuahang {
+    width: 100%;
+}
+
+.btndathang {
+    background-color: red;
+    width: 100%;
+}
+
+.delate {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.sl {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.sl_1 {
+    padding: 0;
+}
+
+
+
+/* sp nổi bật */
+.owl_1 {
+     
+    /* margin: 2rem auto;  */
+   text-align: center; 
+} 
+
+
+/* end sp nổi bật */
+
+
+
+
+/* responsive */
+
+@media (max-width: 575.98px) { 
+    .ttgiohang h6, .cardtextgiohang h5, ..monney {
+
+        font-size: 0.5rem;
+    }
+ }
+
+
+@media (max-width: 767.98px) { 
+    .ttgiohang h6, .cardtextgiohang h5, .monney {
+
+    font-size: 0.6rem;
+} 
+}
+
+
+@media (max-width: 991.98px) { 
+
+    .ttgiohang h6, .cardtextgiohang h5, .monney {
+
+        font-size: 0.7rem;
+    }
+ }
+
+
+@media (max-width: 1199.98px) { 
+
+    .ttgiohang h6, .cardtextgiohang h5, .monney {
+
+        font-size: 0.8rem;
+    }
+ }

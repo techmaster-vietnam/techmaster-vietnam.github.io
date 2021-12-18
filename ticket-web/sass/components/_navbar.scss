@@ -1,0 +1,39 @@
+.navbar {
+    justify-content: space-around;
+
+    .form-control {
+        font-size: 1.9rem;
+    }
+    .btn {
+        font-size: 1.9rem; 
+    }
+    .navbar-toggler {
+        font-size: 1.9rem; 
+    }
+    .nav-link {
+        font-size: 1.9rem; 
+    }
+
+    .nav-item {
+        font-size: 1.9rem;
+        cursor: pointer;
+    }
+
+    .form-inline {
+        flex-wrap: nowrap;
+        flex-grow: 1;
+
+        input {
+            width: 75%;
+        }
+
+        button {
+            width: 22%;
+
+        }
+    }
+
+    .navbar-collapse {
+        flex-grow: 0;
+    }
+}

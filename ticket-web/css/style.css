@@ -1,0 +1,382 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:700|Merienda+One");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 6px; }
+
+@media only screen and (min-width: 576px) {
+  html {
+    font-size: 7.5px; } }
+
+@media only screen and (min-width: 768px) {
+  html {
+    font-size: 8.5px; } }
+
+@media only screen and (min-width: 992px) {
+  html {
+    font-size: 10px; } }
+
+.landing__intro--intro {
+  color: white;
+  font-family: 'Merienda One', cursive;
+  font-size: 5rem;
+  font-weight: 500;
+  text-align: center; }
+
+.landing__intro--showname {
+  color: white;
+  font-family: 'Merienda One', cursive;
+  font-size: 8rem;
+  font-weight: 500;
+  text-align: center; }
+
+.landing__intro--showtime {
+  color: white;
+  font-family: 'Merienda One', cursive;
+  font-size: 5rem;
+  text-align: center;
+  font-style: italic; }
+
+.landing__intro--showpromo {
+  color: white;
+  font-family: 'Merienda One', cursive;
+  font-size: 5rem;
+  text-align: center;
+  font-style: italic; }
+
+.ticket-info__heading {
+  text-align: center;
+  font-family: 'Merienda One', cursive;
+  font-weight: 700; }
+
+.detail--intro {
+  font-size: 3rem;
+  text-align: justify;
+  font-family: 'Roboto', sans-serif; }
+  .detail--intro h2 {
+    font-size: 4rem;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic; }
+
+.button:link, .button:visited {
+  display: block;
+  padding: 1.5rem 1.7rem;
+  border-radius: 10rem;
+  text-decoration: none;
+  color: white;
+  font-size: 2.5rem;
+  text-align: center; }
+
+.button:hover {
+  background-color: white; }
+
+.button--red {
+  background-color: #EB1212;
+  margin-bottom: 2rem; }
+  .button--red:hover {
+    color: #EB1212; }
+  .button--red:active {
+    transform: translateY(0.7rem);
+    cursor: pointer; }
+
+.button--blue {
+  background-color: #20A4F3; }
+  .button--blue:hover {
+    color: #20A4F3; }
+  .button--blue:active {
+    transform: translateY(0.7rem);
+    cursor: pointer; }
+
+.btn-danger {
+  background-color: #EB1212;
+  border-color: #EB1212; }
+
+.navbar {
+  justify-content: space-around; }
+  .navbar .form-control {
+    font-size: 1.9rem; }
+  .navbar .btn {
+    font-size: 1.9rem; }
+  .navbar .navbar-toggler {
+    font-size: 1.9rem; }
+  .navbar .nav-link {
+    font-size: 1.9rem; }
+  .navbar .nav-item {
+    font-size: 1.9rem;
+    cursor: pointer; }
+  .navbar .form-inline {
+    flex-wrap: nowrap;
+    flex-grow: 1; }
+    .navbar .form-inline input {
+      width: 75%; }
+    .navbar .form-inline button {
+      width: 22%; }
+  .navbar .navbar-collapse {
+    flex-grow: 0; }
+
+.buy-ticket {
+  margin-top: 10rem; }
+  .buy-ticket__table {
+    width: 100%;
+    margin-top: 5rem;
+    margin-bottom: 5rem; }
+    .buy-ticket__table th {
+      border-bottom: 1px solid lightslategrey; }
+      .buy-ticket__table th:first-child {
+        border-right: 1px solid lightslategrey; }
+    .buy-ticket__table td:first-child {
+      border-right: 1px solid lightslategrey; }
+    .buy-ticket__table th, .buy-ticket__table td {
+      padding: 1.5rem;
+      font-size: 3.5rem;
+      text-align: center; }
+    .buy-ticket__table__book:link, .buy-ticket__table__book:visited {
+      display: inline-block;
+      width: 7.5rem;
+      height: 7.5rem;
+      font-size: 5.8rem;
+      border: 1px solid #5A6650;
+      border-radius: 100%;
+      text-decoration: none;
+      text-align: center;
+      color: black;
+      line-height: 1; }
+    .buy-ticket__table__book:hover {
+      background-color: lightslategray; }
+    .buy-ticket__table__num {
+      display: inline-block;
+      width: 7.5rem;
+      height: 7.5rem;
+      font-size: 6rem;
+      border: 1px solid #5A6650;
+      border-radius: 100%;
+      text-align: center;
+      color: black;
+      line-height: 1; }
+  .buy-ticket__payment:link, .buy-ticket__payment:visited {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 1rem 1.1rem;
+    border-radius: 10rem;
+    font-size: 2.9rem;
+    text-align: center;
+    width: 100%; }
+  .buy-ticket__payment:hover {
+    background-color: white; }
+  .buy-ticket__payment:active {
+    transform: translateY(0.7rem); }
+  .buy-ticket__payment--visa {
+    background-color: #E70E02;
+    border: 1px solid #E70E02; }
+    .buy-ticket__payment--visa:hover {
+      color: #E70E02; }
+  .buy-ticket__payment--atm {
+    background-color: #20A4F3;
+    border: 1px solid #20A4F3; }
+    .buy-ticket__payment--atm:hover {
+      color: #20A4F3; }
+  .buy-ticket__payment--cod {
+    background-color: #28a745;
+    border: 1px solid #28a745; }
+    .buy-ticket__payment--cod:hover {
+      color: #28a745; }
+
+.band-intro__heading {
+  text-align: center; }
+
+.band-intro__main {
+  margin-top: 3rem; }
+  .band-intro__main__img {
+    width: 100%;
+    margin-bottom: 2.5rem; }
+  .band-intro__main__text {
+    font-size: 1.8rem;
+    text-align: justify; }
+
+.ticket-info {
+  margin-top: 70px; }
+
+.payment {
+  margin-top: 15rem;
+  font-size: 3rem; }
+  .payment .btn {
+    font-size: 3rem;
+    margin: 4rem 0;
+    border-radius: 4rem; }
+  .payment .form-control {
+    font-size: 3.3rem; }
+
+.modal-title {
+  font-size: 3rem; }
+
+.modal-body {
+  font-size: 2.4rem; }
+
+.modal-footer a {
+  font-size: 2.4rem;
+  color: white !important; }
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 35px;
+  height: 0;
+  overflow: hidden; }
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+
+.modal form {
+  margin-top: 2rem;
+  margin-bottom: 2rem; }
+
+.modal h1 {
+  text-align: center;
+  font-size: 3rem; }
+
+.modal label, .modal input {
+  font-size: 2rem; }
+
+.modal .btn {
+  width: 100%;
+  font-size: 2rem; }
+
+.landing {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/index-page/ngot_mobile.jpg");
+  background-size: cover;
+  background-position: center; }
+  .landing article {
+    margin-top: 5rem; }
+  .landing__button {
+    max-width: 70vw;
+    margin: auto; }
+  @media screen and (min-width: 768px) {
+    .landing {
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/index-page/ngot_tablet.jpg");
+      background-size: cover;
+      background-position: center; } }
+  @media screen and (min-width: 992px) {
+    .landing {
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/index-page/ngot_lap.jpg");
+      background-size: cover;
+      background-position: center; } }
+  @media screen and (min-height: 640px) {
+    .landing article {
+      margin-top: 140px; }
+    .landing__button {
+      margin-top: 50px; } }
+  @media screen and (min-height: 667px) {
+    .landing article {
+      margin-top: 150px; } }
+  @media screen and (min-height: 768px) {
+    .landing article {
+      margin-top: 180px; } }
+  @media screen and (min-height: 812px) {
+    .landing article {
+      margin-top: 200px; } }
+  @media screen and (min-height: 900px) {
+    .landing article {
+      margin-top: 230px; } }
+  @media screen and (min-height: 1024px) {
+    .landing article {
+      margin-top: 380px; } }
+
+.main-page .jumbotron {
+  margin-top: 6.5rem;
+  text-align: center; }
+  .main-page .jumbotron h1 {
+    font-size: 4rem; }
+  .main-page .jumbotron p {
+    font-size: 2.8rem; }
+
+.main-page .img {
+  max-width: 100%; }
+
+.main-page-show {
+  box-shadow: 0.5px 0.5px 1px 0.5px rgba(0, 0, 0, 0.75);
+  margin-bottom: 6rem; }
+  .main-page-show h4 {
+    font-size: 2.5rem;
+    margin-top: 2rem; }
+  .main-page-show p {
+    font-size: 2.5rem;
+    color: #EB1212;
+    font-weight: bold; }
+  .main-page-show__ticket {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem; }
+    .main-page-show__ticket h3 {
+      font-size: 2.5rem; }
+  .main-page-show__icon {
+    margin-bottom: 1.5rem; }
+    .main-page-show__icon .btn {
+      font-size: 2.5rem;
+      font-weight: 500; }
+  .main-page-show__date {
+    border: 1px solid gainsboro; }
+    .main-page-show__date p {
+      margin: 0;
+      text-align: center;
+      color: gray; }
+    .main-page-show__date p:first-child {
+      background-color: #36acfe;
+      color: white;
+      padding: 0.5rem 2rem;
+      font-size: 1.5rem;
+      font-weight: bold; }
+    .main-page-show__date p:nth-child(2) {
+      font-size: 2rem;
+      color: black;
+      font-weight: bold;
+      background-color: whitesmoke; }
+    .main-page-show__date p:nth-child(3) {
+      font-size: 2rem;
+      color: black;
+      font-weight: bold;
+      background-color: whitesmoke; }
+
+.footer {
+  background-color: #343a40; }
+  .footer .about {
+    color: white; }
+    .footer .about__info {
+      margin-left: 1.3rem; }
+      .footer .about__info img {
+        margin-right: 1rem; }
+      .footer .about__info h2 {
+        font-size: 4rem; }
+    .footer .about__social img {
+      margin-left: 1.3rem;
+      margin-right: 1.3rem; }
+  .footer .contact {
+    font-size: 3rem;
+    color: white; }
+    .footer .contact a:link, .footer .contact a:visited {
+      color: white;
+      text-decoration: none; }
+    .footer .contact article {
+      display: flex; }
+      .footer .contact article div {
+        margin-right: 1.5rem; }
+
+.detail {
+  margin-top: 10.5rem; }
+  .detail--img {
+    max-width: 100%; }
+  .detail input, .detail button {
+    font-size: 3rem; }
+  .detail a {
+    display: inline-block;
+    width: 100%;
+    font-size: 3rem; }

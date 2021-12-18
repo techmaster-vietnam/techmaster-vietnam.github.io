@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:700|Merienda+One');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+.landing__intro {
+    &--intro {
+        color: white;
+        font-family: 'Merienda One', cursive;
+        font-size: 5rem;
+        font-weight: 500;
+        text-align: center;
+
+        
+    }
+
+    &--showname {
+        color: white;
+        font-family: 'Merienda One', cursive;
+        font-size: 8rem; 
+        font-weight: 500; 
+        text-align: center;
+    }
+
+    &--showtime {
+        color: white;
+        font-family: 'Merienda One', cursive;
+        font-size: 5rem;
+        text-align: center;
+        font-style: italic;
+    }
+
+    &--showpromo {
+        color: white;
+        font-family: 'Merienda One', cursive;
+        font-size: 5rem;
+        text-align: center;
+        font-style: italic;
+    }
+}
+
+.ticket-info {
+    &__heading {
+        text-align: center;
+        font-family: 'Merienda One', cursive;
+        font-weight: 700;
+    }
+}
+
+.detail--intro {
+    font-size: 3rem;
+    text-align: justify;
+    font-family: 'Roboto', sans-serif; 
+
+    h2 {
+        font-size: 4rem;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-style: italic;
+    }
+}

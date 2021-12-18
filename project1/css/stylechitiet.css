@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+
+body{
+    font-size: 22px;
+    font-family: 'Pacifico', cursive !important;
+}
+
+.container{
+    background-color: #FFF3F3;
+}
+
+.fa-home{
+    font-size: 34px !important;
+}
+
+.breadcrumb{
+    background-color: #FFF3F3 !important;
+}
+
+a{
+    text-decoration: none !important;
+}
+
+.buttons1 {
+    margin: 10%;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+
+.textcolor{
+    text-decoration: none !important;
+}
+
+.cool img{
+    width: 100%;
+}
+
+.text{
+    text-decoration: underline;
+}
+
+.row1{
+    text-align: center;
+}
+
+.money{
+    margin-top: -25px;
+}
+
+.morong{
+    padding-left: 88%;
+}
+
+.buttons {
+    margin-bottom: 15px;
+    text-align: center;
+    margin-top: -15px;
+    width: 100%;
+}
+
+.btn-hover {
+    width: 120px;
+    cursor: pointer;
+    height: 40px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 50px;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:hover {
+    background-position: 100% 0;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+    outline: none;
+}
+
+.btn-hover.color-1 {
+    background-image: linear-gradient(to right, #ed6ea0, #ec8c69, #f7186a , #FBB03B);
+box-shadow: 0 4px 15px 0 rgba(236, 116, 149, 0.75);
+}
+
+
+.tieude{
+    text-align: center;
+    text-decoration: underline;
+    font-size: 26px;
+}
+
+.fix{
+    max-width: 50px;
+    max-height: 30px;
+}
+
+.form-control{
+    display: inline;
+}
+
+.footer{
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+.footer1{
+    font-family: sans-serif;
+    margin-top: 10px;
+}
+
+.row4{
+    background-color: #dad1d1;
+    padding-top: 20px;
+    line-height: 15px;
+}
+
+.footer2{
+    font-size: 16px;
+    font-family: sans-serif;
+    margin-left: 60%;
+    margin-top: 10%;
+}
+
+@media screen and (max-width:576px) {
+    div.footer2 {
+        margin-left: 0;
+        margin-top: 0;
+    }
+  }
+
+.icon{
+    margin-left: 10px;
+}
+
+  
+.chonmua{
+    color: black;
+    text-decoration: none !important;
+}
+
+.muiten{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+/* gio hang */
+
+
+
+.cart {
+    outline: none;
+    border: 0;
+    background: #416AA6;
+    padding: 10px;
+    color: #fff;
+    width: 40%;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+    transition: 0.5s width;
+    border-radius: 5px;
+}
+
+.cart .fa {
+    font-size: 28px;
+    position: relative;
+    padding: 0 5px 0 0;
+}
+
+
+
+
+/* MUA NGAY */
+
+
+
+.cart1 {
+    outline: none;
+    border: 0;
+    background: #416AA6;
+    padding: 10px;
+    color: #fff;
+    width: 40%;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+    transition: 0.5s width;
+    border-radius: 5px;
+}
+
+
+.cart1 .fa1 {
+    font-size: 28px;
+    position: relative;
+    padding: 0 5px 0 0;
+}
+
+
+.fa-1{
+    font-size: 36px !important;
+}
+
+.btvl{
+    background-color: #FFF3F3;
+    border-style: none;
+    outline: none !important;
+}
+
+
+
+
+
+
+
+

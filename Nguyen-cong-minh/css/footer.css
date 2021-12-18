@@ -1,0 +1,135 @@
+
+/* -----------------------------------------------------------footer---------------------------------------------- */
+.container {
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .footer {
+    background-color: #e9e2d8;
+    display: block;
+    padding: 1.8rem 9%;
+    height: auto;
+    margin-top: 5rem;
+  }
+  .footer .container{
+      padding-left: initial;
+      padding-right: initial;
+  }
+  .pd{
+      padding-left: initial;
+      padding-right: initial;
+  }
+  .foo-top {
+    padding-top: 1.8rem;
+    
+  }
+  .widget {
+    position: relative;
+  }
+  .footer .widget .widget-title {
+    margin-bottom: 2.5rem;
+    font-size: 1.6rem;
+  
+    text-transform: uppercase;
+  }
+  .widget-navigation ul {
+    padding-left: initial;
+  }
+  .widget-navigation li a {
+    font-size: 1.4rem;
+    color: #888;
+    line-height: 3rem;
+  }
+  .offset-md-1 {
+    margin-left: 8.333333%;
+  }
+  .app-btn {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #d6d8d9;
+    padding-bottom: 3rem;
+  }
+  .app-btn a {
+    flex-basis: 49%;
+    padding: 1.2rem 1rem;
+    border-radius: 5px;
+    background-color: #fff;
+    position: relative;
+    padding-left: 3.5rem;
+  }
+  .app-btn a i {
+    color: #ff5353;
+    font-size: 2rem;
+    margin-right: 5px;
+    position: absolute;
+    left: 9px;
+    top: 30%;
+  }
+  .app-btn a p {
+    margin-bottom: 0;
+    color: #000;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 0.8;
+    text-transform: uppercase;
+  }
+  .app-btn a p span {
+    display: block;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #4a4a4a;
+    line-height: 0.8;
+    margin-bottom: 5px;
+  }
+  .app-btn a:hover,
+  .app-btn a.app-store {
+    background-color: #ff5353;
+  }
+  
+  .app-btn a:hover p,
+  .app-btn a:hover span,
+  .app-btn a:hover i,
+  .app-btn a.app-store p,
+  .app-btn a.app-store span,
+  .app-btn a.app-store i {
+    color: #fff;
+  }
+  
+  .social-media a {
+    display: inline-block;
+    font-size: 1.4rem;
+    color: #000;
+    background-color: #fff;
+    line-height: 3.2rem;
+    text-align: center;
+    height: 3rem;
+    width: 3rem;
+    margin-right: 1rem;
+    border-radius: .4rem;
+  }
+  .social-media .icon-fb:hover {
+    background-color: #006df0;
+  }
+  .social-media a:hover .ti-facebook ,.social-media a:hover.icon-twitter,.social-media a:hover.icon-pinterest{
+    color: #fff;
+  }
+  .social-media a:hover.icon-instagram{
+    color: #ff5353;
+  }
+  .social-media .icon-twitter:hover {
+    background-color: #1ca1f3;
+  }
+  .social-media .icon-pinterest:hover {
+    background-color: #ff5353;
+  }
+  .social-media .icon-instagram:hover {
+    background-color: #ffffff;
+  }
+  
+  
+  
+  

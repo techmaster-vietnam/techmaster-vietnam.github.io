@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Register Form
+    </title>
+    <link rel="stylesheet" href="css/login.css"type="text/css"/>
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap -->
+    <link href="include/bootstrap.min.css" type="text/css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="include/jquery.smartmenus.min.js"></script>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <script src="include/bootstrap.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<header>
+    <div id="main-nav" class="nav-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div id="logo">
+                    <a href="/" class="navbar-brand" style="padding-top:0px;padding-bottom:0px" title="logo">
+                        <img src="img/logo2.png" alt="logo" class="img-responsive">
+                    </a>
+                </div>
+                <div class="box-search">
+                    <ul class="nav navbar-nav navbar-right">
+                        <div class="box">
+                            <div class="search-box">
+                                <button class="icon" id="btn-search"><i class="fa fa-2x fa-search"></i></button>
+                                <input type="search" id="search" placeholder="Bạn muốn mua gì cho bé hôm nay?"/>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <!--main menu-->
+    <div class="bottom-nav">
+        <nav class="navbar navbar-default">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="container-fluid">
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">Trang chủ</a></li>
+                        <li class="dropdown">
+                            <a href="Vua%20Địa%20Hình%20EADGE-3.html" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                               aria-haspopup="true" aria-expanded="false">
+                                Sản phẩm<span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="#sanphamnoibat">SẢN PHẨM NỔI BẬT <i class="fa fa-star-o"
+                                                                                 style="color: yellow"
+                                                                                 aria-hidden="true"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#sanphamkhuyenmai">SẢN PHẨM KHUYẾN MẠI <i class="fa fa-usd"
+                                                                                       aria-hidden="true"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#maybaymohinh">MÁY BAY MÔ HÌNH</a>
+                                </li>
+                                <li>
+                                    <a href="#xemohinh">XE MÔ HÌNH</a>
+                                </li>
+                                <li>
+                                    <a href="#canomohinh">TÀU CANO MÔ HÌNH</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="gioithieu.html">Giới thiệu</a></li>
+                        <li><a href="huongdanmuahang.html">Hướng dẫn mua hàng</a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+<div class="container">
+    <div class="row">
+        <div class="col-ms-4">
+            <div class="panel ">
+                <div class="panel-heading">
+                    <h3 class="title">
+                        Đăng ký
+                    </h3>
+                </div>
+                <div class="panel-body">
+                    <form action="result.html"   name="login" method="GET" id="form-sign">
+                        <div class="form-group">
+                            <label for="hoten" class="col-md-4 control-label" >
+                                Họ tên</label>
+                            <div class="col-md-8">
+                                <input type="text" name="Hoten" class="form-control" id="hoten" value="" placeholder="Họ tên"/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="ngaysinh" class="col-md-4 control-label">Ngày sinh</label>
+                            <div class="col-md-8">
+                                <div class="row">
+                                    <div id="ngaysinh">
+                                        <div class="col-md-3">
+                                            <select name="date" class="form-control">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option selected value="5">5</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <select class="form-control" name="month">
+                                                <option value="January">January</option>
+                                                <option value="February">February</option>
+                                                <option value="March">March</option>
+                                                <option value="April">April</option>
+                                                <option selected value="May">May</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <select name="year" class="form-control">
+                                                <option value="1980">1980</option>
+                                                <option value="1981">1981</option>
+                                                <option value="1982">1982</option>
+                                                <option value="1983">1983</option>
+                                                <option value="1984">1984</option>
+                                                <option selected value="1985">1985</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="gender" class="col-md-4">
+                                Giới tính</label>
+                            <div class="col-md-8 " id="gender">
+                                <label>
+                                    <input type="radio" name="gender" value="Nam" checked>
+                                    Nam
+                                </label>
+                                <label>
+                                    <input type="radio" name="gender" value="Nữ">
+                                    Nữ
+                                </label>
+
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="diachi" class="col-md-4 control-label">
+                                Địa chỉ</label>
+                            <div class="col-md-8">
+                                <input type="text"  name="diachi" class="form-control" id="diachi" placeholder="Địa chỉ" value=""/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="country" class="col-md-4">
+                                Quốc tịch</label>
+                            <div class="col-md-8" id="country">
+                                <select name="country" class="form-control">
+                                    <option value="Australia">Australia</option>
+                                    <option value="Laos">Laos</option>
+                                    <option value="Canada">Canada</option>
+                                    <option value="United Kingdom">United Kingdom</option>
+                                    <option selected value="VietNam">VietNam</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="col-md-4">
+                                E-mail</label>
+                            <div class="col-md-8">
+                                <input type="text" name="email" class="form-control" id="email" placeholder="example@gmail.com"/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="dienthoai" class="col-md-4 control-label">
+                                Điện thoại</label>
+                            <div class="col-md-8">
+                                <input type="text" class="form-control"  name="dienthoai" id="dienthoai" placeholder="Điện thoại"/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="password" class="col-md-4">
+                                Mật khẩu</label>
+                            <div class="col-md-8">
+                                <input type="password" name="password" id="password" class="form-control" value="">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="confirmpassword" class="col-md-4">
+                                Xác nhận mật khẩu</label>
+                            <div class="col-md-8">
+                                <input type="password" name="confirmpassword" id="confirmpassword" class="form-control" value="">
+                            </div>
+                        </div>
+
+
+                                <label class="box">
+                                    <input name="checkbox" type="checkbox" value="">
+                                   Tôi đồng ý với điều khoản sử dụng
+
+                                </label>
+
+                        <div class="form-group">
+                            <div class="submit">
+                                <input type="submit" value="Đăng ký" onclick="submit()"  class="btn btn-default">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="panel-footer"></div>
+</div>
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="include/bootstrap.min.js"></script>
+<script src="js/register.js"></script>
+</body>
+</html>

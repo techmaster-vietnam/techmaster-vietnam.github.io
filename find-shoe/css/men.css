@@ -1,0 +1,285 @@
+* {
+    box-sizing: border-box;
+}
+
+
+
+#main img {
+    width: 100%;
+}
+
+
+
+
+
+/* Check Box */
+
+
+
+/* The container */
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 18px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input~.checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked~.checkmark {
+    background-color: rgba(206, 42, 42, 0.85);
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked~.checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+
+
+/*  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.card {
+    border: none;
+    margin: 1rem 0;
+}
+
+.card-body {
+    padding: 0 0 0.5rem 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Main */
+
+#main {
+    width: 100%;
+    padding: 3rem 6rem;
+
+}
+
+
+
+.filter:nth-child(1) {
+    margin-bottom: 3rem;
+    border-bottom: 1px solid grey;
+    padding-bottom: 1.5rem;
+}
+
+#main #sp ul {
+    padding-left: 0;
+}
+
+#main #sp ul li {
+    list-style: none;
+
+}
+
+#main #sp ul li a {
+    color: black;
+    font-size: 24px;
+}
+
+
+#main #main_2 #sort{
+    padding: 20px 40px;
+    text-align: right;
+}
+
+#main #main_2 #sort select{
+   border: 3px solid;
+}
+
+
+/*  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+li {
+    list-style: none;
+}
+
+#menu_filter {}
+
+#menu_filter ul li {
+    margin: 1rem 0;
+}
+
+#menu_filter #click {
+    width: 100%;
+    background: red;
+    position: relative;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#menu_filter #click p {
+    color: white;
+    margin: 0;
+}
+
+#menu_filter #click .click_1 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    color: white;
+}
+
+
+#menu_filter #con {
+    padding: 10px;
+    overflow: hidden;
+    border: 2px solid red;
+    width: 100%;
+    display: none;
+}
+
+#menu_filter #con label {
+    margin: 10px 0;
+
+}
+
+#menu_filter #con li {
+    width: 500px;
+    border-bottom: 1px solid red;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+@media(max-width:991.9px) {
+    #main_1 {
+        margin-bottom: 30px;
+    }
+
+    #menu_filter ul li {
+        width: 50%;
+        padding: 0.5rem;
+        margin: 0.5rem 0;
+        float: left;
+    }
+}
+
+@media(max-width:576px) {
+
+
+    #menu_filter ul li {
+        width: 100%;
+        padding: 0;
+        margin: 0.5rem 0;
+
+    }
+}
+
+
+
+
+
+@media(max-width:575.9px) {
+
+    #main {
+        padding: 2.5rem 1rem;
+    }
+
+    #main #main_1 {
+        padding: 0 2rem;
+    }
+}

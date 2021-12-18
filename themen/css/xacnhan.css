@@ -1,0 +1,33 @@
+/* content */
+.xacnhan {
+    font-weight: bold;
+    border-bottom: 1px solid white;
+    padding-top: 1rem;
+    color: white;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.xacnhantc {
+    padding-bottom: 1rem;
+    padding-top: 2rem;
+    font-weight: bold;
+}
+
+.anhsanpham {
+    margin-top: 2rem;
+}
+
+.xacnhandonhang {
+    background-color: rgb(44, 40, 40);
+}
+
+.cuoi .col-sm-6 {
+    border-right: 1px solid white;
+}
+
+.cuoi p {
+    padding-top: 1rem;
+}

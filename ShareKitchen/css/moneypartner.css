@@ -1,0 +1,134 @@
+/*navigation bar*/
+.navigation-partnerandonator{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 60px;
+}
+.navigation-home-1{
+    float: left;
+    font-size: 16px;
+    color: black;
+}
+.next-image{
+    float: left;
+    margin-top: 20px;
+}
+.navigation-partner-1{
+    float: left;
+    font-size: 16px;
+    color: black;
+}
+.navigation-partnerandonator-1{
+    float: left;
+    font-size: 16px;
+    color: black;
+}
+.navigation-moneypartner-1{
+    float: left;
+    font-size: 16px;
+    color: black;
+}
+/*money partner*/
+.form-moneypartner{
+    position: relative;
+    width: 50%;
+    height: 50%;
+    margin: 0 auto;
+}
+.header-form-moneypartner{
+    height: 67px;
+    background-color: #F95858;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-moneypartner-content{
+    height: 400px;
+    border: 1px solid black;
+    border-top: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.form-moneypartner-content-1{
+    display: flex;
+    flex-flow: column wrap;
+}
+.form-moneypartner-content-2{
+    display: flex;
+    flex-flow: column wrap;
+}
+.btn-moneypartner{
+    position: absolute;
+    top: 376px;
+    left: calc(50% - 110.5px);
+    margin: 0 auto;
+    width: 221px;
+    height: 62px;
+    font-size: 16px;
+    background-color: red;
+    color: white;
+    outline: none;
+    border: none;
+}
+.space{
+    height: 100px;
+}
+@media only screen and (min-width: 300px ) and (max-width:608px){
+    .form-moneypartner{
+        position: relative;
+        width: 300px;
+        height: 60%;
+        margin: 120px auto;
+    }
+    .form-moneypartner-content{
+        height: 600px;
+        border: 1px solid black;
+        border-top: none;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-flow: row wrap;
+    }
+    .btn-moneypartner{
+        position: unset;
+        margin: 0 auto;
+        width: 221px;
+        height: 62px;
+        font-size: 16px;
+        background-color: red;
+        color: white;
+        outline: none;
+        border: none;
+    }
+}
+@media only screen and (min-width: 608px ) and (max-width:1200px){
+    .form-moneypartner{
+        position: relative;
+        width: 500px;
+        height: 50%;
+        margin: 0 auto;
+    }
+    .form-moneypartner-content{
+        height: 400px;
+        border: 1px solid black;
+        border-top: none;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-flow: row wrap;
+    }
+    .btn-moneypartner{
+        position: unset;
+        margin: 0 auto;
+        width: 221px;
+        height: 62px;
+        font-size: 16px;
+        background-color: red;
+        color: white;
+        outline: none;
+        border: none;
+    }
+}

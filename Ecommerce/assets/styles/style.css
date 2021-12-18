@@ -1,0 +1,153 @@
+
+
+span {
+    color:red
+    }
+    h2
+    {
+    color: #119541!important;
+
+    text-align:center;
+    border-radius:10px 10px 0 0;
+    margin:-10px -40px;
+    padding:15px
+    }
+    label{
+    margin-top: 10px;
+    }
+    hr
+    {
+    border:0;
+    border-bottom:1px solid;
+    margin:10px -40px;
+    margin-bottom:30px;
+    }
+    #login
+    {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    width: 450px;
+    height: 350px;
+    border-radius:10px;
+    border:2px solid #ccc;
+    padding:10px 40px 25px;
+    position: relative;
+    }
+    input[type=text],input[type=password]
+    {
+    width: 350px;
+    padding: 10px;
+    margin-top: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    padding-left: 5px;
+    font-size: 20px;
+    }
+    .btn
+    {
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    background-color:#119541;
+    color:#fff;
+    border: 2px solid white;
+  
+    font-size: 18px!important;
+    cursor: pointer;
+    border-radius: 5px;
+    display: block;
+    margin: auto;
+    position: absolute;
+    left: 90px;
+   
+    }
+    #profile
+    {
+    padding:50px;
+    border:1px dashed grey;
+    font-size:20px;
+    background-color:#DCE6F7
+    }
+    #logout
+    {
+    float:right;
+    padding:5px;
+    border:dashed 1px gray
+    }
+    a
+    {
+    margin-top: 20px;
+    text-decoration: none;
+    }
+    .error, p{
+        color: red;
+    }
+    .copyright > p{
+        color: black;
+    }
+    .pull-right > span{
+       font-weight: normal; 
+    }
+    .log > a{
+        margin-top: 0px;
+        color: white;
+        font-size: 14px !important;
+    }
+    a > span{
+        color: white !important;
+        font-weight: normal !important;
+    }
+    
+    .log{
+        margin-top: 15px;
+    }
+    .brand_logo {
+        padding: 10px 0px;
+        background: #f6f6f6;
+    }
+    .show-cart li {
+        display: flex;
+      }
+      .card {
+        margin-bottom: 20px;
+      }
+      .card-img-top {
+        width: 200px;
+        height: 200px;
+        align-self: center;
+      }
+      .btn1{
+        color: #fff;
+        background-color: #337ab7;
+        border-color: #2e6da4;
+      }
+      .bot-head .slide-df, .item.active{
+        height: 327px !important;
+      }
+    .mota{
+      color: black;
+    }
+    iframe{
+      width: 100%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    a{
+      color: #fff;
+      font-size: 16px;
+      margin-top: 10px;
+    }
+    h1{
+      font-size: 30px !important;
+    }
+    .bot-head .menu ul li a:active {
+      color: #119541;
+      border-color: #119541;
+  }
+  .focus > span{
+    font-size: 17px !important;
+  }

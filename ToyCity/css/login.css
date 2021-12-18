@@ -1,0 +1,51 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.signup{
+    background-color: #222535;
+    border-color: #DD8705;
+}
+
+.container{
+    margin-top: 58px;
+    background-color: rgba(198, 200, 202, 0.23);
+    border: #3c763d solid 1px;
+    border-radius: 2px;
+    max-width: 400px;
+
+}
+.panel-heading{
+    background-color: #5bc0de;
+
+}
+.row{
+    text-align: center;
+    margin: auto;
+
+}
+
+.btn-submit {
+    margin-right: 5px;
+}
+
+.col-md-8{
+    padding-bottom: 15px;
+}
+.submit{
+    float: right;
+    padding-right: 20px!important;
+    margin: auto;
+}
+ .box {
+     float: right;
+     padding-left: 20px;
+     padding-right: 15px;
+    max-height: auto;
+  font-weight: 100!important;
+}
+
+#ngaysinh div .form-control{
+    padding: 0px 0px;
+}
