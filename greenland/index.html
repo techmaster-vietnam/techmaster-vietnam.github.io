@@ -1,0 +1,1186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:image" content="https://imgur.com/VMg5kDp" />
+    <link
+      rel="shortcut icon"
+      href="assest/logobackground/logo/logonhadatFix.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" src="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <title>Nhà Đất Xanh</title>
+  </head>
+  <body>
+    <div id="fb-root"></div>
+    <script
+      async
+      defer
+      crossorigin="anonymous"
+      src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v11.0"
+      nonce="blmhaCzO"
+    ></script>
+    <div class="wrap-desktop d-none d-xl-block">
+      <!-- Start Header Desktop -->
+      <div class="wrap__header--desktop">
+        <header class="header">
+          <div class="container--desktop wrap__header">
+            <div class="logo">
+              <div class="logo__text">
+                <a href="index.html"
+                  ><div class="logo__branch">Greenland</div></a
+                >
+                <div class="logo__slogan">Nơi hạnh phúc ngập tràn</div>
+              </div>
+            </div>
+            <nav class="wrap__nav">
+              <ul class="nav__menu">
+                <li class="nav__menu__items">
+                  <a href="about.html" class="nav__menu__item__link"
+                    >Giới Thiệu</a
+                  >
+                </li>
+                <li class="nav__menu__items">
+                  <a href="product.html" class="nav__menu__item__link"
+                    >Nhà Bán</a
+                  >
+                </li>
+                <li class="nav__menu__items">
+                  <a href="news.html" class="nav__menu__item__link">Tin Tức</a>
+                </li>
+                <li class="nav__menu__items">
+                  <a href="contact.html" class="nav__menu__item__link"
+                    >Liên Hệ</a
+                  >
+                </li>
+                <li class="nav__menu__hotline">
+                  <div class="nav__menu__item__hotline">
+                    Hotline : <strong>0374889957</strong>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </header>
+        <div class="banner">
+          <div class="banner__wrap__searchbar d-flex justify-content-center">
+            <div class="banner__searchbar row">
+              <div class="banner__searchbar__items col-3">
+                <p class="banner__searchbar__item__title">Địa điểm</p>
+                <select
+                  class="
+                    form-select-menu
+                    banner__searchbar__item__select
+                    form-select
+                  "
+                  id="select-search-address"
+                >
+                  <option value="1" selected>Miền Bắc</option>
+                  <option value="2">Miền Trung</option>
+                  <option value="3">Miền Nam</option>
+                </select>
+              </div>
+              <div class="banner__searchbar__items col-3">
+                <p class="banner__searchbar__item__title">Loại nhà</p>
+                <select
+                  class="
+                    form-select-menu
+                    banner__searchbar__item__select
+                    form-select
+                  "
+                  id="select-search-type"
+                >
+                  <option value="1" selected>Căn Hộ</option>
+                  <option value="2">Chung Cư</option>
+                  <option value="3">Biệt Thự</option>
+                </select>
+              </div>
+              <div class="banner__searchbar__items col-3">
+                <p class="banner__searchbar__item__title">Khoảng chi phí</p>
+                <select
+                  class="
+                    form-select-menu
+                    banner__searchbar__item__select
+                    form-select
+                  "
+                  id="select-search-price"
+                >
+                  <option selected>Chọn</option>
+                  <option value="1">Nhỏ hơn 1 Tỷ</option>
+                  <option value="2">1 - 2 Tỷ</option>
+                  <option value="3">2 - 3 Tỷ</option>
+                  <option value="4">3 - 5 Tỷ</option>
+                  <option value="5">Trên 5 Tỷ</option>
+                </select>
+              </div>
+              <div class="banner__searchbar__wrap__btn col-3">
+                <button
+                  type="button"
+                  id="banner__searchbar__btn"
+                  class="btn__searchbar"
+                >
+                  Tìm Kiếm
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Header Desktop -->
+      <!-- Start about desktop -->
+      <div class="wrap__about--desktop">
+        <div class="about--desktop container--desktop">
+          <div class="title-section-font">Giới Thiệu</div>
+          <div class="about--desktop__content row">
+            <div class="about--desktop__content__wrap col-3">
+              <div class="about--desktop__content__item">
+                <div class="about--desktop__content__item__icon">
+                  <img
+                    src="assest/logobackground/icon-gioi-thieu/icon-thanhlap.svg"
+                    alt=""
+                    class="about--desktop__content__item__icon__img"
+                  />
+                </div>
+                <div class="content-header" style="padding-bottom: 10px">
+                  Thành Lập
+                </div>
+                <div
+                  class="content-font"
+                  style="padding-bottom: 10px !important"
+                >
+                  Công ty TNHH Nhà Đất Xanh được thành lập theo giấy phép đăng
+                  ký kinh doanh số 012345678910
+                </div>
+              </div>
+            </div>
+            <div class="about--desktop__content__wrap col-3">
+              <div class="about--desktop__content__item">
+                <div class="about--desktop__content__item__icon">
+                  <img
+                    src="assest/logobackground/icon-gioi-thieu/icon-sumenh.svg"
+                    alt=""
+                    class="about--desktop__content__item__icon__img"
+                  />
+                </div>
+                <div class="content-header" style="padding-bottom: 10px">
+                  Sứ Mệnh
+                </div>
+                <div
+                  class="content-font"
+                  style="padding-bottom: 10px !important"
+                >
+                  Mang đến cho khách hàng những giải pháp và sự lựa chọn tốt
+                  nhất, vì lợi ích của khách hàng, đối tác....
+                </div>
+              </div>
+            </div>
+            <div class="about--desktop__content__wrap col-3">
+              <div class="about--desktop__content__item">
+                <div class="about--desktop__content__item__icon">
+                  <img
+                    src="assest/logobackground/icon-gioi-thieu/icon-tamnhin.svg"
+                    alt=""
+                    class="about--desktop__content__item__icon__img"
+                  />
+                </div>
+                <div class="content-header" style="padding-bottom: 10px">
+                  Tầm Nhìn
+                </div>
+                <div
+                  class="content-font"
+                  style="padding-bottom: 10px !important"
+                >
+                  Trở thành một doanh nghiệp hàng đầu trong lĩnh vực tư vấn,
+                  phân phối và tiếp thị bất động sản ….
+                </div>
+              </div>
+            </div>
+            <div class="about--desktop__content__wrap col-3">
+              <div class="about--desktop__content__item">
+                <div class="about--desktop__content__item__icon">
+                  <img
+                    src="assest/logobackground/icon-gioi-thieu/icon-giatri.svg"
+                    alt=""
+                    class="about--desktop__content__item__icon__img"
+                  />
+                </div>
+                <div class="content-header" style="padding-bottom: 10px">
+                  Giá Trị
+                </div>
+                <div
+                  class="content-font"
+                  style="padding-bottom: 10px !important"
+                >
+                  Minh bạch và trung thực để phát triển bền vững. Tin cậy, tôn
+                  trọng khách hàng và nhà đầu tư, đối tác. ….
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End about desktop -->
+      <!-- Start product desktop -->
+      <div class="wrap__product--desktop">
+        <div class="container--desktop">
+          <div class="product--desktop container--desktop">
+            <div class="title-section-font">Dự Án Đang Mở Bán</div>
+            <div
+              class="
+                product--desktop__list
+                d-flex
+                flex-row flex-wrap
+                container--desktop
+              "
+              id="product_data--desktop"
+            ></div>
+          </div>
+          <div class="product--desktop__btnviewmore">
+            <a href="product.html" id="product--desktop_btnviewmore_link"
+              >Xem thêm các dự án</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- End product desktop -->
+      <!-- Start partner desktop -->
+      <div class="wrap__partner--desktop">
+        <div class="wrap__partner--desktop--background"></div>
+      </div>
+      <!-- End partner desktop -->
+      <!-- Start city desktop -->
+      <div class="wrap__city--desktop">
+        <div class="container--desktop">
+          <div class="city--desktop container--desktop">
+            <div class="title-section-font" style="padding-bottom: 30px">
+              Những thành phố có dự án của công ty
+            </div>
+            <div class="wrap__city--desktop">
+              <div class="citylist--desktop">
+                <div class="wrap--hanoi city--hover--desktop">
+                  <div class="hanoi--desktop">
+                    <div class="city__item--desktop">
+                      <div class="city__count--desktop">2 Dự Án</div>
+                      <div class="city__name--desktop">Hà Nội</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="wrap--danang city--hover--desktop">
+                  <div class="danang--desktop">
+                    <div class="city__item--desktop">
+                      <div class="city__count--desktop">2 Dự Án</div>
+                      <div class="city__name--desktop">Đà Nẵng</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="wrap--nhatrang city--hover--desktop">
+                  <div class="nhatrang--desktop">
+                    <div class="city__item--desktop">
+                      <div class="city__count--desktop">2 Dự Án</div>
+                      <div class="city__name--desktop">Nha Trang</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="wrap--hochiminh city--hover--desktop">
+                  <div class="hochiminh--desktop">
+                    <div class="city__item--desktop">
+                      <div class="city__count--desktop">2 Dự Án</div>
+                      <div class="city__name--desktop">
+                        Thành Phố Hồ Chí Minh
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End city desktop -->
+      <!-- Start count desktop -->
+      <div class="wrap__count--desktop">
+        <div class="container--desktop">
+          <div class="row">
+            <div class="col-3 border-l border-r">
+              <div class="count__box--desktop">
+                <div class="count__icon--desktop">
+                  <div class="count__icon__inner--desktop">
+                    <i class="bi bi-building"></i>
+                  </div>
+                </div>
+                <h1 class="counter--desktop">28</h1>
+                <p>Căn hộ, chung cư, biệt thự</p>
+              </div>
+            </div>
+            <div class="col-3 border-r">
+              <div class="count__box--desktop">
+                <div class="count__icon--desktop">
+                  <div class="count__icon__inner--desktop">
+                    <i class="bi bi-people"></i>
+                  </div>
+                </div>
+                <h1 class="counter--desktop">1600</h1>
+                <p>Khách hàng đã sử dụng dịch vụ</p>
+              </div>
+            </div>
+            <div class="col-3 border-r">
+              <div class="count__box--desktop">
+                <div class="count__icon--desktop">
+                  <div class="count__icon__inner--desktop">
+                    <i class="bi bi-award"></i>
+                  </div>
+                </div>
+                <h1 class="counter--desktop">5</h1>
+                <p>Giải thưởng về xây dựng</p>
+              </div>
+            </div>
+            <div class="col-3 border-r">
+              <div class="count__box--desktop">
+                <div class="count__icon--desktop">
+                  <div class="count__icon__inner--desktop">
+                    <i class="bi bi-bank"></i>
+                  </div>
+                </div>
+                <h1 class="counter--desktop">12</h1>
+                <p>Ngân hàng liên kết</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End count desktop -->
+      <!-- Start member desktop -->
+      <div class="wrap__member--desktop">
+        <div class="container--desktop">
+          <div
+            class="title-section-font"
+            style="padding-bottom: 30px; padding-top: 80px"
+          >
+            Thành viên hội đồng quản trị
+          </div>
+          <div class="member--desktop">
+            <div class="row">
+              <div class="col-3 border-l border-r">
+                <div class="member__list--desktop">
+                  <div class="member__photo--desktop">
+                    <div class="member__photo__inner--desktop">
+                      <img src="assest/member/avatar-1.jpg" alt="" />
+                    </div>
+                  </div>
+                  <div class="member__info--desktop">
+                    <h5 class="member__name--desktop">Marcus Floiy</h5>
+                    <p>Chủ tịch hội đồng quản trị</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3 border-r">
+                <div class="member__list--desktop">
+                  <div class="member__photo--desktop">
+                    <div class="member__photo__inner--desktop">
+                      <img src="assest/member/avatar-2.jpg" alt="" />
+                    </div>
+                  </div>
+                  <div class="member__info--desktop">
+                    <h5 class="member__name--desktop">Mari Parkinson</h5>
+                    <p>Phó chủ tịch hội đồng quản trị</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3 border-r">
+                <div class="member__list--desktop">
+                  <div class="member__photo--desktop">
+                    <div class="member__photo__inner--desktop">
+                      <img src="assest/member/avatar-3.jpg" alt="" />
+                    </div>
+                  </div>
+                  <div class="member__info--desktop">
+                    <h5 class="member__name--desktop">James Down</h5>
+                    <p>Tổng giám đốc</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3 border-r">
+                <div class="member__list--desktop">
+                  <div class="member__photo--desktop">
+                    <div class="member__photo__inner--desktop">
+                      <img src="assest/member/avatar-4.jpg" alt="" />
+                    </div>
+                  </div>
+                  <div class="member__info--desktop">
+                    <h5 class="member__name--desktop">Windy Cry</h5>
+                    <p>Phó tổng giám đốc</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End member desktop -->
+
+      <!-- Start news desktop -->
+      <div class="wrap__news--desktop">
+        <div class="news--desktop container--desktop">
+          <div class="title-section-font">Tin Tức và Sự Kiện</div>
+          <div class="news--desktop__list d-flex flex-row">
+            <div class="news--desktop__item">
+              <a href="news.html"
+                ><img
+                  src="assest/news/news1.png"
+                  alt=""
+                  class="news--desktop__item__img"
+              /></a>
+              <div class="news--desktop__item__content">
+                <div class="content-font">Thị Trường</div>
+                <div class="content-header" style="margin-top: 5px !important">
+                  Các loại hình biệt thự Ocean Park
+                </div>
+              </div>
+            </div>
+            <div class="news--desktop__item">
+              <a href="news.html"
+                ><img
+                  src="assest/news/new2.png"
+                  alt=""
+                  class="news--desktop__item__img"
+              /></a>
+              <div class="news--desktop__item__content">
+                <div class="content-font">Thị Trường</div>
+                <div class="content-header" style="margin-top: 5px !important">
+                  Tổng quan về tòa Grand Park S5.03
+                </div>
+              </div>
+            </div>
+            <div class="news--desktop__item">
+              <a href="news.html"
+                ><img
+                  src="assest/news/new3.png"
+                  alt=""
+                  class="news--desktop__item__img"
+              /></a>
+              <div class="news--desktop__item__content">
+                <div class="content-font">Phong Thủy</div>
+                <div class="content-header" style="margin-top: 5px !important">
+                  Những công trình 'bát quái' ở Việt Nam
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End news desktop -->
+      <!-- Start contact desktop -->
+      <div class="wrap__contact--desktop">
+        <div class="contact--desktop--bg">
+          <div class="contact--desktop container--desktop">
+            <div class="title-section-font">Liên Hệ</div>
+            <div class="contact--desktop__form">
+              <div
+                class="row"
+                style="
+                  margin-left: 0px !important;
+                  margin-right: 0px !important;
+                "
+              >
+                <div class="col-6 contact--desktop__form__info">
+                  <form name="contact--desktop__form">
+                    <div class="contact--desktop__form__input">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="validationName"
+                        value=""
+                        placeholder="Họ và Tên"
+                      />
+                      <div id="name-feedback" style="display: none; color: red">
+                        Tên không chứa số và ký tự đặc biệt
+                      </div>
+                    </div>
+                    <div class="contact--desktop__form__input">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="validationEmail"
+                        value=""
+                        placeholder="Email"
+                      />
+                      <div id="em-feedback" style="display: none; color: red">
+                        Email cần đúng định dạng abc@abc.abc
+                      </div>
+                    </div>
+                    <div class="contact--desktop__form__input">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="validationPhoneNumber"
+                        value=""
+                        placeholder="Số điện thoại"
+                      />
+                      <div
+                        id="phone-feedback"
+                        style="display: none; color: red"
+                      >
+                        Số điện thoại không đúng định dạng
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <div class="col-6 contact--desktop__form__message">
+                  <textarea
+                    class="form-control"
+                    placeholder="Message"
+                    id="contact__form__message"
+                  ></textarea>
+                </div>
+              </div>
+              <div class="contact--desktop__form__btnSubmit">
+                <button type="button" class="btnSubmit" id="submit">
+                  Gửi Tin
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End contact desktop -->
+      <!-- Start footer desktop -->
+      <div class="wrap__footer--desktop">
+        <div class="footer--desktop container--desktop">
+          <div class="row">
+            <div class="col-4 footer--desktop__contact__info">
+              <div class="content-header footer--desktop__header">
+                THÔNG TIN LIÊN HỆ
+              </div>
+              <div class="content-font">
+                <i class="bi bi-telephone-forward"></i>&nbsp;<a
+                  href="tel:+374889957"
+                  class="footer--desktop__link__item"
+                  >Hot Line : 0374889957</a
+                >
+              </div>
+              <div class="content-font">
+                <i class="bi bi-envelope"></i>&nbsp;<a
+                  href="mailto:rovpc1211@gmail.com"
+                  class="footer--desktop__link__item"
+                  >Email : rovpc1211@gmail.com</a
+                >
+              </div>
+              <div class="content-font">
+                <i class="bi bi-house"></i>&nbsp;Địa chỉ : Thanh Liệt - Thanh
+                Trì - Hà Nội
+              </div>
+            </div>
+            <div class="col-4 footer--desktop__links">
+              <div class="content-header footer--desktop__header">LIÊN KẾT</div>
+              <ul class="footer--desktop__links__list">
+                <li class="content-font">
+                  <a href="index.html" class="footer--desktop__link__item"
+                    >Trang chủ</a
+                  >
+                </li>
+                <li class="content-font">
+                  <a href="product.html" class="footer--desktop__link__item"
+                    >Nhà Bán</a
+                  >
+                </li>
+                <li class="content-font">
+                  <a href="news.html" class="footer--desktop__link__item"
+                    >Tin Tức</a
+                  >
+                </li>
+                <li class="content-font">
+                  <a href="contact.html" class="footer--desktop__link__item"
+                    >Liên Hệ</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-4 footer--desktop__fanpage">
+              <div class="content-header footer--desktop__header">
+                FANPAGE CỦA CHÚNG TÔI
+              </div>
+              <div
+                class="fb-page"
+                data-href="https://www.facebook.com/facebook"
+                data-width="380"
+                data-hide-cover="false"
+                data-show-facepile="false"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End footer desktop -->
+    </div>
+    <!-- Start mobile   -->
+    <div class="wrap-mobile d-xl-none d-xxl-none">
+      <!-- Start header mobile -->
+      <header class="header--mobile">
+        <nav class="nav--mobile container d-flex justify-content-between">
+          <div class="logo">
+            <div class="logo__text">
+              <a href="index.html"><div class="logo__branch">Greenland</div></a>
+              <div class="logo__slogan">Nơi hạnh phúc ngập tràn</div>
+            </div>
+          </div>
+          <div class="nav--mobile--external d-flex">
+            <button id="nav__btnSearch" type="button">
+              <i class="bi bi-search nav__btn__icon__search--mobile"></i>
+            </button>
+            <button id="nav__btnMenu" type="button">
+              <i class="bi bi-list nav__btn__icon--mobile"></i>
+              <i class="bi bi-x-circle nav__btn__icon--mobile__close"></i>
+            </button>
+          </div>
+        </nav>
+        <div class="wrap__nav--mobile">
+          <ul class="nav__menu--mobile">
+            <li class="nav__menu__items">
+              <a href="about.html" class="nav__menu__item__link">Giới Thiệu</a>
+            </li>
+            <li class="nav__menu__items">
+              <a href="product.html" class="nav__menu__item__link">Nhà Bán</a>
+            </li>
+            <li class="nav__menu__items">
+              <a href="news.html" class="nav__menu__item__link">Tin Tức</a>
+            </li>
+            <li class="nav__menu__items">
+              <a href="contact.html" class="nav__menu__item__link">Liên Hệ</a>
+            </li>
+            <li class="nav__menu__items">
+              <p class="nav__menu__item__link">
+                Hotline : <strong>0374889957</strong>
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div class="wrap__search--mobile">
+          <div class="searchbar--mobile">
+            <div class="row">
+              <div class="col-12 searchbar__item">
+                <p class="">Địa điểm</p>
+                <select
+                  class="
+                    form-select-menu
+                    banner__searchbar__item__select
+                    form-select
+                  "
+                  id="select-search-address-mobile"
+                >
+                  <option value="1" selected>Miền Bắc</option>
+                  <option value="2">Miền Trung</option>
+                  <option value="3">Miền Nam</option>
+                </select>
+              </div>
+              <div class="col-12 searchbar__item">
+                <p class="">Loại nhà</p>
+                <select
+                  class="
+                    form-select-menu
+                    banner__searchbar__item__select
+                    form-select
+                  "
+                  id="select-search-type-mobile"
+                >
+                  <option value="1" selected>Căn Hộ</option>
+                  <option value="2">Chung Cư</option>
+                  <option value="3">Biệt Thự</option>
+                </select>
+              </div>
+              <div class="col-12 searchbar__item">
+                <p class="">Khoảng chi phí</p>
+                <select
+                  class="
+                    form-select-menu
+                    banner__searchbar__item__select
+                    form-select
+                  "
+                  id="select-search-price-mobile"
+                >
+                  <option selected>Chọn</option>
+                  <option value="1">Nhỏ hơn 1 Tỷ</option>
+                  <option value="2">1 - 2 Tỷ</option>
+                  <option value="3">2 - 3 Tỷ</option>
+                  <option value="4">3 - 5 Tỷ</option>
+                  <option value="5">Trên 5 Tỷ</option>
+                </select>
+              </div>
+              <div class="col-12 searchbar__item">
+                <button
+                  type="button"
+                  id="banner__searchbar__btn-mobile"
+                  class="btn__searchbar"
+                >
+                  Tìm Kiếm
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="banner--mobile"></div>
+      <!-- End header mobile -->
+      <!-- Start about mobile -->
+      <div class="wrap__section--mobile">
+        <div>
+          <div class="title-section-font">Giới Thiệu</div>
+          <div class="about__content--mobile">
+            <div class="row">
+              <div class="col-3 border-l border-r about__content__item--mobile">
+                <a href="about.html">
+                  <img
+                    src="assest/logobackground/icon-gioi-thieu/icon-thanhlap.svg"
+                    alt=""
+                  />
+                  <p>THÀNH LẬP</p>
+                </a>
+              </div>
+              <div class="col-3 border-l border-r about__content__item--mobile">
+                <a href="about.html">
+                  <img
+                    src="assest/logobackground/icon-gioi-thieu/icon-sumenh.svg"
+                    alt=""
+                  />
+                  <p>SỨ MỆNH</p>
+                </a>
+              </div>
+              <div class="col-3 border-l border-r about__content__item--mobile">
+                <a href="about.html">
+                  <img
+                    src="assest/logobackground/icon-gioi-thieu/icon-tamnhin.svg"
+                    alt=""
+                  />
+                  <p>TẦM NHÌN</p>
+                </a>
+              </div>
+              <div class="col-3 border-l border-r about__content__item--mobile">
+                <a href="about.html">
+                  <img
+                    src="assest/logobackground/icon-gioi-thieu/icon-giatri.svg"
+                    alt=""
+                  />
+                  <p>GIÁ TRỊ</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- End about mobile -->
+      <!-- Start product mobile -->
+      <div class="wrap__section--mobile">
+        <div>
+          <div class="title-section-font">Dự Án Đang Mở Bán</div>
+          <div
+            class="wrap__product--mobile row"
+            id="index__product--mobile"
+          ></div>
+          <div class="product--desktop__btnviewmore">
+            <a href="product.html" id="product--desktop_btnviewmore_link"
+              >Xem thêm các dự án</a
+            >
+          </div>
+        </div>
+      </div>
+      <!-- End product mobile -->
+      <!-- Start partner mobile -->
+      <div class="wrap__section--mobile">
+        <div class="wrap__partner__mobile--background"></div>
+      </div>
+      <!-- End partner mobile -->
+      <!-- Start city mobile -->
+      <div class="wrap__section--mobile__margin">
+        <div class="city--mobile">
+          <div class="hanoi__mobile">
+            <div class="city__item--desktop">
+              <div class="city__count--desktop">2 Dự Án</div>
+              <div class="city__name--desktop">Hà Nội</div>
+            </div>
+          </div>
+          <div class="danang__mobile city__item--desktop">
+            <div class="city__item--desktop">
+              <div class="city__count--desktop">2 Dự Án</div>
+              <div class="city__name--desktop">Đà Nẵng</div>
+            </div>
+          </div>
+          <div class="nhatrang__mobile city__item--desktop">
+            <div class="city__item--desktop">
+              <div class="city__count--desktop">2 Dự Án</div>
+              <div class="city__name--desktop">Nha Trang</div>
+            </div>
+          </div>
+          <div class="hochiminh__mobile city__item--desktop">
+            <div class="city__item--desktop">
+              <div class="city__count--desktop">2 Dự Án</div>
+              <div class="city__name--desktop">Thành Phố Hồ Chí Minh</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End city mobile -->
+      <!-- Start count desktop -->
+      <div class="wrap__section--mobile__margin">
+        <div class="container--desktop container--mobile">
+          <div class="row">
+            <div class="col-6">
+              <div class="count__box--mobile">
+                <div class="count__icon--desktop">
+                  <div class="count__icon__inner--desktop">
+                    <i class="bi bi-building"></i>
+                  </div>
+                </div>
+                <h1 class="counter--desktop">28</h1>
+                <p>Căn hộ, chung cư, biệt thự</p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="count__box--mobile">
+                <div class="count__icon--desktop">
+                  <div class="count__icon__inner--desktop">
+                    <i class="bi bi-people"></i>
+                  </div>
+                </div>
+                <h1 class="counter--desktop">1600</h1>
+                <p>Khách hàng đã sử dụng dịch vụ</p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="count__box--mobile">
+                <div class="count__icon--desktop">
+                  <div class="count__icon__inner--desktop">
+                    <i class="bi bi-award"></i>
+                  </div>
+                </div>
+                <h1 class="counter--desktop">5</h1>
+                <p>Giải thưởng về xây dựng</p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="count__box--mobile">
+                <div class="count__icon--desktop">
+                  <div class="count__icon__inner--desktop">
+                    <i class="bi bi-bank"></i>
+                  </div>
+                </div>
+                <h1 class="counter--desktop">12</h1>
+                <p>Ngân hàng liên kết</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End count mobile -->
+      <!-- Start member mobile -->
+      <div class="wrap__section--mobile__margin">
+        <div class="container--desktop container--mobile">
+          <div
+            class="title-section-font"
+            style="padding-bottom: 16px; padding-top: 16px"
+          >
+            Thành viên hội đồng quản trị
+          </div>
+          <div class="member--desktop">
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <div class="member__list--desktop">
+                  <div class="member__photo--desktop">
+                    <div class="member__photo__inner--desktop">
+                      <img src="assest/member/avatar-1.jpg" alt="" />
+                    </div>
+                  </div>
+                  <div class="member__info--desktop">
+                    <h5 class="member__name--desktop">Marcus Floiy</h5>
+                    <p>Chủ tịch hội đồng quản trị</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="member__list--desktop">
+                  <div class="member__photo--desktop">
+                    <div class="member__photo__inner--desktop">
+                      <img src="assest/member/avatar-2.jpg" alt="" />
+                    </div>
+                  </div>
+                  <div class="member__info--desktop">
+                    <h5 class="member__name--desktop">Mari Parkinson</h5>
+                    <p>Phó chủ tịch hội đồng quản trị</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="member__list--desktop">
+                  <div class="member__photo--desktop">
+                    <div class="member__photo__inner--desktop">
+                      <img src="assest/member/avatar-3.jpg" alt="" />
+                    </div>
+                  </div>
+                  <div class="member__info--desktop">
+                    <h5 class="member__name--desktop">James Down</h5>
+                    <p>Tổng giám đốc</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="member__list--desktop">
+                  <div class="member__photo--desktop">
+                    <div class="member__photo__inner--desktop">
+                      <img src="assest/member/avatar-4.jpg" alt="" />
+                    </div>
+                  </div>
+                  <div class="member__info--desktop">
+                    <h5 class="member__name--desktop">Windy Cry</h5>
+                    <p>Phó tổng giám đốc</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End member mobile -->
+
+      <!-- Start new mobile -->
+      <div class="wrap__section--mobile__margin">
+        <div>
+          <div class="title-section-font">Tin Tức và Sự Kiện</div>
+          <div class="new__mobile">
+            <div class="news--desktop__list row">
+              <div class="news--mobile__item d-flex flex-row">
+                <div class="col6-l">
+                  <a href="news.html"
+                    ><img
+                      src="assest/news/news1.png"
+                      alt=""
+                      class="news--mobile__item__img"
+                  /></a>
+                </div>
+                <div class="news--desktop__item__content col6">
+                  <div class="content-font">Thị Trường</div>
+                  <div
+                    class="content-header"
+                    style="margin-top: 5px !important"
+                  >
+                    Các loại hình biệt thự Ocean Park
+                  </div>
+                  <div
+                    class="link-font"
+                    style="margin-top: 30px !important"
+                  ></div>
+                </div>
+              </div>
+              <div class="news--mobile__item d-flex flex-row">
+                <div class="col6-l">
+                  <a href="news.html"
+                    ><img
+                      src="assest/news/new2.png"
+                      alt=""
+                      class="news--mobile__item__img"
+                  /></a>
+                </div>
+                <div class="news--desktop__item__content col6">
+                  <div class="content-font">Thị Trường</div>
+                  <div
+                    class="content-header"
+                    style="margin-top: 5px !important"
+                  >
+                    Tổng quan về tòa Grand Park S5.03
+                  </div>
+                  <div
+                    class="link-font"
+                    style="margin-top: 30px !important"
+                  ></div>
+                </div>
+              </div>
+              <div class="news--mobile__item d-flex flex-row">
+                <div class="col6-l">
+                  <a href="news.html"
+                    ><img
+                      src="assest/news/new3.png"
+                      alt=""
+                      class="news--mobile__item__img"
+                  /></a>
+                </div>
+                <div class="news--desktop__item__content col6">
+                  <div class="content-font">Phong Thủy</div>
+                  <div
+                    class="content-header"
+                    style="margin-top: 5px !important"
+                  >
+                    Những công trình 'bát quái' ở Việt Nam
+                  </div>
+                  <div
+                    class="link-font"
+                    style="margin-top: 30px !important"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End new mobile -->
+      <!-- Start contact mobile -->
+      <!-- <div class="wrap__section--mobile">
+        <div
+          class="contact--desktop--bg"
+          
+        >
+          <div class="contact--mobile">
+            <div class="title-section-font">Liên Hệ</div>
+            <div
+              class="contact--desktop__form"
+              
+            >
+              <div
+                class="row"
+                style="
+                  margin-left: 0px !important;
+                  margin-right: 0px !important;
+                "
+              >
+                <div class="col-6 contact--desktop__form__info">
+                  <form name="contact--desktop__form">
+                    <div class="contact--desktop__form__input">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="validationName"
+                        value=""
+                        placeholder="Họ và Tên"
+                      />
+                      <div id="em-feedback" style="display: none; color: red">
+                        Tên không chứa số và ký tự đặc biệt
+                      </div>
+                    </div>
+                    <div class="contact--desktop__form__input">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="validationEmail"
+                        value=""
+                        placeholder="Email"
+                      />
+                      <div id="em-feedback" style="display: none; color: red">
+                        Email cần đúng định dạng abc@abc.abc
+                      </div>
+                    </div>
+                    <div class="contact--desktop__form__input">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="validationPhoneNumber"
+                        value=""
+                        placeholder="Số điện thoại"
+                      />
+                      <div id="em-feedback" style="display: none; color: red">
+                        Số điện thoại không đúng định dạng
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <div class="col-6 contact--desktop__form__message">
+                  <textarea
+                    class="form-control"
+                    placeholder="Message"
+                    id="contact__form__message"
+                  ></textarea>
+                </div>
+              </div>
+              <div class="contact--desktop__form__btnSubmit">
+                <button type="button" class="btnSubmit" id="submit">
+                  Gửi Tin
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+      <!-- End contact mobile -->
+      <!-- Start footer mobile -->
+      <div class="wrap__section--mobile">
+        <div class="footer--desktop container--desktop">
+          <div class="ms-3">
+            <div class="footer--desktop__contact__info">
+              <div class="content-header footer--desktop__header">
+                THÔNG TIN LIÊN HỆ
+              </div>
+              <div class="content-font">
+                <i class="bi bi-telephone-forward"></i>&nbsp;<a
+                  href="tel:+374889957"
+                  class="footer--desktop__link__item"
+                  >Hot Line : 0374889957</a
+                >
+              </div>
+              <div class="content-font">
+                <i class="bi bi-envelope"></i>&nbsp;<a
+                  href="mailto:rovpc1211@gmail.com"
+                  class="footer--desktop__link__item"
+                  >Email : rovpc1211@gmail.com</a
+                >
+              </div>
+              <div class="content-font">
+                <i class="bi bi-house"></i>&nbsp;Địa chỉ : Thanh Liệt - Thanh
+                Trì - Hà Nội
+              </div>
+            </div>
+            <div class="footer--desktop__fanpage footer--mobile__fanpage">
+              <div class="content-header footer--desktop__header">
+                FANPAGE CỦA CHÚNG TÔI
+              </div>
+              <div
+                class="fb-page"
+                data-href="https://www.facebook.com/facebook"
+                data-width="380"
+                data-hide-cover="false"
+                data-show-facepile="false"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End footer mobile -->
+    </div>
+    <!-- End mobile -->
+    <!-- Script -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script src="js/index.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
