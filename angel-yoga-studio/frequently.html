@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../Images/logo.png" />
+    <link rel="stylesheet" href="./css/style.css" />
+        <!-- Fancy Box -->
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"
+        />
+        <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Slick -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
+    integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+    crossorigin="anonymous"
+  />
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0"
+      crossorigin="anonymous"
+    />
+    <title>FAQ - Angel Studio</title>
+  </head>
+  <body>
+    <div class="banner" style="background-image: url(./images/banner/banner13.jpg);">
+      <!-- Contact  & Social -->
+      <div class="container pt-3">
+        <div class="row">
+          <div class="col-6">
+            <div class="contact-top d-flex">
+              <div class="phone">
+                <a href="tel:+84979952806" class="d-flex"><i class="bi bi-telephone-fill me-2"></i><span class="d-none d-md-block">+84 987 6543 210</span></a>
+              </div>
+              <div class="mail">
+                <a href="mailto:angelstudio@gmail.com" class="d-flex"><i class="bi bi-envelope me-2"></i><span class="d-none d-md-block">Angelyoga@gmail.com</span></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="social-top d-flex justify-content-end">
+              <a href="https://www.facebook.com/angelstudioyoga"
+              target="blank"><i class="bi bi-facebook me-2"></i
+              ></a>
+              <a href="https://www.facebook.com/angelstudioyoga"
+              target="blank"><i class="bi bi-twitter me-2"></i
+              ></a>
+              <a href="https://www.instagram.com/angelstudioyoga/"
+              target="blank"><i class="bi bi-instagram me-2"></i
+              ></a>
+              <a href="https://goo.gl/maps/iw6PkuMWNCPTJbXB7"
+                target="blank"><i class="bi bi-google me-2"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <!-- Navbar -->
+      <div id="navbar" class="navigation">
+        <nav class="container">
+          <div class="row">
+            <div class="brand col-10 col-lg-4">
+              <h3 class="m-0"><a href="home.html">Angel Studio</a></h3>
+            </div>
+            <div class="menu-ctn col-2 col-lg-8">
+             <!-- Navbar Mobile -->
+             <div class="navMobile-ctn d-flex justify-content-end">
+              <div id="mobileNav" class="overlay">
+                <a class="closebtn" onclick="closeNav()"
+                  ><i class="bi bi-x-circle"></i
+                ></a>
+                <ul class=" p-0 overlay-content">
+                  <li><a href="home.html">Giới thiệu</a></li>
+                  <li><a href="pricing.html">Thẻ tập</a></li>
+                  <li><a href="events.html">Sự Kiện</a></li>
+                  <li><a href="team.html">Đào tạo giảng viên</a></li>
+                  <li class="dropdown-btn"><a href="#">Chuỗi phòng tập<i class="ms-1 bi bi-chevron-down"></i></a>
+                    <ul class="p-0 dropdown-container">
+                      <li><a href="classes.html">16 Phạm Ngọc Thạch</a></li>
+                      <li><a href="classes.html">18 KĐT Mỗ Lao</a></li>
+                      <li><a href="classes.html">63 Vũ Phạm Hàm</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="frequently.html">FAQ</a></li>
+                </ul>
+              </div>
+              <span onclick="openNav()"
+                ><i class="d-block d-lg-none bi bi-list"></i
+              ></span>
+            </div>
+            <!-- Navbar Desktop -->
+            <div class="navDesktop d-none d-lg-block">
+              <ul class="d-flex align-items-center justify-content-end m-0">
+                  <li><a href="./home.html">Giới thiệu</a></li>
+                  <li><a href="pricing.html">Thẻ tập</a></li>
+                  <li><a href="events.html">Sự kiện</a></li>
+                  <li><a href="team.html">Đào tạo giảng viên</a></li>
+                  <li class="dropdown-btn"><a href="#">Chuỗi phòng tập<i class="ms-1 bi bi-chevron-down"></i></a>
+                    <ul class="p-0 dropdown-container">
+                      <li><a href="classes.html">16 Phạm Ngọc Thạch</a></li>
+                      <li><a href="classes.html">18 KĐT Mỗ Lao</a></li>
+                      <li><a href="classes.html">63 Vũ Phạm Hàm</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="frequently.html">FAQ</a></li>
+              </ul>
+          </div>
+            </div>
+          </div>
+        <nav/>
+      </div> 
+      <!-- Tilte & Play video -->
+      <div class="title text-center">
+        <div class="container">
+          <div class="row justify-content-center">
+            <h1>Khám phá giới hạn bản thân</h1>
+            <p class="col-8 mt-3">
+                <q>Rồi một ngày bạn sẽ rất bất ngờ vì những khả năng của bạn mà bạn chưa biết!</q>
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-md-7 text-center">
+                <div class="frequently-content align-items-center">
+                    <div class="line"></div>
+                    <h2>Giải đáp một số câu hỏi thường gặp</h2>
+                   </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-7 ">
+            <div class="accordion accordion-flush my-5" id="accordionFlushExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question1" aria-expanded="false" aria-controls="question1">
+                    Thời gian học bao lâu để trở thành giáo viên ? 
+                  </button>
+                </h2>
+                <div id="question1" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Chỉ với một khoá học 86h tại Angel Studio là bạn đã có thể trở thành một giáo viên chuyên nghiệp.
+                     Một lưu ý khi tham gia khoá học yêu cầu học viên sẽ phải có nền tảng cơ bản về bộ môn. </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question2" aria-expanded="false" aria-controls="question2">
+                    Chi phí cho một khoá học là bao nhiêu ?
+                  </button>
+                </h2>
+                <div id="question2" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body"><p class="ps-3 m-0">Đến với Angel Studio bạn sẽ được trải nghiệm & tập đầy đủ các bài học về Yoga. <a href="pricing.html">Chi phí</a> chỉ từ <b>1.000.000đ/tháng.</b></p> </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question3" aria-expanded="false" aria-controls="question3">
+                    Yoga bay người bắt đầu có thể theo tập được không ?
+                  </button>
+                </h2>
+                <div id="question3" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body"><p class="ps-3 m-0">Câu trả lời sẽ luôn luôn là "Có". Tại Angel Studio mỗi tháng sẽ có 14 buổi về Aerial Basic để mọi thành viên đều có thể tập luyện theo.</p></div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question4" aria-expanded="false" aria-controls="question4">
+                    Trung tâm có PT dạy riêng không ? 
+                  </button>
+                </h2>
+                <div id="question4" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body"><p class="ps-3 m-0">Đến với Angel Studio bạn có thể học riêng với hlv từng bộ môn bạn muốn theo học ngay tại trung tâm hoặc nhà riêng của bạn(nếu đạt điều kiện lắp dụng cụ tập). Mỗi hlv sẽ đồng hành với bạn trên con đường tìm ra & khai thác giới hạn của bản thân.</p></div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question5" aria-expanded="false" aria-controls="question5">
+                    Tôi có thể tập được ở đâu ?
+                  </button>
+                </h2>
+                <div id="question5" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body"><p class="ps-3 m-0">Hiện tại Angel Studio có 3 cơ sở tại các quận trung tâm Hà Nội 
+                    <ul class="py-2">
+                      <li>16 Phạm Ngọc Thạch, Q.Đống Đa</li>
+                      <li>63 Vũ Phạm Hàm, Q.Cầu Giấy</li>
+                      <li>18 đường 18M KĐT Mỗ Lao, Q.Hà Đông</li>
+  
+                    </ul>
+                  </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+
+
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="about-foo">
+              <h3>Angel Studio</h3>
+              <p>Angel Studio cung cấp một loạt các Chương trình Đào tạo Giáo viên do các giáo viên cấp cao phụ trách. Giảng viên tốt nghiệp của chúng tôi tiếp tục giảng dạy trên khắp thế giới – kể cả tại các studio quốc tế. Tham gia cộng đồng giảng dạy của chúng tôi</p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <h3>Nhận tin khuyến mãi</h3>
+            <p>Nhận ngay các thông tin khuyến mãi của Angel Studio chỉ với một bước cực kì đơn giản.</p>
+            <div class="input-foo">
+              <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Email address</label>
+              </div>
+              <div class="input-btn-foo">
+                <button> Gửi</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <h3>Thông tin liên hệ</h3>
+            <a href="#" class="d-flex contact-foo">
+              <i class="bi bi-house"></i> 
+              <p class="ms-2 p-0">16 Phạm Ngọc Thạch, Q.Đống Đa, Hà Nội</p>
+            </a href="#">
+            <a href="#" class="d-flex contact-foo">
+              <i class="bi bi-telephone"></i>
+              <p class="ms-2 p-0">+84 987 6543 210</p>
+            </a href="#">
+            <a href="#" class="d-flex contact-foo">
+              <i class="bi bi-envelope"></i>
+              <p class="ms-2 p-0">angelstudio@gmail.com</p>
+            </a href="#">
+            <div class="social-top d-flex">
+              <a href="https://www.facebook.com/angelstudioyoga"
+              target="blank"><i class="bi bi-facebook me-2"></i
+              ></a>
+              <a href="https://www.facebook.com/angelstudioyoga"
+              target="blank"><i class="bi bi-twitter me-2"></i
+              ></a>
+              <a href="https://www.instagram.com/angelstudioyoga/"
+              target="blank"><i class="bi bi-instagram me-2"></i
+              ></a>
+              <a href="https://goo.gl/maps/iw6PkuMWNCPTJbXB7"
+                target="blank"><i class="bi bi-google me-2"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+    </footer>
+    <!-- JQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <!-- JS Slick -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"
+      integrity="sha512-eP8DK17a+MOcKHXC5Yrqzd8WI5WKh6F1TIk5QZ/8Lbv+8ssblcz7oGC8ZmQ/ZSAPa7ZmsCU4e/hcovqR8jfJqA=="
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/navbar.js"></script>
+  
+  </body>
+</html>

@@ -1,0 +1,90 @@
+button {
+    margin: 20px;
+    outline: none;
+  }
+  .custom-btn {
+    width: 130px;
+    height: 40px;
+    padding: 10px 25px;
+    border: 2px solid #6610f2;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+  }
+
+  .btn-mix {
+    background: #6610f2;
+   color: #fff;
+   line-height: 42px;
+   padding: 0;
+   border: none;
+
+ }
+ .btn-mix span {
+   position: relative;
+   display: block;
+   width: 100%;
+   height: 100%;
+ }
+ .btn-mix:before,
+ .btn-mix:after {
+   position: absolute;
+   content: "";
+   height: 0%;
+   width: 2px;
+   background: #6610f2;
+   
+ }
+ .btn-mix:before {
+   right: 0;
+   top: 0;
+   transition: all 500ms ease;
+ }
+ .btn-mix:after {
+   left: 0;
+   bottom: 0;
+   transition: all 500ms ease;
+ }
+ .btn-mix:hover{
+   color: #6610f2;
+   background: transparent;
+ }
+ .btn-mix:hover:before {
+   transition: all 500ms ease;
+   height: 100%;
+ }
+ .btn-mix:hover:after {
+   transition: all 500ms ease;
+   height: 100%;
+ }
+ .btn-mix span:before,
+ .btn-mix span:after {
+   position: absolute;
+   content: "";
+   background: #6610f2;
+ }
+ .btn-mix span:before {
+   left: 0;
+   top: 0;
+   width: 0%;
+   height: 2px;
+   transition: all 500ms ease;
+ }
+ .btn-mix span:after {
+   right: 0;
+   bottom: 0;
+   width: 0%;
+   height: 2px;
+   transition: all 500ms ease;
+ }
+ .btn-mix span:hover:before {
+   width: 100%;
+ }
+ .btn-mix span:hover:after {
+   width: 100%;
+ }
+ 
