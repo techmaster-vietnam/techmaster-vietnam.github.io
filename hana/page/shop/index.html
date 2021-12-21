@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="/doan/CSS/TestCSS.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+<body>
+    <div class="bar white" id="header">
+    </div>
+    <div class="light-grey padding-small">
+        <p class="small content" style="max-width: 1500px;">
+            Trang chủ <span class="opacity">/</span>
+            Danh mục <span class="opacity">/</span>
+            <span class="listValue">BEST SELLER</span>
+        </p>
+    </div>
+    <div class="row-padding content padding-24" style="max-width: 1500px;">
+        <div class="col l2 hide-ipad">
+            <h5><b>Menu</b></h5>
+            <div class="bar-block">
+                <button class="bar-item button border-bottom small padding-large hover-text-green tablink">BEST SELLER</button>
+                <button class="bar-item button border-bottom small padding-large hover-text-green tablink">FLAVORED TEA</button>
+                <button class="bar-item button border-bottom small padding-large hover-text-green tablink">BREWED TEA</button>
+                <button class="bar-item button border-bottom small padding-large hover-text-green tablink">MILK TEA</button>
+                <button class="bar-item button border-bottom small padding-large hover-text-green tablink">LATTE</button>
+                <button class="bar-item button border-bottom small padding-large hover-text-green tablink">OTHER BEVERAGES</button>
+            </div>
+        </div>
+        <div class="container col s11 m11 l10" >
+            <div class="row margin-bottom">
+                <h5 class="left hide-ipad listValue">BEST SELLER</h5>
+                <select class="left select show-ipad" name="" id="" onchange="updateListValue(this)" style="padding-right: 20px;">
+                    <option value="best">BEST SELLER</option>
+                    <option value="flav">FLAVORED TEA</option>
+                    <option value="brew">BREWED TEA</option>
+                    <option value="milk">MILK TEA</option>
+                    <option value="latte">LATTE</option>
+                    <option value="other">OTHER BEVERAGES</option>
+                </select>
+                <select class="right select" name="" id="sort" style="padding-right: 20px" onchange="sapXep(this)">
+                    <option value="0">Sản phẩm nổi bật</option>
+                    <option value="1">Giá tăng dần</option>
+                    <option value="2">Giá giảm dần</option>
+                    <option value="3">Tên : A-Z</option>
+                    <option value="4">Tên : Z-A</option>
+                    <option value="5">Cũ nhất</option>
+                    <option value="6">Mới nhất</option>
+                    <option value="7">Bán chạy nhất</option>
+                </select>
+            </div>
+            <div class="row" style="margin: 0 -16px;" id="menu"></div>
+        </div>
+    </div>
+    <footer class="hana-grey padding-24" id="footer">
+    </footer>
+    <script src="/doan/component/header.js"></script>
+    <script src="/doan/component/footer.js"></script>
+    <script src="/doan/DATA/menu.js"></script>
+    <script src="/doan/page/shop/shop.js"></script>
+</body>
+</html>

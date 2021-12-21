@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sản phẩm</title>
+    <link rel="stylesheet" href="/doan/CSS/TestCSS.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="bar white" id="header">
+    </div>
+    <div class="light-grey padding-small">
+        <p class="small content" style="max-width: 1500px;">
+            Trang chủ <span class="opacity">/</span>
+            Danh mục <span class="opacity">/</span>
+            <span class="sanpham">BEST SELLER</span>
+        </p>
+    </div>
+    <div class="row-padding content padding-24" style="max-width: 1000px;">
+        <div class="col half margin-bottom">
+            <img class="image sanpham-image" src="" alt="" style="width: 100%;">
+        </div>
+        <div class="col container half">
+            <h4 class="sanpham" style="margin: 0px;">Tên sản phẩm</h4>
+            <h3 id="total" class="text-green border-bottom" style="font-family: 'Courier New', Courier, monospace;">
+                45.000đ</h3>
+            <div class="padding-16">
+                <div class="row border-bottom margin-bottom">
+                    <h6 class="left">Cỡ ly</h6>
+                    <button onclick="size(this)" class="right button border badge green">M</button>
+                    <button onclick="size(this)" class="right button border badge margin-right">L</button>
+                </div>
+                <div class="row border-bottom" style="margin-top: 24px;">
+                    <h6 class="left">Số lượng</h6>
+                    <div class="right" style="margin-top: 10px;border: 1px solid #f1f1f1;">
+                        <input class="input left green" type="button" onclick="soLuong(this)" value="-"
+                            style="width: 24px;height: 24px; cursor: pointer;">
+                        <input class="left input center text-green" type="text" name="" id="so-luong" min="1" value="1"
+                            style="width: 50px;border: none;" readonly>
+                        <input class="input left green" type="button" onclick="soLuong(this)" value="+"
+                            style="width: 24px;height: 24px; cursor: pointer;">
+                    </div>
+                </div>
+            </div>
+            <div class="row border-bottom">
+                <div class="left col s12 m12 l6">
+                    <p>Mức đá - %</p>
+                    <div>
+                        <button onclick="ice(this)" class="ice border green"
+                            style="margin-right: 8px; cursor: pointer;">100%</button>
+                        <button onclick="ice(this)" class="ice border"
+                            style="margin-right: 8px; cursor: pointer;">70%</button>
+                        <button onclick="ice(this)" class="ice border"
+                            style="margin-right: 8px; cursor: pointer;">50%</button>
+                        <button onclick="ice(this)" class="ice border"
+                            style="margin-right: 8px; cursor: pointer;">30%</button>
+                    </div>
+                </div>
+                <div class="right col s12 m12 l6 margin-bottom">
+                    <p>Mức đường - %</p>
+                    <div>
+                        <button onclick="sugar(this)" class="sugar border green"
+                            style="margin-right: 8px; cursor: pointer;">100%</button>
+                        <button onclick="sugar(this)" class="sugar border"
+                            style="margin-right: 8px; cursor: pointer;">70%</button>
+                        <button onclick="sugar(this)" class="sugar border"
+                            style="margin-right: 8px; cursor: pointer;">50%</button>
+                        <button onclick="sugar(this)" class="sugar border"
+                            style="margin-right: 8px; cursor: pointer;">30%</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row padding-32">
+                <div class="col s12 m12 l6 margin-bottom" style="padding: 0 1.5px;">
+                    <button class="button green" style="width: 100%;" onclick="updateGio();">Thêm vào giỏ</button>
+                </div>
+                <div class="col s12 m12 l6 margin-bottom " style="padding: 0 1.5px;">
+                    <button class="button blue-grey" style="width:100%" onclick="updateGio();window.open('/doan/page/giohang/index.html','_self')">Mua ngay</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" style="display: none;" onclick="this.style.display='none'">
+        <div class="modal-content animate-zoom">
+            <div class="container center">
+                <img src="https://i.pinimg.com/originals/12/33/97/1233970d08ae3244b877d14a5d0da80c.png" alt="" style="height: 50px;">
+                <h5>Sản phẩm đã được thêm vào Giỏ hàng</h5>
+            </div>
+        </div>
+    </div>
+    <footer class="hana-grey padding-24" id="footer">
+    </footer>
+    <script src="/doan/component/footer.js"></script>
+    <script src="/doan/page/sanpham/sanpham.js"></script>
+    <script src="/doan/component/header.js"></script>
+    <script src="/doan/DATA/menu.js"></script>
+</body>
+
+</html>
