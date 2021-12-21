@@ -40,6 +40,9 @@ b,strong{
     max-width: 100%;
     height: auto;
 }
+.text-white{
+    color: #fff !important;
+}
 button, input, select, textarea, optgroup {
     font: inherit;
 }
@@ -62,7 +65,7 @@ button, input, select, textarea, optgroup {
     white-space: nowrap
 }
 .button:hover{
-    color: #000;
+    color: #000 !important;
     background-color: #ccc;
 }
 .content{
@@ -140,9 +143,21 @@ button, input, select, textarea, optgroup {
 .col.s12 {
     width: 99.99999%
 }
+.xxxlarge {
+    font-size: 48px !important;
+    line-height: 1.3 !important;
+}
 @media (max-width: 600px) {
     .hide-mobile{
         display: none !important    ;
+    }
+    .container-mobi{
+        padding: 0.01em 8px !important;
+    }
+    .logo{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
     }
 }
 @media (min-width: 601px) {
@@ -496,9 +511,33 @@ button, input, select, textarea, optgroup {
 /* ============================================================================================================================================= */
 .hana-grey{
     color: #fff;
-    background-color: #666;
+    background-color: #242a35;
 }
 .hana-cart:hover{
     background-color: #fff;
     color: #f44336 !important;
+}
+.container-mobi{
+    padding: 0.01em 16px
+}
+.bgimg1{
+    background-image: url(/doan/img/84770f_e2414b51861b44239ca93821cb1f359b_mv2_d_5249_2889_s_4_2.png);
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bgimg2{
+    background-image: url(/doan/img/teafarm.png);
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#header{
+    position: sticky;
+    top: 0;
+    border-bottom: 1px solid #ddd;
 }

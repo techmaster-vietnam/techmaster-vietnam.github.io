@@ -19,7 +19,7 @@ document.getElementById("footer").innerHTML =
     '</div>'+
     '<div class="col s12 l4 container  col-s-center">'+
         '<h4 class="padding-small text-green">Liên hệ</h4>'+
-        '<p class="small padding-small block button"><i class="fas fa-map-marker-alt text-green" style="width: 24px;"></i>Quốc lộ 1A, đối diện THPT Cẩm Bình, Cẩm Xuyên, Hà Tĩnh</p>'+
+        '<p class="small padding-small block button" style="white-space: normal;"><i class="fas fa-map-marker-alt text-green" style="width: 24px;"></i>Quốc lộ 1A, đối diện THPT Cẩm Bình, Cẩm Xuyên, Hà Tĩnh</p>'+
         '<p class="small padding-small block button"><i class="fas fa-phone-alt text-green" style="width: 24px;"></i>1900.88.88.88</p>'+
         '<p class="small padding-small block button"><i class="fas fa-envelope text-green" style="width: 24px;"></i>hanamilkcoffee@gmail.com</p>'+
         '<br>'+
